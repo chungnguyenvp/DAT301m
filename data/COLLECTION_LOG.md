@@ -65,7 +65,17 @@ Một văn bản có nhiều file vì được đăng trên nhiều số Công b
 - Bộ 600 câu ban hành theo TT 12/2025/TT-BCA, mà TT 12/2025 đã bị TT 108/2026 thay thế. Phải đọc TT 108 để biết bộ câu hỏi có được thay hay không.
 - Đối chiếu bộ 600 câu bản đăng lại với Công văn 2262 (số chương, số câu, câu điểm liệt).
 
+## 2026-10-08: Sửa lỗi sau khi mở file kiểm tra
+
+**Bộ luật Dân sự tải nhầm.** Đợt 1 khớp số ký hiệu `91/2015/QH13` và lấy nhầm Nghị quyết ngày 18/6/2015 "về chương trình hoạt động giám sát của Quốc hội năm 2016" (trùng số). Đã xóa file sai, sửa `download_plan.csv` và tải lại Bộ luật Dân sự ban hành 24/11/2015 (Công báo số 1243–1246 ngày 28/12/2015, 2 file PDF, phần 2 chứa Điều 601).
+
+**Bài học:** khớp số ký hiệu chưa đủ vì số có thể trùng giữa các loại văn bản; phải kiểm tra cả trích yếu và tiêu đề trong nội dung file. Bước xử lý sẽ kiểm tra tự động số hiệu và trích yếu ở trang đầu của mọi văn bản.
+
+**TT 36/2024/TT-BYT không phải dự thảo.** Lớp chữ trong file trống ở số hiệu và ngày ký, nhưng ảnh trang đầu có dấu "SAO Y" và chữ ký số của Bộ Y tế ngày 16/11/2024; số "36" và ngày "16" được điền tay trước khi scan. Giữ file, OCR lại khi xử lý vì lớp chữ có sẵn nhiều lỗi.
+
+**PDF dạng ảnh scan cần OCR:** TT 108/2026/TT-BCA (134 trang, không có lớp chữ), TT 155/2025/TT-BTC (6 trang), TT 36/2024/TT-BYT (lớp chữ chất lượng kém). Công cụ: Tesseract 5.4 (cài qua winget) với `vie.traineddata` từ `tesseract-ocr/tessdata_best`, đặt tại `tools/tessdata/` (không đưa lên Git).
+
 ## Tổng sau hai đợt
-34 văn bản, 93 file, 294 MB. Danh sách đầy đủ trong `data/manifest.csv`.
+34 văn bản, 94 file, 294 MB. Danh sách đầy đủ trong `data/manifest.csv`.
 
 **Lưu ý lưu trữ:** `data/raw/` không đưa lên Git (xem `.gitignore`). Tái tạo bằng `python scripts/download_raw.py` và đối chiếu sha256 trong `data/manifest.csv`.
