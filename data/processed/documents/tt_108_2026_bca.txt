@@ -17,7 +17,7 @@ Trong Thông tư này, các từ ngữ dưới đây được hiểu như sau:
 4. Thẻ sát hạch viên điện tử là thẻ sát hạch viên thể hiện dưới dạng thông điệp dữ liệu, được tích hợp lên hệ thông dữ liệu điện tử.
 5. Giấy phép lái xe quốc tế là giấy phép lái xe có tên tiếng Anh là International Driving Permit, sau đây gọi tặt là IDP.
 6. Giấy phép lái xe quốc gia là giấy phép lái xe do cở quan có thẳm quyền của các nước cấp, có giá trị trên lãnh thô quốc gia đó.
-7. Hồ sơ điện tử giấy phép lái xe quốc tế là tập hợp các tài liệu điện tử liên quan đên câp IDP.
+7. Hồ sơ điện tử giấy phép lái xe quốc tế là tập hợp các tài liệu điện tử liên quan đến cấp IDP.
 8. Hệ thống thông tin về sát hạch, cấp giấy phép lái,xe là tập hợp phần cứng, phần mềm và dữ liệu phục vụ công tác quản lý thông tin về sát hạch, cấp, đổi, cấp lại, thu hôi giây phép lái xe (còn gọi là cơ sở dữ liệu về sát hạch, cấp giấy phép lái xe), bao gôm:
 a) Hệ thống thông tin sát hạch lái xe tại trung tâm sát hạch lái xe, Phòng Cảnh sát giao thông Công an các tỉnh, thành phô (sau đây viêt gọn là Phòng Cảnh sát giao thông) và Cục Cảnh sát giao thông; |
 b) Hệ thống thông tin giấy phép lái xe tại Cục Cảnh sát giao thông, Phòng Cảnh sát giao thông, Công an xã, phường, đặc khu (sau đây viêt gọn là Công an cập xã) nơi được bô trí điêm tiêp nhận.
@@ -25,20 +25,20 @@ Chương II SÁT HẠCH LÁI XE
 Điều 4. Hình thức, nội dung và trình tự sát hạch lái xe
 1. Sát hạch lý thuyết
 a) Sát hạch lý thuyết: gồm các câu hỏi liên quan đến quy định của pháp luật vê trật tự, an toàn giao thông đường bộ; kỹ thuật lái xe; quy tặc ứng xử người lái xe, văn hóa giao thông và phòng, chông tác hại của rượu, bia khi tham gia giao thông; nội dung liên quan đên câu tạo và sửa chữa thông thường, kỹ năng phòng cháy, chữa cháy và cứu nạn, cứu hộ (đôi với hạng B1, B trở lên); nội dung liên quan đến vận tải đường bộ (đối với hạng C1 trở lên);
-b) Sát hạch lý thuyết thực hiện trên máy tính, trừ trường hợp quy định tại Điêu 14 Thông tư này;
+b) Sát hạch lý thuyết thực hiện trên máy tính, trừ trường hợp quy định tại Điều 14 Thông tư này;
 c) Thí sinh dự sát hạch lái xe hạng A1, A có giấy phép lái xe ô tô còn hiệu lực được miễn sát hạch lý thuyết.
 2. Sát hạch thực hành lái xe trong hình
-a) Đối với hạng AI, A Thực hiện sát hạch bằng phương pháp chấm điểm trực tiếp kết hợp với thiết bị chấm điểm tự động. Thí sinh dự sát hạch phải điều khiển xe mô tô qua bài sát hạch số 1 và bài sát hạch số 2;
+a) Đối với hạng A1, A Thực hiện sát hạch bằng phương pháp chấm điểm trực tiếp kết hợp với thiết bị chấm điểm tự động. Thí sinh dự sát hạch phải điều khiển xe mô tô qua bài sát hạch số 1 và bài sát hạch số 2;
 b) Đối với hạng B1 Thực hiện sát hạch bằng phương pháp chấm điểm trực tiếp, không bố trí sát hạch viên ngồi trên xe sát hạch. Thí sinh dự sát hạch phải điều khiên xe tiền qua hình chữ chi và lùi theo hướng ngược lại;
 c) Đối với các hạng B, C1,C,D1,D2,D Thực hiện sát hạch bằng phương pháp sử dụng thiết bị chấm điểm tự động kết hợp với châm điêm trực tiệp; không bô trí sát hạch viên ngôi trên xe sát hạch, trừ trường hợp quy định tại điểm a khoản 2 Điều 13 Thông tư này. Thí sinh dự sát hạch phải điều khiên xe qua bài sát hạch liên hoàn;
 d) Đồi với các hạng BE, D1E, D2E, DE Thực hiện sát hạch bằng phương pháp chấm điểm trực tiếp, không bố trí sát hạch viên ngôi trên xe sát hạch. Thí sinh dự sát hạch điêu khiên xe qua bài sát . hạch tiên qua hình có 05 cọc chuân và vòng trở lại;
 đ) Đối với hạng C1E, CE Thực hiện sát hạch bằng phương pháp chấm điểm trực tiếp, không bồ trí sát hạch viên ngôi trên xe sát hạch. Thí sinh dự sát hạch điều khiên xe qua 02 bài sát hạch tiến qua hình có 05 cọc chuân và vòng trở lại; ghép xe dọc vào nơi đỗ.
 3. Sát hạch thực hành lái xe trên đường
 a) Đối với các hạng B, C1,C,D1,D2,D _ Thực hiện sát hạch bằng phương pháp sử dụng thiết bị chấm điểm tự động kêt hợp với châm điêm trực tiếp, bố trí một sát hạch viên ngồi trên xe sát hạch;
-b) Đối với các hạng BE, CIE, CE, D1E, D2E, DE Thực hiện sát hạch bằng phương pháp chấm điểm trực tiếp, bố trí một sát hạch viên ngôi trên xe sát hạch.
+b) Đối với các hạng BE, C1E, CE, D1E, D2E, DE Thực hiện sát hạch bằng phương pháp chấm điểm trực tiếp, bố trí một sát hạch viên ngôi trên xe sát hạch.
 4. Nội dung sát hạch lái xe
 a) Hạng A1 và A thực hiện theo quy định tại Phụ lục I; hạng B1 thực hiện theo quy định tại Phụ lục II ban hành kèm theo Thông tư này;
-b) Các hạng B, C1,C,D1,D2,D thực hiện theo quy định tại Phụ lục III, các hạng BE, DIE, D2E, DE thực hiện theo quy định tại Phụ lục IV, hạng C1E, CE thực hiện theo quy định tại Phụ lục V ban hành kèm theo Thông tư này.
+b) Các hạng B, C1,C,D1,D2,D thực hiện theo quy định tại Phụ lục III, các hạng BE, D1E, D2E, DE thực hiện theo quy định tại Phụ lục IV, hạng C1E, CE thực hiện theo quy định tại Phụ lục V ban hành kèm theo Thông tư này.
 5. Trình tự sát hạch lái xe
 a) Sát hạch mô tô Thí sinh thực hiện sát hạch lý thuyết, bài sát hạch số 1, bài sát hạch số 2;
 b) Sát hạch ô tô .
@@ -76,9 +76,9 @@ k) Thực hiện các nhiệm vụ khác để đảm bảo kỳ sát hạch an 
 Điều 7. Tiêu chuẩn sát hạch viên, thư ký Hội đồng sát hạch
 1. Tiêu chuẩn của sát hạch viên
 a) Là sĩ quan thuộc lực lượng Công an nhân dân;
-b) Có giấy phép lái xe từ đủ 03 năm trở lên đối với các hạng AI, A,B1,B, C1, C, từ đủ 01 năm trở lên đối với các hạng còn lại và còn điểm, còn hiệu lực;
+b) Có giấy phép lái xe từ đủ 03 năm trở lên đối với các hạng A1, A, B1, B, C1, C, từ đủ 01 năm trở lên đối với các hạng còn lại và còn điểm, còn hiệu lực;
 c) Đã được Cục Cảnh sát giao thông tập huần về nghiệp vụ sát hạch, kiểm tra đạt yêu cầu và cấp thẻ sát hạch viên;
-d) Đối với sát hạch lý thuyết chỉ cần có thẻ sát hạch viên; đối với sát hạch thực hành lái xe trong hình mô tô hạng A1, A chỉ cần có thẻ sát hạch viên hạng mô tô; đối với sát hạch thực hành lái xe trong hình hạng B1 có thẻ sát hạch viên hạng B1; đối với sát hạch thực hành lái xe trong hình hạng ô tô (trừ thực hành lái xe trong hình hạng BE, C1E, CE, DIE, D2E, DE) chỉ cần có thẻ sát hạch viên hạng ô tô. Đôi với sát hạch thực hành lái xe trên đường và sát hạch thực hành lái xe trong hình hạng BE, C1E, CE, D1E, D2E, DE sát hạch viên được sát hạch hạng xe tương ứng với hạng thẻ sát hạch viên, thẻ sát hạch viên hạng xe cao hơn được sát hạch hạng xe thấp hơn.
+d) Đối với sát hạch lý thuyết chỉ cần có thẻ sát hạch viên; đối với sát hạch thực hành lái xe trong hình mô tô hạng A1, A chỉ cần có thẻ sát hạch viên hạng mô tô; đối với sát hạch thực hành lái xe trong hình hạng B1 có thẻ sát hạch viên hạng B1; đối với sát hạch thực hành lái xe trong hình hạng ô tô (trừ thực hành lái xe trong hình hạng BE, C1E, CE, D1E, D2E, DE) chỉ cần có thẻ sát hạch viên hạng ô tô. Đôi với sát hạch thực hành lái xe trên đường và sát hạch thực hành lái xe trong hình hạng BE, C1E, CE, D1E, D2E, DE sát hạch viên được sát hạch hạng xe tương ứng với hạng thẻ sát hạch viên, thẻ sát hạch viên hạng xe cao hơn được sát hạch hạng xe thấp hơn.
 2. Tiêu chuẩn của thư ký: là sát hạch viên và đang công tác trong lĩnh vực sát hạch, cấp giấy phép lái xe thuộc lực lượng Cảnh sát giao thông.
 Điều 8. Tập huần, kiếm tra và cấp, đối, cấp lại, thu hồi thẻ sát hạch viên
 1. Tổ chức tập huấn
@@ -129,8 +129,8 @@ b) Trường hợp hệ thống bị lỗi hoặc cơ sở hạ tằng kỹ thu�
 a) Trước khi tổ chức sát hạch, Chủ tịch Hội đồng sát hạch tổ chức họp Hội đông, phân công nhiệm vụ của từng thành viên trong Hội đồng sát hạch;
 b) Tổ chức khai mạc kỳ sát hạch lái xe để công bố quyết định tô chức kỳ sát hạch lái xe, phô biên các nội dung có liên quan của kỳ sát hạch lái xe cho thí sinh dự sát hạch.
 2. Sát hạch theo hình thức, nội dung, trình tự sát hạch quy định tại Điều 4 và các Phụ lục I, II, II, IV và V ban hành kèm theo Thông tư này.
-3. Kết thúc kỳ sát hạch lái xe Chủ tịch Hội đồng sát hạch tổ chức họp Hội đồng, Tổ giám sát (nếu có), thư ký Hội đông báo cáo kêt quả kỳ sát hạch lái xe. Chủ tịch Hội đồng sát hạch thông qua và thống nhất biên bản tổng hợp kết quả sát hạch lái xe với các thành viên Hội đông, ký tên và đóng dấu vào biên bản tổng hợp kết quả kỳ sát hạch lái xe theo mâu sô 03 Phụ lục VI ban hành kèm theo Thông tư này. Chủ tịch Hội đồng sát hạch ký tên và đóng dấu vào biên bản tổng hợp kết quả sát hạch lái xe của thí sinh dự sát hạch theo quy định tại Phụ lục VIII ban hành kèm theo Thông tư này.
-Biên bản tổng hợp kết quả sát hạch lái xe của thí sinh đạt kết quả kỳ sát hạch lái xe là hồ sơ gốc, giao cho người đạt kết quả kỳ sát hạch lái xe tự bảo quản khi trả giây phép lái xe. Phòng Cảnh sát giao thông tích hợp biên bản tổng hợp kêt quả sát hạch lái xe của thí sinh vào hệ thông thông tin về sát hạch, cấp giấy phép lái xe.
+3. Kết thúc kỳ sát hạch lái xe Chủ tịch Hội đồng sát hạch tổ chức họp Hội đồng, Tổ giám sát (nếu có), thư ký Hội đồng báo cáo kết quả kỳ sát hạch lái xe. Chủ tịch Hội đồng sát hạch thông qua và thống nhất biên bản tổng hợp kết quả kỳ sát hạch lái xe với các thành viên Hội đồng, ký tên và đóng dấu vào biên bản tổng hợp kết quả kỳ sát hạch lái xe theo mẫu số 03 Phụ lục VI ban hành kèm theo Thông tư này. Chủ tịch Hội đồng sát hạch ký tên và đóng dấu vào biên bản tổng hợp kết quả sát hạch lái xe của thí sinh dự sát hạch theo quy định tại Phụ lục VIII ban hành kèm theo Thông tư này.
+Biên bản tổng hợp kết quả sát hạch lái xe của thí sinh đạt kết quả kỳ sát hạch lái xe là hồ sơ gốc, giao cho người đạt kết quả kỳ sát hạch lái xe tự bảo quản khi trả giấy phép lái xe. Phòng Cảnh sát giao thông tích hợp biên bản tổng hợp kết quả sát hạch lái xe của thí sinh vào hệ thống thông tin về sát hạch, cấp giấy phép lái xe.
 Điều 11. Giám sát kỳ sát hạch lái xe
 1. Căn cứ tình hình thực tế, Cục Cảnh sát giao thông thành lập Tổ giám sát để tổ chức giám sát kỳ sát hạch lái xe.
 2. Thành phần Tổ giám sát:
@@ -152,21 +152,21 @@ b) Thí sinh không đạt nội dung sát hạch lý thuyết thì không đư�
 c) Thí sinh được bảo lưu kết quả nội dung sát hạch lý thuyết đã đạt trong thời gian 01 năm kể từ ngày đạt kết quả sát hạch; bảo lưu kết quả nội dung sát hạch bài sát hạch số 1 theo thời gian bảo lưu còn lại của phần sát hạch lý thuyết;
 J nếu có nhu cầu dự sát hạch phải có giấy khám sức khỏe của người lái xe còn hiệu lực (bản điện tử), trường hợp do lỗi kỹ thuật không sử dụng được bản điện tử thì sử dụng bản giấy do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp và có tên trong biên bản xác nhận vắng, trượt của Hội đồng sát hạch kỳ trước hoặc có tên trong hệ thống thông tin sát hạch lái xe hoặc cung cấp hồ sơ hợp lệ hoặc có dữ liệu hồ sơ điện tử;
 d) Trường hợp thí sinh có kết quả sát hạch không đạt, được đăng ký sát hạch lại ở các kỳ sát hạch lái xe khác.
-2. Xét công nhận kết quả sát hạch đối với thí sinh tham dự sát hạch lái xe hạng B,C1,C,DI,D2, D,BE, C1E, CE, D1E, D2E, DE
+2. Xét công nhận kết quả sát hạch đối với thí sinh tham dự sát hạch lái xe hạng B, C1, C, D1, D2, D, BE, C1E, CE, D1E, D2E, DE
 a) Thí sinh đạt nội dung sát hạch lý thuyết, sát hạch thực hành lái xe trong hình và sát hạch thực hành lái xe trên đường thì được công nhận đạt kết quả kỳ sát hạch lái xe;
 b) Thí sinh không đạt nội dung sát hạch lý thuyết thì không được sát hạch thực hành lái xe trong hình, không đạt nội dung sát hạch thực hành lái xe trong hình thì không được sát hạch thực hành lái xe trên đường. Thí sinh được bảo lưu kết quả nội dung sát hạch lý thuyết đã đạt trong thời gian 01 năm kể từ ngày đạt kết quả sát hạch; bảo lưu kết quả nội dung sát hạch thực hành lái xe trong hình theo thời gian bảo lưu còn lại của phần sát hạch lý thuyết; nếu có nhu cầu dự sát hạch lại, phải có giấy khám sức khỏe của người lái xe còn hiệu lực (bản điện tử), trường hợp chưa có bản điện tử thì sử dụng bản giấy do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp và phải có tên trong biên bản xác nhận vắng, trượt của Hội đồng sát hạch kỳ trước hoặc có tên trong hệ thống thông tin sát hạch lái xe hoặc cung cấp hồ sơ hợp lệ hoặc có dữ liệu hồ sơ điện tử;
 c) Trường hợp thí sinh có kết quả sát hạch không đạt, được đăng ký sát hạch lại ở các kỳ sát hạch lái xe khác.
 3. Trong thời hạn 02 giờ kể từ thời điểm kết thúc kỳ sát hạch lái xe, Phòng Cảnh sát giao thông rà soát, tổng hợp kết quả và chuyên dữ liệu người đạt kết quả sát hạch về Cục Cảnh sát giao thông để cấp giấy phép lái xe điện tử.
 4. Thí sinh mang tài liệu, điện thoại di động hoặc phương tiện, thiết bị kỹ thuật vào phòng sát hạch lý thuyết, trên xe sát hạch; có các hành vi gian dối khác làm sai lệch kết quả sát hạch sẽ bị đình chỉ, hủy bỏ kết quả kỳ sát hạch. Trường hợp phương tiện, thiết bị kỹ thuật chấm điểm tự động bị lỗi hoặc nguyên nhân khác không do lỗi của thí sinh làm sai lệch kết quả sát hạch sẽ hủy kết quả sát hạch và được sát hạch lại.
-„ 5. Thí sinh không đạt kết quả sát hạch có thể đăng ký sát hạch lại tại đơn VỊ tiếp nhận hô sơ theo quy định tại khoản 1 Điêu 9 Thông tư này.
+5. Thí sinh không đạt kết quả sát hạch có thể đăng ký sát hạch lại tại đơn vị tiếp nhận hồ sơ theo quy định tại khoản 1 Điều 9 Thông tư này.
 6. Trường hợp thí sinh sát hạch do giấy phép lái xe quá thời hạn sử dụng có nhu cầu sát hạch đề cấp giấy phép lái xe xuống hạng thấp hơn hạng trong giấy phép lái xe phải đăng ký và chịu trách nhiệm vê nội dung đăng ký.
 Điều 13. Sát hạch lái xe đối với người khuyết tật
 1. Sát hạch đề cấp giấy phép lái xe hạng A1 điều khiển xe mô tô ba bánh
-a) Thí sinh thực hiện sát hạch lý thuyết và sát hạch lái xe trong hình theo nội dung và trình tự quy định tại khoản 1, 2 Điêu 4 và Phụ lục I ban hành kèm theo Thông tư này; sát hạch tại trung tâm sát hạch lái xe hoặc sân tập lái dùng đê sát hạch lái xe mô tô có đủ điêu kiện, bô trí hai sát hạch viên châm điêm trực tiêp;
+a) Thí sinh thực hiện sát hạch lý thuyết và sát hạch lái xe trong hình theo nội dung và trình tự quy định tại khoản 1, 2 Điều 4 và Phụ lục I ban hành kèm theo Thông tư này; sát hạch tại trung tâm sát hạch lái xe hoặc sân tập lái dùng đê sát hạch lái xe mô tô có đủ điêu kiện, bô trí hai sát hạch viên châm điêm trực tiêp;
 b) Hình sát hạch theo quy định tại Quy chuẩn kỹ thuật quốc gia về trung tâm sát hạch lái xe cơ giới đường bộ.
 2. Sát hạch đề cấp giấy phép lái xe hạng B số tự động
 a) Sát hạch để cấp giấy phép lái xe hạng B số tự động cho người khuyết tật bàn chân phải hoặc bàn tay phải hoặc bàn tay trái: thí sinh thực hiện đủ nội dung và trình tự sát hạch quy định tại Điều 4 Thông tư này; sát hạch tại trung tâm sát hạch lái xe, có hai sát hạch viên ngôi trên xe chấm điểm trực tiếp nội dung sát hạch lái xe trong hình và trên đường:
-b) Sát hạch để cấp giấy phép lái xe hạng B số tự động cho người khuyết tật, trừ người khuyêt tật bàn chân phải hoặc bàn tay phải hoặc bàn tay trái: thí sinh thực hiện đủ nội dung và trình tự sát hạch quy định tại Điêu 4 Thông tư này; sát hạch tại trung tâm sát hạch lái xe.
+b) Sát hạch để cấp giấy phép lái xe hạng B số tự động cho người khuyết tật, trừ người khuyêt tật bàn chân phải hoặc bàn tay phải hoặc bàn tay trái: thí sinh thực hiện đủ nội dung và trình tự sát hạch quy định tại Điều 4 Thông tư này; sát hạch tại trung tâm sát hạch lái xe.
 Điều 14. Sát hạch để cấp giấy phép lái xe mô tô hạng A1 đối với người dân tộc thiều số không biết đọc, viết tiếng Việt
 1. Sát hạch lý thuyết
 a) Nội dung sát hạch lý thuyết gồm các câu hỏi liên quan đến quy định của pháp luật về trật tự, an toàn giao thông đường bộ; kỹ thuật lái xe; quy tăc ứng xử người lái xe, văn hóa giao thông và phòng, chông tác hại của rượu, bia khi tham gia giao thông:
@@ -178,7 +178,7 @@ b) Sát hạch lý thuyết bằng hình thức hỏi - đáp; sử dụng phư�
 Điều 16. Hồ sơ đề nghị sát hạch lái xe
 1. Hồ sơ đề nghị sát hạch do cơ sở đào tạo lái xe nộp gồm: báo cáo đề nghị tổ chức sát hạch theo mẫu 02 Phụ lục VII kèm theo danh sách thí sinh đề nghị sát hạch để cập giấy phép lái xe theo mẫu 03 Phụ lục VII ban hành kèm theo “Thông tư này và hô sơ đê nghị sát hạch của cá nhân theo quy định tại khoản 2 Điều này.
 2. Hồ sơ đề nghị sát hạch của cá nhân nộp theo quy định tại khoản 1 Điều 9 Thông tư này, hồ sơ gồm:
-a) Chứng chỉ sơ cấp hoặc chứng chỉ đào tạo hoặc giấy xác nhận hoàn thành khóa đào tạo đôi với thí sinh dự sát hạch lái xe hạng A1,A,BI,B,C1,C,DI1,D2, D,BE, CIE, CE, DIE, D2E, DE;
+a) Chứng chỉ sơ cấp hoặc chứng chỉ đào tạo hoặc giấy xác nhận hoàn thành khóa đào tạo đôi với thí sinh dự sát hạch lái xe hạng A1, A, B1, B, C1, C, D1, D2, D, BE, C1E, CE, D1E, D2E, DE;
 b) Giấy khám sức khỏe của người lái xe còn hiệu lực (bản điện tử), trường hợp hệ thông bị lôi thì sử dụng bản giấy do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp;
 c) Bản sao hoặc bản sao điện tử một trong các giấy tờ sau: chứng minh thư ngoại giao, chứng minh thư công vụ, thị thực hoặc thẻ tạm trú còn thời hạn từ 90 ngày trở lên, thẻ thường trú còn giá trị (đối với người nước ngoài). Trường hợp cá nhân thực hiện thủ tục nộp bản sao thì phải xuât trình bản chính đê đối chiếu;
 trường hợp cá nhân nộp bản sao có giá trị sử dụng thay bản chính theo quy định của pháp luật về chứng thực thì không phải xuất trình bản chính;
@@ -234,7 +234,7 @@ b) Người có giấy phép lái xe được quy định tại điểm a khoả
 c) Trường hợp người có giấy phép lái xe được quy định tại điểm a khoản này sát hạch không đạt, nếu có nhu cầu thì đăng ký với Phòng Cảnh sát giao thông để tham gia sát hạch lại.
 3. Chưa sát hạch cấp giấy phép lái xe đối với người vi phạm pháp luật về trật tự, an toàn giao thông đường bộ chưa thực hiện xong yêu câu của cơ quan nhà nước có thẳm quyền về giải quyết, xử lý vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ.
 Điều 20. Cấp lại giấy phép lái xe
-1. Người có giấy phép lái xe còn thời hạn sử dụng mà bị mắt, được đề nghị cấp lại giấy phép lái xe. Việc cấp lại giấy phép lái xe bị mất thực hiện theo quy định tại khoản 2, 3, 4 Điêu 21 Thông tư này.
+1. Người có giấy phép lái xe còn thời hạn sử dụng mà bị mắt, được đề nghị cấp lại giấy phép lái xe. Việc cấp lại giấy phép lái xe bị mất thực hiện theo quy định tại khoản 2, 3, 4 Điều 21 Thông tư này.
 2. Không cấp lại giấy phép lái xe đối với các trường hợp sau: thông tin giấy phép lái xe không có trong hệ thông thông tin giây phép lái xe tại Cục Cảnh sát giao thông hoặc không có trong bảng kê danh sách cấp giây phép lái xe (số quản lý); người vi phạm pháp luật về trật tự, an toàn giao thông. đường bộ chưa thực hiện xong yêu câu của cơ quan nhà nước có thâm quyền về giải quyết, xử lý vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ.
 Điều 21. Đỗi giấy phép lái xe
 1. Các trường hợp đổi giấy phép lái xe
@@ -315,7 +315,7 @@ a) Thời hạn sử dụng giấy phép lái xe Việt Nam đổi cho người 
 b) Giấy phép lái xe quốc gia cấp cho người đồi được điều khiển nhiều hạng xe khác nhau được đôi sang giấy phép lái xe Việt Nam để điều khiển các hạng xe tương ứng.
 Điều 25. Thu hồi giấy phép lái xe
 1. Cơ quan có thẳm quyền cấp giấy phép lái xe thực hiện thu hồi theo trình tự sau:
-a) Đối với giấy phép lái xe đã có trên hệ thống dữ liệu điện tử, trong thời hạn 03 ngày làm việc, kể từ ngày phát hiện người có giây phép lái xe thuộc một trong các trường hợp quy định tại khoản 5 Điêu 62 Luật Trật tự, an toàn giao thông đường bộ được sửa đổi, bồ sung bởi Luật sô 118/2025/QH15, Cục trưởng Cục Cảnh sát giao thông ra quyết định thu hồi để hủy bỏ giấy phép lái xe (nội dung của quyết định nêu rõ lý do thu hồi và hủy bỏ) và hủy bỏ việc tích hợp giấy phép lái xe điện tử trên ứng dụng định danh Quốc gia hoặc các ứng dụng của lực lượng Công an nhân dân theo quy định; cá nhân không phải nộp lại giấy phép lái xe;
+a) Đối với giấy phép lái xe đã có trên hệ thống dữ liệu điện tử, trong thời hạn 03 ngày làm việc, kể từ ngày phát hiện người có giây phép lái xe thuộc một trong các trường hợp quy định tại khoản 5 Điều 62 Luật Trật tự, an toàn giao thông đường bộ được sửa đổi, bồ sung bởi Luật sô 118/2025/QH15, Cục trưởng Cục Cảnh sát giao thông ra quyết định thu hồi để hủy bỏ giấy phép lái xe (nội dung của quyết định nêu rõ lý do thu hồi và hủy bỏ) và hủy bỏ việc tích hợp giấy phép lái xe điện tử trên ứng dụng định danh Quốc gia hoặc các ứng dụng của lực lượng Công an nhân dân theo quy định; cá nhân không phải nộp lại giấy phép lái xe;
 b) Đối với giấy phép lái xe không có trên hệ thống dữ liệu điện tử, trong thời hạn 03 ngày làm việc, kể từ ngày phát hiện người có giấy phép lái xe thuộc một trong các trường hợp quy định tại khoản 5 Điều 62 Luật Trật tự, an toàn giao thông đường bộ được sửa đồi, bồ sung bởi Luật sô 118/2025/QH15, Trưởng phòng Cảnh sát giao thông ra quyết định thu hồi đề hủy bỏ giấy phép lái xe (nội dung của quyết định nêu rõ lý do thu hôi và hủy bỏ). Trong thời hạn 05 ngày làm việc, kể từ ngày nhận được quyết định thu hồi giấy phép lái xe, cá nhân phải nộp giấy phép lái xe bị thu hồi đến Phòng Cảnh sát giao thông. Phòng Cảnh sát giao thông có trách nhiệm tiếp nhận giấy phép lái xe bị thu hồi, hủy bỏ theo quy định và báo cáo Cục Cảnh sát giao thông.
 2. Xử lý đối với trường hợp giấy phép lái xe bị thu hồi
 a) Giấy phép lái xe bị thu hồi theo quy định tại điểm a, b khoản 5 Điều 62 Luật Trật tự, an toàn giao thông đường bộ; hô sơ, trình tự thực hiện cấp lại giấy phép lái xe thực hiện theo quy định tại khoản 2, 3, 4 Điều 21 Thông tư này;
@@ -329,7 +329,7 @@ c) Bản sao giấy tờ chứng minh không còn phục vụ trong lực lượ
 3. Hồ sơ đồi giấy phép lái xe của người nước ngoài
 a) Bản dịch giấy phép lái xe nước ngoài ra tiếng Việt được bảo chứng chất lượng dịch thuật của cơ quan công chứng tại Việt Nam hoặc bản dịch của cơ quan đại diện Việt Nam ở nước ngoài mà người dịch làm việc, đóng dấu giáp lai với bản sao giấy phép lái xe;
 b) Bản sao hoặc bản sao điện tử một trong các giầy tờ: giấy chứng minh thư ngoại giao, giấy chứng minh thư công vụ, thị thực hoặc thẻ tạm trú còn thời hạn từ 90 ngày trở lên hoặc thẻ thường trú còn giá trị sử dụng (đồi với người nước ngoài).
-4. Thời gian lưu trữ hồ sơ: 02 năm đối với các hồ sơ quy định tại khoản 1, 2, 3 Điêu này.
+4. Thời gian lưu trữ hồ sơ: 02 năm đối với các hồ sơ quy định tại khoản 1, 2, 3 Điều này.
 5. Đơn vị tiếp nhận hồ sơ đổi giấy phép lái xe chịu trách nhiệm lưu trữ hồ sơ quy định tại khoản 1,2,3, 4 Điều này. Cục Cảnh sát giao thông có trách nhiệm hướng dẫn Công an các đơn vị, địa phương thực hiện việc số hóa, lưu trữ dữ liệu hô sơ quy định tại Điều này.
 Chương IV CẤP, SỬ DỤNG GIÁY PHÉP LÁI XE QUÓC TẾ
 Điều 27. Mẫu giấy phép lái xe quốc tế
@@ -370,7 +370,7 @@ d) Chia sẻ dữ liệu giám sát sát hạch về Cục Cảnh sát giao thô
 e) Đảm bảo các quy định về an toàn, an ninh thông tin, an toàn thông tin mạng theo các quy định của pháp luật hiện hành.
 2. Hệ thống thông tin về sát hạch, cấp giấy phép lái xe tại Cục Cảnh sát giao thông
 a) Quản lý tối thiều các thông tin: số giầy phép lái xe; xác nhận hoàn thành khóa đào tạo; họ, tên; số định danh cá nhân; ngày, tháng, năm sinh; quốc tịch; nơi cư trú; cơ sở đào tạo lái xe; hạng xe đào tạo; khoá đào tạo; ngày đạt kết quả sát hạch; cơ quan sát hạch; địa điểm tổ chức sát hạch (trung tâm sát hạch lái xe hoặc sân tập lái dùng để sát hạch); ngày cấp, đồi, cấp lại giấy phép lái xe; cơ quan cấp, đổi, cấp lại giấy phép lái xe; hạng giấy phép lái xe; ngày hết hạn; số phôi giấy phép lái xe;
-b) Có khả năng tiếp nhận các thông tin tại điểm a khoản này từ hệ thống thông tin giấy phép lái xe tại Phòng Cảnh sát giao thông: tra cứu thông tin giấy phép lái xe, thực hiện các nghiệp vụ về sát hạch cấp giấy phép lái xe trên trang thông tin điện tử; lưu trữ chính xác, đầy đủ các thông tin được quản lý;
+b) Có khả năng tiếp nhận các thông tin tại điểm a khoản này từ hệ thống thông tin giấy phép lái xe tại Phòng Cảnh sát giao thông; tra cứu thông tin giấy phép lái xe, thực hiện các nghiệp vụ về sát hạch cấp giấy phép lái xe trên trang thông tin điện tử; lưu trữ chính xác, đầy đủ các thông tin được quản lý;
 c) Có chức năng cấp giấy phép lái xe quốc tế theo quy định tại khoản 1 và khoản 2 Điều 29 Thông tư này; thu hồi giấy phép lái xe;
 d) Có khả năng kết nối, chia sẻ dữ liệu với Cổng Dịch vụ công quốc gia, ứng dụng định danh Quốc gia, các ứng dụng của lực lượng Công an nhân dân theo quy định và các hệ thống thông tin liên quan khác để thực hiện các thủ tục hành chính liên quan đến quản lý giây phép lái xe và giấy phép lái xe quốc tế;
 đ) Đảm bảo các quy định về an toàn, an ninh thông tin, an toàn thông tin mạng theo các quy định của pháp luật hiện hành.
@@ -391,7 +391,7 @@ d) Có khả năng lưu trữ chính xác, đầy đủ các thông tin được
 Điều 32. Nguyên tắc và hình thức khai thác dữ liệu trên hệ thống thông tin về sát hạch, cấp giấy phép lái xe
 1. Nguyên tắc khai thác
 a) Việc khai thác dữ liệu sát hạch, cấp giấy phép lái xe thực hiện theo quy định của pháp luật vê công nghệ thông tin và an toàn thông tin mạng;
-b) Cơ quan quản lý hệ thống thông tin giấy phép lái xe quy định tại Điều 36, Điêu 37 Thông tư này và Công an cập xã có trách nhiệm bảo vệ thông tin, dữ liệu cá nhân trong cơ sở dữ liệu giây phép lái xe trên môi trường mạng theo quy định của pháp luật về công nghệ thông tin;
+b) Cơ quan quản lý hệ thống thông tin giấy phép lái xe quy định tại Điều 36, Điều 37 Thông tư này và Công an cập xã có trách nhiệm bảo vệ thông tin, dữ liệu cá nhân trong cơ sở dữ liệu giây phép lái xe trên môi trường mạng theo quy định của pháp luật về công nghệ thông tin;
 c) Các dịch vụ khai thác thông tin dữ liệu giấy phép lái xe được cung cấp cho cơ quan, tô chức, cá nhân trên môi trường mạng theo quy định của pháp luật về công nghệ thông tin và an toàn thông tin mạng.
 2. Hình thức khai thác
 a) Khai thác trực tiếp: cơ quan, tổ chức, cá nhân được khai thác dữ liệu giấy phép lái xe trực tiếp từ trang thông tin điện tử giấy phép lái xe theo quy định về cấp độ bảo mật và phân quyền sử dụng, khai thác dữ liệu giấy phép lái xe;
@@ -479,10 +479,10 @@ g) Truyền, chia sẻ dữ liệu giám sát sát hạch đến Phòng Cảnh s
 a) Đầu tư, bảo trì, nâng cấp trang thiết bị phần cứng, phần mềm hệ thống và mạng truyền số liệu của hệ thống thông tin sát hạch lái xe đặt tại trung tâm sát hạch lái xe;
 b) Không được can thiệp, lắp đặt các thiết bị, cài đặt phằn mềm làm ảnh hưởng quá trình sát hạch hoặc làm sai lệch kết quả sát hạch lái xe.
 Điều 40. Các phụ lục kèm theo
-1. Phụ lục]: Trình tự sát hạch lái xe hạng AI và A.
+1. Phụ lục]: Trình tự sát hạch lái xe hạng A1 và A.
 2. Phụ lục II: Trình tự sát hạch lái xe hạng B1.
 3. Phụ lục II: Trình tự sát hạch lái xe các hạng B, C1,C,D1,D2và D.
-4. Phụ lục IV: Trình tự sát hạch lái xe các hạng BE, DIE, D2E, DE.
+4. Phụ lục IV: Trình tự sát hạch lái xe các hạng BE, D1E, D2E, DE.
 5. Phụ lục V: Trình tự sát hạch lái xe hạng C1E và CE.
 6. Phụ lục VI: Nhiệm vụ, quyền hạn của Hội đồng sát hạch.
 7. Phụ lục VII: Biểu mẫu chuẩn bị kỳ sát hạch lái xe.
@@ -497,9 +497,9 @@ Chương VỊ ĐIỀU KHOẢN THI HÀNH
 Điều 41. Hiệu lực thi hành
 1. Thông tư này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2026, trừ trường hợp quy định tại khoản 2, khoản 3, khoản 4, khoản 5 Điều này.
 2. Nội dung sát hạch lý thuyết, sát hạch thực hành lái xe trong hình, sát hạch thực hành lái xe trên đường quy định tại khoản 4 Điều 4 Thông tư này áp dụng từ ngày 01 tháng 3 năm 2027; nội dung bài sát hạch số 2 quy định tại khoản 4 Điều 4 và Phụ lục I ban hành kèm theo Thông tư này áp dụng từ ngày 01 tháng 01 năm 2028.
-3. Hình, thiết bị và phần mềm sát hạch tình huống giả định trên đường hạng A1, A của sân tập lái dùng đề sát hạch lái xe mô tô áp dụng từ ngày 01 tháng 01 năm 2028.
+3. Hình, thiết bị và phần mềm sát hạch tình huống giả định trên đường hạng A1, A của sân tập lái dùng để sát hạch lái xe mô tô áp dụng từ ngày 01 tháng 01 năm 2028.
 4. Cấp thẻ sát hạch viên điện tử áp dụng từ ngày 01 tháng 7 năm 2027.
-5. Nội dung về nhận diện của thí sinh qua thiết bị, phàn mềm ứng dụng định danh và xác thực điện tử quy định tại các phụ lục I, II, HI, IV, V ban hành kèm theo Thông tư này áp dụng từ ngày 01 tháng 01 năm 2027.
+5. Nội dung về nhận diện của thí sinh qua thiết bị, phần mềm ứng dụng định danh và xác thực điện tử quy định tại các phụ lục I, II, III, IV, V ban hành kèm theo Thông tư này áp dụng từ ngày 01 tháng 01 năm 2027.
 6. Thông tư số 12/2025/TT-BCA ngày 28 tháng 02 năm 2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế hết hiệu lực kể từ ngày Thông tư này có hiệu lực thi hành, trừ các trường hợp quy định tại khoản 1, khoản 2, khoản 3 Điều 4, Phụ lục II, Phụ lục III, mục A, C, mẫu số 01, 02, 03 mục D Phụ lục IV, mục A, C, mẫu số 01, 02, 03 mục D Phụ lục V, mục A, C, mẫu số 01, 02, 03 mục D Phụ lục VI ban hành kèm theo Thông tư số 12/2025/TT-BCA tiếp tục có hiệu lực thi hành đến hết ngày 28 tháng 02 năm 2027.
 Điều 42. Điều khoản chuyền tiếp
 1. Trường hợp thí sinh đạt phần sát hạch lý thuyết, thực hành lái xe trong hình, lái xe trên đường đối với sát hạch lái xe ô tô trước ngày Thông tư này có hiệu lực thì được công nhận kết quả sát hạch và được cấp giấy phép lái xe.
