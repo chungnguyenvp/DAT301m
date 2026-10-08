@@ -33,7 +33,7 @@ Một văn bản có nhiều file vì được đăng trên nhiều số Công b
 
 **Giới hạn của cách dò sửa đổi:** chỉ bắt được văn bản ghi số hiệu gốc trong tiêu đề hoặc trích yếu. Ví dụ Luật 118/2025/QH15 sửa Luật 35 và 36 nhưng không bị dò ra theo cách này. Khi xử lý phải đọc phần căn cứ và điều khoản thi hành của từng văn bản để xác nhận quan hệ sửa đổi.
 
-**Còn thiếu (không có trên Công báo, đợt sau)**
+**Còn thiếu sau đợt 1 (không có trên Công báo; đã lấy ở đợt 2)**
 | Văn bản | Nguồn dự kiến |
 |---|---|
 | TT 108/2026/TT-BCA (sát hạch, cấp GPLX) | Cổng thông tin Bộ Công an |
@@ -41,5 +41,31 @@ Một văn bản có nhiều file vì được đăng trên nhiều số Công b
 | TT 155/2025/TT-BTC (lệ phí đăng ký, cấp biển) | Cổng thông tin Bộ Tài chính |
 | TT 30/2026/TT-BXD (kiểm định xe cơ giới) | moc.gov.vn |
 | Bộ 600 câu hỏi sát hạch GPLX (2025) | Cục CSGT; bản PDF trên lawnet.vn để đối chiếu |
+
+## 2026-10-08: Đợt 2, năm văn bản không có trên Công báo
+
+**Nguồn và cách tìm**
+- Hệ thống văn bản của Cổng TTĐT Chính phủ (vanban.chinhphu.vn, file trên `datafiles.chinhphu.vn`): tra theo số ký hiệu, lấy file trong mục "Tài liệu đính kèm".
+- Bộ 600 câu hỏi: trang cũ của Cục CSGT (`csgt.vn/m/vanbanphapluat/319/...`) nay chuyển về trang chủ, không còn file. Lấy bản đăng lại trên trang Công an TP Cần Thơ (đăng 02/04/2026). Công văn 2262/CSGT-P5 lấy từ thuvienphapluat.vn vì chưa tìm thấy trên trang nhà nước.
+- Kế hoạch: `data/download_plan_batch2.csv`; nhóm duyệt, không lấy bản "signed" của TT 108/2026 (bản đó không được liệt kê trên vanban.chinhphu.vn).
+
+**Kết quả:** 6 file, 51 MB, tất cả đạt kiểm tra.
+| doc_id | Văn bản | Nguồn |
+|---|---|---|
+| tt_108_2026_bca | TT 108/2026/TT-BCA (bản đầy đủ) | vanban.chinhphu.vn |
+| tt_36_2024_byt | TT 36/2024/TT-BYT | vanban.chinhphu.vn |
+| tt_155_2025_btc | TT 155/2025/TT-BTC (bản có chữ ký số) | vanban.chinhphu.vn |
+| tt_30_2026_bxd | TT 30/2026/TT-BXD | vanban.chinhphu.vn (cùng dung lượng với bản trên moc.gov.vn) |
+| gplx_600_2025 | Bộ 600 câu hỏi sát hạch | congan.cantho.gov.vn (bản đăng lại) |
+| cv_2262_2025_csgt | Công văn 2262/CSGT-P5 | thuvienphapluat.vn (không phải nguồn nhà nước) |
+
+**Ghi chú kỹ thuật:** congan.cantho.gov.vn trả 403 khi User-Agent quá ngắn; script dùng User-Agent trình duyệt đầy đủ.
+
+**Việc cần kiểm tra khi xử lý**
+- Bộ 600 câu ban hành theo TT 12/2025/TT-BCA, mà TT 12/2025 đã bị TT 108/2026 thay thế. Phải đọc TT 108 để biết bộ câu hỏi có được thay hay không.
+- Đối chiếu bộ 600 câu bản đăng lại với Công văn 2262 (số chương, số câu, câu điểm liệt).
+
+## Tổng sau hai đợt
+34 văn bản, 93 file, 294 MB. Danh sách đầy đủ trong `data/manifest.csv`.
 
 **Lưu ý lưu trữ:** `data/raw/` không đưa lên Git (xem `.gitignore`). Tái tạo bằng `python scripts/download_raw.py` và đối chiếu sha256 trong `data/manifest.csv`.
