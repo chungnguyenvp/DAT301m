@@ -10,10 +10,10 @@ def _words(s: str) -> list[str]:
 
 
 def check_identity(doc_id: str, so_ky_hieu: str, tieu_de: str, text: str, head_chars: int = 4000) -> dict:
-    head = normalize(text[:head_chars])
-    compact = re.sub(r"\s+", "", head).upper()
-    key = re.sub(r"\s+", "", so_ky_hieu).upper()
-    found = key in compact
+    head = normalize(text[:head_chars]).upper()
+    key = re.sub(r"\s+", "", normalize(so_ky_hieu)).upper()
+    pattern = r"\s*".join(re.escape(ch) for ch in key)
+    found = re.search(rf"(?<![\w/]){pattern}(?![\w/])", head) is not None
     if normalize(tieu_de) == normalize(so_ky_hieu):
         ratio = 1.0
     else:

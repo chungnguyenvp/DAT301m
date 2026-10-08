@@ -26,3 +26,24 @@ def test_handwritten_number_missing_is_flagged():
                        "Số: /2024/TT-BYT\nTiêu chuẩn sức khỏe, việc khám sức khỏe đối với người lái xe")
     assert r["so_hieu_found"] is False
     assert r["status"] == "kiem_tra_tay"
+
+
+def test_number_inside_longer_number_is_not_found():
+    r = check_identity("tt_36_2024_byt", "36/2024/TT-BYT", "36/2024/TT-BYT", "Số: 136/2024/TT-BYT")
+    assert r["so_hieu_found"] is False
+    assert r["status"] == "kiem_tra_tay"
+
+
+def test_number_followed_by_pipe_is_found():
+    r = check_identity("tt_36_2024_byt", "36/2024/TT-BYT", "36/2024/TT-BYT", "Số: 36/2024/TT-BYT | Hà Nội")
+    assert r["so_hieu_found"] is True
+
+
+def test_number_followed_by_title_on_same_line_is_found():
+    r = check_identity("blds_2015", "91/2015/QH13", "Bộ luật dân sự", "Luật số: 91/2015/QH13 CỘNG HÒA")
+    assert r["so_hieu_found"] is True
+
+
+def test_stray_space_inside_number_is_found():
+    r = check_identity("tt_36_2024_byt", "36/2024/TT-BYT", "36/2024/TT-BYT", "Số: 36 /2024/TT-BYT")
+    assert r["so_hieu_found"] is True
