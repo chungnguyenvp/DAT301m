@@ -20,7 +20,7 @@
 - Văn bản dạng scan phải OCR: `tt_108_2026_bca`, `tt_155_2025_btc`, `tt_36_2024_byt`.
 - Không phải văn bản luật (bỏ qua trong kế hoạch này): `gplx_600_2025`, `cv_2262_2025_csgt`.
 - Chạy test: `python -m pytest -q` từ thư mục gốc repo.
-- Commit kết thúc bằng dòng `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+- Commit không ghi Claude là tác giả hay đồng tác giả: không thêm dòng `Co-Authored-By` nào vào nội dung commit.
 
 ## File Structure
 
