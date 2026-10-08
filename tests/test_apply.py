@@ -200,3 +200,38 @@ def test_amendment_dated_before_closed_record_raises():
     hl = dict(HL, nd_238_2026="2024-06-01")
     with pytest.raises(AmendmentError, match="before"):
         apply_amendments(BASE, hl, [_a(action="sua_doi", target_khoan="2", new_text="2. Phạt mới:")])
+
+
+def test_hl_rieng_overrides_document_date():
+    recs = apply_amendments(BASE, HL, [_a(action="sua_doi", target_khoan="2", hl_rieng="2027-01-01",
+                                          new_text="2. Phạt mới:")])
+    old = [r for r in recs if r["unit_id"] == "nd_168_2024:d7:k2" and r["valid_to"] is not None]
+    assert [(r["valid_from"], r["valid_to"]) for r in old] == [("2025-01-01", "2027-01-01")]
+    new = _live(recs, "nd_168_2024:d7:k2")
+    assert [(r["valid_from"], r["version_id"]) for r in new] == [
+        ("2027-01-01", "nd_168_2024:d7:k2@2027-01-01")]
+    assert _in_force(recs, "nd_168_2024:d7:k2", "2026-09-01")[0]["text"].startswith("Phạt tiền từ 400.000")
+    assert _in_force(recs, "nd_168_2024:d7:k2", "2027-01-01")[0]["text"] == "Phạt mới:"
+
+
+def test_empty_hl_rieng_keeps_document_date():
+    recs = apply_amendments(BASE, HL, [_a(action="sua_doi", target_khoan="2", hl_rieng="",
+                                          new_text="2. Phạt mới:")])
+    assert _live(recs, "nd_168_2024:d7:k2")[0]["valid_from"] == "2026-08-15"
+
+
+def test_hl_rieng_is_used_for_ordering_against_other_rows():
+    # hàng có hl_rieng muộn hơn phải áp sau hàng theo ngày văn bản, dù đứng trước trong danh sách
+    late = _a(action="sua_doi", target_khoan="2", hl_rieng="2028-01-01", new_text="2. Phạt muộn:")
+    early = _a(action="sua_doi", target_khoan="2", new_text="2. Phạt sớm:")
+    recs = apply_amendments(BASE, HL, [late, early])
+    assert [(r["text"], r["valid_from"], r["valid_to"]) for r in recs
+            if r["unit_id"] == "nd_168_2024:d7:k2" and r["valid_from"] >= "2026"] == [
+        ("Phạt sớm:", "2026-08-15", "2028-01-01"), ("Phạt muộn:", "2028-01-01", None)]
+
+
+@pytest.mark.parametrize("bad", ["01/01/2027", "2027-1-1", "2027-13-01", "next year"])
+def test_malformed_hl_rieng_is_reported(bad):
+    with pytest.raises(AmendmentError, match="hl_rieng"):
+        apply_amendments(BASE, HL, [_a(action="sua_doi", target_khoan="2", hl_rieng=bad,
+                                       new_text="2. Phạt mới:")])

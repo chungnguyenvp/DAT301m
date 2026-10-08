@@ -1,3 +1,6 @@
+import re
+from datetime import date
+
 from lawproc.structure import DIEM, DIEU, KHOAN, Unit, parse_units, unit_address
 
 SKIP_LEVELS = {"mo_dau", "ket_thuc"}
@@ -22,6 +25,22 @@ def _depth(a: dict) -> int:
 
 def _unit_level(a: dict) -> str:
     return "diem" if a["target_diem"] else "khoan" if a["target_khoan"] else "dieu"
+
+
+def _bad_date(value: str) -> bool:
+    """True nếu value không phải ngày ISO YYYY-MM-DD hợp lệ."""
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return True
+    try:
+        date.fromisoformat(value)
+    except ValueError:
+        return True
+    return False
+
+
+def _when(a: dict, hl: dict[str, str]) -> str:
+    """Ngày hiệu lực của một dòng: hl_rieng nếu có, nếu không thì ngày của văn bản sửa đổi."""
+    return (a.get("hl_rieng") or "").strip() or hl.get(a["amend_doc_id"], "")
 
 
 def _is_label(line: str) -> bool:
@@ -57,6 +76,8 @@ def apply_amendments(units: list[dict], hl: dict[str, str], amendments: list[dic
 
     A record is in force at date t iff valid_from <= t and (valid_to is None or t < valid_to).
     Future-dated amendments are recorded with future dates on purpose.
+    A row may carry an optional ISO date hl_rieng (hiệu lực riêng của điều khoản đó); when non-empty
+    it replaces hl[amend_doc_id] for that row (sorting, closing old text, valid_from of new text).
 
     Chỉ áp dòng status == "duyet". Mọi lỗi trên các dòng đã duyệt được gom lại và raise một
     AmendmentError duy nhất; khi đó không trả kết quả nào. Bỏ mo_dau và ket_thuc.
@@ -87,14 +108,17 @@ def apply_amendments(units: list[dict], hl: dict[str, str], amendments: list[dic
             bad(i, a, f"unknown action {act!r}")
         if act != "thay_the_van_ban" and not a["target_dieu"]:
             bad(i, a, "empty target_dieu")
+        own = (a.get("hl_rieng") or "").strip()
+        if own and _bad_date(own):
+            bad(i, a, f"hl_rieng {own!r} is not a valid YYYY-MM-DD date")
         if not hl.get(a["amend_doc_id"]):
             bad(i, a, f"amending doc {a['amend_doc_id']} has no effective date in hl")
         if len(problems) == n0:
             todo.append((i, a))
-    todo.sort(key=lambda t: (hl.get(t[1]["amend_doc_id"], ""), _depth(t[1]), ACTION_RANK[t[1]["action"]], t[0]))
+    todo.sort(key=lambda t: (_when(t[1], hl), _depth(t[1]), ACTION_RANK[t[1]["action"]], t[0]))
 
     for i, a in todo:
-        when = hl[a["amend_doc_id"]]
+        when = _when(a, hl)
         target, action = a["target_doc_id"], a["action"]
         if action == "thay_the_van_ban":
             def whole_doc(r: dict) -> bool:
