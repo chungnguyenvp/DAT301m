@@ -10,10 +10,12 @@ def _words(s: str) -> list[str]:
 
 
 def check_identity(doc_id: str, so_ky_hieu: str, tieu_de: str, text: str, head_chars: int = 4000) -> dict:
+    # Văn bản hợp nhất ghi số "Số: NN/VBHN-VPQH" ở khối xác thực cuối văn bản nên xét cả đầu lẫn đuôi.
     head = normalize(text[:head_chars]).upper()
+    tail = normalize(text[-head_chars:]).upper() if len(text) > head_chars else ""
     key = re.sub(r"\s+", "", normalize(so_ky_hieu)).upper()
     pattern = r"\s*".join(re.escape(ch) for ch in key)
-    found = re.search(rf"(?<![\w/]){pattern}(?![\w/])", head) is not None
+    found = any(re.search(rf"(?<![\w/]){pattern}(?![\w/])", part) for part in (head, tail) if part)
     if normalize(tieu_de) == normalize(so_ky_hieu):
         ratio = 1.0
     else:

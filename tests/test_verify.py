@@ -47,3 +47,10 @@ def test_number_followed_by_title_on_same_line_is_found():
 def test_stray_space_inside_number_is_found():
     r = check_identity("tt_36_2024_byt", "36/2024/TT-BYT", "36/2024/TT-BYT", "Số: 36 /2024/TT-BYT")
     assert r["so_hieu_found"] is True
+
+
+def test_consolidated_number_in_closing_authentication_block_is_found():
+    text = "LUẬT XỬ LÝ VI PHẠM HÀNH CHÍNH\n" + "Điều 1. Nội dung\n" * 800 + "VĂN PHÒNG QUỐC HỘI Số: 63/VBHN-VPQH | XÁC THỰC VĂN BẢN HỢP NHẤT"
+    r = check_identity("vbhn_63_2025_xlvphc", "63/VBHN-VPQH", "63/VBHN-VPQH", text)
+    assert r["so_hieu_found"] is True
+    assert r["status"] == "ok"
