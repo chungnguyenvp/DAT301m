@@ -7,7 +7,9 @@ DIEU = re.compile(r"^Điều\s+(\d+[a-zđ]?)\.\s*(.*)$")
 KHOAN = re.compile(r"^(\d+[a-zđ]?)\.\s+(.*)$")
 DIEM = re.compile(r"^([a-zđ]{1,2})\)\s+(.*)$")
 PHULUC = re.compile(r"^(?:PHỤ LỤC|Phụ lục)\b")
-KET_THUC = re.compile(r"^Nơi nhận")
+KET_THUC = re.compile(r"^Nơi nhận\s*:")
+STRUCTURAL = (DIEU, KHOAN, DIEM, CHUONG, MUC, PHULUC, KET_THUC)
+MAX_QUOTED_RUN = 200  # dòng trích dẫn liên tiếp tối đa trước khi coi dấu “ là chưa đóng
 
 
 @dataclass
@@ -42,15 +44,20 @@ def _append(unit: "Unit | None", line: str) -> None:
         unit.text = f"{unit.text}\n{line}" if unit.text else line
 
 
+def _is_structural(line: str) -> bool:
+    return any(p.match(line) for p in STRUCTURAL)
+
+
 def parse_units(doc_id: str, lines: list[str], dieu: str | None = None, khoan: str | None = None) -> list[Unit]:
     fragment = dieu is not None
     units: list[Unit] = []
     seen: dict[str, int] = {}
     chuong = muc = None
-    pending = None  # "chuong" | "muc": dòng kế tiếp là tên Chương/Mục
+    heading = None  # "chuong" | "muc": đang đọc tên Chương/Mục vừa gặp
     in_annex = False
     annex_n = 0
     depth = 0
+    quote_run = 0
     seen_dieu = fragment
     cur: Unit | None = None
 
@@ -69,38 +76,46 @@ def parse_units(doc_id: str, lines: list[str], dieu: str | None = None, khoan: s
         line = raw.strip()
         if not line:
             continue
-        quoted = depth > 0 or line.startswith(("“", "\""))
+        if depth > 0 and KET_THUC.match(line):
+            depth = 0  # khối kết thúc không thể nằm trong dấu “ chưa đóng
+        if depth > 0 or line.startswith(("“", "\"")):
+            quote_run += 1
+            if quote_run <= MAX_QUOTED_RUN:
+                depth = max(0, depth + line.count("“") - line.count("”"))
+                _append(cur, line)
+                continue
+            depth = 0  # dấu “ chưa đóng: xử lý dòng này như văn bản thường
+        quote_run = 0
         depth = max(0, depth + line.count("“") - line.count("”"))
-        if quoted:
-            _append(cur, line)
-            continue
-        if not fragment and KET_THUC.match(line):
+        if not fragment and not in_annex and KET_THUC.match(line):
             cur = add(Unit(f"{doc_id}:ket_thuc", doc_id, "ket_thuc", text=line, line_start=i))
+            heading = None
             continue
         if seen_dieu and not fragment and PHULUC.match(line) and len(line) < 150:
             in_annex = True
             annex_n += 1
             cur = add(Unit(f"{doc_id}:pl{annex_n}", doc_id, "phu_luc", title=line, line_start=i))
+            heading = None
             continue
         if in_annex or (cur is not None and cur.level == "ket_thuc"):
             _append(cur, line)
             continue
-        if pending:
-            if pending == "chuong":
+        if heading is not None and not _is_structural(line):
+            if heading == "chuong":
                 chuong = f"{chuong} {line}"
             else:
                 muc = f"{muc} {line}"
-            pending = None
             continue
+        heading = None
         if m := CHUONG.match(line):
             chuong, muc = m.group(1), None
-            pending = None if m.group(2) else "chuong"
+            heading = "chuong"
             if m.group(2):
                 chuong = f"{chuong} {m.group(2)}"
             continue
         if m := MUC.match(line):
             muc = m.group(1)
-            pending = None if m.group(2) else "muc"
+            heading = "muc"
             if m.group(2):
                 muc = f"{muc} {m.group(2)}"
             continue

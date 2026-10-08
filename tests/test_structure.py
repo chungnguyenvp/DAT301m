@@ -68,3 +68,44 @@ def test_fragment_mode_uses_given_context():
 def test_duplicate_ids_get_suffix():
     ids = [u.unit_id for u in parse_units("x", ["Điều 1. A", "Điều 1. A lặp"])]
     assert ids == ["x:mo_dau", "x:d1", "x:d1#2"]
+
+
+def test_chuong_then_muc_without_titles_does_not_swallow_article():
+    units = {u.unit_id: u for u in parse_units("x", ["Điều 1. A", "Chương I", "Mục 1", "Điều 2. B"])}
+    assert "x:d2" in units
+    assert units["x:d2"].chuong == "I"
+    assert units["x:d2"].muc == "1"
+
+
+def test_wrapped_chuong_title_is_joined_and_does_not_leak():
+    lines = ["Điều 1. A", "1. Nội dung.", "Chương II", "QUY ĐỊNH VỀ XỬ PHẠT", "HÀNH VI VI PHẠM", "Điều 2. B"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert units["x:d2"].chuong == "II QUY ĐỊNH VỀ XỬ PHẠT HÀNH VI VI PHẠM"
+    assert units["x:d1:k1"].text == "Nội dung."
+
+
+def test_nơi_nhận_inline_text_does_not_close_document():
+    lines = ["Điều 1. A", "1. Thủ tục:", "Nơi nhận hồ sơ: Cục", "Điều 2. B", "1. Khoản"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert "x:d2" in units
+    assert "x:d2:k1" in units
+    assert not any(u.level == "ket_thuc" for u in units.values())
+
+
+def test_nơi_nhận_inside_annex_does_not_open_closing_block():
+    lines = ["Điều 1. A", "PHỤ LỤC I", "Nơi nhận: mẫu", "1. Mẫu"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert not any(u.level == "ket_thuc" for u in units.values())
+    assert units["x:pl1"].text == "Nơi nhận: mẫu\n1. Mẫu"
+
+
+def test_unclosed_quote_is_resynced_by_closing_block():
+    lines = ["Điều 1. Tên có “ngoặc", "1. Khoản", "Nơi nhận: | TM. CHÍNH PHỦ"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert units["x:ket_thuc"].level == "ket_thuc"
+
+
+def test_unclosed_quote_is_resynced_after_max_quoted_run():
+    lines = ["Điều 1. Tên có “ngoặc"] + [f"Dòng {i}" for i in range(201)] + ["Điều 2. B"]
+    ids = {u.unit_id for u in parse_units("x", lines)}
+    assert "x:d2" in ids
