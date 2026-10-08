@@ -12,15 +12,22 @@ BANNERS = {
 }
 XEM_TIEP = re.compile(r"^\(\s*Xem tiếp Công báo số[^)]*\)\.?$", re.IGNORECASE)
 TIEP_THEO = re.compile(r"^\(\s*Tiếp theo Công báo số\s*(\d+)", re.IGNORECASE)
+# Tiêu đề phụ lục: "PHỤ LỤC", "PHỤ LỤC I", "Phụ lục số 02", "PHỤ LỤC LHI (Ban hành ...)". Câu thân bài mở đầu bằng
+# "Phụ lục I ban hành kèm theo ..." (chữ thường sau số hiệu) không phải tiêu đề.
+PHULUC_HEADING = re.compile(
+    r"^(?:PHỤ LỤC|Phụ lục)\b(?:\s+(?:SỐ|[Ss]ố))?"
+    r"(?:$|\s+(?:[A-ZĐ]{1,6}|\d+[A-Za-zđ]?)\b\s*(?:$|[(:.\-–—/]|[A-ZĐ]))"
+)
 STRUCT_START = re.compile(
-    r"^(?:Phần|PHẦN|Chương|CHƯƠNG|Mục|MỤC|PHỤ LỤC|Phụ lục|Điều\s+\d+|\d+[a-zđ]?\.\s|[a-zđ]{1,2}\)\s|[“\"])"
+    r"^(?:Phần|PHẦN|Chương|CHƯƠNG|Mục|MỤC|Điều\s+\d+|\d+[a-zđ]?\.\s|[a-zđ]{1,2}\)\s|[“\"])"
 )
 END_PUNCT = (".", ":", ";", "!", "?", "”", "\"", ")")
+DIEU_HEADING = re.compile(r"^Điều\s+\d+[a-zđ]?\.")
 
 
 def normalize(s: str) -> str:
     s = unicodedata.normalize("NFC", s)
-    s = s.replace(" ", " ").replace("Р", "P").replace("р", "p")
+    s = s.replace(" ", " ").replace("Р", "P").replace("р", "p").replace("Ð", "Đ").replace("ð", "đ")
     return re.sub(r"[ \t]+", " ", s).strip()
 
 
@@ -50,7 +57,9 @@ def join_wrapped(lines: list[str]) -> list[str]:
     for line in (normalize(x) for x in lines):
         if not line:
             continue
-        if out and not STRUCT_START.match(line) and not out[-1].endswith(END_PUNCT):
+        if out and not STRUCT_START.match(line) and not PHULUC_HEADING.match(line) and not out[-1].endswith(END_PUNCT) and not (
+            DIEU_HEADING.match(out[-1]) and not line[0].islower()  # tiêu đề Điều chưa chấm câu + đoạn thân bài viết hoa
+        ):
             out[-1] = f"{out[-1]} {line}"
         else:
             out.append(line)

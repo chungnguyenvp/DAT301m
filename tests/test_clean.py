@@ -49,3 +49,31 @@ def test_join_wrapped_joins_broken_lines_but_not_structure():
         "a) Không chấp hành hiệu lệnh;",
         "b) Không có tín hiệu trước khi vượt.",
     ]
+
+
+def test_join_wrapped_does_not_glue_body_paragraph_onto_article_heading():
+    lines = [
+        "Điều 5. Căn cứ xác lập quyền dân sự",
+        "Quyền dân sự được xác lập từ các căn cứ sau đây:",
+        "Điều 6. Nghĩa vụ của người giám hộ đối với người được giám hộ chưa đủ",
+        "mười lăm tuổi",
+        "Người giám hộ có các nghĩa vụ sau đây:",
+    ]
+    assert join_wrapped(lines) == [
+        "Điều 5. Căn cứ xác lập quyền dân sự",
+        "Quyền dân sự được xác lập từ các căn cứ sau đây:",
+        "Điều 6. Nghĩa vụ của người giám hộ đối với người được giám hộ chưa đủ mười lăm tuổi",
+        "Người giám hộ có các nghĩa vụ sau đây:",
+    ]
+
+
+def test_join_wrapped_joins_sentence_starting_with_phu_luc_but_not_annex_heading():
+    lines = ["4. Việc khám sức khỏe theo mẫu tại", "Phụ lục I ban hành kèm theo Thông tư này.", "PHỤ LỤC II"]
+    assert join_wrapped(lines) == [
+        "4. Việc khám sức khỏe theo mẫu tại Phụ lục I ban hành kèm theo Thông tư này.",
+        "PHỤ LỤC II",
+    ]
+
+
+def test_normalize_maps_latin_eth_to_vietnamese_d_with_stroke():
+    assert normalize("Ðiều 317. Ðối với") == "Điều 317. Đối với"
