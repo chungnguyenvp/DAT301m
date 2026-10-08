@@ -1,6 +1,6 @@
 # Báo cáo xử lý văn bản pháp luật giao thông
 
-Tài liệu này được sinh từ các file trong `data/processed/` (các con số lấy bằng lệnh, không ước lượng). Quy trình: `scripts/process_legal.py` các bước `convert` → `assemble` → `parse` → (`effective`, `amendments` chỉ để tạo bản nháp) → `apply`.
+Tài liệu này được sinh từ các file trong `data/processed/` (các con số lấy bằng lệnh, không ước lượng). Quy trình: `scripts/process_legal.py` các bước `convert` → `assemble` → `parse` → (`effective` ghi bản đề xuất vào `effective_dates_auto.csv`, `amendments` ghi `amendments_candidates.csv`; cả hai chỉ để tạo bản nháp, không ghi đè bản đã duyệt `effective_dates.csv` và `amendments_reviewed.csv`) → `apply`.
 
 ## 1. Văn bản và đơn vị
 
@@ -12,24 +12,24 @@ Tổng cộng **32 văn bản** trong kho. Theo cách trích văn bản:
 | pdf | 2 | tt_30_2026_bxd, blds_2015 |
 | ocr | 3 | tt_108_2026_bca, tt_36_2024_byt, tt_155_2025_btc |
 
-`legal_units.jsonl` có **17437 đơn vị**:
+`legal_units.jsonl` có **17439 đơn vị**:
 
 | Cấp | Số đơn vị |
 |---|---|
 | dieu | 2152 |
-| khoan | 6777 |
+| khoan | 6778 |
 | diem | 8305 |
-| phu_luc | 169 |
+| phu_luc | 170 |
 | mo_dau | 32 |
 | ket_thuc | 2 |
 
 ### Bất thường khi ghép / tách đơn vị và cách xử lý
 
 - **vbhn_135_2025_blhs**: `assembly_report.csv` báo thiếu Điều 90–107 (18 Điều). Đây là chương đã bị bãi bỏ trong văn bản hợp nhất, không phải lỗi trích; **giữ nguyên, không bổ sung**. Đây là văn bản duy nhất có Điều thiếu (1/32).
-- **tt_108_2026_bca Điều 36**: OCR đọc “3.” thành “3,” nên khoản 3 không được nhận ra và khoản 2 bị nối thêm nội dung khoản 3; các điểm của khoản 3 trùng nhãn với khoản 2 nên parser đánh hậu tố `#2` (3 đơn vị: k2:a#2, k2:b#2, k2:c#2). Không sửa trong lần này (không có trong danh sách sửa đã duyệt); **còn tồn tại**, nên sửa bằng một dòng trong `data/ocr_corrections.csv` trước khi dùng khoản 3 Điều 36.
+- **tt_108_2026_bca Điều 36**: OCR đọc “3.” thành “3,” nên khoản 3 từng không được nhận ra (khoản 2 bị nối thêm nội dung khoản 3, các điểm trùng nhãn nên có hậu tố `#2`). **Đã sửa** bằng một dòng trong `data/ocr_corrections.csv` (bổ sung sau rà soát cuối); hiện có `tt_108_2026_bca:d36:k3` và các điểm a–đ của nó, và không còn `unit_id` nào có hậu tố `#` (cả trong `legal_units.jsonl` lẫn bản có phiên bản).
 - **tt_51_2024_bgtvt_qcvn41 (QCVN 41)**: có 22 đơn vị phụ lục; phần thân quy chuẩn nằm trong một đơn vị phụ lục rất lớn (`tt_51_2024_bgtvt_qcvn41:pl13`, 125227 ký tự) và 12 đơn vị phụ lục gần như rỗng (mục lục). **Phải lọc đơn vị rỗng và tách đơn vị lớn trước khi chia chunk** cho truy hồi.
-- **30/32 văn bản không có đơn vị `ket_thuc`** (chỉ tt_155_2025_btc và tt_30_2026_bxd có). Phần chữ ký/nơi nhận thường nằm trong khoản/điểm cuối; `ket_thuc` bị bỏ khi áp sửa đổi nên không ảnh hưởng đầu ra có phiên bản.
-- Không có `unit_id` trùng trong `legal_units.jsonl`. Phụ lục của tt_155 (biểu mức thu) nằm trong đơn vị `tt_155_2025_btc:ket_thuc` vì parser không tách được `phu_luc` ở đó.
+- **30/32 văn bản không có đơn vị `ket_thuc`** (chỉ tt_155_2025_btc và tt_30_2026_bxd có). `ket_thuc` chỉ chứa khối “Nơi nhận”/chữ ký (tt_155: 904 ký tự, tt_30: 356 ký tự), không chứa phụ lục; nó bị bỏ khi áp sửa đổi nên không ảnh hưởng đầu ra có phiên bản. Phần chữ ký/nơi nhận của các văn bản khác nằm trong khoản/điểm cuối.
+- Không có `unit_id` trùng trong `legal_units.jsonl` (17439 `unit_id` khác nhau). Phụ lục của tt_155 (biểu mức thu lệ phí) nay là đơn vị `tt_155_2025_btc:pl1` (1366 ký tự) và nằm trong đầu ra có phiên bản: dòng tiêu đề “Phụ lục BIỂU MỨC THU LỆ PHÍ …” trước đây không được nhận là tiêu đề phụ lục vì mẫu tiêu đề không nhận chữ hoa có dấu (BIỂU, MẪU), nên bảng bị nhốt trong `ket_thuc` và bị loại. Đã sửa mẫu (`PHULUC_HEADING`) và có test hồi quy.
 
 ## 2. Kiểm tra danh tính văn bản
 
@@ -37,7 +37,7 @@ Tổng cộng **32 văn bản** trong kho. Theo cách trích văn bản:
 
 ## 3. Ngày hiệu lực
 
-Ngày hiệu lực cuối cùng (`effective_dates.csv`, cột `hl_chot`, đã người duyệt xác nhận; `nguon` = nguồn của ngày đó):
+Ngày hiệu lực cuối cùng (`effective_dates.csv` do người duyệt giữ, **không bị `step_effective` ghi đè**; bản đề xuất tự động nằm ở `effective_dates_auto.csv`; `apply` chỉ đọc bản đã duyệt và báo lỗi rõ ràng nếu thiếu; cột `hl_chot`, đã người duyệt xác nhận; `nguon` = nguồn của ngày đó):
 
 | doc_id | hl_chot | nguon | ghi chú |
 |---|---|---|---|
@@ -190,12 +190,12 @@ Quy ước: nếu một dòng gồm nhiều mốc ngày mà không tách đượ
 
 | Chỉ số | Giá trị |
 |---|---|
-| Tổng bản ghi | 18407 |
-| Bản ghi có hiệu lực tại 2026-10-01 (`valid_from <= t < valid_to`) | 17022 |
+| Tổng bản ghi | 18409 |
+| Bản ghi có hiệu lực tại 2026-10-01 (`valid_from <= t < valid_to`) | 17024 |
 | Bản ghi đã đóng (`valid_to` khác rỗng) | 1381 |
-| Bản ghi mở (`valid_to` rỗng) | 17026 |
+| Bản ghi mở (`valid_to` rỗng) | 17028 |
 | Bản ghi mới do sửa đổi (`source_doc_id` ≠ `doc_id`) | 1004 |
-| Đơn vị gốc (bỏ mo_dau, ket_thuc) | 17403 |
+| Đơn vị gốc (bỏ mo_dau, ket_thuc) | 17405 |
 | Bản ghi bắt đầu sau 2026-10-01 (hl_rieng 2028/2029) | 4 |
 | Số văn bản còn đơn vị hiệu lực tại thời điểm trên | 31 |
 
@@ -217,11 +217,11 @@ Ba văn bản OCR (Tesseract, tiếng Việt): tt_108_2026_bca, tt_36_2024_byt, 
 |---|---|---|---|---|
 | tt_108_2026_bca | 10 | 511 | 16 | 3,1% |
 | tt_36_2024_byt | 10 | 240 | 28 | 11,7% |
-| tt_155_2025_btc | 10 | ~923 | ~160 | ~17% (7,5% = 43/570 nếu bỏ đơn vị `ket_thuc` chứa bảng hỏng) |
+| tt_155_2025_btc | 10 | ~923 | ~160 | ~17% (mẫu 10 đơn vị lấy trước khi bảng được tách khỏi `ket_thuc`; 7,5% = 43/570 nếu bỏ đơn vị chứa bảng hỏng) |
 
 Lỗi điển hình: nhầm dấu (ê/ế/ể, ô/ố/ổ), số 1 đọc thành I/ì/], nhãn khoản “1.” đọc thành “—.”/“I.”/“3,”, nhiễu con dấu và chữ viết tay.
 
-**Sửa lỗi có thể tái lập**: `data/ocr_corrections.csv` (79 dòng: tt_108_2026_bca 28, tt_155_2025_btc 38, tt_36_2024_byt 13). `step_assemble` áp từng dòng bằng `lawproc.corrections.apply_corrections`: mỗi chuỗi `wrong` phải xuất hiện đúng một lần, nếu không báo lỗi (sửa lỗi cũ không bị bỏ qua âm thầm). Gồm các sửa C1–C60 của người duyệt (C14, C59 gồm nhiều vị trí nên nhiều dòng), một dòng bổ sung đánh số khoản 1 Điều 4 TT 155 (“Ì.” → “1.”), và dòng thay bảng biểu mức thu lệ phí của TT 155 (đã đối chiếu ảnh trang 6 PDF) bằng bản chép tay một dòng mỗi hạng mục.
+**Sửa lỗi có thể tái lập**: `data/ocr_corrections.csv` (80 dòng: tt_108_2026_bca 29, tt_155_2025_btc 38, tt_36_2024_byt 13). `step_assemble` áp từng dòng bằng `lawproc.corrections.apply_corrections`: mỗi chuỗi `wrong` phải xuất hiện đúng một lần, nếu không báo lỗi (sửa lỗi cũ không bị bỏ qua âm thầm). Gồm các sửa C1–C60 của người duyệt (C14, C59 gồm nhiều vị trí nên nhiều dòng), hai dòng bổ sung ngoài C1–C60: đánh số khoản 1 Điều 4 TT 155 (“Ì.” → “1.”) và khoản 3 Điều 36 TT 108 (“3,” → “3.”), và dòng thay bảng biểu mức thu lệ phí của TT 155 (đã đối chiếu ảnh trang 6 PDF) bằng bản chép tay một dòng mỗi hạng mục.
 
 **Còn tồn tại:**
 
