@@ -1,12 +1,14 @@
 import re
 from dataclasses import asdict, dataclass
 
+from lawproc.clean import PHULUC_HEADING
+
 CHUONG = re.compile(r"^(?:Chương|CHƯƠNG)\s+([IVXLC]+|\d+)\b\.?\s*(.*)$")
 MUC = re.compile(r"^(?:Mục|MỤC)\s+(\d+)\b\.?\s*(.*)$")
 DIEU = re.compile(r"^Điều\s+(\d+[a-zđ]?)\.\s*(.*)$")
 KHOAN = re.compile(r"^(\d+[a-zđ]?)\.\s+(.*)$")
 DIEM = re.compile(r"^([a-zđ]{1,2})\)\s+(.*)$")
-PHULUC = re.compile(r"^(?:PHỤ LỤC|Phụ lục)\b")
+PHULUC = PHULUC_HEADING
 KET_THUC = re.compile(r"^Nơi nhận\s*:")
 STRUCTURAL = (DIEU, KHOAN, DIEM, CHUONG, MUC, PHULUC, KET_THUC)
 MAX_QUOTED_RUN = 200  # dòng trích dẫn liên tiếp tối đa trước khi coi dấu “ là chưa đóng
@@ -48,6 +50,22 @@ def _is_structural(line: str) -> bool:
     return any(p.match(line) for p in STRUCTURAL)
 
 
+def _quote_closes(lines: list[str], start: int, depth: int) -> bool:
+    """Dấu “ vừa mở (depth > 0) có được đóng trước khi gặp khối kết thúc, dòng mở trích dẫn mới hoặc hết giới hạn không?"""
+    run = 1
+    for raw in lines[start:]:
+        line = raw.strip()
+        if not line:
+            continue
+        run += 1
+        if run > MAX_QUOTED_RUN or KET_THUC.match(line) or line.startswith("“"):
+            return False
+        depth += line.count("“") - line.count("”")
+        if depth <= 0:
+            return True
+    return False
+
+
 def parse_units(doc_id: str, lines: list[str], dieu: str | None = None, khoan: str | None = None) -> list[Unit]:
     fragment = dieu is not None
     units: list[Unit] = []
@@ -81,12 +99,17 @@ def parse_units(doc_id: str, lines: list[str], dieu: str | None = None, khoan: s
         if depth > 0 or line.startswith(("“", "\"")):
             quote_run += 1
             if quote_run <= MAX_QUOTED_RUN:
-                depth = max(0, depth + line.count("“") - line.count("”"))
+                new_depth = max(0, depth + line.count("“") - line.count("”"))
+                if depth == 0 and new_depth > 0 and not _quote_closes(lines, i + 1, new_depth):
+                    new_depth = 0  # dấu “ mở nhưng không bao giờ đóng: không nuốt các dòng sau
+                depth = new_depth
                 _append(cur, line)
                 continue
             depth = 0  # dấu “ chưa đóng: xử lý dòng này như văn bản thường
         quote_run = 0
         depth = max(0, depth + line.count("“") - line.count("”"))
+        if depth > 0 and not _quote_closes(lines, i + 1, depth):
+            depth = 0  # dấu “ lạc (thường do OCR) không đóng được: coi như văn bản thường
         if not fragment and not in_annex and KET_THUC.match(line):
             cur = add(Unit(f"{doc_id}:ket_thuc", doc_id, "ket_thuc", text=line, line_start=i))
             heading = None

@@ -109,3 +109,36 @@ def test_unclosed_quote_is_resynced_after_max_quoted_run():
     lines = ["Điều 1. Tên có “ngoặc"] + [f"Dòng {i}" for i in range(201)] + ["Điều 2. B"]
     ids = {u.unit_id for u in parse_units("x", lines)}
     assert "x:d2" in ids
+
+
+def test_stray_midline_quote_does_not_swallow_following_articles():
+    lines = ["Điều 1. A", "1. Kèm theo “Thông tư này và khoản 2.", "2. Khoản hai", "Điều 2. B", "1. Khoản"]
+    ids = {u.unit_id for u in parse_units("x", lines)}
+    assert {"x:d1:k1", "x:d1:k2", "x:d2", "x:d2:k1"} <= ids
+
+
+def test_quote_without_closing_mark_ends_at_next_quote_line():
+    lines = ["Điều 1. Sửa đổi", "“2. Nội dung thiếu dấu đóng", "tiếp theo", "“4. Nội dung khác”;", "Điều 2. Hiệu lực"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert "x:d2" in units
+    assert "tiếp theo" in units["x:d1"].text
+
+
+def test_long_balanced_quote_is_still_one_block():
+    lines = ["Điều 1. Sửa đổi", "1. Sửa đổi như sau:", "“Điều 5. Mới", "1. Khoản mới", "a) Điểm mới", "2. Khoản hai.”", "Điều 2. Hiệu lực"]
+    ids = {u.unit_id for u in parse_units("x", lines)}
+    assert "x:d5" not in ids and "x:d2" in ids
+
+
+def test_sentence_starting_with_phu_luc_is_not_an_annex_heading():
+    lines = ["Điều 1. A", "4. Việc khám sức khỏe theo mẫu tại", "Phụ lục I ban hành kèm theo Thông tư này để khám sức khỏe.", "Điều 2. B"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert "x:pl1" not in units and "x:d2" in units
+    assert "Phụ lục I ban hành" in units["x:d1:k4"].text
+
+
+def test_annex_heading_variants_open_an_annex():
+    for head in ["PHỤ LỤC", "PHỤ LỤC I", "Phụ lục số 02", "PHỤ LỤC LHI (Ban hành kèm theo Thông tư số 1/2026/TT-BCA)",
+                 "Phụ lục I: Mẫu giấy", "PHỤ LỤC II TIÊU CHUẨN"]:
+        units = {u.unit_id for u in parse_units("x", ["Điều 1. A", head, "nội dung"])}
+        assert "x:pl1" in units, head
