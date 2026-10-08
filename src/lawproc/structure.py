@@ -11,6 +11,9 @@ DIEM = re.compile(r"^([a-zđ]{1,2})\)\s+(.*)$")
 PHULUC = PHULUC_HEADING
 KET_THUC = re.compile(r"^Nơi nhận\s*:")
 STRUCTURAL = (DIEU, KHOAN, DIEM, CHUONG, MUC, PHULUC, KET_THUC)
+MAU_FORM = re.compile(r"^Mẫu\s+(?:số\s+)?[A-ZĐ0-9]")
+BAN_HANH_KEM = "ban hành kèm theo"
+ANNEX_HEADING_MAX = 250  # tiêu đề phụ lục/biểu mẫu có thể dài do OCR/docx nối tiêu đề hoặc lặp văn bản hộp văn bản
 MAX_QUOTED_RUN = 200  # dòng trích dẫn liên tiếp tối đa trước khi coi dấu “ là chưa đóng
 
 
@@ -48,6 +51,17 @@ def _append(unit: "Unit | None", line: str) -> None:
 
 def _is_structural(line: str) -> bool:
     return any(p.match(line) for p in STRUCTURAL)
+
+
+def _is_form_heading(lines: list[str], i: int) -> bool:
+    """Dòng "Mẫu ĐKX01 …" ngắn, tự nó hoặc dòng kế tiếp có "ban hành kèm theo": đầu một biểu mẫu phụ lục không có chữ PHỤ LỤC."""
+    line = lines[i].strip()
+    if len(line) >= ANNEX_HEADING_MAX or not MAU_FORM.match(line):
+        return False
+    if BAN_HANH_KEM in line.lower():
+        return not line.endswith((".", ";"))  # câu thân bài "Mẫu số 01 ban hành kèm theo Thông tư này." không phải tiêu đề
+    nxt = next((x.strip() for x in lines[i + 1:] if x.strip()), "")
+    return BAN_HANH_KEM in nxt.lower() and len(nxt) < 200
 
 
 def _quote_closes(lines: list[str], start: int, depth: int) -> bool:
@@ -114,7 +128,9 @@ def parse_units(doc_id: str, lines: list[str], dieu: str | None = None, khoan: s
             cur = add(Unit(f"{doc_id}:ket_thuc", doc_id, "ket_thuc", text=line, line_start=i))
             heading = None
             continue
-        if seen_dieu and not fragment and PHULUC.match(line) and len(line) < 150:
+        if seen_dieu and not fragment and (
+            (PHULUC.match(line) and len(line) < ANNEX_HEADING_MAX) or _is_form_heading(lines, i)
+        ):
             in_annex = True
             annex_n += 1
             cur = add(Unit(f"{doc_id}:pl{annex_n}", doc_id, "phu_luc", title=line, line_start=i))

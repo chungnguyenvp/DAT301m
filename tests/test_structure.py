@@ -142,3 +142,46 @@ def test_annex_heading_variants_open_an_annex():
                  "Phụ lục I: Mẫu giấy", "PHỤ LỤC II TIÊU CHUẨN"]:
         units = {u.unit_id for u in parse_units("x", ["Điều 1. A", head, "nội dung"])}
         assert "x:pl1" in units, head
+
+
+def test_mau_form_with_ban_hanh_kem_theo_opens_annex_same_line():
+    lines = ["Điều 40. Hiệu lực", "1. Có hiệu lực.", "Mẫu ĐKX01 Ban hành kèm theo Thông tư số 79/2024/TT-BCA ngày 15/11/2024",
+             "Điều 1. Thu hồi chứng nhận đăng ký xe", "1. Họ và tên"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert units["x:pl1"].level == "phu_luc"
+    assert "x:d1" not in units and "x:d1:k1" not in units
+    assert "Điều 1. Thu hồi" in units["x:pl1"].text
+
+
+def test_mau_form_with_ban_hanh_kem_theo_on_next_line_opens_annex():
+    lines = ["Điều 40. Hiệu lực", "Mẫu ĐKX01", "(Ban hành kèm theo Thông tư số 79/2024/TT-BCA)", "Điều 2. Mẫu", "Nơi nhận: A"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert "x:pl1" in units and "x:d2" not in units
+    assert not any(u.level == "ket_thuc" for u in units.values())
+
+
+def test_mau_reference_in_body_text_stays_body():
+    lines = ["Điều 3. Hồ sơ", "Mẫu đơn theo quy định tại khoản 2 Điều này", "Mẫu số 01 ban hành kèm theo Thông tư này.",
+             "Điều 4. B"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert not any(u.level == "phu_luc" for u in units.values())
+    assert "x:d4" in units
+
+
+def test_mau_before_first_dieu_is_not_annex():
+    lines = ["Mẫu ĐKX01 Ban hành kèm theo Thông tư số 1", "Điều 1. A"]
+    assert not any(u.level == "phu_luc" for u in parse_units("x", lines))
+
+
+def test_annex_heading_joined_with_its_title_by_ocr_still_opens_annex():
+    head = "PHỤ LỤC II MẪU GIẤY KHÁM SỨC KHỎE CỦA NGƯỜI LÁI XE, NGƯỜI ĐIỀU KHIỂN XE MÁY CHUYÊN DÙNG " + "TÊN CƠ QUAN " * 8
+    assert 150 < len(head) < 250
+    units = {u.unit_id: u for u in parse_units("x", ["Điều 1. A", "1. Khoản", head, "1. Họ và tên", "1. Họ và tên"])}
+    assert "x:pl1" in units and "x:d1:k1#2" not in units
+
+
+def test_mau_form_heading_duplicated_by_docx_text_box_opens_annex():
+    head = "Mẫu KĐ23a ban hành kèm theo Thông tư số 37/2026/TT-BCA ngày 24/4/2026 của Bộ Công an" * 2
+    assert 150 < len(head) < 250
+    units = {u.unit_id for u in parse_units("x", ["Điều 1. A", "2. Khoản", head, "2. Mặt sau"])}
+    assert "x:pl1" in units and "x:d1:k2#2" not in units
