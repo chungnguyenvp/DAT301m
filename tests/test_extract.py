@@ -27,6 +27,21 @@ def test_docx_lines_keeps_paragraph_and_table_order(tmp_path):
     ]
 
 
+def test_docx_lines_keeps_breaks_and_tabs_as_spaces(tmp_path):
+    d = docx.Document()
+    p1 = d.add_paragraph()
+    r1 = p1.add_run("VIỆT NAM")
+    r1.add_break()
+    p1.add_run("Độc lập")
+    p2 = d.add_paragraph()
+    r2 = p2.add_run("Số:")
+    r2.add_tab()
+    p2.add_run("168/2024")
+    p = tmp_path / "b.docx"
+    d.save(p)
+    assert docx_lines(p) == ["VIỆT NAM Độc lập", "Số: 168/2024"]
+
+
 def _pdf_with_lines(path, lines):
     doc = pymupdf.open()
     page = doc.new_page()

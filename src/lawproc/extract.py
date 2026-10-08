@@ -1,3 +1,4 @@
+import re
 import subprocess
 import tempfile
 from pathlib import Path
@@ -9,8 +10,14 @@ from docx.oxml.ns import qn
 from lawproc import config
 
 
+_SPACE_TAGS = {qn("w:br"), qn("w:cr"), qn("w:tab")}
+
+
 def _text_of(el) -> str:
-    return "".join(n.text or "" for n in el.iter(qn("w:t"))).strip()
+    parts: list[str] = []
+    for n in el.iter(qn("w:t"), *_SPACE_TAGS):
+        parts.append(n.text or "" if n.tag == qn("w:t") else " ")
+    return re.sub(r"[ \t\r\n]+", " ", "".join(parts)).strip()
 
 
 def docx_lines(path: Path) -> list[str]:
