@@ -228,6 +228,8 @@ Ký hiệu ⚠️: số hiệu hoặc phạm vi phải xác minh khi thu thập.
 
 Với mỗi văn bản, xem mục văn bản liên quan trên vbpl.vn để phát hiện văn bản sửa đổi hoặc thay thế chưa có trong danh sách.
 
+Danh sách trên là kế hoạch ban đầu. Danh sách thực tế sau khi thu thập nằm ở `data/manifest.csv`; các văn bản phát hiện thêm (NĐ 241/2026, NĐ 218/2026, TT 108/2026/TT-BCA, TT 51/2025/TT-BCA, NĐ 160/2024) và văn bản còn thiếu ghi trong `data/COLLECTION_LOG.md`.
+
 ### 5.3 Thu thập và lưu dữ liệu thô
 - Tải thủ công (hoặc agent tải sau khi người dùng duyệt danh sách file, nguồn, dung lượng). Ưu tiên `.docx`, không có thì `.pdf`; có cả hai thì giữ cả hai.
 - Kiểm tra mỗi file: đúng số hiệu; là bản chính thức (không có số hiệu hoặc ngày bỏ trống, không có chữ "DỰ THẢO"); tình trạng hiệu lực; toàn văn đủ phụ lục; ghi văn bản sửa đổi và bị sửa đổi.
@@ -376,11 +378,10 @@ Bỏ BM25; bỏ vector; bỏ reranker; bỏ lọc hiệu lực; cắt theo Đi�
 
 ## 11. Quyết định đã chốt và câu hỏi còn mở
 
-**Đã chốt:** người dùng chính là người dân, phụ là người học GPLX; phạm vi mở rộng 25–30 văn bản; ngày chốt T = 01/10/2026; yêu cầu chính là luật hiện hành, mở rộng hỏi theo mốc từ 2025; giữ bản cũ và mới; không thu thập câu hỏi người dân, thay bằng biến thể đời thường; PostgreSQL + pgvector; Qwen3.5-9B làm chính, bản nhỏ làm phụ; fine-tune trên Kaggle; demo cục bộ; repo mới tại `DAT301_NEW/traffic-law-qa`.
+**Đã chốt:** người dùng chính là người dân, phụ là người học GPLX; phạm vi mở rộng 25–30 văn bản; ngày chốt T = 01/10/2026; yêu cầu chính là luật hiện hành, mở rộng hỏi theo mốc từ 2025; giữ bản cũ và mới; không thu thập câu hỏi người dân, thay bằng biến thể đời thường; PostgreSQL + pgvector; Qwen3.5-9B làm chính, bản nhỏ làm phụ; fine-tune trên Kaggle; demo cục bộ; repo mới tại `DAT301_NEW/traffic-law-qa`; giữ đủ RQ1–RQ4.
 
 **Còn mở:**
-1. Giữ đủ RQ1–RQ4 hay bỏ RQ4.
-2. Có làm cấu hình E và khảo sát sơ bộ (mục 1.3) không.
-3. Kích thước cụ thể của mô hình phụ (chọn khi bắt đầu fine-tune, tùy bản có trên Hugging Face và được Unsloth hỗ trợ).
-4. Số hiệu cụ thể của các mục ⚠️ trong danh sách văn bản (xác minh khi thu thập).
-5. Mẫu báo cáo của giảng viên (nếu có thì theo mẫu đó).
+1. Có làm cấu hình E và khảo sát sơ bộ (mục 1.3) không.
+2. Kích thước cụ thể của mô hình phụ (chọn khi bắt đầu fine-tune, tùy bản có trên Hugging Face và được Unsloth hỗ trợ).
+3. Số hiệu cụ thể của các mục ⚠️ trong danh sách văn bản (xác minh khi thu thập).
+4. Mẫu báo cáo của giảng viên (nếu có thì theo mẫu đó).
