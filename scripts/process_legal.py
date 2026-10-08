@@ -11,6 +11,7 @@ from lawproc.amendments import extract_instructions  # noqa: E402
 from lawproc.apply import apply_amendments  # noqa: E402
 from lawproc.assemble import article_report, assemble_doc, group_rows, pick_sources  # noqa: E402
 from lawproc.convert import convert_doc_files  # noqa: E402
+from lawproc.corrections import apply_corrections  # noqa: E402
 from lawproc.effective import decide_effective, find_effective  # noqa: E402
 from lawproc.extract import docx_lines, ocr_pdf_lines, pdf_lines  # noqa: E402
 from lawproc.structure import Unit, parse_units  # noqa: E402
@@ -20,6 +21,7 @@ DOCX_DIR = config.INTERIM / "docx"
 OCR_DIR = config.INTERIM / "ocr"
 DOCS_DIR = config.PROCESSED / "documents"
 UNITS = config.PROCESSED / "legal_units.jsonl"
+CORRECTIONS = config.DATA / "ocr_corrections.csv"
 EFFECTIVE = config.PROCESSED / "effective_dates.csv"
 CANDIDATES = config.PROCESSED / "amendments_candidates.csv"
 REVIEWED = config.PROCESSED / "amendments_reviewed.csv"
@@ -53,13 +55,30 @@ def step_convert() -> None:
     print(f"docx: {len(files)} file trong {DOCX_DIR.relative_to(config.ROOT)}")
 
 
+def load_corrections() -> dict[str, list[dict]]:
+    """Sửa lỗi OCR đã ghi nhận, nhóm theo doc_id (giữ thứ tự dòng trong file)."""
+    by_doc: dict[str, list[dict]] = {}
+    if CORRECTIONS.exists():
+        with CORRECTIONS.open(newline="", encoding="utf-8-sig") as fp:
+            for r in csv.DictReader(fp):
+                # git autocrlf co the doi LF trong o nhieu dong thanh CRLF
+                r["wrong"] = r["wrong"].replace("\r\n", "\n")
+                r["right"] = r["right"].replace("\r\n", "\n")
+                by_doc.setdefault(r["doc_id"], []).append(r)
+    return by_doc
+
+
 def step_assemble() -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     reports, idents = [], []
+    corrections = load_corrections()
     for doc_id, rows in group_rows(manifest()).items():
         chosen, method = pick_sources(rows)
         print(f"{doc_id:28} {method:5} {len(chosen)} phần")
         lines = assemble_doc(doc_id, [load_part(r, method) for r in chosen], method)
+        if doc_id in corrections:
+            lines = apply_corrections("\n".join(lines), corrections[doc_id]).split("\n")
+            print(f"{'':28} {len(corrections[doc_id])} sửa lỗi OCR")
         (DOCS_DIR / f"{doc_id}.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
         reports.append(article_report(doc_id, lines, method, len(chosen)))
         idents.append(check_identity(doc_id, rows[0]["so_ky_hieu"], rows[0]["tieu_de"], "\n".join(lines)))
