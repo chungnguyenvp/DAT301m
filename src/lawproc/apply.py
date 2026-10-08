@@ -92,6 +92,9 @@ def apply_amendments(units: list[dict], hl: dict[str, str], amendments: list[dic
         _version(dict(u, valid_from=hl.get(u["doc_id"], ""), valid_to=None, source_doc_id=u["doc_id"]))
         for u in units if u["level"] not in SKIP_LEVELS
     ]
+    for doc, value in sorted(hl.items()):
+        if value and _bad_date(value):
+            problems.append(f"hl[{doc!r}] = {value!r} is not a valid YYYY-MM-DD date")
     for doc in sorted({r["doc_id"] for r in out}):
         if not hl.get(doc):
             problems.append(f"base units of {doc}: no effective date in hl")

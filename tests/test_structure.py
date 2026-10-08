@@ -185,3 +185,26 @@ def test_mau_form_heading_duplicated_by_docx_text_box_opens_annex():
     assert 150 < len(head) < 250
     units = {u.unit_id for u in parse_units("x", ["Điều 1. A", "2. Khoản", head, "2. Mặt sau"])}
     assert "x:pl1" in units and "x:d1:k2#2" not in units
+
+
+def test_accented_capital_annex_heading_after_noi_nhan_opens_annex():
+    lines = ["Điều 1. A", "1. Nội dung", "Nơi nhận:", "- Lưu: VT.",
+             "Phụ lục BIỂU MỨC THU LỆ PHÍ ĐĂNG KÝ, CẤP BIỂN PHƯƠNG TIỆN (Kèm theo Thông tư số 155/2025/TT-BTC)",
+             "Đơn vị tính: đồng/lần/xe.", "1. Xe ô tô | 350.000"]
+    units = {u.unit_id: u for u in parse_units("x", lines)}
+    assert units["x:pl1"].level == "phu_luc"
+    assert "350.000" in units["x:pl1"].text
+    assert "350.000" not in units["x:ket_thuc"].text
+    assert "Phụ lục" not in units["x:ket_thuc"].text
+
+
+def test_accented_capital_annex_variants_open_annex():
+    for head in ["PHỤ LỤC BIỂU MẪU", "Phụ lục MẪU GIẤY KHÁM", "Phụ lục I ĐIỀU KIỆN"]:
+        units = {u.unit_id for u in parse_units("x", ["Điều 1. A", head, "nội dung"])}
+        assert "x:pl1" in units, head
+
+
+def test_chapter_title_with_comma_after_phu_luc_is_not_an_annex():
+    lines = ["Điều 1. A", "PHỤ LỤC, BIỂU MẪU, THỜI HẠN VÀ ĐIỀU KHOẢN THI HÀNH", "Điều 2. B"]
+    units = {u.unit_id for u in parse_units("x", lines)}
+    assert "x:pl1" not in units

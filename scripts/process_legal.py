@@ -22,7 +22,8 @@ OCR_DIR = config.INTERIM / "ocr"
 DOCS_DIR = config.PROCESSED / "documents"
 UNITS = config.PROCESSED / "legal_units.jsonl"
 CORRECTIONS = config.DATA / "ocr_corrections.csv"
-EFFECTIVE = config.PROCESSED / "effective_dates.csv"
+EFFECTIVE = config.PROCESSED / "effective_dates.csv"  # bản đã được người duyệt, chỉ đọc
+EFFECTIVE_AUTO = config.PROCESSED / "effective_dates_auto.csv"  # đề xuất tự động do step_effective ghi
 CANDIDATES = config.PROCESSED / "amendments_candidates.csv"
 REVIEWED = config.PROCESSED / "amendments_reviewed.csv"
 VERSIONED = config.PROCESSED / "legal_units_versioned.jsonl"
@@ -115,7 +116,7 @@ def step_effective() -> None:
                      "hl_congbao": m["ngay_hieu_luc_congbao"], "hl_van_ban": " ".join(found["dates"]),
                      "tu_dieu_hieu_luc": found["tu_dieu_hieu_luc"],
                      "trich_dan": found["trich_dan"], **dec, "ghi_chu": ""})
-    write_csv(EFFECTIVE, rows)
+    write_csv(EFFECTIVE_AUTO, rows)
 
 
 def step_amendments() -> None:
@@ -128,6 +129,9 @@ def step_amendments() -> None:
 
 
 def step_apply() -> None:
+    if not EFFECTIVE.exists():
+        sys.exit(f"Thiếu {EFFECTIVE.name}: hãy xem lại {EFFECTIVE_AUTO.name} (chạy bước effective để tạo), "
+                 f"điền hl_chot/ghi_chu rồi lưu bản đã duyệt thành {EFFECTIVE.name} trong {EFFECTIVE.parent.name}/.")
     hl = {r["doc_id"]: r["hl_chot"] for r in csv.DictReader(EFFECTIVE.open(encoding="utf-8-sig"))}
     missing = [d for d, v in hl.items() if not v]
     if missing:

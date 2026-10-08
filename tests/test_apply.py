@@ -235,3 +235,10 @@ def test_malformed_hl_rieng_is_reported(bad):
     with pytest.raises(AmendmentError, match="hl_rieng"):
         apply_amendments(BASE, HL, [_a(action="sua_doi", target_khoan="2", hl_rieng=bad,
                                        new_text="2. Phạt mới:")])
+
+
+@pytest.mark.parametrize("bad", ["2026-13-01", "2026-8-15", "15/08/2026", "2026-02-30"])
+def test_malformed_document_level_date_is_reported(bad):
+    hl = dict(HL, nd_238_2026=bad)
+    with pytest.raises(AmendmentError, match="nd_238_2026.*not a valid YYYY-MM-DD"):
+        apply_amendments(BASE, hl, [_a(action="sua_doi", target_khoan="2", new_text="2. Mới:")])

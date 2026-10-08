@@ -14,9 +14,10 @@ XEM_TIEP = re.compile(r"^\(\s*Xem tiếp Công báo số[^)]*\)\.?$", re.IGNOREC
 TIEP_THEO = re.compile(r"^\(\s*Tiếp theo Công báo số\s*(\d+)", re.IGNORECASE)
 # Tiêu đề phụ lục: "PHỤ LỤC", "PHỤ LỤC I", "Phụ lục số 02", "PHỤ LỤC LHI (Ban hành ...)". Câu thân bài mở đầu bằng
 # "Phụ lục I ban hành kèm theo ..." (chữ thường sau số hiệu) không phải tiêu đề.
+VN_UPPER = "A-ZĐÀÁẢÃẠĂẰẮẲẴẶÂẦẤẨẪẬÈÉẺẼẸÊỀẾỂỄỆÌÍỈĨỊÒÓỎÕỌÔỒỐỔỖỘƠỜỚỞỠỢÙÚỦŨỤƯỪỨỬỮỰỲÝỶỸỴ"
 PHULUC_HEADING = re.compile(
     r"^(?:PHỤ LỤC|Phụ lục)\b(?:\s+(?:SỐ|[Ss]ố))?"
-    r"(?:$|\s+(?:[A-ZĐ]{1,6}|\d+[A-Za-zđ]?)\b\s*(?:$|[(:.\-–—/]|[A-ZĐ]))"
+    rf"(?:$|\s+(?:[{VN_UPPER}]{{1,6}}|\d+[A-Za-zđ]?)\b\s*(?:$|[(:.\-–—/]|[{VN_UPPER}]))"
 )
 STRUCT_START = re.compile(
     r"^(?:Phần|PHẦN|Chương|CHƯƠNG|Mục|MỤC|Điều\s+\d+|\d+[a-zđ]?\.\s|[a-zđ]{1,2}\)\s|[“\"])"
