@@ -4,8 +4,9 @@ from pathlib import Path
 from lawproc import config
 from lawproc.clean import join_wrapped, order_parts, strip_part
 from lawproc.extract import is_scanned
+from lawproc.structure import parse_units
 
-DIEU_LINE = re.compile(r"^Điều\s+(\d+)[a-zđ]?\.")
+OCR_LEADING_BORDER = re.compile(r"^\|+\s*")  # viền bảng bị OCR đọc thành "|" đầu dòng, che mất tiêu đề "Điều N."
 
 
 def group_rows(rows: list[dict]) -> dict[str, list[dict]]:
@@ -31,11 +32,14 @@ def pick_sources(rows: list[dict]) -> tuple[list[dict], str]:
 def assemble_doc(doc_id: str, part_lines: list[list[str]], method: str) -> list[str]:
     ordered = order_parts([strip_part(p) for p in part_lines])
     lines = [x for part in ordered for x in part]
+    if method == "ocr":
+        lines = [OCR_LEADING_BORDER.sub("", x) for x in lines]
     return join_wrapped(lines) if method in ("pdf", "ocr") else lines
 
 
 def article_report(doc_id: str, lines: list[str], method: str, n_parts: int) -> dict:
-    nums = sorted({int(m.group(1)) for x in lines if (m := DIEU_LINE.match(x))})
+    # Dùng parser (nhận biết trích dẫn “…” và phụ lục) để báo cáo khớp với đơn vị thật sự được tách ra.
+    nums = sorted({int(re.match(r"\d+", u.dieu).group()) for u in parse_units(doc_id, lines) if u.level == "dieu"})
     missing = [n for n in range(nums[0], nums[-1] + 1) if n not in set(nums)] if nums else []
     return {
         "doc_id": doc_id, "method": method, "n_parts": n_parts, "n_lines": len(lines),

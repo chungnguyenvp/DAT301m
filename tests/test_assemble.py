@@ -36,3 +36,22 @@ def test_article_report_finds_gaps():
     assert rep["n_dieu"] == 3
     assert (rep["first_dieu"], rep["last_dieu"]) == (1, 4)
     assert rep["missing_dieu"] == "3"
+
+
+def test_article_report_ignores_headings_inside_multiline_quotes_and_annexes():
+    lines = [
+        "Điều 1. Sửa đổi luật khác",
+        "1. Bổ sung Điều 31a vào sau Điều 31 như sau:",
+        "“Điều 31a. Nội dung",
+        "Điều 31b. Nội dung khác”",
+        "Điều 2. Hiệu lực",
+        "PHỤ LỤC I",
+        "Điều 7. mẫu trong phụ lục",
+    ]
+    rep = article_report("x", lines, "docx", 1)
+    assert (rep["n_dieu"], rep["first_dieu"], rep["last_dieu"], rep["missing_dieu"]) == (2, 1, 2, "")
+
+
+def test_ocr_table_border_pipe_before_heading_is_removed():
+    lines = assemble_doc("x", [["Điều 2. Người nộp", "| Điều 3. Tổ chức thu lệ phí", "Điều 4. Giải thích"]], "ocr")
+    assert lines == ["Điều 2. Người nộp", "Điều 3. Tổ chức thu lệ phí", "Điều 4. Giải thích"]
