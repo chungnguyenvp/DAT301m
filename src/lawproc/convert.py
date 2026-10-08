@@ -1,3 +1,4 @@
+import gc
 import shutil
 from pathlib import Path
 
@@ -13,14 +14,23 @@ def convert_doc_files(src_dir: Path, out_dir: Path) -> list[Path]:
     if todo:
         import win32com.client
 
-        word = win32com.client.DispatchEx("Word.Application")
-        word.Visible = False
-        word.DisplayAlerts = 0
+        word = None
         try:
+            word = win32com.client.DispatchEx("Word.Application")
+            word.Visible = False
+            word.DisplayAlerts = 0
             for p in todo:
                 d = word.Documents.Open(str(p), False, True)
-                d.SaveAs2(str(out_dir / f"{p.stem}.docx"), WD_FORMAT_DOCX)
-                d.Close(False)
+                try:
+                    d.SaveAs2(str(out_dir / f"{p.stem}.docx"), WD_FORMAT_DOCX)
+                finally:
+                    d.Close(False)
+                    d = None
+            # Release COM proxies while Word is still running, so pywin32 does not
+            # try to release them against a Word process that has already exited.
+            gc.collect()
         finally:
-            word.Quit()
+            if word is not None:
+                word.Quit()
+                word = None
     return sorted(out_dir.glob("*.docx"))
