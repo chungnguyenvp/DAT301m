@@ -178,3 +178,25 @@ def test_new_units_inherit_chuong_and_muc():
     assert (new_k2["chuong"], new_k2["muc"]) == ("II XỬ PHẠT VI PHẠM", "1")
     new_k2a = _live(recs, "nd_168_2024:d7:k2a")[0]
     assert (new_k2a["chuong"], new_k2a["muc"]) == ("II XỬ PHẠT VI PHẠM", "1")
+
+
+def test_same_day_addition_survives_replacement_in_both_orders():
+    add = _a(action="bo_sung", target_khoan="2", new_text="đ) Mới;")
+    rep = _a(action="sua_doi", target_khoan="2", new_text="2. Phạt mới:")
+    for rows in ([add, rep], [rep, add]):
+        recs = apply_amendments(BASE, HL, rows)
+        assert [r["text"] for r in _live(recs, "nd_168_2024:d7:k2:đ")] == ["Mới;"]
+        assert [r["text"] for r in _live(recs, "nd_168_2024:d7:k2")] == ["Phạt mới:"]
+
+
+def test_thay_the_van_ban_without_live_unit_raises():
+    base = [u.as_dict() for u in parse_units("tt_12", ["Điều 1. A"])]
+    with pytest.raises(AmendmentError, match="no live unit in target_doc_id tt_99"):
+        apply_amendments(base, HL, [_a(amend_doc_id="tt_108", target_doc_id="tt_99", action="thay_the_van_ban",
+                                       target_dieu="")])
+
+
+def test_amendment_dated_before_closed_record_raises():
+    hl = dict(HL, nd_238_2026="2024-06-01")
+    with pytest.raises(AmendmentError, match="before"):
+        apply_amendments(BASE, hl, [_a(action="sua_doi", target_khoan="2", new_text="2. Phạt mới:")])

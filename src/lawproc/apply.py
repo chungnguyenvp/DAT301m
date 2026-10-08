@@ -3,6 +3,8 @@ from lawproc.structure import DIEM, DIEU, KHOAN, Unit, parse_units, unit_address
 SKIP_LEVELS = {"mo_dau", "ket_thuc"}
 ACTIONS = {"sua_doi", "bo_sung", "bai_bo", "thay_the_van_ban"}
 LABEL_PATTERNS = (DIEU, KHOAN, DIEM)
+# Cùng ngày: thay thế trước, bổ sung sau, để bản ghi vừa bổ sung không bị thay thế xóa mất.
+ACTION_RANK = {"thay_the_van_ban": 0, "sua_doi": 1, "bai_bo": 1, "bo_sung": 2}
 
 
 class AmendmentError(ValueError):
@@ -24,6 +26,15 @@ def _unit_level(a: dict) -> str:
 
 def _is_label(line: str) -> bool:
     return any(p.match(line) for p in LABEL_PATTERNS)
+
+
+def _early_victim(out: list[dict], match, when: str) -> str | None:
+    """Trả về mô tả lỗi nếu có bản ghi sẽ bị đóng mà đã có hiệu lực sau ngày when."""
+    for r in out:
+        if r["valid_to"] is None and match(r) and r["valid_from"] > when:
+            return (f"amendment dated {when} is before the record it would close: {r['unit_id']} "
+                    f"is valid only from {r['valid_from']}")
+    return None
 
 
 def _close(out: list[dict], match, when: str) -> None:
@@ -80,13 +91,23 @@ def apply_amendments(units: list[dict], hl: dict[str, str], amendments: list[dic
             bad(i, a, f"amending doc {a['amend_doc_id']} has no effective date in hl")
         if len(problems) == n0:
             todo.append((i, a))
-    todo.sort(key=lambda t: (hl.get(t[1]["amend_doc_id"], ""), _depth(t[1]), t[0]))
+    todo.sort(key=lambda t: (hl.get(t[1]["amend_doc_id"], ""), _depth(t[1]), ACTION_RANK[t[1]["action"]], t[0]))
 
     for i, a in todo:
         when = hl[a["amend_doc_id"]]
         target, action = a["target_doc_id"], a["action"]
         if action == "thay_the_van_ban":
-            _close(out, lambda r: r["doc_id"] == target, when)
+            def whole_doc(r: dict) -> bool:
+                return r["doc_id"] == target
+
+            if not any(whole_doc(r) and r["valid_to"] is None for r in out):
+                bad(i, a, f"no live unit in target_doc_id {target}")
+                continue
+            early = _early_victim(out, whole_doc, when)
+            if early:
+                bad(i, a, early)
+                continue
+            _close(out, whole_doc, when)
             continue
         addr = unit_address(target, a["target_dieu"], a["target_khoan"] or None, a["target_diem"] or None)
 
@@ -98,6 +119,10 @@ def apply_amendments(units: list[dict], hl: dict[str, str], amendments: list[dic
             bad(i, a, f"no live unit at {addr}")
             continue
         if action == "bai_bo":
+            early = _early_victim(out, under, when)
+            if early:
+                bad(i, a, early)
+                continue
             _close(out, under, when)
             continue
         frag = [x.strip() for x in a["new_text"].splitlines() if x.strip()]
@@ -144,6 +169,10 @@ def apply_amendments(units: list[dict], hl: dict[str, str], amendments: list[dic
             if u.muc is None:
                 u.muc = src.get("muc")
         if action == "sua_doi":
+            early = _early_victim(out, under, when)
+            if early:
+                bad(i, a, early)
+                continue
             _close(out, under, when)
         for u in parsed:
             out.append(_version(dict(u.as_dict(), valid_from=when, valid_to=None,
