@@ -19,6 +19,11 @@ Nguồn: review `feat/legal-processing` và báo cáo hiện hành [`PROCESSING_
 - **184 phiên bản giống hệt:** đã xử lý ở đợt làm sạch 2 bằng `noi_dung_doi=false`, xem `PROCESSING_REPORT.md`; bộ eval RQ3 nên xét trường này.
 - `line_start` trên bản ghi sinh từ sửa đổi là vị trí trong đoạn trích, không phải văn bản đích.
 - **Nhãn `k1)`:** đã xử lý ở đợt làm sạch 2, xem `PROCESSING_REPORT.md`.
+- **Tham chiếu điểm có chữ số trong sửa đổi tương lai:** `amendments.py` còn mẫu địa chỉ điểm chỉ nhận chữ; mở rộng để chỉ dẫn nhắm vào điểm `k1` hiện có và thêm test phân giải địa chỉ. Việc bổ sung `k1` trong tập đã duyệt hiện nay vẫn đúng.
+- **Bổ sung khoản có dấu chấm trong QCVN:** kiểm tra câu dẫn của `apply.py` chưa nhận dạng `3.2.` theo cấu hình văn bản đích; thêm mẫu riêng theo đích và test trước khi xử lý sửa đổi loại này.
+- **Phát hiện phần kết quá sớm:** chữ ký giống mẫu ở giữa văn bản có thể làm Điều sau bị đưa vào `ket_thuc`; ràng buộc với Điều cuối và thêm test hồi quy cho nguồn tương lai.
+- **Word và cấu trúc bảng tương lai:** extractor chưa bảo toàn nội dung bọc trong `w:sdt`/`w:customXml` hoặc ranh giới mạnh giữa bảng lồng và bảng ngoài. Kiểm tra corpus hiện tại không thấy mất chữ do wrapper; bổ sung xử lý hoặc từ chối rõ nguồn có wrapper khi mở rộng đầu vào.
+- **Hồi quy còn nên ghi thành test lâu dài:** khối trích dẫn nhiều dòng có dòng chữ ký đứng riêng, bảng gộp ô theo chiều dọc và tối đa một `ket_thuc` mỗi văn bản. Các phép kiểm tra độc lập với corpus hiện tại đều qua.
 - `effective_dates_auto.csv` có thể lệch `effective_dates.csv` sau khi chạy lại; cần bước so sánh.
 - Kiểm thử còn thiếu: `load_corrections` và CLI; `step_parse` nên duyệt theo manifest; `doc_id` trong sửa OCR không thuộc manifest nên báo lỗi.
 - **Cache OCR SHA-256 + dpi và stderr Tesseract:** đã xử lý ở đợt làm sạch 2, xem `PROCESSING_REPORT.md`.

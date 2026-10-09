@@ -1,6 +1,40 @@
 # Báo cáo xử lý văn bản pháp luật giao thông
 
-Tài liệu này tổng hợp đầu ra trong `data/processed/` tại `config.CUTOFF = 2026-10-01`. Số liệu hiện hành được tính từ JSONL/CSV bằng `task8_metrics.py`; các ghi nhận kiểm tra thủ công cũ được ghi rõ thời điểm mẫu. Chạy pipeline: `assemble → parse → effective → amendments → apply`. `effective` và `amendments` tạo bản đề xuất; `apply` dùng `effective_dates.csv`, `amendments_reviewed.csv`, `effective_exceptions.csv` và `annex_type_overrides.csv` đã duyệt.
+Tài liệu này tổng hợp đầu ra trong `data/processed/` tại `config.CUTOFF = 2026-10-01`. Số liệu được tính từ các JSONL/CSV trong kho; phép tính kiểm toán ban đầu lưu ở scratch `.superpowers/sdd/2026-10-09-cleanup-round2/task8_metrics.py` (không nằm trong bản theo dõi Git). Đoạn mã đọc dữ liệu ở dưới cho phép tính lại các chỉ số chính từ một checkout mới. Các ghi nhận kiểm tra thủ công cũ được ghi rõ thời điểm mẫu. Chạy pipeline: `assemble → parse → effective → amendments → apply`. `effective` và `amendments` tạo bản đề xuất; `apply` dùng `effective_dates.csv`, `amendments_reviewed.csv`, `effective_exceptions.csv` và `annex_type_overrides.csv` đã duyệt.
+
+Chạy đoạn sau từ gốc kho bằng Python 3.13 (ví dụ lưu thành tệp `.py` rồi chạy `py -3.13 <tệp>`). Số văn bản = dòng `assembly_report.csv`; đơn vị = dòng `legal_units.jsonl`; phiên bản = dòng `legal_units_versioned.jsonl`; bản ghi có hiệu lực = số bản ghi `in_force_at` trả `True`; mẫu biểu = dòng `mau_bieu` trong `annex_types.csv`; bản không đổi và chữ kém = cờ trên từng phiên bản:
+
+```python
+import csv
+import json
+import sys
+from pathlib import Path
+
+root = Path.cwd()
+sys.path.insert(0, str(root / "src"))
+from lawproc.validity import in_force_at
+
+def rows(name):
+    with (root / "data/processed" / name).open(encoding="utf-8-sig", newline="") as f:
+        return list(csv.DictReader(f))
+
+def records(name):
+    with (root / "data/processed" / name).open(encoding="utf-8") as f:
+        return [json.loads(line) for line in f]
+
+versions = records("legal_units_versioned.jsonl")
+annexes = rows("annex_types.csv")
+print({
+    "van_ban": len(rows("assembly_report.csv")),
+    "don_vi": len(records("legal_units.jsonl")),
+    "phien_ban": len(versions),
+    "hieu_luc_2026_10_01": sum(in_force_at(r, "2026-10-01")[0] for r in versions),
+    "mau_bieu": sum(r["loai_phu_luc"] == "mau_bieu" for r in annexes),
+    "noi_dung": sum(r["loai_phu_luc"] == "noi_dung" for r in annexes),
+    "khong_doi": sum(r["noi_dung_doi"] is False for r in versions),
+    "chat_luong_kem": sum(r["chat_luong"] == "kem" for r in versions),
+})
+```
 
 ## 1. Văn bản và đơn vị
 
@@ -51,6 +85,7 @@ Ngày hiệu lực cuối cùng (`effective_dates.csv` do người duyệt giữ
 | nd_39_2023 | 2023-07-01 | van_ban | Điều 25 khoản 1: "kể từ ngày 01 tháng 7 năm 2023"; khoản 2: thí điểm đấu giá biển số đến 01/7/2026. Ngày chung 2023-07-01. |
 | nd_51_2025 | 2025-03-01 | ngay_ky | Điều 2: "có hiệu lực thi hành kể từ ngày ký ban hành"; ngày ký đầu văn bản "Hà Nội, ngày 01 tháng 3 năm 2025" -> 2025-03-01. Xác nhận. |
 | nd_67_2023 | 2023-09-06 | ngay_ky | Điều 77: "có hiệu lực thi hành kể từ ngày ký ban hành"; ngày ký "Hà Nội, ngày 06 tháng 9 năm 2023" -> 2023-09-06. Xác nhận. |
+| qcvn_41_2024 | 2025-01-01 | van_ban_cha | Ban hành kèm theo TT 51/2024/TT-BGTVT; hiệu lực theo khoản 1 Điều 2 của Thông tư: 01/01/2025. |
 | tt_108_2026_bca | 2026-07-01 | khop | Điều 41 khoản 1: "từ ngày 01 tháng 7 năm 2026, trừ khoản 2, 3, 4, 5". Ngày riêng: 01/3/2027 (nội dung sát hạch khoản 4 Điều 4), 01/01/2028 (bài sát h… |
 | tt_12_2025_bca | 2025-03-01 | van_ban | Điều 38 khoản 1: "từ ngày 01 tháng 3 năm 2025". Xác nhận. |
 | tt_155_2025_btc | 2026-01-01 | congbao | Đối chiếu ảnh PDF, Điều 8 khoản 1: "Thông tư này có hiệu lực từ ngày 01 tháng 01 năm 2026" (OCR đọc nhầm "0]"). Khớp công báo 2026-01-01; ngày ký 31/… |
