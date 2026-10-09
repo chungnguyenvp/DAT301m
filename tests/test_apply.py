@@ -242,3 +242,22 @@ def test_malformed_document_level_date_is_reported(bad):
     hl = dict(HL, nd_238_2026=bad)
     with pytest.raises(AmendmentError, match="nd_238_2026.*not a valid YYYY-MM-DD"):
         apply_amendments(BASE, hl, [_a(action="sua_doi", target_khoan="2", new_text="2. Mới:")])
+
+
+def test_bo_sung_point_with_digit_label():
+    units = [
+        {"unit_id": "nd:d41", "doc_id": "nd", "level": "dieu", "chuong": None, "muc": None, "dieu": "41",
+         "khoan": None, "diem": None, "title": "Trừ điểm", "text": "", "line_start": 0},
+        {"unit_id": "nd:d41:k4", "doc_id": "nd", "level": "khoan", "chuong": None, "muc": None, "dieu": "41",
+         "khoan": "4", "diem": None, "title": "", "text": "Các hành vi sau:", "line_start": 1},
+        {"unit_id": "nd:d41:k4:k", "doc_id": "nd", "level": "diem", "chuong": None, "muc": None, "dieu": "41",
+         "khoan": "4", "diem": "k", "title": "", "text": "Điểm b khoản 3 Điều 20;", "line_start": 2},
+    ]
+    row = {"amend_doc_id": "sd", "amend_unit_id": "sd:d12:k2", "action": "bo_sung", "target_doc_id": "nd",
+           "target_dieu": "41", "target_khoan": "4", "target_diem": "", "new_label": "điểm k1",
+           "instruction": "Bổ sung điểm k1 vào sau điểm k khoản 4 Điều 41",
+           "new_text": "k1) Điểm a khoản 3 Điều 32;", "status": "duyet", "hl_rieng": "", "ghi_chu": ""}
+    recs = apply_amendments(units, {"nd": "2025-01-01", "sd": "2026-08-15"}, [row])
+    live = {r["unit_id"]: r for r in recs if r["valid_to"] is None}
+    assert live["nd:d41:k4:k1"]["text"] == "Điểm a khoản 3 Điều 32;"
+    assert live["nd:d41:k4:k"]["valid_from"] == "2025-01-01"  # điểm k không bị sửa

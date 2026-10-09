@@ -208,3 +208,10 @@ def test_chapter_title_with_comma_after_phu_luc_is_not_an_annex():
     lines = ["Điều 1. A", "PHỤ LỤC, BIỂU MẪU, THỜI HẠN VÀ ĐIỀU KHOẢN THI HÀNH", "Điều 2. B"]
     units = {u.unit_id for u in parse_units("x", lines)}
     assert "x:pl1" not in units
+
+
+def test_point_label_with_digit():
+    lines = ["Điều 41. Trừ điểm", "4. Các hành vi sau:", "k) Điểm b khoản 3 Điều 20;", "k1) Điểm a khoản 3 Điều 32;"]
+    units = {u.unit_id: u for u in parse_units("nd", lines)}
+    assert units["nd:d41:k4:k"].text == "Điểm b khoản 3 Điều 20;"
+    assert units["nd:d41:k4:k1"].text == "Điểm a khoản 3 Điều 32;"

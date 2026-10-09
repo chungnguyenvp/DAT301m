@@ -20,7 +20,7 @@ PHULUC_HEADING = re.compile(
     rf"(?:$|\s+(?:[{VN_UPPER}]{{1,6}}|\d+[A-Za-zđ]?)\b\s*(?:$|[(:.\-–—/]|[{VN_UPPER}]))"
 )
 STRUCT_START = re.compile(
-    r"^(?:Phần|PHẦN|Chương|CHƯƠNG|Mục|MỤC|Điều\s+\d+|\d+[a-zđ]?\.\s|[a-zđ]{1,2}\)\s|[“\"])"
+    r"^(?:Phần|PHẦN|Chương|CHƯƠNG|Mục|MỤC|Điều\s+\d+|\d+[a-zđ]?\.\s|[a-zđ]{1,2}\d?\)\s|[“\"])"
 )
 END_PUNCT = (".", ":", ";", "!", "?", "”", "\"", ")")
 DIEU_HEADING = re.compile(r"^Điều\s+\d+[a-zđ]?\.")
