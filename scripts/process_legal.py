@@ -59,7 +59,8 @@ def load_part(row: dict, method: str) -> list[str]:
     if method == "docx":
         return docx_lines(DOCX_DIR / f"{path.stem}.docx")
     if method == "ocr":
-        return ocr_pdf_lines(path, OCR_DIR / path.stem)
+        return ocr_pdf_lines(path, OCR_DIR / path.stem,
+                             retry_pages=config.REOCR_PAGES.get(path.stem, ()), retry_dpi=config.REOCR_DPI)
     return pdf_lines(path)
 
 

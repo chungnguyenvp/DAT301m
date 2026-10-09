@@ -73,7 +73,103 @@ def test_ocr_pdf_lines_reads_vietnamese_and_caches(tmp_path):
     cache = tmp_path / "cache"
     lines = ocr_pdf_lines(p, cache, dpi=200)
     assert any("Người nộp lệ phí" in x for x in lines)
-    assert (cache / "p0000.txt").exists()
+    assert (cache / "dpi200" / "p0000.txt").exists()
+    assert (cache / "source.sha256").read_text().strip()
+
+
+def test_ocr_cache_from_other_file_is_refused(tmp_path):
+    p = tmp_path / "scan.pdf"
+    _pdf_with_lines(p, ["Điều 2."])
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    (cache / "source.sha256").write_text("0" * 64 + "\n")
+    with pytest.raises(ValueError, match="sha256"):
+        ocr_pdf_lines(p, cache, dpi=200)
+
+
+@pytest.mark.parametrize("other,expected", [("Người nộp lệ phí", "Người nộp lệ phí"),
+                                           ("Xe ô tô", "Người nộp lệ phí"),
+                                           ("xyz xyz", "Người nộp lệ phí")])
+def test_ocr_retry_selection_and_ties(tmp_path, monkeypatch, other, expected):
+    p = tmp_path / "scan.pdf"
+    _pdf_with_lines(p, ["Điều 2."])
+    calls = []
+
+    def fake_page(page, i, cache_dir, dpi, tmp):
+        calls.append((i, dpi))
+        return "Người nộp lệ phí" if dpi == 200 else other
+
+    monkeypatch.setattr("lawproc.extract._ocr_page", fake_page)
+    assert ocr_pdf_lines(p, tmp_path / "cache", dpi=200, retry_pages=[0], retry_dpi=400) == [expected]
+    assert calls == [(0, 200), (0, 400)]
+
+
+def test_ocr_retry_pages_keep_better_text(tmp_path, monkeypatch):
+    p = tmp_path / "scan.pdf"
+    _pdf_with_lines(p, ["Điều 2."])
+    texts = {200: "la Xeôtô wW0W0W lbXxemt\n", 400: "Người nộp lệ phí\n"}
+    monkeypatch.setattr("lawproc.extract._ocr_page", lambda page, i, cache_dir, dpi, tmp: texts[dpi])
+    cache = tmp_path / "cache"
+    assert ocr_pdf_lines(p, cache, dpi=200, retry_pages=[0]) == ["Người nộp lệ phí"]
+    assert ocr_pdf_lines(p, cache, dpi=200) == ["la Xeôtô wW0W0W lbXxemt"]
+
+
+def test_ocr_empty_retry_does_not_replace_nonempty_page(tmp_path, monkeypatch):
+    p = tmp_path / "scan.pdf"
+    _pdf_with_lines(p, ["Điều 2."])
+    monkeypatch.setattr("lawproc.extract._ocr_page", lambda page, i, cache_dir, dpi, tmp:
+                        "xyz xyz" if dpi == 200 else " \n")
+    assert ocr_pdf_lines(p, tmp_path / "cache", dpi=200, retry_pages=[0]) == ["xyz xyz"]
+
+
+@pytest.mark.parametrize("pages", [[-1], [1], [0.0], [True], [0, False]])
+def test_ocr_invalid_retry_pages_are_refused(tmp_path, pages):
+    p = tmp_path / "scan.pdf"
+    _pdf_with_lines(p, ["Điều 2."])
+    with pytest.raises(ValueError, match="Trang OCR"):
+        ocr_pdf_lines(p, tmp_path / "cache", retry_pages=pages)
+
+
+@pytest.mark.parametrize("dpi", [0, -1, 200.5, True])
+def test_ocr_invalid_dpi_is_refused(tmp_path, dpi):
+    with pytest.raises(ValueError, match="DPI"):
+        ocr_pdf_lines(tmp_path / "scan.pdf", tmp_path / "cache", dpi=dpi)
+
+
+def test_ocr_unkeyed_cache_is_refused(tmp_path):
+    p = tmp_path / "scan.pdf"
+    _pdf_with_lines(p, ["Điều 2."])
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    (cache / "p0000.txt").write_text("Nguồn chưa được xác minh", encoding="utf-8")
+    with pytest.raises(ValueError, match="thiếu source.sha256"):
+        ocr_pdf_lines(p, cache)
+
+
+def test_ocr_invalid_utf8_cache_is_refused(tmp_path):
+    from lawproc.extract import _check_source
+
+    p = tmp_path / "scan.pdf"
+    _pdf_with_lines(p, ["Điều 2."])
+    cache = tmp_path / "cache"
+    _check_source(p, cache)
+    (cache / "dpi300").mkdir()
+    (cache / "dpi300" / "p0000.txt").write_bytes(b"\xff")
+    with pytest.raises(ValueError, match="UTF-8"):
+        ocr_pdf_lines(p, cache)
+
+
+def test_ocr_failure_does_not_cache_page(tmp_path, monkeypatch):
+    from types import SimpleNamespace
+
+    p = tmp_path / "scan.pdf"
+    _pdf_with_lines(p, ["Điều 2."])
+    monkeypatch.setattr("lawproc.extract.subprocess.run", lambda *args, **kwargs:
+                        SimpleNamespace(returncode=1, stderr="lỗi thử nghiệm", stdout=""))
+    cache = tmp_path / "cache"
+    with pytest.raises(RuntimeError, match="trang 0"):
+        ocr_pdf_lines(p, cache, dpi=72)
+    assert not (cache / "dpi72" / "p0000.txt").exists()
 
 
 def test_docx_lines_reads_nested_table_once(tmp_path):

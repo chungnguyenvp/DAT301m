@@ -1,4 +1,4 @@
-﻿doc_id,wrong,right,note
+doc_id,wrong,right,note
 tt_155_2025_btc,sơ m1 rơ moóc,sơ mi rơ moóc,C1
 tt_155_2025_btc,xe chở hàng bôn bánh có găn động cơ,xe chở hàng bốn bánh có gắn động cơ,C2
 tt_155_2025_btc,Phạm vi điều chính và,Phạm vi điều chỉnh và,C3
@@ -104,4 +104,30 @@ tt_108_2026_bca,"khoản 2, 3, 4 Điêu 21 Thông tư này","khoản 2, 3, 4 Đi
 tt_108_2026_bca,khoản 5 Điêu 62 Luật Trật tự,khoản 5 Điều 62 Luật Trật tự,C59 (d25:k1:a)
 tt_108_2026_bca,"khoản 1, 2, 3 Điêu này","khoản 1, 2, 3 Điều này",C59 (d26:k4)
 tt_108_2026_bca,"Điều 36, Điêu 37 Thông tư này","Điều 36, Điều 37 Thông tư này",C59 (d32:k1:b)
-tt_108_2026_bca,"3, Công tác cấp giấy phép lái xe quốc tế","3. Công tác cấp giấy phép lái xe quốc tế",bổ sung sau rà soát cuối: OCR đọc “3.” thành “3,” (d36:k3)
+tt_108_2026_bca,"3, Công tác cấp giấy phép lái xe quốc tế",3. Công tác cấp giấy phép lái xe quốc tế,"bổ sung sau rà soát cuối: OCR đọc “3.” thành “3,” (d36:k3)"
+tt_108_2026_bca,PHỤ LỤC H (,PHỤ LỤC II (,L7 số phụ lục; đối chiếu ảnh PDF
+tt_108_2026_bca,PHỤ LỤC LHI (,PHỤ LỤC III (,L7 số phụ lục; đối chiếu ảnh PDF
+tt_108_2026_bca,PHỤ LỤC VH (,PHỤ LỤC VII (,L7 số phụ lục; đối chiếu ảnh PDF
+tt_108_2026_bca,PHỤ LỤC VIH (,PHỤ LỤC VIII (,L7 số phụ lục; đối chiếu ảnh PDF
+tt_108_2026_bca,PHỤ LỤC XH (,PHỤ LỤC XII (,L7 số phụ lục; đối chiếu ảnh PDF
+tt_108_2026_bca,PHỤ LỤC XHI (,PHỤ LỤC XIII (,L7 số phụ lục; đối chiếu ảnh PDF
+tt_108_2026_bca,"9, Cấp thẻ sát hạch viên",9. Cấp thẻ sát hạch viên,L7 khoản 9 Điều 8; PDF trang 7
+tt_108_2026_bca,"9, Phụ lục IX:",9. Phụ lục IX:,L7 khoản 9 Điều 40; PDF trang 36
+tt_108_2026_bca,Chương VỊ ĐIỀU KHOẢN THI HÀNH,Chương VII ĐIỀU KHOẢN THI HÀNH,L7 Chương VII; PDF trang 36 (kế hoạch ghi nhầm VI)
+tt_108_2026_bca,3. Phụ lục II: Trình tự sát hạch,3. Phụ lục III: Trình tự sát hạch,L7 số phụ lục tại Điều 40; PDF trang 36
+tt_108_2026_bca,8. Phụ lục VIIL:,8. Phụ lục VIII:,L7 số phụ lục tại Điều 40; PDF trang 36
+tt_108_2026_bca,12. Phụ lục XH:,12. Phụ lục XII:,L7 số phụ lục tại Điều 40; PDF trang 36
+tt_108_2026_bca,13. Phụ lục XHI:,13. Phụ lục XIII:,L7 số phụ lục tại Điều 40; PDF trang 36
+tt_36_2024_byt,"» .. PHỤ LỤCI i BANG TIEU CHUAN SỨC KHOE CUA NGƯỜI LAI XE, NGƯỜI ĐIỀU KHIỂN XE MAY CHUYỀN DỤNG (Ban hành kèm theo Thông tư số 36 /2024/TT-BYT ngày] Ótháng 1 ]năm 2024 của Bộ trưởng Bộ Y tê )","PHỤ LỤC I BẢNG TIÊU CHUẨN SỨC KHỎE CỦA NGƯỜI LÁI XE, NGƯỜI ĐIỀU KHIỂN XE MÁY CHUYÊN DÙNG (Ban hành kèm theo Thông tư số 36/2024/TT-BYT ngày 16 tháng 11 năm 2024 của Bộ trưởng Bộ Y tế)",L7 phục hồi tiêu đề phụ lục I; đối chiếu ảnh PDF trang 6
+tt_36_2024_byt,^ Mẫu giấy khám sức khỏe của người lái xe ban hành,2. Mẫu giấy khám sức khỏe của người lái xe ban hành,L7 khoản 2 Điều 9; PDF trang 3
+tt_36_2024_byt,_ ..b) Trường hợp không đủ điều kiện khám chuyên khoa,b) Trường hợp không đủ điều kiện khám chuyên khoa,L7 điểm b khoản 5 Điều 9; PDF trang 4
+tt_36_2024_byt,"Trong quá trình thực hiện có khó khăn, vướng mắc, cơ quan, tổ chức, cá nhân phản ánh kịp thời vê Bộ Y tê (Cục Quản lý Khám, chữa bệnh) đê xem xét, giải quyết/À\⁄ Nơi nhận: KT. BỘ TRƯỞNG là - Uỷ ban Xã hội của Quôc hội; „“s===""'HÚ TRƯỞNG 2⁄Z - Văn phòng Chính phủ (Vụ KGVX, Công báo; ⁄ Y__. N Cổng TTĐT Chính phủ); ⁄ ⁄SštÒ 2X, 2 - Bộ Tư pháp (Cục Kiểm tra văn bản QPPL); (2<. 3 ⁄ - Các Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ; lê >>”. /5 - Bộ trưởng (đề báo cáo); và tế Ki đi - Các Thứ trưởng Bộ Y tế; NẠ Z2 - Bảo hiểm xã hội Việt Nam; \ —# x Á : An ng Ậ Ñ "" “ Văn Thuân - Uỷ ban nhân dân các tỉnh, thành phô trực thuộc Trungương: >sx.","Trong quá trình thực hiện có khó khăn, vướng mắc, cơ quan, tổ chức, cá nhân phản ánh kịp thời về Bộ Y tế (Cục Quản lý Khám, chữa bệnh) để xem xét, giải quyết./.
+Nơi nhận: KT. BỘ TRƯỞNG THỨ TRƯỞNG Trần Văn Thuấn
+- Uỷ ban Xã hội của Quốc hội;
+- Văn phòng Chính phủ (Vụ KGVX, Công báo; Cổng TTĐT Chính phủ);
+- Bộ Tư pháp (Cục Kiểm tra văn bản QPPL);
+- Các Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ;
+- Bộ trưởng (để báo cáo);
+- Các Thứ trưởng Bộ Y tế;
+- Bảo hiểm xã hội Việt Nam;
+- Uỷ ban nhân dân các tỉnh, thành phố trực thuộc Trung ương;","L7 tách Nơi nhận, bỏ nhiễu con dấu và dấu nháy nuốt phụ lục I; đối chiếu ảnh PDF trang 5"
