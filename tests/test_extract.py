@@ -74,3 +74,38 @@ def test_ocr_pdf_lines_reads_vietnamese_and_caches(tmp_path):
     lines = ocr_pdf_lines(p, cache, dpi=200)
     assert any("Người nộp lệ phí" in x for x in lines)
     assert (cache / "p0000.txt").exists()
+
+
+def test_docx_lines_reads_nested_table_once(tmp_path):
+    d = docx.Document()
+    t = d.add_table(rows=1, cols=2)
+    t.cell(0, 0).text = "Mẫu số 01"
+    inner = t.cell(0, 1).add_table(rows=1, cols=2)
+    inner.cell(0, 0).text = "Họ và tên"
+    inner.cell(0, 1).text = "Ngày sinh"
+    p = tmp_path / "n.docx"
+    d.save(p)
+    assert docx_lines(p) == ["Mẫu số 01 | Họ và tên | Ngày sinh"]
+
+
+def test_docx_lines_merged_cells_once(tmp_path):
+    d = docx.Document()
+    t = d.add_table(rows=2, cols=2)
+    t.cell(0, 0).merge(t.cell(0, 1)).text = "Tiêu đề gộp"
+    t.cell(1, 0).text = "Trái"
+    t.cell(1, 1).text = "Phải"
+    p = tmp_path / "m.docx"
+    d.save(p)
+    assert docx_lines(p) == ["Tiêu đề gộp", "Trái | Phải"]
+
+
+def test_docx_lines_cell_with_empty_paragraph_has_single_spaces(tmp_path):
+    d = docx.Document()
+    t = d.add_table(rows=1, cols=1)
+    c = t.cell(0, 0)
+    c.text = "Dòng một"
+    c.add_paragraph("")
+    c.add_paragraph("Dòng hai")
+    p = tmp_path / "s.docx"
+    d.save(p)
+    assert docx_lines(p) == ["Dòng một Dòng hai"]

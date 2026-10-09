@@ -20,6 +20,33 @@ def _text_of(el) -> str:
     return re.sub(r"[ \t\r\n]+", " ", "".join(parts)).strip()
 
 
+def _cell_text(tc) -> str:
+    """Chữ của một ô: các đoạn trực tiếp trong ô, bảng lồng được đọc đúng một lần tại chỗ."""
+    parts: list[str] = []
+    for el in tc.iterchildren():
+        if el.tag == qn("w:p"):
+            t = _text_of(el)
+            if t:
+                parts.append(t)
+        elif el.tag == qn("w:tbl"):
+            parts.extend(_table_rows(el))
+    return " ".join(parts)
+
+
+def _table_rows(tbl) -> list[str]:
+    """Mỗi hàng trực tiếp của bảng thành một dòng "ô | ô"; ô gộp chỉ có một w:tc nên không lặp."""
+    rows: list[str] = []
+    for tr in tbl.iterchildren(qn("w:tr")):
+        cells: list[str] = []
+        for tc in tr.iterchildren(qn("w:tc")):
+            c = _cell_text(tc)
+            if c and (not cells or cells[-1] != c):
+                cells.append(c)
+        if cells:
+            rows.append(" | ".join(cells))
+    return rows
+
+
 def docx_lines(path: Path) -> list[str]:
     body = docx.Document(str(path)).element.body
     out: list[str] = []
@@ -30,14 +57,7 @@ def docx_lines(path: Path) -> list[str]:
             if t:
                 out.append(t)
         elif tag == "tbl":
-            for tr in child.iter(qn("w:tr")):
-                cells: list[str] = []
-                for tc in tr.iter(qn("w:tc")):
-                    c = " ".join(_text_of(p) for p in tc.iter(qn("w:p"))).strip()
-                    if c and (not cells or cells[-1] != c):
-                        cells.append(c)
-                if cells:
-                    out.append(" | ".join(cells))
+            out.extend(_table_rows(child))
     return out
 
 

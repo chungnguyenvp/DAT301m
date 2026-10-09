@@ -532,7 +532,6 @@ Mẫu số 02 | Mẫu giấy chứng nhận giáo viên dạy thực hành lái 
 Mẫu số 01. Giấy chứng nhận giáo viên dạy thực hành lái xe
 CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 Ảnh màu 3 cm x 4 cm (chụp không quá 06 tháng), có dấu giáp lai | Căn cứ Quyết định số......../......ngày....... tháng....... năm....... của Thủ trưởng cơ quan có thẩm quyền về việc cấp giấy chứng nhận giáo viên dạy thực hành lái xe THỦ TRƯỞNG CƠ QUAN CÓ THẨM QUYỀN CHỨNG NHẬN
-Ảnh màu 3 cm x 4 cm (chụp không quá 06 tháng), có dấu giáp lai
 Ông (Bà):............................................................................................................. Ngày tháng năm sinh:.......................................................................................... Số căn cước công dân/căn cước:......................................................................... Đã hoàn thành khóa tập huấn giáo viên dạy thực hành lái xe.......... hạng.......... Từ ngày..... tháng..... năm..... đến ngày.... tháng.... năm......
 Số GCN:................................... | ..., ngày....... tháng...... năm...... THỦ TRƯỞNG CƠ QUAN CÓ THẨM QUYỀN (Ký tên, đóng dấu)
 Quy cách:
@@ -541,9 +540,8 @@ Quy cách:
 Mẫu số 02. Giấy chứng nhận giáo viên dạy thực hành lái xe điện tử
 CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 Ảnh màu 3 cm x 4 cm (chụp không quá 06 tháng), có dấu giáp lai | Căn cứ Quyết định số......./..... ngày..... tháng...... năm........ của Thủ trưởng cơ quan có thẩm quyền về việc cấp giấy chứng nhận giáo viên dạy thực hành lái xe THỦ TRƯỞNG CƠ QUAN CÓ THẨM QUYỀN CHỨNG NHẬN Mã số: ......../......
-Ảnh màu 3 cm x 4 cm (chụp không quá 06 tháng), có dấu giáp lai
 Ông (Bà):............................................................................................................. Ngày tháng năm sinh:.......................................................................................... Số căn cước công dân/căn cước:......................................................................... Đã hoàn thành khóa tập huấn giáo viên dạy thực hành lái xe........... hạng......... Từ ngày..... tháng..... năm....... đến ngày..... tháng..... năm......
-Số GCN:........................................ QR QR | ....., ngày....... tháng...... năm...... THỦ TRƯỞNG CƠ QUAN CÓ THẨM QUYỀN (Ký tên, đóng dấu)
+Số GCN:........................................ QR | ....., ngày....... tháng...... năm...... THỦ TRƯỞNG CƠ QUAN CÓ THẨM QUYỀN (Ký tên, đóng dấu)
 Quy cách:
 - Kích thước: 150 mm x 200 mm;
 - Chữ “CHỨNG NHẬN”: phông chữ Times New Roman in hoa, đậm, cỡ chữ 21.
@@ -694,7 +692,7 @@ CƠ QUAN CÓ THẨM QUYỀN | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Đ�
 Số: ……/…… | ...., ngày..... tháng..... năm.....
 GIẤY PHÉP ĐÀO TẠO LÁI XE Ô TÔ Mã số: ......./....... Căn cứ Luật Trật tự, an toàn giao thông đường bộ ngày 27 tháng 6 năm 2024; Căn cứ Nghị định số 160/2024/NĐ-CP ngày 18 tháng 12 năm 2024 của Chính phủ quy định về hoạt động đào tạo và sát hạch lái xe; Xét đề nghị của Đoàn kiểm tra được thành lập tại Quyết định số.................... ngày..... tháng..... năm..... của cơ quan có thẩm quyền về việc ..................................; Theo đề nghị của…............................................................................................. CƠ QUAN CÓ THẨM QUYỀN 1. Cấp giấy phép đào tạo lái xe ô tô cho:........................................................... 2. Địa chỉ:........................................................................................................... Điện thoại........................................ Fax:........................................................... 3. Cơ quan quản lý trực tiếp:.............................................................................. 4. Được phép đào tạo: - Hạng:............................................................................................................... - Lưu lượng:....................................................................................................... 5. Địa điểm đào tạo: - Đào tạo lý thuyết: - Đào tạo thực hành lái xe trong hình: - Đào tạo lái xe trên đường giao thông: Cơ sở đào tạo lái xe phải xuất trình Giấy phép này với cơ quan có thẩm quyền khi có yêu cầu.
 THỦ TRƯỞNG CƠ QUAN CÓ THẨM QUYỀN (Ký tên, đóng dấu)
-QR QR
+QR
 Phụ lục XII
 MẪU BÁO CÁO ĐỀ NGHỊ CẤP GIẤY PHÉP ĐÀO TẠO LÁI XE
 (Kèm theo Nghị định số 160/2024/NĐ-CP
@@ -819,7 +817,7 @@ Mẫu số 02. Giấy phép sát hạch điện tử
 CƠ QUAN CÓ THẨM QUYỀN Số: ..../….. | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ..., ngày..... tháng..... năm.....
 GIẤY PHÉP SÁT HẠCH Mã số: ....../..... Căn cứ Luật Trật tự, an toàn giao thông đường bộ ngày 27 tháng 6 năm 2024; Căn cứ Nghị định số 160/2024/NĐ-CP ngày 18 tháng 12 năm 2024 của Chính phủ quy định về hoạt động đào tạo và sát hạch lái xe; Căn cứ Quy chuẩn kỹ thuật quốc gia về trung tâm sát hạch lái xe cơ giới đường bộ (QCVN...../BGTVT) ban hành kèm theo Thông tư số.../..../TT-BGTVT ngày.... tháng..... năm..... của Bộ trưởng Bộ Giao thông vận tải; Căn cứ Biên bản kiểm tra Trung tâm sát hạch lái xe................ của Đoàn kiểm tra ngày..... tháng..... năm.....; Xét đề nghị của Trung tâm sát hạch lái xe................. tại văn bản số.............. ngày..... tháng..... năm..... về việc kiểm tra, xác nhận trung tâm sát hạch lái xe; Theo đề nghị của Trưởng phòng…............................................................................. GIÁM ĐỐC SỞ GIAO THÔNG VẬN TẢI Cấp giấy phép sát hạch cho: TRUNG TÂM SÁT HẠCH LÁI XE... 1. Địa chỉ: Điện thoại: Fax: 2. Cơ quan quản lý hoạt động trực tiếp: 3. Trung tâm sát hạch lái xe.......................... là trung tâm sát hạch loại… có đủ điều kiện sát hạch lái xe các hạng:.....B, C1........ (Có danh sách xe sát hạch kèm theo) 4. Thiết bị sát hạch: Trung tâm sát hạch lái xe phải xuất trình Giấy phép sát hạch này với cơ quan quản lý sát hạch cấp giấy phép lái xe đến tổ chức sát hạch và chịu sự kiểm tra của các cơ quan có thẩm quyền. Giấy phép sát hạch này thay thế Giấy chứng nhận số…. của cơ quan có thẩm quyền đã cấp cho Trung tâm (đối với trường hợp cấp lại Giấy phép sát hạch).
 THỦ TRƯỞNG CƠ QUAN CÓ THẨM QUYỀN (Ký tên, đóng dấu)
-QR QR
+QR
 DANH SÁCH XE SÁT HẠCH ĐƯỢC PHÉP SỬ DỤNG
 (Kèm theo Giấy phép sát hạch số…../…….. ngày ….. tháng….. năm)
 TT | Nhãn hiệu xe | Ký hiệu xe sát hạch | Biển số | Hạng xe sát hạch | Nội dung sát hạch
@@ -1020,4 +1018,4 @@ Mẫu số 02. Mẫu chấp thuận hoạt động của sân tập lái dùng �
 ỦY BAN NHÂN DÂN… SỞ GIAO THÔNG VẬN TẢI… Số: ....../... | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ..., ngày..... tháng..... năm.....
 QUYẾT ĐỊNH Mã số: ...../..... Căn cứ Luật Trật tự, an toàn giao thông đường bộ ngày 27 tháng 6 năm 2024; Căn cứ Nghị định số 160/2024/NĐ-CP ngày 18 tháng 12 năm 2024 của Chính phủ quy định về hoạt động đào tạo và sát hạch lái xe; Căn cứ tiêu chuẩn kỹ thuật sân tập lái dùng để sát hạch lái xe mô tô tại Thông tư số ...../..... /TT-BGTVT ngày.... tháng..... năm.... của Bộ trưởng Bộ Giao thông vận tải; Căn cứ Biên bản kiểm tra sân tập lái dùng để sát hạch lái xe mô tô................. của Đoàn kiểm tra ngày..... tháng..... năm.....; Xét đề nghị của cơ sở đào tạo lái xe............. tại văn bản số........ ngày..... tháng.... năm.... về việc kiểm tra, chấp thuận sân tập lái dùng để sát hạch lái xe mô tô; Theo đề nghị của Trưởng phòng ....................................................................... GIÁM ĐỐC SỞ GIAO THÔNG VẬN TẢI Chấp thuận hoạt động của sân tập lái dùng để sát hạch lái xe mô tô: 1. Địa chỉ: 2. Cơ quan quản lý hoạt động trực tiếp: 3. Sân tập lái để sát hạch lái xe mô tô thuộc cơ sở đào tạo… là sân tập lái để sát hạch lái xe mô tô loại… có đủ điều kiện sát hạch lái xe các hạng:..... (Có danh sách xe sát hạch kèm theo) 4. Thiết bị sát hạch: Cơ sở đào tạo lái xe phải xuất trình Quyết định này với cơ quan quản lý sát hạch cấp giấy phép lái xe đến tổ chức sát hạch và chịu sự kiểm tra của các cơ quan có thẩm quyền. Quyết định này thay thế Quyết định số…. của cơ quan có thẩm quyền đã cấp cho Trung tâm (đối với trường hợp cấp lại Giấy phép sát hạch).
 THỦ TRƯỞNG CƠ QUAN CÓ THẨM QUYỀN (Ký tên, đóng dấu)
-QR QR
+QR

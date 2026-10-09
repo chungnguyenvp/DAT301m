@@ -506,7 +506,7 @@ Mặt trước:
 58.89 mm 85.6 mm
 CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ..................... (1) ..................... ..................... (2) ..................... ..................... (3) ..................... ..................... (4) ..................... CHỨNG NHẬN ĐĂNG KÝ XE Ô TÔ Car Registration Certificate Số (Number):
 2. Mặt sau 85.6 mm
-Tên chủ xe (Owner’s full name): Địa chỉ (Address): 53,98 mmNhãn hiệu (Brand): Số loại (Model code): 53,98 mm Loại xe (Type): Màu sơn (Color): Số máy (Engine N0): Số khung (Chassis N0): Trọng tải (Cargo mass): kg; Số chỗ (seats): (5) KL toàn bộ (Total mass): kg; KL kéo theo (Towed mass): kg Biển số đăng ký ...(6)...., (date),ngày tháng năm (Number Plate) ... (7) .... Giá trị đến ngày (Date of expiry)
+Tên chủ xe (Owner’s full name): Địa chỉ (Address): 53,98 mmNhãn hiệu (Brand): Số loại (Model code): Loại xe (Type): Màu sơn (Color): Số máy (Engine N0): Số khung (Chassis N0): Trọng tải (Cargo mass): kg; Số chỗ (seats): (5) KL toàn bộ (Total mass): kg; KL kéo theo (Towed mass): kg Biển số đăng ký ...(6)...., (date),ngày tháng năm (Number Plate) ... (7) .... Giá trị đến ngày (Date of expiry)
 Ghi chú: Ký hiệu trong mẫu:
 Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
 (1) | BỘ CÔNG AN | CÔNG AN TỈNH, THÀNH PHỐ + TÊN ĐỊA PHƯƠNG
@@ -778,7 +778,6 @@ Trọng tải:................................................kg; Số chỗ ng�
 Kèm theo giấy này có:......................................(4).........................................................
 ....................................................................................................................................................................................................................................................................................... .................................
 ...................................................
-CÁN BỘ ĐĂNG KÝ XE Ký, ghi rõ họ tên ….............., ngày…...... tháng…....... năm…........ CHỦ XE (Ký số hoặc ký, ghi rõ họ tên, đóng dấu nếu là xe cơ quan) | CÁN BỘ ĐĂNG KÝ XE Ký, ghi rõ họ tên | ….............., ngày…...... tháng…....... năm…........ CHỦ XE (Ký số hoặc ký, ghi rõ họ tên, đóng dấu nếu là xe cơ quan)
 CÁN BỘ ĐĂNG KÝ XE Ký, ghi rõ họ tên | ….............., ngày…...... tháng…....... năm…........ CHỦ XE (Ký số hoặc ký, ghi rõ họ tên, đóng dấu nếu là xe cơ quan)
 Ghi chú
 (1) Đối với cá nhân: Ghi số căn cước công dân, số CMND, số định danh cá nhân, số CMT ngoại giao, số CMT công vụ, số CMT lãnh sự; số CMT lãnh sự danh dự, CMT (phổ thông), số định danh của người nước ngoài, số Thẻ tạm trú, số Thẻ thường trú, số CMT CAND, số CMT QĐND tương ứng với đối tượng đăng ký xe; đối với tổ chức: Ghi mã định danh điện tử của tổ chức hoặc mã số thuế hoặc số quyết định thành lập (trường hợp chưa mã định danh điện tử hoặc có mã số thuế);

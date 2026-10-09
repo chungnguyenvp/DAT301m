@@ -589,7 +589,7 @@ Mẫu số 02 | Biên bản sát hạch thực hành lái xe trong hình các h�
 Mẫu số 01.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH LÝ THUYẾT
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung
 Câu hỏi | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 Trả lời | 1
 Câu hỏi | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25
@@ -672,7 +672,7 @@ Mẫu số 02 | Biên bản sát hạch thực hành lái xe trong hình hạng 
 Mẫu số 01.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH LÝ THUYẾT
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung
 Câu hỏi | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 Trả lời | 1
 Câu hỏi | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25
@@ -681,7 +681,7 @@ Kết luận: Số điểm đạt được:... Đạt □ Không đạt □ Sát
 Mẫu số 02.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Số xe sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Tổng thời gian sát hạch: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Số xe sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Tổng thời gian sát hạch: | Ảnh chân dung
 Số TT | Các lỗi bị trừ điểm | Số lần mắc lỗi | Điểm trừ (tính cho 1 lần) | Tổng điểm trừ
 1 | Bánh xe đè vào vạch giới hạn hình sát hạch | 10
 2 | Điều khiển xe bị rung giật mạnh | 05
@@ -881,7 +881,7 @@ Mẫu số 04 | Biên bản sát hạch bằng phần mềm mô phỏng các tì
 Mẫu số 01.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH LÝ THUYẾT
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung
 Câu hỏi | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23
 Trả lời | 1
 Câu hỏi | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45
@@ -926,7 +926,7 @@ Kết luận: Số điểm đạt được:... Đạt □ Không đạt □ Sát
 Mẫu số 04.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH MÔ PHỎNG CÁC TÌNH HUỐNG GIAO THÔNG
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung
 Câu hỏi | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 Điểm
 Kết luận: Số điểm đạt được:... Đạt □ Không đạt □ Sát hạch viên ký xác nhận | Học viên ký xác nhận kết quả
@@ -1067,7 +1067,7 @@ Mẫu số 04 | Biên bản sát hạch bằng phần mềm mô phỏng các tì
 Mẫu số 01.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH LÝ THUYẾT
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung
 Câu hỏi | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23
 Trả lời | 1
 Câu hỏi | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45
@@ -1076,7 +1076,7 @@ Kết luận: Số điểm đạt được:... Đạt □ Không đạt □ Sát
 Mẫu số 02.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Số xe sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Tổng thời gian sát hạch: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Số xe sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Tổng thời gian sát hạch: | Ảnh chân dung
 Số TT | Các lỗi bị trừ điểm | Số lần mắc lỗi | Điểm trừ (tính cho 1 lần) | Tổng điểm trừ
 1 | Chạm 01 cọc chuẩn, nhưng không đổ | 15
 2 | Chạm làm đổ 01 cọc chuẩn | 25
@@ -1264,7 +1264,7 @@ Mẫu số 04 | Biên bản sát hạch bằng phần mềm mô phỏng các tì
 Mẫu số 01.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH LÝ THUYẾT
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung
 Câu hỏi | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23
 Trả lời | 1
 Câu hỏi | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45
@@ -1273,7 +1273,7 @@ Kết luận: Số điểm đạt được:... Đạt □ Không đạt □ Sát
 Mẫu số 02.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Số xe sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Tổng thời gian sát hạch: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Số xe sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Tổng thời gian sát hạch: | Ảnh chân dung
 Số TT | Các lỗi bị trừ điểm | Số lần mắc lỗi | Điểm trừ (tính cho 1 lần) | Tổng điểm trừ
 1 | Chạm 01 cọc chuẩn, nhưng không đổ | 10
 2 | Chạm làm đổ 01 cọc chuẩn | 15
@@ -1315,7 +1315,7 @@ Sát hạch viên ký xác nhận Học viên ký xác nhận kết quả
 Mẫu số 04.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN SÁT HẠCH MÔ PHỎNG CÁC TÌNH HUỐNG GIAO THÔNG
-Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung Ảnh chân dung
+Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Lần thi: | Ảnh chân dung
 Câu hỏi | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 Điểm
 Kết luận: Số điểm đạt được:... Đạt □ Không đạt □ Sát hạch viên ký xác nhận | Học viên ký xác nhận kết quả
