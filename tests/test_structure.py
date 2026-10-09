@@ -1,4 +1,4 @@
-from lawproc.structure import parse_units, unit_address
+from lawproc.structure import is_closing_line, parse_units, unit_address
 
 DOC = [
     "CHÍNH PHỦ",
@@ -215,3 +215,44 @@ def test_point_label_with_digit():
     units = {u.unit_id: u for u in parse_units("nd", lines)}
     assert units["nd:d41:k4:k"].text == "Điểm b khoản 3 Điều 20;"
     assert units["nd:d41:k4:k1"].text == "Điểm a khoản 3 Điều 32;"
+
+
+def test_is_closing_line_patterns():
+    assert is_closing_line("Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XV, kỳ họp thứ 7 thông qua ngày 27 tháng 6 năm 2024.")
+    assert is_closing_line("Bộ luật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIII, kỳ họp thứ 10 thông qua ngày 24 tháng 11 năm 2015.")
+    assert is_closing_line("CHỦ TỊCH QUỐC HỘI")
+    assert is_closing_line("TM. CHÍNH PHỦ KT. THỦ TƯỚNG PHÓ THỦ TƯỚNG daky] Phạm Gia Túc")
+    assert is_closing_line("KT. BỘ TRƯỞNG THỨ TRƯỞNG Lê Anh Tuấn")
+    assert is_closing_line("BỘ TRƯỞNG Đại tướng Lương Tam Quang")
+    assert is_closing_line("VĂN PHÒNG QUỐC HỘI Số: 63/VBHN-VPQH | XÁC THỰC VĂN BẢN HỢP NHẤT Hà Nội, ngày 15 tháng 8 năm 2025")
+    assert not is_closing_line("Bộ trưởng Bộ Công an quy định chi tiết khoản này.")
+    assert not is_closing_line("Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2025.")
+
+
+def test_closing_block_goes_to_ket_thuc():
+    lines = ["Điều 89. Hiệu lực thi hành", "1. Luật này có hiệu lực từ ngày 01 tháng 01 năm 2025.",
+             "Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XV, kỳ họp thứ 7 thông qua ngày 27 tháng 6 năm 2024.",
+             "CHỦ TỊCH QUỐC HỘI", "Trần Thanh Mẫn"]
+    units = {u.unit_id: u for u in parse_units("luat", lines)}
+    assert units["luat:d89:k1"].text == "Luật này có hiệu lực từ ngày 01 tháng 01 năm 2025."
+    assert units["luat:ket_thuc"].text.startswith("Luật này được Quốc hội")
+    assert units["luat:ket_thuc"].text.endswith("Trần Thanh Mẫn")
+
+
+def test_signature_then_noi_nhan_is_one_ket_thuc():
+    lines = ["Điều 21. Trách nhiệm thi hành", "Các Bộ trưởng chịu trách nhiệm thi hành Nghị định này./.",
+             "TM. CHÍNH PHỦ KT. THỦ TƯỚNG PHÓ THỦ TƯỚNG Phạm Gia Túc", "Nơi nhận:", "- Lưu: VT",
+             "PHỤ LỤC I", "Mẫu tờ khai"]
+    units = parse_units("nd", lines)
+    assert [u.unit_id for u in units if u.level == "ket_thuc"] == ["nd:ket_thuc"]
+    by_id = {u.unit_id: u for u in units}
+    assert "TM. CHÍNH PHỦ" not in by_id["nd:d21"].text
+    assert by_id["nd:ket_thuc"].text.endswith("- Lưu: VT")
+    assert by_id["nd:pl1"].text == "Mẫu tờ khai"
+
+
+def test_closing_words_inside_quote_or_before_first_dieu_are_not_ket_thuc():
+    lines = ["BỘ TRƯỞNG BỘ CÔNG AN", "Điều 1. Sửa đổi", "1. Sửa đổi khoản 2 Điều 5 như sau:",
+             "“2. BỘ TRƯỞNG Bộ Xây dựng quy định chi tiết.”", "Điều 2. Hiệu lực"]
+    ids = [u.unit_id for u in parse_units("tt", lines)]
+    assert "tt:ket_thuc" not in ids and "tt:d2" in ids

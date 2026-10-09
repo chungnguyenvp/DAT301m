@@ -10,6 +10,13 @@ KHOAN = re.compile(r"^(\d+[a-zđ]?)\.\s+(.*)$")
 DIEM = re.compile(r"^([a-zđ]{1,2}\d?)\)\s+(.*)$")
 PHULUC = PHULUC_HEADING
 KET_THUC = re.compile(r"^Nơi nhận\s*:")
+# Phần kết sau Điều cuối: câu thông qua của Quốc hội, khối chữ ký, khối xác thực văn bản hợp nhất.
+PASSED = re.compile(r"^(?:Bộ luật|Luật) này (?:đã )?được Quốc hội\b.*\bthông qua\b")
+SIGNATURE = re.compile(
+    r"^(?:(?:TM|KT|Q|TL|PP)\.\s*[A-ZĐ]"
+    r"|(?:CHỦ TỊCH QUỐC HỘI|PHÓ THỦ TƯỚNG|THỦ TƯỚNG|BỘ TRƯỞNG|THỨ TRƯỞNG)(?:$|\s+\S))"
+)
+VBHN_SEAL = re.compile(r"^VĂN PHÒNG QUỐC HỘI\b.*XÁC THỰC VĂN BẢN HỢP NHẤT")
 STRUCTURAL = (DIEU, KHOAN, DIEM, CHUONG, MUC, PHULUC, KET_THUC)
 MAU_FORM = re.compile(r"^Mẫu\s+(?:số\s+)?[A-ZĐ0-9]")
 BAN_HANH_KEM = "ban hành kèm theo"
@@ -42,6 +49,10 @@ def unit_address(doc_id: str, dieu: str | None, khoan: str | None, diem: str | N
     if diem:
         s += f":{diem}"
     return s
+
+
+def is_closing_line(line: str) -> bool:
+    return bool(PASSED.match(line) or SIGNATURE.match(line) or VBHN_SEAL.match(line))
 
 
 def _append(unit: "Unit | None", line: str) -> None:
@@ -124,8 +135,13 @@ def parse_units(doc_id: str, lines: list[str], dieu: str | None = None, khoan: s
         depth = max(0, depth + line.count("“") - line.count("”"))
         if depth > 0 and not _quote_closes(lines, i + 1, depth):
             depth = 0  # dấu “ lạc (thường do OCR) không đóng được: coi như văn bản thường
-        if not fragment and not in_annex and KET_THUC.match(line):
-            cur = add(Unit(f"{doc_id}:ket_thuc", doc_id, "ket_thuc", text=line, line_start=i))
+        if not fragment and not in_annex and (
+            KET_THUC.match(line) or (seen_dieu and is_closing_line(line))
+        ):
+            if cur is not None and cur.level == "ket_thuc":
+                _append(cur, line)  # "Nơi nhận" sau khối chữ ký: cùng một phần kết
+            else:
+                cur = add(Unit(f"{doc_id}:ket_thuc", doc_id, "ket_thuc", text=line, line_start=i))
             heading = None
             continue
         if seen_dieu and not fragment and (

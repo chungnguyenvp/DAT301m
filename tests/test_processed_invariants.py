@@ -5,6 +5,8 @@ from pathlib import Path
 
 import pytest
 
+from lawproc.structure import is_closing_line
+
 PROCESSED = Path(__file__).resolve().parents[1] / "data" / "processed"
 UNITS = PROCESSED / "legal_units.jsonl"
 VERSIONED = PROCESSED / "legal_units_versioned.jsonl"
@@ -82,3 +84,9 @@ def test_every_document_has_unit_in_force(versioned):
     # văn bản được phép không còn đơn vị hiệu lực phải thật sự bị đóng hết
     for doc in FULLY_REPLACED:
         assert not any(r["doc_id"] == doc and _in_force(r) for r in versioned), doc
+
+
+def test_no_closing_lines_outside_ket_thuc(units):
+    bad = [u["unit_id"] for u in units if u["level"] not in ("ket_thuc", "phu_luc", "mo_dau")
+           and any(is_closing_line(x) for x in u["text"].splitlines())]
+    assert bad == [], bad[:10]
