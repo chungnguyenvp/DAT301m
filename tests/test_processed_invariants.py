@@ -101,3 +101,9 @@ def test_qcvn41_is_its_own_document(units):
 
 def test_no_empty_annex(units):
     assert [u["unit_id"] for u in units if u["level"] == "phu_luc" and not u["text"].strip()] == []
+
+
+def test_records_have_annotations(versioned):
+    assert all(isinstance(r["noi_dung_doi"], bool) and r["chat_luong"] in ("ok", "kem") for r in versioned)
+    assert all((r["loai_phu_luc"] in ("mau_bieu", "noi_dung")) == (r["level"] == "phu_luc")
+               for r in versioned)

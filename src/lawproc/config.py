@@ -11,6 +11,9 @@ TESSERACT = Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe")
 TESSDATA_REL = "tools/tessdata"  # tương đối với ROOT
 
 CUTOFF = "2026-10-01"
+# Đơn vị đủ dài có tỷ lệ âm tiết lỗi vượt ngưỡng được gắn nhãn kém.
+QUALITY_BAD = 0.1
+QUALITY_MIN_WORDS = 50
 SCANNED_DOCS = {"tt_108_2026_bca", "tt_155_2025_btc", "tt_36_2024_byt"}
 # Trang từ 0, khóa theo tên file; chỉ giữ OCR lại khi chỉ số nhiễu chữ thấp hơn.
 REOCR_PAGES = {"tt_108_2026_bca__p1": range(38, 134), "tt_36_2024_byt__p1": range(8, 14)}

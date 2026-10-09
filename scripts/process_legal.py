@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from lawproc import config  # noqa: E402
 from lawproc.amendments import extract_instructions  # noqa: E402
 from lawproc.apply import apply_amendments  # noqa: E402
+from lawproc.annotate import annotate_records, load_annex_overrides  # noqa: E402
 from lawproc.assemble import (article_report, assemble_doc, drop_toc_lines, group_rows,  # noqa: E402
                               pick_sources, split_derived)
 from lawproc.convert import convert_doc_files  # noqa: E402
@@ -28,6 +29,8 @@ EFFECTIVE_AUTO = config.PROCESSED / "effective_dates_auto.csv"  # đề xuất t
 CANDIDATES = config.PROCESSED / "amendments_candidates.csv"
 REVIEWED = config.PROCESSED / "amendments_reviewed.csv"
 VERSIONED = config.PROCESSED / "legal_units_versioned.jsonl"
+ANNEX_TYPES = config.PROCESSED / "annex_types.csv"
+ANNEX_OVERRIDES = config.DATA / "annex_type_overrides.csv"
 
 
 def manifest() -> list[dict]:
@@ -156,6 +159,9 @@ def step_apply() -> None:
     amendments = list(csv.DictReader(REVIEWED.open(encoding="utf-8-sig")))
     units = [json.loads(x) for x in UNITS.open(encoding="utf-8")]
     recs = apply_amendments(units, hl, amendments)
+    overrides = load_annex_overrides(ANNEX_OVERRIDES, recs)
+    annex_rows = annotate_records(recs, overrides)
+    write_csv(ANNEX_TYPES, annex_rows)
     with VERSIONED.open("w", encoding="utf-8") as fp:
         for r in recs:
             fp.write(json.dumps(r, ensure_ascii=False) + "\n")
