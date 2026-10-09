@@ -1,25 +1,25 @@
-# Việc chuyển sang giai đoạn sau (từ kế hoạch xử lý văn bản luật)
+# Việc chuyển sang giai đoạn sau (đợt làm sạch 2)
 
-Nguồn: review từng task và review toàn nhánh của `feat/legal-processing` (kế hoạch `docs/superpowers/plans/2026-10-08-legal-text-processing.md`). Kết quả xử lý: `data/processed/PROCESSING_REPORT.md`.
+Nguồn: review `feat/legal-processing` và báo cáo hiện hành [`PROCESSING_REPORT.md`](../../../data/processed/PROCESSING_REPORT.md). Các mục dưới đây phân biệt việc đã xử lý với phần nguồn còn thiếu.
 
 ## Bắt buộc trước khi sinh dữ liệu hỏi đáp hoặc bộ eval
-- **Ngoại lệ về ngày hiệu lực chưa có cờ trong `legal_units_versioned.jsonl`.** Tại 2026-10-01 các đơn vị sau bị coi sai trạng thái:
-  - Đang được coi là có hiệu lực nhưng thực ra chưa: NĐ 238/2026 Điều 18 hoãn áp dụng theo hạng xe đến 2028 (`nd_168_2024:d20:k5:l`, `d21:k3:b`, `d32:k9a`); Luật 36/2024 Điều 35 khoản 2 (mốc 2028, 2029); TT 108/2026 Điều 41 khoản 2–5 (mốc 2027, 2028).
-  - Đang được coi là hết hiệu lực nhưng thực ra còn đến 28/02/2027: một phần TT 12/2025/TT-BCA (Điều 4 khoản 1–3, Phụ lục II, III và một phần Phụ lục IV), do TT 108/2026 thay thế cả văn bản từ 01/7/2026.
-  - Việc cần làm: thêm trường máy đọc được (ví dụ `hl_canh_bao` hoặc danh sách mốc ngoại lệ) cho các bản ghi này và dùng nó khi lọc theo thời điểm.
+
+- **Ngoại lệ ngày hiệu lực:** đã xử lý ở đợt làm sạch 2, xem `PROCESSING_REPORT.md`. `hl_ngoai_le` và `in_force_at` xử lý 22 dòng đã duyệt. TT 12 Phụ lục IV–VI được gia hạn cả đơn vị **kèm điều kiện** dù chỉ một phần mục/mẫu còn hiệu lực; truy hồi phải giữ điều kiện và không chọn tùy ý một bản trong ba cặp cũ/mới cùng sống có điều kiện.
+- **Nguồn chữ còn thiếu:** QCVN 41 chỉ trích A, B, C, D, E, F, G, I, K; phụ lục M/N/O/P là ảnh, hình/biển báo chưa đủ. `tt_108_2026_bca:pl12` thiếu bảng chuyển đổi dù được gắn `ok`; `nd_39_2023:pl1` chỉ có dòng ban hành kèm theo. Cần khôi phục từ nguồn trước khi xem corpus là đầy đủ.
 
 ## Trước khi cắt đoạn và xây kho tra cứu
-- QCVN 41 (`tt_51_2024_bgtvt_qcvn41`): phần thân nằm trong một đơn vị phụ lục khoảng 125 nghìn ký tự (`pl13`), cùng 12 đơn vị phụ lục rỗng (mục lục). Cần lọc và chia nhỏ.
-- `nd_67_2023:pl7` khoảng 73 nghìn ký tự: chia nhỏ.
-- Dòng chữ ký (`TM. CHÍNH PHỦ`, `KT. BỘ TRƯỞNG`, `CHỦ TỊCH QUỐC HỘI`…) lọt vào đơn vị cuối của nhiều văn bản (ví dụ `nd_168_2024:d55`, `nd_238_2026:d21`, `nd_218_2026:d39:k5:d`); 30/32 văn bản không có đơn vị `ket_thuc`. Nên coi các dòng này là phần kết.
-- Bảng lồng nhau trong 5 file docx bị lặp chữ khi trích (`extract.docx_lines`).
-- Phụ lục của `tt_108_2026_bca` và `tt_36_2024_byt` OCR kém: cần OCR lại hoặc chép tay.
 
-## Chất lượng dữ liệu và code (không chặn)
-- 184 phiên bản mới có nội dung giống hệt phiên bản cũ (sinh ra khi chép lại cả khoản); bộ eval luật sửa đổi (RQ3) nên so sánh nội dung chứ không chỉ dựa vào `source_doc_id`.
-- `line_start` trên bản ghi sinh ra từ sửa đổi là vị trí trong đoạn trích dẫn, không phải trong văn bản đích.
-- Nhãn điểm dạng `k1)` chưa được nhận diện (đang được ghép vào điểm k): mở rộng mẫu điểm thành `[a-zđ]{1,2}\d?`.
-- `effective_dates_auto.csv` (đề xuất tự động) có thể lệch khỏi `effective_dates.csv` (đã duyệt) nếu chạy lại bước `effective`; nên có bước so sánh.
-- Kiểm thử còn thiếu: `load_corrections` và các bước CLI; `step_parse` nên duyệt theo `doc_id` trong manifest thay vì mọi file `.txt`; dòng sửa OCR có `doc_id` không có trong manifest nên báo lỗi.
-- Cache OCR chỉ theo số trang: nên gắn với sha256 file và dpi; hiện lỗi Tesseract không kèm stderr.
-- Phạm vi mô hình hóa: mỗi dòng sửa đổi chỉ có một ngày hiệu lực; thay thế Phụ lục/Mẫu không áp được (không phải đơn vị có địa chỉ); trường hợp biên (đã gác lại) bổ sung khoản mới kèm điểm con và sửa chính khoản đó trong cùng ngày.
+- **QCVN 41:** 12 phụ lục rỗng mục lục đã xử lý ở đợt làm sạch 2, xem `PROCESSING_REPORT.md`. QCVN đã thành `qcvn_41_2024` với 84 Điều; phụ lục dài vẫn cần cắt đoạn. `nd_67_2023:pl7` khoảng 73 nghìn ký tự cũng cần chia nhỏ.
+- **Dòng chữ ký/Nơi nhận:** đã xử lý ở đợt làm sạch 2, xem `PROCESSING_REPORT.md`; số `ket_thuc` hiện 31.
+- **Bảng lồng:** lỗi lặp chữ trong 5 file docx đã xử lý ở đợt làm sạch 2, xem `PROCESSING_REPORT.md`.
+- **OCR phụ lục:** đã xử lý một phần ở đợt làm sạch 2 (TT 108: 96 trang thử, 31 trang chọn; TT 36: 6/3; 97 dòng sửa tay), xem `PROCESSING_REPORT.md`. Còn phụ lục/chữ ảnh nêu trên, 21 đơn vị `chat_luong=kem`, và các nhãn `ok` nhưng thiếu nội dung. Cần kiểm tra thủ công theo ảnh nguồn. `tt_108_2026_bca:pl9` và `tt_12_2025_bca:pl10` có nội dung cần chia chunk theo quy định.
+
+## Chất lượng dữ liệu và code
+
+- **184 phiên bản giống hệt:** đã xử lý ở đợt làm sạch 2 bằng `noi_dung_doi=false`, xem `PROCESSING_REPORT.md`; bộ eval RQ3 nên xét trường này.
+- `line_start` trên bản ghi sinh từ sửa đổi là vị trí trong đoạn trích, không phải văn bản đích.
+- **Nhãn `k1)`:** đã xử lý ở đợt làm sạch 2, xem `PROCESSING_REPORT.md`.
+- `effective_dates_auto.csv` có thể lệch `effective_dates.csv` sau khi chạy lại; cần bước so sánh.
+- Kiểm thử còn thiếu: `load_corrections` và CLI; `step_parse` nên duyệt theo manifest; `doc_id` trong sửa OCR không thuộc manifest nên báo lỗi.
+- **Cache OCR SHA-256 + dpi và stderr Tesseract:** đã xử lý ở đợt làm sạch 2, xem `PROCESSING_REPORT.md`.
+- Phạm vi mô hình: mỗi dòng sửa đổi chỉ có một ngày hiệu lực; thay thế phụ lục/mẫu không áp được; trường hợp bổ sung khoản rồi sửa cùng ngày còn gác lại.
