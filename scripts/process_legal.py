@@ -17,6 +17,7 @@ from lawproc.corrections import apply_corrections  # noqa: E402
 from lawproc.effective import decide_effective, find_effective  # noqa: E402
 from lawproc.extract import docx_lines, ocr_pdf_lines, pdf_lines  # noqa: E402
 from lawproc.structure import Unit, parse_units  # noqa: E402
+from lawproc.validity import attach_exceptions, in_force_at, load_exceptions  # noqa: E402
 from lawproc.verify import check_identity  # noqa: E402
 
 DOCX_DIR = config.INTERIM / "docx"
@@ -31,6 +32,7 @@ REVIEWED = config.PROCESSED / "amendments_reviewed.csv"
 VERSIONED = config.PROCESSED / "legal_units_versioned.jsonl"
 ANNEX_TYPES = config.PROCESSED / "annex_types.csv"
 ANNEX_OVERRIDES = config.DATA / "annex_type_overrides.csv"
+EXCEPTIONS = config.DATA / "effective_exceptions.csv"
 
 
 def manifest() -> list[dict]:
@@ -162,11 +164,12 @@ def step_apply() -> None:
     overrides = load_annex_overrides(ANNEX_OVERRIDES, recs)
     annex_rows = annotate_records(recs, overrides)
     write_csv(ANNEX_TYPES, annex_rows)
+    attach_exceptions(recs, load_exceptions(EXCEPTIONS))
     with VERSIONED.open("w", encoding="utf-8") as fp:
         for r in recs:
             fp.write(json.dumps(r, ensure_ascii=False) + "\n")
-    live = sum(r["valid_to"] is None for r in recs)
-    print(f"-> {VERSIONED.relative_to(config.ROOT)} ({len(recs)} bản ghi, {live} còn hiệu lực)")
+    live = sum(in_force_at(r, config.CUTOFF)[0] for r in recs)
+    print(f"-> {VERSIONED.relative_to(config.ROOT)} ({len(recs)} bản ghi, {live} có hiệu lực tại {config.CUTOFF})")
 
 
 STEPS = {"convert": step_convert, "assemble": step_assemble, "parse": step_parse,

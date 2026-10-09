@@ -6,14 +6,13 @@ from pathlib import Path
 import pytest
 
 from lawproc.structure import is_closing_line
+from lawproc.validity import in_force_at
 
 PROCESSED = Path(__file__).resolve().parents[1] / "data" / "processed"
 UNITS = PROCESSED / "legal_units.jsonl"
 VERSIONED = PROCESSED / "legal_units_versioned.jsonl"
 DOCS = PROCESSED / "documents"
 T = "2026-10-01"
-# TT 108/2026/TT-BCA thay thế toàn bộ TT 12/2025/TT-BCA từ 2026-07-01
-FULLY_REPLACED = {"tt_12_2025_bca": "thay thế toàn bộ bởi tt_108_2026_bca từ 2026-07-01"}
 
 
 def _read(path: Path) -> list[dict]:
@@ -23,7 +22,7 @@ def _read(path: Path) -> list[dict]:
 
 
 def _in_force(r: dict, t: str = T) -> bool:
-    return r["valid_from"] <= t and (r["valid_to"] is None or t < r["valid_to"])
+    return in_force_at(r, t)[0]
 
 
 @pytest.fixture(scope="module")
@@ -79,11 +78,42 @@ def test_every_document_has_unit_in_force(versioned):
     if not DOCS.exists():
         pytest.skip("documents/ chưa có")
     live_docs = {r["doc_id"] for r in versioned if _in_force(r)}
-    missing = sorted(p.stem for p in DOCS.glob("*.txt") if p.stem not in live_docs and p.stem not in FULLY_REPLACED)
+    missing = sorted(p.stem for p in DOCS.glob("*.txt") if p.stem not in live_docs)
     assert missing == []
-    # văn bản được phép không còn đơn vị hiệu lực phải thật sự bị đóng hết
-    for doc in FULLY_REPLACED:
-        assert not any(r["doc_id"] == doc and _in_force(r) for r in versioned), doc
+
+
+def test_tt12_in_force_only_through_extension(versioned):
+    live = [r for r in versioned if r["doc_id"] == "tt_12_2025_bca" and _in_force(r)]
+    assert live and all(any(e["vai_tro"] == "gia_han" for e in r["hl_ngoai_le"]) for r in live)
+
+
+def test_exception_rows_give_expected_status_at_cutoff(versioned):
+    for r in versioned:
+        for e in r["hl_ngoai_le"]:
+            ok, note = in_force_at(r, T)
+            if e["vai_tro"] in ("gia_han", "cu") and r["valid_from"] <= T < (e["den_ngay"] or e["tu_ngay"]):
+                assert ok, r["version_id"]
+            if e["vai_tro"] == "moi" and r["valid_from"] <= T < e["tu_ngay"]:
+                assert ok == bool(e["dieu_kien"]), r["version_id"]
+            if e["vai_tro"] == "moc" and ok and r["valid_from"] <= T < e["tu_ngay"]:
+                assert e["dieu_kien"] in note, r["version_id"]
+
+
+def test_effective_overlaps_require_conditional_old_and_new(versioned):
+    by_unit = defaultdict(list)
+    for r in versioned:
+        by_unit[r["unit_id"]].append(r)
+    bad = []
+    for day in (T, "2027-02-28", "2027-03-01", "2027-12-31", "2028-01-01", "2029-01-01"):
+        for uid, recs in by_unit.items():
+            live = [(r, in_force_at(r, day)[1]) for r in recs if _in_force(r, day)]
+            if len(live) <= 1:
+                continue
+            roles = [{e["vai_tro"] for e in r["hl_ngoai_le"] if e["loai"] == "hoan_ap_dung"} for r, _ in live]
+            if (len(live) != 2 or not any("cu" in x for x in roles) or
+                    not any("moi" in x for x in roles) or not all(note for _, note in live)):
+                bad.append((uid, day))
+    assert not bad, bad[:10]
 
 
 def test_no_closing_lines_outside_ket_thuc(units):
