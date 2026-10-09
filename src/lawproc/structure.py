@@ -1,8 +1,12 @@
 import re
 from dataclasses import asdict, dataclass
 
+from lawproc import config
 from lawproc.clean import PHULUC_HEADING
 
+PHAN = re.compile(r"^(?:PHẦN|Phần)\s+(\d+|[IVXLC]+)\b\s*[:.\-–]?\s*(.*)$")
+DOTTED_KHOAN = re.compile(r"^(\d+)\.(\d+)\.\s+(.*)$")
+DOTTED_SUBITEM = re.compile(r"^(\d+)\.(\d+)\.\d+(?:\.\d+)*\.\s+")
 CHUONG = re.compile(r"^(?:Chương|CHƯƠNG)\s+([IVXLC]+|\d+)\b\.?\s*(.*)$")
 MUC = re.compile(r"^(?:Mục|MỤC)\s+(\d+)\b\.?\s*(.*)$")
 DIEU = re.compile(r"^Điều\s+(\d+[a-zđ]?)\.\s*(.*)$")
@@ -17,7 +21,7 @@ SIGNATURE = re.compile(
     r"|(?:CHỦ TỊCH QUỐC HỘI|PHÓ THỦ TƯỚNG|THỦ TƯỚNG|BỘ TRƯỞNG|THỨ TRƯỞNG)(?:$|\s+\S))"
 )
 VBHN_SEAL = re.compile(r"^VĂN PHÒNG QUỐC HỘI\b.*XÁC THỰC VĂN BẢN HỢP NHẤT")
-STRUCTURAL = (DIEU, KHOAN, DIEM, CHUONG, MUC, PHULUC, KET_THUC)
+STRUCTURAL = (DIEU, KHOAN, DIEM, PHAN, CHUONG, MUC, PHULUC, KET_THUC)
 MAU_FORM = re.compile(r"^Mẫu\s+(?:số\s+)?[A-ZĐ0-9]")
 BAN_HANH_KEM = "ban hành kèm theo"
 ANNEX_HEADING_MAX = 250  # tiêu đề phụ lục/biểu mẫu có thể dài do OCR/docx nối tiêu đề hoặc lặp văn bản hộp văn bản
@@ -37,6 +41,7 @@ class Unit:
     title: str = ""
     text: str = ""
     line_start: int = 0
+    phan: str | None = None
 
     def as_dict(self) -> dict:
         return asdict(self)
@@ -95,8 +100,9 @@ def parse_units(doc_id: str, lines: list[str], dieu: str | None = None, khoan: s
     fragment = dieu is not None
     units: list[Unit] = []
     seen: dict[str, int] = {}
-    chuong = muc = None
-    heading = None  # "chuong" | "muc": đang đọc tên Chương/Mục vừa gặp
+    phan = chuong = muc = None
+    dotted_subitem = False  # mục sâu của QCVN và nhãn con được giữ nguyên trong Khoản
+    heading = None  # "phan" | "chuong" | "muc": đang đọc tên Phần/Chương/Mục vừa gặp
     in_annex = False
     annex_n = 0
     depth = 0
@@ -156,12 +162,20 @@ def parse_units(doc_id: str, lines: list[str], dieu: str | None = None, khoan: s
             _append(cur, line)
             continue
         if heading is not None and not _is_structural(line):
-            if heading == "chuong":
+            if heading == "phan":
+                phan = f"{phan} {line}"
+            elif heading == "chuong":
                 chuong = f"{chuong} {line}"
             else:
                 muc = f"{muc} {line}"
             continue
         heading = None
+        if m := PHAN.match(line):
+            phan, chuong, muc = m.group(1), None, None
+            heading = "phan"
+            if m.group(2):
+                phan = f"{phan} {m.group(2)}"
+            continue
         if m := CHUONG.match(line):
             chuong, muc = m.group(1), None
             heading = "chuong"
@@ -176,17 +190,36 @@ def parse_units(doc_id: str, lines: list[str], dieu: str | None = None, khoan: s
             continue
         if m := DIEU.match(line):
             dieu, khoan, seen_dieu = m.group(1), None, True
+            dotted_subitem = False
             cur = add(Unit(unit_address(doc_id, dieu, None, None), doc_id, "dieu", chuong, muc, dieu,
-                           title=m.group(2), line_start=i))
+                           title=m.group(2), line_start=i, phan=phan))
+            continue
+        if (dieu is not None and doc_id in config.DOTTED_KHOAN_DOCS and (m := DOTTED_KHOAN.match(line))
+                and m.group(1) == dieu):
+            khoan = m.group(2)
+            dotted_subitem = False
+            cur = add(Unit(unit_address(doc_id, dieu, khoan, None), doc_id, "khoan", chuong, muc, dieu, khoan,
+                           text=m.group(3), line_start=i, phan=phan))
+            continue
+        if (doc_id in config.DOTTED_KHOAN_DOCS and (m := DOTTED_SUBITEM.match(line))
+                and m.group(1) == dieu and m.group(2) == khoan):
+            dotted_subitem = True
+            # Trở về Khoản nếu mục sâu bắt đầu sau một Điểm: không ghép vào nhãn con trước đó.
+            cur = next((u for u in reversed(units) if u.level == "khoan" and u.dieu == dieu and u.khoan == khoan), None)
+            if cur is None:  # đoạn sửa đổi có thể bắt đầu ngay tại mục sâu của Khoản
+                cur = add(Unit(unit_address(doc_id, dieu, khoan, None), doc_id, "khoan", chuong, muc, dieu, khoan,
+                               line_start=i, phan=phan))
+        if dotted_subitem:
+            _append(cur, line)
             continue
         if dieu is not None and (m := KHOAN.match(line)):
             khoan = m.group(1)
             cur = add(Unit(unit_address(doc_id, dieu, khoan, None), doc_id, "khoan", chuong, muc, dieu, khoan,
-                           text=m.group(2), line_start=i))
+                           text=m.group(2), line_start=i, phan=phan))
             continue
         if dieu is not None and (m := DIEM.match(line)):
             cur = add(Unit(unit_address(doc_id, dieu, khoan, m.group(1)), doc_id, "diem", chuong, muc, dieu,
-                           khoan, m.group(1), text=m.group(2), line_start=i))
+                           khoan, m.group(1), text=m.group(2), line_start=i, phan=phan))
             continue
         _append(cur, line)
     return units

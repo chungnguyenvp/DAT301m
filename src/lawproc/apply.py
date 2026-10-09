@@ -195,6 +195,8 @@ def apply_amendments(units: list[dict], hl: dict[str, str], amendments: list[dic
                 u.chuong = src.get("chuong")
             if u.muc is None:
                 u.muc = src.get("muc")
+            if u.phan is None:
+                u.phan = src.get("phan")
         if action == "sua_doi":
             early = _early_victim(out, under, when)
             if early:

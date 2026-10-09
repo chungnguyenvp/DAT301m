@@ -256,3 +256,54 @@ def test_closing_words_inside_quote_or_before_first_dieu_are_not_ket_thuc():
              "“2. BỘ TRƯỞNG Bộ Xây dựng quy định chi tiết.”", "Điều 2. Hiệu lực"]
     ids = [u.unit_id for u in parse_units("tt", lines)]
     assert "tt:ket_thuc" not in ids and "tt:d2" in ids
+
+
+def test_phan_heading_and_dotted_khoan_for_qcvn():
+    lines = ["CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM QCVN 41:2024/BGTVT", "PHẦN 1: QUY ĐỊNH CHUNG",
+             "Điều 3. Giải thích từ ngữ", "Trong Quy chuẩn này, các từ ngữ dưới đây được hiểu như sau:",
+             "3.1. Đường đô thị là đường trong phạm vi nội thành.", "3.1.1. Chi tiết của 3.1.",
+             "3.2. Đường qua khu đông dân cư là đoạn đường bộ.", "PHẦN 2: QUY ĐỊNH KỸ THUẬT", "CHƯƠNG 1",
+             "THỨ TỰ HIỆU LỰC", "Điều 4. Thứ tự hiệu lực của hệ thống báo hiệu", "4.1. Khi ở một khu vực."]
+    units = {u.unit_id: u for u in parse_units("qcvn_41_2024", lines)}
+    d3 = units["qcvn_41_2024:d3"]
+    assert (d3.phan, d3.chuong) == ("1 QUY ĐỊNH CHUNG", None)
+    assert units["qcvn_41_2024:d3:k1"].text == "Đường đô thị là đường trong phạm vi nội thành.\n3.1.1. Chi tiết của 3.1."
+    assert units["qcvn_41_2024:d3:k2"].level == "khoan"
+    d4 = units["qcvn_41_2024:d4"]
+    assert (d4.phan, d4.chuong) == ("2 QUY ĐỊNH KỸ THUẬT", "1 THỨ TỰ HIỆU LỰC")
+    assert units["qcvn_41_2024:d4:k1"].text == "Khi ở một khu vực."
+
+
+def test_dotted_khoan_only_for_listed_docs():
+    lines = ["Điều 3. Giải thích", "3.1. Không phải khoản ở văn bản thường."]
+    units = {u.unit_id: u for u in parse_units("nd", lines)}
+    assert "nd:d3:k1" not in units
+    assert units["nd:d3"].text == "3.1. Không phải khoản ở văn bản thường."
+
+
+def test_qcvn_nested_letter_lists_stay_inside_dotted_khoan():
+    lines = ["Điều 55. Cọc tiêu", "55.7. Khoảng cách cọc tiêu",
+             "55.7.2. Trên đường cong:", "a) Khoảng cách 3 m;", "b) Khoảng cách 5 m;",
+             "55.7.3. Trên đường dốc:", "a) Khoảng cách 5 m;", "b) Khoảng cách 10 m;",
+             "55.8. Quy định tiếp theo", "a) Điểm trực tiếp của khoản 55.8."]
+    units = {u.unit_id: u for u in parse_units("qcvn_41_2024", lines)}
+    assert units["qcvn_41_2024:d55:k7"].text == "\n".join(["Khoảng cách cọc tiêu", *lines[2:8]])
+    assert "qcvn_41_2024:d55:k7:a" not in units
+    assert units["qcvn_41_2024:d55:k8:a"].text == "Điểm trực tiếp của khoản 55.8."
+
+
+def test_qcvn_nested_section_does_not_join_preceding_point():
+    lines = ["Điều 3. Giải thích", "3.1. Nội dung khoản", "a) Điểm trực tiếp",
+             "3.1.1. Chi tiết", "a) Nhãn trong mục sâu", "Điều 4. Tiếp theo", "4.1. Khoản mới", "a) Điểm mới"]
+    units = {u.unit_id: u for u in parse_units("qcvn_41_2024", lines)}
+    assert units["qcvn_41_2024:d3:k1:a"].text == "Điểm trực tiếp"
+    assert units["qcvn_41_2024:d3:k1"].text == "Nội dung khoản\n3.1.1. Chi tiết\na) Nhãn trong mục sâu"
+    assert units["qcvn_41_2024:d4:k1:a"].text == "Điểm mới"
+
+
+def test_qcvn_fragment_starting_at_nested_section_keeps_text():
+    lines = ["55.7.2. Trên đường cong:", "a) Khoảng cách 3 m;"]
+    units = parse_units("qcvn_41_2024", lines, dieu="55", khoan="7")
+    assert len(units) == 1
+    assert units[0].unit_id == "qcvn_41_2024:d55:k7"
+    assert units[0].text == "\n".join(lines)

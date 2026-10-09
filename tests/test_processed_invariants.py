@@ -90,3 +90,14 @@ def test_no_closing_lines_outside_ket_thuc(units):
     bad = [u["unit_id"] for u in units if u["level"] not in ("ket_thuc", "phu_luc", "mo_dau")
            and any(is_closing_line(x) for x in u["text"].splitlines())]
     assert bad == [], bad[:10]
+
+
+def test_qcvn41_is_its_own_document(units):
+    dieu = sorted(int(u["dieu"]) for u in units if u["doc_id"] == "qcvn_41_2024" and u["level"] == "dieu")
+    assert dieu == list(range(1, 85))
+    assert not [u for u in units if u["doc_id"] == "tt_51_2024_bgtvt_qcvn41" and u["level"] == "phu_luc"]
+    assert any(u["doc_id"] == "qcvn_41_2024" and u["level"] == "khoan" for u in units)
+
+
+def test_no_empty_annex(units):
+    assert [u["unit_id"] for u in units if u["level"] == "phu_luc" and not u["text"].strip()] == []

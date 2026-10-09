@@ -32,3 +32,17 @@ TARGET_ALIASES = {
     "Luật Trật tự, an toàn giao thông đường bộ": "luat_36_2024",
     "Luật Đường bộ": "luat_35_2024",
 }
+
+# Văn bản suy ra: tách từ văn bản cha khi ghép, không có dòng riêng trong manifest.
+# start: chuỗi nằm trong dòng mở đầu văn bản suy ra (dòng đó và mọi dòng sau thuộc văn bản suy ra).
+DERIVED_DOCS = {
+    "qcvn_41_2024": {
+        "parent": "tt_51_2024_bgtvt_qcvn41",
+        "so_ky_hieu": "QCVN 41:2024/BGTVT",
+        "tieu_de": "Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ",
+        "nhom": "Biển báo",
+        "start": "QCVN 41:2024/BGTVT QUY CHUẨN KỸ THUẬT QUỐC GIA VỀ BÁO HIỆU ĐƯỜNG BỘ",
+    },
+}
+# Văn bản đánh số khoản dạng "3.1." (số Điều.số khoản)
+DOTTED_KHOAN_DOCS = {"qcvn_41_2024"}

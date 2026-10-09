@@ -46,3 +46,26 @@ def article_report(doc_id: str, lines: list[str], method: str, n_parts: int) -> 
         "n_dieu": len(nums), "first_dieu": nums[0] if nums else None,
         "last_dieu": nums[-1] if nums else None, "missing_dieu": " ".join(map(str, missing)),
     }
+
+
+# Dòng mục lục: tiêu đề Phần/Chương/Mục/Phụ lục kèm số hiệu, kết thúc bằng chấm dẫn (có thể kèm số trang).
+TOC_LINE = re.compile(
+    r"^(?:Phần|PHẦN|Chương|CHƯƠNG|Mục|MỤC|Phụ lục|PHỤ LỤC)\s+[\dIVXLCA-Z]+\b.*[.…]{4,}\s*\d*\s*$"
+)
+
+
+def drop_toc_lines(lines: list[str]) -> list[str]:
+    return [x for x in lines if not TOC_LINE.match(x)]
+
+
+def split_derived(doc_id: str, lines: list[str]) -> dict[str, list[str]]:
+    """Tách văn bản suy ra (config.DERIVED_DOCS) khỏi văn bản cha; văn bản khác trả nguyên."""
+    out = {doc_id: lines}
+    for child, spec in config.DERIVED_DOCS.items():
+        if spec["parent"] != doc_id:
+            continue
+        idx = next((i for i, x in enumerate(lines) if spec["start"] in x), None)
+        if idx is None:
+            raise ValueError(f"{doc_id}: không thấy dòng mở đầu {child}: {spec['start']!r}")
+        out = {doc_id: lines[:idx], child: lines[idx:]}
+    return out

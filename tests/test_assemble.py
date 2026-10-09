@@ -1,4 +1,8 @@
-from lawproc.assemble import group_rows, pick_sources, assemble_doc, article_report
+import pytest
+
+from lawproc import config
+from lawproc.assemble import (article_report, assemble_doc, drop_toc_lines, group_rows, pick_sources,
+                              split_derived)
 
 
 def _row(doc_id, file, fmt):
@@ -55,3 +59,27 @@ def test_article_report_ignores_headings_inside_multiline_quotes_and_annexes():
 def test_ocr_table_border_pipe_before_heading_is_removed():
     lines = assemble_doc("x", [["Điều 2. Người nộp", "| Điều 3. Tổ chức thu lệ phí", "Điều 4. Giải thích"]], "ocr")
     assert lines == ["Điều 2. Người nộp", "Điều 3. Tổ chức thu lệ phí", "Điều 4. Giải thích"]
+
+
+def test_drop_toc_lines_only_drops_headings_with_leaders():
+    lines = ["Phần 1: Quy định chung……………...........", "Chương 9 - Biển chỉ dẫn trên đường cao tốc……………….…",
+             "Phụ lục A - Đèn tín hiệu .................... 12", "Chương trình đào tạo: ......................",
+             "Họ và tên: ..........................", "PHẦN 1: QUY ĐỊNH CHUNG", "Điều 1. Phạm vi điều chỉnh"]
+    assert drop_toc_lines(lines) == ["Chương trình đào tạo: ......................",
+                                     "Họ và tên: ..........................", "PHẦN 1: QUY ĐỊNH CHUNG",
+                                     "Điều 1. Phạm vi điều chỉnh"]
+
+
+def test_split_derived_cuts_at_start_line(monkeypatch):
+    monkeypatch.setattr(config, "DERIVED_DOCS", {"qc": {"parent": "tt", "so_ky_hieu": "QC 1", "tieu_de": "Quy chuẩn",
+                                                       "nhom": "X", "start": "QC 1 QUY CHUẨN"}})
+    lines = ["Điều 1. Ban hành", "BỘ TRƯỞNG", "CỘNG HÒA QC 1 QUY CHUẨN KỸ THUẬT", "Điều 1. Phạm vi"]
+    assert split_derived("tt", lines) == {"tt": lines[:2], "qc": lines[2:]}
+    assert split_derived("khac", lines) == {"khac": lines}
+
+
+def test_split_derived_missing_start_line_raises(monkeypatch):
+    monkeypatch.setattr(config, "DERIVED_DOCS", {"qc": {"parent": "tt", "so_ky_hieu": "QC 1", "tieu_de": "Quy chuẩn",
+                                                       "nhom": "X", "start": "QC 1 QUY CHUẨN"}})
+    with pytest.raises(ValueError, match="qc"):
+        split_derived("tt", ["Điều 1. Ban hành"])

@@ -9,7 +9,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from lawproc import config  # noqa: E402
 from lawproc.amendments import extract_instructions  # noqa: E402
 from lawproc.apply import apply_amendments  # noqa: E402
-from lawproc.assemble import article_report, assemble_doc, group_rows, pick_sources  # noqa: E402
+from lawproc.assemble import (article_report, assemble_doc, drop_toc_lines, group_rows,  # noqa: E402
+                              pick_sources, split_derived)
 from lawproc.convert import convert_doc_files  # noqa: E402
 from lawproc.corrections import apply_corrections  # noqa: E402
 from lawproc.effective import decide_effective, find_effective  # noqa: E402
@@ -31,6 +32,17 @@ VERSIONED = config.PROCESSED / "legal_units_versioned.jsonl"
 
 def manifest() -> list[dict]:
     return list(csv.DictReader(config.MANIFEST.open(encoding="utf-8-sig")))
+
+
+def doc_meta() -> dict[str, dict]:
+    """Meta theo doc_id (dòng đầu của manifest), gồm văn bản suy ra (config.DERIVED_DOCS)."""
+    meta: dict[str, dict] = {}
+    for r in manifest():
+        meta.setdefault(r["doc_id"], r)
+    for child, spec in config.DERIVED_DOCS.items():
+        meta[child] = dict(meta[spec["parent"]], doc_id=child, so_ky_hieu=spec["so_ky_hieu"],
+                           tieu_de=spec["tieu_de"], nhom=spec["nhom"])
+    return meta
 
 
 def write_csv(path: Path, rows: list[dict]) -> None:
@@ -73,6 +85,7 @@ def step_assemble() -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     reports, idents = [], []
     corrections = load_corrections()
+    meta = doc_meta()
     for doc_id, rows in group_rows(manifest()).items():
         chosen, method = pick_sources(rows)
         print(f"{doc_id:28} {method:5} {len(chosen)} phần")
@@ -80,9 +93,12 @@ def step_assemble() -> None:
         if doc_id in corrections:
             lines = apply_corrections("\n".join(lines), corrections[doc_id]).split("\n")
             print(f"{'':28} {len(corrections[doc_id])} sửa lỗi OCR")
-        (DOCS_DIR / f"{doc_id}.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
-        reports.append(article_report(doc_id, lines, method, len(chosen)))
-        idents.append(check_identity(doc_id, rows[0]["so_ky_hieu"], rows[0]["tieu_de"], "\n".join(lines)))
+        lines = drop_toc_lines(lines)
+        for out_id, part in split_derived(doc_id, lines).items():
+            (DOCS_DIR / f"{out_id}.txt").write_text("\n".join(part) + "\n", encoding="utf-8")
+            reports.append(article_report(out_id, part, method, len(chosen)))
+            m = meta[out_id]
+            idents.append(check_identity(out_id, m["so_ky_hieu"], m["tieu_de"], "\n".join(part)))
     write_csv(config.PROCESSED / "assembly_report.csv", reports)
     write_csv(config.PROCESSED / "identity_report.csv", idents)
 
@@ -106,7 +122,7 @@ def load_units() -> dict[str, list[Unit]]:
 
 
 def step_effective() -> None:
-    meta = {r["doc_id"]: r for r in manifest()}
+    meta = doc_meta()
     rows = []
     for doc_id, units in load_units().items():
         m = meta[doc_id]
