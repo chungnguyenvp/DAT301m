@@ -1,6 +1,6 @@
 # Duyệt phân loại phụ lục — Task 6, ngày 09/10/2026
 
-Trạng thái: **chờ người dùng duyệt**. Các đề xuất chưa được áp dụng; Task 7 và Task 8 chưa bắt đầu.
+Trạng thái: **đã được người dùng duyệt và áp dụng 7 dòng ghi đè** ngày 09/10/2026. Đầu ra hiện có **107 mẫu biểu / 51 nội dung**. Các bảng phía dưới lưu kết quả phân loại tự động trước khi duyệt để đối chiếu.
 
 Đã giữ đủ **18.790 bản ghi**, không thay đổi trường cũ so với commit `a163a01`. Review độc lập đạt; 170 test qua. Hai lần chạy assemble → parse → effective → amendments → apply cho cùng SHA256 trên 43 file đầu ra.
 
@@ -22,7 +22,7 @@ Nhãn phục vụ bước chọn dữ liệu về sau; hiện không xóa hay lo
 | `tt_12_2025_bca:pl14` | noi_dung → **mau_bieu** | Các trang mẫu giấy phép lái xe quốc tế (IDP), cùng mô tả vị trí thông tin. |
 | `tt_30_2026_bxd:pl13` | noi_dung → **mau_bieu** | Mẫu thông báo sai khác dữ liệu xe; có chỗ điền, nơi nhận, ký tên và hướng dẫn ghi. |
 
-Bản CSV đề xuất: [2026-10-09-annex-overrides-proposed.csv](2026-10-09-annex-overrides-proposed.csv). File này nằm trong thư mục tài liệu để duyệt; CLI chưa nạp nó. Sau khi được duyệt mới đưa các dòng vào `data/annex_type_overrides.csv`, chạy lại pipeline và commit.
+Bản CSV đề xuất: [2026-10-09-annex-overrides-proposed.csv](2026-10-09-annex-overrides-proposed.csv). Bảy dòng đã được đưa vào `data/annex_type_overrides.csv`. Hai lượt chạy pipeline sau ghi đè cho SHA256 giống nhau trên 43 file, 170 test qua. CLI nạp file ghi đè trong bước `apply`.
 
 Phụ lục vừa có mẫu vừa có quy định được giữ là `noi_dung` để tránh bỏ mất quy định; cần tách đoạn khi xây kho tra cứu. Task 6 chưa tạo dữ liệu fine-tune.
 
@@ -36,7 +36,7 @@ Phụ lục vừa có mẫu vừa có quy định được giữ là `noi_dung` 
 
 Đây là các khoảng trống được phát hiện, không phải kết quả kiểm chứng toàn bộ corpus. Task 5 đã OCR lại 102 trang và chọn 34 trang tốt hơn; hoàn thành các bước này không đồng nghĩa dữ liệu sạch hoàn toàn.
 
-## Số lượng hiện tại theo văn bản
+## Số lượng trước khi duyệt theo văn bản
 
 | doc_id | Mẫu biểu | Nội dung | Tổng |
 |---|---:|---:|---:|
@@ -99,7 +99,7 @@ Tỷ lệ là chỉ báo âm tiết, không phải tỷ lệ lỗi OCR đối ch
 | `vbhn_135_2025_blhs:d235:k1:h@2025-07-01` | không phải phụ lục | 0.1379 |
 | `vbhn_135_2025_blhs:d235:k2:đ@2025-07-01` | không phải phụ lục | 0.1379 |
 
-## Danh sách đủ 158 đơn vị phụ lục
+## Danh sách đủ 158 đơn vị phụ lục trước khi duyệt
 
 CSV có trích đầu/cuối nội dung, tỷ lệ dòng điền và cờ cần xem: [2026-10-09-annex-review.csv](2026-10-09-annex-review.csv). Đầu ra CLI gốc: `data/processed/annex_types.csv`.
 

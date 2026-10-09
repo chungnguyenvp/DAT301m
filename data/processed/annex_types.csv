@@ -68,8 +68,8 @@ nd_67_2023:pl5,nd_67_2023,Phụ lục IV,noi_dung,,0.0,ok
 nd_67_2023:pl6,nd_67_2023,Phụ lục V,noi_dung,,0.0,ok
 nd_67_2023:pl7,nd_67_2023,Phụ lục VI,noi_dung,,0.0058,ok
 nd_67_2023:pl8,nd_67_2023,Phụ lục VII,noi_dung,,0.0053,ok
-nd_67_2023:pl9,nd_67_2023,Phụ lục VIII,noi_dung,,0.0,ok
-nd_67_2023:pl10,nd_67_2023,Phụ lục IX,noi_dung,,0.0,ok
+nd_67_2023:pl9,nd_67_2023,Phụ lục VIII,mau_bieu,ghi đè,0.0,ok
+nd_67_2023:pl10,nd_67_2023,Phụ lục IX,mau_bieu,ghi đè,0.0,ok
 nd_67_2023:pl11,nd_67_2023,Phụ lục X,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
 qcvn_41_2024:pl1,qcvn_41_2024,Phụ lục A,noi_dung,,0.0083,ok
 qcvn_41_2024:pl2,qcvn_41_2024,Phụ lục B,noi_dung,,0.0039,ok
@@ -88,11 +88,11 @@ tt_108_2026_bca:pl5,tt_108_2026_bca,PHỤ LỤC V (Ban hành kèm theo Thông t�
 tt_108_2026_bca:pl6,tt_108_2026_bca,PHỤ LỤC VI (Ban hành kèm theo Thông tư số 108/2026/T7-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),noi_dung,,0.0118,ok
 tt_108_2026_bca:pl7,tt_108_2026_bca,PHỤ LỤC VII (Ban hành kèm theo Thông tư sô 108/2026/77-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),mau_bieu,tiêu đề có chữ Mẫu,0.0461,ok
 tt_108_2026_bca:pl8,tt_108_2026_bca,PHỤ LỤC VIII (Ban hành kèm theo Thông tư số 108/2026/TT-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),mau_bieu,tiêu đề có chữ Mẫu,0.0635,ok
-tt_108_2026_bca:pl9,tt_108_2026_bca,PHỤ LỤC IX (Ban hành kèm theo Thông tư số 108/2026/TT-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),mau_bieu,tiêu đề có chữ Mẫu,0.0124,ok
+tt_108_2026_bca:pl9,tt_108_2026_bca,PHỤ LỤC IX (Ban hành kèm theo Thông tư số 108/2026/TT-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),noi_dung,ghi đè,0.0124,ok
 tt_108_2026_bca:pl10,tt_108_2026_bca,PHỤ LỤC X (Ban hành kèm theo Thông tư số 108/2026/T7-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),mau_bieu,tiêu đề có chữ Mẫu,0.0496,ok
 tt_108_2026_bca:pl11,tt_108_2026_bca,PHỤ LỤC XI (Ban hành kèm theo Thông tư sô 108/2026/71-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),mau_bieu,tiêu đề có chữ Mẫu,0.1265,kem
 tt_108_2026_bca:pl12,tt_108_2026_bca,PHỤ LỤC XII (Ban hành kèm theo Thông tư số 108/2026/TT-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),noi_dung,,0.0,ok
-tt_108_2026_bca:pl13,tt_108_2026_bca,PHỤ LỤC XIII (Ban hành kèm theo Thông tư số 108/2026/TT-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),noi_dung,,0.36,kem
+tt_108_2026_bca:pl13,tt_108_2026_bca,PHỤ LỤC XIII (Ban hành kèm theo Thông tư số 108/2026/TT-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),mau_bieu,ghi đè,0.36,kem
 tt_108_2026_bca:pl14,tt_108_2026_bca,PHỤ LỤC XIV (Ban hành kèm theo Thông tư sô 108/2026/71-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an),mau_bieu,tiêu đề có chữ Mẫu,0.02,ok
 tt_12_2025_bca:pl1,tt_12_2025_bca,Phụ lục I,mau_bieu,nhiều dòng điền,0.0301,ok
 tt_12_2025_bca:pl2,tt_12_2025_bca,Phụ lục II,noi_dung,,0.0004,ok
@@ -103,11 +103,11 @@ tt_12_2025_bca:pl6,tt_12_2025_bca,Phụ lục VI,noi_dung,,0.0015,ok
 tt_12_2025_bca:pl7,tt_12_2025_bca,Phụ lục VII,noi_dung,,0.0021,ok
 tt_12_2025_bca:pl8,tt_12_2025_bca,PHỤ LỤC VIII,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
 tt_12_2025_bca:pl9,tt_12_2025_bca,Phụ lục IX,mau_bieu,tiêu đề có chữ Mẫu,0.0124,ok
-tt_12_2025_bca:pl10,tt_12_2025_bca,Phụ lục X,mau_bieu,tiêu đề có chữ Mẫu,0.0043,ok
+tt_12_2025_bca:pl10,tt_12_2025_bca,Phụ lục X,noi_dung,ghi đè,0.0043,ok
 tt_12_2025_bca:pl11,tt_12_2025_bca,Phụ lục XI,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
 tt_12_2025_bca:pl12,tt_12_2025_bca,Phụ lục XII,mau_bieu,nhiều dòng điền,0.0,ok
 tt_12_2025_bca:pl13,tt_12_2025_bca,Phụ lục XIII,mau_bieu,nhiều dòng điền,0.3477,kem
-tt_12_2025_bca:pl14,tt_12_2025_bca,Phụ lục XIV,noi_dung,,0.0,ok
+tt_12_2025_bca:pl14,tt_12_2025_bca,Phụ lục XIV,mau_bieu,ghi đè,0.0,ok
 tt_12_2025_bca:pl15,tt_12_2025_bca,Phụ lục XV,noi_dung,,0.0,ok
 tt_12_2025_bca:pl16,tt_12_2025_bca,Phụ lục XVI,mau_bieu,tiêu đề có chữ Mẫu,0.3456,kem
 tt_12_2025_bca:pl17,tt_12_2025_bca,Phụ lục XVII,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
@@ -124,7 +124,7 @@ tt_30_2026_bxd:pl9,tt_30_2026_bxd,"Phụ lục IX MẪU ĐƠN ĐỀ NGHỊ CẤP
 tt_30_2026_bxd:pl10,tt_30_2026_bxd,"Phụ lục X MẪU SỔ THEO DÕI CẤP GIẤY CHỨNG NHẬN KIỂM ĐỊNH, TEM KIỂM ĐỊNH, GIẤY CHỨNG NHẬN CẢI TẠO, SỐ QUẢN LÝ HỒ SƠ PHƯƠNG",mau_bieu,tiêu đề có chữ Mẫu,0.0068,ok
 tt_30_2026_bxd:pl11,tt_30_2026_bxd,Phụ lục XI NGUYÊN TẮC XÁC ĐỊNH XE CẢI TẠO (Ban hành kèm theo Thông tư số 30/2026/TT-BXD ngày 15 tháng 6 năm 2026 của Bộ ,noi_dung,,0.0067,ok
 tt_30_2026_bxd:pl12,tt_30_2026_bxd,Phụ lục XII MẪU PHIẾU TIẾP NHẬN HỒ SƠ (Ban hành kèm theo Thông tư số 30/2026/TT-BXD ngày 15 tháng 6 năm 2026 của Bộ trưở,mau_bieu,tiêu đề có chữ Mẫu,0.0034,ok
-tt_30_2026_bxd:pl13,tt_30_2026_bxd,"Phụ lục XIII THÔNG BÁO THÔNG TIN DỮ LIỆU CỦA XE SẢN XUẤT, LẮP RÁP HOẶC XE NHẬP KHẨU HOẶC XE CẢI TẠO CÓ SỰ SAI KHÁC VỚI X",noi_dung,,0.0,ok
+tt_30_2026_bxd:pl13,tt_30_2026_bxd,"Phụ lục XIII THÔNG BÁO THÔNG TIN DỮ LIỆU CỦA XE SẢN XUẤT, LẮP RÁP HOẶC XE NHẬP KHẨU HOẶC XE CẢI TẠO CÓ SỰ SAI KHÁC VỚI X",mau_bieu,ghi đè,0.0,ok
 tt_30_2026_bxd:pl14,tt_30_2026_bxd,Phụ lục XIV NỘI DUNG HỒ SƠ THIẾT KẾ CẢI TẠO (Ban hành kèm theo Thông tư số 30/2026/TT-BXD ngày 15 tháng 6 năm 2026 của B,noi_dung,,0.0,ok
 tt_30_2026_bxd:pl15,tt_30_2026_bxd,"Phụ lục XV MẪU BIÊN BẢN KIỂM TRA, ĐÁNH GIÁ XE CẢI TẠO (Ban hành kèm theo Thông tư số 30/2026/TT-BXD ngày 15 tháng 6 năm ",mau_bieu,tiêu đề có chữ Mẫu,0.0096,ok
 tt_30_2026_bxd:pl16,tt_30_2026_bxd,"Phụ lục XVI MẪU BẢNG KÊ CÁC HỆ THỐNG, TỔNG THÀNH, PHỤ TÙNG THAY THẾ (Ban hành kèm theo Thông tư số 30/2026/TT-BXD ngày 1",mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
