@@ -18,8 +18,11 @@
 # ```
 # Môi trường hiện tại đã có thư viện/kernel/tokenizer; không tải thêm để thực hiện notebook.
 #
-# **Đơn vị thống kê:** E1–E10 dùng một bản đại diện mới nhất cho mỗi `unit_id` có hiệu lực tại T.
+# **Đơn vị thống kê:** các thống kê theo đơn vị có hiệu lực tại T dùng bản đại diện mới nhất của mỗi `unit_id`.
 # Đây là thống kê mô tả, không chứng minh nội dung mới nhất áp dụng chung cho mọi đối tượng.
+# E5 phân tích các dòng CSV sửa đổi đã duyệt và toàn bộ phiên bản lưu để thống kê lịch sử sửa đổi.
+# E6 dựng dòng thời gian và đếm lượt sự kiện tương lai từ toàn bộ bản ghi lưu, kể cả phiên bản không có hiệu lực tại T.
+# Kiểm tra khoảng trống nguồn E10 cũng xét toàn bộ phiên bản lưu, độc lập với T.
 # `live_all` giữ mọi phiên bản có hiệu lực; sáu bản thuộc ba `unit_id` nhiều nhánh được hiển thị riêng bên dưới
 # và đo token riêng ở E3. Ghép Khoản–Điểm dưới đây chỉ tạo ứng viên đo độ dài, chưa tạo đoạn pháp lý dùng cho RAG;
 # khi triển khai phải ghép các phiên bản tương thích và giữ đầy đủ điều kiện áp dụng.
