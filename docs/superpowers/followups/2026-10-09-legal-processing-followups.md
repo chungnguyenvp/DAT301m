@@ -34,5 +34,5 @@ Nguồn: review `feat/legal-processing` và báo cáo hiện hành [`PROCESSING_
 - **Đã xử lý:** TT 108 và TT 155 đọc bản Word từ Công báo thay OCR; `tt_108_2026_bca:pl12` nay có bảng chuyển đổi; hết lỗi dấu OCR ở hai văn bản này. Xem mục 1a `PROCESSING_REPORT.md`.
 - **Đã xử lý:** nhãn đánh số tự động của Word được dựng từ `numbering.xml` (mục 1b `PROCESSING_REPORT.md`); TT 38 từ 18 lên 57 đơn vị. Còn lệch nhãn trong phụ lục TT 12, TT 79, TT 108 giữa tệp Word và bản in, không ảnh hưởng cấu trúc Khoản/Điểm.
 - **Đã xử lý:** TT 36 đọc bản chữ thuần (thuvienphapluat.vn, đã đối chiếu với PDF chính thức); bảng Phụ lục I dựng lại có nhãn Nhóm 1/2/3 theo ảnh PDF. Không còn văn bản nào OCR. Nếu sau này có bản từ nguồn nhà nước (Công báo, vbpl.vn) thì nên thay file chữ này.
-- **Bảng phí TT 155 bản Word** giữ dạng "1 | Xe ô tô… | 350.000 | 100.000" với dòng tiêu đề cột "Khu vực I | Khu vực II"; bản OCR cũ có nhãn cột trong từng ô do sửa tay. Khi cắt đoạn cần lặp tiêu đề cột vào từng dòng để mô hình đọc đúng khu vực.
+- **Đã xử lý:** bảng phí TT 155 viết lại thành câu có tên khu vực ở từng dòng (mục 1c `PROCESSING_REPORT.md`); 19 đơn vị `chat_luong=kem` đã rà tay, đều là báo nhầm của chỉ số (tiếng Anh trên mẫu song ngữ, tên nước, đơn vị đo).
 

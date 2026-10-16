@@ -85,7 +85,7 @@ Mã đơn vị thay đổi ở TT 108: bỏ `d37:k2:e` (OCR đọc nhầm nhãn,
 
 Đoạn văn trong Word dùng đánh số tự động (`w:numPr`) không chứa nhãn "1.", "a)" trong chữ; trước đây `docx_lines` chỉ đọc chữ nên mất nhãn và parser không tách được Khoản/Điểm. Nay `extract._Numbering` dựng nhãn từ `word/numbering.xml` theo cách Word hiển thị: định dạng (`decimal`, `lowerLetter`, La Mã, `bullet` → "-"), `lvlText` nhiều cấp như `%1.%2.`, số bắt đầu; các `w:num` dùng chung `abstractNum` đếm nối tiếp, `startOverride` đếm lại; cấp sâu bắt đầu lại khi cấp nông tăng; đếm cả đoạn trong bảng và đoạn rỗng. Đoạn đã có nhãn gõ tay ở đầu thì không chèn thêm nhãn tự động.
 
-Đối chiếu nhãn dựng ra với chữ của bản PDF Công báo (TT 108 so với bản OCR cũ): thân văn bản khớp toàn bộ (TT 38 39/39, NĐ 160 9/9, NĐ 165, NĐ 168, NĐ 220, QCVN 41). Lệch còn lại nằm trong phụ lục (TT 12 khoảng 10/834, TT 79 13/32 ở quy cách biển số, TT 108 ở bảng chấm điểm), nơi tệp Word và bản in đánh số khác nhau; phụ lục không tách Khoản/Điểm nên không đổi cấu trúc đơn vị.
+Đối chiếu nhãn dựng ra với chữ của bản PDF Công báo (TT 108 so với bản OCR cũ): thân văn bản khớp toàn bộ (TT 38 39/39, NĐ 160 9/9, NĐ 165, NĐ 168, NĐ 220, QCVN 41). Lệch còn lại nằm trong phụ lục (TT 12 khoảng 10/834, TT 79 13/32 ở quy cách biển số, TT 108 ở bảng chấm điểm), nơi chính tệp Word đánh số khác bản in (ví dụ TT 79: đoạn "Biển số xe mô tô trong nước" có lệnh đánh số lại từ 1 trong Word, bản in ghi "2."); nội dung chữ không sai, chỉ số thứ tự mục trong phụ lục, nên khi trích dẫn số mục phụ lục cần đối chiếu PDF; phụ lục không tách Khoản/Điểm nên không đổi cấu trúc đơn vị.
 
 | Văn bản | Đơn vị trước → sau | Thay đổi chính |
 |---|---|---|
@@ -98,6 +98,10 @@ Mã đơn vị thay đổi ở TT 108: bỏ `d37:k2:e` (OCR đọc nhầm nhãn,
 | NĐ 165, NĐ 220, TT 79 | không đổi số đơn vị | Chữ có thêm nhãn ở 3, 1, 7 đơn vị |
 
 Mọi dòng sửa đổi, ngoại lệ hiệu lực và phân loại phụ lục đã duyệt vẫn áp được; không đơn vị mới nào nằm dưới đơn vị có bản sửa đổi.
+
+### 1c. Bảng phí TT 155 viết thành câu (2026-10-16)
+
+Bản Word giữ bảng dạng "2 | Xe ô tô chở người… | 14.000.000 | 140.000", tên khu vực chỉ có ở dòng tiêu đề cột; một đoạn cắt ra không chứa dòng tiêu đề thì không biết số nào thuộc khu vực nào. Bảng được viết lại bằng một dòng trong `ocr_corrections.csv`, theo ảnh PDF chính thức trang 6: mỗi dòng ghi số mục, tên mục cha và tên khu vực, ví dụ "I.2. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe ô tô chở người từ 9 chỗ trở xuống (bao gồm cả xe con pick-up): Khu vực I 14.000.000 đồng; Khu vực II 140.000 đồng." Mục II và III trong bản gốc gộp ô qua hai cột, nên ghi "mức thu chung cho Khu vực I và Khu vực II". Không thêm số liệu ngoài bảng. Test `test_tt_155_fee_rows_name_their_region` giữ bất biến này.
 
 ## 2. Danh tính văn bản
 
@@ -309,11 +313,20 @@ TT 108 thay TT 12 từ 2026-07-01, nhưng ngoại lệ `gia_han` giữ Điều 4
 | Ngoại lệ ngày hiệu lực | 22 dòng: 8 `gia_han`, 5 `hoan_ap_dung`, 9 `moc_trong_noi_dung` | Gắn `hl_ngoai_le`, lọc bằng `in_force_at` | 17.471 bản ghi sống tại ngày chốt, có điều kiện kèm theo |
 | Phiên bản không đổi nội dung | 184 bản ghi `noi_dung_doi=false` | Đánh dấu so với phiên bản liền trước | Giữ cả 184 để truy vết nguồn |
 | Phụ lục mẫu biểu | 107/158 `mau_bieu`, 51 `noi_dung` | Phân loại và áp bản đè đã duyệt | 158 phụ lục được gắn nhãn |
-| Chất lượng chữ kém | 19 bản ghi, gồm 16 phụ lục (21 trước khi TT 108 đọc bản Word) | Gắn `chat_luong=kem`, giữ nguyên | Liệt kê dưới bảng; cần kiểm tra theo nguồn |
+| Chất lượng chữ kém | 19 bản ghi gắn `kem` (21 trước khi TT 108 đọc bản Word) | Rà tay từng bản ghi ngày 2026-10-16 | Cả 19 là báo nhầm của chỉ số, không có lỗi chữ (xem dưới bảng) |
 | Trùng mã đơn vị | 0 `unit_id` hậu tố `#` trong bản ghi sống | Kiểm tra bất biến | 0 |
 | Chồng phiên bản | 0 cặp chồng khoảng ngày gốc | Test `test_no_overlapping_versions_per_unit` | 3 cặp cùng sống có điều kiện theo ngoại lệ, phải lọc tiếp |
 
-19 đơn vị `chat_luong=kem`: `nd_158_2024:pl7`, `:pl8`, `:pl9`, `:pl12`; `nd_218_2026:pl2`, `:pl3`, `:pl5`; `qcvn_41_2024:d61:k1`; `tt_12_2025_bca:pl13`, `:pl16`; `tt_37_2026_bca:pl1`; `tt_79_2024_bca:pl1`–`:pl6`; `vbhn_135_2025_blhs:d235:k1:h`, `:d235:k2:đ`. Điểm xấu ở “kilômét” trong QCVN và “milisivơ” trong BLHS có thể là từ hợp lệ không khớp mẫu âm tiết, không mặc nhiên là lỗi OCR.
+19 đơn vị `chat_luong=kem` đã được rà tay ngày 2026-10-16; **không đơn vị nào có lỗi chữ**. Nhãn `kem` là ước lượng tự động: tỷ lệ từ không có dạng âm tiết tiếng Việt vượt 10%. Từ khi không còn văn bản nào OCR, các trường hợp vượt ngưỡng đều do chữ hợp lệ không phải âm tiết tiếng Việt:
+
+| Đơn vị | Số | Từ làm vượt ngưỡng | Ghi chú |
+|---|---:|---|---|
+| `tt_79_2024_bca:pl1`–`:pl6`, `tt_12_2025_bca:pl13`, `:pl16`, `tt_37_2026_bca:pl1`, `nd_158_2024:pl7`, `:pl8`, `nd_218_2026:pl2`, `:pl3`, `:pl5` | 14 | Tiếng Anh trên mẫu song ngữ ("Socialist Republic of Viet Nam", "Independence - Freedom - Happiness", "Vehicle Registration"), "Fax", "email", "mm" | Mẫu biểu, không đưa vào kho tra cứu |
+| `nd_158_2024:pl9`, `:pl12` | 2 | "Campuchia" lặp nhiều lần | Mẫu biểu |
+| `qcvn_41_2024:d61:k1` | 1 | "kilômét" | Nội dung luật, dùng bình thường |
+| `vbhn_135_2025_blhs:d235:k1:h`, `:d235:k2:đ` | 2 | "milisivơ", "mSv" | Nội dung luật, dùng bình thường |
+
+Không dùng `chat_luong` để lọc dữ liệu; giữ trường này làm cảnh báo khi nhập nguồn OCR mới.
 
 ### Giới hạn đo OCR
 
@@ -328,7 +341,7 @@ Tỷ lệ âm tiết lỗi là **heuristic**, không đo độ đúng pháp lý 
 ## 7. Hạn chế và việc cần làm tiếp
 
 - Phụ lục QCVN mới trích được A, B, C, D, E, F, G, I, K; M/N/O/P và nhiều hình là nguồn ảnh chưa có chữ. Phải khôi phục trước khi dùng như kho tra cứu đầy đủ.
-- `tt_108_2026_bca:pl12` nay có bảng chuyển đổi GPLX quốc tế từ bản Word (467 ký tự, trước là 138). `nd_39_2023:pl1` chỉ còn dòng “ban hành kèm theo”, thiếu nội dung phụ lục. `tt_108_2026_bca:pl9` và `tt_12_2025_bca:pl10` chứa nội dung quy định trong phụ lục, cần cắt đoạn phù hợp. Các đơn vị `chat_luong=kem` nêu ở trên vẫn giữ và cần đối chiếu nguồn; nhãn `ok` không chứng minh nội dung đủ.
+- `tt_108_2026_bca:pl12` nay có bảng chuyển đổi GPLX quốc tế từ bản Word (467 ký tự, trước là 138). `nd_39_2023:pl1` chỉ còn dòng “ban hành kèm theo”, thiếu nội dung phụ lục. `tt_108_2026_bca:pl9` và `tt_12_2025_bca:pl10` chứa nội dung quy định trong phụ lục, cần cắt đoạn phù hợp. Nhãn `ok` không chứng minh nội dung đủ (hai phụ lục ngắn nêu trên đều `ok`).
 - Nhãn đánh số tự động của Word đã được dựng lại (mục 1b). Trong phụ lục TT 12, TT 79, TT 108 một số nhãn dựng từ tệp Word khác bản in; đọc phụ lục cần đối chiếu PDF khi trích dẫn số thứ tự mục.
 - TT 12 Phụ lục IV–VI chỉ được gia hạn một phần, còn mô hình theo cả đơn vị kèm điều kiện; người gọi phải xét mục/mẫu. Mỗi dòng sửa đổi chỉ có một ngày hiệu lực; phần có nhiều mốc trong cùng câu/đơn vị cần diễn giải điều kiện.
 - Các dòng sửa đổi nhắm văn bản ngoài kho hoặc thay/bãi bỏ phụ lục không có địa chỉ Điều/khoản chưa được áp dụng. `line_start` trên bản ghi sinh từ sửa đổi là vị trí ở đoạn trích, không phải văn bản đích. Trường hợp biên bổ sung khoản và sửa chính khoản cùng ngày chưa xử lý.

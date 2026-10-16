@@ -1,5 +1,6 @@
 """Kiểm tra bất biến của đầu ra đã commit trong data/processed/ (bỏ qua nếu thiếu file)."""
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -72,6 +73,27 @@ def test_tt_155_fee_table_is_a_live_annex(versioned):
     live = [r for r in versioned if r["doc_id"] == "tt_155_2025_btc" and r["level"] == "phu_luc"
             and r["valid_to"] is None and "BIỂU MỨC THU LỆ PHÍ" in (r["title"] + r["text"])]
     assert live, "bảng biểu mức thu lệ phí của TT 155 không có trong đầu ra có phiên bản"
+
+
+def _live_annex(versioned, unit_id):
+    live = [r for r in versioned if r["unit_id"] == unit_id and r["valid_to"] is None]
+    assert len(live) == 1, unit_id
+    return live[0]["text"]
+
+
+def test_tt_155_fee_rows_name_their_region(versioned):
+    text = _live_annex(versioned, "tt_155_2025_btc:pl1")
+    assert ("I.2. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe ô tô chở người từ 9 chỗ trở xuống "
+            "(bao gồm cả xe con pick-up): Khu vực I 14.000.000 đồng; Khu vực II 140.000 đồng.") in text
+    assert "mức thu chung cho Khu vực I và Khu vực II" in text
+    assert not re.search(r"(?m)^\w+ \| ", text), "còn dòng bảng thô không có tên khu vực"
+
+
+def test_tt_36_annex_i_labels_every_group(versioned):
+    text = _live_annex(versioned, "tt_36_2024_byt:pl1")
+    assert len(re.findall(r"(?m)^Chuyên khoa \d - ", text)) == 9
+    # 9 chuyên khoa × 3 nhóm; dòng giới thiệu ba nhóm ở đầu bảng không có ": " sau ngoặc nên không tính
+    assert len(re.findall(r"(?m)^Nhóm [123] \(người lái xe hạng[^)]*\): ", text)) == 27
 
 
 def test_every_document_has_unit_in_force(versioned):
