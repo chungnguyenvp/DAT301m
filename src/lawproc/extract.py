@@ -17,11 +17,31 @@ from lawproc.quality import syllable_error_rate
 _SPACE_TAGS = {qn("w:br"), qn("w:cr"), qn("w:tab")}
 
 
+_BREAK_TAGS = {qn("w:br"), qn("w:cr")}
+# Sau xuống dòng mềm (Shift+Enter) mà đoạn tiếp theo mở đầu bằng nhãn "3." / "b)" thì là mục mới,
+# như khoản 3 Điều 1 NĐ 165/2024 nằm cùng đoạn Word với khoản 2.
+_LABEL_AFTER_BREAK = re.compile(r"^(?:\d{1,2}\.|[a-zđ]\))\s+\S")
+
+
 def _text_of(el) -> str:
-    parts: list[str] = []
+    """Chữ của phần tử; xuống dòng mềm thành khoảng trắng, trừ khi sau nó là một mục có nhãn (thành "\\n")."""
+    segments, parts = [], []
     for n in el.iter(qn("w:t"), *_SPACE_TAGS):
-        parts.append(n.text or "" if n.tag == qn("w:t") else " ")
-    return re.sub(r"[ \t\r\n]+", " ", "".join(parts)).strip()
+        if n.tag == qn("w:t"):
+            parts.append(n.text or "")
+        elif n.tag in _BREAK_TAGS:
+            segments.append("".join(parts))
+            parts = []
+        else:
+            parts.append(" ")
+    segments.append("".join(parts))
+    segments = [re.sub(r"[ \t\r\n]+", " ", s).strip() for s in segments]
+    text = segments[0]
+    for s in segments[1:]:
+        if not s:
+            continue
+        text = f"{text}\n{s}" if text and _LABEL_AFTER_BREAK.match(s) else f"{text} {s}".strip()
+    return text
 
 
 def _roman(n: int) -> str:
@@ -127,7 +147,7 @@ def _cell_text(tc, numbering: _Numbering) -> str:
         if el.tag == qn("w:p"):
             t = _para_text(el, numbering)
             if t:
-                parts.append(t)
+                parts.append(t.replace("\n", " "))  # ô bảng giữ trên một dòng
         elif el.tag == qn("w:tbl"):
             parts.extend(_table_rows(el, numbering))
     return " ".join(parts)
@@ -159,7 +179,7 @@ def docx_lines(path: Path) -> list[str]:
         if tag == "p":
             t = _para_text(child, numbering)
             if t:
-                out.append(t)
+                out.extend(t.split("\n"))
         elif tag == "tbl":
             out.extend(_table_rows(child, numbering))
     return out

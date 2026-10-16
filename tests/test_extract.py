@@ -143,6 +143,17 @@ def test_docx_lines_counts_empty_numbered_paragraphs(tmp_path):
     assert docx_lines(p) == ["1. Một", "3. Ba"]
 
 
+def test_docx_lines_splits_soft_break_before_a_labelled_item(tmp_path):
+    d = docx.Document()
+    par = d.add_paragraph()
+    run = par.add_run("2. Phân loại đường bộ.")
+    run.add_break()
+    par.add_run("3. Phần đất để bảo vệ đường bộ.")
+    p = tmp_path / "br.docx"
+    d.save(p)
+    assert docx_lines(p) == ["2. Phân loại đường bộ.", "3. Phần đất để bảo vệ đường bộ."]
+
+
 def _pdf_with_lines(path, lines):
     doc = pymupdf.open()
     page = doc.new_page()

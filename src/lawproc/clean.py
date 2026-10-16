@@ -42,11 +42,30 @@ def strip_part(lines: list[str]) -> tuple[list[str], int | None]:
             lines = lines[i + 1:]
             break
     out = [
-        x for x in lines
+        x for x in _drop_signature_stamps(lines)
         if x and not CONGBAO_HEADER.match(x) and not PAGE_NO.match(x)
         and x.upper() not in BANNERS and not XEM_TIEP.match(x)
     ]
     return out, cont
+
+
+# Dấu chữ ký số in trên trang PDF: "Ký bởi: …" rồi các dòng "Email: …", "Cơ quan: …", "Thời gian ký: …".
+STAMP_START = re.compile(r"^Ký bởi\s*:")
+STAMP_FIELD = re.compile(r"^(?:Email|Cơ quan|Thời gian ký|Ngày ký)\s*:")
+
+
+def _drop_signature_stamps(lines: list[str]) -> list[str]:
+    """Bỏ khối dấu chữ ký số; chỉ bỏ dòng "Cơ quan: …" khi nó nằm ngay sau dòng "Ký bởi: …"."""
+    out, in_stamp = [], False
+    for x in lines:
+        if STAMP_START.match(x):
+            in_stamp = True
+            continue
+        if in_stamp and STAMP_FIELD.match(x):
+            continue
+        in_stamp = False
+        out.append(x)
+    return out
 
 
 def order_parts(parts: list[tuple[list[str], int | None]]) -> list[list[str]]:
