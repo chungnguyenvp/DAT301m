@@ -307,6 +307,42 @@ def test_docx_lines_merged_cells_once(tmp_path):
     assert docx_lines(p) == ["Tiêu đề gộp", "Trái | Phải"]
 
 
+def test_docx_lines_keeps_adjacent_cells_with_equal_values(tmp_path):
+    d = docx.Document()
+    t = d.add_table(rows=1, cols=4)
+    for i, v in enumerate(["Thang điểm", "100", "100", "100"]):
+        t.cell(0, i).text = v
+    p = tmp_path / "eq.docx"
+    d.save(p)
+    assert docx_lines(p) == ["Thang điểm | 100 | 100 | 100"]
+
+
+def test_docx_lines_reads_vertically_merged_cell_once(tmp_path):
+    d = docx.Document()
+    t = d.add_table(rows=2, cols=2)
+    t.cell(0, 0).merge(t.cell(1, 0)).text = "Gộp dọc"
+    t.cell(0, 1).text = "A"
+    t.cell(1, 1).text = "B"
+    p = tmp_path / "v.docx"
+    d.save(p)
+    assert docx_lines(p) == ["Gộp dọc | A", "B"]
+
+
+@pytest.mark.parametrize("font, char, expected", [("Symbol", "F0A3", "≤"), ("Symbol", "00B3", "≥"),
+                                                  ("Symbol", "00C6", "Ø"), ("Symbol", "003E", ">"),
+                                                  ("Wingdings", "F0A8", "□")])
+def test_docx_lines_reads_symbol_characters(tmp_path, font, char, expected):
+    from docx.oxml import parse_xml
+
+    d = docx.Document()
+    par = d.add_paragraph("30 m < R ")
+    par._p.append(parse_xml(f'<w:r {_W}><w:sym w:font="{font}" w:char="{char}"/></w:r>'))
+    par.add_run(" 100 m")
+    p = tmp_path / "sym.docx"
+    d.save(p)
+    assert docx_lines(p) == [f"30 m < R {expected} 100 m"]
+
+
 def test_docx_lines_cell_with_empty_paragraph_has_single_spaces(tmp_path):
     d = docx.Document()
     t = d.add_table(rows=1, cols=1)

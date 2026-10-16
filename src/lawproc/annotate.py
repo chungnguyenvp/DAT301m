@@ -7,7 +7,8 @@ from pathlib import Path
 from lawproc import config
 from lawproc.quality import syllable_error_rate
 
-FORM_WORD = re.compile(r"\b(?:mẫu|mau)\b", re.IGNORECASE)
+# "Mẫu" có dấu (mọi kiểu chữ), hoặc "MAU" in hoa mất dấu do OCR; không khớp tên tỉnh "Cà Mau"/"CÀ MAU".
+FORM_WORD = re.compile(r"(?i:\bmẫu\b)|(?<!CÀ )(?<!CA )\bMAU\b")
 FILL_LINE = re.compile(r"[.…]{4,}")
 FILL_SHARE = 0.3
 HEAD_CHARS = 300

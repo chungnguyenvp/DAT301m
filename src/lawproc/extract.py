@@ -23,12 +23,32 @@ _BREAK_TAGS = {qn("w:br"), qn("w:cr")}
 _LABEL_AFTER_BREAK = re.compile(r"^(?:\d{1,2}\.|[a-zđ]\))\s+\S")
 
 
+# Ký hiệu chèn bằng w:sym (Insert > Symbol): mã trong phông Symbol/Wingdings, không nằm trong w:t.
+# Chỉ ánh xạ các mã có trong kho; Symbol 0xC6 (vòng tròn gạch chéo) dùng làm ký hiệu đường kính nên ghi "Ø".
+_SYMBOL_CHARS = {
+    "symbol": {0x3C: "<", 0x3E: ">", 0xA3: "≤", 0xB3: "≥", 0xB1: "±", 0xB4: "×", 0xB0: "°", 0xC6: "Ø",
+               0x80: "□"},
+    "wingdings": {0xA8: "□", 0x6F: "□", 0x71: "□", 0xFE: "☑", 0xFD: "☒"},
+}
+
+
+def _sym_text(n) -> str:
+    font = (n.get(qn("w:font")) or "").lower()
+    code = int(n.get(qn("w:char")) or "0", 16) & 0xFF  # mã có thể ghi "F0A3" hoặc "00A3"
+    table = next((t for name, t in _SYMBOL_CHARS.items() if font.startswith(name)), {})
+    if code not in table:
+        raise ValueError(f"Ký hiệu w:sym chưa ánh xạ: font={font!r} char={n.get(qn('w:char'))!r}")
+    return table[code]
+
+
 def _text_of(el) -> str:
     """Chữ của phần tử; xuống dòng mềm thành khoảng trắng, trừ khi sau nó là một mục có nhãn (thành "\\n")."""
     segments, parts = [], []
-    for n in el.iter(qn("w:t"), *_SPACE_TAGS):
+    for n in el.iter(qn("w:t"), qn("w:sym"), *_SPACE_TAGS):
         if n.tag == qn("w:t"):
             parts.append(n.text or "")
+        elif n.tag == qn("w:sym"):
+            parts.append(_sym_text(n))
         elif n.tag in _BREAK_TAGS:
             segments.append("".join(parts))
             parts = []
@@ -153,14 +173,25 @@ def _cell_text(tc, numbering: _Numbering) -> str:
     return " ".join(parts)
 
 
+def _is_vmerge_continuation(tc) -> bool:
+    vm = tc.find(f"{qn('w:tcPr')}/{qn('w:vMerge')}")
+    return vm is not None and vm.get(qn("w:val"), "continue") != "restart"
+
+
 def _table_rows(tbl, numbering: _Numbering) -> list[str]:
-    """Mỗi hàng trực tiếp của bảng thành một dòng "ô | ô"; ô gộp chỉ có một w:tc nên không lặp."""
+    """Mỗi hàng trực tiếp của bảng thành một dòng "ô | ô".
+
+    Ô gộp ngang chỉ có một w:tc; ô gộp dọc chỉ đọc ở hàng đầu (bỏ w:tc "continue"). Ô kề nhau có cùng giá trị
+    ("100 | 100") là dữ liệu thật nên được giữ đủ.
+    """
     rows: list[str] = []
     for tr in tbl.iterchildren(qn("w:tr")):
         cells: list[str] = []
         for tc in tr.iterchildren(qn("w:tc")):
+            if _is_vmerge_continuation(tc):
+                continue
             c = _cell_text(tc, numbering)
-            if c and (not cells or cells[-1] != c):
+            if c:
                 cells.append(c)
         if cells:
             rows.append(" | ".join(cells))
