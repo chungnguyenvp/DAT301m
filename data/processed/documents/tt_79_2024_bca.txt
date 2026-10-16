@@ -908,10 +908,10 @@ STT | Tên địa phương | Ký hiệu | STT | Tên địa phương | Ký hiệ
 26 | Lâm Đồng | 49 | 58 | Quảng Nam | 92
 27 | TP. Hồ Chí Minh | 41; từ 50 đến 59 | 59 | Bình Phước | 93
 28 | Đồng Nai | 39; 60 | 60 | Bạc Liêu | 94
-29 | Bình Dương | 61 | Hậu Giang | 95
-30 | Long An | 62 | Bắc Cạn | 97
-31 | Tiền Giang | 63 | Bắc Giang | 98
-32 | Vĩnh Long | 64 | Bắc Ninh | 99
+29 | Bình Dương | 61 | 61 | Hậu Giang | 95
+30 | Long An | 62 | 62 | Bắc Cạn | 97
+31 | Tiền Giang | 63 | 63 | Bắc Giang | 98
+32 | Vĩnh Long | 64 | 64 | Bắc Ninh | 99
 Phụ lục số 03
 KÝ HIỆU BIỂN SỐ XE Ô TÔ, MÔ TÔ, XE MÁY CHUYÊN DÙNG CỦA TỔ CHỨC, CÁ NHÂN NƯỚC NGOÀI
 (Ban hành kèm theo Thông tư số 79/2024/TT-BCA ngày 15/11/2024

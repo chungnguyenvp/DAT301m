@@ -36,3 +36,9 @@ Nguồn: review `feat/legal-processing` và báo cáo hiện hành [`PROCESSING_
 - **Đã xử lý:** TT 36 đọc bản chữ thuần (thuvienphapluat.vn, đã đối chiếu với PDF chính thức); bảng Phụ lục I dựng lại có nhãn Nhóm 1/2/3 theo ảnh PDF. Không còn văn bản nào OCR. Nếu sau này có bản từ nguồn nhà nước (Công báo, vbpl.vn) thì nên thay file chữ này.
 - **Đã xử lý:** bảng phí TT 155 viết lại thành câu có tên khu vực ở từng dòng (mục 1c `PROCESSING_REPORT.md`); 19 đơn vị `chat_luong=kem` đã rà tay, đều là báo nhầm của chỉ số (tiếng Anh trên mẫu song ngữ, tên nước, đơn vị đo).
 
+
+## Review độc lập ngày 2026-10-16 (Codex)
+
+- **Đã xử lý:** giữ ô bảng có giá trị giống ô liền trước; đọc ký hiệu `w:sym` (≤ ≥ Ø □); "Cà Mau" không còn làm phụ lục thành mẫu biểu; cờ `trang_thai = bai_bo` cho 20 Điều bãi bỏ; cờ `thieu_noi_dung` cho `nd_39_2023:pl1`. Xem mục 1e `PROCESSING_REPORT.md`.
+- **Chờ duyệt:** `data/annex_replacements.csv` (18 dòng thay thế phụ lục). Điền `duyet` vào dòng đã kiểm tra rồi chạy lại `apply`; trước đó sáu phụ lục cũ vẫn có hiệu lực song song bản mới.
+- **Còn mở:** trích dẫn phụ lục theo tiêu đề thay cho mã `plN`; quan hệ cha–con khi ngoại lệ gia hạn chỉ áp cho khoản con (TT 12 Điều 4); không dùng đơn vị của văn bản sửa đổi làm căn cứ khi dựng kho tra cứu.

@@ -105,18 +105,18 @@ Bản Word giữ bảng dạng "2 | Xe ô tô chở người… | 14.000.000 | 1
 
 ### 1d. Rà soát độ sạch toàn kho (2026-10-16)
 
-Chạy `py -3.13 -X utf8 scripts/audit_processed.py`. Từng nhóm nghi vấn được mở ra xem và đối chiếu bản PDF chính thức. Hai lỗi thật đã sửa trong code:
+Chạy `py -3.13 -X utf8 scripts/audit_processed.py`. Từng nhóm nghi vấn được mở ra xem và đối chiếu bản PDF chính thức. **Giới hạn:** script chỉ quét mẫu chữ trên dữ liệu đầu ra, không so từng ô bảng và ký hiệu với tệp Word nguồn; review độc lập sau đó (mục 1e) tìm thêm sáu nhóm lỗi mà bảng dưới đây không phát hiện. Hai lỗi thật đã sửa trong code ở đợt này:
 
 - **Dấu chữ ký số lọt vào thân văn bản:** BLDS đọc từ PDF nên khối "Ký bởi: Cổng Thông tin điện tử Chính phủ / Email / Cơ quan / Thời gian ký" in ở đầu mỗi tệp nằm trong `d3:k4` và `d366:k2`. `clean.strip_part` nay bỏ khối này (dòng "Cơ quan: …" chỉ bị bỏ khi đi ngay sau "Ký bởi: …").
 - **Khoản 3 Điều 1 NĐ 165/2024 dính vào khoản 2:** trong Word hai khoản cùng một đoạn, ngăn bằng xuống dòng mềm. `extract._text_of` nay tách thành dòng mới khi sau xuống dòng mềm là một mục có nhãn ("3.", "b)"); ô bảng vẫn giữ trên một dòng. Cả kho chỉ có trường hợp này trong thân văn bản (hai trường hợp khác nằm trong ô bảng mẫu biểu NĐ 158).
 
 | Kiểm tra | Số | Kết luận |
 |---|---:|---|
-| Khoản/điểm rỗng; Điều không tiêu đề; chữ chưa NFC; ký tự Kirin, điều khiển, "�"; lỗi mã hóa "Ã©"; header Công báo, "Xem tiếp", số trang lẻ, quảng cáo trang web, "Nơi nhận"/chữ ký trong thân; dấu chữ ký số | 0 | Sạch |
-| Bản sửa đổi còn ngoặc kép trích dẫn hoặc câu chỉ dẫn "… như sau:"; phiên bản có `valid_from ≥ valid_to` | 0 | Sạch |
-| Khoản N+1 dính trong khoản N; điểm kế tiếp dính trong điểm trước | 0 | Sạch (sau khi sửa NĐ 165) |
+| Khoản/điểm rỗng; Điều không tiêu đề; chữ chưa NFC; ký tự Kirin, điều khiển, "�"; lỗi mã hóa "Ã©"; header Công báo, "Xem tiếp", số trang lẻ, quảng cáo trang web, "Nơi nhận"/chữ ký trong thân; dấu chữ ký số | 0 | Không phát hiện theo các mẫu này |
+| Bản sửa đổi còn ngoặc kép trích dẫn hoặc câu chỉ dẫn "… như sau:"; phiên bản có `valid_from ≥ valid_to` | 0 | Không phát hiện |
+| Khoản N+1 dính trong khoản N; điểm kế tiếp dính trong điểm trước | 0 | Không còn sau khi sửa NĐ 165 |
 | Số khoản không liên tục (4) và điểm không theo thứ tự (14) | 18 | 13 nằm trong văn bản sửa đổi (khoản/điểm thuộc phần trích dẫn, nội dung đã áp vào văn bản gốc); TT 30 Điều 19 khoản 2 (g → i) và TT 79 Điều 34 khoản 2 (n → p) **đúng như bản chính thức**; QCVN 41 Điều 46 khoản 7, Điều 47 khoản 12, 14 là danh sách tên biển in theo hàng ngang; TT 12 Điều 3 không còn hiệu lực |
-| Điều rỗng | 20 | Điều "(được bãi bỏ)" trong văn bản hợp nhất (BLHS Điều 292, Luật XLVPHC Điều 38–51, 82, 142); giữ để trả lời "điều này đã bị bãi bỏ", không đưa vào kho tra cứu như căn cứ |
+| Điều rỗng | 20 | Điều "(được bãi bỏ)" trong văn bản hợp nhất (BLHS Điều 292, Luật XLVPHC Điều 38–51, 82, 142); nay có `trang_thai = bai_bo` và không còn hiệu lực (mục 1e) |
 | Dòng nhãn chưa tách / "…; b) …" liền dòng | 14 / 11 | QCVN 41 có cấp thứ ba "46.1.1." chứa điểm a), b) bên trong, theo thiết kế giữ trong khoản "46.1"; còn lại là đoạn trích dẫn |
 | Tiêu đề Điều dài > 250 ký tự | 10 | Tiêu đề thật của văn bản (ví dụ NĐ 165 Điều 17, NĐ 168 Điều 13) |
 | Đơn vị cùng văn bản trùng nội dung | 179 | Câu chữ luật lặp ở nhiều Điều (ví dụ thủ tục giống nhau cho nhiều loại giấy phép), không phải lỗi tách |
@@ -125,6 +125,23 @@ Chạy `py -3.13 -X utf8 scripts/audit_processed.py`. Từng nhóm nghi vấn đ
 | Câu GPLX trùng nội dung câu hỏi | 35 | Cùng câu hỏi nhưng khác hình (đèn báo bảng đồng hồ, hiệu lệnh CSGT); không lỗi |
 
 Hai bất biến mới trong `tests/test_processed_invariants.py`: không còn "Ký bởi:" trong Điều/Khoản/Điểm, không khoản nào dính trong khoản trước.
+
+### 1e. Sửa lỗi theo review độc lập (2026-10-16)
+
+Review độc lập bằng Codex (`docs/reviews/data-audit-2026-10-16/REPORT.md`, `issues.csv`) so dữ liệu với tệp Word gốc và ảnh PDF, tìm sáu nhóm lỗi mà mục 1d bỏ sót. Mọi lỗi đã được kiểm chứng lại độc lập trước khi sửa.
+
+| Mã | Lỗi | Sửa | Kết quả |
+|---|---|---|---|
+| F01 | Extractor bỏ ô bảng nếu giống ô liền trước, nên mất giá trị thật: QCVN `220 \| 400 \| 110 \| 200 \| 10 \| 10` còn `… \| 10`; TT 108, TT 12 `Thang điểm \| 100 \| 100 \| 100` còn một ô; 45 hàng trong 6 văn bản | Giữ mọi ô có chữ; ô gộp dọc chỉ đọc ở hàng đầu (bỏ `w:vMerge` "continue") | 20 đơn vị có lại ô bị mất |
+| F02 | Ký hiệu chèn bằng `w:sym` không nằm trong `w:t` nên bị bỏ: QCVN "30 m < R 100 m" (mất ≤), "độ dốc 3%" (mất ≥), "ống thép 40 - 50" (mất Ø) | Đọc `w:sym`, ánh xạ mã phông Symbol/Wingdings đã gặp trong kho (≤ ≥ > Ø □); gặp mã chưa ánh xạ thì báo lỗi thay vì bỏ qua | "R ≤ 100 m", "độ dốc ≥ 3%", "Ø40 - Ø50"; ô đánh dấu mẫu biểu thành "□" |
+| F03 | Bộ phân loại khớp "mau" không dấu, nên "Cà Mau" trong bảng ký hiệu biển số theo tỉnh làm `tt_51_2025_bca:pl1` thành mẫu biểu và sẽ bị loại khỏi kho tra cứu | Chỉ nhận "mẫu" có dấu, hoặc "MAU" in hoa không đứng sau "CÀ"/"CA" | `tt_51_2025_bca:pl1` là `noi_dung` |
+| F04 | 25 chỉ dẫn "Thay thế Phụ lục/Mẫu" bị loại khi duyệt sửa đổi vì `apply` chỉ xử lý Điều/Khoản/Điểm, nên phụ lục cũ vẫn có hiệu lực song song bản mới (bảng biển số TT 79, số hiệu đường tỉnh NĐ 165, biểu phí bảo hiểm NĐ 67…) | Bảng duyệt `data/annex_replacements.csv` (18 dòng: 6 thay toàn bộ, 12 thay một số mẫu) và `status.apply_annex_replacements`: thay toàn bộ thì đóng bản cũ tại ngày hiệu lực của văn bản sửa đổi, thay một phần thì ghi `pl_thay_the` | **Chờ duyệt**: cột `duyet` đang trống nên chưa áp; dữ liệu hiện tại vẫn còn sáu phụ lục cũ có hiệu lực |
+| F05 | Phụ lục nguồn ảnh chưa có chữ nhưng nhãn `ok` không báo thiếu | Bảng duyệt `data/content_gaps.csv`, trường `thieu_noi_dung` | `nd_39_2023:pl1` gắn lý do; QCVN phụ lục M/N/O/P không có đơn vị nào nên ghi ở mục 7 |
+| F06 | 20 Điều "(được bãi bỏ)" vẫn được tính là có hiệu lực | `status.mark_status` gắn `trang_thai = bai_bo`; `in_force_at` trả `False` | Bản ghi có hiệu lực tại 01/10/2026: 17.472 → 17.452 |
+
+Trường mới trên mọi bản ghi phiên bản: `trang_thai` (`bai_bo` hoặc `null`), `thieu_noi_dung` (lý do hoặc `null`), `pl_thay_the` (danh sách `{bang, tu_ngay, pham_vi, chi_tiet, can_cu}`). Bất biến mới: QCVN giữ ký hiệu và ô bằng nhau; `tt_51_2025_bca:pl1` là nội dung; 20 Điều bãi bỏ không có hiệu lực; `annex_replacements.csv` hợp lệ.
+
+Rủi ro review nêu, chưa sửa trong đợt này: mã `plN` là thứ tự gặp trong văn bản, không phải số phụ lục in trên nguồn (`nd_67_2023:pl7` là Phụ lục VI; Phụ lục III NĐ 67 bị tách thành `pl3`, `pl4`); ngoại lệ gia hạn có thể làm khoản con còn hiệu lực trong khi Điều cha hết khoảng gốc (TT 12 Điều 4); khoản/điểm trong văn bản sửa đổi có cấu trúc nhập nhằng do trích dẫn. Khi dựng kho tra cứu cần trích dẫn phụ lục theo tiêu đề, không theo mã `plN`, và không dùng đơn vị của văn bản sửa đổi làm căn cứ.
 
 ## 2. Danh tính văn bản
 
@@ -287,7 +304,7 @@ Quy ước: nếu một dòng gồm nhiều mốc ngày mà không tách đượ
 | Chỉ số | Giá trị |
 |---|---:|
 | Tổng bản ghi | 18.842 |
-| Có hiệu lực tại 2026-10-01 theo `in_force_at` | 17.472 |
+| Có hiệu lực tại 2026-10-01 theo `in_force_at` | 17.452 (20 Điều bãi bỏ không tính) |
 | `valid_to` khác rỗng / rỗng | 1.383 / 17.459 |
 | Bản ghi mới do sửa đổi (`source_doc_id` ≠ `doc_id`) | 1.004 |
 | Bản ghi bắt đầu sau ngày chốt | 4 |
@@ -333,7 +350,7 @@ TT 108 thay TT 12 từ 2026-07-01, nhưng ngoại lệ `gia_han` giữ Điều 4
 | Phần kết trong Điều cuối | Trước: 2 `ket_thuc` | Tách chữ ký/Nơi nhận | Sau: 32 `ket_thuc` (31 trước khi TT 155 đọc bản Word) |
 | Mục lục nhận là phụ lục | 12 phụ lục rỗng QCVN | Bỏ dòng mục lục trước parse | 0 phụ lục rỗng |
 | Nhãn điểm có chữ số | 1 dòng sửa đổi `k1)` NĐ 168 Đ41 k4 | Nhận điểm có chữ số, áp `bo_sung` | `:k1` riêng trong cây đơn vị |
-| Ngoại lệ ngày hiệu lực | 22 dòng: 8 `gia_han`, 5 `hoan_ap_dung`, 9 `moc_trong_noi_dung` | Gắn `hl_ngoai_le`, lọc bằng `in_force_at` | 17.472 bản ghi sống tại ngày chốt, có điều kiện kèm theo |
+| Ngoại lệ ngày hiệu lực | 22 dòng: 8 `gia_han`, 5 `hoan_ap_dung`, 9 `moc_trong_noi_dung` | Gắn `hl_ngoai_le`, lọc bằng `in_force_at` | 17.452 bản ghi sống tại ngày chốt, có điều kiện kèm theo |
 | Phiên bản không đổi nội dung | 184 bản ghi `noi_dung_doi=false` | Đánh dấu so với phiên bản liền trước | Giữ cả 184 để truy vết nguồn |
 | Phụ lục mẫu biểu | 107/158 `mau_bieu`, 51 `noi_dung` | Phân loại và áp bản đè đã duyệt | 158 phụ lục được gắn nhãn |
 | Chất lượng chữ kém | 19 bản ghi gắn `kem` (21 trước khi TT 108 đọc bản Word) | Rà tay từng bản ghi ngày 2026-10-16 | Cả 19 là báo nhầm của chỉ số, không có lỗi chữ (xem dưới bảng) |

@@ -180,3 +180,26 @@ def test_next_clause_is_not_glued_into_previous_clause(units):
         if m and f"{u['doc_id']}:d{u['dieu']}:k{nxt}" not in ids and "“" not in u["text"][:m.start()]:
             bad.append(u["unit_id"])
     assert bad == []
+
+
+def test_qcvn_keeps_symbols_and_equal_table_cells(versioned):
+    text = "\n".join(r["text"] for r in versioned if r["unit_id"] in ("qcvn_41_2024:d55:k7", "qcvn_41_2024:d56:k3",
+                                                                       "qcvn_41_2024:d79:k3"))
+    for expected in ("30 m < R ≤ 100 m", "độ dốc ≥ 3%", "Ø40 - Ø50", "220 | 400 | 110 | 200 | 10 | 10"):
+        assert expected in text, expected
+
+
+def test_new_licence_plate_annex_is_content_not_form(versioned):
+    assert {r["loai_phu_luc"] for r in versioned if r["unit_id"] == "tt_51_2025_bca:pl1"} == {"noi_dung"}
+
+
+def test_repealed_placeholders_are_not_in_force(versioned):
+    repealed = [r for r in versioned if r["trang_thai"] == "bai_bo"]
+    assert len(repealed) == 20
+    assert not any(_in_force(r) for r in repealed)
+
+
+def test_annex_replacement_table_is_valid(versioned):
+    from lawproc.status import check_annex_replacements, read_csv
+
+    check_annex_replacements(read_csv(PROCESSED.parent / "annex_replacements.csv"), versioned)

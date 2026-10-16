@@ -821,8 +821,8 @@ Các bước thực hiện | Yêu cầu đạt được | Các lỗi bị trừ 
 1. Bật đèn xi nhan phải khi xe qua vạch kết thúc; 2. Lái xe qua vạch kết thúc và dừng xe. | 1. Bật đèn xi nhan phải khi xe qua vạch kết thúc; 2. Lái xe qua vạch kết thúc; 3. Giữ tốc độ động cơ không quá 4000 vòng/ phút; 4. Giữ động cơ hoạt động liên tục; 5. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D | 1. Không qua vạch kết thúc, bị đình chỉ sát hạch; 2. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 3. Lái xe lên vỉa hè bị đình chỉ sát hạch; 4. Điểm sát hạch dưới 80 điểm, bị đình chỉ sát hạch. 5. Khi xe qua vạch kết thúc: a) Không bật đèn xi nhan phải, bị trừ 05 điểm; b) Xe bị chết máy, mỗi lần bị trừ 05 điểm; c) Tốc độ động cơ quá 4000 vòng/phút, mỗi lần bị trừ 05 điểm; d) Lái xe quá tốc độ quy định, cứ 03 giây bị trừ 01 điểm. đ) Tổng thời gian thực hiện các bài sát hạch quá quy định, cứ 03 giây bị trừ 01 điểm;
 3. Công nhận kết quả:
 Nội dung | Hạng B | Hạng D1, D2 | Hạng C1, C, D
-Thang điểm | 100
-Điểm đạt tối thiểu | 80
+Thang điểm | 100 | 100 | 100
+Điểm đạt tối thiểu | 80 | 80 | 80
 3.1. Thí sinh ký xác nhận vào biên bản sát hạch thực hành lái xe trong hình được in ra và phần kết quả sát hạch thực hành lái xe trong hình tại biên bản tổng hợp kết quả sát hạch lái xe của thí sinh.
 3.2. Sát hạch viên ký xác nhận vào biên bản sát hạch thực hành lái xe trong hình được in ra và ghi điểm, nhận xét, ký xác nhận phần kết quả sát hạch thực hành lái xe trong hình tại biên bản tổng hợp kết quả sát hạch lái xe của thí sinh.
 II. Sát hạch thực hành lái xe trên đường
@@ -1111,7 +1111,7 @@ Số TT | Các lỗi bị trừ điểm | Điểm trừ (tính cho 1 lần) | S�
 Cộng
 Kết luận:
 Số điểm đạt được:...
-Đạt Không đạt
+Đạt □ Không đạt □
 Sát hạch viên ký xác nhận Học viên ký xác nhận kết quả
 Mẫu số 04.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
@@ -1310,7 +1310,7 @@ Số TT | Các lỗi bị trừ điểm | Điểm trừ (tính cho 1 lần) | S�
 Cộng
 Kết luận:
 Số điểm đạt được:...
-Đạt Không đạt
+Đạt □ Không đạt □
 Sát hạch viên ký xác nhận Học viên ký xác nhận kết quả
 Mẫu số 04.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
@@ -1739,8 +1739,8 @@ Hiện đã có giấy phép lái xe hạng:............................... số
 do:....................................................................................... cấp ngày......./......../........
 Đề nghị cho tôi được đổi hoặc cấp lại giấy phép lái xe hạng:..............................
 Lý do:....................................................................................................................
-Đăng ký tích hợp giấy phép lái xe có thời hạn với giấy phép lái xe không có thời hạn:
-Vi phạm hành chính trong lĩnh vực giao thông đường bộ: có không
+Đăng ký tích hợp giấy phép lái xe có thời hạn với giấy phép lái xe không có thời hạn: □
+Vi phạm hành chính trong lĩnh vực giao thông đường bộ: có □ không □
 Tôi xin cam đoan những điều ghi trên đây là đúng sự thật, nếu sai tôi xin hoàn toàn chịu trách nhiệm.
 ..............., ngày..... tháng..... năm 20.....
 NGƯỜI LÀM ĐƠN
@@ -1806,7 +1806,7 @@ của Bộ trưởng Bộ Công an)
 BẢNG CHUYỂN ĐỔI GIẤY PHÉP LÁI XE QUỐC TẾ
 Áp dụng đối với giấy phép lái xe do Chính phủ Việt Nam cấp trước ngày 01/01/2025
 GIẤY PHÉP LÁI XE VIỆT NAM | GIẤY PHÉP LÁI XE QUỐC TẾ
-Hạng A1
+Hạng A1 | Hạng A1
 Hạng A2 | Hạng A
 Hạng A3 | Hạng B1
 Hạng B1, B2 | Hạng B

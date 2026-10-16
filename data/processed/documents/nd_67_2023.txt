@@ -1479,8 +1479,8 @@ ngày 06 tháng 9 năm 2023 của Chính phủ)
 a) Mức phí bảo hiểm (Chưa bao gồm thuế GTGT):
 Phí bảo hiểm đối với bảo hiểm bắt buộc trách nhiệm nghề nghiệp tư vấn đầu tư xây dựng được tính bằng tỷ lệ phần trăm (%) của giá trị hợp đồng tư vấn, cụ thể theo bảng sau:
 Giá trị hợp đồng tư vấn Giá trị công trình xây dựng | Đến 10 tỷ đồng | Trên 10 tỷ đồng đến 20 tỷ đồng | Trên 20 tỷ đồng đến 40 tỷ đồng | Trên 40 tỷ đồng đến 60 tỷ đồng | Trên 60 tỷ đồng đến 80 tỷ đồng
-Dưới 40 tỷ đồng | 1,20% | 1,52% | -
-Trên 40 tỷ đồng đến 60 tỷ đồng | 0,85% | 1,12% | 1,19% | -
+Dưới 40 tỷ đồng | 1,20% | 1,52% | - | - | -
+Trên 40 tỷ đồng đến 60 tỷ đồng | 0,85% | 1,12% | 1,19% | - | -
 Trên 60 tỷ đồng đến 80 tỷ đồng | 0,80% | 1,05% | 1,16% | 1,27% | -
 Trên 80 tỷ đồng đến 100 tỷ đồng | 0,75% | 0,95% | 1,07% | 1,18% | 1,34%
 Trên 100 tỷ đồng đến 120 tỷ đồng | 0,70% | 0,88% | 0,99% | 1,11% | 1,25%

@@ -1,0 +1,7 @@
+﻿id,muc_do,van_de,dia_chi,bang_chung
+F01,Cao,Mất cột bảng khi ô kề nhau giống nhau,qcvn_41_2024:d56:k3; tt_108_2026_bca:pl3; tt_12_2025_bca:pl4,table_adjacent_duplicate_cells.json
+F02,Cao,Mất ký hiệu trong w:sym,qcvn_41_2024:d12:k2:b; qcvn_41_2024:d55:k7; qcvn_41_2024:d79:k3; qcvn_41_2024:pl7,word_symbols_context.json
+F03,Cao,Cà Mau làm phụ lục biển số bị gắn mau_bieu,tt_51_2025_bca:pl1,annex_classifier_unaccented_matches.json
+F04,Cao,Phụ lục bị thay thế vẫn được lọc là còn hiệu lực,tt_79_2024_bca:pl18; nd_165_2024:pl2; nd_165_2024:pl10; nd_67_2023:pl3; nd_67_2023:pl4,confirmed_stale_annexes.json
+F05,Vừa,"Nội dung nguồn ảnh chưa trích, thiếu cờ completeness",nd_39_2023:pl1; QCVN phụ lục M/N/O/P,rendered_source_pages.json
+F06,Vừa,Placeholder đã bãi bỏ vẫn được đếm như quy định sống,20 Điều BLHS/XLVPHC,live_abolished_placeholders.json

@@ -991,8 +991,8 @@ Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ đi�
 3. Công nhận kết quả:
 3.1. Điểm đạt yêu cầu, theo bảng sau
 Nội dung | Hạng B | Hạng D1, D2 | Hạng C1, C, D
-Thang điểm | 100
-Điểm đạt tối thiểu | 80
+Thang điểm | 100 | 100 | 100
+Điểm đạt tối thiểu | 80 | 80 | 80
 3.2. Sát hạch viên ghi điểm, nhận xét, ký xác nhận và thí sinh ký xác nhận vào phần kết quả sát hạch lái xe trong hình tại biên bản tổng hợp kết quả sát hạch lái xe của thí sinh hoặc xác nhận kết quả sát hạch trên môi trường điện tử.
 4. Sát hạch thực hành lái xe trên đường
 4.1. Đối với sát hạch viên, mỗi xe bố trí tối thiểu 01 sát hạch viên, thực hiện các nhiệm vụ sau:
@@ -1111,10 +1111,10 @@ Mẫu số 03.
 HỘI ĐỒNG SÁT HẠCH | Độc lập – Tự do – Hạnh phúc
 KẾT QUẢ SÁT HẠCH THỰC HÀNH LÁI XE TRÊN ĐƯỜNG
 Họ và tên: Ngày sinh: Số định danh: Lần thi: | Kỳ sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: | Hạng sát hạch: Số báo danh: Số xe sát hạch: Tổng quãng đường sát hạch:
-Ảnh
-chân | chụp
-dung | ngẫu
-nhiên
+Ảnh | Ảnh | Ảnh | Ảnh
+chân | chụp | chụp | chụp
+dung | ngẫu | ngẫu | ngẫu
+nhiên | nhiên | nhiên
 STT | Bài sát hạch | Chi tiết lỗi | Điểm trừ
 1 | Kiểm tra an toàn và xuất phát
 2 | Vượt xe
@@ -1894,11 +1894,11 @@ của Bộ trưởng Bộ Công an)
 BẢNG CHUYỂN ĐỔI GIẤY PHÉP LÁI XE QUỐC TẾ
 Áp dụng đối với giấy phép lái xe do Chính phủ Việt Nam cấp trước ngày 01/01/2025
 GIẤY PHÉP LÁI XE VIỆT NAM | GIẤY PHÉP LÁI XE QUỐC TẾ
-Hạng A1
+Hạng A1 | Hạng A1
 Hạng A2 | Hạng A
 Hạng A3 | Hạng B1
 Hạng B1, B2 | Hạng B hoặc C1
-Hạng C
+Hạng C | Hạng C
 Hạng D | Hạng D2
 Hạng E | Hạng D
 Hạng FB2 | Hạng BE hoặc C1E
@@ -1940,7 +1940,7 @@ KẾT QUẢ KỲ SÁT HẠCH LÁI XE
 1. Trung tâm sát hạch:
 2. Ngày sát hạch:
 STT | Họ và tên | Ngày sinh | Số định danh | Hạng | Kết quả sát hạch
-LT | Số lần SH | TH LXTH | Số lần SH | TH LXTĐ | Số lần SH | Tổng hợp
+LT | Số lần SH | Số lần SH | TH LXTH | Số lần SH | TH LXTĐ | Số lần SH | Tổng hợp
 …
 TRƯỞNG PHÒNG (Ký tên, đóng dấu)
 Nơi nhận : - Lưu VT, Ghi chú: (1) Cơ quan bộ ghi là CỤC CẢNH SÁT GIAO THÔNG ở địa phương ghi CÔNG AN TỈNH/THÀNH PHỐ… (2) Cơ quan bộ ghi là PHÒNG 5, ở địa phương ghi là PHÒNG CẢNH SÁT GIAO THÔNG
