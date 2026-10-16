@@ -141,21 +141,21 @@ Biển báo hiệu trên đường cao tốc và đường đối ngoại phải
 12.1. Quy chuẩn này quy định các thông số về kích thước biển, hình vẽ trong biển và chữ viết tương ứng với đường đô thị có hệ số là 1 (xem Hình 1 và Bảng 1). Trường hợp đặc biệt, kích thước biển có thể được điều chỉnh để đảm bảo cân đối, đáp ứng tính thẩm mỹ và rõ ràng thông tin.
 12.2. Đối với các đường khác, kích thước biển, hình vẽ trong biển và chữ viết phải nhân với hệ số tương ứng trong Bảng 2, kích thước biển được làm tròn theo nguyên tắc:
 a) Số hàng đơn vị ≤ 5 thì lấy bằng 5;
-b) Số hàng đơn vị 5 thì lấy bằng 0 và tăng số hàng chục lên 1 đơn vị.
+b) Số hàng đơn vị > 5 thì lấy bằng 0 và tăng số hàng chục lên 1 đơn vị.
 45oBADLBRBLDBRCC
 Hình 1 - Kích thước các loại biển báo
 Bảng 1 - Kích thước cơ bản của biển báo hệ số 1
 Đơn vị tính: mm
 Loại biển | Kích thước | Độ lớn
 Biển tròn | Đường kính ngoài của biển báo, D | 700
-Chiều rộng của mép viền đỏ, B | 100
-Chiều rộng của vạch đỏ, A | 50
+| Chiều rộng của mép viền đỏ, B | 100
+| Chiều rộng của vạch đỏ, A | 50
 Biển bát giác | Đường kính ngoài biển báo, D | 600
-Độ rộng viền trắng xung quanh, B | 30
+| Độ rộng viền trắng xung quanh, B | 30
 Biển tam giác | Chiều dài cạnh của hình tam giác, L | 700
-Chiều rộng của viền mép đỏ, B | 50
-Bán kính lượn tròn của viền mép đỏ, R | 35
-Khoảng cách đỉnh cung tròn đến đỉnh tam giác cơ bản, C | 30
+| Chiều rộng của viền mép đỏ, B | 50
+| Bán kính lượn tròn của viền mép đỏ, R | 35
+| Khoảng cách đỉnh cung tròn đến đỉnh tam giác cơ bản, C | 30
 Biển vuông, chữ nhật | Khoảng cách đỉnh cung tròn đến đỉnh chữ nhật cơ bản, C | 20-30
 Bảng 2 - Hệ số kích thước biển báo
 Loại đường | Đường cao tốc | Đường đôi ngoài đô thị | Đường ô tô thông thường (*) | Đường đô thị (***)
@@ -454,8 +454,8 @@ TT | Mô tả biển chỉ dẫn | Kiểu chữ | Màu chữ, số | Màu nền 
 19 | Biển số IE.465 (a,b) chỉ dẫn địa điểm và khoảng cách | gt2 | trắng | xanh lá cây | trắng
 20 | Biển số IE.466 chỉ dẫn sơ đồ lối ra một chiều | gt2 | trắng | xanh lá cây | trắng
 21 | Biển số IE.467 (a,b) chỉ dẫn vị trí nhập làn, khoảng cách đến vị trí nhập làn | gt2 | trắng | xanh lá cây | trắng
-22 | Biển số IE.468 (a,b,c) chỉ dẫn chướng ngại vật phía trước | - | vàng huỳnh quang | đen
-23 | Biển số IE.469 chỉ dẫn hướng rẽ | - | vàng huỳnh quang | đen
+22 | Biển số IE.468 (a,b,c) chỉ dẫn chướng ngại vật phía trước | - | - | vàng huỳnh quang | đen
+23 | Biển số IE.469 chỉ dẫn hướng rẽ | - | - | vàng huỳnh quang | đen
 24 | Biển số IE.470 chỉ dẫn số điện thoại khẩn cấp | gt2 | trắng | xanh lá cây | trắng
 25 | Biển số IE.471 chỉ dẫn giữ khoảng cách lái xe an toàn | gt2 | đen | vàng huỳnh quang | đen
 26 | Biển số IE.472 (a,b,c,d,e) chỉ dẫn khoảng cách đến trạm thu phí, trạm thu phí, thu phí không dừng, rút thẻ, thu phí | gt2 | trắng | xanh lá cây | trắng
@@ -716,11 +716,11 @@ Cọc tiêu có tiết diện là hình vuông, kích thước cạnh tối thi�
 55.7.1. Khoảng cách (S) giữa hai cọc tiêu trên đường thẳng thông thường là S = 10 m với các đường ô tô thông thường và 30 m với đường cao tốc;
 55.7.2. Khoảng cách giữa hai cọc tiêu trên đường cong nằm:
 a) Nếu đường cong có bán kính R = 10 m đến 30 m thì khoảng cách giữa hai cọc tiêu S = 3 m;
-b) Nếu đường cong có bán kính R: 30 m < R 100 m thì khoảng cách giữa hai cọc tiêu S = 5 m;
+b) Nếu đường cong có bán kính R: 30 m < R ≤ 100 m thì khoảng cách giữa hai cọc tiêu S = 5 m;
 c) Nếu đường cong có bán kính R > 100 m thì S = 10 m;
 d) Khoảng cách giữa hai cọc tiêu ở tiếp đầu (hoặc nối đầu) và tiếp cuối (hoặc nối cuối) có thể bố trí xa hơn 3 m so với khoảng cách của hai cọc tiêu trong phạm vi đường cong.
 55.7.3. Khoảng cách giữa hai cọc tiêu trên đoạn đường dốc:
-a) Nếu đường có độ dốc 3%, khoảng cách giữa hai cọc tiêu là 5 m;
+a) Nếu đường có độ dốc ≥ 3%, khoảng cách giữa hai cọc tiêu là 5 m;
 b) Nếu đường có độ dốc < 3%, khoảng cách giữa hai cọc tiêu là 10 m (không áp dụng đối với đầu cầu và đầu cống);
 c) Khoảng cách giữa hai cọc tiêu trên đoạn đường dốc nơi có đường cong nằm thì lấy theo quy định tại điểm 55.7.2 khoản 55.7 Điều này. Khi hết phạm vi đường cong nằm, khoảng cách của các cọc tiêu lấy theo tiết a và tiết b điểm này.
 55.7.4. Mỗi hàng cọc tiêu cắm ít nhất là 6 cọc.
@@ -753,9 +753,9 @@ Hình 34a - Tiêu phản quang dạng mũi tên
 Hình 34b - Tiêu phản quang dạng mũi tên (bên trái) cho đường 2 chiều
 56.3.2. Kích thước tiêu phản quang dạng mũi tên được quy định như sau:
 Kích thước (mm) | A | B | C | D | E | F
-Đường có tốc độ thiết kế < 60 km/h | 220 | 400 | 110 | 200 | 10
-Đường có tốc độ thiết kế 60 - 80 km/h | 300 | 500 | 150 | 250 | 15
-Đường có tốc độ thiết kế > 80 km/h | 600 | 800 | 300 | 400 | 20
+Đường có tốc độ thiết kế < 60 km/h | 220 | 400 | 110 | 200 | 10 | 10
+Đường có tốc độ thiết kế 60 - 80 km/h | 300 | 500 | 150 | 250 | 15 | 15
+Đường có tốc độ thiết kế > 80 km/h | 600 | 800 | 300 | 400 | 20 | 20
 * Ở các đoạn đường đèo dốc, sương mù có thể tăng kích thước lên 1 cấp nâng cao an toàn giao thông.
 56.3.3. Tiêu phản quang dạng mũi tên được sử dụng trong phạm vi đường cong nằm trong các trường hợp sau:
 a) Trên các đường cao tốc tại các đường cong có bán kính bằng bán kính tối thiểu nhỏ nhất theo cấp đường;
@@ -890,7 +890,7 @@ GƯƠNG CẦU LỒI, DẢI PHÂN CÁCH VÀ LAN CAN PHÒNG HỘ
 a) Dải phân cách dạng bó vỉa bên trong đổ đất trồng cây (đối với dải phân cách rộng), có thể sử dụng kết hợp lan can phòng hộ nửa cứng hoặc mềm;
 b) Dải phân cách có dạng một dải đất xen kẹp giữa các phần xe chạy, có dạng lõm xuống hoặc tận dụng điều kiện địa hình tự nhiên, có thể sử dụng kết hợp lan can phòng hộ nửa cứng hoặc mềm;
 c) Dải phân cách sử dụng lan can phòng hộ cứng xây cố định trên mặt đường có chiều cao trong khoảng 0,3 m - 0,8 m, tối đa là 1,27 m nếu có nhu cầu chắn sáng, độ rộng tùy theo mặt đường rộng hẹp để thiết kế và được gắn tiêu phản quang hoặc được sơn phản quang theo các quy định về bố trí tiêu phản quang và vạch kẻ đường (vạch đứng) quy định trong Quy chuẩn này.
-79.3.2. Dải phân cách di động là các dải phân cách có thể di chuyển theo bề rộng trên mặt đường được tạo bởi các cột (cục) bê tông, nhựa composite bên trong có thể đổ cát hoặc nước cao từ 0,3 m - 0,8 m xếp liền nhau hoặc có các ống thép 40 - 50 xuyên qua tạo thành hệ thống lan can trên mặt đường.
+79.3.2. Dải phân cách di động là các dải phân cách có thể di chuyển theo bề rộng trên mặt đường được tạo bởi các cột (cục) bê tông, nhựa composite bên trong có thể đổ cát hoặc nước cao từ 0,3 m - 0,8 m xếp liền nhau hoặc có các ống thép Ø40 - Ø50 xuyên qua tạo thành hệ thống lan can trên mặt đường.
 79.4. Điều kiện đặt dải phân cách cố định và di động:
 79.4.1. Dải phân cách cố định nên sử dụng khi đường có từ 4 làn xe trở lên để phân làn đường đi theo hai hướng riêng biệt.
 79.4.2. Dải phân cách di động nên dùng ở những nơi mặt đường chỉ đủ 2 hay 3 làn xe, cần chia tạm thời hai chiều hoặc hai làn xe riêng biệt.
@@ -2063,7 +2063,7 @@ Lưu ý:
 - Trong khu vực bề rộng phần xe chạy bị thay đổi, vạch 1.3 được sử dụng để phân chia hai chiều xe chạy. Đối với hướng xe chạy có bề rộng mặt đường bị thu hẹp trong khu vực phần xe chạy bị thay đổi phải bố trí vạch giới hạn mép phần xe chạy (vạch 3.1) kết hợp với đặt biển số W.203 (b, c) “Đường bị thu hẹp”.
 - Chiều dài đoạn biến đổi bề rộng mặt đường L(m) được xác định như sau:
 V2W155
-(khi V 60 km/h) (1)
+(khi V ≤ 60 km/h) (1)
 hoặc L = 0.625V.W (khi V > 60 km/h) (2)
 Trong đó; V: Tốc độ hạn chế lớn nhất hoặc tốc độ V85, km/h; W: Chiều rộng giảm đi, m; D: chiều dài tầm nhìn dừng xe an toàn, m.
 - Đoạn kéo dài của vạch ở điểm cuối cùng giảm chiều rộng (d) được lựa chọn như sau: Đường có tốc độ hạn chế lớn nhất hoặc tốc độ V85 > 60 km/h là 40 m, các loại đường khác là 20 m.
@@ -2282,7 +2282,7 @@ Quy cách vạch như sau:
 Vạch 8.2 cấu tạo gồm những nét vạch đỏ - trắng xen kẽ thẳng đứng có chiều rộng là 20 cm, cao 50 cm, bề rộng của phần vạch toàn bộ là 1 m.
 c. Vạch số 8.3: vạch kẻ xung quanh các cột tròn đặt trên các đảo an toàn, trên dải phân cách và các vị trí tương tự
 Vạch trắng - đỏ song song với mặt phẳng nằm ngang có chiều rộng của phần màu trắng và phần màu đỏ bằng nhau và bằng chiều rộng B của công trình, vạch kẻ ở các cột tròn đặt trên đảo an toàn, trên dải phân cách hoặc các vị trí tương tự:
-- Nếu B 30cm thì a = 10cm.
+- Nếu B ≤ 30cm thì a = 10cm.
 - Nếu B > 30cm thì a = 15cm.
 Hình G.66 - Chi tiết vạch 8.3
 d. Vạch số 8.4: vạch kẻ trên cột tín hiệu, cột rào chắn, cột tiêu
@@ -2410,41 +2410,41 @@ KÍCH THƯỚC CHỮ VIẾT VÀ CON SỐ TRÊN BIỂN BÁO
 K.1 Kiểu chữ thường (gt2)
 Bảng kê chi tiết kỹ thuật kiểu chữ thường (gt2)
 Đơn vị tính: mm - Chiều cao chữ 100 mm
-Chữ in hoa | Chữ thường
-Lề trái | Giữa | Lề phải | Lề trái | Giữa | Lề phải
-A | 0,27 | 85,86 | 1,44 | a | 4,80 | 56,01 | 6,73
-Ă | 0,27 | 85,86 | 1,44 | ă | 4,80 | 56,01 | 6,73
-Â | 0,27 | 85,86 | 1,44 | â | 4,80 | 56,01 | 6,73
-B | 10,02 | 70,49 | 5,22 | b | 8,79 | 57,24 | 6,86
-C | 6,73 | 71,38 | 0,00 | c | 3,36 | 58,27 | 0,75
-D | 10,02 | 71,31 | 7,21 | d | 8,79 | 57,24 | 6,86
-Đ | 2,06 | 79,20 | 7,28 | đ | 8,79 | 63,97 | 0,14
-E | 10,02 | 64,52 | 3,57 | e | 5,01 | 58,96 | 5,97
-Ê | 10,02 | 64,52 | 3,57 | ê | 5,01 | 58,96 | 5,97
-F | 10,02 | 64,52 | 0,89 | f | 2,47 | 37,95 | 0,00
-G | 6,73 | 71,79 | 7,21 | g | 6,31 | 57,17 | 9,40
-H | 10,02 | 70,49 | 10.57 | h | 8,79 | 57,24 | 9,40
-I | 9,81 | 16,54 | 9,88 | i | 8,99 | 15,58 | 9,13
-J | 0,34 | 58,68 | 8,58 | j | 0,00 | 27,32 | 8,92
-K | 10,09 | 78,45 | 0,00 | k | 8,85 | 62,87 | 1,17
-L | 10,02 | 64,52 | 3,57 | l | 8,65 | 25,60 | 1,99
-M | 10,09 | 85,66 | 10,78 | m | 9,88 | 98,83 | 10,98
-N | 10,02 | 75,50 | 10,57 | n | 8,79 | 57,24 | 9,40
-O | 6,73 | 71,79 | 7,21 | o | 5,35 | 58,96 | 5,97
-Ô | 6,73 | 71,79 | 7,21 | ô | 5,35 | 58,96 | 5,97
-Ơ | 6,73 | 78,45 | 0,55 | ơ | 5,35 | 68,15 | 0,00
-P | 10,02 | 70,08 | 3,23 | p | 8,79 | 57,24 | 6,86
-Q | 3,98 | 81,33 | 0,41 | q | 6,31 | 57,17 | 9,40
-R | 10,02 | 73,78 | 1,92 | r | 6,11 | 48,52 | 0,00
-S | 1,37 | 73,78 | 5,49 | s | 0,69 | 61,43 | 5,35
-T | 0,00 | 70,42 | 0,00 | t | 2,40 | 32,81 | 3,84
-U | 8,24 | 71,59 | 8,72 | u | 8,79 | 57,24 | 9,40
-Ư | 4,80 | 87,92 | 0,00 | ư | 6,04 | 74,33 | 0,00
-V | 0,00 | 78,31 | 0,00 | v | 0,00 | 64,31 | 0,00
-W | 1,17 | 113,86 | 1,85 | w | 0,14 | 100,27 | 1,03
-X | 0,00 | 78,72 | 0,00 | x | 0,89 | 65,13 | 1,44
-Y | 0,00 | 75,09 | 0,00 | y | 0,00 | 64,58 | 0,00
-Z | 3,98 | 64,58 | 4,32 | z | 4,19 | 53,53 | 4,67
+Chữ in hoa | | Chữ thường
+| Lề trái | Giữa | Lề phải | | | Lề trái | Giữa | Lề phải
+A | 0,27 | 85,86 | 1,44 | | a | 4,80 | 56,01 | 6,73
+Ă | 0,27 | 85,86 | 1,44 | | ă | 4,80 | 56,01 | 6,73
+Â | 0,27 | 85,86 | 1,44 | | â | 4,80 | 56,01 | 6,73
+B | 10,02 | 70,49 | 5,22 | | b | 8,79 | 57,24 | 6,86
+C | 6,73 | 71,38 | 0,00 | | c | 3,36 | 58,27 | 0,75
+D | 10,02 | 71,31 | 7,21 | | d | 8,79 | 57,24 | 6,86
+Đ | 2,06 | 79,20 | 7,28 | | đ | 8,79 | 63,97 | 0,14
+E | 10,02 | 64,52 | 3,57 | | e | 5,01 | 58,96 | 5,97
+Ê | 10,02 | 64,52 | 3,57 | | ê | 5,01 | 58,96 | 5,97
+F | 10,02 | 64,52 | 0,89 | | f | 2,47 | 37,95 | 0,00
+G | 6,73 | 71,79 | 7,21 | | g | 6,31 | 57,17 | 9,40
+H | 10,02 | 70,49 | 10.57 | | h | 8,79 | 57,24 | 9,40
+I | 9,81 | 16,54 | 9,88 | | i | 8,99 | 15,58 | 9,13
+J | 0,34 | 58,68 | 8,58 | | j | 0,00 | 27,32 | 8,92
+K | 10,09 | 78,45 | 0,00 | | k | 8,85 | 62,87 | 1,17
+L | 10,02 | 64,52 | 3,57 | | l | 8,65 | 25,60 | 1,99
+M | 10,09 | 85,66 | 10,78 | | m | 9,88 | 98,83 | 10,98
+N | 10,02 | 75,50 | 10,57 | | n | 8,79 | 57,24 | 9,40
+O | 6,73 | 71,79 | 7,21 | | o | 5,35 | 58,96 | 5,97
+Ô | 6,73 | 71,79 | 7,21 | | ô | 5,35 | 58,96 | 5,97
+Ơ | 6,73 | 78,45 | 0,55 | | ơ | 5,35 | 68,15 | 0,00
+P | 10,02 | 70,08 | 3,23 | | p | 8,79 | 57,24 | 6,86
+Q | 3,98 | 81,33 | 0,41 | | q | 6,31 | 57,17 | 9,40
+R | 10,02 | 73,78 | 1,92 | | r | 6,11 | 48,52 | 0,00
+S | 1,37 | 73,78 | 5,49 | | s | 0,69 | 61,43 | 5,35
+T | 0,00 | 70,42 | 0,00 | | t | 2,40 | 32,81 | 3,84
+U | 8,24 | 71,59 | 8,72 | | u | 8,79 | 57,24 | 9,40
+Ư | 4,80 | 87,92 | 0,00 | | ư | 6,04 | 74,33 | 0,00
+V | 0,00 | 78,31 | 0,00 | | v | 0,00 | 64,31 | 0,00
+W | 1,17 | 113,86 | 1,85 | | w | 0,14 | 100,27 | 1,03
+X | 0,00 | 78,72 | 0,00 | | x | 0,89 | 65,13 | 1,44
+Y | 0,00 | 75,09 | 0,00 | | y | 0,00 | 64,58 | 0,00
+Z | 3,98 | 64,58 | 4,32 | | z | 4,19 | 53,53 | 4,67
 Ghi chú: Chữ viết và chữ số mẫu dùng để tham khảo khi thiết kế chi tiết biển chỉ dẫn (kích thước mắt lưới = 10 x 10 mm)
 Lề tráiLề phảiGiữa
 3,57 64,5210,02
@@ -2459,41 +2459,41 @@ kiểu chữ thường (gt2)
 K.2 Kiểu chữ nén (gt1)
 Bảng kê chi tiết kỹ thuật kiểu chữ nén (gt1)
 Đơn vị tính: mm - Chiều cao chữ 100 mm
-Chữ in hoa | Chữ thường
-Lề trái | Giữa | Lề phải | Lề trái | Giữa | Lề phải
-A | 0,15 | 57,10 | 0,29 | a | 5,05 | 42,90 | 6,15
-Ă | 0,15 | 57,10 | 0,29 | ă | 5,05 | 42,90 | 6,15
-Â | 0,15 | 57,10 | 0,29 | â | 5,05 | 42,90 | 6,15
-B | 7,76 | 46,19 | 6,44 | b | 6,44 | 42,90 | 5,64
-C | 6,88 | 46,19 | 4,61 | c | 5,20 | 42,75 | 3,44
-D | 7,76 | 46,19 | 6,73 | d | 5,78 | 42,90 | 6,15
-Đ | 0,59 | 54,90 | 5,20 | đ | 5,78 | 49,05 | 0,00
-E | 7,76 | 42,75 | 5,34 | e | 5,05 | 42,90 | 4,90
-Ê | 7,76 | 42,75 | 5,34 | ê | 5,05 | 42,90 | 4,90
-F | 7,76 | 42,61 | 4,76 | f | 2,34 | 31,92 | 0,95
-G | 6,73 | 47,95 | 6,44 | g | 5,05 | 43,05 | 6,30
-H | 7,76 | 46,49 | 7,76 | h | 6,30 | 42,90 | 6,37
-I | 7,76 | 14,13 | 7,91 | i | 6,30 | 14,42 | 6,22
-J | 0,73 | 43,05 | 5,20 | j | 0,15 | 22,77 | 4,17
-K | 8,05 | 53,22 | 2,12 | k | 6,30 | 50,07 | 0,59
-L | 7,91 | 42,61 | 3,00 | l | 6,30 | 21,45 | 2,49
-M | 7,76 | 64,20 | 7,76 | m | 6,30 | 71,52 | 6,22
-N | 7,76 | 49,93 | 7,76 | n | 6,08 | 42,90 | 6,44
-O | 6,73 | 48,10 | 6,73 | o | 5,20 | 42,90 | 5,12
-Ô | 6,73 | 48,10 | 6,73 | ô | 5,20 | 42,90 | 5,12
-Ơ | 6,00 | 55,42 | 0,15 | ơ | 3,73 | 51,39 | 0,29
-P | 7,76 | 46,34 | 2,42 | p | 6,44 | 42,90 | 5,05
-Q | 4,90 | 56,22 | 0,00 | q | 5,64 | 42,90 | 6,30
-R | 7,61 | 51,90 | 2,20 | r | 6,30 | 33,02 | 2,64
-S | 3,88 | 49,19 | 4,90 | s | 3,29 | 42,90 | 3,22
-T | 2,34 | 48,83 | 2,27 | t | 0,73 | 30,31 | 4,32
-U | 7,76 | 46,49 | 7,61 | u | 6,44 | 42,90 | 6,22
-Ư | 4,83 | 59,52 | 0,37 | ư | 4,25 | 56,00 | 0,00
-V | 0,88 | 53,51 | 0,88 | v | 0,00 | 49,93 | 0,00
-W | 0,88 | 78,55 | 0,88 | w | 0,59 | 74,96 | 0,29
-X | 1,32 | 55,34 | 0,88 | x | 0,00 | 49,78 | 0,00
-Y | 0,00 | 53,37 | 0,00 | y | 0,00 | 49,93 | 0,00
-Z | 4,76 | 42,90 | 4,03 | z | 3,29 | 38,95 | 3,44
+Chữ in hoa | | Chữ thường
+| Lề trái | Giữa | Lề phải | | | Lề trái | Giữa | Lề phải
+A | 0,15 | 57,10 | 0,29 | | a | 5,05 | 42,90 | 6,15
+Ă | 0,15 | 57,10 | 0,29 | | ă | 5,05 | 42,90 | 6,15
+Â | 0,15 | 57,10 | 0,29 | | â | 5,05 | 42,90 | 6,15
+B | 7,76 | 46,19 | 6,44 | | b | 6,44 | 42,90 | 5,64
+C | 6,88 | 46,19 | 4,61 | | c | 5,20 | 42,75 | 3,44
+D | 7,76 | 46,19 | 6,73 | | d | 5,78 | 42,90 | 6,15
+Đ | 0,59 | 54,90 | 5,20 | | đ | 5,78 | 49,05 | 0,00
+E | 7,76 | 42,75 | 5,34 | | e | 5,05 | 42,90 | 4,90
+Ê | 7,76 | 42,75 | 5,34 | | ê | 5,05 | 42,90 | 4,90
+F | 7,76 | 42,61 | 4,76 | | f | 2,34 | 31,92 | 0,95
+G | 6,73 | 47,95 | 6,44 | | g | 5,05 | 43,05 | 6,30
+H | 7,76 | 46,49 | 7,76 | | h | 6,30 | 42,90 | 6,37
+I | 7,76 | 14,13 | 7,91 | | i | 6,30 | 14,42 | 6,22
+J | 0,73 | 43,05 | 5,20 | | j | 0,15 | 22,77 | 4,17
+K | 8,05 | 53,22 | 2,12 | | k | 6,30 | 50,07 | 0,59
+L | 7,91 | 42,61 | 3,00 | | l | 6,30 | 21,45 | 2,49
+M | 7,76 | 64,20 | 7,76 | | m | 6,30 | 71,52 | 6,22
+N | 7,76 | 49,93 | 7,76 | | n | 6,08 | 42,90 | 6,44
+O | 6,73 | 48,10 | 6,73 | | o | 5,20 | 42,90 | 5,12
+Ô | 6,73 | 48,10 | 6,73 | | ô | 5,20 | 42,90 | 5,12
+Ơ | 6,00 | 55,42 | 0,15 | | ơ | 3,73 | 51,39 | 0,29
+P | 7,76 | 46,34 | 2,42 | | p | 6,44 | 42,90 | 5,05
+Q | 4,90 | 56,22 | 0,00 | | q | 5,64 | 42,90 | 6,30
+R | 7,61 | 51,90 | 2,20 | | r | 6,30 | 33,02 | 2,64
+S | 3,88 | 49,19 | 4,90 | | s | 3,29 | 42,90 | 3,22
+T | 2,34 | 48,83 | 2,27 | | t | 0,73 | 30,31 | 4,32
+U | 7,76 | 46,49 | 7,61 | | u | 6,44 | 42,90 | 6,22
+Ư | 4,83 | 59,52 | 0,37 | | ư | 4,25 | 56,00 | 0,00
+V | 0,88 | 53,51 | 0,88 | | v | 0,00 | 49,93 | 0,00
+W | 0,88 | 78,55 | 0,88 | | w | 0,59 | 74,96 | 0,29
+X | 1,32 | 55,34 | 0,88 | | x | 0,00 | 49,78 | 0,00
+Y | 0,00 | 53,37 | 0,00 | | y | 0,00 | 49,93 | 0,00
+Z | 4,76 | 42,90 | 4,03 | | z | 3,29 | 38,95 | 3,44
 Ghi chú: Chữ viết và chữ số mẫu dùng đề tham khảo khi thiết kế chi tiết biển chỉ dẫn (kích thước mắt lưới = 10x10 mm)
 K.2.1 Chữ in hoa, kiểu chữ nén (gt1)
 Ghi chú: đơn vị mm

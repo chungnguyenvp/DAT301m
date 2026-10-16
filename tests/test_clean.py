@@ -77,3 +77,14 @@ def test_join_wrapped_joins_sentence_starting_with_phu_luc_but_not_annex_heading
 
 def test_normalize_maps_latin_eth_to_vietnamese_d_with_stroke():
     assert normalize("Ðiều 317. Ðối với") == "Điều 317. Đối với"
+
+
+def test_strip_part_drops_digital_signature_stamp_block():
+    lines = ["trái pháp luật.", "Ký bởi: Cổng Thông tin điện tử Chính phủ", "Email: thongtinchinhphu@chinhphu.vn",
+             "Cơ quan: Văn phòng Chính phủ", "Thời gian ký: 06.01.2016 10:44:53 +07:00", "Điều 4. Áp dụng"]
+    assert strip_part(lines)[0] == ["trái pháp luật.", "Điều 4. Áp dụng"]
+
+
+def test_strip_part_keeps_body_line_that_only_starts_like_a_stamp_field():
+    lines = ["Cơ quan: Ủy ban nhân dân cấp tỉnh có trách nhiệm hướng dẫn."]
+    assert strip_part(lines)[0] == lines

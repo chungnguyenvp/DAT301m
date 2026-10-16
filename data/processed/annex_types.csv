@@ -5,12 +5,12 @@ nd_158_2024:pl3,nd_158_2024,Phụ lục III,mau_bieu,tiêu đề có chữ Mẫu
 nd_158_2024:pl4,nd_158_2024,Phụ lục IV,mau_bieu,tiêu đề có chữ Mẫu,0.0069,ok
 nd_158_2024:pl5,nd_158_2024,Phụ lục V,mau_bieu,tiêu đề có chữ Mẫu,0.0238,ok
 nd_158_2024:pl6,nd_158_2024,Phụ lục VI,mau_bieu,tiêu đề có chữ Mẫu,0.0185,ok
-nd_158_2024:pl7,nd_158_2024,Phụ lục VII,mau_bieu,tiêu đề có chữ Mẫu,0.2864,kem
-nd_158_2024:pl8,nd_158_2024,Phụ lục VIII,mau_bieu,tiêu đề có chữ Mẫu,0.4204,kem
+nd_158_2024:pl7,nd_158_2024,Phụ lục VII,mau_bieu,tiêu đề có chữ Mẫu,0.3102,kem
+nd_158_2024:pl8,nd_158_2024,Phụ lục VIII,mau_bieu,tiêu đề có chữ Mẫu,0.4231,kem
 nd_158_2024:pl9,nd_158_2024,Phụ lục IX,mau_bieu,tiêu đề có chữ Mẫu,0.1379,kem
 nd_158_2024:pl10,nd_158_2024,Phụ lục X,mau_bieu,tiêu đề có chữ Mẫu,0.0606,ok
-nd_158_2024:pl11,nd_158_2024,Phụ lục XI,mau_bieu,tiêu đề có chữ Mẫu,0.081,ok
-nd_158_2024:pl12,nd_158_2024,Phụ lục XII,mau_bieu,tiêu đề có chữ Mẫu,0.1409,kem
+nd_158_2024:pl11,nd_158_2024,Phụ lục XI,mau_bieu,tiêu đề có chữ Mẫu,0.0825,ok
+nd_158_2024:pl12,nd_158_2024,Phụ lục XII,mau_bieu,tiêu đề có chữ Mẫu,0.1585,kem
 nd_158_2024:pl13,nd_158_2024,Phụ lục XIII,mau_bieu,tiêu đề có chữ Mẫu,0.0306,ok
 nd_160_2024:pl1,nd_160_2024,Phụ lục I,mau_bieu,tiêu đề có chữ Mẫu,0.0759,ok
 nd_160_2024:pl2,nd_160_2024,Phụ lục II,noi_dung,,0.0,ok
@@ -135,7 +135,7 @@ tt_30_2026_bxd:pl20,tt_30_2026_bxd,"Phụ lục XX MẪU TEM KIỂM ĐỊNH, CH�
 tt_36_2024_byt:pl1,tt_36_2024_byt,PHỤ LỤC I,noi_dung,,0.0114,ok
 tt_36_2024_byt:pl2,tt_36_2024_byt,PHỤ LỤC II,mau_bieu,tiêu đề có chữ Mẫu,0.0086,ok
 tt_37_2026_bca:pl1,tt_37_2026_bca,Mẫu KĐ23a ban hành kèm theo Thông tư số 37/2026/TT-BCA ngày 24/4/2026 của Bộ Công anMẫu KĐ23a ban hành kèm theo Thông tư,mau_bieu,tiêu đề có chữ Mẫu,0.3138,kem
-tt_51_2025_bca:pl1,tt_51_2025_bca,Phụ lục số 02,mau_bieu,tiêu đề có chữ Mẫu,0.0208,ok
+tt_51_2025_bca:pl1,tt_51_2025_bca,Phụ lục số 02,noi_dung,,0.0208,ok
 tt_65_2024_bca:pl1,tt_65_2024_bca,PHỤ LỤC,mau_bieu,tiêu đề có chữ Mẫu,0.0081,ok
 tt_79_2024_bca:pl1,tt_79_2024_bca,Mẫu ĐKX01 Ban hành kèm theo Thông tư số 79/2024/TT-BCA Ngày 15/11/2024 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.2318,kem
 tt_79_2024_bca:pl2,tt_79_2024_bca,Mẫu ĐKX02 Ban hành kèm theo Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.2311,kem

@@ -492,7 +492,7 @@ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ...
 53.98 mm 85.6 mm
 Tên chủ xe (Owner’s full name): Địa chỉ (Address): Nhãn hiệu (Brand): Số loại(Model code): Loại xe (Type): Màu sơn (Color): Dung tích (Capacity): cm3 ; Công suất (Rated power): kw Số máy (Engine N0): Số khung (Chassis N0): Biển số đăng ký ( 5)..(date), ngày tháng năm (Number Plate) ... (6) .... Giá trị đến ngày (Date of expiry):
 Ghi chú: Ký hiệu trong mẫu:
-Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
+| Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
 (1) | BỘ CÔNG AN | CÔNG AN TỈNH, THÀNH PHỐ + TÊN ĐỊA PHƯƠNG
 (2) | Ministry of Public Security | Police of + tên địa phương+ Province/City
 (3) | CỤC CẢNH SÁT GIAO THÔNG | PHÒNG CẢNH SÁT GIAO THÔNG, CÔNG AN THÀNH PHỐ, QUẬN, HUYỆN, THỊ XÃ+ TÊN ĐỊA PHƯƠNG
@@ -508,7 +508,7 @@ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ...
 2. Mặt sau 85.6 mm
 Tên chủ xe (Owner’s full name): Địa chỉ (Address): 53,98 mmNhãn hiệu (Brand): Số loại (Model code): Loại xe (Type): Màu sơn (Color): Số máy (Engine N0): Số khung (Chassis N0): Trọng tải (Cargo mass): kg; Số chỗ (seats): (5) KL toàn bộ (Total mass): kg; KL kéo theo (Towed mass): kg Biển số đăng ký ...(6)...., (date),ngày tháng năm (Number Plate) ... (7) .... Giá trị đến ngày (Date of expiry)
 Ghi chú: Ký hiệu trong mẫu:
-Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
+| Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
 (1) | BỘ CÔNG AN | CÔNG AN TỈNH, THÀNH PHỐ + TÊN ĐỊA PHƯƠNG
 (2) | Ministry of Public Security | Police of + tên địa phương + Province /City
 (3) | CỤC CẢNH SÁT GIAO THÔNG | PHÒNG CẢNH SÁT GIAO THÔNG; CÔNG AN THÀNH PHỐ, HUYỆN, THỊ XÃ + TÊN ĐỊA PHƯƠNG
@@ -526,7 +526,7 @@ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ...
 53.98 mm
 Tên chủ xe (Owner’s full name): Địa chỉ (Address): Nhãn hiệu(Brand): Số loại(Model code): Loại xe (Type): Màu sơn (Color): Số khung (Chassis N0): Trọng tải (Cargo mass): kg; KL toàn bộ (Total mass): kg Biển số đăng ký ....(5)...., (date),ngày tháng năm (Number Plate) .... (6) .... Giá trị đến ngày (Date of expiry):
 Ghi chú: Ký hiệu trong mẫu:
-Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
+| Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
 (1) | BỘ CÔNG AN | CÔNG AN TỈNH, THÀNH PHỐ + TÊN ĐỊA PHƯƠNG
 (2) | Ministry of Public Security | Police of + tên địa phương + Province/City
 (3) | CỤC CẢNH SÁT GIAO THÔNG | PHÒNG CẢNH SÁT GIAO THÔNG; CÔNG AN THÀNH PHỐ, HUYỆN, THỊ XÃ + TÊN ĐỊA PHƯƠNG
@@ -555,7 +555,7 @@ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ...
 53.98mn 85.6 mm
 Tên chủ xe (Owner’s full name): Địa chỉ (Address): Nhãn hiệu (Brand): Số loại (Model code): Loại xe (Type): Màu sơn (Color): Số chỗ (Seats): Số máy (Engine N0): Số khung (Chassis N0): Phạm vi hoạt động: Biển số đăng ký ....(5)..., (date),ngày tháng năm (Number Plate) .... (6) .... Giá trị đến ngày (Date of expiry):
 Ghi chú: Ký hiệu trong mẫu:
-Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
+| Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
 (1) | BỘ CÔNG AN | CÔNG AN TỈNH, THÀNH PHỐ + TÊN ĐỊA PHƯƠNG
 (2) | Ministry of Public Security | Police of + tên địa phương +Province/City
 (3) | CỤC CẢNH SÁT GIAO THÔNG | PHÒNG CẢNH SÁT GIAO THÔNG; CÔNG AN THÀNH PHỐ, QUẬN, HUYỆN, THỊ XÃ+ TÊN ĐỊA PHƯƠNG
@@ -572,7 +572,7 @@ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ...
 53,98 mm
 Tên chủ xe (Owner’s full name): Địa chỉ (Address): Nhãn hiệu(Brand): Số loại(Model code): Loại xe (Type): Màu sơn (Color): Số máy (Engine N0): Số khung (Chassis N0): KL toàn bộ(Total mass): kg; KL kéo theo (Towed mass): kg Biển số đăng ký ..(5)...., (date) ngày... tháng năm (Number Plate) ... (6) ... Giá trị đến ngày (Date of expiry):
 Ghi chú: Ký hiệu trong mẫu:
-Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
+| Ở TRUNG ƯƠNG | Ở ĐỊA PHƯƠNG
 (1) | BỘ CÔNG AN | CÔNG AN TỈNH, THÀNH PHỐ + TÊN ĐỊA PHƯƠNG
 (2) | Ministry of Public Security | Police of tên địa phương +Province /City
 (3) | CỤC CẢNH SÁT GIAO THÔNG | PHÒNG CẢNH SÁT GIAO THÔNG; CÔNG AN HUYỆN, THỊ XÃ; THÀNH PHỐ + TÊN ĐỊA PHƯƠNG
@@ -601,7 +601,7 @@ Số khung: ....................................................................
 Trọng tải:......................................kg; Số chỗ ngồi:................; đứng:..........; nằm:................ ; Năm sản xuất: ...........................
 Đã thu (4): Chứng nhận đăng ký xe Biển số xe
 Biển số xe bị mất Chứng nhận đăng ký xe bị mất
-Nơi dán bản chà số máy (5) | Nơi dán bản chà số khung
+Nơi dán bản chà số máy (5) | | Nơi dán bản chà số khung
 Lý do thu hồi: (6)..................................................................................................................................................................................... .....................................................................
 Hồ sơ gốc đang lưu trữ tại: .......................................................................................................................................................................................................................
 Các chứng từ kèm theo:...................................................................................................................................................................................................................................
@@ -657,7 +657,7 @@ Số máy: .....................................................................
 Lý do đóng số máy, số khung:............................................................................................................................... .............................................................
 Vị trí đóng số:.....................................................................................................................................................................................................................................................
 Cán bộ thực hiện đóng số:..........................................................................................................................................................................................................
-Nơi dán bản chà số máy sau khi đóng (đóng dấu giáp lai của cơ quan đăng ký xe) | Nơi dán bản chà số khung sau khi đóng (đóng dấu giáp lai của cơ quan đăng ký xe)
+Nơi dán bản chà số máy sau khi đóng (đóng dấu giáp lai của cơ quan đăng ký xe) | | Nơi dán bản chà số khung sau khi đóng (đóng dấu giáp lai của cơ quan đăng ký xe)
 Điều 2. Quyết định này có hiệu lực từ ngày ký.
 Điều 3. Đồng chí........................................... chịu trách nhiệm thi hành Quyết định này./.
 Nơi nhận: | .........................., ngày.......... tháng .........năm.................... ………… (5)…………… (Ký, ghi rõ họ tên, đóng dấu)
@@ -689,7 +689,7 @@ Nguồn gốc (5)................................................. Mã chứng t
 Lý do: (6). .........................................................................................................................................................................................................................................................................................
 Kèm theo giấy này có: .(7)............................................................... ...........................................................................................................................................................
 ............................................................................................................................................................ ..........................................................................................................................................................
-Nơi dán bản chà số máy | Nơi dán bản chà số khung
+Nơi dán bản chà số máy | | Nơi dán bản chà số khung
 Tôi xin cam đoan về nội dung khai trên là đúng và hoàn toàn chịu trách nhiệm trước pháp luật về các chứng từ trong hồ sơ xe.
 CÁN BỘ ĐĂNG KÝ XE Ký, ghi rõ họ tên | ….............., ngày…...... tháng…....... năm…........ CHỦ XE (Ký số hoặc ký, ghi rõ họ tên, đóng dấu nếu là xe cơ quan)
 (8) Ký số hoặc ký, ghi rõ họ tên, đóng dấu
@@ -818,7 +818,7 @@ Nhãn hiệu: ..................................................................
 Loại xe:............................................. Dung tích..........................................; cm3; công suất:.......................... (kw).; năm sản xuất: ...... ...
 Số máy:......................................................................................................... Số khung:..............................................................................................................................................
 Khối lượng hàng hóa:.......................................................kg; số chỗ ngồi:.................................; đứng:................................; nằm:..............................
-Nơi dán bản chà số máy | Nơi dán bản chà số khung
+Nơi dán bản chà số máy | | Nơi dán bản chà số khung
 Kèm theo giấy này có:............................................................................................
 .......................................................................................................................................................................................................................................................................................................................
 .
@@ -844,7 +844,7 @@ Nhãn hiệu: ..................................................................
 Loại xe:................................................................................. Dung tích/Công suất:............................. cm3(kw). Năm sản xuất: ....... ...
 Số máy:...................................................................................................... Số khung:...............................................................................................................................................
 Khối lượng hàng hóa:........................................................kg; Số chỗ ngồi:..............................; đứng:................................; nằm:..............................
-Nơi dán bản chà số máy (3) | Nơi dán bản chà số khung (3)
+Nơi dán bản chà số máy (3) | | Nơi dán bản chà số khung (3)
 Kèm theo giấy này có:.............................................................................................
 .............................................................
 .
@@ -879,39 +879,39 @@ KÝ HIỆU BIỂN SỐ XE Ô TÔ, XE MÔ TÔ, XE MÁY
 CHUYÊN DÙNG TRONG NƯỚC
 (Ban hành kèm theo Thông tư số 79/2024/TT-BCA ngày 15/11/2024
 của Bộ trưởng Bộ Công an)
-STT | Tên địa phương | Ký hiệu | STT | Tên địa phương | Ký hiệu
-1 | Cao Bằng | 11 | 33 | Cần Thơ | 65
-2 | Lạng Sơn | 12 | 34 | Đồng Tháp | 66
-3 | Quảng Ninh | 14 | 35 | An Giang | 67
-4 | Hải Phòng | 15-16 | 36 | Kiên Giang | 68
-5 | Thái Bình | 17 | 37 | Cà Mau | 69
-6 | Nam Định | 18 | 38 | Tây Ninh | 70
-7 | Phú Thọ | 19 | 39 | Bến Tre | 71
-8 | Thái Nguyên | 20 | 40 | Bà Rịa - Vũng Tàu | 72
-9 | Yên Bái | 21 | 41 | Quảng Bình | 73
-10 | Tuyên Quang | 22 | 42 | Quảng Trị | 74
-11 | Hà Giang | 23 | 43 | Thừa Thiên Huế | 75
-12 | Lào Cai | 24 | 44 | Quảng Ngãi | 76
-13 | Lai Châu | 25 | 45 | Bình Định | 77
-14 | Sơn La | 26 | 46 | Phú Yên | 78
-15 | Điện Biên | 27 | 47 | Khánh Hòa | 79
-16 | Hòa Bình | 28 | 48 | Cục Cảnh sát giao thông | 80
-17 | Hà Nội | Từ 29 đến 33 và 40 | 49 | Gia Lai | 81
-18 | Hải Dương | 34 | 50 | Kon Tum | 82
-19 | Ninh Bình | 35 | 51 | Sóc Trăng | 83
-20 | Thanh Hóa | 36 | 52 | Trà Vinh | 84
-21 | Nghệ An | 37 | 53 | Ninh Thuận | 85
-22 | Hà Tĩnh | 38 | 54 | Bình Thuận | 86
-23 | Đà Nẵng | 43 | 55 | Vĩnh Phúc | 88
-24 | Đắk Lắk | 47 | 56 | Hưng Yên | 89
-25 | Đắk Nông | 48 | 57 | Hà Nam | 90
-26 | Lâm Đồng | 49 | 58 | Quảng Nam | 92
-27 | TP. Hồ Chí Minh | 41; từ 50 đến 59 | 59 | Bình Phước | 93
-28 | Đồng Nai | 39; 60 | 60 | Bạc Liêu | 94
-29 | Bình Dương | 61 | Hậu Giang | 95
-30 | Long An | 62 | Bắc Cạn | 97
-31 | Tiền Giang | 63 | Bắc Giang | 98
-32 | Vĩnh Long | 64 | Bắc Ninh | 99
+STT | Tên địa phương | Ký hiệu | | STT | Tên địa phương | Ký hiệu
+1 | Cao Bằng | 11 | | 33 | Cần Thơ | 65
+2 | Lạng Sơn | 12 | | 34 | Đồng Tháp | 66
+3 | Quảng Ninh | 14 | | 35 | An Giang | 67
+4 | Hải Phòng | 15-16 | | 36 | Kiên Giang | 68
+5 | Thái Bình | 17 | | 37 | Cà Mau | 69
+6 | Nam Định | 18 | | 38 | Tây Ninh | 70
+7 | Phú Thọ | 19 | | 39 | Bến Tre | 71
+8 | Thái Nguyên | 20 | | 40 | Bà Rịa - Vũng Tàu | 72
+9 | Yên Bái | 21 | | 41 | Quảng Bình | 73
+10 | Tuyên Quang | 22 | | 42 | Quảng Trị | 74
+11 | Hà Giang | 23 | | 43 | Thừa Thiên Huế | 75
+12 | Lào Cai | 24 | | 44 | Quảng Ngãi | 76
+13 | Lai Châu | 25 | | 45 | Bình Định | 77
+14 | Sơn La | 26 | | 46 | Phú Yên | 78
+15 | Điện Biên | 27 | | 47 | Khánh Hòa | 79
+16 | Hòa Bình | 28 | | 48 | Cục Cảnh sát giao thông | 80
+17 | Hà Nội | Từ 29 đến 33 và 40 | | 49 | Gia Lai | 81
+18 | Hải Dương | 34 | | 50 | Kon Tum | 82
+19 | Ninh Bình | 35 | | 51 | Sóc Trăng | 83
+20 | Thanh Hóa | 36 | | 52 | Trà Vinh | 84
+21 | Nghệ An | 37 | | 53 | Ninh Thuận | 85
+22 | Hà Tĩnh | 38 | | 54 | Bình Thuận | 86
+23 | Đà Nẵng | 43 | | 55 | Vĩnh Phúc | 88
+24 | Đắk Lắk | 47 | | 56 | Hưng Yên | 89
+25 | Đắk Nông | 48 | | 57 | Hà Nam | 90
+26 | Lâm Đồng | 49 | | 58 | Quảng Nam | 92
+27 | TP. Hồ Chí Minh | 41; từ 50 đến 59 | | 59 | Bình Phước | 93
+28 | Đồng Nai | 39; 60 | | 60 | Bạc Liêu | 94
+29 | Bình Dương | 61 | | 61 | Hậu Giang | 95
+30 | Long An | 62 | | 62 | Bắc Cạn | 97
+31 | Tiền Giang | 63 | | 63 | Bắc Giang | 98
+32 | Vĩnh Long | 64 | | 64 | Bắc Ninh | 99
 Phụ lục số 03
 KÝ HIỆU BIỂN SỐ XE Ô TÔ, MÔ TÔ, XE MÁY CHUYÊN DÙNG CỦA TỔ CHỨC, CÁ NHÂN NƯỚC NGOÀI
 (Ban hành kèm theo Thông tư số 79/2024/TT-BCA ngày 15/11/2024

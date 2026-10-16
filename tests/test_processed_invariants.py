@@ -159,3 +159,60 @@ def test_records_have_annotations(versioned):
     assert all(isinstance(r["noi_dung_doi"], bool) and r["chat_luong"] in ("ok", "kem") for r in versioned)
     assert all((r["loai_phu_luc"] in ("mau_bieu", "noi_dung")) == (r["level"] == "phu_luc")
                for r in versioned)
+
+
+def test_no_digital_signature_stamp_in_legal_units(units):
+    bad = [u["unit_id"] for u in units if u["level"] in ("dieu", "khoan", "diem") and "Ký bởi:" in u["text"]]
+    assert bad == []
+
+
+def test_next_clause_is_not_glued_into_previous_clause(units):
+    """Khoản N+1 không nằm dính trong chữ khoản N (ngoài văn bản sửa đổi, nơi khoản nằm trong trích dẫn)."""
+    from lawproc import config
+
+    ids = {u["unit_id"] for u in units}
+    bad = []
+    for u in units:
+        if u["level"] != "khoan" or u["doc_id"] in config.AMENDING_DOCS or not (u["khoan"] or "").isdigit():
+            continue
+        nxt = int(u["khoan"]) + 1
+        m = re.search(rf"(?:[.;:]|\))\s+{nxt}\.\s+[A-ZĐÂĂÊÔƠƯ]", u["text"])
+        if m and f"{u['doc_id']}:d{u['dieu']}:k{nxt}" not in ids and "“" not in u["text"][:m.start()]:
+            bad.append(u["unit_id"])
+    assert bad == []
+
+
+def test_qcvn_keeps_symbols_and_equal_table_cells(versioned):
+    text = "\n".join(r["text"] for r in versioned if r["unit_id"] in ("qcvn_41_2024:d55:k7", "qcvn_41_2024:d56:k3",
+                                                                       "qcvn_41_2024:d79:k3"))
+    for expected in ("30 m < R ≤ 100 m", "độ dốc ≥ 3%", "Ø40 - Ø50", "220 | 400 | 110 | 200 | 10 | 10"):
+        assert expected in text, expected
+
+
+def test_new_licence_plate_annex_is_content_not_form(versioned):
+    assert {r["loai_phu_luc"] for r in versioned if r["unit_id"] == "tt_51_2025_bca:pl1"} == {"noi_dung"}
+
+
+def test_repealed_placeholders_are_not_in_force(versioned):
+    repealed = [r for r in versioned if r["trang_thai"] == "bai_bo"]
+    assert len(repealed) == 20
+    assert not any(_in_force(r) for r in repealed)
+
+
+def test_annex_replacement_table_is_valid(versioned):
+    from lawproc.status import check_annex_replacements, read_csv
+
+    check_annex_replacements(read_csv(PROCESSED.parent / "annex_replacements.csv"), versioned)
+
+
+def test_tt_12_scoring_table_keeps_columns(versioned):
+    # TT 12 đã bị thay; Phụ lục IV còn áp dụng có điều kiện nhờ ngoại lệ gia hạn
+    (text,) = [r["text"] for r in versioned if r["unit_id"] == "tt_12_2025_bca:pl4" and _in_force(r)]
+    assert "\n| 6. Giữ tốc độ động cơ không quá 4000 vòng/phút;" in text
+
+
+def test_replaced_licence_plate_annex_is_closed(versioned):
+    old = [r for r in versioned if r["unit_id"] == "tt_79_2024_bca:pl18"]
+    new = [r for r in versioned if r["unit_id"] == "tt_51_2025_bca:pl1"]
+    assert not any(_in_force(r) for r in old) and all(_in_force(r) for r in new)
+    assert old[-1]["pl_thay_the"][0]["bang"] == "tt_51_2025_bca:pl1"

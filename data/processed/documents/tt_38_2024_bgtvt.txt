@@ -40,12 +40,12 @@ TỐC ĐỘ THIẾT KẾ CỦA ĐƯỜNG BỘ; TỐC ĐỘ KHAI THÁC CỦA ĐƯ
 1. Tốc độ khai thác tối đa cho phép xe cơ giới tham gia giao thông trên đường bộ trong khu vực đông dân cư
 Bảng 1
 Loại xe cơ giới đường bộ | Tốc độ khai thác tối đa (km/h)
-Đường đôi; đường một chiều có từ hai làn xe cơ giới trở lên | Đường hai chiều; đường một chiều có một làn xe cơ giới
+| Đường đôi; đường một chiều có từ hai làn xe cơ giới trở lên | Đường hai chiều; đường một chiều có một làn xe cơ giới
 Các loại xe cơ giới, trừ các xe được quy định tại Điều 7 và Điều 8 Thông tư này | 60 | 50
 2. Tốc độ khai thác tối đa cho phép xe cơ giới tham gia giao thông trên đường bộ ngoài khu vực đông dân cư
 Bảng 2
 Loại xe cơ giới đường bộ | Tốc độ khai thác tối đa (km/h)
-Đường đôi; đường một chiều có từ hai làn xe cơ giới trở lên | Đường hai chiều; đường một chiều có một làn xe cơ giới
+| Đường đôi; đường một chiều có từ hai làn xe cơ giới trở lên | Đường hai chiều; đường một chiều có một làn xe cơ giới
 Xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn | 90 | 80
 Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc) | 80 | 70
 Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động) | 70 | 60

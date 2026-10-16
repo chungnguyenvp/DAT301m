@@ -15,7 +15,8 @@ QUY ĐỊNH CHUNG
 Điều 1. Phạm vi điều chỉnh
 Nghị định này quy định chi tiết, hướng dẫn thi hành một số điều của Luật Đường bộ và Điều 77 Luật Trật tự, an toàn giao thông đường bộ về:
 1. Quy hoạch kết cấu hạ tầng đường bộ.
-2. Phân loại, phân cấp và trách nhiệm quản lý, vận hành, khai thác, bảo trì đường bộ. 3. Phần đất để bảo vệ, bảo trì đường bộ; hành lang an toàn đường bộ; xây dựng công trình trong phạm vi bảo vệ kết cấu hạ tầng đường bộ; bảo vệ kết cấu hạ tầng đường bộ; sử dụng tạm thời lòng đường, vỉa hè vào mục đích khác.
+2. Phân loại, phân cấp và trách nhiệm quản lý, vận hành, khai thác, bảo trì đường bộ.
+3. Phần đất để bảo vệ, bảo trì đường bộ; hành lang an toàn đường bộ; xây dựng công trình trong phạm vi bảo vệ kết cấu hạ tầng đường bộ; bảo vệ kết cấu hạ tầng đường bộ; sử dụng tạm thời lòng đường, vỉa hè vào mục đích khác.
 4. Tổ chức giao thông, kết nối giao thông đường bộ.
 5. Thẩm tra, thẩm định an toàn giao thông đường bộ; đào tạo thẩm tra an toàn giao thông đường bộ.
 6. Đường cao tốc.
@@ -284,7 +285,7 @@ a) Đánh giá nhu cầu vận tải đường bộ thời kỳ quy hoạch và 
 b) Phương hướng kết nối đường bộ giữa các vùng kinh tế - xã hội, khu vực, địa bàn đô thị và nông thôn; kết nối với các đầu mối giao thông: cảng hàng không, sân bay, cảng biển, cảng đường thủy nội địa, ga đường sắt, bến xe, bãi đỗ xe, các khu kinh tế, khu chế xuất, khu công nghiệp và các vị trí, khu vực, địa bàn khác.
 2. Nội dung tổ chức giao thông đường bộ trong giai đoạn quy hoạch kết cấu hạ tầng đường bộ bao gồm:
 a) Các quy định tại khoản 1 Điều này;
-b) Xác định hướng tuyến cơ bản của đường bộ và các điểm giao cắt giữa đường chính với các tuyến đường b ộ khác trong quy hoạch; phương án kết nối phương thức vận tải đường bộ với các phương thức vận tải khác.
+b) Xác định hướng tuyến cơ bản của đường bộ và các điểm giao cắt giữa đường chính với các tuyến đường bộ khác trong quy hoạch; phương án kết nối phương thức vận tải đường bộ với các phương thức vận tải khác.
 Điều 23. Nội dung tổ chức giao thông đường bộ trong giai đoạn lập dự án đầu tư xây dựng, thiết kế công trình đường bộ, trước khi đưa đường bộ đã hoàn thành đầu tư vào khai thác
 1. Nội dung tổ chức giao thông đường bộ trong giai đoạn lập, thẩm định, phê duyệt dự án đầu tư xây dựng bao gồm:
 a) Xác định mục tiêu phục vụ giao thông đường bộ của dự án, bảo đảm phù hợp quy hoạch được duyệt và đáp ứng nhu cầu vận tải đường bộ;

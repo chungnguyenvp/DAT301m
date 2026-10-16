@@ -97,6 +97,8 @@ def in_force_at(rec: dict, t: str) -> tuple[bool, str | None]:
     """Trả trạng thái tại ngày t và điều kiện đi kèm, nếu có."""
     if not _valid_date(t):
         raise ValueError(f"Ngày truy vấn không hợp lệ: {t!r}")
+    if rec.get("trang_thai") == "bai_bo":  # Điều chỉ còn dòng "(được bãi bỏ)" trong văn bản hợp nhất
+        return False, None
     exs = rec.get("hl_ngoai_le") or []
     closed = rec["valid_to"] is not None and rec["valid_to"] <= t
     live = rec["valid_from"] <= t and not closed

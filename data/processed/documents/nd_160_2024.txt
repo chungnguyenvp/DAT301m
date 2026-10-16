@@ -572,7 +572,7 @@ Kính gửi: Sở Giao thông vận tải.
 Căn cứ đề nghị của các cá nhân về việc tham gia tập huấn, để được cấp Giấy chứng nhận giáo viên dạy thực hành lái xe; trên cơ sở xét duyệt Tiêu chuẩn theo quy định tại Nghị định số 160/2024/NĐ-CP ngày 18 tháng 12 năm 2024 của Chính phủ quy định về hoạt động đào tạo và sát hạch lái xe.
 Kể từ ngày…. đến ngày….., Cơ sở đào tạo… đã tổ chức tập huấn giáo viên dạy thực hành lái xe theo chương trình tập huấn về nghiệp vụ giáo viên dạy thực hành lái xe theo quy định của Bộ Giao thông vận tải, đề nghị Sở Giao thông vận tải xem xét, tổ chức kiểm tra cấp giấy chứng nhận giáo viên dạy thực hành lái xe cho (số lượng) giáo viên đã tham dự tập huấn theo danh sách dưới đây:
 Số TT | Họ và tên | Ngày tháng năm sinh | Số CCCD/ CC | Hình thức tuyển dụng | Trình độ | Giấy phép lái xe
-Biên chế | Hợp đồng (thời hạn) | Văn hóa | Chuyên môn | Sư phạm | Hạng | Ngày cấp | Thâm niên
+| | | | Biên chế | Hợp đồng (thời hạn) | Văn hóa | Chuyên môn | Sư phạm | Hạng | Ngày cấp | Thâm niên
 Nơi nhận: - Như trên; - Lưu: | …., ngày.... tháng… năm…. HIỆU TRƯỞNG (GIÁM ĐỐC) (Ký tên, đóng dấu)
 Phụ lục VI
 MẪU SỔ THEO DÕI CẤP GIẤY CHỨNG NHẬN GIÁO VIÊN DẠY THỰC HÀNH LÁI XE
@@ -580,7 +580,7 @@ MẪU SỔ THEO DÕI CẤP GIẤY CHỨNG NHẬN GIÁO VIÊN DẠY THỰC HÀNH 
 CƠ QUAN CÓ THẨM QUYỀN | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 SỔ THEO DÕI CẤP GIẤY CHỨNG NHẬN GIÁO VIÊN DẠY THỰC HÀNH LÁI XE
 Số TT | Họ và tên | Ngày tháng năm sinh | Số CCCD/CC | Đơn vị công tác | Hình thức tuyển dụng | Trình độ | Giấy phép lái xe | Ghi chú
-Biên chế | Hợp đồng (thời hạn) | Văn hóa | Chuyên môn | Sư phạm | Hạng | Ngày trúng tuyển | Thâm niên
+| | | | | Biên chế | Hợp đồng (thời hạn) | Văn hóa | Chuyên môn | Sư phạm | Hạng | Ngày trúng tuyển | Thâm niên
 Nơi nhận: - Như trên; - Lưu: | ........, ngày..... tháng..... năm...... THỦ TRƯỞNG (Ký tên, đóng dấu)
 Phụ lục VII
 CÁC MẪU LIÊN QUAN ĐẾN CẤP GIẤY PHÉP XE TẬP LÁI
@@ -654,7 +654,7 @@ Biên bản được lập thành 02 bản có giá trị như nhau, các thành
 DANH SÁCH XE TẬP LÁI
 ĐỦ ĐIỀU KIỆN CẤP GIẤY PHÉP XE TẬP LÁI
 STT | Biển số | Hạng | Thiết bị DAT | Ghi chú
-Số serial | Số imei
+| | | Số serial | Số imei
 DANH SÁCH XE TẬP LÁI
 KHÔNG ĐỦ ĐIỀU KIỆN CẤP GIẤY PHÉP XE TẬP LÁI
 STT | Biển số | Hạng | Lý do
@@ -665,7 +665,7 @@ ngày 18 tháng 12 năm 2024 của Chính phủ)
 CƠ QUAN CÓ THẨM QUYỀN | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc
 SỔ THEO DÕI CẤP GIẤY PHÉP XE TẬP LÁI
 Số TT | Biển số đăng ký | Xe của cơ sở đào tạo | Xe hợp đồng | Nhãn hiệu | Loại xe | Số động cơ | Số khung | Giấy phép xe tập lái
-Số Giấy phép | Ngày hết hạn
+| | | | | | | | Số Giấy phép | Ngày hết hạn
 Phụ lục X
 MẪU DANH SÁCH XE ĐỀ NGHỊ CẤP GIẤY PHÉP XE TẬP LÁI
 (Kèm theo Nghị định số 160/2024/NĐ-CP ngày 18 tháng 12 năm 2024 của Chính phủ)
@@ -673,7 +673,7 @@ CƠ QUAN CHỦ QUẢN CƠ SỞ ĐÀO TẠO | CỘNG HÒA XÃ HỘI CHỦ NGHĨA 
 Kính gửi: Sở Giao thông vận tải.
 Trường (Trung tâm)............. đề nghị cơ quan có thẩm quyền xem xét, cấp giấy phép xe tập lái cho số xe bổ sung (cấp lại) của cơ sở đào tạo theo danh sách dưới đây:
 Số TT | Biển số đăng ký | Xe của cơ sở đào tạo | Xe hợp đồng | Nhãn hiệu | Loại xe | Số động cơ | Số khung | Giấy chứng nhận kiểm định ATKT&BVMT | Ghi chú
-Ngày cấp | Ngày hết hạn
+| | | | | | | | Ngày cấp | Ngày hết hạn
 Nơi nhận: - Như trên; - Lưu: | ....., ngày......... tháng.........năm ....... THỦ TRƯỞNG CƠ SỞ ĐÀO TẠO (Ký tên, đóng dấu)
 Phụ lục XI
 MẪU GIẤY PHÉP ĐÀO TẠO LÁI XE Ô TÔ
@@ -722,7 +722,7 @@ Từ khi thành lập đến nay đã đào tạo được.......... học sinh,
 - Số giáo lượng viên dạy thực hành:.....................................................................
 DANH SÁCH TRÍCH NGANG GIÁO VIÊN DẠY THỰC HÀNH (hoặc LÝ THUYẾT) LÁI XE
 Số TT | Họ và tên | Ngày tháng năm sinh | Số CCCD/CC | Hình thức tuyển dụng | Trình độ | Hạng giấy phép lái xe | Ngày trúng tuyển | Thâm niên dạy lái | Môn học giảng dạy | Ghi chú
-Biên chế | Hợp đồng (thời hạn) | Văn hóa | Chuyên môn | Sư phạm
+| | | | Biên chế | Hợp đồng (thời hạn) | Văn hóa | Chuyên môn | Sư phạm
 …
 6. Xe tập lái: số lượng xe tập lái hiện có, thiếu hay đủ để học viên tập.
 - Chủng loại: số xe thông dụng; số xe kiểu cũ.

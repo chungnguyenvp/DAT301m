@@ -60,3 +60,8 @@ def test_duplicate_override_rejected(tmp_path):
     path.write_text("unit_id,loai_phu_luc,ghi_chu\na:pl2,mau_bieu,\na:pl2,noi_dung,\n", encoding="utf-8")
     with pytest.raises(ValueError, match="trùng"):
         load_annex_overrides(path, [_rec("a:pl2", "2025-01-01", "", "phu_luc")])
+
+
+def test_annex_type_does_not_take_ca_mau_for_a_form():
+    table = "KÝ HIỆU BIỂN SỐ XE Ô TÔ\n1 | An Giang | 67, 68\n3 | Cà Mau | 69, 94\n4 | TỈNH CÀ MAU | 69"
+    assert annex_type("Phụ lục số 02", table)[0] == "noi_dung"

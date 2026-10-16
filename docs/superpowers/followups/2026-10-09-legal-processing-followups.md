@@ -36,3 +36,16 @@ Nguồn: review `feat/legal-processing` và báo cáo hiện hành [`PROCESSING_
 - **Đã xử lý:** TT 36 đọc bản chữ thuần (thuvienphapluat.vn, đã đối chiếu với PDF chính thức); bảng Phụ lục I dựng lại có nhãn Nhóm 1/2/3 theo ảnh PDF. Không còn văn bản nào OCR. Nếu sau này có bản từ nguồn nhà nước (Công báo, vbpl.vn) thì nên thay file chữ này.
 - **Đã xử lý:** bảng phí TT 155 viết lại thành câu có tên khu vực ở từng dòng (mục 1c `PROCESSING_REPORT.md`); 19 đơn vị `chat_luong=kem` đã rà tay, đều là báo nhầm của chỉ số (tiếng Anh trên mẫu song ngữ, tên nước, đơn vị đo).
 
+
+## Review độc lập ngày 2026-10-16 (Codex)
+
+- **Đã xử lý:** giữ ô bảng có giá trị giống ô liền trước; đọc ký hiệu `w:sym` (≤ ≥ Ø □); "Cà Mau" không còn làm phụ lục thành mẫu biểu; cờ `trang_thai = bai_bo` cho 20 Điều bãi bỏ; cờ `thieu_noi_dung` cho `nd_39_2023:pl1`. Xem mục 1e `PROCESSING_REPORT.md`.
+- **Đã xử lý (2026-10-17):** duyệt và áp cả 18 dòng `data/annex_replacements.csv`; sáu phụ lục cũ hết hiệu lực đúng mốc.
+- **Còn mở:** trích dẫn phụ lục theo tiêu đề thay cho mã `plN`; quan hệ cha–con khi ngoại lệ gia hạn chỉ áp cho khoản con (TT 12 Điều 4); không dùng đơn vị của văn bản sửa đổi làm căn cứ khi dựng kho tra cứu.
+
+## Đối chiếu PDF–Word ngày 2026-10-17 (Codex)
+
+- **Đã xử lý:** F01 trượt cột khi bỏ ô trống đầu hàng; F07 "b ộ". Xem mục 1f `PROCESSING_REPORT.md`.
+- **Hạn chế, không sửa:** nhãn kích thước trong hình bị nối (F02, F03), số đo trong hình chưa trích (F04), nhãn mục phụ lục khác bản in (F05, F06). Ghi ở mục 7.
+- **Chưa có đối chứng độc lập:** TT 108, TT 155, TT 36, BLDS, TT 30; kiểm tra tay 40 đơn vị ngẫu nhiên.
+
