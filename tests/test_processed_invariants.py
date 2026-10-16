@@ -277,3 +277,11 @@ def test_manual_corrections_reached_outputs(units):
     gplx = _read(PROCESSED / "gplx_600.jsonl")
     assert "hầm trên đường bộ để các xe" in gplx[2]["lua_chon"][1]
     assert not [q["so_cau"] for q in gplx if re.search(r"\bb ộ\b", " ".join([q["cau_hoi"], *q["lua_chon"]]))]
+
+
+def test_tt79_result_delivery_uses_later_issued_tt62(versioned):
+    """Khoản 6 Điều 3 TT 79: TT 62 (ban hành 18/5/2026) thắng TT 37 (ban hành 24/4/2026, hiệu lực 08/6/2026)."""
+    for day in ("2026-05-18", "2026-06-08", T):
+        live = [r for r in versioned if r["unit_id"] == "tt_79_2024_bca:d3:k6" and _in_force(r, day)]
+        assert [r["source_doc_id"] for r in live] == ["tt_62_2026_bca"], day
+        assert "bản vật lý hoặc nhận dữ liệu điện tử" in live[0]["text"]

@@ -1,6 +1,6 @@
 # Duyệt dòng sửa đổi đợt 4 (2026-10-17)
 
-**Trạng thái: đã duyệt hết ngày 2026-10-17** theo ủy quyền của người dùng, sau khi đối chiếu từng dòng với lớp chữ PDF Công báo (61/61 dòng và 10/10 dòng phụ lục khớp). Còn một mâu thuẫn chờ quyết định: khoản 6 Điều 3 TT 79 (TT 37 và TT 62, xem `data/processed/PROCESSING_REPORT.md` mục 1g).
+**Trạng thái: đã duyệt hết ngày 2026-10-17** theo ủy quyền của người dùng, sau khi đối chiếu từng dòng với lớp chữ PDF Công báo (61/61 dòng và 10/10 dòng phụ lục khớp). Khoản 6 Điều 3 TT 79 bị TT 37 và TT 62 sửa khác nhau: người dùng chọn chữ TT 62 (văn bản ban hành sau), dòng TT 37 cho khoản này đổi thành `loai`.
 
 Bản nháp do `draft_batch4.py` soạn. Chạy thử với mọi dòng dưới đây coi như đã duyệt: áp được hết, không lỗi.
 
