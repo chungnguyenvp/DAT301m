@@ -38,16 +38,16 @@ print({
 
 ## 1. Văn bản và đơn vị
 
-Có **33 văn bản**: 28 trích từ docx, 2 từ pdf (`tt_30_2026_bxd`, `blds_2015`), 3 OCR (`tt_108_2026_bca`, `tt_36_2024_byt`, `tt_155_2025_btc`). `legal_units.jsonl` có **17.850 đơn vị**:
+Có **33 văn bản**: 30 trích từ docx, 2 từ pdf (`tt_30_2026_bxd`, `blds_2015`), 1 từ chữ thuần (`tt_36_2024_byt`); không còn văn bản nào OCR. Từ 2026-10-16, `tt_108_2026_bca` và `tt_155_2025_btc` đọc bản Word lấy từ Công báo, `tt_36_2024_byt` đọc bản chữ thuần đã đối chiếu với PDF chính thức (xem mục 1a). `legal_units.jsonl` có **17.855 đơn vị**:
 
 | Cấp | Số đơn vị |
 |---|---:|
 | `dieu` | 2.236 |
-| `khoan` | 7.051 |
-| `diem` | 8.341 |
+| `khoan` | 7.053 |
+| `diem` | 8.343 |
 | `phu_luc` | 158 |
 | `mo_dau` | 33 |
-| `ket_thuc` | 31 |
+| `ket_thuc` | 32 |
 
 ### Ghép và tách văn bản
 
@@ -56,9 +56,36 @@ Có **33 văn bản**: 28 trích từ docx, 2 từ pdf (`tt_30_2026_bxd`, `blds_
 - 12 phụ lục rỗng từng sinh từ mục lục QCVN đã được loại; hiện **0 phụ lục rỗng**. Các phụ lục dài vẫn cần cắt đoạn sau. Nhãn `k1)` ở khoản 4 Điều 41 NĐ 168 đã được tách thành điểm riêng. Khối chữ ký/Nơi nhận nay tách khỏi Điều cuối; `ket_thuc` tăng từ 2 lên 31.
 - Bảng lồng ở 5 văn bản docx đã sửa lỗi lặp chữ. Phụ lục biểu mức thu của `tt_155_2025_btc` là `:pl1` và được giữ trong đầu ra có phiên bản. Không có `unit_id` hậu tố `#` trong bản ghi có hiệu lực.
 
+### 1a. Đổi nguồn chữ TT 108 và TT 155 (2026-10-16)
+
+Hai thông tư trước đây chỉ có PDF ảnh nên phải OCR. Bản Word của cả hai có trên Công báo (`data/COLLECTION_LOG.md`, đợt 3) và được thêm vào `data/manifest.csv` dưới dạng `__p2.docx`; `pick_sources` ưu tiên Word nên không OCR hai văn bản này nữa. PDF ảnh vẫn giữ trong `data/raw/` để đối chiếu.
+
+| Chỉ số | TT 108 trước → sau | TT 155 trước → sau |
+|---|---|---|
+| Nguồn chữ | OCR 300/400 dpi + 42 dòng sửa tay → Word | OCR 300 dpi + 38 dòng sửa tay → Word |
+| Điều / phụ lục | 43 / 14 → 43 / 14 | 8 / 1 → 8 / 1 |
+| Bản ghi phiên bản | 476 → 477 | 38 → 39 |
+| Tỷ lệ âm tiết lỗi (cả văn bản) | 0,0077 → 0,0018 | 0,0032 → 0,0004 |
+| Lỗi dấu đếm thử ("giây phép", "đôi với", "sô") | 33 / 13 / 26 → 0 / 0 / 0 | 0 / 0 / 7 → 0 / 0 / 0 |
+| Đơn vị `chat_luong=kem` | `pl11`, `pl13` → không còn | 0 → 0 |
+
+Mã đơn vị thay đổi ở TT 108: bỏ `d37:k2:e` (OCR đọc nhầm nhãn, đúng là `d37:k2:c`), `d39:k2:a`, `d39:k2:b`; thêm `d18:k9`, `d30:k2` (OCR gộp vào khoản trước), `d37:k2:c`, `d6:k5:l`. TT 155 thêm `d4:k2:a`. Mọi ngoại lệ hiệu lực, dòng sửa đổi và phân loại phụ lục đã duyệt vẫn khớp (9 bản ghi TT 108 mang ngoại lệ, như trước); các văn bản khác không đổi bản ghi nào.
+
+**TT 36/2024/TT-BYT** không có bản Word. Bản chữ thuần lấy từ thuvienphapluat.vn (không phải nguồn nhà nước) được lưu thành `tt_36_2024_byt__p2.txt`; `pick_sources` thứ tự ưu tiên Word → chữ thuần → PDF. Đã so từng từ phần thân (Điều 1–10) với lớp chữ của PDF chính thức: 31 chỗ khác đều là lỗi nhận dạng phía PDF ("Al"/"A1", "TF-BVT"/"TT-BYT", "giây"/"giấy", chữ ký số chèn giữa câu…), không có khác biệt về nội dung. Bảng Phụ lục I trong bản chữ bị duỗi phẳng, mất thông tin ô nào thuộc Nhóm 1/2/3; bảng được dựng lại theo ảnh PDF trang 6–8 bằng một dòng trong `ocr_corrections.csv`: mỗi chuyên khoa ghi ba dòng "Nhóm 1/2/3 (hạng xe): nội dung ô", giữ nguyên văn từng ô, ô trống ghi "(ô trống trong bảng)". 17 dòng sửa OCR cũ của TT 36 bỏ.
+
+| Chỉ số TT 36 | Trước (OCR) → sau (chữ thuần) |
+|---|---|
+| Điều / phụ lục | 10 / 2 → 10 / 2 |
+| Bản ghi phiên bản | 50 → 52 (thêm `d10:k2:b`, `d10:k3:a` mà OCR gộp vào điểm trước) |
+| Tỷ lệ âm tiết lỗi | 0,0140 → 0,0055 (phần còn lại là ký hiệu như mmHg, NYHA, diop) |
+| Lỗi dấu đếm thử ("giây phép", "đôi với", "sô") | 3 / 11 / 13 → 0 / 0 / 0 |
+| Phụ lục I | Bảng OCR lẫn cột → 9 chuyên khoa × 3 nhóm, có nhãn nhóm |
+
+**Hạn chế mới phát hiện:** bản Word TT 108 dùng đánh số tự động của Word cho 271 đoạn (2 trong thân văn bản là điểm a, b khoản 2 Điều 39, 269 trong phụ lục), và extractor hiện bỏ nhãn đánh số tự động. Vì vậy khoản 2 Điều 39 TT 108 đang không tách điểm. Lỗi này có từ trước ở các văn bản Word khác (xem mục 7).
+
 ## 2. Danh tính văn bản
 
-`identity_report.csv`: **33/33 `ok`**. Với `tt_36_2024_byt`, số viết tay được OCR thành “36 /2024” và khớp sau chuẩn hóa.
+`identity_report.csv`: **33/33 `ok`**. Với `tt_36_2024_byt`, bản OCR cũ đọc số viết tay thành “36 /2024”; bản chữ thuần hiện dùng ghi đúng “36/2024/TT-BYT”.
 
 ## 3. Ngày hiệu lực
 
@@ -216,9 +243,9 @@ Quy ước: nếu một dòng gồm nhiều mốc ngày mà không tách đượ
 
 | Chỉ số | Giá trị |
 |---|---:|
-| Tổng bản ghi | 18.790 |
-| Có hiệu lực tại 2026-10-01 theo `in_force_at` | 17.423 |
-| `valid_to` khác rỗng / rỗng | 1.380 / 17.410 |
+| Tổng bản ghi | 18.794 |
+| Có hiệu lực tại 2026-10-01 theo `in_force_at` | 17.427 |
+| `valid_to` khác rỗng / rỗng | 1.380 / 17.414 |
 | Bản ghi mới do sửa đổi (`source_doc_id` ≠ `doc_id`) | 1.004 |
 | Bản ghi bắt đầu sau ngày chốt | 4 |
 | Văn bản có đơn vị hiệu lực tại ngày chốt | 33 |
@@ -257,24 +284,24 @@ TT 108 thay TT 12 từ 2026-07-01, nhưng ngoại lệ `gia_han` giữ Điều 4
 | Danh tính văn bản | 33/33 `ok` trong `identity_report.csv` | So số hiệu, trích yếu với manifest | 33 văn bản đạt |
 | Tải nhầm do trùng số hiệu | Bộ luật Dân sự từng bị nhầm; xem `data/COLLECTION_LOG.md` | Kiểm tra danh tính nguồn | Đã thay nguồn đúng; 33/33 `ok` |
 | Điều thiếu khi ghép | 1 văn bản: VBHN BLHS thiếu Điều 90–107 | Đối chiếu phần đã bãi bỏ, giữ nguyên | Không tự sinh 18 Điều |
-| OCR sửa tay | 97 dòng: TT 108 42, TT 36 17, TT 155 38 | Áp `ocr_corrections.csv`, báo lỗi nếu chuỗi không khớp duy nhất | 97 dòng được kiểm soát |
-| OCR lại 400 dpi | 102 trang thử lại: TT 108 96, TT 36 6 | Chọn bản tốt hơn theo heuristic | 34 trang thay: TT 108 31, TT 36 3; tỷ lệ âm tiết lỗi theo văn bản TT 108 0,0095→0,0079, TT 36 0,0175→0,0139 |
+| OCR sửa tay | 97 dòng: TT 108 42, TT 36 17, TT 155 38 | Áp `ocr_corrections.csv`, báo lỗi nếu chuỗi không khớp duy nhất | Từ 2026-10-16 bỏ cả 97 dòng vì ba văn bản không còn OCR; còn 1 dòng dựng lại bảng Phụ lục I TT 36 |
+| OCR lại 400 dpi | 102 trang thử lại: TT 108 96, TT 36 6 (nay không văn bản nào dùng OCR) | Chọn bản tốt hơn theo heuristic | 34 trang thay: TT 108 31, TT 36 3; tỷ lệ âm tiết lỗi theo văn bản TT 108 0,0095→0,0079, TT 36 0,0175→0,0139 |
 | Chữ lặp do bảng lồng | 5 văn bản docx | Sửa duyệt bảng lồng trong extractor | Không còn lặp do đường duyệt cũ |
-| Phần kết trong Điều cuối | Trước: 2 `ket_thuc` | Tách chữ ký/Nơi nhận | Sau: 31 `ket_thuc` |
+| Phần kết trong Điều cuối | Trước: 2 `ket_thuc` | Tách chữ ký/Nơi nhận | Sau: 32 `ket_thuc` (31 trước khi TT 155 đọc bản Word) |
 | Mục lục nhận là phụ lục | 12 phụ lục rỗng QCVN | Bỏ dòng mục lục trước parse | 0 phụ lục rỗng |
 | Nhãn điểm có chữ số | 1 dòng sửa đổi `k1)` NĐ 168 Đ41 k4 | Nhận điểm có chữ số, áp `bo_sung` | `:k1` riêng trong cây đơn vị |
-| Ngoại lệ ngày hiệu lực | 22 dòng: 8 `gia_han`, 5 `hoan_ap_dung`, 9 `moc_trong_noi_dung` | Gắn `hl_ngoai_le`, lọc bằng `in_force_at` | 17.423 bản ghi sống tại ngày chốt, có điều kiện kèm theo |
+| Ngoại lệ ngày hiệu lực | 22 dòng: 8 `gia_han`, 5 `hoan_ap_dung`, 9 `moc_trong_noi_dung` | Gắn `hl_ngoai_le`, lọc bằng `in_force_at` | 17.427 bản ghi sống tại ngày chốt, có điều kiện kèm theo |
 | Phiên bản không đổi nội dung | 184 bản ghi `noi_dung_doi=false` | Đánh dấu so với phiên bản liền trước | Giữ cả 184 để truy vết nguồn |
 | Phụ lục mẫu biểu | 107/158 `mau_bieu`, 51 `noi_dung` | Phân loại và áp bản đè đã duyệt | 158 phụ lục được gắn nhãn |
-| Chất lượng chữ kém | 21 bản ghi, gồm 18 phụ lục | Gắn `chat_luong=kem`, giữ nguyên | Liệt kê dưới bảng; cần kiểm tra theo nguồn |
+| Chất lượng chữ kém | 19 bản ghi, gồm 16 phụ lục (21 trước khi TT 108 đọc bản Word) | Gắn `chat_luong=kem`, giữ nguyên | Liệt kê dưới bảng; cần kiểm tra theo nguồn |
 | Trùng mã đơn vị | 0 `unit_id` hậu tố `#` trong bản ghi sống | Kiểm tra bất biến | 0 |
 | Chồng phiên bản | 0 cặp chồng khoảng ngày gốc | Test `test_no_overlapping_versions_per_unit` | 3 cặp cùng sống có điều kiện theo ngoại lệ, phải lọc tiếp |
 
-21 đơn vị `chat_luong=kem`: `nd_158_2024:pl7`, `:pl8`, `:pl9`, `:pl12`; `nd_218_2026:pl2`, `:pl3`, `:pl5`; `qcvn_41_2024:d61:k1`; `tt_108_2026_bca:pl11`, `:pl13`; `tt_12_2025_bca:pl13`, `:pl16`; `tt_37_2026_bca:pl1`; `tt_79_2024_bca:pl1`–`:pl6`; `vbhn_135_2025_blhs:d235:k1:h`, `:d235:k2:đ`. Điểm xấu ở “kilômét” trong QCVN và “milisivơ” trong BLHS có thể là từ hợp lệ không khớp mẫu âm tiết, không mặc nhiên là lỗi OCR.
+19 đơn vị `chat_luong=kem`: `nd_158_2024:pl7`, `:pl8`, `:pl9`, `:pl12`; `nd_218_2026:pl2`, `:pl3`, `:pl5`; `qcvn_41_2024:d61:k1`; `tt_12_2025_bca:pl13`, `:pl16`; `tt_37_2026_bca:pl1`; `tt_79_2024_bca:pl1`–`:pl6`; `vbhn_135_2025_blhs:d235:k1:h`, `:d235:k2:đ`. Điểm xấu ở “kilômét” trong QCVN và “milisivơ” trong BLHS có thể là từ hợp lệ không khớp mẫu âm tiết, không mặc nhiên là lỗi OCR.
 
 ### Giới hạn đo OCR
 
-Tỷ lệ âm tiết lỗi là **heuristic**, không đo độ đúng pháp lý và không bắt lỗi dấu, nghĩa, số hay bảng. Số mẫu đọc tay cũ dưới đây đo **trước đợt OCR 400 dpi**, chưa đo lại sau thay trang; không dùng chúng làm bằng chứng chất lượng hiện tại:
+Tỷ lệ âm tiết lỗi là **heuristic**, không đo độ đúng pháp lý và không bắt lỗi dấu, nghĩa, số hay bảng. Số mẫu đọc tay cũ dưới đây đo **trước đợt OCR 400 dpi**, chưa đo lại sau thay trang; không dùng chúng làm bằng chứng chất lượng hiện tại. Cả ba dòng chỉ còn ý nghĩa lịch sử vì từ 2026-10-16 không văn bản nào còn dùng OCR:
 
 | Văn bản | Mẫu cũ | Từ sai lúc đo | Tỷ lệ lúc đo |
 |---|---:|---:|---:|
@@ -285,6 +312,7 @@ Tỷ lệ âm tiết lỗi là **heuristic**, không đo độ đúng pháp lý 
 ## 7. Hạn chế và việc cần làm tiếp
 
 - Phụ lục QCVN mới trích được A, B, C, D, E, F, G, I, K; M/N/O/P và nhiều hình là nguồn ảnh chưa có chữ. Phải khôi phục trước khi dùng như kho tra cứu đầy đủ.
-- `tt_108_2026_bca:pl12` chỉ khoảng 138 ký tự; bảng chuyển đổi chưa có dù nhãn chất lượng `ok`. `nd_39_2023:pl1` chỉ còn dòng “ban hành kèm theo”, thiếu nội dung phụ lục. `tt_108_2026_bca:pl9` và `tt_12_2025_bca:pl10` chứa nội dung quy định trong phụ lục, cần cắt đoạn phù hợp. Các đơn vị `chat_luong=kem` nêu ở trên vẫn giữ và cần đối chiếu nguồn; nhãn `ok` không chứng minh nội dung đủ.
+- `tt_108_2026_bca:pl12` nay có bảng chuyển đổi GPLX quốc tế từ bản Word (467 ký tự, trước là 138). `nd_39_2023:pl1` chỉ còn dòng “ban hành kèm theo”, thiếu nội dung phụ lục. `tt_108_2026_bca:pl9` và `tt_12_2025_bca:pl10` chứa nội dung quy định trong phụ lục, cần cắt đoạn phù hợp. Các đơn vị `chat_luong=kem` nêu ở trên vẫn giữ và cần đối chiếu nguồn; nhãn `ok` không chứng minh nội dung đủ.
+- **Nhãn đánh số tự động của Word bị bỏ khi trích chữ** (phát hiện 2026-10-16). Đoạn dùng `w:numPr` không có nhãn "1.", "a)" trong chữ nên parser không tách được Khoản/Điểm tương ứng. Số đoạn có chữ dùng đánh số tự động: TT 12 khoảng 900 (hai file), TT 108 271 (2 trong thân), TT 79 95, TT 38 39 (khoản 1, 2 Điều 2 và Điều 6 không tách được), NĐ 160 31, NĐ 165 11, NĐ 168 1, NĐ 220 1, QCVN 41 1. Cần dựng nhãn từ `numbering.xml` trong `extract.docx_lines`, rồi rà lại các dòng sửa đổi và ngoại lệ trỏ tới những văn bản này.
 - TT 12 Phụ lục IV–VI chỉ được gia hạn một phần, còn mô hình theo cả đơn vị kèm điều kiện; người gọi phải xét mục/mẫu. Mỗi dòng sửa đổi chỉ có một ngày hiệu lực; phần có nhiều mốc trong cùng câu/đơn vị cần diễn giải điều kiện.
 - Các dòng sửa đổi nhắm văn bản ngoài kho hoặc thay/bãi bỏ phụ lục không có địa chỉ Điều/khoản chưa được áp dụng. `line_start` trên bản ghi sinh từ sửa đổi là vị trí ở đoạn trích, không phải văn bản đích. Trường hợp biên bổ sung khoản và sửa chính khoản cùng ngày chưa xử lý.
