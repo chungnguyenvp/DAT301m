@@ -573,7 +573,7 @@ Tại lối ra, đặt Biển số IE.464b tại dải phân ngã ba của nhán
 Hình 11’ - Biển số IE.464b chỉ dẫn hướng ra tại lối ra
 47.6. Khoảng cách đến các lối ra tiếp theo
 Biển số IE.455 chỉ dẫn khoảng cách đến các lối ra tiếp theo (Hình 12) để báo trước khi qua khu vực phía trước có nhiều nút giao. Thông thường, biển chỉ dẫn khoảng cách đến các lối ra tiếp theo chỉ thể hiện cho hai hoặc ba nút giao liên tiếp trên đường cao tốc. Biển được lắp đặt ở phía trước nút giao bên lề đường để chỉ khoảng cách đến các lối ra tiếp theo. Kích thước biển chỉ dẫn khoảng cách đến các lối ra tiếp theo được quy định chi tiết trong Phụ lục P (mục P.6) của Quy chuẩn này.
-Biển chỉ dẫn có hai lối ra tiếp theo
+a) Biển chỉ dẫn có hai lối ra tiếp theo
 b) Biển chỉ dẫn có ba lối ra tiếp theo
 Hình 12 - Biển số IE.455 chỉ dẫn khoảng cách đến các lối ra tiếp theo
 47.7. Trạm dừng nghỉ

@@ -490,8 +490,8 @@ d) Công khai mức thu phí sát hạch và giá các dịch vụ khác trên t
 e) Công khai lịch sát hạch trên Trang thông tin điện tử của trung tâm sát hạch lái xe, lưu trữ hồ sơ kết quả sát hạch theo quy định tại khoản 3 Điều 17 Thông tư này;
 g) Truyền, chia sẻ dữ liệu giám sát sát hạch đến Phòng Cảnh sát giao thông, Cục Cảnh sát giao thông, lưu trữ và chịu trách nhiệm về tính chính xác, đầy đủ, trung thực dữ liệu giám sát sát hạch; bảo đảm an toàn dữ liệu; cung cấp kịp thời, chính xác các thông tin, dữ liệu giám sát sát hạch cho cơ quan quản lý nhà nước có thẩm quyền khi có yêu cầu.
 2. Công tác quản lý hệ thống thông tin
-Đầu tư, bảo trì, nâng cấp trang thiết bị phần cứng, phần mềm hệ thống và mạng truyền số liệu của hệ thống thông tin sát hạch lái xe đặt tại trung tâm sát hạch lái xe;
-Không được can thiệp, lắp đặt các thiết bị, cài đặt phần mềm làm ảnh hưởng quá trình sát hạch hoặc làm sai lệch kết quả sát hạch lái xe.
+a) Đầu tư, bảo trì, nâng cấp trang thiết bị phần cứng, phần mềm hệ thống và mạng truyền số liệu của hệ thống thông tin sát hạch lái xe đặt tại trung tâm sát hạch lái xe;
+b) Không được can thiệp, lắp đặt các thiết bị, cài đặt phần mềm làm ảnh hưởng quá trình sát hạch hoặc làm sai lệch kết quả sát hạch lái xe.
 Điều 40. Các phụ lục kèm theo
 1. Phụ lục I: Trình tự sát hạch lái xe hạng A1 và A.
 2. Phụ lục II: Trình tự sát hạch lái xe hạng B1.
@@ -950,44 +950,44 @@ Từ bài sát hạch số 2 đến bài sát hạch số 9 thực hiện theo t
 2.2.4. Yêu cầu cụ thể đối với từng bài sát hạch lái xe trong hình
 Bài sát hạch số 1: xuất phát
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Thí sinh thắt dây an toàn, dừng xe trước vạch xuất phát, chờ hiệu lệnh. Khi có lệnh xuất phát (đèn xanh trên xe bật sáng, tiếng loa trên xe báo lệnh xuất phát), bật đèn xi nhan trái, lái xe xuất phát. Tắt xi nhan trái ở khoảng cách 05 mét sau vạch xuất phát (đèn xanh trên xe tắt). Lái xe đến bài sát hạch tiếp theo. | Thắt dây an toàn trước khi xuất phát. Khởi hành nhẹ nhàng, không bị rung giật, trong khoảng thời gian 20 giây. Bật đèn xi nhan trái trước khi xuất phát. Tắt đèn xi nhan trái ở khoảng cách 05 mét sau vạch xuất phát (đèn xanh trên xe tắt). Giữ động cơ hoạt động liên tục. | Không thắt dây an toàn, trừ 05 điểm. Không bật đèn xi nhan trái khi xuất phát, trừ 05 điểm. Không tắt đèn xi nhan trái ở khoảng cách 05 mét sau vạch xuất phát (đèn xanh trên xe tắt), trừ 05 điểm. Không bật và tắt đèn xi nhan trái kịp thời trừ 05 điểm. Quá 20 giây kể từ khi có lệnh xuất phát (đèn xanh trên xe bật sáng) không đi qua vạch xuất phát, trừ 05 điểm. Quá 30 giây kể từ khi có lệnh xuất phát (đèn xanh trên xe bật sáng) không đi qua vạch xuất phát, bị đình chỉ sát hạch.
+1. Thí sinh thắt dây an toàn, dừng xe trước vạch xuất phát, chờ hiệu lệnh. 2. Khi có lệnh xuất phát (đèn xanh trên xe bật sáng, tiếng loa trên xe báo lệnh xuất phát), bật đèn xi nhan trái, lái xe xuất phát. 3. Tắt xi nhan trái ở khoảng cách 05 mét sau vạch xuất phát (đèn xanh trên xe tắt). 4. Lái xe đến bài sát hạch tiếp theo. | 1. Thắt dây an toàn trước khi xuất phát. 2. Khởi hành nhẹ nhàng, không bị rung giật, trong khoảng thời gian 20 giây. 3. Bật đèn xi nhan trái trước khi xuất phát. 4. Tắt đèn xi nhan trái ở khoảng cách 05 mét sau vạch xuất phát (đèn xanh trên xe tắt). 5. Giữ động cơ hoạt động liên tục. | 1. Không thắt dây an toàn, trừ 05 điểm. 2. Không bật đèn xi nhan trái khi xuất phát, trừ 05 điểm. 3. Không tắt đèn xi nhan trái ở khoảng cách 05 mét sau vạch xuất phát (đèn xanh trên xe tắt), trừ 05 điểm. 4. Không bật và tắt đèn xi nhan trái kịp thời trừ 05 điểm. 5. Quá 20 giây kể từ khi có lệnh xuất phát (đèn xanh trên xe bật sáng) không đi qua vạch xuất phát, trừ 05 điểm. 6. Quá 30 giây kể từ khi có lệnh xuất phát (đèn xanh trên xe bật sáng) không đi qua vạch xuất phát, bị đình chỉ sát hạch.
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Giữ tốc độ động cơ không quá 4000 vòng/phút. Lái xe theo quy tắc giao thông đường bộ. Tốc độ xe chạy không quá: - 24 km/h đối với hạng B, D1, D2 - 20 km/h đối với hạng C1, C, D | Lái xe lên vỉa hè bị đình chỉ sát hạch. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. Lái xe bị chết máy, mỗi lần trừ 05 điểm. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm.
+6. Giữ tốc độ động cơ không quá 4000 vòng/phút. 7. Lái xe theo quy tắc giao thông đường bộ. 8. Tốc độ xe chạy không quá: - 24 km/h đối với hạng B, D1, D2 - 20 km/h đối với hạng C1, C, D | 7. Lái xe lên vỉa hè bị đình chỉ sát hạch. 8. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. 9. Lái xe bị chết máy, mỗi lần trừ 05 điểm. 10. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. 11. Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm.
 Bài sát hạch số 2: dừng xe nhường đường cho người đi bộ
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Dừng xe để khoảng cách từ hình chiếu thanh cản phía trước của xe xuống mặt đường đến vạch dừng (khoảng cách A) không quá 500mm. Lái xe đến bài sát hạch tiếp theo. | Dừng xe cách vạch dừng quy định không quá 500mm. Giữ động cơ hoạt động liên tục. Giữ tốc độ động cơ không quá 4000 vòng/phút. Lái xe theo quy tắc giao thông đường bộ. Tốc độ xe chạy không quá: - 24 km/h đối với hạng B, D1, D2 - 20 km/h đối với hạng C1, C, D | Không dừng xe ở vạch dừng quy định, trừ 05 điểm. Dừng xe chưa đến vạch dừng quy định, trừ 05 điểm. Dừng xe quá vạch dừng quy định, trừ 05 điểm. Lái xe lên vỉa hè bị đình chỉ sát hạch. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. Lái xe bị chết máy, mỗi lần trừ 05 điểm. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
+1. Dừng xe để khoảng cách từ hình chiếu thanh cản phía trước của xe xuống mặt đường đến vạch dừng (khoảng cách A) không quá 500mm. 2. Lái xe đến bài sát hạch tiếp theo. | 1. Dừng xe cách vạch dừng quy định không quá 500mm. 2. Giữ động cơ hoạt động liên tục. 3. Giữ tốc độ động cơ không quá 4000 vòng/phút. 4. Lái xe theo quy tắc giao thông đường bộ. 5. Tốc độ xe chạy không quá: - 24 km/h đối với hạng B, D1, D2 - 20 km/h đối với hạng C1, C, D | 1. Không dừng xe ở vạch dừng quy định, trừ 05 điểm. 2. Dừng xe chưa đến vạch dừng quy định, trừ 05 điểm. 3. Dừng xe quá vạch dừng quy định, trừ 05 điểm. 4. Lái xe lên vỉa hè bị đình chỉ sát hạch. 5. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. 6. Lái xe bị chết máy, mỗi lần trừ 05 điểm. 7. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. 8. Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. 9. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
 Bài sát hạch số 3: dừng và khởi hành xe ngang dốc
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Dừng xe để khoảng cách từ hình chiếu thanh cản phía trước của xe xuống mặt đường đến vạch dừng (khoảng cách A) không quá 500mm. Khởi hành lên dốc nhẹ nhàng, không bị tụt dốc, bảo đảm thời gian quy định. Lái xe đến bài sát hạch tiếp theo. | Dừng xe cách vạch dừng quy định không quá 500mm. Khởi hành xe êm dịu, không bị tụt dốc quá 500mm. Xe qua vị trí dừng trong khoảng thời gian 30 giây. Giữ động cơ hoạt động liên tục. Giữ tốc độ động cơ không quá 4000 vòng/phút. Lái xe theo quy tắc giao thông đường bộ. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D | Không dừng xe ở vạch dừng quy định, bị đình chỉ sát hạch. Dừng xe chưa đến vạch dừng quy định, trừ 05 điểm. Dừng xe quá vạch dừng quy định, bị đình chỉ sát hạch. Quá thời gian 30 giây kể từ khi dừng xe không khởi hành xe qua vạch dừng, bị đình chỉ sát hạch. Xe bị tụt dốc quá 500mm kể từ khi dừng xe, bị đình chỉ sát hạch. Xử lý tình huống không hợp lý gây tai nạn, đình chỉ sát hạch. Xe bị chết máy, mỗi lần trừ 05 điểm. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 1 điểm.
+1. Dừng xe để khoảng cách từ hình chiếu thanh cản phía trước của xe xuống mặt đường đến vạch dừng (khoảng cách A) không quá 500mm. 2. Khởi hành lên dốc nhẹ nhàng, không bị tụt dốc, bảo đảm thời gian quy định. 3. Lái xe đến bài sát hạch tiếp theo. | 1. Dừng xe cách vạch dừng quy định không quá 500mm. 2. Khởi hành xe êm dịu, không bị tụt dốc quá 500mm. 3. Xe qua vị trí dừng trong khoảng thời gian 30 giây. 4. Giữ động cơ hoạt động liên tục. 5. Giữ tốc độ động cơ không quá 4000 vòng/phút. 6. Lái xe theo quy tắc giao thông đường bộ. 7. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D | 1. Không dừng xe ở vạch dừng quy định, bị đình chỉ sát hạch. 2. Dừng xe chưa đến vạch dừng quy định, trừ 05 điểm. 3. Dừng xe quá vạch dừng quy định, bị đình chỉ sát hạch. 4. Quá thời gian 30 giây kể từ khi dừng xe không khởi hành xe qua vạch dừng, bị đình chỉ sát hạch. 5. Xe bị tụt dốc quá 500mm kể từ khi dừng xe, bị đình chỉ sát hạch. 6. Xử lý tình huống không hợp lý gây tai nạn, đình chỉ sát hạch. 7. Xe bị chết máy, mỗi lần trừ 05 điểm. 8. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. 9. Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. 10. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 1 điểm.
 Bài sát hạch số 4: qua vệt bánh xe và đường vòng vuông góc
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Lái xe để bánh xe trước và bánh xe sau bên lái phụ qua vùng giới hạn của hình vệt bánh xe. Lái xe qua đường vòng vuông góc trong vùng giới hạn của hình sát hạch trong thời gian 02 phút. Lái xe qua vạch kết thúc bài sát hạch và đến bài sát hạch tiếp theo. | Đi đúng hình quy định của hạng xe sát hạch. Bánh xe trước và bánh xe sau bên lái phụ qua vùng giới hạn của hình vệt bánh xe. Bánh xe không đè vào vạch giới hạn hình sát hạch. Hoàn thành bài sát hạch trong thời gian 02 phút. Giữ động cơ hoạt động liên tục. Giữ tốc độ động cơ không quá 4000 vòng/phút. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D. | Đi không đúng hình của hạng xe sát hạch, bị đình chỉ sát hạch. Bánh xe trước và bánh xe sau bên lái phụ không qua vùng giới hạn của hình vệt bánh xe, bị đình chỉ sát hạch. Bánh xe đè vào vạch giới hạn hình sát hạch, mỗi lần trừ 05 điểm. Bánh xe đè vào vạch giới hạn hình sát hạch, cứ quá 05 giây, trừ 05 điểm. Thời gian thực hiện bài sát hạch, cứ quá 02 phút, trừ 05 điểm. Lái xe lên vỉa hè bị đình chỉ sát hạch. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. Xe bị chết máy, mỗi lần trừ 05 điểm. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. Xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
+1. Lái xe để bánh xe trước và bánh xe sau bên lái phụ qua vùng giới hạn của hình vệt bánh xe. 2. Lái xe qua đường vòng vuông góc trong vùng giới hạn của hình sát hạch trong thời gian 02 phút. 3. Lái xe qua vạch kết thúc bài sát hạch và đến bài sát hạch tiếp theo. | 1. Đi đúng hình quy định của hạng xe sát hạch. 2. Bánh xe trước và bánh xe sau bên lái phụ qua vùng giới hạn của hình vệt bánh xe. 3. Bánh xe không đè vào vạch giới hạn hình sát hạch. 4. Hoàn thành bài sát hạch trong thời gian 02 phút. 5. Giữ động cơ hoạt động liên tục. 6. Giữ tốc độ động cơ không quá 4000 vòng/phút. 7. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D. | 1. Đi không đúng hình của hạng xe sát hạch, bị đình chỉ sát hạch. 2. Bánh xe trước và bánh xe sau bên lái phụ không qua vùng giới hạn của hình vệt bánh xe, bị đình chỉ sát hạch. 3. Bánh xe đè vào vạch giới hạn hình sát hạch, mỗi lần trừ 05 điểm. 4. Bánh xe đè vào vạch giới hạn hình sát hạch, cứ quá 05 giây, trừ 05 điểm. 5. Thời gian thực hiện bài sát hạch, cứ quá 02 phút, trừ 05 điểm. 6. Lái xe lên vỉa hè bị đình chỉ sát hạch. 7. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. 8. Xe bị chết máy, mỗi lần trừ 05 điểm. 9. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. 10. Xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. 11. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
 Bài sát hạch số 5: qua ngã tư có tín hiệu điều khiển giao thông
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Chấp hành theo tín hiệu đèn điều khiển giao thông: Đèn tín hiệu màu đỏ phải dừng lại; Đèn tín hiệu màu xanh hoặc vàng được phép đi. Đèn tín hiệu màu vàng nếu đã đi quá vạch dừng thì được phép đi, nếu chưa đến vạch dừng phải dừng lại. Dừng xe để khoảng cách từ hình chiếu thanh cản phía trước của xe xuống mặt đường đến vạch dừng (khoảng cách A) không quá 500mm. Bật đèn xi nhan trái khi qua ngã tư rẽ trái. Bật đèn xi nhan phải khi qua ngã tư rẽ phải. Lái xe qua ngã tư trong thời gian quy định. Lái xe qua ngã tư không vi phạm vạch kẻ đường. Lái xe đến bài sát hạch tiếp theo. | Chấp hành theo tín hiệu đèn điều khiển giao thông. Dừng xe cách vạch dừng quy định không quá 1000mm. Bật đèn xi nhan trái khi rẽ trái. Bật đèn xi nhan phải khi rẽ phải. Xe qua ngã tư trong thời gian 20 giây. Lái xe qua ngã tư không vi phạm quy tắc giao thông đường bộ. Giữ động cơ hoạt động liên tục. Giữ tốc độ động cơ không quá 4000 vòng/phút. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D | Vi phạm tín hiệu đèn điều khiển giao thông (đi qua ngã tư khi đèn tín hiệu màu đỏ), trừ 10 điểm. Dừng xe quá vạch dừng quy định, trừ 05 điểm. Dừng xe chưa đến vạch dừng quy định, trừ 05 điểm. Không bật đèn xi nhan khi rẽ trái hoặc rẽ phải, trừ 05 điểm. Quá 20 giây từ khi đèn tín hiệu màu xanh bật sáng không lái xe qua được vạch kết thúc ngã tư, trừ 05 điểm. Quá 30 giây từ khi đèn tín hiệu màu xanh bật sáng không lái xe qua được vạch kết thúc ngã tư, bị đình chỉ sát hạch. Lái xe vi phạm vạch kẻ đường để thiết bị báo không thực hiện đúng trình tự bài sát hạch, bị đình chỉ sát hạch. Lái xe lên vỉa hè bị đình chỉ sát hạch. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. Xe bị chết máy, mỗi lần trừ 05 điểm.
+1. Chấp hành theo tín hiệu đèn điều khiển giao thông: - Đèn tín hiệu màu đỏ phải dừng lại; - Đèn tín hiệu màu xanh hoặc vàng được phép đi. - Đèn tín hiệu màu vàng nếu đã đi quá vạch dừng thì được phép đi, nếu chưa đến vạch dừng phải dừng lại. 2. Dừng xe để khoảng cách từ hình chiếu thanh cản phía trước của xe xuống mặt đường đến vạch dừng (khoảng cách A) không quá 500mm. 3. Bật đèn xi nhan trái khi qua ngã tư rẽ trái. 4. Bật đèn xi nhan phải khi qua ngã tư rẽ phải. 5. Lái xe qua ngã tư trong thời gian quy định. 6. Lái xe qua ngã tư không vi phạm vạch kẻ đường. 7. Lái xe đến bài sát hạch tiếp theo. | 1. Chấp hành theo tín hiệu đèn điều khiển giao thông. 2. Dừng xe cách vạch dừng quy định không quá 1000mm. 3. Bật đèn xi nhan trái khi rẽ trái. 4. Bật đèn xi nhan phải khi rẽ phải. 5. Xe qua ngã tư trong thời gian 20 giây. 6. Lái xe qua ngã tư không vi phạm quy tắc giao thông đường bộ. 7. Giữ động cơ hoạt động liên tục. 8. Giữ tốc độ động cơ không quá 4000 vòng/phút. 9. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D | 1. Vi phạm tín hiệu đèn điều khiển giao thông (đi qua ngã tư khi đèn tín hiệu màu đỏ), trừ 10 điểm. 2. Dừng xe quá vạch dừng quy định, trừ 05 điểm. 3. Dừng xe chưa đến vạch dừng quy định, trừ 05 điểm. 4. Không bật đèn xi nhan khi rẽ trái hoặc rẽ phải, trừ 05 điểm. 5. Quá 20 giây từ khi đèn tín hiệu màu xanh bật sáng không lái xe qua được vạch kết thúc ngã tư, trừ 05 điểm. 6. Quá 30 giây từ khi đèn tín hiệu màu xanh bật sáng không lái xe qua được vạch kết thúc ngã tư, bị đình chỉ sát hạch. 7. Lái xe vi phạm vạch kẻ đường để thiết bị báo không thực hiện đúng trình tự bài sát hạch, bị đình chỉ sát hạch. 8. Lái xe lên vỉa hè bị đình chỉ sát hạch. 9. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. 10. Xe bị chết máy, mỗi lần trừ 05 điểm.
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. Xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
+11. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. 12. Xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. 13. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
 Bài sát hạch số 6: qua đường vòng quanh co
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Lái xe qua đường vòng quanh co trong vùng giới hạn của hình sát hạch trong thời gian 02 phút. Lái xe qua vạch kết thúc bài sát hạch và đến bài sát hạch tiếp theo. | Đi đúng hình quy định của hạng xe sát hạch. Bánh xe không đè vào vạch giới hạn hình sát hạch. Hoàn thành bài sát hạch trong thời gian 02 phút. Giữ động cơ hoạt động liên tục. Giữ tốc độ động cơ không quá 4000 vòng/phút. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D | Đi không đúng hình của hạng xe sát hạch, bị đình chỉ sát hạch. Bánh xe đè vào vạch giới hạn hình sát hạch, mỗi lần trừ 05 điểm. Bánh xe đè vào vạch giới hạn hình sát hạch, cứ quá 05 giây trừ 05 điểm. Thời gian thực hiện bài sát hạch, cứ quá 02 phút, trừ 05 điểm. Lái xe lên vỉa hè bị đình chỉ sát hạch. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. Xe bị chết máy, mỗi lần trừ 05 điểm. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm.
+1. Lái xe qua đường vòng quanh co trong vùng giới hạn của hình sát hạch trong thời gian 02 phút. 2. Lái xe qua vạch kết thúc bài sát hạch và đến bài sát hạch tiếp theo. | 1. Đi đúng hình quy định của hạng xe sát hạch. 2. Bánh xe không đè vào vạch giới hạn hình sát hạch. 3. Hoàn thành bài sát hạch trong thời gian 02 phút. 4. Giữ động cơ hoạt động liên tục. 5. Giữ tốc độ động cơ không quá 4000 vòng/phút. 6. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D | 1. Đi không đúng hình của hạng xe sát hạch, bị đình chỉ sát hạch. 2. Bánh xe đè vào vạch giới hạn hình sát hạch, mỗi lần trừ 05 điểm. 3. Bánh xe đè vào vạch giới hạn hình sát hạch, cứ quá 05 giây trừ 05 điểm. 4. Thời gian thực hiện bài sát hạch, cứ quá 02 phút, trừ 05 điểm. 5. Lái xe lên vỉa hè bị đình chỉ sát hạch. 6. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. 7. Xe bị chết máy, mỗi lần trừ 05 điểm. 8. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm.
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
+9. Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. 10. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
 Bài sát hạch số 7: ghép xe vào nơi đỗ
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Lái xe tiến vào khoảng cách khống chế để lùi vào nơi ghép xe dọc (đối với xe hạng B, C1) hoặc khu vực để ghép xe ngang (đối với xe hạng B chuyển số tự động (bao gồm cả xe ô tô điện), B số cơ khí, C, D1, D2, D). Lùi để ghép xe vào nơi đỗ. Dừng xe ở vị trí đỗ quy định. Lái xe qua vạch kết thúc bài sát hạch và đến bài sát hạch tiếp theo. | Đi đúng hình quy định của hạng xe sát hạch. Bánh xe không đè vào vạch giới hạn hình sát hạch. Giữ động cơ hoạt động liên tục. Hoàn thành bài sát hạch trong thời gian 02 phút. Giữ tốc độ động cơ không quá 4000 vòng/phút. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D | Đi không đúng hình của hạng xe sát hạch, bị đình chỉ sát hạch. Bánh xe đè vào vạch giới hạn hình sát hạch, mỗi lần trừ 05 điểm. Bánh xe đè vào vạch giới hạn hình sát hạch, cứ quá 05 giây trừ 05 điểm. Ghép xe không đúng vị trí quy định (toàn bộ thân xe nằm trong khu vực ghép xe nhưng không có tín hiệu báo kết thúc), trừ 05 điểm. Chưa ghép được xe vào nơi đỗ (khi kết thúc bài sát hạch, còn một phần thân xe nằm ngoài khu vực ghép xe), bị đình chỉ sát hạch. Thời gian thực hiện bài sát hạch, cứ quá 02 phút, trừ 05 điểm. Lái xe lên vỉa hè bị đình chỉ sát hạch.
+1. Lái xe tiến vào khoảng cách khống chế để lùi vào nơi ghép xe dọc (đối với xe hạng B, C1) hoặc khu vực để ghép xe ngang (đối với xe hạng B chuyển số tự động (bao gồm cả xe ô tô điện), B số cơ khí, C, D1, D2, D). 2. Lùi để ghép xe vào nơi đỗ. 3. Dừng xe ở vị trí đỗ quy định. 4. Lái xe qua vạch kết thúc bài sát hạch và đến bài sát hạch tiếp theo. | 1. Đi đúng hình quy định của hạng xe sát hạch. 2. Bánh xe không đè vào vạch giới hạn hình sát hạch. 3. Giữ động cơ hoạt động liên tục. 4. Hoàn thành bài sát hạch trong thời gian 02 phút. 5. Giữ tốc độ động cơ không quá 4000 vòng/phút. 6. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2 20 km/h đối với hạng C1, C, D | 1. Đi không đúng hình của hạng xe sát hạch, bị đình chỉ sát hạch. 2. Bánh xe đè vào vạch giới hạn hình sát hạch, mỗi lần trừ 05 điểm. 3. Bánh xe đè vào vạch giới hạn hình sát hạch, cứ quá 05 giây trừ 05 điểm. 4. Ghép xe không đúng vị trí quy định (toàn bộ thân xe nằm trong khu vực ghép xe nhưng không có tín hiệu báo kết thúc), trừ 05 điểm. 5. Chưa ghép được xe vào nơi đỗ (khi kết thúc bài sát hạch, còn một phần thân xe nằm ngoài khu vực ghép xe), bị đình chỉ sát hạch. 6. Thời gian thực hiện bài sát hạch, cứ quá 02 phút, trừ 05 điểm. 7. Lái xe lên vỉa hè bị đình chỉ sát hạch.
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. Xe bị chết máy, mỗi lần trừ 05 điểm. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. Xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
+8. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. 9. Xe bị chết máy, mỗi lần trừ 05 điểm. 10. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. 11. Xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. 12. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
 Bài sát hạch số 8: tạm dừng ở chỗ có đường sắt chạy qua
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Dừng xe để khoảng cách từ hình chiếu thanh cản phía trước của xe xuống mặt đường đến vạch dừng (khoảng cách A) không quá 500mm. Lái xe đến bài sát hạch tiếp theo. | Dừng xe cách vạch dừng quy định không quá 500mm. Giữ động cơ hoạt động liên tục. Giữ tốc độ động cơ không quá 4000 vòng/phút. Lái xe theo quy tắc giao thông đường bộ. Tốc độ xe chạy không quá. - 24 km/h đối với hạng B, D1, D2 | Không dừng xe ở vạch dừng quy định, trừ 05 điểm. Dừng xe chưa đến vạch dừng quy định, trừ 05 điểm. Dừng xe quá vạch dừng quy định, trừ 05 điểm. Lái xe lên vỉa hè bị đình chỉ sát hạch. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. Xe bị chết máy, mỗi lần trừ 05 điểm.
-- 20 km/h đối với hạng C1, C, D | Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. Xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
+1. Dừng xe để khoảng cách từ hình chiếu thanh cản phía trước của xe xuống mặt đường đến vạch dừng (khoảng cách A) không quá 500mm. 2. Lái xe đến bài sát hạch tiếp theo. | 1. Dừng xe cách vạch dừng quy định không quá 500mm. 2. Giữ động cơ hoạt động liên tục. 3. Giữ tốc độ động cơ không quá 4000 vòng/phút. 4. Lái xe theo quy tắc giao thông đường bộ. 5. Tốc độ xe chạy không quá. - 24 km/h đối với hạng B, D1, D2 | 1. Không dừng xe ở vạch dừng quy định, trừ 05 điểm. 2. Dừng xe chưa đến vạch dừng quy định, trừ 05 điểm. 3. Dừng xe quá vạch dừng quy định, trừ 05 điểm. 4. Lái xe lên vỉa hè bị đình chỉ sát hạch. 5. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. 6. Xe bị chết máy, mỗi lần trừ 05 điểm.
+- 20 km/h đối với hạng C1, C, D | 7. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. 8. Xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm. 9. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây trừ 01 điểm.
 Bài sát hạch số 9: thay đổi số trên đường bằng
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Trên quãng đường 25m kể từ khi bắt đầu vào bài sát hạch, phải thay đổi số và tốc độ như sau: Đối với xe hạng B: từ số 1 lên số 2 và trên 24km/h; Đối với xe hạng D1, D2: từ số 2 lên số 3 và trên 24km/h; Đối với xe hạng C1, C, D: từ số 2 lên số 3 và trên 20km/h. Trên quãng đường 25m còn lại của bài sát hạch phải thay đổi số và tốc độ ngược lại. Lái xe đến bài sát hạch tiếp theo. | Trên quãng đường 25m kể từ khi bắt đầu vào bài sát hạch, phải thay đổi số và tốc độ như sau: Đối với xe hạng B: từ số 1 lên số 2 và trên 24km/h; Đối với xe hạng D1, D2: từ số 2 lên số 3 và trên 24km/h; Đối với xe hạng C1, C, D: từ số 2 lên số 3 và trên 20km/h. Trên quãng đường 25m còn lại của bài sát hạch phải thay đổi số và tốc độ ngược lại. Hoàn thành bài sát hạch trong thời gian 02 phút. | Không thay đổi số theo quy định, trừ 05 điểm. Không thay đổi tốc độ theo quy định, trừ 05 điểm. Không thay đổi đúng số và đúng tốc độ quy định, trừ 05 điểm. Thời gian thực hiện bài sát hạch, cứ quá 02 phút, trừ 05 điểm. Lái xe lên vỉa hè bị đình chỉ sát hạch. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. Xe bị chết máy, mỗi lần trừ 05 điểm. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. Tổng thời gian đến bài sát hạch đang thực hiện quá
-Lái xe theo quy tắc giao thông đường bộ. Giữ động cơ hoạt động liên tục. Giữ tốc độ động cơ không quá 4000 vòng/phút. | quy định, cứ 03 giây trừ 01 điểm.
+1. Trên quãng đường 25m kể từ khi bắt đầu vào bài sát hạch, phải thay đổi số và tốc độ như sau: a) Đối với xe hạng B: từ số 1 lên số 2 và trên 24km/h; b) Đối với xe hạng D1, D2: từ số 2 lên số 3 và trên 24km/h; c) Đối với xe hạng C1, C, D: từ số 2 lên số 3 và trên 20km/h. 2. Trên quãng đường 25m còn lại của bài sát hạch phải thay đổi số và tốc độ ngược lại. 3. Lái xe đến bài sát hạch tiếp theo. | 1. Trên quãng đường 25m kể từ khi bắt đầu vào bài sát hạch, phải thay đổi số và tốc độ như sau: a) Đối với xe hạng B: từ số 1 lên số 2 và trên 24km/h; b) Đối với xe hạng D1, D2: từ số 2 lên số 3 và trên 24km/h; c) Đối với xe hạng C1, C, D: từ số 2 lên số 3 và trên 20km/h. 2. Trên quãng đường 25m còn lại của bài sát hạch phải thay đổi số và tốc độ ngược lại. 3. Hoàn thành bài sát hạch trong thời gian 02 phút. | 1. Không thay đổi số theo quy định, trừ 05 điểm. 2. Không thay đổi tốc độ theo quy định, trừ 05 điểm. 3. Không thay đổi đúng số và đúng tốc độ quy định, trừ 05 điểm. 4. Thời gian thực hiện bài sát hạch, cứ quá 02 phút, trừ 05 điểm. 5. Lái xe lên vỉa hè bị đình chỉ sát hạch. 6. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. 7. Xe bị chết máy, mỗi lần trừ 05 điểm. 8. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm. 9. Tổng thời gian đến bài sát hạch đang thực hiện quá
+4. Lái xe theo quy tắc giao thông đường bộ. 5. Giữ động cơ hoạt động liên tục. 6. Giữ tốc độ động cơ không quá 4000 vòng/phút. | quy định, cứ 03 giây trừ 01 điểm.
 Bài sát hạch số 10: kết thúc
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi trừ điểm
-Bật đèn xi nhan phải khi xe qua vạch kết thúc. Lái xe qua vạch kết thúc và dừng xe. | Bật đèn xi nhan phải khi xe qua vạch kết thúc. Lái xe qua vạch kết thúc. Giữ tốc độ động cơ không quá 4000 vòng/phút. Giữ động cơ hoạt động liên tục. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2; 20 km/h đối với hạng C1, C, D. | Không qua vạch kết thúc, bị đình chỉ sát hạch. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. Lái xe lên vỉa hè bị đình chỉ sát hạch. Điểm sát hạch dưới 80 điểm, bị đình chỉ sát hạch. Khi xe qua vạch kết thúc: Không bật đèn xi nhan phải, trừ 05 điểm; Xe bị chết máy, mỗi lần trừ 05 điểm; Tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm; Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm; đ) Tổng thời gian thực hiện các bài sát hạch quá quy định, cứ 03 giây trừ 01 điểm.
+1. Bật đèn xi nhan phải khi xe qua vạch kết thúc. 2. Lái xe qua vạch kết thúc và dừng xe. | 1. Bật đèn xi nhan phải khi xe qua vạch kết thúc. 2. Lái xe qua vạch kết thúc. 3. Giữ tốc độ động cơ không quá 4000 vòng/phút. 4. Giữ động cơ hoạt động liên tục. 5. Tốc độ xe chạy không quá: 24 km/h đối với hạng B, D1, D2; 20 km/h đối với hạng C1, C, D. | 1. Không qua vạch kết thúc, bị đình chỉ sát hạch. 2. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch. 3. Lái xe lên vỉa hè bị đình chỉ sát hạch. 4. Điểm sát hạch dưới 80 điểm, bị đình chỉ sát hạch. 5. Khi xe qua vạch kết thúc: a) Không bật đèn xi nhan phải, trừ 05 điểm; b) Xe bị chết máy, mỗi lần trừ 05 điểm; c) Tốc độ động cơ quá 4000 vòng/phút, mỗi lần trừ 05 điểm; d) Lái xe quá tốc độ quy định, cứ 03 giây trừ 01 điểm; đ) Tổng thời gian thực hiện các bài sát hạch quá quy định, cứ 03 giây trừ 01 điểm.
 3. Công nhận kết quả:
 3.1. Điểm đạt yêu cầu, theo bảng sau
 Nội dung | Hạng B | Hạng D1, D2 | Hạng C1, C, D
@@ -1467,20 +1467,20 @@ PHỤ LỤC VI
 (Ban hành kèm theo Thông tư số 108/2026/TT-BCA ngày 29 tháng 6 năm 2026
 của Bộ trưởng Bộ Công an)
 NHIỆM VỤ, QUYỀN HẠN CỦA HỘI ĐỒNG SÁT HẠCH
-Nhiệm vụ, quyền hạn của các thành viên hội đồng sát hạch
-Chủ tịch
-Nhiệm vụ
-Tổ chức họp hội đồng để công bố quyết định tổ chức kỳ sát hạch; phổ biến nội quy và các quy định cần thiết cho sát hạch viên; phân công nhiệm vụ của hội đồng kỳ sát hạch lái xe và lập biên bản phân công theo mẫu quy định tại Mẫu số 01 ban hành kèm theo Phụ lục này.
-Tổ chức khai mạc kỳ sát hạch để công bố quyết định tổ chức kỳ sát hạch, phổ biến nội quy và các quy định cần thiết cho thí sinh dự sát hạch.
-Chỉ đạo sát hạch viên:
-Kiểm tra các điều kiện cần thiết trước khi sát hạch quy định tại điểm 5.1.1 tiểu mục 5.1 mục 5 phần I Phụ lục này, nếu bảo đảm yêu cầu thì báo cáo Chủ tịch tổ chức sát hạch;
-Tiếp nhận, sử dụng thiết bị chấm điểm lý thuyết, thực hành và hệ thống thiết bị, phần mềm ứng dụng định danh và xác thực điện tử. Trường hợp giao nhân viên kỹ thuật của trung tâm vận hành thì phải giám sát trong quá trình sát hạch.
-Đôn đốc, kiểm tra các thành viên hội đồng thực hiện nhiệm vụ giao.
-Xử lý trường hợp chấm điểm không chính xác do phương tiện, thiết bị kỹ thuật chấm điểm tự động bị lỗi hoặc nguyên nhân khác không do lỗi của thí sinh làm sai lệch kết quả sát hạch và các trường hợp đình chỉ sát hạch, các vi phạm và khiếu nại của thí sinh theo báo cáo của sát hạch viên. Khi cần thiết, phải họp hội đồng để xem xét, quyết định.
-Tổ chức họp hội đồng sát hạch để sát hạch viên báo cáo kết quả sát hạch; xem xét, quyết định các nội dung quy định tại điểm 1.1.5 tiểu mục 1.1 mục 1 phần I Phụ lục này. Nhận xét, đánh giá ưu, khuyết điểm kỳ sát hạch và lập biên bản tổng hợp kết quả sát hạch, đề nghị công nhận thí sinh trúng tuyển; xác nhận thí sinh vắng, trượt, xác nhận phí và lệ phí phải nộp.
-Quyền hạn
-Tạm dừng sát hạch khi thiết bị chấm điểm lý thuyết hoặc thực hành bị hỏng, báo lỗi và chấm điểm không đúng quy trình sát hạch; xe sát hạch không đảm bảo phục vụ kỳ sát hạch cho đến khi khắc phục xong.
-Lập biên bản đình chỉ nhiệm vụ của sát hạch viên khi vi phạm quy trình sát hạch.
+I. Nhiệm vụ, quyền hạn của các thành viên hội đồng sát hạch
+1. Chủ tịch
+1.1. Nhiệm vụ
+1.1.1. Tổ chức họp hội đồng để công bố quyết định tổ chức kỳ sát hạch; phổ biến nội quy và các quy định cần thiết cho sát hạch viên; phân công nhiệm vụ của hội đồng kỳ sát hạch lái xe và lập biên bản phân công theo mẫu quy định tại Mẫu số 01 ban hành kèm theo Phụ lục này.
+1.1.2. Tổ chức khai mạc kỳ sát hạch để công bố quyết định tổ chức kỳ sát hạch, phổ biến nội quy và các quy định cần thiết cho thí sinh dự sát hạch.
+1.1.3. Chỉ đạo sát hạch viên:
+a) Kiểm tra các điều kiện cần thiết trước khi sát hạch quy định tại điểm 5.1.1 tiểu mục 5.1 mục 5 phần I Phụ lục này, nếu bảo đảm yêu cầu thì báo cáo Chủ tịch tổ chức sát hạch;
+b) Tiếp nhận, sử dụng thiết bị chấm điểm lý thuyết, thực hành và hệ thống thiết bị, phần mềm ứng dụng định danh và xác thực điện tử. Trường hợp giao nhân viên kỹ thuật của trung tâm vận hành thì phải giám sát trong quá trình sát hạch.
+1.1.4. Đôn đốc, kiểm tra các thành viên hội đồng thực hiện nhiệm vụ giao.
+1.1.5. Xử lý trường hợp chấm điểm không chính xác do phương tiện, thiết bị kỹ thuật chấm điểm tự động bị lỗi hoặc nguyên nhân khác không do lỗi của thí sinh làm sai lệch kết quả sát hạch và các trường hợp đình chỉ sát hạch, các vi phạm và khiếu nại của thí sinh theo báo cáo của sát hạch viên. Khi cần thiết, phải họp hội đồng để xem xét, quyết định.
+1.1.6. Tổ chức họp hội đồng sát hạch để sát hạch viên báo cáo kết quả sát hạch; xem xét, quyết định các nội dung quy định tại điểm 1.1.5 tiểu mục 1.1 mục 1 phần I Phụ lục này. Nhận xét, đánh giá ưu, khuyết điểm kỳ sát hạch và lập biên bản tổng hợp kết quả sát hạch, đề nghị công nhận thí sinh trúng tuyển; xác nhận thí sinh vắng, trượt, xác nhận phí và lệ phí phải nộp.
+1.2. Quyền hạn
+1.2.1. Tạm dừng sát hạch khi thiết bị chấm điểm lý thuyết hoặc thực hành bị hỏng, báo lỗi và chấm điểm không đúng quy trình sát hạch; xe sát hạch không đảm bảo phục vụ kỳ sát hạch cho đến khi khắc phục xong.
+1.2.2. Lập biên bản đình chỉ nhiệm vụ của sát hạch viên khi vi phạm quy trình sát hạch.
 1.2.3. Quyết định về việc hủy bỏ kết quả sát hạch của thí sinh, cho hoặc không cho thí sinh thực hiện lại nội dung sát hạch đối với trường hợp quy định tại điểm 1.1.5 tiểu mục 1.1 mục 1 phần I Phụ lục này.
 2. Phó chủ tịch
 2.1. Đôn đốc, kiểm tra các thành viên hội đồng thực hiện nhiệm vụ do Chủ tịch giao.
@@ -1539,7 +1539,7 @@ Thực hiện các nhiệm vụ của sát hạch viên theo quy trình sát h�
 5.2.2. Yêu cầu thí sinh xuất trình một trong các giấy tờ: căn cước công dân, căn cước, hộ chiếu và giấy phép lái xe (đối với các trường hợp nâng hạng, sát hạch để cấp lại giấy phép lái xe và miễn sát hạch lý thuyết) để đối chiếu với hồ sơ trong trường hợp cần thiết.
 5.2.3. Lập biên bản những trường hợp thí sinh vi phạm nội quy, quy chế và những trường hợp quy định tại điểm 1.1.5 tiểu mục 1.1 mục 1 phần I Phụ lục này.
 5.2.4. Truất quyền thi các trường hợp thí sinh lái xe lên bó vỉa, không đi đúng hình quy định của hạng xe sát hạch, gây va chạm, tai nạn trong quá trình sát hạch, không thực hiện theo hiệu lệnh của sát hạch viên.
-BIỂU MẪU BIÊN BẢN
+II. BIỂU MẪU BIÊN BẢN
 Mẫu số 01 | Biên bản phân công nhiệm vụ của hội đồng sát hạch lái xe
 Mẫu số 02 | Biên bản kiểm tra thiết bị sát hạch
 Mẫu số 03 | Biên bản tổng hợp kết quả kỳ sát hạch
@@ -1565,7 +1565,7 @@ I. PHÂN CÔNG TRÁCH NHIỆM
 4.2. Thực hiện sát hạch
 4.2.1. Thực hiện sát hạch lý thuyết
 - Đồng chí…………………………
-Thực hiện sát hạch trong hình
+4.2.2 Thực hiện sát hạch trong hình
 - Đồng chí…………………………
 4.2.3 Thực hiện sát hạch lái xe trên đường (3)
 - Đồng chí…………………………
@@ -1587,9 +1587,9 @@ BIÊN BẢN KIỂM TRA THIẾT BỊ SÁT HẠCH
 Căn cứ Điều ….. Thông tư số /2026/TT-BCA ngày ……. của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế.
 Căn cứ Quyết định số …../QĐ-… ngày …. tháng ….. năm …. của ...............(2)................ về việc tổ chức kỳ sát hạch của ……...
 Hôm nay, ngày ……. tháng ….. năm ….. tại trung tâm sát hạch lái xe ….., chúng tôi gồm:
-Sát hạch viên
+1. Sát hạch viên
 Đồng chí…..
-Đại diện Trung tâm sát hạch lái xe
+2. Đại diện Trung tâm sát hạch lái xe
 Ông (bà)…..; Chức vụ:
 Đã cùng nhau kiểm tra trang thiết bị, xe sát hạch tại trung tâm sát hạch lái xe và
 thống nhất như sau:
@@ -1609,15 +1609,15 @@ Mẫu số 03.
 BIÊN BẢN
 TỔNG HỢP KẾT QUẢ KỲ SÁT HẠCH
 Ngày … tháng ….năm…, vào hồi … giờ…phút , tại Trung tâm sát hạch lái xe ….. Hội đồng sát hạch lái xe cho………. thí sinh ………………. của..............(2)..............., đã họp toàn thể để xét công nhận kết quả kỳ sát hạch. Thành phần gồm có:
-Đồng chí ….- Chức vụ - Chủ tịch
-Đồng chí ….- Chức vụ - Phó Chủ tịch
-Ông (bà) ….- Chức vụ - Ủy viên
-Đồng chí.........................................- Thư ký.
+1. Đồng chí ….- Chức vụ - Chủ tịch
+2. Đồng chí ….- Chức vụ - Phó Chủ tịch
+3. Ông (bà) ….- Chức vụ - Ủy viên
+4. Đồng chí.........................................- Thư ký.
 NỘI DUNG CUỘC HỌP
-Thông qua kết quả kỳ sát hạch:
-Tổng số hồ sơ đăng ký dự thi:…..
+I. Thông qua kết quả kỳ sát hạch:
+1. Tổng số hồ sơ đăng ký dự thi:…..
 Tổng số hồ sơ dự thi:…… | Vắng thi:…… (có danh sách kèm theo)
-Thí sinh dự thi lần đầu:
+a) Thí sinh dự thi lần đầu:
 Hạng GPLX | Tổng số hồ sơ | Tổng số dự thi | Thi Lý thuyết | Thực hành trong hình | Thực hành trên đường | Kết quả đạt
 Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt
 A1
@@ -1637,8 +1637,8 @@ D2
 ….
 Cộng
 b) Thí sinh thuộc đối tượng cấp lại giấy phép lái xe:
-Nhận xét kỳ sát hạch:......
-Tổng hợp số thu phí sát hạch và lệ phí cấp GPLX
+II. Nhận xét kỳ sát hạch:......
+III. Tổng hợp số thu phí sát hạch và lệ phí cấp GPLX
 TT | Nội dung | Số lượng | Số tiền/1 thí sinh | Thành tiền
 I | Phí sát hạch lái xe
 1 | Lý thuyết
@@ -1667,9 +1667,9 @@ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
 Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN KIỂM TRA HỒ SƠ VÀ ĐIỀU KIỆN DỰ THI CỦA THÍ SINH DỰ SÁT HẠCH LÁI XE
 Hôm nay, vào hồi ..... giờ, ngày ..... /..... /....., tại Phòng Cảnh sát giao thông .... ............. ....... ... ......, chúng tôi, gồm:
-Đồng chí ,
-Đồng chí ,
-Ông (bà) , người nộp hồ sơ
+1. Đồng chí ,
+2. Đồng chí ,
+3. Ông (bà) , người nộp hồ sơ
 Tiến hành kiểm tra hồ sơ của các thí sinh dự sát hạch lái xe.
 KẾT QUẢ
 Tổng số hồ sơ đề nghị dự sát hạch: .................................
@@ -1704,7 +1704,7 @@ Số TT | Khóa - Lớp | Hạng giấy phép lái xe | Số học viên vào h�
 4 | Hệ đào tạo nâng hạng
 (có danh sách học viên các khóa học kèm theo)
 Cơ sở đào tạo....................đề nghị Phòng Cảnh sát giao thông….. xét duyệt và tổ chức kỳ sát hạch cho học viên các khóa - lớp trên.
-Nơi nhận: Như trên; Lưu: | CƠ SỞ ĐÀO TẠO (Ký tên, đóng dấu)
+Nơi nhận: - Như trên; - Lưu: | CƠ SỞ ĐÀO TẠO (Ký tên, đóng dấu)
 Mẫu số 03.
 CƠ QUAN CHỦ QUẢN CƠ SỞ ĐÀO TẠO | DANH SÁCH THÍ SINH DỰ SÁT HẠCH Cấp giấy phép lái xe hạng:........................... Khóa:............................................................. (Mỗi hạng lập 1 danh sách riêng) | Thời gian đào tạo: tháng Khai giảng ngày ..... tháng ..... năm..... Bế giảng ngày ..... tháng ..... năm .....
 STT | Họ và tên | Ngày tháng năm sinh | Số định danh | Nơi cư trú | Giấy chứng nhận sức khỏe hợp lệ | Đã có giấy phép lái xe hạng | Thâm niên lái xe | Số chứng chỉ sơ cấp, chứng chỉ đào tạo, xác nhận hoàn thành khóa đào tạo | Ghi chú
@@ -1728,9 +1728,9 @@ QUYẾT ĐỊNH:
 Kỳ sát hạch được tiến hành ngày ..... /..... /..... tại Trung tâm sát hạch lái xe:
 .................................................................................................................................................
 Điều 2. Thành lập Hội đồng sát hạch gồm các thành viên có tên dưới đây:
-Đồng chí:........................Chức vụ ........................., Chủ tịch Hội đồng
-Đồng chí:........................Chức vụ ..................... …, Phó Chủ tịch Hội đồng
-Ông (bà) hoặc Đồng chí:.........................Chức vụ.................., Ủy viên Hội đồng
+1. Đồng chí:........................Chức vụ ........................., Chủ tịch Hội đồng
+2. Đồng chí:........................Chức vụ ..................... …, Phó Chủ tịch Hội đồng
+3. Ông (bà) hoặc Đồng chí:.........................Chức vụ.................., Ủy viên Hội đồng
 4. Đồng chí.......................... Chức vụ ........................, Thư ký.
 5. Các sát hạch viên:
 - Đồng chí:…………………. sát hạch viên;
@@ -1738,7 +1738,7 @@ Kỳ sát hạch được tiến hành ngày ..... /..... /..... tại Trung tâ
 Trách nhiệm của từng thành viên do Chủ tịch hội đồng phân công.
 Điều 3. Hội đồng sát hạch có các nhiệm vụ, quyền hạn quy định tại Thông tư số ...../TT-BCA ngày ..... /..... / ..... của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế. Kết thúc kỳ sát hạch, lập biên bản tổng hợp kết quả sát hạch, Hội đồng sát hạch tự giải thể.
 Điều 4. Hội đồng sát hạch và thí sinh có tên tại các Điều 1, 2 chịu trách nhiệm thi hành Quyết định này./.
-Nơi nhận: Như Điều 4; Lưu VT. | ..…….(3)………. (ký tên, đóng dấu)
+Nơi nhận: - Như Điều 4; - Lưu VT. | ..…….(3)………. (ký tên, đóng dấu)
 Ghi chú:
 (1) Cơ quan bộ ghi là BỘ CÔNG AN ở địa phương ghi CÔNG AN TỈNH/THÀNH PHỐ… (2) Cơ quan bộ ghi là CỤC CẢNH SÁT GIAO THÔNG, ở địa phương ghi là PHÒNG CẢNH SÁT GIAO THÔNG
 (3) Cơ quan bộ ghi là CỤC TRƯỞNG, ở địa phương ghi là TRƯỞNG PHÒNG.
@@ -1763,13 +1763,13 @@ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
 Độc lập - Tự do - Hạnh phúc
 BIÊN BẢN TỔNG HỢP KẾT QUẢ SÁT HẠCH LÁI XE HẠNG B1 VÀ Ô TÔ
 Ảnh chân dung 3 cm x 4 cm (chụp không quá 06 tháng) | Họ và tên thí sinh:.................................................................................................. Ngày tháng năm sinh: ........................................................................................... Số định danh:……………..………..…… hoặc Hộ chiếu số……..........……… ngày cấp………. nơi cấp: ..................................... Sát hạch giấy phép lái xe hạng:………………………….......................................
-KẾT QUẢ SÁT HẠCH LÝ THUYẾT | ........., ngày.......tháng.....năm..... (Thí sinh ký và ghi rõ họ tên)
+I. KẾT QUẢ SÁT HẠCH LÝ THUYẾT | ........., ngày.......tháng.....năm..... (Thí sinh ký và ghi rõ họ tên)
 Số điểm tối đa | Số điểm đạt được | Sát hạch viên nhận xét và ký tên
 Thí sinh ký tên
-KẾT QUẢ SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
+II. KẾT QUẢ SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
 Số điểm tối đa | Số điểm đạt được | Sát hạch viên nhận xét và ký tên
 Thí sinh ký tên
-KẾT QUẢ SÁT HẠCH THỰC HÀNH LÁI XE TRÊN ĐƯỜNG
+III. KẾT QUẢ SÁT HẠCH THỰC HÀNH LÁI XE TRÊN ĐƯỜNG
 Số điểm tối đa | Số điểm đạt được | Sát hạch viên nhận xét và ký tên
 Thí sinh ký tên
 Kết luận của Chủ tịch hội đồng Hạng........... Đạt □ Không đạt □ | ....... ngày....... tháng…….năm 20.... TM. HỘI ĐỒNG SÁT HẠCH CHỦ TỊCH (Ký tên, đóng dấu)
@@ -1779,10 +1779,10 @@ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
 BIÊN BẢN TỔNG HỢP KẾT QUẢ SÁT HẠCH LÁI XE MÔ TÔ
 Ảnh màu 3 cm x 4 cm (chụp không quá 06 tháng) | Họ và tên thí sinh:..................................................................................... Ngày tháng năm sinh: .............................................................................. Số định danh:……………..…....... hoặc Hộ chiếu số…….........……… ngày cấp………. nơi cấp: .............................. Sát hạch giấy phép lái xe hạng:...........................................
 ………, ngày ….. tháng ….. năm ….. (Thí sinh ký và ghi rõ họ tên)
-KẾT QUẢ SÁT HẠCH LÝ THUYẾT
+I. KẾT QUẢ SÁT HẠCH LÝ THUYẾT
 Số điểm tối đa | Số điểm đạt được | Sát hạch viên nhận xét và ký tên
 Thí sinh ký tên
-KẾT QUẢ SÁT HẠCH BÀI SÁT HẠCH SỐ 1
+II. KẾT QUẢ SÁT HẠCH BÀI SÁT HẠCH SỐ 1
 Số điểm tối đa | Số điểm đạt được | Sát hạch viên nhận xét và ký tên
 Thí sinh ký tên
 III. KẾT QUẢ SÁT HẠCH BÀI SÁT HẠCH SỐ 2
@@ -1885,9 +1885,9 @@ TRANG SỐ 8
 Phần khai về người lái xe và phân hạng IDP in bằng tiếng Pháp
 TRANG SỐ 9
 Hạng xe được điều khiển in bằng tiếng Pháp
-Vị trí đóng dấu hạng xe điều khiển được cấp
-Vị trí đóng dấu giáp lai
-Vị trí chữ ký của người được cấp IDP
+(1) Vị trí đóng dấu hạng xe điều khiển được cấp
+(2) Vị trí đóng dấu giáp lai
+(3) Vị trí chữ ký của người được cấp IDP
 PHỤ LỤC XII
 (Ban hành kèm theo Thông tư số 108/2026/TT-BCA ngày 29 tháng 6 năm 2026
 của Bộ trưởng Bộ Công an)
@@ -1917,8 +1917,8 @@ Mẫu số 01.
 ………, ngày…..tháng,.…năm…..
 BÁO CÁO CHUNG
 KẾT QUẢ KỲ SÁT HẠCH LÁI XE
-Trung tâm sát hạch:
-Ngày sát hạch:
+1. Trung tâm sát hạch:
+2. Ngày sát hạch:
 Hạng GPLX | Tổng số hồ sơ | Tổng số dự thi | Lý thuyết | Thực hành trong hình | Thực hành trên đường | Kết quả đạt | Tỷ lệ %
 Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt
 B1
@@ -1937,8 +1937,8 @@ Mẫu số 02.
 ………, ngày…..tháng,.…năm…..
 BÁO CÁO CHI TIẾT
 KẾT QUẢ KỲ SÁT HẠCH LÁI XE
-Trung tâm sát hạch:
-Ngày sát hạch:
+1. Trung tâm sát hạch:
+2. Ngày sát hạch:
 STT | Họ và tên | Ngày sinh | Số định danh | Hạng | Kết quả sát hạch
 LT | Số lần SH | TH LXTH | Số lần SH | TH LXTĐ | Số lần SH | Tổng hợp
 …

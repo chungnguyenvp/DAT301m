@@ -54,6 +54,95 @@ def test_docx_lines_keeps_breaks_and_tabs_as_spaces(tmp_path):
     assert docx_lines(p) == ["VIỆT NAM Độc lập", "Số: 168/2024"]
 
 
+_W = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"'
+
+
+def _numbered_doc(path, abstract_levels, nums, paragraphs, table_paragraphs=()):
+    """Tạo docx có numbering.xml riêng.
+
+    abstract_levels: {abstractNumId: [(numFmt, lvlText, start), ...]} theo ilvl 0, 1, ...
+    nums: {numId: (abstractNumId, {ilvl: startOverride})}
+    paragraphs / table_paragraphs: [(text, numId | None, ilvl)]
+    """
+    from docx.oxml import parse_xml
+
+    d = docx.Document()
+    numbering = d.part.numbering_part.element
+    for child in list(numbering):
+        numbering.remove(child)
+    for aid, levels in abstract_levels.items():
+        lv = "".join(
+            f'<w:lvl w:ilvl="{i}"><w:start w:val="{s}"/><w:numFmt w:val="{fmt}"/><w:lvlText w:val="{txt}"/></w:lvl>'
+            for i, (fmt, txt, s) in enumerate(levels))
+        numbering.append(parse_xml(f'<w:abstractNum {_W} w:abstractNumId="{aid}">{lv}</w:abstractNum>'))
+    for nid, (aid, overrides) in nums.items():
+        ov = "".join(f'<w:lvlOverride w:ilvl="{i}"><w:startOverride w:val="{s}"/></w:lvlOverride>'
+                     for i, s in overrides.items())
+        numbering.append(parse_xml(f'<w:num {_W} w:numId="{nid}"><w:abstractNumId w:val="{aid}"/>{ov}</w:num>'))
+
+    def number(par, nid, ilvl):
+        if nid is not None:
+            par._p.get_or_add_pPr().append(parse_xml(
+                f'<w:numPr {_W}><w:ilvl w:val="{ilvl}"/><w:numId w:val="{nid}"/></w:numPr>'))
+
+    for text, nid, ilvl in paragraphs:
+        number(d.add_paragraph(text), nid, ilvl)
+    if table_paragraphs:
+        cell = d.add_table(rows=1, cols=1).cell(0, 0)
+        first = True
+        for text, nid, ilvl in table_paragraphs:
+            par = cell.paragraphs[0] if first else cell.add_paragraph()
+            par.text, first = text, False
+            number(par, nid, ilvl)
+    d.save(path)
+
+
+def test_docx_lines_renders_decimal_and_letter_numbering_with_restart(tmp_path):
+    p = tmp_path / "n.docx"
+    _numbered_doc(p, {"0": [("decimal", "%1.", 1), ("lowerLetter", "%2)", 1)]}, {"1": ("0", {})},
+                  [("Điều 3. Giải thích từ ngữ", None, 0), ("Đường đôi", "1", 0), ("Làn đường", "1", 1),
+                   ("Phần đường", "1", 1), ("Đường một chiều", "1", 0), ("Xe cơ giới", "1", 1)])
+    assert docx_lines(p) == ["Điều 3. Giải thích từ ngữ", "1. Đường đôi", "a) Làn đường", "b) Phần đường",
+                             "2. Đường một chiều", "a) Xe cơ giới"]
+
+
+def test_docx_lines_renders_bullets_overrides_and_multilevel(tmp_path):
+    p = tmp_path / "n.docx"
+    _numbered_doc(p, {"0": [("bullet", "", 1)], "1": [("decimal", "%1.", 1), ("decimal", "%1.%2.", 1)]},
+                  {"1": ("0", {}), "2": ("1", {0: 4}), "3": ("1", {})},
+                  [("Gạch đầu dòng", "1", 0), ("Bắt đầu từ bốn", "2", 0), ("Mục con", "2", 1),
+                   ("Không đánh số", "0", 0)])
+    assert docx_lines(p) == ["- Gạch đầu dòng", "4. Bắt đầu từ bốn", "4.1. Mục con", "Không đánh số"]
+
+
+def test_docx_lines_continues_lists_sharing_abstract_unless_restarted(tmp_path):
+    p = tmp_path / "n.docx"
+    _numbered_doc(p, {"0": [("decimal", "%1.", 1)]}, {"1": ("0", {}), "2": ("0", {}), "3": ("0", {0: 1})},
+                  [("Một", "1", 0), ("Hai", "2", 0), ("Ba", "1", 0), ("Bắt đầu lại", "3", 0), ("Tiếp", "3", 0)])
+    assert docx_lines(p) == ["1. Một", "2. Hai", "3. Ba", "1. Bắt đầu lại", "2. Tiếp"]
+
+
+def test_docx_lines_keeps_typed_label_instead_of_auto_label(tmp_path):
+    p = tmp_path / "n.docx"
+    _numbered_doc(p, {"0": [("decimal", "%1.", 1)]}, {"1": ("0", {})},
+                  [("Mở đầu", "1", 0), ("1. Nhiệm vụ", "1", 0), ("a) Điểm gõ tay", "1", 0), ("Tiếp", "1", 0)])
+    assert docx_lines(p) == ["1. Mở đầu", "1. Nhiệm vụ", "a) Điểm gõ tay", "4. Tiếp"]
+
+
+def test_docx_lines_numbers_paragraphs_inside_tables(tmp_path):
+    p = tmp_path / "n.docx"
+    _numbered_doc(p, {"0": [("decimal", "%1.", 1)]}, {"1": ("0", {})},
+                  [], table_paragraphs=[("Thắt dây an toàn", "1", 0), ("Khởi hành nhẹ nhàng", "1", 0)])
+    assert docx_lines(p) == ["1. Thắt dây an toàn 2. Khởi hành nhẹ nhàng"]
+
+
+def test_docx_lines_counts_empty_numbered_paragraphs(tmp_path):
+    p = tmp_path / "n.docx"
+    _numbered_doc(p, {"0": [("decimal", "%1.", 1)]}, {"1": ("0", {})},
+                  [("Một", "1", 0), ("", "1", 0), ("Ba", "1", 0)])
+    assert docx_lines(p) == ["1. Một", "3. Ba"]
+
+
 def _pdf_with_lines(path, lines):
     doc = pymupdf.open()
     page = doc.new_page()

@@ -24,26 +24,122 @@ def _text_of(el) -> str:
     return re.sub(r"[ \t\r\n]+", " ", "".join(parts)).strip()
 
 
-def _cell_text(tc) -> str:
+def _roman(n: int) -> str:
+    out = ""
+    for value, sym in ((1000, "M"), (900, "CM"), (500, "D"), (400, "CD"), (100, "C"), (90, "XC"),
+                       (50, "L"), (40, "XL"), (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")):
+        while n >= value:
+            out, n = out + sym, n - value
+    return out
+
+
+def _format_number(n: int, fmt: str) -> str:
+    """Số thứ tự theo numFmt của Word (chữ cái theo bảng a–z của Word, không phải trình tự điểm tiếng Việt)."""
+    if fmt in ("lowerLetter", "upperLetter"):
+        s = chr(ord("a") + (n - 1) % 26) * ((n - 1) // 26 + 1)
+        return s if fmt == "lowerLetter" else s.upper()
+    if fmt in ("lowerRoman", "upperRoman"):
+        return _roman(n).lower() if fmt == "lowerRoman" else _roman(n)
+    return str(n)
+
+
+class _Numbering:
+    """Dựng nhãn đánh số tự động (w:numPr) mà Word chỉ vẽ khi hiển thị, không nằm trong w:t.
+
+    Như Word: các w:num dùng chung một abstractNum là cùng một danh sách và đếm nối tiếp; w:num có
+    startOverride (nút "Restart numbering") đếm lại từ giá trị đó ở lần dùng đầu tiên. Đếm theo thứ tự
+    đoạn trong văn bản (kể cả đoạn trong bảng và đoạn rỗng); cấp sâu hơn bắt đầu lại khi cấp nông hơn tăng.
+    """
+
+    def __init__(self, numbering_el) -> None:
+        self.levels: dict[str, dict[int, tuple[str, str, int]]] = {}
+        self.nums: dict[str, tuple[str, dict[int, int]]] = {}
+        self.counters: dict[str, dict[int, int]] = {}
+        self.seen: set[str] = set()
+        if numbering_el is None:
+            return
+        for a in numbering_el.iterchildren(qn("w:abstractNum")):
+            lv = {}
+            for lvl in a.iterchildren(qn("w:lvl")):
+                fmt, txt, start = lvl.find(qn("w:numFmt")), lvl.find(qn("w:lvlText")), lvl.find(qn("w:start"))
+                lv[int(lvl.get(qn("w:ilvl")))] = (
+                    fmt.get(qn("w:val")) if fmt is not None else "decimal",
+                    txt.get(qn("w:val")) if txt is not None else "",
+                    int(start.get(qn("w:val"))) if start is not None else 1)
+            self.levels[a.get(qn("w:abstractNumId"))] = lv
+        for n in numbering_el.iterchildren(qn("w:num")):
+            overrides = {}
+            for ov in n.iterchildren(qn("w:lvlOverride")):
+                so = ov.find(qn("w:startOverride"))
+                if so is not None:
+                    overrides[int(ov.get(qn("w:ilvl")))] = int(so.get(qn("w:val")))
+            self.nums[n.get(qn("w:numId"))] = (n.find(qn("w:abstractNumId")).get(qn("w:val")), overrides)
+
+    def label(self, p) -> str:
+        num_pr = p.find(f"{qn('w:pPr')}/{qn('w:numPr')}")
+        if num_pr is None:
+            return ""
+        nid_el, ilvl_el = num_pr.find(qn("w:numId")), num_pr.find(qn("w:ilvl"))
+        nid = nid_el.get(qn("w:val")) if nid_el is not None else None
+        if nid not in self.nums:  # gồm numId "0": bỏ đánh số
+            return ""
+        ilvl = int(ilvl_el.get(qn("w:val"))) if ilvl_el is not None else 0
+        aid, overrides = self.nums[nid]
+        levels = self.levels.get(aid, {})
+        if ilvl not in levels:
+            return ""
+
+        def start(i: int) -> int:
+            return overrides.get(i, levels.get(i, ("", "", 1))[2])
+
+        count = self.counters.setdefault(aid, {})
+        if nid not in self.seen:
+            self.seen.add(nid)
+            if overrides:
+                for i in [i for i in count if i >= min(overrides)]:
+                    del count[i]
+        count[ilvl] = count[ilvl] + 1 if ilvl in count else start(ilvl)
+        for deeper in [i for i in count if i > ilvl]:
+            del count[deeper]
+        fmt, text, _ = levels[ilvl]
+        if fmt == "bullet":
+            return "-"
+        return re.sub(r"%(\d)", lambda m: _format_number(count.get(int(m.group(1)) - 1, start(int(m.group(1)) - 1)),
+                                                          levels.get(int(m.group(1)) - 1, ("decimal",))[0]),
+                      text).strip()
+
+
+# Nhãn gõ tay ở đầu đoạn ("1.", "2.1.", "a)", "đ)", "(1)", "-"): khi đã có thì không chèn nhãn tự động,
+# vì bản PDF chính thức chỉ in nhãn gõ tay (đoạn vừa có chữ "1. Nhiệm vụ" vừa gắn numPr trong TT 12).
+_TYPED_LABEL = re.compile(r"^(?:\d+(?:\.\d+)*\.?\s|[a-zđ]\d?\)\s|\(\d+\)|[-–+•]\s)")
+
+
+def _para_text(p, numbering: _Numbering) -> str:
+    """Chữ của đoạn kèm nhãn đánh số tự động; đoạn rỗng vẫn tăng bộ đếm như Word hiển thị."""
+    label, t = numbering.label(p), _text_of(p)
+    return f"{label} {t}" if label and t and not _TYPED_LABEL.match(t) else t
+
+
+def _cell_text(tc, numbering: _Numbering) -> str:
     """Chữ của một ô: các đoạn trực tiếp trong ô, bảng lồng được đọc đúng một lần tại chỗ."""
     parts: list[str] = []
     for el in tc.iterchildren():
         if el.tag == qn("w:p"):
-            t = _text_of(el)
+            t = _para_text(el, numbering)
             if t:
                 parts.append(t)
         elif el.tag == qn("w:tbl"):
-            parts.extend(_table_rows(el))
+            parts.extend(_table_rows(el, numbering))
     return " ".join(parts)
 
 
-def _table_rows(tbl) -> list[str]:
+def _table_rows(tbl, numbering: _Numbering) -> list[str]:
     """Mỗi hàng trực tiếp của bảng thành một dòng "ô | ô"; ô gộp chỉ có một w:tc nên không lặp."""
     rows: list[str] = []
     for tr in tbl.iterchildren(qn("w:tr")):
         cells: list[str] = []
         for tc in tr.iterchildren(qn("w:tc")):
-            c = _cell_text(tc)
+            c = _cell_text(tc, numbering)
             if c and (not cells or cells[-1] != c):
                 cells.append(c)
         if cells:
@@ -52,16 +148,20 @@ def _table_rows(tbl) -> list[str]:
 
 
 def docx_lines(path: Path) -> list[str]:
-    body = docx.Document(str(path)).element.body
+    document = docx.Document(str(path))
+    try:
+        numbering = _Numbering(document.part.numbering_part.element)
+    except (KeyError, NotImplementedError):
+        numbering = _Numbering(None)
     out: list[str] = []
-    for child in body.iterchildren():
+    for child in document.element.body.iterchildren():
         tag = child.tag.rsplit("}", 1)[-1]
         if tag == "p":
-            t = _text_of(child)
+            t = _para_text(child, numbering)
             if t:
                 out.append(t)
         elif tag == "tbl":
-            out.extend(_table_rows(child))
+            out.extend(_table_rows(child, numbering))
     return out
 
 
