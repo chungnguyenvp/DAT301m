@@ -1,7 +1,7 @@
 # %% [markdown]
 # # EDA kho văn bản luật giao thông đường bộ
 #
-# Phần A của mục 6 bản thiết kế dự án. Dữ liệu: `data/processed/legal_units_versioned.jsonl` (sau đợt làm sạch 2).
+# Phần A của mục 6 bản thiết kế dự án. Dữ liệu: `data/processed/legal_units_versioned.jsonl` (bản chốt `data-v1`, sau PR #6 kiểm tra dữ liệu cuối).
 # Thời điểm phân tích T = 01/10/2026; "có hiệu lực" tính bằng `lawproc.validity.in_force_at` (có xét ngoại lệ).
 # Mỗi phân tích kết thúc bằng **Phát hiện → hành động**. Số liệu máy đọc lưu ở `reports/eda/summary.json`.
 # Bản ghi có điều kiện cần được đối chiếu với điều kiện áp dụng trước khi trả lời câu hỏi pháp lý.
@@ -112,19 +112,19 @@ print(f"Văn bản sửa đổi: {sd['doc_id'].nunique()} văn bản, {len(sd)} 
 # %% [markdown]
 # **Phát hiện → hành động (E1):**
 #
-# - **Phát hiện:** 18.790 phiên bản của 33 văn bản; tại T có 17.423 phiên bản có hiệu lực nhưng chỉ 17.420 `unit_id`, gồm 2.195 Điều, 6.932 Khoản, 8.147 Điểm và 146 phụ lục → **Hành động:** ở bước lập chỉ mục, tách địa chỉ đơn vị khỏi phiên bản và lưu ngày hiệu lực cùng nguồn trích dẫn.
+# - **Phát hiện:** 20.500 phiên bản của 40 văn bản; tại T có 17.674 phiên bản có hiệu lực nhưng chỉ 17.671 `unit_id`, gồm 2.216 Điều, 7.118 Khoản, 8.185 Điểm và 152 phụ lục → **Hành động:** ở bước lập chỉ mục, tách địa chỉ đơn vị khỏi phiên bản và lưu ngày hiệu lực cùng nguồn trích dẫn.
 # - **Phát hiện:** 6 phiên bản thuộc 3 địa chỉ nhiều nhánh, tổng cộng 16 phiên bản có ghi chú điều kiện → **Hành động:** ở bước lọc truy hồi, đối chiếu điều kiện và đối tượng; không dùng quy tắc chọn bản mới nhất làm kết luận pháp lý chung.
-# - **Phát hiện:** nhóm Tai nạn có 6.986 đơn vị, còn Tốc độ có 16; 9 văn bản sửa đổi chứa 1.051 đơn vị → **Hành động:** ở bước tạo kho RAG, dùng phạm vi đề xuất E2 và tách chỉ dẫn sửa đổi khỏi nội dung đích đã áp sửa đổi; bộ eval lấy phân bổ theo căn bậc hai thay vì tỷ lệ thô.
+# - **Phát hiện:** nhóm Tai nạn có 6.985 đơn vị, còn Tốc độ có 55; 13 văn bản sửa đổi chứa 1.285 đơn vị → **Hành động:** ở bước tạo kho RAG, dùng phạm vi E2 đã chốt và tách chỉ dẫn sửa đổi khỏi nội dung đích đã áp sửa đổi; bộ eval lấy phân bổ theo căn bậc hai thay vì tỷ lệ thô.
 
 # %% [markdown]
 # ## E2. Phạm vi thực của BLDS 2015 và BLHS (VBHN 135)
 #
-# Đề xuất phạm vi: BLDS Chương XX (Điều 584–608, bồi thường thiệt hại ngoài hợp đồng, có Điều 601 nguồn nguy hiểm cao độ);
-# BLHS Điều 260–266 (các tội về giao thông đường bộ). Đây là phạm vi hỗ trợ đề xuất, cần xác nhận pháp lý
-# trước khi dùng làm tiêu chí loại trừ; Chương XX BLDS rộng hơn riêng giao thông đường bộ.
+# Phạm vi đã chốt (2026-10-16, `config.SCOPE_DIEU`): BLDS Chương XX (Điều 584–608, bồi thường thiệt hại ngoài hợp đồng,
+# có Điều 601 nguồn nguy hiểm cao độ); BLHS Điều 260–266 (các tội về giao thông đường bộ). Dữ liệu đã mang cờ
+# `trong_pham_vi` theo phạm vi này; notebook tính lại để kiểm tra cờ. Chương XX BLDS rộng hơn riêng giao thông đường bộ.
 
 # %%
-SCOPE = {"blds_2015": (584, 608), "vbhn_135_2025_blhs": (260, 266)}
+SCOPE = config.SCOPE_DIEU
 
 
 def in_scope(doc_id, dieu):
@@ -135,16 +135,16 @@ def in_scope(doc_id, dieu):
     return bool(m) and rng[0] <= int(m.group()) <= rng[1]
 
 
-live["trong_pham_vi"] = [in_scope(d, x) for d, x in zip(live["doc_id"], live["dieu"])]
+assert live["trong_pham_vi"].tolist() == [in_scope(d, x) for d, x in zip(live["doc_id"], live["dieu"])]
 big = live[live["doc_id"].isin(SCOPE)]
 print(f"BLDS + BLHS: {len(big)} / {len(live)} đơn vị có hiệu lực ({len(big) / len(live):.1%}); "
-      f"trong phạm vi đề xuất: {int(big['trong_pham_vi'].sum())}")
+      f"trong phạm vi đã chốt: {int(big['trong_pham_vi'].sum())}")
 e2 = big.groupby(["doc_id", "trong_pham_vi"]).size().unstack(fill_value=0)
 fig, ax = plt.subplots(figsize=(7, 3))
 e2.rename(columns={False: "Ngoài phạm vi", True: "Trong phạm vi"}).plot.barh(stacked=True, ax=ax)
 ax.set_xlabel("Số đơn vị đại diện")
 ax.set_ylabel("")
-ax.set_title("E2. Đơn vị BLDS, BLHS trong và ngoài phạm vi đề xuất")
+ax.set_title("E2. Đơn vị BLDS, BLHS trong và ngoài phạm vi đã chốt")
 save(fig, "e2_pham_vi_blds_blhs.png")
 e2
 
@@ -157,8 +157,8 @@ check[["doc_id", "dieu", "title", "trong_pham_vi"]]
 # %% [markdown]
 # **Phát hiện → hành động (E2):**
 #
-# - **Phát hiện:** BLDS và BLHS chiếm 6.986/17.420 đơn vị đại diện (40,1%), nhưng khoảng đề xuất chỉ giữ 213 đơn vị và để ngoài phạm vi 6.773 đơn vị → **Hành động:** ở bước xây kho thử nghiệm, gắn cờ phạm vi thay vì xóa dữ liệu; nhóm pháp lý xác nhận phạm vi trước khi chốt.
-# - **Phát hiện:** bảng tiêu đề có 25 Điều BLDS 584–608 và 7 Điều BLHS 260–266; Điều 267 BLHS chuyển sang đường sắt → **Hành động:** giữ hai khoảng đang đề xuất; dùng BLDS như nguồn hỗ trợ bồi thường dân sự, không gán toàn bộ Chương XX là luật giao thông.
+# - **Phát hiện:** BLDS và BLHS chiếm 6.985/17.671 đơn vị đại diện (39,5%), nhưng khoảng đã chốt chỉ giữ 213 đơn vị và để ngoài phạm vi 6.772 đơn vị → **Hành động:** ở bước xây kho thử nghiệm, dùng cờ `trong_pham_vi` có sẵn trong dữ liệu thay vì xóa dữ liệu; kho tra cứu, bộ eval và dữ liệu train chỉ lấy 213 đơn vị trong phạm vi.
+# - **Phát hiện:** bảng tiêu đề có 25 Điều BLDS 584–608 và 7 Điều BLHS 260–266; Điều 267 BLHS chuyển sang đường sắt → **Hành động:** giữ hai khoảng đã chốt (`config.SCOPE_DIEU`); dùng BLDS như nguồn hỗ trợ bồi thường dân sự, không gán toàn bộ Chương XX là luật giao thông.
 
 # %% [markdown]
 # ## E3. Độ dài đơn vị (từ, token Qwen3.5-9B, token bge-m3)
@@ -225,7 +225,7 @@ save(fig, "e3_do_dai_khoan.png")
 core_kh_ids = kh.index[[in_scope(d, a) and d not in config.AMENDING_DOCS and d not in config.NON_LEGAL
                         for d, a in zip(kh["doc_id"], kh["dieu"])]]
 core_kh_tok = kh_tok.reindex(core_kh_ids)
-print("Khoản kèm Điểm và tiêu đề Điều, trong phạm vi RAG đề xuất:",
+print("Khoản kèm Điểm và tiêu đề Điều, trong phạm vi RAG đã chốt:",
       core_kh_tok.describe(percentiles=[0.5, 0.9, 0.95, 0.99]).round(0).to_dict(),
       ">512:", int((core_kh_tok > 512).sum()))
 
@@ -239,10 +239,10 @@ short["level"].value_counts()
 # %% [markdown]
 # **Phát hiện → hành động (E3):**
 #
-# - **Phát hiện:** 6.932 ứng viên Khoản kèm Điểm và tiêu đề Điều có trung vị 76, P95 337 token bge-m3; 111 ứng viên vượt 512 → **Hành động:** ở bước thiết kế chunk, lấy 512 token làm trần thử nghiệm; tách theo Điểm hoặc ranh giới câu đối với ứng viên dài, giữ địa chỉ và nguồn.
-# - **Phát hiện:** trong phạm vi RAG đề xuất còn 3.831 ứng viên, P95 390 token và 93 vượt 512 → **Hành động:** ưu tiên rà soát 93 trường hợp này khi xây chunk; đo lại cả metadata, điều kiện và prompt vì thống kê có tiêu đề Điều vẫn chưa bao gồm các phần đó.
-# - **Phát hiện:** 2.281 đơn vị có dưới 5 từ; sáu bản thuộc ba địa chỉ có điều kiện đã được đo riêng → **Hành động:** ghép đơn vị ngắn với ngữ cảnh cha; với nhánh điều kiện, chỉ ghép phiên bản tương thích sau kiểm tra, không triển khai trực tiếp phép ghép bản đại diện đang dùng để mô tả độ dài.
-# - **Phát hiện:** chỉ text Khoản–Điểm có trung vị 62, P95 318 token bge-m3 và 98 ứng viên vượt 512; thêm tiêu đề Điều làm tăng trung vị chênh token 11 và P95 chênh 34 → **Hành động:** ở bước định ngân sách, đo chuỗi chunk hoàn chỉnh bằng tokenizer thay vì cộng số token từng phần; dành thêm chỗ cho địa chỉ, điều kiện và prompt chưa được đo ở đây.
+# - **Phát hiện:** 7.118 ứng viên Khoản kèm Điểm và tiêu đề Điều có trung vị 77, P95 344 token bge-m3; 123 ứng viên vượt 512 → **Hành động:** ở bước thiết kế chunk, lấy 512 token làm trần thử nghiệm; tách theo Điểm hoặc ranh giới câu đối với ứng viên dài, giữ địa chỉ và nguồn.
+# - **Phát hiện:** trong phạm vi RAG đã chốt còn 3.880 ứng viên, P95 389 token và 93 vượt 512 → **Hành động:** ưu tiên rà soát 93 trường hợp này khi xây chunk; đo lại cả metadata, điều kiện và prompt vì thống kê có tiêu đề Điều vẫn chưa bao gồm các phần đó.
+# - **Phát hiện:** 2.298 đơn vị có dưới 5 từ; sáu bản thuộc ba địa chỉ có điều kiện đã được đo riêng → **Hành động:** ghép đơn vị ngắn với ngữ cảnh cha; với nhánh điều kiện, chỉ ghép phiên bản tương thích sau kiểm tra, không triển khai trực tiếp phép ghép bản đại diện đang dùng để mô tả độ dài.
+# - **Phát hiện:** chỉ text Khoản–Điểm có trung vị 62, P95 321 token bge-m3 và 108 ứng viên vượt 512; thêm tiêu đề Điều làm tăng trung vị chênh token 11 và P95 chênh 37 → **Hành động:** ở bước định ngân sách, đo chuỗi chunk hoàn chỉnh bằng tokenizer thay vì cộng số token từng phần; dành thêm chỗ cho địa chỉ, điều kiện và prompt chưa được đo ở đây.
 
 # %% [markdown]
 # ## E4. Mức phạt NĐ 168/2024 (bản có hiệu lực tại T)
@@ -327,8 +327,8 @@ rq3.groupby("doc_id")["unit_id"].nunique()
 # %% [markdown]
 # **Phát hiện → hành động (E5):**
 #
-# - **Phát hiện:** 505 dòng sửa đổi được duyệt gồm 428 sửa đổi, 53 bổ sung, 23 bãi bỏ và 1 thay thế văn bản → **Hành động:** ở bước truy hồi theo thời gian, sử dụng trạng thái đã duyệt và ngày hiệu lực của từng dòng, không áp dụng mọi dòng ứng viên.
-# - **Phát hiện:** có 1.004 phiên bản sinh từ sửa đổi và 661 địa chỉ Khoản/Điểm có cả bản gốc lẫn bản sửa khác nội dung → **Hành động:** ở bước thiết kế eval RQ3, chọn cặp trước/sau từ 661 địa chỉ này, kiểm tra điều kiện hiệu lực rồi duyệt câu hỏi thủ công; hiện chưa sinh câu hỏi.
+# - **Phát hiện:** 568 dòng sửa đổi được duyệt gồm 481 sửa đổi, 55 bổ sung, 28 bãi bỏ và 4 thay thế văn bản → **Hành động:** ở bước truy hồi theo thời gian, sử dụng trạng thái đã duyệt và ngày hiệu lực của từng dòng, không áp dụng mọi dòng ứng viên.
+# - **Phát hiện:** có 1.128 phiên bản sinh từ sửa đổi và 731 địa chỉ Khoản/Điểm có cả bản gốc lẫn bản sửa khác nội dung → **Hành động:** ở bước thiết kế eval RQ3, chọn cặp trước/sau từ 731 địa chỉ này, kiểm tra điều kiện hiệu lực rồi duyệt câu hỏi thủ công; hiện chưa sinh câu hỏi.
 
 # %% [markdown]
 # ## E6. Dòng thời gian hiệu lực 2024–2029
@@ -376,7 +376,7 @@ print("Đồ thị tổng quan theo văn bản, không chứng minh mọi điề
 # **Phát hiện → hành động (E6):**
 #
 # - **Phát hiện:** TT12 có ngoại lệ gia hạn tới mốc kết thúc loại trừ 01/03/2027 (còn áp dụng tới hết 28/02/2027 cho đơn vị đủ điều kiện) → **Hành động:** ở bước lọc hiệu lực, gọi `in_force_at` trên từng phiên bản; không suy trạng thái từng quy định từ đoạn tổng quan theo văn bản.
-# - **Phát hiện:** có 43 lượt sự kiện tương lai theo bản ghi: 5 tại 01/01/2027, 20 tại 01/03/2027, 1 tại 01/07/2027, 12 tại 01/01/2028 và 5 tại 01/01/2029 → **Hành động:** ở bước kiểm thử thời gian, kiểm tra ngày ngay trước và đúng các mốc này; khử trùng khi lập lịch sự kiện thực vì số lượt không phải số sự kiện pháp lý độc lập.
+# - **Phát hiện:** có 48 lượt sự kiện tương lai theo bản ghi: 5 tại 01/01/2027, 20 tại 01/03/2027, 6 tại 01/07/2027, 12 tại 01/01/2028 và 5 tại 01/01/2029 → **Hành động:** ở bước kiểm thử thời gian, kiểm tra ngày ngay trước và đúng các mốc này; khử trùng khi lập lịch sự kiện thực vì số lượt không phải số sự kiện pháp lý độc lập.
 
 # %% [markdown]
 # ## E7. Từ vựng (tách từ bằng pyvi)
@@ -421,9 +421,9 @@ pair_counts
 # %% [markdown]
 # **Phát hiện → hành động (E7):**
 #
-# - **Phát hiện:** trong tập text đã lọc, “giấy phép lái xe” xuất hiện 835 lần nhưng “bằng lái” 0 lần; “xe ô tô” 914 lần nhưng “xe hơi” 0 lần; “mũ bảo hiểm” 28 lần nhưng “nón bảo hiểm” 0 lần → **Hành động:** ở bước xử lý truy vấn, thêm ánh xạ từ đời thường sang thuật ngữ và kiểm thử câu diễn đạt khác nhau; không dùng đồng nghĩa để suy cùng phạm vi pháp lý.
-# - **Phát hiện:** “xe mô tô” có 253 lần, mẫu “xe máy” có 125; “đèn tín hiệu” có 127, mẫu “đèn đỏ/đèn xanh” có 39 → **Hành động:** ở bước eval truy hồi, lấy biến thể ngôn ngữ làm nhóm kiểm tra riêng và đối chiếu loại phương tiện/tình huống trước khi mở rộng truy vấn.
-# - **Phát hiện:** TF-IDF được tính trên 12 tài liệu gộp theo nhóm; top 5 của Biển báo có “w”, “ie”, còn Bảo hiểm có “thần kinh”, “khớp” → **Hành động:** ở bước kiểm tra kho, rà mã biển, nhiễu OCR và nội dung bảng chuyên ngành; không diễn giải thứ hạng này là nhu cầu người dùng hay tần suất trên từng văn bản.
+# - **Phát hiện:** trong tập text đã lọc, “giấy phép lái xe” xuất hiện 885 lần nhưng “bằng lái” 1 lần; “xe ô tô” 863 lần nhưng “xe hơi” 0 lần; “mũ bảo hiểm” 28 lần nhưng “nón bảo hiểm” 0 lần → **Hành động:** ở bước xử lý truy vấn, thêm ánh xạ từ đời thường sang thuật ngữ và kiểm thử câu diễn đạt khác nhau; không dùng đồng nghĩa để suy cùng phạm vi pháp lý.
+# - **Phát hiện:** “xe mô tô” có 275 lần, mẫu “xe máy” có 121; “đèn tín hiệu” có 130, mẫu “đèn đỏ/đèn xanh” có 44 → **Hành động:** ở bước eval truy hồi, lấy biến thể ngôn ngữ làm nhóm kiểm tra riêng và đối chiếu loại phương tiện/tình huống trước khi mở rộng truy vấn.
+# - **Phát hiện:** TF-IDF được tính trên 12 tài liệu gộp theo nhóm; top 5 của Biển báo có “w”, “ie”, còn Bảo hiểm có “khớp”, “gẫy” → **Hành động:** ở bước kiểm tra kho, rà mã biển, nhiễu OCR và nội dung bảng chuyên ngành; không diễn giải thứ hạng này là nhu cầu người dùng hay tần suất trên từng văn bản.
 
 # %% [markdown]
 # ## E8. Đơn vị gần trùng giữa các văn bản
@@ -442,8 +442,8 @@ if pairs:
 # %% [markdown]
 # **Phát hiện → hành động (E8):**
 #
-# - **Phát hiện:** 5.146 đơn vị đủ điều kiện có 89 cặp khác văn bản đạt cosine TF-IDF ký tự ≥ 0,9 → **Hành động:** ở bước lập chỉ mục, gắn nhóm gần trùng để tránh kết quả lặp nhưng giữ mọi nguồn, ngày hiệu lực và điều kiện; không tự xóa theo độ giống chữ.
-# - **Phát hiện:** cặp NĐ168–NĐ336 chiếm 48/89 cặp; bảng ví dụ có Luật36 Điều 27 Khoản 2 và QCVN Điều 7 Khoản 1 đạt cosine 1,0 → **Hành động:** ở bước xếp hạng truy hồi, duyệt những cặp này để chọn nguồn thích hợp với câu hỏi; similarity không xác nhận hai quy định tương đương pháp lý.
+# - **Phát hiện:** 5.166 đơn vị đủ điều kiện có 92 cặp khác văn bản đạt cosine TF-IDF ký tự ≥ 0,9 → **Hành động:** ở bước lập chỉ mục, gắn nhóm gần trùng để tránh kết quả lặp nhưng giữ mọi nguồn, ngày hiệu lực và điều kiện; không tự xóa theo độ giống chữ.
+# - **Phát hiện:** cặp NĐ168–NĐ336 chiếm 48/92 cặp; bảng ví dụ có Luật36 Điều 27 Khoản 2 và QCVN Điều 7 Khoản 1 đạt cosine 1,0 → **Hành động:** ở bước xếp hạng truy hồi, duyệt những cặp này để chọn nguồn thích hợp với câu hỏi; similarity không xác nhận hai quy định tương đương pháp lý.
 
 # %% [markdown]
 # ## E9. Tham chiếu chéo
@@ -477,8 +477,8 @@ save(fig, "e9_tham_chieu.png")
 # %% [markdown]
 # **Phát hiện → hành động (E9):**
 #
-# - **Phát hiện:** regex khớp 1.540 tham chiếu đánh số trong 1.044/16.241 đơn vị (6,4%), gồm 1.379 nội bộ và 161 bên ngoài → **Hành động:** ở bước truy hồi, thử mở rộng ngữ cảnh theo Điều/Khoản đích và kiểm tra đúng văn bản/phiên bản trước khi đưa vào câu trả lời.
-# - **Phát hiện:** 161 kết quả được parser gắn nhãn bên ngoài; phép đếm chỉ bao phủ các mẫu đánh số đã hỗ trợ → **Hành động:** ở bước xây đồ thị tham chiếu, duyệt ví dụ bên ngoài và mở rộng nhận diện tên văn bản; không xem đơn vị không khớp regex là không có tham chiếu hoặc kết quả regex là liên kết đã giải quyết.
+# - **Phát hiện:** regex khớp 1.557 tham chiếu đánh số trong 1.060/16.271 đơn vị (6,5%), gồm 1.389 nội bộ và 168 bên ngoài → **Hành động:** ở bước truy hồi, thử mở rộng ngữ cảnh theo Điều/Khoản đích và kiểm tra đúng văn bản/phiên bản trước khi đưa vào câu trả lời.
+# - **Phát hiện:** 168 kết quả được parser gắn nhãn bên ngoài; phép đếm chỉ bao phủ các mẫu đánh số đã hỗ trợ → **Hành động:** ở bước xây đồ thị tham chiếu, duyệt ví dụ bên ngoài và mở rộng nhận diện tên văn bản; không xem đơn vị không khớp regex là không có tham chiếu hoặc kết quả regex là liên kết đã giải quyết.
 
 # %% [markdown]
 # ## E10. Chất lượng sau làm sạch
@@ -506,12 +506,12 @@ qcvn_annex_titles = annex_all.loc[annex_all["doc_id"] == "qcvn_41_2024", "title"
 known_qcvn_gap_letters = ["M", "N", "O", "P"]
 missing_qcvn_titles = [f"Phụ lục {letter}" for letter in known_qcvn_gap_letters
                       if f"Phụ lục {letter}" not in qcvn_annex_titles]
-stub_uids = ["tt_108_2026_bca:pl12", "nd_39_2023:pl1"]
-stub_audit = annex_all[annex_all["unit_id"].isin(stub_uids)][["unit_id", "title", "text", "chat_luong"]].copy()
+stub_audit = df[df["thieu_noi_dung"].notna()].drop_duplicates("unit_id", keep="last")[
+    ["unit_id", "title", "text", "chat_luong", "thieu_noi_dung"]].copy()
 stub_audit["text_characters"] = stub_audit["text"].str.len()
 source_gap_audit = {
     "evidence_report": "data/processed/PROCESSING_REPORT.md",
-    "scope": "All stored versions, independent of cutoff; known gaps only, not an exhaustive audit",
+    "scope": "All stored versions, independent of cutoff; QCVN M-P plus units flagged thieu_noi_dung, not an exhaustive audit",
     "qcvn_annex_titles_present": qcvn_annex_titles,
     "known_qcvn_titles_absent": missing_qcvn_titles,
     "known_stub_units": stub_audit.to_dict(orient="records"),
@@ -535,15 +535,15 @@ save(fig, "e10_chat_luong.png")
 # **Phát hiện → hành động (E10):**
 #
 # - **Phát hiện:** tập đại diện có 0 đơn vị rỗng cả tiêu đề/nội dung, 0 dòng phần kết lẫn trong Điều/Khoản/Điểm và 0 địa chỉ có hậu tố `#` → **Hành động:** giữ ba kiểm tra này làm cổng kiểm định khi nhập lại dữ liệu; các số 0 không chứng minh nguồn đã đủ.
-# - **Phát hiện:** có 19 bản đại diện nhãn `kem` và 733 lượt ký tự ngoài tập cho phép, trong đó “♦” 280, “□” 131, ký hiệu ô chọn riêng “” 77 → **Hành động:** ở bước rà chất lượng, kiểm tra ngữ cảnh và đối chiếu nguồn trước khi sửa; nhãn âm tiết lạ không phải phép đo độ chính xác OCR, ký hiệu toán/ô chọn có thể hợp lệ.
-# - **Phát hiện:** 146 phụ lục tại T gồm 98 mẫu biểu và 48 nội dung; kiểm tra toàn bộ phiên bản không tìm thấy 4 phụ lục QCVN M/N/O/P, TT108 `pl12` chỉ có 138 ký tự và NĐ39 `pl1` 76 ký tự → **Hành động:** tách mẫu biểu khi dựng kho RAG; bổ sung nguồn ảnh/bảng và thân phụ lục theo [báo cáo làm sạch](../data/processed/PROCESSING_REPORT.md) trước khi dùng những phần này cho eval hoặc trả lời đầy đủ.
+# - **Phát hiện:** có 17 bản đại diện nhãn `kem` và 634 lượt ký tự ngoài tập cho phép, trong đó “♦” 280, “□” 160, ký hiệu ô chọn riêng “” 77 → **Hành động:** ở bước rà chất lượng, kiểm tra ngữ cảnh và đối chiếu nguồn trước khi sửa; nhãn âm tiết lạ không phải phép đo độ chính xác OCR, ký hiệu toán/ô chọn có thể hợp lệ.
+# - **Phát hiện:** 152 phụ lục tại T gồm 105 mẫu biểu và 47 nội dung; kiểm tra toàn bộ phiên bản không tìm thấy 4 phụ lục QCVN M/N/O/P; NĐ39 `pl1` chỉ có 76 ký tự và mang cờ `thieu_noi_dung` (phụ lục là ảnh); TT108 `pl12` đã có đủ chữ (486 ký tự) → **Hành động:** tách mẫu biểu khi dựng kho RAG; bổ sung nguồn ảnh/bảng và thân phụ lục theo [báo cáo làm sạch](../data/processed/PROCESSING_REPORT.md) trước khi dùng những phần này cho eval hoặc trả lời đầy đủ.
 
 # %% [markdown]
 # ## Ma trận đề cho bộ eval thủ công (~150 câu)
 #
 # Quy tắc: số câu mỗi nhóm tỷ lệ với √(số Điều có hiệu lực trong phạm vi, không tính văn bản sửa đổi và đề thi),
 # nhân trọng số 1,5 cho Xử phạt, GPLX, Đăng ký xe; mỗi nhóm tối thiểu 5 câu; chia loại câu theo `eda.LOAI_SPLIT`.
-# Đây là đề xuất ban đầu; nhóm điều chỉnh rồi chốt trước khi viết bộ eval.
+# Đây là đề xuất ban đầu; duyệt, điều chỉnh rồi chốt trước khi viết bộ eval.
 
 # %%
 core = live[live["trong_pham_vi"] & ~live["van_ban_sua_doi"] & ~live["doc_id"].isin(config.NON_LEGAL)]
@@ -561,7 +561,7 @@ else:
         print("Ma trận đang lưu khớp bản đề xuất tính lại; giữ nguyên file.")
     else:
         print("Ma trận đang lưu khác bản đề xuất tính lại; giữ nguyên chỉnh sửa thủ công. "
-              "Bảng dưới và summary.json chỉ mô tả bản đề xuất tính lại để nhóm đối chiếu.")
+              "Bảng dưới và summary.json chỉ mô tả bản đề xuất tính lại để đối chiếu.")
 print(f"{int(matrix['so_cau'].sum())} suất câu hỏi đề xuất; chưa tạo câu hỏi và chưa duyệt phân bổ")
 matrix.pivot_table(index="chu_de", columns="loai_cau", values="so_cau", aggfunc="sum", fill_value=0, margins=True)
 

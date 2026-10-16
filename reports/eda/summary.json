@@ -1,32 +1,32 @@
 {
   "E1": {
-    "amending_document_units": 1051,
-    "amending_documents": 9,
+    "amending_document_units": 1285,
+    "amending_documents": 13,
     "levels": {
-      "diem": 8147,
-      "dieu": 2195,
-      "khoan": 6932,
-      "phu_luc": 146
+      "diem": 8185,
+      "dieu": 2216,
+      "khoan": 7118,
+      "phu_luc": 152
     },
     "units_by_group": {
-      "Biển báo": 402,
-      "Bảo hiểm": 618,
-      "GPLX": 971,
-      "Hướng dẫn": 2407,
+      "Biển báo": 403,
+      "Bảo hiểm": 616,
+      "GPLX": 981,
+      "Hướng dẫn": 2405,
       "Luật lõi": 2040,
-      "Lệ phí": 188,
-      "Nộp phạt, giữ xe": 968,
-      "Tai nạn": 6986,
-      "Tốc độ": 16,
-      "Xử phạt": 1899,
+      "Lệ phí": 189,
+      "Nộp phạt, giữ xe": 952,
+      "Tai nạn": 6985,
+      "Tốc độ": 55,
+      "Xử phạt": 1900,
       "Đăng kiểm": 361,
-      "Đăng ký xe": 564
+      "Đăng ký xe": 784
     }
   },
   "E10": {
     "active_annex_types": {
-      "mau_bieu": 98,
-      "noi_dung": 48
+      "mau_bieu": 105,
+      "noi_dung": 47
     },
     "odd_top20": [
       [
@@ -35,7 +35,7 @@
       ],
       [
         "□",
-        131
+        160
       ],
       [
         "",
@@ -46,48 +46,16 @@
         31
       ],
       [
-        "„",
-        27
-      ],
-      [
         "☐",
         23
       ],
       [
-        "¬",
-        22
-      ],
-      [
-        "‹",
+        "≤",
         13
       ],
       [
-        "‰",
-        12
-      ],
-      [
-        "⁄",
-        12
-      ],
-      [
-        "`",
-        12
-      ],
-      [
-        "©",
-        12
-      ],
-      [
-        "≤",
-        10
-      ],
-      [
         "≥",
-        9
-      ],
-      [
-        "¡",
-        9
+        12
       ],
       [
         "√",
@@ -102,17 +70,29 @@
         6
       ],
       [
-        "»",
-        5
+        "‰",
+        6
       ],
       [
         "±",
         3
+      ],
+      [
+        "",
+        3
+      ],
+      [
+        "",
+        2
+      ],
+      [
+        "‟",
+        1
       ]
     ],
     "quality_checks": {
-      "Bản ghi chat_luong = kem": 19,
-      "Ký tự lạ (tổng số lần)": 733,
+      "Bản ghi chat_luong = kem": 17,
+      "Ký tự lạ (tổng số lần)": 634,
       "unit_id có hậu tố #": 0,
       "Đơn vị có dòng phần kết": 0,
       "Đơn vị rỗng (không tiêu đề, không nội dung)": 0
@@ -130,15 +110,9 @@
           "chat_luong": "ok",
           "text": "(Kèm theo Nghị định số 39/2023/NĐ-CP ngày 26 tháng 6 năm 2023\ncủa Chính Phủ)",
           "text_characters": 76,
+          "thieu_noi_dung": "Phụ lục là ảnh trong bản Công báo, chưa có chữ; dữ liệu chỉ còn dòng \"Kèm theo Nghị định\"",
           "title": "Phụ lục",
           "unit_id": "nd_39_2023:pl1"
-        },
-        {
-          "chat_luong": "ok",
-          "text": "BẢNG CHUYỀN ĐÔI GIẦY PHÉP LÁI XE QUỐC TẾ Áp dụng đối với giấy phép lái xe do Chính phủ Việt Nam cấp trước ngày 01/01/2025 VIỆT NAM QUỐC TỪ",
-          "text_characters": 138,
-          "title": "PHỤ LỤC XII (Ban hành kèm theo Thông tư số 108/2026/TT-BCA ngày 29 tháng 6 năm 2026 của Bộ trưởng Bộ Công an)",
-          "unit_id": "tt_108_2026_bca:pl12"
         }
       ],
       "qcvn_annex_titles_present": [
@@ -152,13 +126,13 @@
         "Phụ lục I",
         "Phụ lục K"
       ],
-      "scope": "All stored versions, independent of cutoff; known gaps only, not an exhaustive audit"
+      "scope": "All stored versions, independent of cutoff; QCVN M-P plus units flagged thieu_noi_dung, not an exhaustive audit"
     }
   },
   "E2": {
     "large_doc_in_scope": 213,
-    "large_doc_out_scope": 6773,
-    "large_doc_units": 6986,
+    "large_doc_out_scope": 6772,
+    "large_doc_units": 6985,
     "scope": {
       "blds_2015": [
         584,
@@ -171,13 +145,13 @@
     }
   },
   "E3": {
-    "clause_bge_p50": 76.0,
-    "clause_bge_p95": 337.0,
+    "clause_bge_p50": 77.0,
+    "clause_bge_p95": 344.0,
     "clause_body_only_bge_p50": 62.0,
-    "clause_body_only_bge_p95": 318.0,
-    "clause_body_only_over_512": 98,
-    "clause_candidates": 6932,
-    "clause_over_512": 111,
+    "clause_body_only_bge_p95": 321.0,
+    "clause_body_only_over_512": 108,
+    "clause_candidates": 7118,
+    "clause_over_512": 123,
     "conditional_branch_body_tokens": [
       {
         "dieu_kien_hl": "Đến hết 31/12/2027, yêu cầu lắp thiết bị ghi nhận hình ảnh người lái xe chưa áp dụng với xe ô tô kinh doanh vận tải hành khách dưới 08 chỗ, xe ô tô kinh doanh vận tải hàng hóa (trừ xe đầu kéo), xe vận tải nội bộ; các xe còn lại áp dụng như bản trước; Yêu cầu lắp thiết bị ghi nhận hình ảnh khoang chở khách đối với xe ô tô kinh doanh vận tải hành khách từ 08 chỗ trở lên áp dụng từ 01/01/2029 theo lộ trình của Chính phủ",
@@ -228,12 +202,12 @@
         "version_id": "nd_168_2024:d21:k3:b@2026-08-15"
       }
     ],
-    "core_clause_bge_p95": 390.0,
-    "core_clause_candidates": 3831,
+    "core_clause_bge_p95": 389.0499999999997,
+    "core_clause_candidates": 3880,
     "core_clause_over_512": 93,
     "heading_token_delta_p50": 11.0,
-    "heading_token_delta_p95": 34.0,
-    "short_under_5_words": 2281
+    "heading_token_delta_p95": 37.0,
+    "short_under_5_words": 2298
   },
   "E4": {
     "first_fine_frames": 190,
@@ -250,25 +224,25 @@
     "structured_points_under_frames": 574
   },
   "E5": {
-    "amended_versions": 1004,
-    "content_changed_clause_point_unit_ids": 661,
+    "amended_versions": 1128,
+    "content_changed_clause_point_unit_ids": 731,
     "reviewed_actions": {
-      "bai_bo": 23,
-      "bo_sung": 53,
-      "sua_doi": 428,
-      "thay_the_van_ban": 1
+      "bai_bo": 28,
+      "bo_sung": 55,
+      "sua_doi": 481,
+      "thay_the_van_ban": 4
     },
-    "reviewed_rows": 505
+    "reviewed_rows": 568
   },
   "E6": {
     "exception_extensions_exclusive_end": {
       "tt_12_2025_bca": "2027-03-01"
     },
-    "future_events": 43,
+    "future_events": 48,
     "future_events_by_date": {
       "2027-01-01": 5,
       "2027-03-01": 20,
-      "2027-07-01": 1,
+      "2027-07-01": 6,
       "2028-01-01": 12,
       "2029-01-01": 5
     }
@@ -279,38 +253,38 @@
       {
         "doi_thuong": "xe máy(?! chuyên dùng)",
         "phap_ly": "xe mô tô",
-        "so_lan": 253,
-        "so_lan_doi_thuong": 125
+        "so_lan": 275,
+        "so_lan_doi_thuong": 121
       },
       {
         "doi_thuong": "bằng lái",
         "phap_ly": "giấy phép lái xe",
-        "so_lan": 835,
-        "so_lan_doi_thuong": 0
+        "so_lan": 885,
+        "so_lan_doi_thuong": 1
       },
       {
         "doi_thuong": "rượu bia|rượu, bia",
         "phap_ly": "nồng độ cồn",
-        "so_lan": 28,
+        "so_lan": 29,
         "so_lan_doi_thuong": 9
       },
       {
         "doi_thuong": "xe hơi",
         "phap_ly": "xe ô tô",
-        "so_lan": 914,
+        "so_lan": 863,
         "so_lan_doi_thuong": 0
       },
       {
         "doi_thuong": "\\bcsgt\\b",
         "phap_ly": "cảnh sát giao thông",
-        "so_lan": 380,
-        "so_lan_doi_thuong": 0
+        "so_lan": 400,
+        "so_lan_doi_thuong": 3
       },
       {
         "doi_thuong": "đèn đỏ|đèn xanh",
         "phap_ly": "đèn tín hiệu",
-        "so_lan": 127,
-        "so_lan_doi_thuong": 39
+        "so_lan": 130,
+        "so_lan_doi_thuong": 44
       },
       {
         "doi_thuong": "giam xe|giữ xe",
@@ -328,24 +302,24 @@
     "top_terms": {
       "Biển báo": [
         "w",
-        "kilômét",
         "ie",
-        "minh họa",
-        " e"
+        "kilômét",
+        "r",
+        "minh họa"
       ],
       "Bảo hiểm": [
-        "thần kinh",
         "khớp",
         "gẫy",
         "ngón",
-        "tổn thương"
+        "tổn thương",
+        "phẫu thuật"
       ],
       "GPLX": [
         "thí sinh",
         "xi nhan",
         "bài",
-        "giây",
-        "hỏi"
+        "báo danh",
+        "xuất phát"
       ],
       "Hướng dẫn": [
         "campuchia",
@@ -357,8 +331,8 @@
       "Luật lõi": [
         "hạng",
         "đối tác",
-        "hàng hoá",
         "trúng",
+        "đường dây",
         "d2"
       ],
       "Lệ phí": [
@@ -366,13 +340,13 @@
         "lệ phí",
         "đất",
         "block",
-        "súng"
+        "đăng ký"
       ],
       "Nộp phạt, giữ xe": [
-        "cai nghiện",
         "giáo dưỡng",
         "tang vật",
         "bảo lãnh",
+        "niêm phong",
         "phạt"
       ],
       "Tai nạn": [
@@ -386,44 +360,44 @@
         "tốc độ",
         "biển báo",
         "đường cao tốc",
-        "thông tư",
-        "trộn"
+        "km",
+        "thông tư"
       ],
       "Xử phạt": [
         "phạt",
         "thực hiện hành vi",
         "miligam",
         "cảnh cáo",
-        "hành vi"
+        "làm công"
       ],
       "Đăng kiểm": [
         "gcn",
         "kdvt",
-        "kiểm định",
         "khí thải",
-        "đăng kiểm"
+        "đăng kiểm",
+        "kiểm định"
       ],
       "Đăng ký xe": [
-        "sê",
-        "seri",
         "đấu giá",
+        "mật khẩu",
+        "trúng",
         "ri",
-        "trúng"
+        "sê"
       ]
     }
   },
   "E8": {
-    "candidates": 5146,
-    "near_duplicate_pairs": 89
+    "candidates": 5166,
+    "near_duplicate_pairs": 92
   },
   "E9": {
-    "matched_references": 1540,
+    "matched_references": 1557,
     "reference_types": {
-      "ngoai": 161,
-      "noi_bo": 1379
+      "ngoai": 168,
+      "noi_bo": 1389
     },
-    "units_checked": 16241,
-    "units_with_reference": 1044
+    "units_checked": 16271,
+    "units_with_reference": 1060
   },
   "cutoff": "2026-10-01",
   "eval_proposal": {
@@ -435,12 +409,12 @@
       "Hướng dẫn": 14,
       "Luật lõi": 15,
       "Lệ phí": 9,
-      "Nộp phạt, giữ xe": 15,
+      "Nộp phạt, giữ xe": 14,
       "Tai nạn": 9,
       "Tốc độ": 8,
       "Xử phạt": 16,
       "Đăng kiểm": 9,
-      "Đăng ký xe": 14
+      "Đăng ký xe": 15
     },
     "slots_by_type": {
       "chung": 41,
@@ -453,12 +427,12 @@
     "total_slots": 150
   },
   "inputs": {
-    "active_distinct_units": 17420,
-    "active_versions": 17423,
+    "active_distinct_units": 17671,
+    "active_versions": 17674,
     "conditional_active_versions": 16,
-    "documents": 33,
+    "documents": 40,
     "multi_branch_unit_ids": 3,
-    "processed_versions": 18790
+    "processed_versions": 20500
   },
   "tokenizers": [
     {
