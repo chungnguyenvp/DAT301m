@@ -5,9 +5,21 @@ import pymupdf
 import pytest
 
 from lawproc import config
-from lawproc.extract import docx_lines, pdf_lines, is_scanned, ocr_pdf_lines
+from lawproc.extract import docx_lines, pdf_lines, is_scanned, ocr_pdf_lines, text_lines
 
 ARIAL = Path("C:/Windows/Fonts/arial.ttf")
+
+
+def test_text_lines_strips_bom_blank_lines_and_crlf(tmp_path):
+    p = tmp_path / "a.txt"
+    p.write_bytes("\ufeffBỘ Y TẾ\r\n\r\n  Điều 1. Phạm vi điều chỉnh  \r\n\t\r\n1. Nội dung\r\n".encode("utf-8"))
+    assert text_lines(p) == ["BỘ Y TẾ", "Điều 1. Phạm vi điều chỉnh", "1. Nội dung"]
+
+
+def test_text_lines_normalizes_to_nfc(tmp_path):
+    p = tmp_path / "a.txt"
+    p.write_text("khỏe".replace("ỏ", "o\u0309"), encoding="utf-8")  # dạng tổ hợp NFD
+    assert text_lines(p) == ["khỏe"]
 
 
 def test_docx_lines_keeps_paragraph_and_table_order(tmp_path):

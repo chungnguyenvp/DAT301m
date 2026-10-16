@@ -2,6 +2,7 @@ import hashlib
 import re
 import subprocess
 import tempfile
+import unicodedata
 from pathlib import Path
 from collections.abc import Iterable
 
@@ -62,6 +63,12 @@ def docx_lines(path: Path) -> list[str]:
         elif tag == "tbl":
             out.extend(_table_rows(child))
     return out
+
+
+def text_lines(path: Path) -> list[str]:
+    """Văn bản chữ thuần UTF-8 (có thể có BOM): mỗi dòng không rỗng là một đoạn, chuẩn hóa NFC."""
+    text = unicodedata.normalize("NFC", path.read_text(encoding="utf-8-sig"))
+    return [s for s in (ln.strip() for ln in text.splitlines()) if s]
 
 
 def pdf_lines(path: Path) -> list[str]:
