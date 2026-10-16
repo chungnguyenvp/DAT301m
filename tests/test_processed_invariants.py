@@ -206,7 +206,8 @@ def test_annex_replacement_table_is_valid(versioned):
 
 
 def test_tt_12_scoring_table_keeps_columns(versioned):
-    text = _live_annex(versioned, "tt_12_2025_bca:pl4")
+    # TT 12 đã bị thay; Phụ lục IV còn áp dụng có điều kiện nhờ ngoại lệ gia hạn
+    (text,) = [r["text"] for r in versioned if r["unit_id"] == "tt_12_2025_bca:pl4" and _in_force(r)]
     assert "\n| 6. Giữ tốc độ động cơ không quá 4000 vòng/phút;" in text
 
 
