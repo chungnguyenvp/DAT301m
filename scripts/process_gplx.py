@@ -4,6 +4,7 @@
 (mọi câu, kèm nhãn) và in bảng kiểm tra. Bộ eval trắc nghiệm phụ dùng các câu co_hinh = false.
 """
 import collections
+import csv
 import json
 import sys
 from pathlib import Path
@@ -13,16 +14,36 @@ import pymupdf
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from lawproc import config  # noqa: E402
+from lawproc.corrections import apply_corrections  # noqa: E402
 from lawproc.gplx import CHAPTERS, chapter_of, parse_cv_lists, parse_questions  # noqa: E402
 
 QUESTIONS_PDF = config.RAW / "gplx" / "gplx_600_2025__p1.pdf"
 CV_PDF = config.RAW / "gplx" / "cv_2262_2025_csgt__p1.pdf"
 OUT = config.PROCESSED / "gplx_600.jsonl"
+CORRECTIONS = config.DATA / "ocr_corrections.csv"
+SEP = "\x00"  # ngăn cách các trường khi áp sửa lỗi trên toàn bộ câu hỏi
+
+
+def correct(questions: list[dict]) -> None:
+    """Áp các dòng doc_id = gplx_600_2025 của ocr_corrections.csv; mỗi chuỗi sai phải có đúng một lần trong cả bộ."""
+    with CORRECTIONS.open(newline="", encoding="utf-8-sig") as fp:
+        rows = [r for r in csv.DictReader(fp) if r["doc_id"] == "gplx_600_2025"]
+    if not rows:
+        return
+    fields = [(q, None) for q in questions] + [(q, i) for q in questions for i in range(len(q["lua_chon"]))]
+    text = SEP.join(q["cau_hoi"] if i is None else q["lua_chon"][i] for q, i in fields)
+    for (q, i), value in zip(fields, apply_corrections(text, rows).split(SEP), strict=True):
+        if i is None:
+            q["cau_hoi"] = value
+        else:
+            q["lua_chon"][i] = value
+    print(f"sửa lỗi chữ: {len(rows)} dòng")
 
 
 def main() -> None:
     sys.stdout.reconfigure(encoding="utf-8")
     questions = parse_questions(QUESTIONS_PDF)
+    correct(questions)
     with pymupdf.open(str(CV_PDF)) as cv:
         lists = parse_cv_lists([ln for page in cv for ln in page.get_text().splitlines()])
     problems = []

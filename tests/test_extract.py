@@ -362,7 +362,7 @@ def test_docx_lines_reads_vertically_merged_cell_once(tmp_path):
 
 @pytest.mark.parametrize("font, char, expected", [("Symbol", "F0A3", "≤"), ("Symbol", "00B3", "≥"),
                                                   ("Symbol", "00C6", "Ø"), ("Symbol", "003E", ">"),
-                                                  ("Wingdings", "F0A8", "□")])
+                                                  ("Wingdings", "F0A8", "□"), ("Wingdings 2", "F02A", "□")])
 def test_docx_lines_reads_symbol_characters(tmp_path, font, char, expected):
     from docx.oxml import parse_xml
 

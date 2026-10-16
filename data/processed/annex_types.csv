@@ -1,4 +1,10 @@
 ﻿unit_id,doc_id,title,loai_phu_luc,ly_do,ty_le_am_tiet_loi,chat_luong
+nd_156_2024:pl1,nd_156_2024,Phụ lục I,noi_dung,,0.0063,ok
+nd_156_2024:pl2,nd_156_2024,Phụ lục II,noi_dung,,0.0094,ok
+nd_156_2024:pl3,nd_156_2024,Phụ lục III,noi_dung,,0.0156,ok
+nd_156_2024:pl4,nd_156_2024,Phụ lục IV,mau_bieu,nhiều dòng điền,0.0139,ok
+nd_156_2024:pl5,nd_156_2024,Phụ lục V,noi_dung,,0.0,ok
+nd_156_2024:pl6,nd_156_2024,Phụ lục VI,mau_bieu,tiêu đề có chữ Mẫu,0.0019,ok
 nd_158_2024:pl1,nd_158_2024,Phụ lục I,mau_bieu,tiêu đề có chữ Mẫu,0.0051,ok
 nd_158_2024:pl2,nd_158_2024,Phụ lục II,mau_bieu,tiêu đề có chữ Mẫu,0.0343,ok
 nd_158_2024:pl3,nd_158_2024,Phụ lục III,mau_bieu,tiêu đề có chữ Mẫu,0.0107,ok
@@ -71,6 +77,25 @@ nd_67_2023:pl8,nd_67_2023,Phụ lục VII,noi_dung,,0.0053,ok
 nd_67_2023:pl9,nd_67_2023,Phụ lục VIII,mau_bieu,ghi đè,0.0,ok
 nd_67_2023:pl10,nd_67_2023,Phụ lục IX,mau_bieu,ghi đè,0.0,ok
 nd_67_2023:pl11,nd_67_2023,Phụ lục X,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+nd_94_2026:pl1,nd_94_2026,Phụ lục I,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+nd_94_2026:pl2,nd_94_2026,Phụ lục II,noi_dung,,0.0,ok
+nd_94_2026:pl3,nd_94_2026,Phụ lục III,mau_bieu,tiêu đề có chữ Mẫu,0.0498,ok
+nd_94_2026:pl4,nd_94_2026,Phụ lục IV,mau_bieu,tiêu đề có chữ Mẫu,0.0062,ok
+nd_94_2026:pl5,nd_94_2026,Phụ lục V,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+nd_94_2026:pl6,nd_94_2026,Phụ lục VI,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+nd_94_2026:pl7,nd_94_2026,Phụ lục VII,mau_bieu,tiêu đề có chữ Mẫu,0.0242,ok
+nd_94_2026:pl8,nd_94_2026,Phụ lục VIII,mau_bieu,tiêu đề có chữ Mẫu,0.0108,ok
+nd_94_2026:pl9,nd_94_2026,Phụ lục IX,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+nd_94_2026:pl10,nd_94_2026,Phụ lục X,mau_bieu,tiêu đề có chữ Mẫu,0.0061,ok
+nd_94_2026:pl11,nd_94_2026,Phụ lục XI,mau_bieu,tiêu đề có chữ Mẫu,0.006,ok
+nd_94_2026:pl12,nd_94_2026,Phụ lục XII,mau_bieu,nhiều dòng điền,0.0024,ok
+nd_94_2026:pl13,nd_94_2026,Phụ lục XIII,mau_bieu,tiêu đề có chữ Mẫu,0.0759,ok
+nd_94_2026:pl14,nd_94_2026,Phụ lục XIV,mau_bieu,tiêu đề có chữ Mẫu,0.0031,ok
+nd_94_2026:pl15,nd_94_2026,Phụ lục XV,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+nd_94_2026:pl16,nd_94_2026,Phụ lục XVI,mau_bieu,tiêu đề có chữ Mẫu,0.0013,ok
+nd_94_2026:pl17,nd_94_2026,Phụ lục XVII,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+nd_94_2026:pl18,nd_94_2026,Phụ lục XVIII,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+nd_94_2026:pl19,nd_94_2026,Phụ lục XIX,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
 qcvn_41_2024:pl1,qcvn_41_2024,Phụ lục A,noi_dung,,0.0083,ok
 qcvn_41_2024:pl2,qcvn_41_2024,Phụ lục B,noi_dung,,0.0039,ok
 qcvn_41_2024:pl3,qcvn_41_2024,Phụ lục C,noi_dung,,0.0006,ok
@@ -80,6 +105,7 @@ qcvn_41_2024:pl6,qcvn_41_2024,Phụ lục F,noi_dung,,0.0007,ok
 qcvn_41_2024:pl7,qcvn_41_2024,Phụ lục G,noi_dung,,0.0123,ok
 qcvn_41_2024:pl8,qcvn_41_2024,Phụ lục I,noi_dung,,0.0413,ok
 qcvn_41_2024:pl9,qcvn_41_2024,Phụ lục K,noi_dung,,0.045,ok
+tt_105_2026_bca:pl1,tt_105_2026_bca,PHỤ LỤC,mau_bieu,tiêu đề có chữ Mẫu,0.0106,ok
 tt_108_2026_bca:pl1,tt_108_2026_bca,PHỤ LỤC I,noi_dung,,0.0015,ok
 tt_108_2026_bca:pl2,tt_108_2026_bca,PHỤ LỤC II,noi_dung,,0.0007,ok
 tt_108_2026_bca:pl3,tt_108_2026_bca,PHỤ LỤC III,noi_dung,,0.0023,ok
@@ -111,6 +137,23 @@ tt_12_2025_bca:pl14,tt_12_2025_bca,Phụ lục XIV,mau_bieu,ghi đè,0.0,ok
 tt_12_2025_bca:pl15,tt_12_2025_bca,Phụ lục XV,noi_dung,,0.0,ok
 tt_12_2025_bca:pl16,tt_12_2025_bca,Phụ lục XVI,mau_bieu,tiêu đề có chữ Mẫu,0.3456,kem
 tt_12_2025_bca:pl17,tt_12_2025_bca,Phụ lục XVII,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+tt_13_2025_bca:pl1,tt_13_2025_bca,Mẫu số 05/36,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+tt_13_2025_bca:pl2,tt_13_2025_bca,Mẫu số 16/66,mau_bieu,tiêu đề có chữ Mẫu,0.0222,ok
+tt_13_2025_bca:pl3,tt_13_2025_bca,Mẫu số 03A/69,mau_bieu,tiêu đề có chữ Mẫu,0.0044,ok
+tt_13_2025_bca:pl4,tt_13_2025_bca,Mẫu số 03B/69,mau_bieu,tiêu đề có chữ Mẫu,0.0081,ok
+tt_13_2025_bca:pl5,tt_13_2025_bca,Mẫu số 01/73,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+tt_13_2025_bca:pl6,tt_13_2025_bca,Mẫu số 02/73,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+tt_13_2025_bca:pl7,tt_13_2025_bca,Mẫu số 03/73,mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
+tt_13_2025_bca:pl8,tt_13_2025_bca,Mẫu số 05/73,mau_bieu,tiêu đề có chữ Mẫu,0.0087,ok
+tt_13_2025_bca:pl9,tt_13_2025_bca,Mẫu ĐKX01/79 Ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.2207,kem
+tt_13_2025_bca:pl10,tt_13_2025_bca,Mẫu ĐKX02/79 Ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.2204,kem
+tt_13_2025_bca:pl11,tt_13_2025_bca,Mẫu ĐKX03/79 Ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.2865,kem
+tt_13_2025_bca:pl12,tt_13_2025_bca,Mẫu ĐKX05/79 Ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.1883,kem
+tt_13_2025_bca:pl13,tt_13_2025_bca,Mẫu ĐKX06/79 Ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.2364,kem
+tt_13_2025_bca:pl14,tt_13_2025_bca,Mẫu ĐKX07/79 Ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.0076,ok
+tt_13_2025_bca:pl15,tt_13_2025_bca,Mẫu ĐKX08/79 Ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.0217,ok
+tt_13_2025_bca:pl16,tt_13_2025_bca,Mẫu ĐKX09/79 Ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.0125,ok
+tt_13_2025_bca:pl17,tt_13_2025_bca,Mẫu ĐKX10/79 Ban hành kèm theo Thông tư số 13/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.015,ok
 tt_155_2025_btc:pl1,tt_155_2025_btc,Phụ lục,noi_dung,,0.0018,ok
 tt_30_2026_bxd:pl1,tt_30_2026_bxd,"Phụ lục I MẪU THÔNG BÁO KẾT QUẢ KIỂM TRA, ĐÁNH GIÁ (Ban hành kèm theo Thông tư số 30/2026/TT-BXD ngày 15 tháng 6 năm 202",mau_bieu,tiêu đề có chữ Mẫu,0.0,ok
 tt_30_2026_bxd:pl2,tt_30_2026_bxd,Phụ lục II MẪU PHIẾU HỒ SƠ PHƯƠNG TIỆN (Ban hành kèm theo Thông tư số 30/2026/TT-BXD ngày 15 tháng 6 năm 2026 của Bộ trư,mau_bieu,tiêu đề có chữ Mẫu,0.0144,ok
@@ -136,6 +179,7 @@ tt_36_2024_byt:pl1,tt_36_2024_byt,PHỤ LỤC I,noi_dung,,0.0114,ok
 tt_36_2024_byt:pl2,tt_36_2024_byt,PHỤ LỤC II,mau_bieu,tiêu đề có chữ Mẫu,0.0086,ok
 tt_37_2026_bca:pl1,tt_37_2026_bca,Mẫu KĐ23a ban hành kèm theo Thông tư số 37/2026/TT-BCA ngày 24/4/2026 của Bộ Công anMẫu KĐ23a ban hành kèm theo Thông tư,mau_bieu,tiêu đề có chữ Mẫu,0.3138,kem
 tt_51_2025_bca:pl1,tt_51_2025_bca,Phụ lục số 02,noi_dung,,0.0208,ok
+tt_62_2026_bca:pl1,tt_62_2026_bca,Mẫu CD8 ban hành kèm theo Thông tư số 62/2026/TT-BCA ngày 18/5/2026,mau_bieu,tiêu đề có chữ Mẫu,0.0034,ok
 tt_65_2024_bca:pl1,tt_65_2024_bca,PHỤ LỤC,mau_bieu,tiêu đề có chữ Mẫu,0.0081,ok
 tt_79_2024_bca:pl1,tt_79_2024_bca,Mẫu ĐKX01 Ban hành kèm theo Thông tư số 79/2024/TT-BCA Ngày 15/11/2024 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.2318,kem
 tt_79_2024_bca:pl2,tt_79_2024_bca,Mẫu ĐKX02 Ban hành kèm theo Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an,mau_bieu,tiêu đề có chữ Mẫu,0.2311,kem

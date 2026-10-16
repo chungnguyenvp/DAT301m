@@ -28,6 +28,8 @@ _LABEL_AFTER_BREAK = re.compile(r"^(?:\d{1,2}\.|[a-zđ]\))\s+\S")
 _SYMBOL_CHARS = {
     "symbol": {0x3C: "<", 0x3E: ">", 0xA3: "≤", 0xB3: "≥", 0xB1: "±", 0xB4: "×", 0xB0: "°", 0xC6: "Ø",
                0x80: "□"},
+    # "wingdings 2" đứng trước "wingdings" vì tra theo tiền tố; hai phông có bảng mã khác nhau.
+    "wingdings 2": {0x2A: "□"},
     "wingdings": {0xA8: "□", 0x6F: "□", 0x71: "□", 0xFE: "☑", 0xFD: "☒"},
 }
 

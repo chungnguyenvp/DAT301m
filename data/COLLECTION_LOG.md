@@ -96,3 +96,26 @@ Một văn bản có nhiều file vì được đăng trên nhiều số Công b
 34 văn bản, 97 file. Danh sách đầy đủ trong `data/manifest.csv`.
 
 **Lưu ý lưu trữ:** `data/raw/` không đưa lên Git (xem `.gitignore`). Tái tạo bằng `python scripts/download_raw.py` và đối chiếu sha256 trong `data/manifest.csv`; hai file Word và file chữ TT 36 của đợt 3 phải tải tay từ các trang ở trên.
+
+## 2026-10-17: Đợt 4, văn bản thay thế và sửa đổi bị sót
+
+**Lý do:** hai bản kiểm toán pháp lý độc lập cho thấy kho thiếu văn bản thay thế hoặc sửa đổi. Đợt 1–3 chỉ tìm văn bản sửa đổi theo cụm "sửa đổi <số hiệu>" trong trích yếu, nên bỏ sót văn bản thay thế cả văn bản (NĐ 156, NĐ 94), văn bản sửa nhiều thông tư một lúc (TT 13/2025, TT 62/2026) và bản hợp nhất mới (VBHN 90).
+
+**Nguồn:** Công báo Chính phủ, tải cả PDF và Word của từng số Công báo bằng `scripts/download_raw.py data/download_plan_batch4.csv`. Cột `url` là liên kết tải của Công báo (g7.cdnchinhphu.vn); trang văn bản ghi dưới đây.
+
+| doc_id | Số Công báo | Trang Công báo |
+|---|---|---|
+| nd_156_2024 | 1491 + 1492 (25/12/2024) | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-156-2024-nd-cp-43494/53418.htm |
+| nd_94_2026 | 212 (14/4/2026) | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-94-2026-nd-cp-469245/63953.htm |
+| nd_47_2026 | 108 (14/02/2026) | https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-47-2026-nd-cp-468906/62343.htm |
+| tt_105_2026_bca | 428 (22/7/2026) | https://congbao.chinhphu.vn/van-ban/thong-tu-so-105-2026-tt-bca-470053/67041.htm |
+| vbhn_90_2026_xlvphc | 222 (16/4/2026) | https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-90-vbhn-vpqh-469265/64066.htm |
+| tt_62_2026_bca | 324 (11/6/2026) | https://congbao.chinhphu.vn/van-ban/thong-tu-so-62-2026-tt-bca-469658/65510.htm |
+| tt_13_2025_bca | 475 + 476 và 477 + 478 (15/3/2025) | https://congbao.chinhphu.vn/van-ban/thong-tu-so-13-2025-tt-bca-44372/55293.htm |
+
+**Kiểm tra:** đúng số hiệu, trích yếu, ngày ký và điều khoản hiệu lực ở bản PDF; `identity_report.csv` 40/40 `ok`; Điều liên tục, không thiếu Điều.
+
+**Đã biết nhưng chưa đưa vào kho:** VBHN 171/2026/VBHN-LQ-VPQH (Luật XLVPHC, ký 30/9/2026) chỉ thêm Luật 11/2026/QH16 có hiệu lực 01/3/2027, sau mốc 01/10/2026.
+
+## Tổng sau bốn đợt
+40 văn bản pháp luật (kể cả QCVN 41 tách từ TT 51/2024) cùng bộ 600 câu GPLX và Công văn 2262; 113 file. Danh sách đầy đủ trong `data/manifest.csv`; tình trạng pháp lý trong `data/legal_status.csv`.
