@@ -26,6 +26,7 @@ NON_LEGAL = {"gplx_600_2025", "cv_2262_2025_csgt"}
 AMENDING_DOCS = {
     "luat_118_2025", "nd_238_2026", "nd_241_2026", "nd_218_2026", "nd_220_2026",
     "tt_37_2026_bca", "tt_51_2025_bca", "nd_51_2025", "nd_175_2025",
+    "nd_47_2026", "tt_13_2025_bca", "tt_105_2026_bca", "tt_62_2026_bca",
 }
 
 # Chuỗi nhận diện văn bản bị sửa → doc_id (so khớp sau normalize, không phân biệt hoa thường)
@@ -37,6 +38,8 @@ TARGET_ALIASES = {
     "10/2022/NĐ-CP": "nd_10_2022",
     "79/2024/TT-BCA": "tt_79_2024_bca",
     "12/2025/TT-BCA": "tt_12_2025_bca",
+    "65/2024/TT-BCA": "tt_65_2024_bca",
+    "138/2021/NĐ-CP": "nd_138_2021",
     "Luật Trật tự, an toàn giao thông đường bộ": "luat_36_2024",
     "Luật Đường bộ": "luat_35_2024",
 }

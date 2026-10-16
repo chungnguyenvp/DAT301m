@@ -38,16 +38,16 @@ print({
 
 ## 1. Văn bản và đơn vị
 
-Có **33 văn bản**: 30 trích từ docx, 2 từ pdf (`tt_30_2026_bxd`, `blds_2015`), 1 từ chữ thuần (`tt_36_2024_byt`); không còn văn bản nào OCR. Từ 2026-10-16, `tt_108_2026_bca` và `tt_155_2025_btc` đọc bản Word lấy từ Công báo, `tt_36_2024_byt` đọc bản chữ thuần đã đối chiếu với PDF chính thức (xem mục 1a). `legal_units.jsonl` có **17.903 đơn vị**:
+Có **40 văn bản**: 37 trích từ docx, 2 từ pdf (`tt_30_2026_bxd`, `blds_2015`), 1 từ chữ thuần (`tt_36_2024_byt`); không còn văn bản nào OCR. Từ 2026-10-16, `tt_108_2026_bca` và `tt_155_2025_btc` đọc bản Word lấy từ Công báo, `tt_36_2024_byt` đọc bản chữ thuần đã đối chiếu với PDF chính thức (xem mục 1a). Ngày 2026-10-17 thêm 7 văn bản sau rà soát tình trạng pháp lý (mục 1g). `legal_units.jsonl` có **19.451 đơn vị** (17.903 đơn vị của 33 văn bản cũ không đổi):
 
 | Cấp | Số đơn vị |
 |---|---:|
-| `dieu` | 2.236 |
-| `khoan` | 7.088 |
-| `diem` | 8.356 |
-| `phu_luc` | 158 |
-| `mo_dau` | 33 |
-| `ket_thuc` | 32 |
+| `dieu` | 2.493 |
+| `khoan` | 7.822 |
+| `diem` | 8.855 |
+| `phu_luc` | 202 |
+| `mo_dau` | 40 |
+| `ket_thuc` | 39 |
 
 ### Ghép và tách văn bản
 
@@ -162,9 +162,31 @@ Lỗi đã sửa ở đợt này:
 
 Chưa có đối chứng chữ độc lập: TT 108, TT 155 (PDF ảnh), TT 36 (bản chữ đã so tay với ảnh), BLDS, TT 30 (dữ liệu trích chính từ PDF). Các văn bản này được kiểm tra tay theo mẫu ngẫu nhiên (`docs/reviews/manual-check-2026-10-17/`).
 
+### 1g. Rà soát tình trạng pháp lý, thêm 7 văn bản (2026-10-17)
+
+Hai bản kiểm toán pháp lý độc lập chỉ ra kho còn dùng văn bản đã hết hiệu lực và thiếu văn bản sửa đổi. Nguyên nhân: khi thu thập chỉ tìm văn bản sửa đổi theo cụm "sửa đổi <số hiệu>" trong trích yếu, nên bỏ sót văn bản thay thế hoặc sửa đổi nhiều thông tư một lúc. Đã tải từ Công báo (bản PDF và Word, xem `data/COLLECTION_LOG.md`):
+
+| Văn bản | Vai trò | Hiệu lực | Xử lý |
+|---|---|---|---|
+| NĐ 156/2024 | thay NĐ 39/2023 (đấu giá biển số) | 01/01/2025 | NĐ 39 đóng tại 01/01/2025 (đã duyệt) |
+| NĐ 94/2026 | bãi bỏ NĐ 160/2024 (đào tạo, sát hạch lái xe) | 01/7/2026 | NĐ 160 đóng tại 01/7/2026 (đã duyệt) |
+| VBHN 90/VBHN-VPQH | bản hợp nhất mới Luật XLVPHC (thêm Luật 116, 120/2025) | 01/7/2026 | VBHN 63 đóng tại 01/7/2026 (đã duyệt) |
+| NĐ 47/2026 | sửa NĐ 138/2021 (bỏ yêu cầu bản sao CMND/CCCD khi xin tự giữ xe…) | 15/3/2026 | 15 dòng sửa đổi |
+| TT 13/2025 | sửa TT 65 (Điều 6) và TT 79 (Công an cấp xã, mẫu ĐKX) | 01/3/2025 | 25 dòng + 9 dòng thay mẫu |
+| TT 105/2026 | sửa TT 65 (bỏ kiểm tra mô phỏng) | 01/7/2026; khoản 1–3 Điều 6 mới từ 01/7/2027 | 11 dòng + 1 dòng thay phụ lục |
+| TT 62/2026 | Điều 7 sửa TT 79 | 18/5/2026 (ngày ký) | 10 dòng |
+
+- Dòng sửa đổi soạn bằng `docs/reviews/legal-status-2026-10-17/draft_batch4.py`; các chỉ dẫn "thay/bỏ cụm từ" đã chuyển thành `sua_doi` kèm toàn văn đơn vị mới. Cả 61 dòng sửa đổi và 10 dòng thay phụ lục được đối chiếu với lớp chữ PDF Công báo (chỉ dẫn và chữ mới khớp nguyên văn, đủ mọi khoản của Điều sửa đổi) rồi duyệt theo ủy quyền của người dùng (2026-10-17).
+- **Hai văn bản sửa cùng một khoản:** khoản 6 Điều 3 TT 79 bị TT 62 (ký và có hiệu lực 18/5/2026) và TT 37 (ký 24/4/2026, hiệu lực 08/6/2026) sửa với câu chữ khác nhau. Người dùng quyết định áp dụng văn bản ban hành sau: dòng TT 37 cho khoản này đổi thành `loai`, chữ TT 62 có hiệu lực từ 18/5/2026 (test `test_tt79_result_delivery_uses_later_issued_tt62`).
+- TT 105 có ba mốc: phần kiểm tra mô phỏng (điểm b khoản 1, điểm b khoản 2, khoản 4, điểm b khoản 5 Điều 6) hết hiệu lực 01/7/2026; phần lý thuyết cũ tiếp tục đến hết 30/6/2027; khoản 1–3 Điều 6 mới áp dụng từ 01/7/2027 (cột `hl_rieng`).
+- Bảng `data/legal_status.csv` ghi tình trạng tại 01/10/2026, văn bản thay thế, văn bản sửa đổi và mức kiểm tra của từng văn bản (`doc_van_ban`: đã đọc điều khoản hiệu lực ở bản chính thức; `tra_cuu`: chỉ tra cứu, chưa thấy văn bản sửa đổi khác; `chua_kiem_tra`).
+- Thêm ký hiệu Wingdings 2 0x2A (ô vuông trống "□") vào bảng ánh xạ `w:sym` cho tờ khai trong NĐ 156.
+- Số Điều "(được bãi bỏ)" tăng từ 20 lên 42: VBHN 90 có 22 Điều (thêm Điều 96, 103, 104 do Luật 120/2025 bỏ biện pháp đưa vào cơ sở cai nghiện bắt buộc).
+- Câu hỏi theo ngày nằm trong `tests/test_processed_invariants.py` và đều đạt: đấu giá biển số tại 01/10/2026 theo NĐ 156; phục hồi điểm không còn thi mô phỏng từ 01/7/2026; tự giữ xe không cần bản sao CMND/CCCD từ 15/3/2026; TT 79 không còn "Công an cấp huyện".
+
 ## 2. Danh tính văn bản
 
-`identity_report.csv`: **33/33 `ok`**. Với `tt_36_2024_byt`, bản OCR cũ đọc số viết tay thành “36 /2024”; bản chữ thuần hiện dùng ghi đúng “36/2024/TT-BYT”.
+`identity_report.csv`: **40/40 `ok`**. Với `tt_36_2024_byt`, bản OCR cũ đọc số viết tay thành “36 /2024”; bản chữ thuần hiện dùng ghi đúng “36/2024/TT-BYT”.
 
 ## 3. Ngày hiệu lực
 
@@ -398,6 +420,9 @@ Tỷ lệ âm tiết lỗi là **heuristic**, không đo độ đúng pháp lý 
 | TT 155 | 10 đơn vị / khoảng 923 từ | khoảng 160 | khoảng 17% (mẫu gồm bảng hỏng trước sửa) |
 
 ## 7. Hạn chế và việc cần làm tiếp
+
+- **Tình trạng pháp lý chưa xác minh hết** (`data/legal_status.csv`): 7 văn bản `chua_kiem_tra` (bốn nghị định sửa đổi năm 2026, NĐ 51/2025, NĐ 175/2025, TT 155); Luật 35, 36 chưa đối chiếu với văn bản hợp nhất mới.
+- VBHN 171/2026/VBHN-LQ-VPQH (30/9/2026) hợp nhất thêm Luật 11/2026/QH16, hiệu lực 01/3/2027; chưa đưa vào kho vì sau mốc 01/10/2026.
 
 - **Số đo và nhãn trong hình vẽ, mẫu biểu không dùng làm căn cứ** (đối chiếu PDF 2026-10-17): nhãn kích thước trong hình có thể bị nối dính (QCVN Phụ lục K "64,5210,02" thay cho 64,52 và 10,02; TT 79 mẫu ĐKX01 "53.9885.6" thay cho 53.98 và 85.6); nhiều số đo nằm trong hình minh họa chưa được trích (QCVN Phụ lục G, ví dụ Hình G.73); nhãn mục trong phụ lục TT 79 Phụ lục số 04 và TT 12 Phụ lục VII khác bản in (bản PDF cũng có thứ tự bất thường). Khi dựng kho tra cứu và sinh câu hỏi, không lấy số đo từ hình vẽ, mẫu biểu, và trích dẫn mục phụ lục theo bản PDF.
 

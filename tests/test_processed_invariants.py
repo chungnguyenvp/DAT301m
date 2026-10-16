@@ -2,6 +2,7 @@
 import json
 import re
 from collections import defaultdict
+from datetime import date, timedelta
 from pathlib import Path
 
 import pytest
@@ -96,12 +97,63 @@ def test_tt_36_annex_i_labels_every_group(versioned):
     assert len(re.findall(r"(?m)^Nhóm [123] \(người lái xe hạng[^)]*\): ", text)) == 27
 
 
+def _replaced_docs() -> set[str]:
+    """Văn bản bị thay cả văn bản bởi dòng thay_the_van_ban đã duyệt."""
+    import csv
+
+    with (PROCESSED / "amendments_reviewed.csv").open(encoding="utf-8-sig") as fp:
+        return {r["target_doc_id"] for r in csv.DictReader(fp)
+                if r["action"] == "thay_the_van_ban" and r["status"] == "duyet"}
+
+
 def test_every_document_has_unit_in_force(versioned):
     if not DOCS.exists():
         pytest.skip("documents/ chưa có")
     live_docs = {r["doc_id"] for r in versioned if _in_force(r)}
     missing = sorted(p.stem for p in DOCS.glob("*.txt") if p.stem not in live_docs)
-    assert missing == []
+    # TT 12 bị TT 108 thay nhưng còn phần gia hạn đến 28/02/2027 nên vẫn có đơn vị hiệu lực
+    assert missing == sorted(_replaced_docs() - {"tt_12_2025_bca"})
+
+
+@pytest.mark.parametrize("old, new, day", [
+    ("nd_39_2023", "nd_156_2024", "2025-01-01"),  # đấu giá biển số xe: Điều 27 NĐ 156
+    ("nd_160_2024", "nd_94_2026", "2026-07-01"),  # đào tạo, sát hạch lái xe: Điều 41 NĐ 94
+    ("vbhn_63_2025_xlvphc", "vbhn_90_2026_xlvphc", "2026-07-01"),  # Luật XLVPHC: bản hợp nhất mới
+])
+def test_replaced_document_hands_over_on_its_date(versioned, old, new, day):
+    before = (date.fromisoformat(day) - timedelta(days=1)).isoformat()
+    assert any(_in_force(r, before) for r in versioned if r["doc_id"] == old)
+    assert not any(_in_force(r, before) for r in versioned if r["doc_id"] == new)
+    assert not any(_in_force(r, day) for r in versioned if r["doc_id"] == old)
+    assert any(_in_force(r, day) for r in versioned if r["doc_id"] == new)
+
+
+def _live_text(versioned, prefix: str, day: str = T) -> str:
+    return "\n".join(r["text"] for r in versioned
+                     if (r["unit_id"] == prefix or r["unit_id"].startswith(prefix + ":")) and _in_force(r, day))
+
+
+# Câu hỏi theo ngày từ đợt rà soát 2026-10-17 (dòng sửa đổi đợt 4 đã duyệt).
+
+
+def test_plate_auction_at_cutoff_follows_nd_156(versioned):
+    assert not any(_in_force(r) for r in versioned if r["doc_id"] == "nd_39_2023")
+    assert "đấu giá biển số xe" in _live_text(versioned, "nd_156_2024:d1")
+
+
+def test_point_restoration_has_no_simulation_test_after_july_2026(versioned):
+    assert "mô phỏng" in _live_text(versioned, "tt_65_2024_bca:d6", "2026-06-30")
+    assert "mô phỏng" not in _live_text(versioned, "tt_65_2024_bca:d6")
+
+
+def test_keeping_seized_vehicle_needs_no_id_copy_after_march_2026(versioned):
+    copy = "Chứng minh nhân dân hoặc Thẻ căn cước công dân"
+    assert copy in _live_text(versioned, "nd_138_2021:d14:k2:a", "2026-03-14")
+    assert copy not in _live_text(versioned, "nd_138_2021:d14:k2:a")
+
+
+def test_vehicle_registration_has_no_district_police(versioned):
+    assert "Công an cấp huyện" not in _live_text(versioned, "tt_79_2024_bca")
 
 
 def test_tt12_in_force_only_through_extension(versioned):
@@ -195,7 +247,8 @@ def test_new_licence_plate_annex_is_content_not_form(versioned):
 
 def test_repealed_placeholders_are_not_in_force(versioned):
     repealed = [r for r in versioned if r["trang_thai"] == "bai_bo"]
-    assert len(repealed) == 20
+    # VBHN 63: 19 Điều; VBHN 90: 19 Điều đó cộng Điều 96, 103, 104 (Luật 120/2025 bỏ cai nghiện bắt buộc); BLHS: 1
+    assert len(repealed) == 42
     assert not any(_in_force(r) for r in repealed)
 
 
@@ -216,3 +269,19 @@ def test_replaced_licence_plate_annex_is_closed(versioned):
     new = [r for r in versioned if r["unit_id"] == "tt_51_2025_bca:pl1"]
     assert not any(_in_force(r) for r in old) and all(_in_force(r) for r in new)
     assert old[-1]["pl_thay_the"][0]["bang"] == "tt_51_2025_bca:pl1"
+
+
+def test_manual_corrections_reached_outputs(units):
+    """Sửa tay trong ocr_corrections.csv có mặt ở đầu ra: chữ ký NĐ 238 và câu 3 bộ GPLX."""
+    assert not [u["unit_id"] for u in units if "daky]" in u["text"]]
+    gplx = _read(PROCESSED / "gplx_600.jsonl")
+    assert "hầm trên đường bộ để các xe" in gplx[2]["lua_chon"][1]
+    assert not [q["so_cau"] for q in gplx if re.search(r"\bb ộ\b", " ".join([q["cau_hoi"], *q["lua_chon"]]))]
+
+
+def test_tt79_result_delivery_uses_later_issued_tt62(versioned):
+    """Khoản 6 Điều 3 TT 79: TT 62 (ban hành 18/5/2026) thắng TT 37 (ban hành 24/4/2026, hiệu lực 08/6/2026)."""
+    for day in ("2026-05-18", "2026-06-08", T):
+        live = [r for r in versioned if r["unit_id"] == "tt_79_2024_bca:d3:k6" and _in_force(r, day)]
+        assert [r["source_doc_id"] for r in live] == ["tt_62_2026_bca"], day
+        assert "bản vật lý hoặc nhận dữ liệu điện tử" in live[0]["text"]
