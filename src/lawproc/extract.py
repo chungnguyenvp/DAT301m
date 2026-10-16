@@ -181,20 +181,22 @@ def _is_vmerge_continuation(tc) -> bool:
 def _table_rows(tbl, numbering: _Numbering) -> list[str]:
     """Mỗi hàng trực tiếp của bảng thành một dòng "ô | ô".
 
-    Ô gộp ngang chỉ có một w:tc; ô gộp dọc chỉ đọc ở hàng đầu (bỏ w:tc "continue"). Ô kề nhau có cùng giá trị
-    ("100 | 100") là dữ liệu thật nên được giữ đủ.
+    Ô gộp ngang chỉ có một w:tc; ô gộp dọc chỉ đọc chữ ở hàng đầu, các hàng sau để ô trống giữ chỗ. Khi hàng có
+    từ hai ô có chữ, ô trống ở đầu và giữa hàng được giữ để các ô sau không trượt cột ("| Yêu cầu | Lỗi"). Hàng
+    chỉ có một ô có chữ (khối chữ ký, tiêu đề mẫu đặt lệch phải trong bảng dàn trang) ghi riêng ô đó.
+    Ô kề nhau có cùng giá trị ("100 | 100") là dữ liệu thật nên được giữ đủ.
     """
     rows: list[str] = []
     for tr in tbl.iterchildren(qn("w:tr")):
-        cells: list[str] = []
-        for tc in tr.iterchildren(qn("w:tc")):
-            if _is_vmerge_continuation(tc):
-                continue
-            c = _cell_text(tc, numbering)
-            if c:
-                cells.append(c)
-        if cells:
-            rows.append(" | ".join(cells))
+        cells = ["" if _is_vmerge_continuation(tc) else _cell_text(tc, numbering)
+                 for tc in tr.iterchildren(qn("w:tc"))]
+        filled = [c for c in cells if c]
+        if len(filled) == 1:
+            rows.append(filled[0])
+        elif filled:
+            while not cells[-1]:
+                cells.pop()
+            rows.append(" | ".join(cells).strip())
     return rows
 
 

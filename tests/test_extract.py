@@ -317,6 +317,38 @@ def test_docx_lines_keeps_adjacent_cells_with_equal_values(tmp_path):
     assert docx_lines(p) == ["Thang điểm | 100 | 100 | 100"]
 
 
+def test_docx_lines_keeps_leading_and_inner_empty_cells_in_place(tmp_path):
+    d = docx.Document()
+    t = d.add_table(rows=2, cols=3)
+    for i, v in enumerate(["Các bước thực hiện", "Yêu cầu đạt được", "Các lỗi bị trừ điểm"]):
+        t.cell(0, i).text = v
+    t.cell(1, 1).text = "Giữ tốc độ động cơ"
+    t.cell(1, 2).text = "Lái xe lên vỉa hè"
+    p = tmp_path / "e.docx"
+    d.save(p)
+    assert docx_lines(p) == ["Các bước thực hiện | Yêu cầu đạt được | Các lỗi bị trừ điểm",
+                             "| Giữ tốc độ động cơ | Lái xe lên vỉa hè"]
+
+
+def test_docx_lines_layout_row_with_one_filled_cell_has_no_placeholder(tmp_path):
+    d = docx.Document()
+    t = d.add_table(rows=1, cols=2)
+    t.cell(0, 1).text = "TM. CHÍNH PHỦ KT. THỦ TƯỚNG PHÓ THỦ TƯỚNG Trần Hồng Hà"
+    p = tmp_path / "s.docx"
+    d.save(p)
+    assert docx_lines(p) == ["TM. CHÍNH PHỦ KT. THỦ TƯỚNG PHÓ THỦ TƯỚNG Trần Hồng Hà"]
+
+
+def test_docx_lines_drops_trailing_empty_cells_and_empty_rows(tmp_path):
+    d = docx.Document()
+    t = d.add_table(rows=2, cols=3)
+    t.cell(0, 0).text = "I"
+    t.cell(0, 1).text = "Cấp mới"
+    p = tmp_path / "t.docx"
+    d.save(p)
+    assert docx_lines(p) == ["I | Cấp mới"]
+
+
 def test_docx_lines_reads_vertically_merged_cell_once(tmp_path):
     d = docx.Document()
     t = d.add_table(rows=2, cols=2)
@@ -325,7 +357,7 @@ def test_docx_lines_reads_vertically_merged_cell_once(tmp_path):
     t.cell(1, 1).text = "B"
     p = tmp_path / "v.docx"
     d.save(p)
-    assert docx_lines(p) == ["Gộp dọc | A", "B"]
+    assert docx_lines(p) == ["Gộp dọc | A", "B"]  # hàng chỉ còn một ô có chữ thì không cần giữ chỗ
 
 
 @pytest.mark.parametrize("font, char, expected", [("Symbol", "F0A3", "≤"), ("Symbol", "00B3", "≥"),
