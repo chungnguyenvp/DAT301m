@@ -1,40 +1,40 @@
 doc_id,so_ky_hieu,tinh_trang_2026_10_01,thay_the_boi,sua_doi_trong_kho,sua_doi_ngoai_kho_da_biet,muc_kiem_tra,ngay_kiem_tra,ghi_chu
-luat_35_2024,35/2024/QH15,con_hieu_luc,,luat_118_2025,,tra_cuu,2026-10-17,Chưa đối chiếu với các văn bản hợp nhất mới của Văn phòng Quốc hội.
-luat_36_2024,36/2024/QH15,con_hieu_luc,,luat_118_2025,,tra_cuu,2026-10-17,Chưa đối chiếu với các văn bản hợp nhất mới của Văn phòng Quốc hội.
+luat_35_2024,35/2024/QH15,con_hieu_luc,,luat_118_2025,Luật 24/2026/QH16 (hiệu lực 01/3/2027),doi_chieu_vbhn,2026-10-17,Danh sách sửa đổi theo VBHN 144/2026/VBHN-LQ-VPQH (23/9/2026): Luật 118/2025 và Luật 24/2026. Chữ có hiệu lực tại 01/10/2026 khớp VBHN theo từng Điều (khác biệt còn lại là phần Luật 24/2026 hiệu lực 2027 và lỗi dính chữ của PDF).
+luat_36_2024,36/2024/QH15,con_hieu_luc,,luat_118_2025,,doi_chieu_vbhn,2026-10-17,VBHN 55/VBHN-VPQH (23/3/2026): chỉ Luật 118/2025. Chữ có hiệu lực tại 01/10/2026 khớp VBHN theo từng Điều; khoản 2 Điều 35 giữ hai phiên bản có điều kiện theo lộ trình (cố ý).
 luat_118_2025,118/2025/QH15,con_hieu_luc,,,,doc_van_ban,2026-10-17,Văn bản sửa đổi; hiệu lực 01/7/2026 (riêng điểm a khoản 20 Điều 7 từ 01/01/2026).
 blds_2015,91/2015/QH13,con_hieu_luc,,,,tra_cuu,2026-10-17,Chỉ dùng Điều 584–608 (bồi thường thiệt hại ngoài hợp đồng).
 vbhn_135_2025_blhs,135/VBHN-VPQH,con_hieu_luc,,,,tra_cuu,2026-10-17,Chỉ dùng Điều 260–266.
 vbhn_63_2025_xlvphc,63/VBHN-VPQH,het_hieu_luc,vbhn_90_2026_xlvphc,,,doc_van_ban,2026-10-17,Bản hợp nhất cũ; thay bằng VBHN 90 từ 01/7/2026.
 vbhn_90_2026_xlvphc,90/VBHN-VPQH,con_hieu_luc,,,Luật 11/2026/QH16 (hiệu lực 01/3/2027),doc_van_ban,2026-10-17,VBHN 171/2026/VBHN-LQ-VPQH (30/9/2026) thêm Luật 11/2026/QH16 có hiệu lực 01/3/2027; sau mốc 01/10/2026 nên chưa đưa vào kho.
-nd_10_2022,10/2022/NĐ-CP,con_hieu_luc,,nd_51_2025; nd_175_2025,Nghị định 202/2026/NĐ-CP (hiệu lực 01/3/2027),tra_cuu,2026-10-17,Văn bản sửa đổi biết được có hiệu lực sau mốc 01/10/2026.
-nd_51_2025,51/2025/NĐ-CP,con_hieu_luc,,,,chua_kiem_tra,,Văn bản sửa đổi lệ phí.
-nd_175_2025,175/2025/NĐ-CP,con_hieu_luc,,,,chua_kiem_tra,,Văn bản sửa đổi lệ phí.
+nd_10_2022,10/2022/NĐ-CP,con_hieu_luc,,nd_51_2025; nd_175_2025,"NĐ 202/2026/NĐ-CP (hiệu lực 01/3/2027: lệ phí trước bạ ô tô điện 0% đến hết 2030, thay NĐ 51/2025)",tra_cuu,2026-10-17,Văn bản sửa đổi biết được có hiệu lực sau mốc 01/10/2026.
+nd_51_2025,51/2025/NĐ-CP,con_hieu_luc,,,,tra_cuu,2026-10-17,Văn bản sửa đổi lệ phí: ô tô điện chạy pin 0% đến hết 28/02/2027; bị NĐ 202/2026 thay từ 01/3/2027 (sau mốc).
+nd_175_2025,175/2025/NĐ-CP,con_hieu_luc,,,,tra_cuu,2026-10-17,"Văn bản sửa đổi lệ phí trước bạ, hiệu lực 01/7/2025; tra cứu chưa thấy văn bản thay thế."
 nd_138_2021,138/2021/NĐ-CP,con_hieu_luc,,nd_47_2026,,doc_van_ban,2026-10-17,Đã áp NĐ 47/2026 (hiệu lực 15/3/2026).
 nd_47_2026,47/2026/NĐ-CP,con_hieu_luc,,,,doc_van_ban,2026-10-17,Văn bản sửa đổi NĐ 138/2021.
 nd_39_2023,39/2023/NĐ-CP,het_hieu_luc,nd_156_2024,,,doc_van_ban,2026-10-17,Hết hiệu lực 01/01/2025 (Điều 27 NĐ 156); phiên đấu giá trước ngày này tiếp tục theo NĐ 39 (Điều 28 NĐ 156).
 nd_156_2024,156/2024/NĐ-CP,con_hieu_luc,,,,doc_van_ban,2026-10-17,
-nd_158_2024,158/2024/NĐ-CP,con_hieu_luc,,nd_218_2026,,tra_cuu,2026-10-17,
-nd_218_2026,218/2026/NĐ-CP,con_hieu_luc,,,,chua_kiem_tra,,Văn bản sửa đổi năm 2026.
+nd_158_2024,158/2024/NĐ-CP,con_hieu_luc,,nd_218_2026,,doi_chieu_vbhn,2026-10-17,"VBHN của Bộ Xây dựng (58/2026/VBHN-BXD): chỉ NĐ 218/2026. Chữ khớp; VBHN thiếu khoản 5 Điều 51 (NĐ 218 không sửa, không bãi bỏ) nên kho giữ theo văn bản gốc."
+nd_218_2026,218/2026/NĐ-CP,con_hieu_luc,,,,doi_chieu_vbhn,2026-10-17,Văn bản sửa đổi năm 2026; kết quả áp đã đối chiếu với VBHN 58/2026/VBHN-BXD.
 nd_160_2024,160/2024/NĐ-CP,het_hieu_luc,nd_94_2026,,,doc_van_ban,2026-10-17,Bị bãi bỏ từ 01/7/2026 (khoản 2 Điều 41 NĐ 94); hồ sơ nộp trước ngày này giải quyết theo NĐ 160 (Điều 42 NĐ 94).
 nd_94_2026,94/2026/NĐ-CP,con_hieu_luc,,,,doc_van_ban,2026-10-17,
-nd_165_2024,165/2024/NĐ-CP,con_hieu_luc,,nd_241_2026,,tra_cuu,2026-10-17,Chưa xác minh hết các văn bản sửa đổi ngoài NĐ 241.
-nd_241_2026,241/2026/NĐ-CP,con_hieu_luc,,,,chua_kiem_tra,,Văn bản sửa đổi năm 2026.
+nd_165_2024,165/2024/NĐ-CP,con_hieu_luc,,nd_241_2026,"NĐ 243/2025/NĐ-CP (Điều 79: thêm khoản về giá trị nhượng quyền trạm dừng nghỉ, ngoài phạm vi hỏi đáp)",doi_chieu_vbhn,2026-10-17,"VBHN của Bộ Xây dựng (65/2026/VBHN-BXD): NĐ 243/2025 và NĐ 241/2026. Chữ khớp; VBHN tự đổi ""Bộ Giao thông vận tải"" ở điểm c khoản 5 Điều 28 dù NĐ 241 không liệt kê, kho giữ theo chỉ dẫn sửa đổi."
+nd_241_2026,241/2026/NĐ-CP,con_hieu_luc,,,,doi_chieu_vbhn,2026-10-17,Văn bản sửa đổi năm 2026; kết quả áp đã đối chiếu với VBHN 65/2026/VBHN-BXD.
 nd_168_2024,168/2024/NĐ-CP,con_hieu_luc,,nd_238_2026,,tra_cuu,2026-10-17,
-nd_238_2026,238/2026/NĐ-CP,con_hieu_luc,,,,chua_kiem_tra,,Văn bản sửa đổi năm 2026.
+nd_238_2026,238/2026/NĐ-CP,con_hieu_luc,,,,tra_cuu,2026-10-17,Văn bản sửa đổi năm 2026; tra cứu chưa thấy văn bản sửa tiếp NĐ 168 sau NĐ 238.
 nd_336_2025,336/2025/NĐ-CP,con_hieu_luc,,,,tra_cuu,2026-10-17,
 nd_67_2023,67/2023/NĐ-CP,con_hieu_luc,,nd_220_2026,,tra_cuu,2026-10-17,
-nd_220_2026,220/2026/NĐ-CP,con_hieu_luc,,,,chua_kiem_tra,,Văn bản sửa đổi năm 2026.
+nd_220_2026,220/2026/NĐ-CP,con_hieu_luc,,,,tra_cuu,2026-10-17,Văn bản sửa đổi năm 2026; tra cứu chưa thấy văn bản sửa tiếp NĐ 67 sau NĐ 220.
 tt_12_2025_bca,12/2025/TT-BCA,het_hieu_luc_mot_phan,tt_108_2026_bca,,,doc_van_ban,2026-10-17,Hết hiệu lực 01/7/2026; một số nội dung còn hiệu lực đến hết 28/02/2027 (khoản 6 Điều 41 TT 108).
 tt_108_2026_bca,108/2026/TT-BCA,con_hieu_luc,,,,tra_cuu,2026-10-17,
 tt_36_2024_byt,36/2024/TT-BYT,con_hieu_luc,,,,tra_cuu,2026-10-17,
 tt_65_2024_bca,65/2024/TT-BCA,con_hieu_luc,,tt_13_2025_bca; tt_105_2026_bca,,doc_van_ban,2026-10-17,Đã áp TT 13/2025 và TT 105/2026; khoản 1–3 Điều 6 mới từ 01/7/2027.
 tt_13_2025_bca,13/2025/TT-BCA,con_hieu_luc,,,,doc_van_ban,2026-10-17,Sửa 13 thông tư; trong kho chỉ có TT 65 (Điều 6) và TT 79 (Điều 12).
 tt_105_2026_bca,105/2026/TT-BCA,con_hieu_luc,,,,doc_van_ban,2026-10-17,Văn bản sửa đổi TT 65/2024.
-tt_79_2024_bca,79/2024/TT-BCA,con_hieu_luc,,tt_13_2025_bca; tt_51_2025_bca; tt_37_2026_bca; tt_62_2026_bca,,doc_van_ban,2026-10-17,Đã áp TT 13/2025, TT 51/2025, TT 62/2026, TT 37/2026; khoản 6 Điều 3 dùng chữ TT 62 (ban hành sau TT 37).
+tt_79_2024_bca,79/2024/TT-BCA,con_hieu_luc,,tt_13_2025_bca; tt_51_2025_bca; tt_37_2026_bca; tt_62_2026_bca,,doc_van_ban,2026-10-17,"Đã áp TT 13/2025, TT 51/2025, TT 62/2026, TT 37/2026; khoản 6 Điều 3 dùng chữ TT 62 (ban hành sau TT 37)."
 tt_51_2025_bca,51/2025/TT-BCA,con_hieu_luc,,,,tra_cuu,2026-10-17,Văn bản sửa đổi TT 79/2024.
 tt_37_2026_bca,37/2026/TT-BCA,con_hieu_luc,,,,tra_cuu,2026-10-17,Văn bản sửa đổi nhiều thông tư về đăng ký và kiểm định.
 tt_62_2026_bca,62/2026/TT-BCA,con_hieu_luc,,,,doc_van_ban,2026-10-17,Điều 7 sửa TT 79; Điều 3 phân cấp thẩm quyền thủ tục không sửa chữ TT 79 nên không có dòng sửa đổi.
-tt_155_2025_btc,155/2025/TT-BTC,con_hieu_luc,,,,chua_kiem_tra,,Chưa xác minh văn bản sửa đổi.
+tt_155_2025_btc,155/2025/TT-BTC,con_hieu_luc,,,,tra_cuu,2026-10-17,Tra cứu chưa thấy văn bản sửa đổi; kiểm tra ảnh PDF 5 đơn vị khớp (bảng phí 17/17 mức thu).
 tt_30_2026_bxd,30/2026/TT-BXD,con_hieu_luc,,,,tra_cuu,2026-10-17,
 tt_38_2024_bgtvt,38/2024/TT-BGTVT,con_hieu_luc,,,,tra_cuu,2026-10-17,
 tt_51_2024_bgtvt_qcvn41,51/2024/TT-BGTVT,con_hieu_luc,,,,tra_cuu,2026-10-17,

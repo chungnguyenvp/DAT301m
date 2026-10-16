@@ -160,7 +160,7 @@ Lỗi đã sửa ở đợt này:
 - **F01 trượt cột bảng:** ô trống ở đầu hàng bị bỏ nên hai ô sau trượt sang trái; ví dụ bảng chấm điểm TT 12 Phụ lục IV (còn hiệu lực có điều kiện đến hết 28/02/2027), cột "Yêu cầu đạt được" lẫn sang cột "Các bước thực hiện". Nay khi hàng có từ hai ô có chữ, ô trống ở đầu và giữa hàng được giữ chỗ ("| 6. Giữ tốc độ… | 7. Lái xe lên vỉa hè…"); hàng chỉ có một ô có chữ (khối chữ ký, tiêu đề mẫu trong bảng dàn trang) ghi riêng ô đó. Bảng tốc độ TT 38 Điều 6 cũng thẳng cột hơn. 57 đơn vị đổi chữ, không thêm/bớt đơn vị nào.
 - **F07:** "đường b ộ" ở NĐ 165 Điều 22 khoản 2 điểm b (tệp Word tách từ) sửa bằng một dòng trong `ocr_corrections.csv`; cả kho chỉ có trường hợp này.
 
-Chưa có đối chứng chữ độc lập: TT 108, TT 155 (PDF ảnh), TT 36 (bản chữ đã so tay với ảnh), BLDS, TT 30 (dữ liệu trích chính từ PDF). Các văn bản này được kiểm tra tay theo mẫu ngẫu nhiên (`docs/reviews/manual-check-2026-10-17/`).
+Chưa có đối chứng chữ độc lập: TT 108, TT 155 (PDF ảnh), TT 36 (bản chữ đã so tay với ảnh), BLDS, TT 30 (dữ liệu trích chính từ PDF). Các văn bản này được kiểm tra theo mẫu ngẫu nhiên 40 đơn vị (`docs/reviews/manual-check-2026-10-17/`), xem mục 1h.
 
 ### 1g. Rà soát tình trạng pháp lý, thêm 7 văn bản (2026-10-17)
 
@@ -183,6 +183,24 @@ Hai bản kiểm toán pháp lý độc lập chỉ ra kho còn dùng văn bản
 - Thêm ký hiệu Wingdings 2 0x2A (ô vuông trống "□") vào bảng ánh xạ `w:sym` cho tờ khai trong NĐ 156.
 - Số Điều "(được bãi bỏ)" tăng từ 20 lên 42: VBHN 90 có 22 Điều (thêm Điều 96, 103, 104 do Luật 120/2025 bỏ biện pháp đưa vào cơ sở cai nghiện bắt buộc).
 - Câu hỏi theo ngày nằm trong `tests/test_processed_invariants.py` và đều đạt: đấu giá biển số tại 01/10/2026 theo NĐ 156; phục hồi điểm không còn thi mô phỏng từ 01/7/2026; tự giữ xe không cần bản sao CMND/CCCD từ 15/3/2026; TT 79 không còn "Công an cấp huyện".
+
+### 1h. Hoàn tất rà soát dữ liệu (2026-10-17)
+
+**Tình trạng pháp lý** (`data/legal_status.csv`, không còn văn bản `chua_kiem_tra`):
+
+| Mức kiểm tra | Số văn bản | Nội dung |
+|---|---:|---|
+| `doi_chieu_vbhn` | 6 | Luật 35 (VBHN 144/2026), Luật 36 (VBHN 55/2026), NĐ 158 + NĐ 218 (VBHN 58/2026/VBHN-BXD), NĐ 165 + NĐ 241 (VBHN 65/2026/VBHN-BXD): chữ có hiệu lực tại 01/10/2026 so với bản hợp nhất chính thức theo từng Điều; khác biệt còn lại đều giải thích được (phần sửa đổi hiệu lực sau mốc, chú thích, lỗi chữ của bản hợp nhất, bản hợp nhất bỏ sót khoản 5 Điều 51 NĐ 158) |
+| `doc_van_ban` | 15 | đã đọc điều khoản hiệu lực ở bản chính thức (đợt 4) |
+| `tra_cuu` | 19 | tra cứu chưa thấy văn bản sửa đổi khác trong hiệu lực tại mốc |
+
+Sửa đổi đã biết nằm ngoài kho: Luật 24/2026/QH16 (sửa Luật 35, hiệu lực 01/3/2027), NĐ 202/2026 (lệ phí trước bạ, 01/3/2027), VBHN 171/2026 (Luật XLVPHC thêm Luật 11/2026, 01/3/2027): đều sau mốc. NĐ 243/2025 thêm vào NĐ 165 một khoản về giá trị nhượng quyền trạm dừng nghỉ (PPP), ngoài phạm vi hỏi đáp, chưa đưa vào kho.
+
+**Phạm vi BLDS/BLHS:** trường mới `trong_pham_vi` trên mọi bản ghi phiên bản (`config.SCOPE_DIEU`): `False` với BLDS ngoài Điều 584–608 và BLHS ngoài Điều 260–266. Còn **213 đơn vị** trong phạm vi (BLDS 85, BLHS 128), khớp con số đã chốt.
+
+**Kiểm tra 40 đơn vị bằng ảnh PDF** (`docs/reviews/manual-check-2026-10-17/checklist.csv`, cột `nguoi_kiem`): Claude so từng đơn vị với ảnh trang PDF chính thức, không phải người kiểm. Kết quả **40/40 khớp chữ và con số** (TT 108 12/12, TT 30 10/10, BLDS 8/8, TT 155 5/5 gồm bảng phí 17/17 mức thu, TT 36 5/5 gồm Phụ lục I 27/27 ô). Phát hiện một lỗi định dạng: ở TT 30 tiêu đề khoản ngắn đứng riêng một dòng (ví dụ "1. Nộp hồ sơ đề nghị") bị ghép vào câu thân. Đã sửa trong `join_wrapped`: dòng có nhãn ngắn hơn 75% độ dài dòng đầy bề ngang của văn bản và dòng sau viết hoa thì không ghép. 16 khoản TT 30 được tách đúng; 4 phụ lục mẫu biểu TT 30 chỉ đổi chỗ xuống dòng, không đổi chữ.
+
+**GPLX:** câu 172 có đáp án mất căn cứ từ 01/7/2026 (Luật 118 bỏ giới hạn 10 giờ/ngày); gắn cờ `can_xem_phap_ly`, bộ eval còn 281 câu (xem `GPLX_600_REPORT.md`).
 
 ## 2. Danh tính văn bản
 
@@ -421,7 +439,8 @@ Tỷ lệ âm tiết lỗi là **heuristic**, không đo độ đúng pháp lý 
 
 ## 7. Hạn chế và việc cần làm tiếp
 
-- **Tình trạng pháp lý chưa xác minh hết** (`data/legal_status.csv`): 7 văn bản `chua_kiem_tra` (bốn nghị định sửa đổi năm 2026, NĐ 51/2025, NĐ 175/2025, TT 155); Luật 35, 36 chưa đối chiếu với văn bản hợp nhất mới.
+- **Tên cơ quan cũ trong chữ còn hiệu lực:** một số đơn vị vẫn ghi "Bộ Giao thông vận tải", "Sở Giao thông vận tải" (17 đơn vị có hiệu lực, không tính văn bản sửa đổi) vì văn bản sửa đổi không liệt kê các chỗ đó; khi trả lời cần hiểu là Bộ Xây dựng, Sở Xây dựng theo tổ chức bộ máy hiện hành.
+- 19 văn bản mới ở mức `tra_cuu` (chưa có bản hợp nhất để đối chiếu chữ).
 - VBHN 171/2026/VBHN-LQ-VPQH (30/9/2026) hợp nhất thêm Luật 11/2026/QH16, hiệu lực 01/3/2027; chưa đưa vào kho vì sau mốc 01/10/2026.
 
 - **Số đo và nhãn trong hình vẽ, mẫu biểu không dùng làm căn cứ** (đối chiếu PDF 2026-10-17): nhãn kích thước trong hình có thể bị nối dính (QCVN Phụ lục K "64,5210,02" thay cho 64,52 và 10,02; TT 79 mẫu ĐKX01 "53.9885.6" thay cho 53.98 và 85.6); nhiều số đo nằm trong hình minh họa chưa được trích (QCVN Phụ lục G, ví dụ Hình G.73); nhãn mục trong phụ lục TT 79 Phụ lục số 04 và TT 12 Phụ lục VII khác bản in (bản PDF cũng có thứ tự bất thường). Khi dựng kho tra cứu và sinh câu hỏi, không lấy số đo từ hình vẽ, mẫu biểu, và trích dẫn mục phụ lục theo bản PDF.

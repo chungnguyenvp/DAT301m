@@ -1,5 +1,7 @@
 # Kiểm tra tay 40 đơn vị (2026-10-17)
 
+**Trạng thái: đã kiểm 40/40 ngày 2026-10-17** (Claude so từng đơn vị với ảnh trang PDF chính thức; cột `nguoi_kiem`). Kết quả: 40/40 khớp chữ và con số; dòng 22 phát hiện lỗi tiêu đề khoản dính câu sau ở TT 30, đã sửa trong pipeline. Người dùng có thể kiểm lại vài dòng bất kỳ để xác nhận.
+
 Năm văn bản không đối chứng tự động được với chữ PDF: TT 108, TT 155 (PDF ảnh), TT 36 (bản chữ thuvienphapluat), BLDS, TT 30 (dữ liệu trích chính từ PDF). Lượt này lấy ngẫu nhiên 40 đơn vị đang có hiệu lực của năm văn bản, khoảng 2/3 có con số; thêm hai bảng đã dựng lại tay (biểu phí TT 155, Phụ lục I TT 36). Danh sách sinh bằng `make_checklist.py` với hạt giống cố định 20261017.
 
 | Văn bản | Số đơn vị |

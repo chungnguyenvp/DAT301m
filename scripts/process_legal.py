@@ -17,7 +17,7 @@ from lawproc.corrections import apply_corrections  # noqa: E402
 from lawproc.effective import decide_effective, find_effective  # noqa: E402
 from lawproc.extract import docx_lines, ocr_pdf_lines, pdf_lines, text_lines  # noqa: E402
 from lawproc.structure import Unit, parse_units  # noqa: E402
-from lawproc.status import apply_annex_replacements, check_annex_replacements, mark_status, read_csv  # noqa: E402
+from lawproc.status import apply_annex_replacements, check_annex_replacements, mark_scope, mark_status, read_csv  # noqa: E402
 from lawproc.validity import attach_exceptions, in_force_at, load_exceptions  # noqa: E402
 from lawproc.verify import check_identity  # noqa: E402
 
@@ -171,6 +171,7 @@ def step_apply() -> None:
     write_csv(ANNEX_TYPES, annex_rows)
     attach_exceptions(recs, load_exceptions(EXCEPTIONS))
     mark_status(recs, read_csv(CONTENT_GAPS))
+    mark_scope(recs, config.SCOPE_DIEU)
     approved = check_annex_replacements(read_csv(ANNEX_REPLACEMENTS), recs)
     apply_annex_replacements(recs, approved)
     print(f"thay thế phụ lục: {len(approved)} dòng đã duyệt được áp")

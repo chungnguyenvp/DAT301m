@@ -21,6 +21,7 @@ QUESTIONS_PDF = config.RAW / "gplx" / "gplx_600_2025__p1.pdf"
 CV_PDF = config.RAW / "gplx" / "cv_2262_2025_csgt__p1.pdf"
 OUT = config.PROCESSED / "gplx_600.jsonl"
 CORRECTIONS = config.DATA / "ocr_corrections.csv"
+FLAGS = config.DATA / "gplx_flags.csv"  # câu có đáp án không còn khớp luật tại config.CUTOFF, đã rà soát
 SEP = "\x00"  # ngăn cách các trường khi áp sửa lỗi trên toàn bộ câu hỏi
 
 
@@ -61,7 +62,12 @@ def main() -> None:
             problems.append(f"câu {q['so_cau']}: không xác định được đúng một đáp án gạch chân")
         if not 2 <= len(q["lua_chon"]) <= 4:
             problems.append(f"câu {q['so_cau']}: {len(q['lua_chon'])} lựa chọn")
-    keys = ["so_cau", "chuong", "cau_hoi", "lua_chon", "dap_an", "co_hinh", "diem_liet", "hang_A1_A", "hang_B1"]
+    with FLAGS.open(newline="", encoding="utf-8-sig") as fp:
+        flags = {int(r["so_cau"]): r["ly_do"] for r in csv.DictReader(fp)}
+    for q in questions:
+        q["can_xem_phap_ly"] = flags.get(q["so_cau"])
+    keys = ["so_cau", "chuong", "cau_hoi", "lua_chon", "dap_an", "co_hinh", "diem_liet", "hang_A1_A", "hang_B1",
+            "can_xem_phap_ly"]
     with OUT.open("w", encoding="utf-8") as fp:
         for q in questions:
             fp.write(json.dumps({k: q[k] for k in keys}, ensure_ascii=False) + "\n")
@@ -72,6 +78,7 @@ def main() -> None:
         print(f"{name:6} | {hi - lo + 1:6} | {by[(name, True)]:7} | {by[(name, False)]:9}")
     text_only = [q for q in questions if not q["co_hinh"]]
     print(f"thuần chữ: {len(text_only)} câu, trong đó điểm liệt {sum(q['diem_liet'] for q in text_only)}")
+    print(f"gắn cờ pháp lý: {sorted(n for n in flags)}")
     print("số lựa chọn:", dict(collections.Counter(len(q["lua_chon"]) for q in questions)))
     print("vấn đề:", problems or "không")
 

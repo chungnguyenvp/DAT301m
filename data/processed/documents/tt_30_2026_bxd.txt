@@ -65,8 +65,10 @@ c) Bản sao Phiếu kiểm tra chất lượng xuất xưởng (đối với xe
 a) Giấy tờ về đăng ký xe.
 b) Giấy chứng nhận kiểm định thiết bị nâng, bình chịu áp lực (đối với xe có lắp các thiết bị này).
 Điều 5. Trình tự, thủ tục thực hiện
-1. Nộp hồ sơ đề nghị Người nộp hồ sơ lựa chọn bất kỳ cơ sở đăng kiểm nào trên phạm vi cả nước để nộp 01 bộ hồ sơ theo quy định tại Điều 4 Thông tư này trực tuyến trên Cổng Dịch vụ công quốc gia hoặc trên ứng dụng đăng kiểm của Cục Đăng kiểm Việt Nam hoặc trực tiếp hoặc qua hệ thống bưu chính tới cơ sở đăng kiểm.
-2. Cơ sở đăng kiểm thực hiện Cơ sở đăng kiểm tiếp nhận, kiểm tra thành phần hồ sơ và trả kết quả trong thời gian tối đa 04 giờ làm việc kể từ khi nhận được hồ sơ, cụ thể như sau:
+1. Nộp hồ sơ đề nghị
+Người nộp hồ sơ lựa chọn bất kỳ cơ sở đăng kiểm nào trên phạm vi cả nước để nộp 01 bộ hồ sơ theo quy định tại Điều 4 Thông tư này trực tuyến trên Cổng Dịch vụ công quốc gia hoặc trên ứng dụng đăng kiểm của Cục Đăng kiểm Việt Nam hoặc trực tiếp hoặc qua hệ thống bưu chính tới cơ sở đăng kiểm.
+2. Cơ sở đăng kiểm thực hiện
+Cơ sở đăng kiểm tiếp nhận, kiểm tra thành phần hồ sơ và trả kết quả trong thời gian tối đa 04 giờ làm việc kể từ khi nhận được hồ sơ, cụ thể như sau:
 a) Trường hợp hồ sơ đạt yêu cầu, cơ sở đăng kiểm kiểm tra đối chiếu sự phù hợp của ảnh nộp theo quy định tại điểm b khoản 1 Điều 4 Thông tư này với ảnh xe mẫu đã được chứng nhận đối với xe nhập khẩu hoặc đối với xe sản xuất, lắp ráp.
 Cơ sở đăng kiểm lập phiếu kiểm soát theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư này, lập phiếu hồ sơ phương tiện và hồ sơ phương tiện;
 b) Trường hợp hồ sơ không đạt yêu cầu, cơ sở đăng kiểm thông báo theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này trên hệ thống trực tuyến hoặc trực tiếp hoặc qua hệ thống bưu chính cho người nộp hồ sơ;
@@ -75,7 +77,8 @@ Việc lập phiếu hồ sơ phương tiện được căn cứ trên cơ sở 
 Trường hợp gặp sự cố khách quan không thể sử dụng phần mềm quản lý kiểm định để lập phiếu hồ sơ phương tiện, cơ sở đăng kiểm sử dụng hồ sơ giấy để thực hiện việc lập phiếu hồ sơ phương tiện. Khi sự cố đã được khắc phục, cơ sở đăng kiểm phải cập nhật dữ liệu vào phần mềm quản lý kiểm định; Trường hợp phát hiện thông tin trên bản sao: Phiếu kiểm tra chất lượng xuất xưởng (đối với xe sản xuất, lắp ráp trong nước) hoặc Thông báo miễn kiểm tra hoặc Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường (đối với xe nhập khẩu)
 hoặc xe thực tế hoặc dữ liệu về thông số kỹ thuật của chứng nhận đăng ký xe khác với dữ liệu xe sản xuất, lắp ráp, nhập khẩu của Cục Đăng kiểm Việt Nam thì cơ sở đăng kiểm thông báo cho người nộp hồ sơ theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này, đồng thời thông báo cho Cục Đăng kiểm Việt Nam, cơ quan đăng ký xe theo mẫu quy định tại Phụ lục XIII ban hành kèm theo Thông tư này để phối hợp xử lý. Cơ sở đăng kiểm chỉ thực hiện việc lập hồ sơ phương tiện sau khi có thông tin phù hợp.
 d) Trường hợp xe có sự thay đổi theo quy định tại khoản 6 (trừ điểm a) Mục I Phụ lục XI ban hành kèm theo Thông tư này, chủ xe có trách nhiệm đưa xe đến cơ sở đăng kiểm để cập nhật thay đổi, thông số kỹ thuật thực tế của xe vào hồ sơ phương tiện để cấp giấy chứng nhận kiểm định. Cơ sở đăng kiểm không phải thực hiện kiểm định theo quy định tại điểm b khoản 3 Điều 9, chỉ thực hiện kiểm tra, đánh giá xe thực tế và lập biên bản kiểm tra, đánh giá theo mẫu số 04 Phụ lục XV ban hành kèm theo Thông tư này. Trường hợp kết quả kiểm tra, đối chiếu đạt yêu cầu, cơ sở đăng kiểm cập nhật thay đổi, thông số kích thước thực tế của xe vào hồ sơ phương tiện. Cấp giấy chứng nhận kiểm định, tem kiểm định, tại mục “Ghi chú” của Giấy chứng nhận kiểm định phải ghi các nội dung thay đổi (ví dụ: xe lắp giá nóc theo công bố của nhà sản xuất xe).
-3. Cấp giấy chứng nhận kiểm định Trong 04 giờ làm việc kể từ khi nhận đủ hồ sơ đạt yêu cầu, cơ sở đăng kiểm căn cứ hồ sơ đề nghị thực hiện cấp giấy chứng nhận kiểm định bản điện tử, tem kiểm định theo quy định tại Điều 18 của Thông tư này.
+3. Cấp giấy chứng nhận kiểm định
+Trong 04 giờ làm việc kể từ khi nhận đủ hồ sơ đạt yêu cầu, cơ sở đăng kiểm căn cứ hồ sơ đề nghị thực hiện cấp giấy chứng nhận kiểm định bản điện tử, tem kiểm định theo quy định tại Điều 18 của Thông tư này.
 Mục 2 KIỂM ĐỊNH LẦN ĐẦU, KIỂM ĐỊNH ĐỊNH KỲ, KIỂM ĐỊNH CHO XE CÓ CHỨNG NHẬN ĐĂNG KÝ XE TẠM THỜI
 Điều 6. Hồ sơ đề nghị kiểm định lần đầu
 1. Giấy tờ phải nộp
@@ -86,7 +89,8 @@ c) Văn bản đề nghị kiểm định ngoài cơ sở đăng kiểm theo m�
 a) Giấy tờ về đăng ký xe.
 b) Giấy chứng nhận kiểm định thiết bị nâng, bình chịu áp lực (đối với xe có lắp các thiết bị này).
 Điều 7. Hồ sơ đề nghị kiểm định định kỳ
-1. Giấy tờ phải nộp Văn bản đề nghị kiểm định ngoài cơ sở đăng kiểm theo mẫu số 02 của Phụ lục VII ban hành kèm theo Thông tư này (đối với trường hợp kiểm định ngoài cơ sở đăng kiểm quy định tại khoản 14 Điều 3 của Thông tư này).
+1. Giấy tờ phải nộp
+Văn bản đề nghị kiểm định ngoài cơ sở đăng kiểm theo mẫu số 02 của Phụ lục VII ban hành kèm theo Thông tư này (đối với trường hợp kiểm định ngoài cơ sở đăng kiểm quy định tại khoản 14 Điều 3 của Thông tư này).
 2. Giấy tờ phải xuất trình
 a) Giấy tờ về đăng ký xe.
 b) Giấy chứng nhận kiểm định thiết bị nâng, bình chịu áp lực (đối với xe có lắp các thiết bị này).
@@ -95,10 +99,13 @@ b) Giấy chứng nhận kiểm định thiết bị nâng, bình chịu áp l�
 a) Bản sao Phiếu kiểm tra chất lượng xuất xưởng (chỉ nộp khi dữ liệu của Cục Đăng kiểm Việt Nam chưa chia sẻ được hoặc gặp sự cố khách quan) đối với trường hợp xe sản xuất, lắp ráp trong nước; xe nghiên cứu, phát triển có nhu cầu tham gia giao thông;
 b) Văn bản đề nghị kiểm định và Bản thông số kỹ thuật theo Mẫu số 01 Phụ lục VII ban hành kèm theo Thông tư này, Bản dịch thuật tiếng Việt có chứng thực Phiếu kiểm tra chất lượng xuất xưởng của nhà sản xuất nước ngoài đối với trường hợp xe nhập khẩu chạy rà trước khi thử nghiệm khí thải;
 c) Bản sao Phiếu kiểm tra chất lượng xuất xưởng của nhà sản xuất trong nước hoặc nước ngoài đối với trường hợp xe di chuyển giữa các địa điểm (kho, cửa khẩu, cảng, nhà máy, đại lý bán xe, nơi đăng ký xe).
-2. Giấy tờ phải xuất trình Chứng nhận đăng ký xe tạm thời hoặc bản sao có chứng thực (hoặc bản sao điện tử được chứng thực từ bản chính) chứng nhận đăng ký xe tạm thời.
+2. Giấy tờ phải xuất trình
+Chứng nhận đăng ký xe tạm thời hoặc bản sao có chứng thực (hoặc bản sao điện tử được chứng thực từ bản chính) chứng nhận đăng ký xe tạm thời.
 Điều 9. Trình tự, thủ tục thực hiện
-1. Nộp hồ sơ đề nghị Tùy thuộc vào đối tượng quy định tại Điều 6, Điều 7, Điều 8 Thông tư này, người nộp hồ sơ lựa chọn bất kỳ cơ sở đăng kiểm nào trên phạm vi cả nước để nộp 01 bộ hồ sơ theo quy định tương ứng trực tuyến trên Cổng Dịch vụ công quốc gia hoặc ứng dụng đăng kiểm của Cục Đăng kiểm Việt Nam hoặc trực tiếp hoặc qua hệ thống bưu chính tới cơ sở đăng kiểm.
-2. Thực hiện kiểm tra, đánh giá hồ sơ Cơ sở đăng kiểm tiến hành kiểm tra, đánh giá hồ sơ ngay trong ngày nhận được hồ sơ, cụ thể như sau:
+1. Nộp hồ sơ đề nghị
+Tùy thuộc vào đối tượng quy định tại Điều 6, Điều 7, Điều 8 Thông tư này, người nộp hồ sơ lựa chọn bất kỳ cơ sở đăng kiểm nào trên phạm vi cả nước để nộp 01 bộ hồ sơ theo quy định tương ứng trực tuyến trên Cổng Dịch vụ công quốc gia hoặc ứng dụng đăng kiểm của Cục Đăng kiểm Việt Nam hoặc trực tiếp hoặc qua hệ thống bưu chính tới cơ sở đăng kiểm.
+2. Thực hiện kiểm tra, đánh giá hồ sơ
+Cơ sở đăng kiểm tiến hành kiểm tra, đánh giá hồ sơ ngay trong ngày nhận được hồ sơ, cụ thể như sau:
 a) Đối với hồ sơ kiểm định tại cơ sở đăng kiểm: trường hợp hồ sơ kiểm định đạt yêu cầu thì cơ sở đăng kiểm thông báo thời gian kiểm định xe theo Mẫu số 03 Phụ lục VI ban hành kèm theo Thông tư này trên hệ thống trực tuyến hoặc thông báo trực tiếp cho người nộp hồ sơ hoặc gửi qua hệ thống bưu chính. Cơ sở đăng kiểm lập phiếu kiểm soát theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư này.
 Trường hợp hồ sơ kiểm định không đạt yêu cầu, cơ sở đăng kiểm thông báo không đạt theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này trên hệ thống trực tuyến hoặc gửi trực tiếp hoặc qua hệ thống bưu chính cho người nộp hồ sơ.
 b) Đối với hồ sơ kiểm định ngoài cơ sở đăng kiểm: Trường hợp hồ sơ kiểm định đạt yêu cầu, cơ sở đăng kiểm lập giấy hẹn lịch kiểm định theo Mẫu số 03 Phụ lục VI ban hành kèm theo Thông tư này gửi cho người nộp hồ sơ; lập phiếu kiểm soát kiểm định theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư này.
@@ -140,7 +147,8 @@ Kết quả kiểm tra phanh phải được ghi nhận vào Phiếu kiểm tra 
 Trường hợp xe có kết quả kiểm định không đạt, thực hiện kiểm định lại ngay trong ngày thì cơ sở đăng kiểm chỉ kiểm tra, đánh giá lại các hạng mục không đạt trước đó; trường hợp có kết quả kiểm tra, đánh giá ở các hạng mục liên quan đến hệ thống phanh, hệ thống lái, cơ sở đăng kiểm thực hiện kiểm tra, đánh giá lại toàn bộ các hạng mục thuộc hệ thống phanh, hệ thống lái. Trường hợp xe kiểm định lại vào ngày khác hoặc bởi cơ sở đăng kiểm khác thì phải thực hiện lại từ đầu trình tự, thủ tục kiểm định.
 c) Cơ sở đăng kiểm thực hiện chụp ảnh phương tiện tại địa điểm kiểm định đối với các trường hợp kiểm định lần đầu, kiểm định định kỳ, bao gồm 02 ảnh tổng thể rõ nét chụp chéo góc từ 30 độ đến 45 độ từ phía trước và phía sau thể hiện rõ biển số xe với độ phân giải tối thiểu 1280x720 pixels, hiển thị thời gian thực gồm ngày, tháng, năm, giờ, phút chụp và diện tích xe chiếm tối thiểu 75% khung ảnh để lưu vào hồ sơ kiểm định.
 Đối với trường hợp xe thay đổi số khung, số động cơ cơ sở đăng kiểm chụp ảnh số khung, số động cơ hoặc ảnh chụp bản chà số khung, số động cơ của xe.
-5. Cấp kết quả kiểm định Trong ngày làm việc đối với trường hợp kiểm định tại cơ sở đăng kiểm hoặc trong thời gian 02 ngày làm việc kể từ khi kết thúc kiểm tra, đánh giá đối với trường hợp kiểm định ngoài cơ sở đăng kiểm, cơ sở đăng kiểm cấp giấy chứng nhận kiểm định, tem kiểm định hoặc thông báo kết quả không đạt, cụ thể như sau:
+5. Cấp kết quả kiểm định
+Trong ngày làm việc đối với trường hợp kiểm định tại cơ sở đăng kiểm hoặc trong thời gian 02 ngày làm việc kể từ khi kết thúc kiểm tra, đánh giá đối với trường hợp kiểm định ngoài cơ sở đăng kiểm, cơ sở đăng kiểm cấp giấy chứng nhận kiểm định, tem kiểm định hoặc thông báo kết quả không đạt, cụ thể như sau:
 a) Trường hợp xe có kết quả kiểm định không đạt yêu cầu: cơ sở đăng kiểm thực hiện lập thông báo kết quả theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này trên hệ thống trực tuyến hoặc gửi trực tiếp cho người nộp hồ sơ, nhập nội dung không đạt vào phần mềm quản lý phương tiện vi phạm của Cục Đăng kiểm Việt Nam để đưa thông tin phương tiện có kết quả kiểm định không đạt ngay sau khi kết thúc việc kiểm tra, đánh giá đối với trường hợp kiểm định tại cơ sở đăng kiểm hoặc trong vòng 02 ngày đối với trường hợp kiểm định ngoài cơ sở đăng kiểm.
 b) Trường hợp xe có kết quả kiểm định đạt yêu cầu: cơ sở đăng kiểm cấp giấy chứng nhận kiểm định bản điện tử và dán tem kiểm định theo quy định tại
 Điều 18 Thông tư này.
@@ -164,10 +172,13 @@ Chương III TRÌNH TỰ, THỦ TỤC KIỂM ĐỊNH KHÍ THẢI XE MÔ TÔ, XE 
 a) Ảnh chụp số khung, số động cơ hoặc ảnh chụp bản chà số khung, số động cơ của xe được dán trên Phiếu kiểm tra chất lượng xuất xưởng đối với xe sản xuất, lắp ráp hoặc Thông báo miễn kiểm tra hoặc Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường đối với xe nhập khẩu.
 b) Ảnh chụp xe bao gồm: 02 ảnh tổng thể chéo góc khoảng từ 30 độ đến 45 độ bên trái, phía trước và bên phải, phía sau (thể hiện rõ biển số xe), ảnh chụp phải đảm bảo có độ phân giải tối thiểu 1280x720 pixels, rõ nét, thể hiện thời gian thực khi chụp (gồm ngày, tháng, năm, giờ, phút chụp ảnh), ảnh chiếm diện tích tối thiểu 75% diện tích khung ảnh (trừ trường hợp phải mang xe đến cơ sở đăng kiểm).
 c) Bản sao Phiếu kiểm tra chất lượng xuất xưởng (đối với xe sản xuất, lắp ráp trong nước) hoặc bản sao Thông báo miễn hoặc Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường (đối với xe nhập khẩu) hoặc bản chính giấy chứng nhận cải tạo của xe (đối với xe cải tạo). Người nộp hồ sơ chỉ nộp trong trường hợp dữ liệu của Cục Đăng kiểm Việt Nam chưa chia sẻ được hoặc gặp sự cố khách quan.
-2. Giấy tờ phải xuất trình Giấy tờ về đăng ký xe.
+2. Giấy tờ phải xuất trình
+Giấy tờ về đăng ký xe.
 Điều 12. Hồ sơ đề nghị kiểm định khí thải định kỳ
-1. Giấy tờ phải nộp Bản chính giấy chứng nhận cải tạo của xe (đối với xe cải tạo), người nộp hồ sơ chỉ nộp trong trường hợp dữ liệu của Cục Đăng kiểm Việt Nam chưa chia sẻ được hoặc gặp sự cố khách quan.
-2. Giấy tờ phải xuất trình Giấy tờ về đăng ký xe.
+1. Giấy tờ phải nộp
+Bản chính giấy chứng nhận cải tạo của xe (đối với xe cải tạo), người nộp hồ sơ chỉ nộp trong trường hợp dữ liệu của Cục Đăng kiểm Việt Nam chưa chia sẻ được hoặc gặp sự cố khách quan.
+2. Giấy tờ phải xuất trình
+Giấy tờ về đăng ký xe.
 Điều 13. Hồ sơ đề nghị kiểm định khí thải đối với xe mô tô, xe gắn máy có chứng nhận đăng ký xe tạm thời
 1. Trường hợp xe sản xuất, lắp ráp trong nước; xe thuộc đối tượng nghiên cứu, phát triển có nhu cầu tham gia giao thông đường bộ, hồ sơ gồm có:
 a) Giấy tờ phải nộp: Bản sao Phiếu kiểm tra chất lượng xuất xưởng (chỉ nộp trong trường hợp dữ liệu của Cục Đăng kiểm Việt Nam chưa chia sẻ được hoặc gặp sự cố khách quan).
@@ -176,7 +187,8 @@ b) Giấy tờ phải xuất trình: Giấy tờ về đăng ký xe tạm thời
 a) Giấy tờ phải nộp: Văn bản đề nghị kiểm định khí thải xe mô tô, xe gắn máy nhập khẩu chạy rà trước khi thử nghiệm khí thải, bản thông số kỹ thuật xe cơ giới nhập khẩu chạy rà trước khi thử nghiệm khí thải theo mẫu số 01 Phụ lục VII ban hành kèm theo Thông tư này cùng bản dịch thuật tiếng Việt có chứng thực phiếu kiểm tra chất lượng xuất xưởng của nhà sản xuất nước ngoài.
 b) Giấy tờ phải xuất trình: giấy tờ về đăng ký xe tạm thời.
 Điều 14. Trình tự, thủ tục thực hiện
-1. Nộp hồ sơ đề nghị Tùy thuộc vào đối tượng quy định tại Điều 11, Điều 12, Điều 13 Thông tư này, người nộp hồ sơ lựa chọn bất kỳ cơ sở đăng kiểm nào trên phạm vi cả nước để nộp 01 bộ hồ sơ theo quy định tương ứng trực tuyến trên Cổng Dịch vụ công quốc gia hoặc ứng dụng đăng kiểm của Cục Đăng kiểm Việt Nam hoặc nộp trực tiếp hoặc qua hệ thống bưu chính tới cơ sở đăng kiểm.
+1. Nộp hồ sơ đề nghị
+Tùy thuộc vào đối tượng quy định tại Điều 11, Điều 12, Điều 13 Thông tư này, người nộp hồ sơ lựa chọn bất kỳ cơ sở đăng kiểm nào trên phạm vi cả nước để nộp 01 bộ hồ sơ theo quy định tương ứng trực tuyến trên Cổng Dịch vụ công quốc gia hoặc ứng dụng đăng kiểm của Cục Đăng kiểm Việt Nam hoặc nộp trực tiếp hoặc qua hệ thống bưu chính tới cơ sở đăng kiểm.
 2. Trình tự thực hiện đối với trường hợp không phải mang xe đến cơ sở đăng kiểm Áp dụng đối với trường hợp kiểm định lần đầu với xe có thời gian tính từ năm sản xuất không quá 05 năm (trừ trường hợp: xe đã cải tạo động cơ, hệ thống xử lý khí thải; xe không có trong cơ sở dữ liệu về chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường trong sản xuất, lắp ráp, nhập khẩu của Cục Đăng kiểm Việt Nam). Cơ sở đăng kiểm tiếp nhận, kiểm tra thành phần hồ sơ và trả kết quả trong thời gian tối đa 04 giờ làm việc kể từ khi nhận được hồ sơ, cụ thể như sau:
 a) Trường hợp hồ sơ kiểm định không đạt yêu cầu: Cơ sở đăng kiểm thông báo theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này trên hệ thống trực tuyến hoặc gửi trực tiếp hoặc qua hệ thống bưu chính cho người nộp hồ sơ.
 b) Trường hợp hồ sơ kiểm định đạt yêu cầu: Cơ sở đăng kiểm lập phiếu kiểm soát theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư này. Căn cứ hồ sơ đề nghị đạt yêu cầu, cơ sở đăng kiểm thực hiện trình tự cấp Giấy chứng nhận kiểm định khí thải xe mô tô, xe gắn máy bản điện tử trên hệ thống trực tuyến theo quy định tại khoản 1, khoản 2 Điều 18 Thông tư này.
@@ -204,7 +216,8 @@ Trường hợp cơ sở đăng kiểm đã cấp giấy chứng nhận kiểm �
 a) Đơn đề nghị cấp lại giấy chứng nhận kiểm định, tem kiểm định, theo mẫu quy định tại Phụ lục IX ban hành kèm theo Thông tư này.
 b) Ảnh chụp theo quy định tại điểm b khoản 1 Điều 4 Thông tư này đối với trường hợp xe thay đổi biển số xe (bao gồm cả trường hợp xe thay đổi màu nền của biển số).
 c) Ảnh chụp thể hiện xe có lắp đặt thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe, thiết bị ghi nhận hình ảnh khoang chở khách phù hợp với xe được quy định tại khoản 2 Điều 35 của Luật đối với xe thay đổi từ hình thức không kinh doanh vận tải sang có kinh doanh vận tải.
-2. Giấy tờ phải xuất trình Giấy tờ về đăng ký xe.
+2. Giấy tờ phải xuất trình
+Giấy tờ về đăng ký xe.
 Điều 17. Trình tự, thủ tục cấp lại
 Tổ chức, cá nhân nộp 01 bộ hồ sơ theo quy định tại Điều 16 Thông tư này trực tuyến trên Cổng Dịch vụ công quốc gia hoặc ứng dụng đăng kiểm của Cục Đăng kiểm Việt Nam hoặc nộp trực tiếp hoặc qua hệ thống bưu chính tới cơ sở đăng kiểm. Trường hợp hồ sơ không đạt yêu cầu, cơ sở đăng kiểm thông báo theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này trên hệ thống trực tuyến hoặc trực tiếp hoặc qua hệ thống bưu chính cho người nộp hồ sơ.
 Trường hợp hồ sơ đạt yêu cầu, cơ sở đăng kiểm lập phiếu kiểm soát kiểm định theo mẫu quy định tại Phụ lục IV ban hành kèm theo Thông tư này; cơ sở đăng kiểm thực hiện cấp lại tem kiểm định trực tiếp hoặc thông qua hệ thống bưu chính và cấp trực tuyến đối với giấy chứng nhận cho người nộp hồ sơ cụ thể như sau:
@@ -328,7 +341,8 @@ b) Giấy chứng nhận kiểm định thiết bị nâng, bình chịu áp l�
 1. Tiếp nhận hồ sơ
 a) Trong thời hạn 01 ngày làm việc kể từ ngày nhận được hồ sơ, cơ sở đăng kiểm thực hiện kiểm tra thành phần hồ sơ, kiểm tra thông tin của cơ sở thiết kế, cơ sở cải tạo đáp ứng quy định tại khoản 12, khoản 13 Điều 3 đối với trường hợp xe phải thiết kế, cải tạo. Trường hợp hồ sơ đầy đủ và hợp lệ, cơ sở đăng kiểm ký xác nhận vào Phiếu tiếp nhận hồ sơ đề nghị chứng nhận cải tạo theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư này, thực hiện kiểm tra, đánh giá hồ sơ thiết kế cải tạo. Trường hợp không đầy đủ, cơ sở đăng kiểm trả lại hồ sơ (đối với hồ sơ điện tử) hoặc thông báo theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này gửi trực tiếp cho người nộp hồ sơ hoặc gửi qua hệ thống bưu chính để người nộp hồ sơ bổ sung, sửa đổi.
 b) Cơ sở đăng kiểm có quyền từ chối tiếp nhận đối với trường hợp xe cải tạo bị cấm cải tạo theo quy định của pháp luật và thông báo theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này bằng hình thức trực tuyến hoặc trực tiếp hoặc gửi qua hệ thống bưu chính cho người nộp hồ sơ.
-2. Kiểm tra, đánh giá hồ sơ thiết kế cải tạo Trong thời hạn 03 ngày làm việc kể từ ngày tiếp nhận hồ sơ (trừ các trường hợp quy định tại khoản 5 Điều 20 Thông tư này), cơ sở đăng kiểm lập biên bản kiểm tra, đánh giá hồ sơ theo mẫu số 02 quy định tại Phụ lục XV ban hành kèm theo Thông tư này và thực hiện như sau:
+2. Kiểm tra, đánh giá hồ sơ thiết kế cải tạo
+Trong thời hạn 03 ngày làm việc kể từ ngày tiếp nhận hồ sơ (trừ các trường hợp quy định tại khoản 5 Điều 20 Thông tư này), cơ sở đăng kiểm lập biên bản kiểm tra, đánh giá hồ sơ theo mẫu số 02 quy định tại Phụ lục XV ban hành kèm theo Thông tư này và thực hiện như sau:
 a) Trường hợp nội dung hồ sơ thiết kế cải tạo đáp ứng theo quy định tại Phụ lục XIV ban hành kèm theo Thông tư này và nội dung thiết kế phù hợp các quy chuẩn kỹ thuật quốc gia về chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới, cơ sở đăng kiểm thông báo theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này gửi cho người nộp hồ sơ thông tin về thời gian và địa điểm kiểm tra, đánh giá thực tế xe cải tạo bằng hình thức trực tuyến hoặc gửi trực tiếp hoặc gửi qua hệ thống bưu chính cho người nộp hồ sơ.
 b) Trường hợp nội dung hồ sơ thiết kế cải tạo không đủ nội dung theo quy định tại Phụ lục XIV ban hành kèm theo Thông tư này, hoặc có nội dung không phù hợp với các quy chuẩn kỹ thuật quốc gia về chất lượng an toàn kỹ thuật và bảo vệ môi trường xe cơ giới, xe máy chuyên dùng, phụ tùng xe cơ giới, cơ sở đăng kiểm thông báo theo mẫu quy định tại Phụ lục I ban hành kèm theo Thông tư này gửi cho người nộp hồ sơ ghi rõ nội dung cần bổ sung, sửa đổi bằng hình thức trực tuyến hoặc gửi trực tiếp hoặc gửi qua hệ thống bưu chính cho người nộp hồ sơ.
 Trong thời hạn 30 ngày kể từ ngày thông báo, người nộp hồ sơ có trách nhiệm bổ sung, hoàn thiện hồ sơ thiết kế cải tạo; khi nhận được hồ sơ thiết kế bổ sung, sửa đổi, cơ sở đăng kiểm thực hiện kiểm tra, đánh giá hồ sơ thiết kế cải tạo theo quy định tại điểm a khoản này; quá thời hạn trên, thủ tục chứng nhận cải tạo phải thực hiện lại từ đầu.
@@ -346,10 +360,12 @@ b) Trường hợp kết quả kiểm tra, đánh giá không đạt yêu cầu,
 Điều 23. Cấp lại giấy chứng nhận cải tạo
 1. Việc cấp lại giấy chứng nhận cải tạo được thực hiện bởi bất kỳ cơ sở đăng kiểm nào trên phạm vi cả nước.
 2. Giấy chứng nhận cải tạo được cấp lại trong các trường hợp: bị mất, hỏng, sai thông tin.
-3. Hồ sơ đề nghị cấp lại Tổ chức, cá nhân nộp trực tuyến 01 bộ hồ sơ trên Cổng Dịch vụ công quốc gia hoặc trên ứng dụng đăng kiểm của Cục Đăng kiểm Việt Nam hoặc nộp hồ sơ giấy trực tiếp hoặc qua hệ thống bưu chính tới cơ sở đăng kiểm. Hồ sơ đề nghị cấp lại giấy chứng nhận cải tạo gồm có:
+3. Hồ sơ đề nghị cấp lại
+Tổ chức, cá nhân nộp trực tuyến 01 bộ hồ sơ trên Cổng Dịch vụ công quốc gia hoặc trên ứng dụng đăng kiểm của Cục Đăng kiểm Việt Nam hoặc nộp hồ sơ giấy trực tiếp hoặc qua hệ thống bưu chính tới cơ sở đăng kiểm. Hồ sơ đề nghị cấp lại giấy chứng nhận cải tạo gồm có:
 a) Giấy tờ phải nộp: đơn đề nghị theo mẫu quy định tại Phụ lục IX ban hành kèm theo Thông tư này; giấy chứng nhận cải tạo bị hỏng hoặc bị sai thông tin;
 b) Giấy tờ phải xuất trình: giấy tờ về đăng ký xe hoặc bản chính chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe.
-4. Trình tự, thủ tục cấp lại giấy chứng nhận cải tạo Cơ sở đăng kiểm thực hiện việc cấp lại giấy chứng nhận cải tạo theo mẫu quy định tại Phụ lục XVIII ban hành kèm theo Thông tư này trong thời hạn 01 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm hoặc trường hợp hồ sơ điện tử được lưu tại phần mềm quản lý việc chứng nhận cải tạo của Cục Đăng kiểm Việt Nam; trong thời hạn 1,5 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm khác, cụ thể như sau:
+4. Trình tự, thủ tục cấp lại giấy chứng nhận cải tạo
+Cơ sở đăng kiểm thực hiện việc cấp lại giấy chứng nhận cải tạo theo mẫu quy định tại Phụ lục XVIII ban hành kèm theo Thông tư này trong thời hạn 01 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm hoặc trường hợp hồ sơ điện tử được lưu tại phần mềm quản lý việc chứng nhận cải tạo của Cục Đăng kiểm Việt Nam; trong thời hạn 1,5 ngày làm việc kể từ thời điểm nhận được hồ sơ đối với trường hợp hồ sơ lưu trữ tại cơ sở đăng kiểm khác, cụ thể như sau:
 a) Cấp lại đối với trường hợp giấy chứng nhận cải tạo bị mất, hỏng: căn cứ hồ sơ cải tạo lưu trữ hoặc dữ liệu lưu trữ trên phần mềm quản lý xe cải tạo, cơ sở đăng kiểm thực hiện cấp lại giấy chứng nhận cải tạo.
 b) Cấp lại đối với trường hợp giấy chứng nhận cải tạo sai thông tin: căn cứ dữ liệu lưu trữ trên phần mềm quản lý xe cải tạo và hồ sơ cải tạo lưu trữ, trường hợp đủ căn cứ xác định giấy chứng nhận cải tạo đã cấp sai thông tin, cơ sở đăng kiểm thực hiện điều chỉnh thông tin và cấp lại giấy chứng nhận cải tạo.
 5. Trường hợp giấy chứng nhận xe cơ giới cải tạo có thời hạn theo các quy định của pháp luật tại thời điểm cấp giấy chứng nhận cải tạo, tổ chức, cá nhân có nhu cầu cấp lại để thực hiện việc cấp đổi chứng nhận đăng ký, việc cấp lại được thực hiện như sau:
@@ -724,11 +740,13 @@ Hư hỏng  GCN  Tem Mất  GCN  Tem Sai thông tin  GCN  Tem 
  Tại cơ sở đăng kiểm  Ngoài cơ sở đăng kiểm
 4. Thông tin xe:
 - Kinh doanh vận tải  Có  Không - Thiết bị giám sát hành trình  Có  Không - Thiết bị ghi nhận hình ảnh người lái xe  Có  Không - Xe ô tô chở trẻ em mầm non, học sinh hoặc kinh doanh vận tải kết hợp với hoạt động đưa đón trẻ em mầm non, học sinh  Có  Không - Xe vận chuyển vật liệu nổ công nghiệp, tiền chất thuốc nổ  Có  Không II. Tiếp nhận của cơ sở đăng kiểm Danh mục Lần kiểm định trong ngày Ghi chú Lần 1 Lần 2 Lần 3
-1. Danh mục tiếp nhận hồ sơ Giấy tờ về đăng ký xe    Ảnh chụp số khung, số động cơ    Phiếu kiểm tra chất lượng xuất xưởng (bản sao)
+1. Danh mục tiếp nhận hồ sơ
+Giấy tờ về đăng ký xe    Ảnh chụp số khung, số động cơ    Phiếu kiểm tra chất lượng xuất xưởng (bản sao)
    Thông báo miễn hoặc Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường (đối với xe nhập khẩu) (bản sao)
    Ảnh chụp xe    Văn bản đề nghị kiểm định ATKT và BVMT xe cơ giới chạy rà trước khi thử nghiệm khí thải    Đơn đề nghị cấp lại GCN kiểm định, tem kiểm định, GCN cải tạo    Giấy chứng nhận cải tạo (bản chính)
    Giấy chứng nhận kết quả kiểm định còn hiệu lực đối với thiết bị nâng, xi téc    Văn bản đề nghị kiểm định ngoài cơ sở đăng kiểm   
-2. Hồ sơ kiểm định Số phiếu kiểm định Số quản lý hồ sơ phương tiện
+2. Hồ sơ kiểm định
+Số phiếu kiểm định Số quản lý hồ sơ phương tiện
 3. Trả kết quả kiểm định  Giấy chứng nhận kiểm định  Tem kiểm định  Thông báo không đạt Người nộp hồ sơ (Ký và ghi rõ họ tên)
 Người lập phiếu (Ký và ghi rõ họ tên)
 Hướng dẫn ghi:
@@ -753,11 +771,13 @@ II. NGUYÊN TẮC XÁC ĐỊNH THỜI HẠN HIỆU LỰC CỦA GIẤY CHỨNG NH
 Ví dụ: Ô tô chở người đến 8 chỗ (không kể chỗ của người lái xe) không kinh doanh vận tải, sản xuất năm 2026 (xe chưa qua sử dụng), ngày 10/8/2026, chủ xe nộp hồ sơ miễn kiểm định lần đầu.
 - Theo Bảng chu kỳ kiểm định, xe này có chu kỳ đầu là 36 tháng.
 - Kết quả: Xe được cấp GCN có thời hạn đến hết ngày 09/8/2029.
-2. Trường hợp cấp lại giấy chứng nhận kiểm định Áp dụng cho các trường hợp không thay đổi loại hình vận tải.
+2. Trường hợp cấp lại giấy chứng nhận kiểm định
+Áp dụng cho các trường hợp không thay đổi loại hình vận tải.
 Nguyên tắc: Thời hạn hiệu lực của GCN được cấp = thời hạn hiệu lực còn lại của GCN đã cấp trước đó.
 Ví dụ: Ô tô tải sản xuất năm 2020, ngày 15/02/2026, xe kiểm định định kỳ đạt yêu cầu, được cấp hạn kiểm định 12 tháng (hết hạn vào 14/02/2027). Ngày 20/9/2026, chủ xe đi làm thủ tục sang tên, đổi biển số xe và đến cơ sở đăng kiểm xin cấp lại GCN.
 Kết quả: Xe được cấp GCN có thời hạn đến hết ngày 14/02/2027.
-3. Trường hợp cấp lại GCN do thay đổi loại hình vận tải Nguyên tắc: Áp dụng khi xe thay đổi mục đích sử dụng từ "không KDVT"
+3. Trường hợp cấp lại GCN do thay đổi loại hình vận tải
+Nguyên tắc: Áp dụng khi xe thay đổi mục đích sử dụng từ "không KDVT"
 sang "có KDVT" hoặc ngược lại và chủ xe đề nghị cấp lại GCN (không kiểm định xe). Thời hạn hiệu lực của GCN cấp lại được xác định theo nguyên tắc không được vượt quá thời hạn kiểm định tương ứng với loại hình vận tải có chu kỳ ngắn hơn, cụ thể:
 a) Trường hợp chuyển từ có KDVT sang không KDVT:
 - Nguyên tắc: Thời hạn hiệu lực của GCN cấp lại được giữ nguyên, bằng với thời hạn hiệu lực còn lại của GCN đã cấp trước đó.
@@ -788,7 +808,8 @@ Chu kỳ định kỳ (2)
 5. Xe chở người bốn bánh có gắn động cơ
 6. Xe chở hàng bốn bánh có gắn động cơ
 7. Xe máy chuyên dùng
-8. Xe mô tô, xe gắn máy 8.1 Thời gian sản xuất đến 05 năm (3)
+8. Xe mô tô, xe gắn máy 8.1
+Thời gian sản xuất đến 05 năm (3)
 8.2 Thời gian sản xuất đến 12 năm (trừ trường hợp quy định tại mục 8.1 của bảng này)
 24 (4)
 8.3 Thời gian sản xuất trên 12 năm 12 (5)
@@ -1432,7 +1453,8 @@ Hôm nay ngày ... tháng ... năm ... tại (tên cơ sở cải tạo, địa 
 STT Đặc điểm xe cải tạo Trước cải tạo Sau cải tạo Loại phương tiện Nhãn hiệu / Mã kiểu loại Số khung Số động cơ
 3. Nội dung cải tạo .............................................................................................................................................
 ....................................................................................................................................................
-4. Thông số kỹ thuật cơ bản trước và sau cải tạo STT Thông số kỹ thuật Đơn vị Trước cải tạo Sau cải tạo Kích thước bao ngoài (dài x rộng x cao)
+4. Thông số kỹ thuật cơ bản trước và sau cải tạo
+STT Thông số kỹ thuật Đơn vị Trước cải tạo Sau cải tạo Kích thước bao ngoài (dài x rộng x cao)
 mm Kích thước lòng thùng hàng/ bao xi téc (dài x rộng x cao)
 mm Chiều dài cơ sở mm Vết bánh xe (trước/sau)
 mm Khối lượng bản thân kg Số người cho phép chở (không kể chỗ của người lái xe)
@@ -1442,7 +1464,8 @@ TT Các hạng mục kiểm tra (*)
 Yêu cầu theo thiết kế/ tài liệu kỹ thuật(**)
 Kết quả kiểm tra thực tế(***)
 ......
-6. Kết luận chung Xe cải tạo đã được kiểm tra xuất xưởng và đạt yêu cầu theo hồ sơ thiết kế, quy chuẩn kỹ thuật quốc gia tương ứng.
+6. Kết luận chung
+Xe cải tạo đã được kiểm tra xuất xưởng và đạt yêu cầu theo hồ sơ thiết kế, quy chuẩn kỹ thuật quốc gia tương ứng.
 Biên bản này đã được các bên tham gia thống nhất thông qua và được lập thành 02 (hai) bản có giá trị như nhau; 01 (một) bản lưu tại cơ sở cải tạo, 01 (một) bản giao cho chủ xe hoặc người được ủy quyền.
 Chủ xe hoặc người được ủy quyền (Ký tên, ghi rõ họ tên)
 Kỹ thuật viên (Ký, ghi rõ họ tên)
@@ -1464,7 +1487,8 @@ Căn cứ hồ sơ đề nghị chứng nhận cải tạo số: ……. ngày �
 STT Đặc điểm xe cải tạo Trước cải tạo Sau cải tạo Loại phương tiện Nhãn hiệu / Mã kiểu loại Số động cơ Số khung
 3. Nội dung cải tạo ...........................................................................................................................................
 ....................................................................................................................................................
-4. Thông số kỹ thuật cơ bản của xe trước và sau cải tạo STT Thông số kỹ thuật Đơn vị Trước cải tạo Sau cải tạo Kích thước bao (dài x rộng x cao)
+4. Thông số kỹ thuật cơ bản của xe trước và sau cải tạo
+STT Thông số kỹ thuật Đơn vị Trước cải tạo Sau cải tạo Kích thước bao (dài x rộng x cao)
 mm Kích thước lòng thùng hàng/ bao xi téc (dài x rộng x cao)
 mm Chiều dài cơ sở mm Vết bánh xe (trước/sau)
 mm Khối lượng bản thân kg Số người cho phép chở (không kể chỗ của người lái xe)
@@ -1478,7 +1502,8 @@ Kết luận (***)
 6. Nội dung không đạt (nếu có)(5)
 …………………………………………………………………………………...............
 …………………………………………………………………………………………............
-7. Kết luận chung(6): □ Đạt yêu cầu □ Không đạt yêu cầu Biên bản đã được thông qua và lưu cùng với hồ sơ chứng nhận xe cải tạo.
+7. Kết luận chung(6): □ Đạt yêu cầu □ Không đạt yêu cầu
+Biên bản đã được thông qua và lưu cùng với hồ sơ chứng nhận xe cải tạo.
 Đăng kiểm viên(4)
 (Ký, ghi rõ họ tên)
 Lãnh đạo cơ sở đăng kiểm(3)
@@ -1506,7 +1531,8 @@ b) Chủ xe hoặc người được ủy quyền: ………………………�
 STT Đặc điểm xe cải tạo Trước cải tạo Sau cải tạo Loại phương tiện Nhãn hiệu / Mã kiểu loại Số động cơ Số khung
 3. Nội dung cải tạo .............................................................................................................................................
 ....................................................................................................................................................
-4. Thông số kỹ thuật cơ bản trước và sau cải tạo STT Thông số kỹ thuật Đơn vị Trước cải tạo Sau cải tạo Kích thước bao (dài x rộng x cao)
+4. Thông số kỹ thuật cơ bản trước và sau cải tạo
+STT Thông số kỹ thuật Đơn vị Trước cải tạo Sau cải tạo Kích thước bao (dài x rộng x cao)
 mm Kích thước lòng thùng hàng/ bao xi téc (dài x rộng x cao)
 mm Chiều dài cơ sở mm Vết bánh xe (trước/sau)
 mm Khối lượng bản thân kg Số người cho phép chở (không kể chỗ của người lái xe)
@@ -1523,7 +1549,8 @@ Kết luận (****)
 7. Nội dung không đạt (nếu có)(6)
 …………………………………………………………………………………...............
 …………………………………………………………………………………………............
-8. Kết luận chung(7): □ Đạt yêu cầu □ Không đạt yêu cầu Biên bản đã được thông qua và lập thành 03 bản, 01 bản lưu tại cơ sở đăng kiểm, 02 bản giao cho chủ xe hoặc người được ủy quyền.
+8. Kết luận chung(7): □ Đạt yêu cầu □ Không đạt yêu cầu
+Biên bản đã được thông qua và lập thành 03 bản, 01 bản lưu tại cơ sở đăng kiểm, 02 bản giao cho chủ xe hoặc người được ủy quyền.
 Chủ xe hoặc người được ủy quyền (Ký, ghi rõ họ tên)
 Đăng kiểm viên (Ký, ghi rõ họ tên)
 Lãnh đạo cơ sở đăng kiểm (Ký tên, đóng dấu)
@@ -1555,7 +1582,8 @@ Số động cơ:
 3. Nội dung thay đổi (7):
 …………………………………………………………………………………........................
 …………………………………………………………………………………………............
-4. Thông số kỹ thuật của xe trước và sau thay đổi STT Thông số kỹ thuật Đơn vị Trước thay đổi (danh định(8))
+4. Thông số kỹ thuật của xe trước và sau thay đổi
+STT Thông số kỹ thuật Đơn vị Trước thay đổi (danh định(8))
 Sau thay đổi Kết quả kiểm tra (Đạt/không đạt)
 Kích thước bao của xe (dài x rộng x cao)
 mm (9)
@@ -1607,8 +1635,10 @@ Tự sản xuất, chế tạo(2)
 Chưa qua SD Đã qua SD
 1. Động cơ 1.1 …
 2. Hệ thống lái
-3. Hệ thống phanh 3.1 Bình khí nén 3.2 …
-4. Hệ thống điện, đèn chiếu sáng và tín hiệu 4.1 Đèn chiếu sáng phía trước 4.2 …….
+3. Hệ thống phanh 3.1
+Bình khí nén 3.2 …
+4. Hệ thống điện, đèn chiếu sáng và tín hiệu 4.1
+Đèn chiếu sáng phía trước 4.2 …….
 …..
 Nơi nhận:
 - Như trên;
