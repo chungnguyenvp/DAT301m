@@ -78,4 +78,21 @@ Một văn bản có nhiều file vì được đăng trên nhiều số Công b
 ## Tổng sau hai đợt
 34 văn bản, 94 file, 294 MB. Danh sách đầy đủ trong `data/manifest.csv`.
 
-**Lưu ý lưu trữ:** `data/raw/` không đưa lên Git (xem `.gitignore`). Tái tạo bằng `python scripts/download_raw.py` và đối chiếu sha256 trong `data/manifest.csv`.
+## 2026-10-16: Đợt 3, bản Word của hai thông tư trước đây chỉ có ảnh
+
+**Nguồn:** Công báo Chính phủ, nhóm tự tải bản Word từ trang văn bản:
+| doc_id | File | Trang Công báo |
+|---|---|---|
+| tt_108_2026_bca | `tt_108_2026_bca__p2.docx` (3,8 MB) | https://congbao.chinhphu.vn/van-ban/thong-tu-so-108-2026-tt-bca-470055/67051.htm |
+| tt_155_2025_btc | `tt_155_2025_btc__p2.docx` (50 KB) | https://congbao.chinhphu.vn/van-ban/thong-tu-so-155-2025-tt-btc-468559.htm |
+
+Đợt 1 ghi hai văn bản này không có trên Công báo; khi đó chưa tìm thấy, nay đã có trang văn bản.
+
+**Kiểm tra:** đúng số hiệu, trích yếu và ngày ký ở đầu văn bản; số Điều và số phụ lục khớp bản PDF ảnh (TT 108: 43 Điều, 14 phụ lục; TT 155: 8 Điều, 1 phụ lục); `data/manifest.csv` ghi sha256, cột `url` là trang văn bản trên Công báo (không phải link file trực tiếp nên `scripts/download_raw.py` không tải lại được hai file này). Bản PDF ảnh từ vanban.chinhphu.vn vẫn giữ để đối chiếu.
+
+**TT 36/2024/TT-BYT:** không có bản Word; bản PDF nhóm có trùng sha256 với file đã tải ở đợt 2. Lớp chữ sẵn có trong PDF đọc dấu tốt hơn Tesseract ở phần thân nhưng làm mất nội dung bảng Phụ lục I. Nhóm lấy bản chữ thuần từ thuvienphapluat.vn (https://thuvienphapluat.vn/van-ban/The-thao-Y-te/Thong-tu-36-2024-TT-BYT-tieu-chuan-suc-khoe-nguoi-dieu-khien-xe-may-chuyen-dung-622478.aspx), lưu thành `tt_36_2024_byt__p2.txt`. Đây **không phải nguồn nhà nước**: chỉ dùng làm nguồn chữ sau khi so từng từ phần thân với PDF chính thức (không có khác biệt nội dung) và dựng lại bảng Phụ lục I theo ảnh PDF. PDF chính thức vẫn là bản gốc để tra.
+
+## Tổng sau ba đợt
+34 văn bản, 97 file. Danh sách đầy đủ trong `data/manifest.csv`.
+
+**Lưu ý lưu trữ:** `data/raw/` không đưa lên Git (xem `.gitignore`). Tái tạo bằng `python scripts/download_raw.py` và đối chiếu sha256 trong `data/manifest.csv`; hai file Word và file chữ TT 36 của đợt 3 phải tải tay từ các trang ở trên.

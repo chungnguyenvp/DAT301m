@@ -21,6 +21,10 @@ def pick_sources(rows: list[dict]) -> tuple[list[dict], str]:
     word = [r for r in rows if r["dinh_dang"] in ("doc", "docx")]
     if word:
         return word, "docx"
+    # Chữ thuần đã đối chiếu với bản gốc, dùng cho văn bản chỉ có PDF ảnh (ghi nguồn trong manifest).
+    text = [r for r in rows if r["dinh_dang"] == "txt"]
+    if text:
+        return text, "txt"
     pdfs = [r for r in rows if r["dinh_dang"] == "pdf"]
     doc_id = rows[0]["doc_id"]
     scanned = doc_id in config.SCANNED_DOCS or any(

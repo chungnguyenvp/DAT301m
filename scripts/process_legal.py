@@ -15,7 +15,7 @@ from lawproc.assemble import (article_report, assemble_doc, drop_toc_lines, grou
 from lawproc.convert import convert_doc_files  # noqa: E402
 from lawproc.corrections import apply_corrections  # noqa: E402
 from lawproc.effective import decide_effective, find_effective  # noqa: E402
-from lawproc.extract import docx_lines, ocr_pdf_lines, pdf_lines  # noqa: E402
+from lawproc.extract import docx_lines, ocr_pdf_lines, pdf_lines, text_lines  # noqa: E402
 from lawproc.structure import Unit, parse_units  # noqa: E402
 from lawproc.validity import attach_exceptions, in_force_at, load_exceptions  # noqa: E402
 from lawproc.verify import check_identity  # noqa: E402
@@ -63,6 +63,8 @@ def load_part(row: dict, method: str) -> list[str]:
     path = config.ROOT / row["file"]
     if method == "docx":
         return docx_lines(DOCX_DIR / f"{path.stem}.docx")
+    if method == "txt":
+        return text_lines(path)
     if method == "ocr":
         return ocr_pdf_lines(path, OCR_DIR / path.stem,
                              retry_pages=config.REOCR_PAGES.get(path.stem, ()), retry_dpi=config.REOCR_DPI)

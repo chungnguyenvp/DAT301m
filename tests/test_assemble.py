@@ -27,6 +27,27 @@ def test_pick_sources_scanned_doc_uses_ocr():
     assert method == "ocr"
 
 
+def test_pick_sources_scanned_doc_with_word_skips_ocr():
+    rows = [_row("tt_108_2026_bca", "t__p1.pdf", "pdf"), _row("tt_108_2026_bca", "t__p2.docx", "docx")]
+    chosen, method = pick_sources(rows)
+    assert method == "docx"
+    assert [r["file"] for r in chosen] == ["t__p2.docx"]
+
+
+def test_pick_sources_text_before_pdf_after_word():
+    rows = [_row("tt_36_2024_byt", "t__p1.pdf", "pdf"), _row("tt_36_2024_byt", "t__p2.txt", "txt")]
+    chosen, method = pick_sources(rows)
+    assert method == "txt"
+    assert [r["file"] for r in chosen] == ["t__p2.txt"]
+    chosen, method = pick_sources(rows + [_row("tt_36_2024_byt", "t__p3.docx", "docx")])
+    assert method == "docx"
+
+
+def test_assemble_keeps_text_lines_unjoined():
+    assert assemble_doc("x", [["Điều 1. A", "1. Khoản một", "a) Điểm"]], "txt") == \
+        ["Điều 1. A", "1. Khoản một", "a) Điểm"]
+
+
 def test_assemble_orders_parts_and_joins_pdf_lines():
     part2 = ["Nghị định số 1/2024/NĐ-CP", "(Tiếp theo Công báo số 10 + 11)", "Điều 3. Hiệu lực", "thi hành"]
     part1 = ["CÔNG BÁO/Số 10 + 11/Ngày 01-01-2025 3", "Điều 1. Phạm vi", "Điều 2. Đối tượng",
