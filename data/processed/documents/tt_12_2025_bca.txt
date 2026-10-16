@@ -601,7 +601,7 @@ BIÊN BẢN SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
 Họ và tên: Ngày sinh: Số định danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: | Hạng: Số báo danh: Số xe sát hạch: Tổng thời gian sát hạch:
 Ảnh chân dungẢnh chụp ngẫu nhiên số 02Ảnh chụp ngẫu nhiên số 03Ảnh chụp ngẫu nhiên số 01
 STT | Bài thi | Thời điểm | Chi tiết lỗi | Điểm trừ
-Vào bài | Ra bài
+| | Vào bài | Ra bài
 1 | Đi qua hình số 8
 2 | Đi qua vạch đường thẳng
 3 | Đi qua đường có vạch cản
@@ -683,14 +683,14 @@ CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨ
 BIÊN BẢN SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
 Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Số xe sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Tổng thời gian sát hạch: | Ảnh chân dung
 Số TT | Các lỗi bị trừ điểm | Số lần mắc lỗi | Điểm trừ (tính cho 1 lần) | Tổng điểm trừ
-1 | Bánh xe đè vào vạch giới hạn hình sát hạch | 10
-2 | Điều khiển xe bị rung giật mạnh | 05
-3 | Xe bị chết máy | 10
-5 | Quá tổng thời gian thực hiện bài sát hạch | 05
-6 | Đi không đúng trình tự bài sát hạch | Đình chỉ sát hạch
-7 | Bánh xe đi ra ngoài vạch giới hạn hình sát hạch | Đình chỉ sát hạch
-8 | Xử lý tình huống không hợp lý gây tai nạn | Đình chỉ sát hạch
-9 | Không hoàn thành bài sát hạch | Đình chỉ sát hạch
+1 | Bánh xe đè vào vạch giới hạn hình sát hạch | | 10
+2 | Điều khiển xe bị rung giật mạnh | | 05
+3 | Xe bị chết máy | | 10
+5 | Quá tổng thời gian thực hiện bài sát hạch | | 05
+6 | Đi không đúng trình tự bài sát hạch | | Đình chỉ sát hạch
+7 | Bánh xe đi ra ngoài vạch giới hạn hình sát hạch | | Đình chỉ sát hạch
+8 | Xử lý tình huống không hợp lý gây tai nạn | | Đình chỉ sát hạch
+9 | Không hoàn thành bài sát hạch | | Đình chỉ sát hạch
 Cộng
 Kết luận: Số điểm đạt được:... Đạt □ Không đạt □ Sát hạch viên ký xác nhận | Học viên ký xác nhận kết quả
 Phụ lục IV
@@ -788,7 +788,7 @@ d) Trong sân sát hạch, ngoài khu vực các bài sát hạch, thí sinh s�
 a) Bài sát hạch số 1: xuất phát
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi bị trừ điểm
 1. Thí sinh thắt dây an toàn, dừng xe trước vạch xuất phát, chờ hiệu lệnh; 2. Khi có lệnh xuất phát (đèn xanh trên xe bật sáng, tiếng loa trên xe báo lệnh xuất phát), bật đèn xi nhan trái, lái xe xuất phát; 3. Tắt xi nhan trái ở khoảng cách 5 mét sau vạch xuất phát (đèn xanh trên xe tắt); 4. Lái xe đến bài sát hạch tiếp theo. | 1. Thắt dây an toàn trước khi xuất phát; 2. Khởi hành nhẹ nhàng, không bị rung giật, trong khoảng thời gian 20 giây; 3. Bật đèn xi nhan trái trước khi xuất phát; 4. Tắt đèn xi nhan trái ở khoảng cách 5 mét sau vạch xuất phát (đèn xanh trên xe tắt); 5. Giữ động cơ hoạt động liên tục; | 1. Không thắt dây an toàn, bị trừ 05 điểm; 2. Không bật đèn xi nhan trái khi xuất phát, bị trừ 05 điểm; 3. Không tắt đèn xi nhan trái ở khoảng cách 05 mét sau vạch xuất phát (đèn xanh trên xe tắt), bị trừ 05 điểm; 4. Không bật và tắt đèn xi nhan trái kịp thời bị trừ 05 điểm; 5. Quá 20 giây kể từ khi có lệnh xuất phát (đèn xanh trên xe bật sáng) không đi qua vạch xuất phát, bị trừ 05 điểm; 6. Quá 30 giây kể từ khi có lệnh xuất phát (đèn xanh trên xe bật sáng) không đi qua vạch xuất phát, bị đình chỉ sát hạch.
-6. Giữ tốc độ động cơ không quá 4000 vòng/phút; 7. Lái xe theo quy tắc giao thông đường bộ. 8. Tốc độ xe chạy không quá: - 24 km/h đối với hạng B, D1, D2 - 20 km/h đối với hạng C1, C, D | 7. Lái xe lên vỉa hè bị đình chỉ sát hạch; 8. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 9. Lái xe bị chết máy, mỗi lần bị trừ 05 điểm; 10. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần bị trừ 05 điểm; 11. Lái xe quá tốc độ quy định, cứ 3 giây bị trừ 01 điểm.
+| 6. Giữ tốc độ động cơ không quá 4000 vòng/phút; 7. Lái xe theo quy tắc giao thông đường bộ. 8. Tốc độ xe chạy không quá: - 24 km/h đối với hạng B, D1, D2 - 20 km/h đối với hạng C1, C, D | 7. Lái xe lên vỉa hè bị đình chỉ sát hạch; 8. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 9. Lái xe bị chết máy, mỗi lần bị trừ 05 điểm; 10. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần bị trừ 05 điểm; 11. Lái xe quá tốc độ quy định, cứ 3 giây bị trừ 01 điểm.
 b) Bài sát hạch: dừng xe nhường đường cho người đi bộ
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi bị trừ điểm
 1. Dừng xe để khoảng cách từ hình chiếu thanh cản phía trước của xe xuống mặt đường đến vạch dừng (khoảng cách A) không quá 500mm; 2. Lái xe đến bài sát hạch tiếp theo. | 1. Dừng xe cách vạch dừng quy định không quá 500mm; 2. Giữ động cơ hoạt động liên tục; 3. Giữ tốc độ động cơ không quá 4000 vòng/ phút; 4. Lái xe theo quy tắc giao thông đường bộ. 5. Tốc độ xe chạy không quá: - 24 km/h đối với hạng B, D1, D2 - 20 km/h đối với hạng C1, C, D | 1. Không dừng xe ở vạch dừng quy định, bị trừ 05 điểm; 2. Dừng xe chưa đến vạch dừng quy định, bị trừ 05 điểm; 3. Dừng xe quá vạch dừng quy định, bị trừ 05 điểm. 4. Lái xe lên vỉa hè bị đình chỉ sát hạch; 5. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 6. Lái xe bị chết máy, mỗi lần bị trừ 05 điểm; 7. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần bị trừ 5 điểm; 8. Lái xe quá tốc độ quy định, cứ 3 giây bị trừ 01 điểm. 9. Tổng thời gian đến bài sát hạch đang thực hiện quá quy định, cứ 03 giây bị trừ 01 điểm;
@@ -857,17 +857,17 @@ Các bước thực hiện | Yêu cầu đạt được | Các lỗi bị trừ 
 b) Bài sát hạch: tăng số, tăng tốc độ
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi bị trừ điểm
 1. Thí sinh thực hiện các thao tác để tăng số, tăng tốc độ; 2. Điều khiển xe đến bài sát hạch tiếp theo. | 1. Trong khoảng 100 m phải tăng lên 01 tay số và tốc độ tăng thêm tối thiểu 05km/h; 2. Giữ động cơ hoạt động liên tục; 3. Giữ tốc độ động cơ không quá 4000 vòng/ phút; | 1. Trong khoảng 100 m không tăng được số, tốc độ bị trừ 05 điểm; 2. Xe bị rung giật mạnh, bị trừ 05 điểm; 3. Lái xe bị chết máy, mỗi lần bị trừ 05 điểm; 4. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần bị trừ 05 điểm;
-4. Sử dụng tay số phù hợp với tốc độ; 5. Chấp hành quy tắc giao thông đường bộ; 6. Thực hiện các yêu cầu theo thông báo của loa trên xe sát hạch và hiệu lệnh của sát hạch viên; 7. Lái xe an toàn và không bị choạng lái quá làn đường quy định; | 5. Sử dụng từ tay số 3 trở lên khi tốc độ xe chạy dưới 20 km/h, cứ 03 giây trừ 02 điểm; 6. Vi phạm quy tắc giao thông đường bộ, bị trừ 10 điểm; 7. Không thực hiện theo hiệu lệnh của sát hạch viên, bị đình chỉ sát hạch; 8. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 9. Khi tăng hoặc giảm số, xe bị choạng lái quá làn đường quy định, bị đình chỉ sát hạch;
+| 4. Sử dụng tay số phù hợp với tốc độ; 5. Chấp hành quy tắc giao thông đường bộ; 6. Thực hiện các yêu cầu theo thông báo của loa trên xe sát hạch và hiệu lệnh của sát hạch viên; 7. Lái xe an toàn và không bị choạng lái quá làn đường quy định; | 5. Sử dụng từ tay số 3 trở lên khi tốc độ xe chạy dưới 20 km/h, cứ 03 giây trừ 02 điểm; 6. Vi phạm quy tắc giao thông đường bộ, bị trừ 10 điểm; 7. Không thực hiện theo hiệu lệnh của sát hạch viên, bị đình chỉ sát hạch; 8. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 9. Khi tăng hoặc giảm số, xe bị choạng lái quá làn đường quy định, bị đình chỉ sát hạch;
 c) Bài sát hạch: giảm số, giảm tốc độ
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi bị trừ điểm
 1. Thí sinh thực hiện các thao tác để giảm số, giảm tốc độ; 2. Điều khiển xe đến bài sát hạch tiếp theo. | 1. Trong khoảng 100 m phải giảm xuống 01 tay số và tốc độ giảm tối thiểu 05km/h; | 1. Trong khoảng 100 m không giảm được số, tốc độ, bị trừ 05 điểm; 2. Xe bị rung giật mạnh, bị trừ 05 điểm;
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi bị trừ điểm
-2. Giữ động cơ hoạt động liên tục; 3. Giữ tốc độ động cơ không quá 4000 vòng/ phút; 4. Sử dụng tay số phù hợp với tốc độ; | 3. Lái xe bị chết máy, mỗi lần bị trừ 05 điểm; 4. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần bị trừ 05 điểm; 5. Sử dụng từ tay số 3 trở lên khi tốc độ xe chạy dưới 20 km/h, cứ 03 giây trừ 02 điểm;
-5. Chấp hành quy tắc giao thông đường bộ; 6. Thực hiện các yêu cầu theo thông báo của loa trên xe sát hạch và hiệu lệnh của sát hạch viên; 7. Lái xe an toàn và không bị choạng lái quá làn đường quy định; | 6. Vi phạm quy tắc giao thông đường bộ, bị trừ 10 điểm; 7. Không thực hiện theo hiệu lệnh của sát hạch viên, bị đình chỉ sát hạch; 8. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 9. Khi tăng hoặc giảm số, xe bị choạng lái quá làn đường quy định, bị đình chỉ sát hạch;
+| 2. Giữ động cơ hoạt động liên tục; 3. Giữ tốc độ động cơ không quá 4000 vòng/ phút; 4. Sử dụng tay số phù hợp với tốc độ; | 3. Lái xe bị chết máy, mỗi lần bị trừ 05 điểm; 4. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần bị trừ 05 điểm; 5. Sử dụng từ tay số 3 trở lên khi tốc độ xe chạy dưới 20 km/h, cứ 03 giây trừ 02 điểm;
+| 5. Chấp hành quy tắc giao thông đường bộ; 6. Thực hiện các yêu cầu theo thông báo của loa trên xe sát hạch và hiệu lệnh của sát hạch viên; 7. Lái xe an toàn và không bị choạng lái quá làn đường quy định; | 6. Vi phạm quy tắc giao thông đường bộ, bị trừ 10 điểm; 7. Không thực hiện theo hiệu lệnh của sát hạch viên, bị đình chỉ sát hạch; 8. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 9. Khi tăng hoặc giảm số, xe bị choạng lái quá làn đường quy định, bị đình chỉ sát hạch;
 d) Bài sát hạch: kết thúc
 Các bước thực hiện | Yêu cầu đạt được | Các lỗi bị trừ điểm
 1. Khi có lệnh kết thúc (tiếng loa trên xe báo lệnh kết thúc), bật đèn xi nhan phải, lái xe sát lề đường bên phải; 2. Dừng xe; 3. Giảm hết số khi dừng xe 4. Kéo phanh tay khi xe dừng hẳn. | 1. Bật đèn xi nhan phải trong khoảng 05 m từ khi có lệnh kết thúc; 2. Dừng xe sát lề đường bên phải; 3. Khi xe dừng hẳn phải về số "không" (đối với xe số sàn), số "P" (đối với xe chuyển số tự động (bao gồm cả xe ô tô điện)); 4. Kéo phanh tay khi xe dừng hẳn; 5. Giữ động cơ hoạt động liên tục; 6. Giữ tốc độ động cơ không quá 4000 vòng/ phút; 7. Sử dụng tay số phù hợp với tốc độ; | 1. Không bật đèn xi nhan phải, bị trừ 05 điểm; 2. Khi xe dừng hẳn, không về được số "không" (đối với xe số sàn), số "P" (đối với xe chuyển số tự động (bao gồm cả xe ô tô điện)), bị trừ 05 điểm; 3. Không kéo phanh tay khi xe dừng hẳn, bị trừ 05 điểm; 4. Xe bị rung giật mạnh, bị trừ 05 điểm; 5. Lái xe bị chết máy, mỗi lần bị trừ 05 điểm; 6. Để tốc độ động cơ quá 4000 vòng/phút, mỗi lần bị trừ 05 điểm; 7. Sử dụng từ tay số 3 trở lên khi tốc độ xe chạy dưới 20 km/h, cứ 03 giây trừ 02 điểm;
-8. Chấp hành quy tắc giao thông đường bộ; 9. Thực hiện các yêu cầu theo thông báo của loa trên xe sát hạch và hiệu lệnh của sát hạch viên; 10. Lái xe an toàn và không bị choạng lái quá làn đường quy định. | 8. Vi phạm quy tắc giao thông đường bộ, bị trừ 10 điểm; 9. Không thực hiện theo hiệu lệnh của sát hạch viên, bị đình chỉ sát hạch; 10. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 11. Khi tăng hoặc giảm số, xe bị choạng lái quá làn đường quy định, bị đình chỉ sát hạch.
+| 8. Chấp hành quy tắc giao thông đường bộ; 9. Thực hiện các yêu cầu theo thông báo của loa trên xe sát hạch và hiệu lệnh của sát hạch viên; 10. Lái xe an toàn và không bị choạng lái quá làn đường quy định. | 8. Vi phạm quy tắc giao thông đường bộ, bị trừ 10 điểm; 9. Không thực hiện theo hiệu lệnh của sát hạch viên, bị đình chỉ sát hạch; 10. Xử lý tình huống không hợp lý gây tai nạn, bị đình chỉ sát hạch; 11. Khi tăng hoặc giảm số, xe bị choạng lái quá làn đường quy định, bị đình chỉ sát hạch.
 3. Công nhận kết quả:
 3.1. Thang điểm: 100 điểm.
 3.2. Điểm đạt: từ 80 điểm trở lên.
@@ -893,7 +893,7 @@ BIÊN BẢN SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
 Họ và tên: Ngày sinh: Số định danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: | Hạng: Số báo danh: Số xe sát hạch: Tổng thời gian sát hạch:
 Ảnhchân dungẢnh chụp ngẫu nhiên số 01Ảnh chụp ngẫu nhiên số 02Ảnh chụp ngẫu nhiên số 03
 STT | Bài thi | Thời điểm | Chi tiết lỗi | Điểm trừ
-Vào bài | Ra bài
+| | Vào bài | Ra bài
 1 | Xuất phát
 2 | Dừng xe nhường đường cho người đi bộ
 3 | Dừng và khởi hành xe ngang dốc
@@ -916,7 +916,7 @@ BIÊN BẢN SÁT HẠCH THỰC HÀNH LÁI XE TRÊN ĐƯỜNG
 Họ và tên: Ngày sinh: Số định danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: | Hạng: Số báo danh: Số xe sát hạch: Tổng thời gian sát hạch:
 Ảnh chụp ngẫu nhiên Ảnh chụp ngẫu nhiên Ảnh chụp ngẫu nhiên Ảnhchân dung
 STT | Bài thi | Thời điểm | Chi tiết lỗi | Điểm trừ
-Bắt đầu bài | Kết thúc bài
+| | Bắt đầu bài | Kết thúc bài
 1 | Xuất phát
 2 | Tăng số
 3 | Giảm số
@@ -1078,13 +1078,13 @@ CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨ
 BIÊN BẢN SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
 Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Số xe sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Tổng thời gian sát hạch: | Ảnh chân dung
 Số TT | Các lỗi bị trừ điểm | Số lần mắc lỗi | Điểm trừ (tính cho 1 lần) | Tổng điểm trừ
-1 | Chạm 01 cọc chuẩn, nhưng không đổ | 15
-2 | Chạm làm đổ 01 cọc chuẩn | 25
-3 | Quá tổng thời gian thực hiện bài sát hạch | 5
-4 | Xe bị chết máy | 5
-5 | Đi không đúng trình tự bài sát hạch | Đình chỉ sát hạch
-6 | Xử lý tình huống không hợp lý gây tai nạn | Đình chỉ sát hạch
-7 | Không hoàn thành bài sát hạch | Đình chỉ sát hạch
+1 | Chạm 01 cọc chuẩn, nhưng không đổ | | 15
+2 | Chạm làm đổ 01 cọc chuẩn | | 25
+3 | Quá tổng thời gian thực hiện bài sát hạch | | 5
+4 | Xe bị chết máy | | 5
+5 | Đi không đúng trình tự bài sát hạch | | Đình chỉ sát hạch
+6 | Xử lý tình huống không hợp lý gây tai nạn | | Đình chỉ sát hạch
+7 | Không hoàn thành bài sát hạch | | Đình chỉ sát hạch
 Cộng
 Kết luận: Số điểm đạt được:... Đạt □ Không đạt □ Sát hạch viên ký xác nhận | Học viên ký xác nhận kết quả
 Mẫu số 03.
@@ -1105,9 +1105,9 @@ Số TT | Các lỗi bị trừ điểm | Điểm trừ (tính cho 1 lần) | S�
 11 | Không bật đèn xi nhan phải trước khi dừng xe | 2
 12 | Không giảm hết số trước khi dừng xe | 2
 13 | Không kéo phanh tay khi dừng xe | 2
-14 | Không thực hiện theo hiệu lệnh của sát hạch viên | Đình chỉ sát hạch
-15 | Xử lý tình huống không hợp lý gây tai nạn | Đình chỉ sát hạch
-16 | Khi tăng hoặc giảm số, xe bị choạng lái quá làn đường quy định | Đình chỉ sát hạch
+14 | Không thực hiện theo hiệu lệnh của sát hạch viên | | Đình chỉ sát hạch
+15 | Xử lý tình huống không hợp lý gây tai nạn | | Đình chỉ sát hạch
+16 | Khi tăng hoặc giảm số, xe bị choạng lái quá làn đường quy định | | Đình chỉ sát hạch
 Cộng
 Kết luận:
 Số điểm đạt được:...
@@ -1275,15 +1275,15 @@ CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨ
 BIÊN BẢN SÁT HẠCH THỰC HÀNH LÁI XE TRONG HÌNH
 Họ và tên: Ngày sinh: Số định danh: Hạng: Số báo danh: Lần thi: | Khóa sát hạch: Ngày sát hạch: Số xe sát hạch: Thời điểm bắt đầu: Thời điểm kết thúc: Tổng thời gian sát hạch: | Ảnh chân dung
 Số TT | Các lỗi bị trừ điểm | Số lần mắc lỗi | Điểm trừ (tính cho 1 lần) | Tổng điểm trừ
-1 | Chạm 01 cọc chuẩn, nhưng không đổ | 10
-2 | Chạm làm đổ 01 cọc chuẩn | 15
-3 | Quá tổng thời gian thực hiện 01 bài sát hạch | 5
-4 | Xe bị chết máy | 5
-5 | Đỗ xe không đúng vị trí quy định | 5
-6 | Chưa ghép được xe vào nơi đỗ | Đình chỉ sát hạch
-7 | Đi không đúng trình tự bài sát hạch | Đình chỉ sát hạch
-8 | Xử lý tình huống không hợp lý gây tai nạn | Đình chỉ sát hạch
-9 | Không hoàn thành bài sát hạch tiến qua hình có 05 cọc chuẩn | Đình chỉ sát hạch
+1 | Chạm 01 cọc chuẩn, nhưng không đổ | | 10
+2 | Chạm làm đổ 01 cọc chuẩn | | 15
+3 | Quá tổng thời gian thực hiện 01 bài sát hạch | | 5
+4 | Xe bị chết máy | | 5
+5 | Đỗ xe không đúng vị trí quy định | | 5
+6 | Chưa ghép được xe vào nơi đỗ | | Đình chỉ sát hạch
+7 | Đi không đúng trình tự bài sát hạch | | Đình chỉ sát hạch
+8 | Xử lý tình huống không hợp lý gây tai nạn | | Đình chỉ sát hạch
+9 | Không hoàn thành bài sát hạch tiến qua hình có 05 cọc chuẩn | | Đình chỉ sát hạch
 Cộng
 Kết luận: Số điểm đạt được:... Đạt □ Không đạt □ Sát hạch viên ký xác nhận | Học viên ký xác nhận kết quả
 Mẫu số 03.
@@ -1304,9 +1304,9 @@ Số TT | Các lỗi bị trừ điểm | Điểm trừ (tính cho 1 lần) | S�
 14 | Không giảm hết số khi dừng xe | 2
 15 | Không bật đèn xi nhan phải trước khi dừng xe | 2
 16 | Không kéo phanh tay khi dừng xe | 2
-10 | Không thực hiện theo hiệu lệnh của sát hạch viên | Đình chỉ sát hạch
-11 | Xử lý tình huống không hợp lý gây tai nạn | Đình chỉ sát hạch
-12 | Khi tăng hoặc giảm số xe bị choạng lái quá làn đường quy định | Đình chỉ sát hạch
+10 | Không thực hiện theo hiệu lệnh của sát hạch viên | | Đình chỉ sát hạch
+11 | Xử lý tình huống không hợp lý gây tai nạn | | Đình chỉ sát hạch
+12 | Khi tăng hoặc giảm số xe bị choạng lái quá làn đường quy định | | Đình chỉ sát hạch
 Cộng
 Kết luận:
 Số điểm đạt được:...
@@ -1461,7 +1461,7 @@ Hôm nay, ngày....... tháng..... năm..... tại trung tâm sát hạch lái x
 + Xe sát hạch và thiết bị báo lỗi trên xe (3)..........................................................
 + Hệ thống camera giám sát phòng sát hạch lý thuyết, sân sát hạch lái xe trong hình:
 ..............................................................................................................................
-SÁT HẠCH VIÊN | GIÁM ĐỐC TRUNG TÂM SHLX
+SÁT HẠCH VIÊN | | GIÁM ĐỐC TRUNG TÂM SHLX
 Ghi chú: Không ghi các nội dung (1), (2) và (3) đối với kỳ sát hạch lái xe các hạng A1 và A
 Mẫu số 04.
 CÔNG AN TỈNH... HỘI ĐỒNG SÁT HẠCH | CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ...., ngày...... tháng...... năm.......
@@ -1478,7 +1478,7 @@ I. Thông qua kết quả kỳ sát hạch:
 Tổng số hồ sơ dự thi:...... | Vắng không dự thi:...... (có danh sách kèm theo)
 a) Học viên dự thi lần đầu:
 Hạng GPLX | Tổng số hồ sơ | Tổng số dự thi | Thi Lý thuyết | Mô phỏng các tình huống giao thông (1) | Thực hành trong hình | Thực hành trên đường giao thông (2) | Kết quả đạt
-Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt
+| | | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt
 A1
 A
 B
@@ -1488,7 +1488,7 @@ C
 Cộng
 b) Thí sinh thuộc đối tượng cấp lại giấy phép lái xe:
 Hạng GPLX | Tổng số hồ sơ | Tổng số dự thi | Thi Lý thuyết | Mô phỏng các tình huống giao thông | Thực hành trong hình | Thực hành trên đường giao thông | Kết quả đạt
-Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt
+| | | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt
 B
 C1
 C
@@ -1506,7 +1506,7 @@ I | Phí Sát hạch lái xe
 4 | Thực hành trên đường giao thông
 II | Lệ phí cấp GPLX
 Tổng cộng (I + II)
-ỦY VIÊN | CHỦ TỊCH
+ỦY VIÊN | | CHỦ TỊCH
 THƯ KÝ
 Ghi chú: Không ghi các nội dung (1), (2) đối với kỳ sát hạch lái xe các hạng A1 và A
 PHỤ LỤC VIII
@@ -1565,7 +1565,7 @@ Nơi nhận: - Như trên; - Lưu: | CƠ SỞ ĐÀO TẠO (Ký tên, đóng dấ
 Mẫu số 03.
 CƠ QUAN CHỦ QUẢN CƠ SỞ ĐÀO TẠO | DANH SÁCH THÍ SINH DỰ SÁT HẠCH Cấp giấy phép lái xe hạng:........................... Khóa:............................................................. (Mỗi hạng lập 1 danh sách riêng) | Thời gian đào tạo:..... tháng Khai giảng ngày..... tháng..... năm..... Bế giảng ngày..... tháng..... năm.....
 STT | Họ và tên | Ngày tháng năm sinh | Số định danh | Nơi cư trú | Giấy chứng nhận sức khỏe hợp lệ | Đã có giấy phép lái xe hạng | Thâm niên lái xe | Số chứng chỉ sơ cấp, chứng chỉ đào tạo, xác nhận hoàn thành khóa đào tạo | Ghi chú
-Số năm lái xe | Thời gian lái xe an toàn
+| | | | | | | Số năm lái xe | Thời gian lái xe an toàn
 (1) | (2) | (3) | (4) | (5) | (6) | (7) | (8) | (9) | (10) | (11)
 Tên xếp theo vần A, B, C...
 ................, ngày..... tháng..... năm 20.....
@@ -1858,7 +1858,7 @@ KẾT QUẢ KỲ SÁT HẠCH LÁI XE
 1. Trung tâm sát hạch:
 2. Ngày sát hạch:
 Hạng GPLX | Tổng số hồ sơ | Tổng số dự thi | Thi Lý thuyết | Mô phỏng các tình huống giao thông | Thực hành trong hình | Thực hành trên đường giao thông | Kết quả đạt | Tỷ lệ %
-Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt
+| | | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt | Tổng số | Đạt | Trượt
 B1
 B
 C1
@@ -1875,7 +1875,7 @@ KẾT QUẢ KỲ SÁT HẠCH LÁI XE
 1. Trung tâm sát hạch:
 2. Ngày sát hạch:
 STT | Họ và tên | Ngày sinh | Số định danh | Hạng | Kết quả sát hạch
-LT (1) | Số lần SH | MP THGT (2) | Số lần SH | TH LXTH (3) | Số lần SH | TH LXTĐ (4) | Số lần SH | Tổng hợp (5)
+| | | | | LT (1) | Số lần SH | MP THGT (2) | Số lần SH | TH LXTH (3) | Số lần SH | TH LXTĐ (4) | Số lần SH | Tổng hợp (5)
 ...
 TRƯỞNG PHÒNG
 (Ký tên, đóng dấu)

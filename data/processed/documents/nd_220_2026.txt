@@ -111,7 +111,7 @@ Các tòa nhà chung cư, nhà ở tập thể khác cấp II trở lên
 1.2.8.1 | Không có tầng hầm | 1,1 | M
 1.2.8.2 | Có 1 tới 2 tầng hầm | 1,4 | M
 1.2.8.3 | Có trên 2 tầng hầm | 1,7 | M
-1.2.9 | Công trình phục vụ dân sinh khác cấp II trở lên: Các tòa nhà hoặc kết cấu khác được xây dựng phục vụ dân sinh | M
+1.2.9 | Công trình phục vụ dân sinh khác cấp II trở lên: Các tòa nhà hoặc kết cấu khác được xây dựng phục vụ dân sinh | | M
 1.2.9.1 | Không có tầng hầm | 0,8 | M
 1.2.9.2 | Có 1 tới 2 tầng hầm | 1,2 | M
 1.2.9.3 | Có trên 2 tầng hầm | 1,5 | M
@@ -274,7 +274,7 @@ b) Mức khấu trừ bảo hiểm:
 Mức khấu trừ bảo hiểm công trình trong thời gian xây dựng áp dụng theo bảng sau hoặc bằng 5% giá trị tổn thất, tùy theo số nào lớn hơn:
 Đơn vị: triệu đồng
 Giá trị bảo hiểm | Mức khấu trừ loại "M" | Mức khấu trừ loại "N"
-Đối với rủi ro thiên tai | Đối với rủi ro khác | Đối với rủi ro thiên tai | Đối với rủi ro khác
+| Đối với rủi ro thiên tai | Đối với rủi ro khác | Đối với rủi ro thiên tai | Đối với rủi ro khác
 Giá trị dưới 10.000 | 100 | 20 | 150 | 40
 Từ 10.000 đến dưới 20.000 | 150 | 30 | 200 | 40
 Từ 20.000 đến dưới 100.000 | 200 | 60 | 300 | 80
@@ -550,10 +550,10 @@ Tên doanh nghiệp bảo hiểm: ...
 Kỳ báo cáo: Năm ...
 1. Kết quả kinh doanh nghiệp vụ bảo hiểm tài sản
 STT | Số lượng công trình | Số vụ tổn thất | Doanh thu phí bảo hiểm (triệu đồng) | Chi phí hoạt động kinh doanh bảo hiểm (triệu đồng) | Lợi nhuận/Lỗ thuần hoạt động kinh doanh bảo hiểm (triệu đồng) (14) = (5)-(13)
-Doanh thu phí bảo hiểm gốc và nhận tái (1) | Phí nhượng tái bảo hiểm (2) | Hoa hồng nhượng tái bảo hiểm (3) | Thu khác (4) | Tổng cộng (5) = (1)-(2) + (3) + (4) | Chi bồi thường bảo hiểm gốc và nhận tái (6) | Thu bồi thường nhượng tái bảo hiểm (7) | Tăng (giảm) dự phòng bồi thường bảo hiểm gốc và nhận tái bảo hiểm (8) | Tăng (giảm) dự phòng bồi thường nhượng tái bảo hiểm (9) | Tăng (giảm) dự phòng dao động lớn (10) | Chi khác hoạt động kinh doanh bảo hiểm (11) | Chi quản lý doanh nghiệp (12) | Tổng cộng (13) = (6)- (7) + (8)-(9)+ (10)+ (11)+ (12)
+| | | Doanh thu phí bảo hiểm gốc và nhận tái (1) | Phí nhượng tái bảo hiểm (2) | Hoa hồng nhượng tái bảo hiểm (3) | Thu khác (4) | Tổng cộng (5) = (1)-(2) + (3) + (4) | Chi bồi thường bảo hiểm gốc và nhận tái (6) | Thu bồi thường nhượng tái bảo hiểm (7) | Tăng (giảm) dự phòng bồi thường bảo hiểm gốc và nhận tái bảo hiểm (8) | Tăng (giảm) dự phòng bồi thường nhượng tái bảo hiểm (9) | Tăng (giảm) dự phòng dao động lớn (10) | Chi khác hoạt động kinh doanh bảo hiểm (11) | Chi quản lý doanh nghiệp (12) | Tổng cộng (13) = (6)- (7) + (8)-(9)+ (10)+ (11)+ (12)
 2. Kết quả kinh doanh của bảo hiểm bắt buộc công trình trong thời gian xây dựng
 STT | Công trình xây dựng được bảo hiểm (*) | Số lượng công trình | Phí bảo hiểm (triệu đồng) | Bồi thường bảo hiểm (triệu đồng) | Số vụ tổn thất | Tổng số tiền bảo hiểm (triệu đồng)
-Phí bảo hiểm gốc | Phí bảo hiểm giữ lại | Bồi thường bảo hiểm gốc | Bồi thường bảo hiểm thuộc trách nhiệm giữ lại
+| | | Phí bảo hiểm gốc | Phí bảo hiểm giữ lại | Bồi thường bảo hiểm gốc | Bồi thường bảo hiểm thuộc trách nhiệm giữ lại
 I | CÔNG TRÌNH DÂN DỤNG
 1.1 | Nhà ở
 1.2 | Công trình công cộng

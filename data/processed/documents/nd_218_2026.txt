@@ -1162,7 +1162,7 @@ Số TT | Biển số xe | Trọng tải (ghế) | Năm sản xuất | Nhãn hi�
 A | B | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 Đối với phương tiện thay thế: ghi rõ phương tiện có biển kiểm soát…………….... thay thế phương tiện có biển kiểm soát..................................
 6. Loại hình kinh doanh vận tải:
-a) Hành khách theo tuyến cố định | b) Hành khách theo hợp đồng:
+a) Hành khách theo tuyến cố định | | b) Hành khách theo hợp đồng:
 c) Vận tải hàng hóa:
 Ghi chú: Đối với phương tiện vận chuyển hành khách theo tuyến cố định bổ sung thêm các thông tin sau:
 Tuyến:.................................. đi...................... và ngược lại.
@@ -1190,8 +1190,8 @@ Số TT | Biển số xe | Trọng tải (ghế) | Năm sản xuất | Nhãn hi�
 A | B | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 …
 5. Mục đích chuyến đi
-a) Công vụ: | b) Cá nhân:
-c) Hoạt động kinh doanh: | d) Mục đích khác
+a) Công vụ: | | b) Cá nhân:
+c) Hoạt động kinh doanh: | | d) Mục đích khác
 6. Nhận kết quả bằng hình thức:
 - Bản kết quả điện tử hợp lệ □
 - Bản kết quả giấy □

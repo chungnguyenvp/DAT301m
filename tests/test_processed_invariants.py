@@ -203,3 +203,15 @@ def test_annex_replacement_table_is_valid(versioned):
     from lawproc.status import check_annex_replacements, read_csv
 
     check_annex_replacements(read_csv(PROCESSED.parent / "annex_replacements.csv"), versioned)
+
+
+def test_tt_12_scoring_table_keeps_columns(versioned):
+    text = _live_annex(versioned, "tt_12_2025_bca:pl4")
+    assert "\n| 6. Giữ tốc độ động cơ không quá 4000 vòng/phút;" in text
+
+
+def test_replaced_licence_plate_annex_is_closed(versioned):
+    old = [r for r in versioned if r["unit_id"] == "tt_79_2024_bca:pl18"]
+    new = [r for r in versioned if r["unit_id"] == "tt_51_2025_bca:pl1"]
+    assert not any(_in_force(r) for r in old) and all(_in_force(r) for r in new)
+    assert old[-1]["pl_thay_the"][0]["bang"] == "tt_51_2025_bca:pl1"
