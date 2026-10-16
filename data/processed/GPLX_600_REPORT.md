@@ -29,5 +29,15 @@ Bộ eval trắc nghiệm phụ = **282 câu thuần chữ** (`co_hinh = false`)
 
 ## Việc còn lại
 
-- **Đối chiếu đáp án với luật tại ngày chốt 01/10/2026.** Bộ câu áp dụng từ 01/6/2025 theo TT 12/2025; sau đó TT 108/2026, Luật 118/2025, NĐ 238/2026 có hiệu lực. Câu nêu con số hoặc quy định đã sửa (mức phạt, tốc độ, điểm GPLX, hạng xe) cần rà và gắn nhãn `khop_luat_hien_hanh` trước khi dùng để chấm.
+## Đối chiếu đáp án với luật tại 01/10/2026 (2026-10-17)
+
+Bộ câu áp dụng từ 01/6/2025 và vẫn là bộ hiện hành (TT 108/2026 chỉ đổi nội dung sát hạch từ 01/3/2027). Đáp án chỉ có thể lệch luật nếu quy định làm căn cứ bị sửa sau 6/2025, nên đã lập danh sách điều bị sửa (Luật 118/2025 sửa Luật 36: Điều 9, 10, 11, 12, 27, 35, 41, 42, 49, 52, 53, 57, 62, 64…; NĐ 238/2026 sửa NĐ 168) rồi rà mọi câu thuần chữ liên quan (xe ưu tiên, chở trẻ em, thiết bị giám sát hành trình, thời gian lái xe, hạng và độ tuổi GPLX, điểm GPLX, thu hồi GPLX, mũ bảo hiểm, nồng độ cồn).
+
+- **Câu 172** ("thời gian làm việc của người lái xe ô tô kinh doanh vận tải trong một ngày", đáp án "không quá 10 giờ"): căn cứ là khoản 1 Điều 64 Luật 36; từ 01/7/2026 Luật 118 bỏ giới hạn 10 giờ/ngày, 48 giờ/tuần và chuyển sang Bộ luật Lao động. Gắn cờ trong `data/gplx_flags.csv`, trường `can_xem_phap_ly`; **loại khỏi bộ eval**.
+- Các câu khác trong nhóm trên vẫn đúng: 171 (lái liên tục không quá 4 giờ vẫn giữ), 42 (chở trẻ em: luật mới chỉ thêm ngoại lệ xe kinh doanh vận tải hành khách), 94–98 và 112 (danh sách xe ưu tiên không đổi, chỉ đổi màu đèn của xe quân sự), 143 (xe kinh doanh vận tải vẫn phải lắp thiết bị giám sát hành trình), 118–135 (độ tuổi, hạng GPLX), 139–141 (thu hồi, phục hồi điểm), 75 (mũ bảo hiểm).
+
+Bộ eval trắc nghiệm phụ dùng được tại 01/10/2026: **281 câu** (282 câu thuần chữ trừ câu 172).
+
+## Việc còn lại
+
 - Câu thuần chữ chương IV hỏi về cấu tạo xe, không có căn cứ trong kho văn bản luật; khi báo cáo nên tách kết quả theo chương.

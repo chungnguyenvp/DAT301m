@@ -1,6 +1,6 @@
 import pytest
 
-from lawproc.status import apply_annex_replacements, check_annex_replacements, mark_status
+from lawproc.status import apply_annex_replacements, check_annex_replacements, mark_scope, mark_status
 from lawproc.validity import in_force_at
 
 
@@ -62,3 +62,11 @@ def test_mark_status_flags_repealed_placeholders_and_content_gaps():
 def test_mark_status_refuses_unknown_gap_unit():
     with pytest.raises(ValueError, match="không có"):
         mark_status([_rec("y:pl1")], [{"unit_id": "y:pl9", "ly_do": "x", "can_cu": "y"}])
+
+
+def test_scope_flags_units_outside_the_article_range():
+    recs = [dict(_rec("blds:d583", level="dieu"), dieu="583"), dict(_rec("blds:d584:k1", level="khoan"), dieu="584"),
+            dict(_rec("blds:d608", level="dieu"), dieu="608"), dict(_rec("blds:pl1"), dieu=None),
+            dict(_rec("x:d1", level="dieu"), dieu="1")]
+    mark_scope(recs, {"blds": (584, 608)})
+    assert [r["trong_pham_vi"] for r in recs] == [False, True, True, False, True]

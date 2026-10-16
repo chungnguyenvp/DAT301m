@@ -4,6 +4,7 @@
 - `thieu_noi_dung`: lý do (từ `data/content_gaps.csv` đã duyệt) khi phần nguồn là ảnh chưa có chữ.
 - `pl_thay_the`: danh sách lần phụ lục này bị thay bởi phụ lục của văn bản khác (`data/annex_replacements.csv`, chỉ
   dòng `duyet = duyet`). Thay toàn bộ thì đóng bản cũ tại `tu_ngay`; thay một phần mẫu thì chỉ ghi chú.
+- `trong_pham_vi`: False với đơn vị nằm ngoài khoảng Điều được dùng của văn bản (`config.SCOPE_DIEU`: BLDS, BLHS).
 """
 import csv
 import re
@@ -31,6 +32,14 @@ def mark_status(records: list[dict], gaps: list[dict]) -> None:
         placeholder = not (r["text"] or "").strip() and ABOLISHED.match((r["title"] or "").strip())
         r["trang_thai"] = "bai_bo" if r["level"] == "dieu" and placeholder else None
         r["thieu_noi_dung"] = reason.get(r["unit_id"])
+
+
+def mark_scope(records: list[dict], scope: dict[str, tuple[int, int]]) -> None:
+    """`trong_pham_vi = False` cho đơn vị của văn bản chỉ dùng một khoảng Điều mà nằm ngoài khoảng đó."""
+    for r in records:
+        rng = scope.get(r["doc_id"])
+        m = re.match(r"\d+", r.get("dieu") or "")
+        r["trong_pham_vi"] = rng is None or (m is not None and rng[0] <= int(m.group()) <= rng[1])
 
 
 def _valid_date(value: str) -> bool:

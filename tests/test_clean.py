@@ -88,3 +88,12 @@ def test_strip_part_drops_digital_signature_stamp_block():
 def test_strip_part_keeps_body_line_that_only_starts_like_a_stamp_field():
     lines = ["Cơ quan: Ủy ban nhân dân cấp tỉnh có trách nhiệm hướng dẫn."]
     assert strip_part(lines)[0] == lines
+
+
+def test_join_wrapped_keeps_short_clause_heading_apart_from_its_body():
+    full = "Người nộp hồ sơ lựa chọn bất kỳ cơ sở đăng kiểm nào trên phạm vi cả nước để nộp 01"
+    lines = ["1. Nộp hồ sơ đề nghị", full, "bộ hồ sơ.", "2. Cơ sở đăng kiểm tiếp nhận hồ sơ, kiểm tra thành phần hồ sơ và",
+             "Phiếu kiểm soát.", full, full, full]
+    assert join_wrapped(lines)[:3] == [
+        "1. Nộp hồ sơ đề nghị", f"{full} bộ hồ sơ.",
+        "2. Cơ sở đăng kiểm tiếp nhận hồ sơ, kiểm tra thành phần hồ sơ và Phiếu kiểm soát."]

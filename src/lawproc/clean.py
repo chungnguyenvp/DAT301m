@@ -72,13 +72,21 @@ def order_parts(parts: list[tuple[list[str], int | None]]) -> list[list[str]]:
     return [p for p, _ in sorted(parts, key=lambda pc: -1 if pc[1] is None else pc[1])]
 
 
+LABEL_LINE = re.compile(r"^(?:\d+[a-zđ]?\.|[a-zđ]{1,2}\d?\))\s")
+SHORT_LINE = 0.75  # so với độ dài dòng chạy hết bề ngang trang (phân vị 75 của văn bản)
+
+
 def join_wrapped(lines: list[str]) -> list[str]:
+    lines = [x for x in (normalize(x) for x in lines) if x]
+    lengths = sorted(len(x) for x in lines)
+    full = lengths[int(len(lengths) * 0.75)] if lengths else 0
     out: list[str] = []
-    for line in (normalize(x) for x in lines):
-        if not line:
-            continue
+    for line in lines:
         if out and not STRUCT_START.match(line) and not PHULUC_HEADING.match(line) and not out[-1].endswith(END_PUNCT) and not (
             DIEU_HEADING.match(out[-1]) and not line[0].islower()  # tiêu đề Điều chưa chấm câu + đoạn thân bài viết hoa
+        ) and not (
+            # tiêu đề khoản/điểm ngắn đứng riêng một dòng ("1. Nộp hồ sơ đề nghị") + đoạn thân viết hoa
+            LABEL_LINE.match(out[-1]) and len(out[-1]) < SHORT_LINE * full and line[0].isupper()
         ):
             out[-1] = f"{out[-1]} {line}"
         else:

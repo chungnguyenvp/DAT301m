@@ -55,5 +55,8 @@ DERIVED_DOCS = {
         "start": "QCVN 41:2024/BGTVT QUY CHUẨN KỸ THUẬT QUỐC GIA VỀ BÁO HIỆU ĐƯỜNG BỘ",
     },
 }
+# Văn bản chỉ dùng một khoảng Điều cho hỏi đáp, kho tra cứu và huấn luyện (đã chốt với người dùng):
+# BLDS chỉ phần bồi thường thiệt hại do nguồn nguy hiểm cao độ; BLHS chỉ nhóm tội phạm về giao thông đường bộ.
+SCOPE_DIEU = {"blds_2015": (584, 608), "vbhn_135_2025_blhs": (260, 266)}
 # Văn bản đánh số khoản dạng "3.1." (số Điều.số khoản)
 DOTTED_KHOAN_DOCS = {"qcvn_41_2024"}

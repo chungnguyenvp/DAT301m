@@ -285,3 +285,26 @@ def test_tt79_result_delivery_uses_later_issued_tt62(versioned):
         live = [r for r in versioned if r["unit_id"] == "tt_79_2024_bca:d3:k6" and _in_force(r, day)]
         assert [r["source_doc_id"] for r in live] == ["tt_62_2026_bca"], day
         assert "bản vật lý hoặc nhận dữ liệu điện tử" in live[0]["text"]
+
+
+def test_civil_and_criminal_codes_keep_only_the_agreed_articles(versioned):
+    inside = [r for r in versioned if r["doc_id"] in ("blds_2015", "vbhn_135_2025_blhs") and r["trong_pham_vi"]]
+    assert len(inside) == 213  # BLDS Điều 584–608: 85 đơn vị; BLHS Điều 260–266: 128 đơn vị
+    assert all(r["trong_pham_vi"] for r in versioned if r["doc_id"] not in ("blds_2015", "vbhn_135_2025_blhs"))
+
+
+def test_gplx_question_with_outdated_answer_is_flagged():
+    gplx = _read(PROCESSED / "gplx_600.jsonl")
+    assert [q["so_cau"] for q in gplx if q["can_xem_phap_ly"]] == [172]
+
+
+def test_legal_status_table_covers_every_document():
+    import csv
+
+    with (PROCESSED.parent / "legal_status.csv").open(newline="", encoding="utf-8") as fp:
+        rows = list(csv.reader(fp))
+    assert {len(r) for r in rows} == {len(rows[0])}, "dòng sai số cột"
+    table = {r[0]: r for r in rows[1:]}
+    docs = {p.stem for p in DOCS.glob("*.txt")} if DOCS.exists() else set(table)
+    assert set(table) == docs
+    assert {r[6] for r in rows[1:]} <= {"doc_van_ban", "doi_chieu_vbhn", "tra_cuu"}
