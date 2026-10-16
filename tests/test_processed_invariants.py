@@ -133,9 +133,7 @@ def _live_text(versioned, prefix: str, day: str = T) -> str:
                      if (r["unit_id"] == prefix or r["unit_id"].startswith(prefix + ":")) and _in_force(r, day))
 
 
-# Ba câu hỏi theo ngày từ đợt rà soát 2026-10-17. Hai câu sau phụ thuộc dòng sửa đổi đang chờ duyệt trong
-# amendments_reviewed.csv: khi duyệt và chạy lại bước apply, test sẽ XPASS và báo lỗi (strict) để bỏ đánh dấu xfail.
-PENDING = "chờ duyệt dòng sửa đổi đợt 4 (TT 13/2025, TT 105/2026, NĐ 47/2026, TT 62/2026)"
+# Câu hỏi theo ngày từ đợt rà soát 2026-10-17 (dòng sửa đổi đợt 4 đã duyệt).
 
 
 def test_plate_auction_at_cutoff_follows_nd_156(versioned):
@@ -143,20 +141,17 @@ def test_plate_auction_at_cutoff_follows_nd_156(versioned):
     assert "đấu giá biển số xe" in _live_text(versioned, "nd_156_2024:d1")
 
 
-@pytest.mark.xfail(strict=True, reason=PENDING)
 def test_point_restoration_has_no_simulation_test_after_july_2026(versioned):
     assert "mô phỏng" in _live_text(versioned, "tt_65_2024_bca:d6", "2026-06-30")
     assert "mô phỏng" not in _live_text(versioned, "tt_65_2024_bca:d6")
 
 
-@pytest.mark.xfail(strict=True, reason=PENDING)
 def test_keeping_seized_vehicle_needs_no_id_copy_after_march_2026(versioned):
     copy = "Chứng minh nhân dân hoặc Thẻ căn cước công dân"
     assert copy in _live_text(versioned, "nd_138_2021:d14:k2:a", "2026-03-14")
     assert copy not in _live_text(versioned, "nd_138_2021:d14:k2:a")
 
 
-@pytest.mark.xfail(strict=True, reason=PENDING)
 def test_vehicle_registration_has_no_district_police(versioned):
     assert "Công an cấp huyện" not in _live_text(versioned, "tt_79_2024_bca")
 

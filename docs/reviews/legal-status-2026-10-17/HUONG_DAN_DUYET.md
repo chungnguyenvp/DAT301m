@@ -1,5 +1,7 @@
 # Duyệt dòng sửa đổi đợt 4 (2026-10-17)
 
+**Trạng thái: đã duyệt hết ngày 2026-10-17** theo ủy quyền của người dùng, sau khi đối chiếu từng dòng với lớp chữ PDF Công báo (61/61 dòng và 10/10 dòng phụ lục khớp). Còn một mâu thuẫn chờ quyết định: khoản 6 Điều 3 TT 79 (TT 37 và TT 62, xem `data/processed/PROCESSING_REPORT.md` mục 1g).
+
 Bản nháp do `draft_batch4.py` soạn. Chạy thử với mọi dòng dưới đây coi như đã duyệt: áp được hết, không lỗi.
 
 ## Đã áp (bạn đồng ý đóng văn bản)
@@ -10,9 +12,9 @@ Bản nháp do `draft_batch4.py` soạn. Chạy thử với mọi dòng dưới 
 | NĐ 160/2024 | NĐ 94/2026 | 2026-07-01 |
 | VBHN 63 (Luật XLVPHC) | VBHN 90 | 2026-07-01 |
 
-## Chờ duyệt
+## Đã duyệt sau đối chiếu
 
-Trong `data/processed/amendments_reviewed.csv`, lọc cột `ghi_chu` có "đợt 4 (2026-10-17): chờ duyệt" (61 dòng, `status = chua_duyet`):
+Trong `data/processed/amendments_reviewed.csv`, lọc cột `ghi_chu` có "đợt 4 (2026-10-17): đã đối chiếu PDF Công báo" (61 dòng):
 
 | Văn bản sửa | Văn bản đích | Số dòng | Điểm chính |
 |---|---|---:|---|
@@ -22,7 +24,7 @@ Trong `data/processed/amendments_reviewed.csv`, lọc cột `ghi_chu` có "đợ
 | TT 105/2026 | TT 65/2024 | 11 | bỏ kiểm tra mô phỏng từ 01/7/2026; Điều 6 mới từ 01/7/2027 (`hl_rieng`); sửa Điều 7, khoản 4 Điều 8 |
 | TT 62/2026 | TT 79/2024 | 10 | sửa khoản 6 Điều 3, Điều 7, 14, 16, 17, 20, 21, 26 |
 
-Trong `data/annex_replacements.csv`, 10 dòng có cột `duyet` trống: 9 mẫu ĐKX của TT 79 thay bằng mẫu ĐKX…/79 của TT 13 (từ 2025-03-01), phụ lục biểu mẫu TT 65 thay bằng phụ lục TT 105 (từ 2026-07-01).
+Trong `data/annex_replacements.csv`, 10 dòng của đợt 4: 9 mẫu ĐKX của TT 79 thay bằng mẫu ĐKX…/79 của TT 13 (từ 2025-03-01), phụ lục biểu mẫu TT 65 thay bằng phụ lục TT 105 (từ 2026-07-01).
 
 Dòng nên xem kỹ:
 

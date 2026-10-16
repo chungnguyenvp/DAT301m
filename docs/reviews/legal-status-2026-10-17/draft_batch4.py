@@ -228,6 +228,8 @@ EFFECTIVE_NOTES = {
 
 def main() -> None:
     reviewed = read(REVIEWED)
+    if any(r["amend_doc_id"] in AMENDING and r["status"] == "duyet" for r in reviewed):
+        raise SystemExit("Dòng đợt 4 đã được duyệt; chạy lại sẽ đưa chúng về chua_duyet. Dừng.")
     fields = list(reviewed[0])
     replaced = {"nd_39_2023", "nd_160_2024", "vbhn_63_2025_xlvphc"}
     kept = [r for r in reviewed if r["amend_doc_id"] not in AMENDING
