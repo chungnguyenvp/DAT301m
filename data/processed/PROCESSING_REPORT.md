@@ -38,12 +38,12 @@ print({
 
 ## 1. Văn bản và đơn vị
 
-Có **33 văn bản**: 30 trích từ docx, 2 từ pdf (`tt_30_2026_bxd`, `blds_2015`), 1 từ chữ thuần (`tt_36_2024_byt`); không còn văn bản nào OCR. Từ 2026-10-16, `tt_108_2026_bca` và `tt_155_2025_btc` đọc bản Word lấy từ Công báo, `tt_36_2024_byt` đọc bản chữ thuần đã đối chiếu với PDF chính thức (xem mục 1a). `legal_units.jsonl` có **17.902 đơn vị**:
+Có **33 văn bản**: 30 trích từ docx, 2 từ pdf (`tt_30_2026_bxd`, `blds_2015`), 1 từ chữ thuần (`tt_36_2024_byt`); không còn văn bản nào OCR. Từ 2026-10-16, `tt_108_2026_bca` và `tt_155_2025_btc` đọc bản Word lấy từ Công báo, `tt_36_2024_byt` đọc bản chữ thuần đã đối chiếu với PDF chính thức (xem mục 1a). `legal_units.jsonl` có **17.903 đơn vị**:
 
 | Cấp | Số đơn vị |
 |---|---:|
 | `dieu` | 2.236 |
-| `khoan` | 7.087 |
+| `khoan` | 7.088 |
 | `diem` | 8.356 |
 | `phu_luc` | 158 |
 | `mo_dau` | 33 |
@@ -102,6 +102,29 @@ Mọi dòng sửa đổi, ngoại lệ hiệu lực và phân loại phụ lục
 ### 1c. Bảng phí TT 155 viết thành câu (2026-10-16)
 
 Bản Word giữ bảng dạng "2 | Xe ô tô chở người… | 14.000.000 | 140.000", tên khu vực chỉ có ở dòng tiêu đề cột; một đoạn cắt ra không chứa dòng tiêu đề thì không biết số nào thuộc khu vực nào. Bảng được viết lại bằng một dòng trong `ocr_corrections.csv`, theo ảnh PDF chính thức trang 6: mỗi dòng ghi số mục, tên mục cha và tên khu vực, ví dụ "I.2. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe ô tô chở người từ 9 chỗ trở xuống (bao gồm cả xe con pick-up): Khu vực I 14.000.000 đồng; Khu vực II 140.000 đồng." Mục II và III trong bản gốc gộp ô qua hai cột, nên ghi "mức thu chung cho Khu vực I và Khu vực II". Không thêm số liệu ngoài bảng. Test `test_tt_155_fee_rows_name_their_region` giữ bất biến này.
+
+### 1d. Rà soát độ sạch toàn kho (2026-10-16)
+
+Chạy `py -3.13 -X utf8 scripts/audit_processed.py`. Từng nhóm nghi vấn được mở ra xem và đối chiếu bản PDF chính thức. Hai lỗi thật đã sửa trong code:
+
+- **Dấu chữ ký số lọt vào thân văn bản:** BLDS đọc từ PDF nên khối "Ký bởi: Cổng Thông tin điện tử Chính phủ / Email / Cơ quan / Thời gian ký" in ở đầu mỗi tệp nằm trong `d3:k4` và `d366:k2`. `clean.strip_part` nay bỏ khối này (dòng "Cơ quan: …" chỉ bị bỏ khi đi ngay sau "Ký bởi: …").
+- **Khoản 3 Điều 1 NĐ 165/2024 dính vào khoản 2:** trong Word hai khoản cùng một đoạn, ngăn bằng xuống dòng mềm. `extract._text_of` nay tách thành dòng mới khi sau xuống dòng mềm là một mục có nhãn ("3.", "b)"); ô bảng vẫn giữ trên một dòng. Cả kho chỉ có trường hợp này trong thân văn bản (hai trường hợp khác nằm trong ô bảng mẫu biểu NĐ 158).
+
+| Kiểm tra | Số | Kết luận |
+|---|---:|---|
+| Khoản/điểm rỗng; Điều không tiêu đề; chữ chưa NFC; ký tự Kirin, điều khiển, "�"; lỗi mã hóa "Ã©"; header Công báo, "Xem tiếp", số trang lẻ, quảng cáo trang web, "Nơi nhận"/chữ ký trong thân; dấu chữ ký số | 0 | Sạch |
+| Bản sửa đổi còn ngoặc kép trích dẫn hoặc câu chỉ dẫn "… như sau:"; phiên bản có `valid_from ≥ valid_to` | 0 | Sạch |
+| Khoản N+1 dính trong khoản N; điểm kế tiếp dính trong điểm trước | 0 | Sạch (sau khi sửa NĐ 165) |
+| Số khoản không liên tục (4) và điểm không theo thứ tự (14) | 18 | 13 nằm trong văn bản sửa đổi (khoản/điểm thuộc phần trích dẫn, nội dung đã áp vào văn bản gốc); TT 30 Điều 19 khoản 2 (g → i) và TT 79 Điều 34 khoản 2 (n → p) **đúng như bản chính thức**; QCVN 41 Điều 46 khoản 7, Điều 47 khoản 12, 14 là danh sách tên biển in theo hàng ngang; TT 12 Điều 3 không còn hiệu lực |
+| Điều rỗng | 20 | Điều "(được bãi bỏ)" trong văn bản hợp nhất (BLHS Điều 292, Luật XLVPHC Điều 38–51, 82, 142); giữ để trả lời "điều này đã bị bãi bỏ", không đưa vào kho tra cứu như căn cứ |
+| Dòng nhãn chưa tách / "…; b) …" liền dòng | 14 / 11 | QCVN 41 có cấp thứ ba "46.1.1." chứa điểm a), b) bên trong, theo thiết kế giữ trong khoản "46.1"; còn lại là đoạn trích dẫn |
+| Tiêu đề Điều dài > 250 ký tự | 10 | Tiêu đề thật của văn bản (ví dụ NĐ 165 Điều 17, NĐ 168 Điều 13) |
+| Đơn vị cùng văn bản trùng nội dung | 179 | Câu chữ luật lặp ở nhiều Điều (ví dụ thủ tục giống nhau cho nhiều loại giấy phép), không phải lỗi tách |
+| Ký tự lạ | 349 lượt | "♦" (280) và "‟" chỉ ở bảng kiểm tra NĐ 165 Phụ lục VII; "□" là ô đánh dấu trong mẫu; "²", "³", "‰" là đơn vị hợp lệ (m², ‰ nồng độ cồn) |
+| Gạch nối ngắt từ, khoảng trắng thừa | 2 / 11 | Có trong bản gốc ("rơ- moóc", "đề- pô", "13.3 ."); giữ nguyên văn |
+| Câu GPLX trùng nội dung câu hỏi | 35 | Cùng câu hỏi nhưng khác hình (đèn báo bảng đồng hồ, hiệu lệnh CSGT); không lỗi |
+
+Hai bất biến mới trong `tests/test_processed_invariants.py`: không còn "Ký bởi:" trong Điều/Khoản/Điểm, không khoản nào dính trong khoản trước.
 
 ## 2. Danh tính văn bản
 
@@ -263,9 +286,9 @@ Quy ước: nếu một dòng gồm nhiều mốc ngày mà không tách đượ
 
 | Chỉ số | Giá trị |
 |---|---:|
-| Tổng bản ghi | 18.841 |
-| Có hiệu lực tại 2026-10-01 theo `in_force_at` | 17.471 |
-| `valid_to` khác rỗng / rỗng | 1.383 / 17.458 |
+| Tổng bản ghi | 18.842 |
+| Có hiệu lực tại 2026-10-01 theo `in_force_at` | 17.472 |
+| `valid_to` khác rỗng / rỗng | 1.383 / 17.459 |
 | Bản ghi mới do sửa đổi (`source_doc_id` ≠ `doc_id`) | 1.004 |
 | Bản ghi bắt đầu sau ngày chốt | 4 |
 | Văn bản có đơn vị hiệu lực tại ngày chốt | 33 |
@@ -310,7 +333,7 @@ TT 108 thay TT 12 từ 2026-07-01, nhưng ngoại lệ `gia_han` giữ Điều 4
 | Phần kết trong Điều cuối | Trước: 2 `ket_thuc` | Tách chữ ký/Nơi nhận | Sau: 32 `ket_thuc` (31 trước khi TT 155 đọc bản Word) |
 | Mục lục nhận là phụ lục | 12 phụ lục rỗng QCVN | Bỏ dòng mục lục trước parse | 0 phụ lục rỗng |
 | Nhãn điểm có chữ số | 1 dòng sửa đổi `k1)` NĐ 168 Đ41 k4 | Nhận điểm có chữ số, áp `bo_sung` | `:k1` riêng trong cây đơn vị |
-| Ngoại lệ ngày hiệu lực | 22 dòng: 8 `gia_han`, 5 `hoan_ap_dung`, 9 `moc_trong_noi_dung` | Gắn `hl_ngoai_le`, lọc bằng `in_force_at` | 17.471 bản ghi sống tại ngày chốt, có điều kiện kèm theo |
+| Ngoại lệ ngày hiệu lực | 22 dòng: 8 `gia_han`, 5 `hoan_ap_dung`, 9 `moc_trong_noi_dung` | Gắn `hl_ngoai_le`, lọc bằng `in_force_at` | 17.472 bản ghi sống tại ngày chốt, có điều kiện kèm theo |
 | Phiên bản không đổi nội dung | 184 bản ghi `noi_dung_doi=false` | Đánh dấu so với phiên bản liền trước | Giữ cả 184 để truy vết nguồn |
 | Phụ lục mẫu biểu | 107/158 `mau_bieu`, 51 `noi_dung` | Phân loại và áp bản đè đã duyệt | 158 phụ lục được gắn nhãn |
 | Chất lượng chữ kém | 19 bản ghi gắn `kem` (21 trước khi TT 108 đọc bản Word) | Rà tay từng bản ghi ngày 2026-10-16 | Cả 19 là báo nhầm của chỉ số, không có lỗi chữ (xem dưới bảng) |

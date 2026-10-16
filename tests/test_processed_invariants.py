@@ -159,3 +159,24 @@ def test_records_have_annotations(versioned):
     assert all(isinstance(r["noi_dung_doi"], bool) and r["chat_luong"] in ("ok", "kem") for r in versioned)
     assert all((r["loai_phu_luc"] in ("mau_bieu", "noi_dung")) == (r["level"] == "phu_luc")
                for r in versioned)
+
+
+def test_no_digital_signature_stamp_in_legal_units(units):
+    bad = [u["unit_id"] for u in units if u["level"] in ("dieu", "khoan", "diem") and "Ký bởi:" in u["text"]]
+    assert bad == []
+
+
+def test_next_clause_is_not_glued_into_previous_clause(units):
+    """Khoản N+1 không nằm dính trong chữ khoản N (ngoài văn bản sửa đổi, nơi khoản nằm trong trích dẫn)."""
+    from lawproc import config
+
+    ids = {u["unit_id"] for u in units}
+    bad = []
+    for u in units:
+        if u["level"] != "khoan" or u["doc_id"] in config.AMENDING_DOCS or not (u["khoan"] or "").isdigit():
+            continue
+        nxt = int(u["khoan"]) + 1
+        m = re.search(rf"(?:[.;:]|\))\s+{nxt}\.\s+[A-ZĐÂĂÊÔƠƯ]", u["text"])
+        if m and f"{u['doc_id']}:d{u['dieu']}:k{nxt}" not in ids and "“" not in u["text"][:m.start()]:
+            bad.append(u["unit_id"])
+    assert bad == []
