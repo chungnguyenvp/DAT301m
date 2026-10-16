@@ -485,7 +485,7 @@ BỘ TRƯỞNG
 Đại tướng Lương Tam Quang
 Mẫu ĐKX01 Ban hành kèm theo Thông tư số 79/2024/TT-BCA Ngày 15/11/2024 của Bộ trưởng Bộ Công an
 CHỨNG NHẬN ĐĂNG KÝ XE MÔ TÔ, XE GẮN MÁY
-Mặt trước:
+1. Mặt trước:
 53.9885.6 mm
 CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ..................... (1) ..................... ..................... (2) ..................... ..................... (3) ..................... ..................... (4) ..................... CHỨNG NHẬN ĐĂNG KÝ XE MÔ TÔ, XE GẮN MÁY Motorbike Registration Certificate Số (Number):
 2. Mặt sau:
@@ -502,7 +502,7 @@ Ghi chú: Ký hiệu trong mẫu:
 Chứng nhận đăng ký xe mô tô, xe gắn máy in trên phôi chất liệu giấy bảo an tổng hợp, có mã QR: kích thước 85.6 x 53.98 mm được in trên nền mầu vàng, hoa văn hình Công an hiệu. Mã QR chứa các trường thông tin đăng ký xe cơ bản sau: Biển số xe; màu biển số (nền màu xanh, chữ và số màu trắng được viết tắt là “Xanh”; nền màu trắng, chữ và số màu đen được viết tắt là “Trắng”); số máy, số khung; xe thông minh cho phép tự động hóa điều khiển (viết tắt là: xe thông minh); xe sử dụng năng lượng sạch, năng lượng xanh, thân thiện môi trường (viết tắt là: xe xanh).
 Mẫu ĐKX02 Ban hành kèm theo Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an
 CHỨNG NHẬN ĐĂNG KÝ XE Ô TÔ
-Mặt trước:
+2. Mặt trước:
 58.89 mm 85.6 mm
 CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ..................... (1) ..................... ..................... (2) ..................... ..................... (3) ..................... ..................... (4) ..................... CHỨNG NHẬN ĐĂNG KÝ XE Ô TÔ Car Registration Certificate Số (Number):
 2. Mặt sau 85.6 mm
@@ -548,7 +548,7 @@ Giá trị đến ngày (Date of expiry) | …(date), ngày........... tháng...
 .............../................/.............. | (Chữ ký số)
 Mẫu ĐKX05 Ban hành kèm theo Thông tư số 79/2024/TT-BCA Ngày 15/11/2024 của Bộ trưởng Bộ Công an
 CHỨNG NHẬN ĐĂNG KÝ XE TẠM THỜI
-Mặt trước
+1. Mặt trước
 53,98 mm 85.6 mm
 CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ................. (1) ..................... ..................... (2) ..................... ..................... (3) ..................... ..................... (4) ..................... CHỨNG NHẬN ĐĂNG KÝ XE TẠM THỜI (Temporary Vehicle Registration Certificate) Số (Number):
 2. Mặt sau
@@ -565,7 +565,7 @@ Ghi chú: Ký hiệu trong mẫu:
 Chứng nhận đăng ký xe rơ moóc, sơ mi rơ moóc in trên phôi chất liệu giấy bảo an tổng hợp, có mã vạch QR: Kích thước 85.6 x 53.98 mm được in trên nền mầu vàng, hoa văn hình Công an hiệu. Số chỗ bao gồm: số chỗ ngồi, chỗ đứng, chỗ nằm. Mã QR chứa các trường thông tin đăng ký xe cơ bản sau: Biển số xe; màu biển số (nền màu xanh, chữ và số màu trắng được viết tắt là “Xanh”; nền màu trắng, chữ và số màu đen được viết tắt là “Trắng”; nền màu vàng, chữ và số màu đen được viết tắt là “Vàng”); số máy, số khung; xe thông minh cho phép tự động hóa điều khiển (viết tắt là: xe thông minh); xe sử dụng năng lượng sạch, năng lượng xanh, thân thiện môi trường (viết tắt là: xe xanh).
 Mẫu ĐKX06 Ban hành kèm theo Thông tư số 79/2024/TT-BCA Ngày 15/11/2024 của Bộ trưởng Bộ Công an
 CHỨNG NHẬN ĐĂNG KÝ XE MÁY CHUYÊN DÙNG
-Mặt trước:
+1. Mặt trước:
 53,98 mm 85.6 mm
 CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Socialist Republic of Viet Nam ..................... (1) ..................... ..................... (2) ..................... ..................... (3) ..................... ..................... (4) ..................... CHỨNG NHẬN ĐĂNG KÝ XE MÁY CHUYÊN DÙNG Transport construction machinery registration certificate Số (Number):
 2. Mặt sau 85.6 mm
@@ -824,8 +824,8 @@ Kèm theo giấy này có:......................................................
 .
 ..................., ngày............ tháng.......... năm................. CHỦ XE (Ký, ghi rõ họ tên, đóng dấu nếu là xe cơ quan)
 Ghi chú:
-Mã định danh: đối với cá nhân: Số định danh cá nhân, số CMT ngoại giao, số CMT công vụ, số CMT lãnh sự; số CMT lãnh sự danh dự, CMT (phổ thông), số định danh của người nước ngoài, số Thẻ tạm trú, số Thẻ thường trú, số CMT CAND, số CMT QĐND tương ứng với đối tượng đăng ký; đối với tổ chức: Ghi mã định danh điện tử của tổ chức hoặc mã số thuế hoặc số quyết định thành lập (trường hợp chưa có mã định danh điện tử hoặc mã số thuế);
-Lý do xác nhận: thay đổi địa chỉ mới hoặc để cấp biển số trúng đấu giá đối với trường hợp không cùng cơ quan đăng ký xe
+(1) Mã định danh: đối với cá nhân: Số định danh cá nhân, số CMT ngoại giao, số CMT công vụ, số CMT lãnh sự; số CMT lãnh sự danh dự, CMT (phổ thông), số định danh của người nước ngoài, số Thẻ tạm trú, số Thẻ thường trú, số CMT CAND, số CMT QĐND tương ứng với đối tượng đăng ký; đối với tổ chức: Ghi mã định danh điện tử của tổ chức hoặc mã số thuế hoặc số quyết định thành lập (trường hợp chưa có mã định danh điện tử hoặc mã số thuế);
+(2) Lý do xác nhận: thay đổi địa chỉ mới hoặc để cấp biển số trúng đấu giá đối với trường hợp không cùng cơ quan đăng ký xe
 Mẫu ĐKX14 Ban hành kèm theo Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an
 CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
 Độc lập - Tự do - Hạnh phúc
@@ -850,9 +850,9 @@ Kèm theo giấy này có:......................................................
 .
 ..................., ngày............ tháng.......... năm................. CƠ QUAN XÁC NHẬN HỒ SƠ XE (Ký, ghi rõ họ tên, đóng dấu nếu là xe cơ quan)
 Ghi chú:
-Mã định danh: đối với cá nhân: Số định danh cá nhân, số CMT ngoại giao, số CMT công vụ, số CMT lãnh sự; số CMT lãnh sự danh dự, CMT (phổ thông), số định danh của người nước ngoài, số Thẻ tạm trú, số Thẻ thường trú, số CMT CAND, số CMT QĐND tương ứng với đối tượng đăng ký; đối với tổ chức: Ghi mã định danh điện tử của tổ chức hoặc mã số thuế hoặc số quyết định thành lập (trường hợp chưa có mã định danh điện tử hoặc mã số thuế);
-Lý do xác nhận: thay đổi địa chỉ mới hoặc để cấp biển số trúng đấu giá đối với trường hợp không cùng cơ quan đăng ký xe
-Bản chà số máy số khung phải đóng dấu giáp lai của cơ quan đăng ký xe.
+(1) Mã định danh: đối với cá nhân: Số định danh cá nhân, số CMT ngoại giao, số CMT công vụ, số CMT lãnh sự; số CMT lãnh sự danh dự, CMT (phổ thông), số định danh của người nước ngoài, số Thẻ tạm trú, số Thẻ thường trú, số CMT CAND, số CMT QĐND tương ứng với đối tượng đăng ký; đối với tổ chức: Ghi mã định danh điện tử của tổ chức hoặc mã số thuế hoặc số quyết định thành lập (trường hợp chưa có mã định danh điện tử hoặc mã số thuế);
+(2) Lý do xác nhận: thay đổi địa chỉ mới hoặc để cấp biển số trúng đấu giá đối với trường hợp không cùng cơ quan đăng ký xe
+(3) Bản chà số máy số khung phải đóng dấu giáp lai của cơ quan đăng ký xe.
 Mẫu ĐKX15 Ban hành kèm theo Thông tư số 79/2024/TT-BCA ngày 15/11/2024 của Bộ trưởng Bộ Công an
 TEM NHẬN DIỆN BIỂN SỐ XE TRÚNG ĐẤU GIÁ
 Tem nhận diện biển số xe trúng đấu giá: nền màu đỏ và màu vàng, chữ màu xanh; hình tròn, đường kính 30mm, được thiết kế bằng phần mềm thiết kế bảo an chuyên dụng, chống sao chép làm giả. Tem được in màu bằng mực chống phai trên chất liệu đề can bóc dán.
@@ -1132,129 +1132,129 @@ VÀ NƯỚC NGOÀI
 của Bộ trưởng Bộ Công an)
 1. Biển số xe ô tô
 H1: Biển số ngắn H1: Biển số dài
-Cách bố trí chữ và số trên biển số xe:
+1.1. Cách bố trí chữ và số trên biển số xe:
 Biển số xe gồm các nhóm chữ và số sắp xếp cụ thể như sau:
-Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số xe.
-Hai số đầu là ký hiệu địa phương đăng ký xe (theo phụ lục 02 ban hành kèm theo Thông tư số 79/2024/TT-BCA và sê ri đăng ký được quy định tại Điều 37 Thông tư này.
-Nhóm số thứ hai là thứ tự xe đăng ký gồm 05 chữ số tự nhiên, từ 000.01 đến 999.99.
+- Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số xe.
+- Hai số đầu là ký hiệu địa phương đăng ký xe (theo phụ lục 02 ban hành kèm theo Thông tư số 79/2024/TT-BCA và sê ri đăng ký được quy định tại Điều 37 Thông tư này.
+- Nhóm số thứ hai là thứ tự xe đăng ký gồm 05 chữ số tự nhiên, từ 000.01 đến 999.99.
 Ví dụ: Trên hình vẽ H1 biển số xe thể hiện:
 + 30 là ký hiệu địa phương đăng ký.
 + F là sê ri biển số đăng ký.
 + 256.58 là thứ tự đăng ký.
-Về kích thước của chữ và số.
-Chiều cao của chữ và số: 63 mm.
-Chiều rộng của chữ và số: 38 mm.
-Nét đậm của chữ và số: 10 mm.
-Nét gạch ngang dưới Công an hiệu ở biển số dài có kích thước: dài 14 mm; rộng 10 mm.
-Dấu chấm (.) phân cách giữa ba số thứ tự đầu với hai chữ số thứ tự sau có kích thước 10 mm x 10 mm.
-Vị trí chữ, số, ký hiệu trên biển số xe cụ thể như sau:
-Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số.
-Khoảng cách giữa các chữ và số: 10 mm.
+1.2. Về kích thước của chữ và số.
+- Chiều cao của chữ và số: 63 mm.
+- Chiều rộng của chữ và số: 38 mm.
+- Nét đậm của chữ và số: 10 mm.
+- Nét gạch ngang dưới Công an hiệu ở biển số dài có kích thước: dài 14 mm; rộng 10 mm.
+- Dấu chấm (.) phân cách giữa ba số thứ tự đầu với hai chữ số thứ tự sau có kích thước 10 mm x 10 mm.
+1.3. Vị trí chữ, số, ký hiệu trên biển số xe cụ thể như sau:
+- Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số.
+- Khoảng cách giữa các chữ và số: 10 mm.
 Nét chính bên trái số 1 cách chữ và số khác là là 29 mm. Nét chính bên trái giữa 2 số 1 cạnh nhau là 48 mm.
-Đối với biển số dài: Công an hiệu dập phía trên của gạch ngang, mép trên Công an hiệu thẳng hàng với mép trên của dãy chữ và số.
-Đối với biển số ngắn: Công an hiệu được dập ở vị trí giữa 2 hàng chữ, số trên và dưới, cách mép trái 5 mm.
-Biển số xe mô tô trong nước (Hình vẽ H2; H3; H4)
-Cách bố trí chữ và số trên biển số
-Biển số gồm các nhóm chữ và số sắp xếp cụ thể như sau:
-Nhóm số thứ nhất là ký hiệu địa phương đăng ký xe và sê ri đăng ký. Giữa ký hiệu địa phương và sê ri đăng ký được phân cách bằng dấu gạch ngang (-).
-Nhóm số thứ hai là thứ tự xe đăng ký gồm 05 chữ số tự nhiên, từ 000.01 đến 999.99.
+- Đối với biển số dài: Công an hiệu dập phía trên của gạch ngang, mép trên Công an hiệu thẳng hàng với mép trên của dãy chữ và số.
+- Đối với biển số ngắn: Công an hiệu được dập ở vị trí giữa 2 hàng chữ, số trên và dưới, cách mép trái 5 mm.
+1. Biển số xe mô tô trong nước (Hình vẽ H2; H3; H4)
+1.1. Cách bố trí chữ và số trên biển số
+1.1.1. Biển số gồm các nhóm chữ và số sắp xếp cụ thể như sau:
+- Nhóm số thứ nhất là ký hiệu địa phương đăng ký xe và sê ri đăng ký. Giữa ký hiệu địa phương và sê ri đăng ký được phân cách bằng dấu gạch ngang (-).
+- Nhóm số thứ hai là thứ tự xe đăng ký gồm 05 chữ số tự nhiên, từ 000.01 đến 999.99.
 H2
 Ví dụ: Trên biển số hình vẽ H2 thể hiện:
 + 30 chỉ ký hiệu địa phương đăng ký.
 + AB chỉ ký hiệu sê ri đăng ký.
 + 266.59 số thứ tự đăng ký.
-Cách sử dụng chữ và số trong sê ri đăng ký của biển số như sau:
+1.1.2. Cách sử dụng chữ và số trong sê ri đăng ký của biển số như sau:
 Biển số nền màu xanh, chữ và số màu trắng, sêri biển số sử dụng lần lượt một trong các chữ cái sau: A, B, C, D, E, F, G, H, K, L, M kết hợp với 1 chữ số tự nhiên từ 1 đến 9 cấp cho xe của các cơ quan của Đảng; Văn phòng Chủ tịch nước; Văn phòng Quốc hội và các cơ quan của Quốc hội; Văn phòng Đoàn đại biểu Quốc hội, Hội đồng nhân dân các cấp; các Ban chỉ đạo Trung ương; Công an nhân dân, Tòa án nhân dân, Viện kiểm sát nhân dân; các Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ; Ủy ban An toàn giao thông quốc gia; Ủy ban nhân dân các cấp và các cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh, cấp huyện; tổ chức chính trị - xã hội (Mặt trận tổ quốc Việt Nam, Công đoàn Việt Nam, Đoàn thanh niên Cộng sản Hồ Chí Minh, Hội liên hiệp phụ nữ Việt Nam, Hội cựu chiến binh Việt Nam, Hội nông dân Việt Nam); Ban quản lý dự án có chức năng quản lý nhà nước; đơn vị sự nghiệp công lập, trừ cơ sở đào tạo, sát hạch lái xe;
 H3
 2.1.3. Biển số nền màu trắng, chữ và số màu đen, sê ri biển số sử dụng một trong 20 chữ cái A, B, C, D, E, F, G, H, K, L, M, N, P, S, T, U, V, X, Y, Z kết hợp với một trong các chữ cái sau: A, B, C, D, E, F, H, K, L, M, N, P, R, S, T, U, V, X, Y, Z cấp cho xe của tổ chức, của cá nhân không thuộc đối tượng quy định tại điểm 2.1.2 nêu trên.
 H4
-Về kích thước chữ và số:
-Chiều cao của chữ và số: 55 mm
-Chiều rộng của chữ và số: 22 mm.
-Nét đậm của chữ và số: 7 mm.
-Nét gạch ngang dưới cảnh sát hiệu có kích thước: dài 12 mm; rộng 7 mm.
-Dấu chấm (.) phân cách giữa ba số thứ tự đầu với hai chữ số thứ tự sau có có kích thước: 7 mm x 7 mm.
-Vị trí chữ, số, ký hiệu trên biển số cụ thể như sau (Hình vẽ H3; H4)
-Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số.
-Công an hiệu được dập ở vị trí phía trên gạch ngang hàng trên của biển số, cách mép trên của biển số 5mm.
-Khoảng cách giữa các chữ và số:
+1.2. Về kích thước chữ và số:
+- Chiều cao của chữ và số: 55 mm
+- Chiều rộng của chữ và số: 22 mm.
+- Nét đậm của chữ và số: 7 mm.
+- Nét gạch ngang dưới cảnh sát hiệu có kích thước: dài 12 mm; rộng 7 mm.
+- Dấu chấm (.) phân cách giữa ba số thứ tự đầu với hai chữ số thứ tự sau có có kích thước: 7 mm x 7 mm.
+1.3. Vị trí chữ, số, ký hiệu trên biển số cụ thể như sau (Hình vẽ H3; H4)
+- Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số.
+- Công an hiệu được dập ở vị trí phía trên gạch ngang hàng trên của biển số, cách mép trên của biển số 5mm.
+- Khoảng cách giữa các chữ và số:
 Ở hàng trên: Khoảng cách giữa các chữ và số là 5 mm; nét chính bên trái số 1 cách chữ và số bên cạnh là 16 mm; khoảng cách nét chính bên trái giữa 2 số 1 cạnh nhau là 27 mm.
 Ở hàng dưới: Khoảng cách giữa các chữ và số là 10 mm; nét chính bên trái số 1 cách số bên cạnh là 21 mm; khoảng cách nét chính bên trái giữa 2 số 1 cạnh nhau là 32 mm.
-Biển số xe ô tô của nước ngoài (Hình vẽ H5)
-Cách bố trí chữ và số của biển số: Biển số gồm các nhóm chữ và số sắp xếp cụ thể như sau:
-Nhóm thứ nhất là ký hiệu địa phương đăng ký xe.
-Nhóm thứ hai là ký hiệu tên nước, tổ chức quốc tế (Phụ lục số 03 ban hành kèm theo Thông tư này).
-Nhóm thứ ba là sê ri đăng ký.
-Nhóm thứ tư là thứ tự xe đăng ký gồm 02 chữ số tự nhiên, từ 01 đến 99.
-Giữa ký hiệu địa phương, ký hiệu tên nước, sê ri, đăng ký và thứ tự đăng ký được phân cách bằng gạch ngang (-).
+2. Biển số xe ô tô của nước ngoài (Hình vẽ H5)
+2.1. Cách bố trí chữ và số của biển số: Biển số gồm các nhóm chữ và số sắp xếp cụ thể như sau:
+- Nhóm thứ nhất là ký hiệu địa phương đăng ký xe.
+- Nhóm thứ hai là ký hiệu tên nước, tổ chức quốc tế (Phụ lục số 03 ban hành kèm theo Thông tư này).
+- Nhóm thứ ba là sê ri đăng ký.
+- Nhóm thứ tư là thứ tự xe đăng ký gồm 02 chữ số tự nhiên, từ 01 đến 99.
+- Giữa ký hiệu địa phương, ký hiệu tên nước, sê ri, đăng ký và thứ tự đăng ký được phân cách bằng gạch ngang (-).
 Ví dụ: Trên biển số hình vẽ H5
 + 80 là ký hiệu địa phương đăng ký.
 + 441 là ký hiệu tên nước, tổ chức, quốc tế; 02 là chỉ số thứ tự xe đăng ký.
 + NG là sê ri dùng cho xe của cơ quan đại diện ngoại giao, cơ quan lãnh sự và thành viên mang chứng minh thư ngoại giao của cơ quan đó, QT là sê ri dùng cho xe của cơ quan đại diện của tổ chức quốc tế và thành viên mang chứng minh thư ngoại giao của tổ chức đó, CV là sê ri dùng cho xe của các nhân viên hành chính kỹ thuật mang chứng minh thư công vụ của các cơ quan đại diện ngoại giao, cơ quan lãnh sự, tổ chức quốc tế, NN là sê ri dùng cho xe của tổ chức, văn phòng đại diện, cá nhân nước ngoài khác.
 H5: Biển số ngắn H5: Biển số dài
-Kích thước chữ và số trên biển số:
-Chiều cao của chữ và số: 63 mm.
-Chiều rộng của chữ và số: 38 mm.
-Nét đậm của chữ và số: 10 mm.
-Kích thước gạch ngang (-): Chiều dài 14 mm; chiều rộng 10 mm
-Dấu chấm (.) phân cách giữa ba số thứ tự đầu với hai chữ số thứ tự sau có kích thước: 10 mmx 10 mm.
-Vị trí chữ, số, ký hiệu trên biển số cụ thể như sau (Hình vẽ H5):
-Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số.
-Đối với biển số dài:
+2.2. Kích thước chữ và số trên biển số:
+- Chiều cao của chữ và số: 63 mm.
+- Chiều rộng của chữ và số: 38 mm.
+- Nét đậm của chữ và số: 10 mm.
+- Kích thước gạch ngang (-): Chiều dài 14 mm; chiều rộng 10 mm
+- Dấu chấm (.) phân cách giữa ba số thứ tự đầu với hai chữ số thứ tự sau có kích thước: 10 mmx 10 mm.
+2.3. Vị trí chữ, số, ký hiệu trên biển số cụ thể như sau (Hình vẽ H5):
+- Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số.
+- Đối với biển số dài:
 + Công an hiệu dập phía trên của gạch ngang, mép trên Công an hiệu thẳng hàng với mép trên của dãy chữ và số.
-Đối với biển số ngắn:
+- Đối với biển số ngắn:
 + Công an hiệu được dập ở vị trí giữa hai hàng chữ số của biển số, cách mép trái biển số 5 mm.
-Khoảng cách giữa các chữ và số: 10 mm.
+- Khoảng cách giữa các chữ và số: 10 mm.
 Nét chính bên trái số 1 cách chữ và số khác là là 29mm; nét chính bên trái giữa 2 số 1 cạnh nhau là 48 mm.
-Biển số xe mô tô của người nước ngoài (Hình vẽ H6)
-Cách bố trí chữ và số trên biển số
+3. Biển số xe mô tô của người nước ngoài (Hình vẽ H6)
+3.1. Cách bố trí chữ và số trên biển số
 Biển số gồm các nhóm chữ và số sắp xếp cụ thể như sau:
-Nhóm thứ nhất là ký hiệu địa phương đăng ký xe.
-Nhóm thứ hai là ký hiệu tên nước của chủ xe.
-Nhóm thứ ba là sê ri đăng ký.
-Nhóm thứ tư là thứ tự xe đăng ký gồm 03 chữ số tự nhiên từ 001 đến 999.
+- Nhóm thứ nhất là ký hiệu địa phương đăng ký xe.
+- Nhóm thứ hai là ký hiệu tên nước của chủ xe.
+- Nhóm thứ ba là sê ri đăng ký.
+- Nhóm thứ tư là thứ tự xe đăng ký gồm 03 chữ số tự nhiên từ 001 đến 999.
 H6
-Giữa ký hiệu địa phương và ký hiệu tên nước, sê ri đăng ký và thứ tự đăng ký được phân cách bằng gạch ngang (-).
+- Giữa ký hiệu địa phương và ký hiệu tên nước, sê ri đăng ký và thứ tự đăng ký được phân cách bằng gạch ngang (-).
 Ví dụ: Trên biển số hình vẽ H6 thể hiện:
 + 29 là ký hiệu địa phương đăng ký.
 + 121 là ký hiệu tên nước (Phụ lục 03 ban hành theo Thông tư này).
 + NN là sê ri đăng ký dùng cho xe của người nước ngoài.
 + 101 là số thứ tự xe đăng ký.
-Kích thước chữ và số
-Chiều cao của chữ và số: 55 mm.
-Chiều rộng của chữ và số: 22 mm.
-Nét đậm của chữ và số: 7 mm.
-Nét gạch ngang dưới Cảnh sát hiệu có kích thước: dài 12 mm; rộng 7 mm.
-Riêng nét gạch ngang (-) phân cách giữa sê ri đăng ký với nhóm số thứ tự đăng ký có kích thước dài 9 mm rộng 6 mm.
-Vị trí chữ, số, ký hiệu trên biển số cụ thể như sau (Hình vẽ H6)
-Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số.
-Công an hiệu được dập ở vị trí phía trên gạch ngang hàng trên của biển số, cách mép trên của biển số 5 mm.
-Khoảng cách giữa các chữ và số:
+3.2. Kích thước chữ và số
+- Chiều cao của chữ và số: 55 mm.
+- Chiều rộng của chữ và số: 22 mm.
+- Nét đậm của chữ và số: 7 mm.
+- Nét gạch ngang dưới Cảnh sát hiệu có kích thước: dài 12 mm; rộng 7 mm.
+- Riêng nét gạch ngang (-) phân cách giữa sê ri đăng ký với nhóm số thứ tự đăng ký có kích thước dài 9 mm rộng 6 mm.
+3.3. Vị trí chữ, số, ký hiệu trên biển số cụ thể như sau (Hình vẽ H6)
+- Toàn bộ các dãy chữ, số được bố trí cân đối giữa biển số.
+- Công an hiệu được dập ở vị trí phía trên gạch ngang hàng trên của biển số, cách mép trên của biển số 5 mm.
+- Khoảng cách giữa các chữ và số:
 + Ở hàng trên: Khoảng cách giữa các chữ và số là 5 mm; nét chính bên trái số 1 cách chữ bên cạnh là 16 mm. Khoảng cách nét chính bên trái giữa 2 số 1 cạnh nhau là 27 mm.
 + Ở hàng dưới: Khoảng cách giữa các chữ seri đăng ký là 5 mm; khoảng cách giữa các số thứ tự là 10 mm; nét chính bên trái số 1 cách số bên cạnh là 21 mm; khoảng cách nét chính bên trái giữa 2 số 1 cạnh nhau là 32 mm.
-Biển số xe ô tô, mô tô có ký hiệu riêng
-Kích thước chữ và số của biển số ô tô, mô tô của doanh nghiệp quân đội; xe sản xuất lắp ráp, được Thủ tướng Chính phủ cho phép triển khai thí điểm; xe chở hàng bốn bánh gắn động cơ; xe chở người bốn bánh có gắn động cơ; ô tô hoạt động trong phạm vi hạn chế; xe máy kéo; rơ mooc; sơmi rơ mooc; xe ô tô chuyên dùng; xe máy chuyên dùng của lực lượng Công an nhân dân: Cách bố trí chữ và số, kích thước chữ và số như biển số ô tô, mô tô trong nước.
+4. Biển số xe ô tô, mô tô có ký hiệu riêng
+4.1. Kích thước chữ và số của biển số ô tô, mô tô của doanh nghiệp quân đội; xe sản xuất lắp ráp, được Thủ tướng Chính phủ cho phép triển khai thí điểm; xe chở hàng bốn bánh gắn động cơ; xe chở người bốn bánh có gắn động cơ; ô tô hoạt động trong phạm vi hạn chế; xe máy kéo; rơ mooc; sơmi rơ mooc; xe ô tô chuyên dùng; xe máy chuyên dùng của lực lượng Công an nhân dân: Cách bố trí chữ và số, kích thước chữ và số như biển số ô tô, mô tô trong nước.
 Biển số gồm các nhóm chữ và số sắp xếp cụ thể như sau:
-Hai số đầu là ký hiệu địa phương đăng ký xe (Phụ lục số 02 ban hành kèm theo Thông tư này) và sê ri đăng ký được quy định tại Điều 37 Thông tư số 79/2024/TT-BCA.
-Nhóm số thứ hai là thứ tự xe đăng ký gồm 05 chữ số tự nhiên, từ 000.01 đến 999.99.
-Đối với biển số ngắn: Ký hiệu địa phương nơi đăng ký và sê ri biển số đăng ký được đặt ở chính giữa hàng phần trên của biển số. Nhóm 5 số hàng dưới là thứ tự đăng ký được sắp xếp cân đối với nhóm số và chữ hàng trên của biển số.
+- Hai số đầu là ký hiệu địa phương đăng ký xe (Phụ lục số 02 ban hành kèm theo Thông tư này) và sê ri đăng ký được quy định tại Điều 37 Thông tư số 79/2024/TT-BCA.
+- Nhóm số thứ hai là thứ tự xe đăng ký gồm 05 chữ số tự nhiên, từ 000.01 đến 999.99.
+- Đối với biển số ngắn: Ký hiệu địa phương nơi đăng ký và sê ri biển số đăng ký được đặt ở chính giữa hàng phần trên của biển số. Nhóm 5 số hàng dưới là thứ tự đăng ký được sắp xếp cân đối với nhóm số và chữ hàng trên của biển số.
 H7: Biển số ngắn H7: Biển số dài
-Ví dụ: Trên biển số hình vẽ H7 thể hiện:
+- Ví dụ: Trên biển số hình vẽ H7 thể hiện:
 + 20 chỉ ký hiệu địa phương đăng ký.
 + KT chỉ sê ri đăng ký dùng cho xe của các doanh nghiệp Quân đội
 + 226.22 là số thứ tự xe đăng ký.
-Về thứ tự đăng ký xe mô tô của quân đội làm kinh tế có thứ tự đăng ký từ 000.01 đến 999.99.
-Ví dụ: Trên hình vẽ H8 thể hiện biển số xe mô tô
+4.2. Về thứ tự đăng ký xe mô tô của quân đội làm kinh tế có thứ tự đăng ký từ 000.01 đến 999.99.
+- Ví dụ: Trên hình vẽ H8 thể hiện biển số xe mô tô
 H8
-Xe máy chuyên dùng (Hình vẽ H9)
+- Xe máy chuyên dùng (Hình vẽ H9)
 H9: Biển số ngắn H9: Biển số dài
 - Rơ moóc, sơ mi rơ moóc (Hình H10)
-Quy định về biển số đăng ký xe tạm thời
+5. Quy định về biển số đăng ký xe tạm thời
 Biển số xe tạm thời bằng giấy, kích thước của biển số theo quy định trên.
 Biển số xe ô tô, xe mô tô cách bố trí số và chữ, kích thước chữ và số như biển số trong nước.
-Đối với biển số đăng ký xe ô tô tạm thời:
-Biển dài: Nhóm thứ nhất gồm chữ “T” và ký hiệu địa phương đăng ký, Nhóm thứ hai là thứ tự đăng ký, từ 000.01 đến 999.99. Giữa hai nhóm có gạch ngang (-).
-Biển ngắn:
+5.1. Đối với biển số đăng ký xe ô tô tạm thời:
+- Biển dài: Nhóm thứ nhất gồm chữ “T” và ký hiệu địa phương đăng ký, Nhóm thứ hai là thứ tự đăng ký, từ 000.01 đến 999.99. Giữa hai nhóm có gạch ngang (-).
+- Biển ngắn:
 + Hàng trên gồm chữ “T” và ký hiệu địa phương đăng ký.
 + Hàng dưới là thứ tự đăng ký, từ 000.01 đến 999.99.
 H11: Biển số ngắn H11: Biển số dài
@@ -1262,22 +1262,22 @@ Ví dụ: Trên biển số hình vẽ H11 thể hiện:
 + T: Ký hiệu đăng ký tạm thời.
 + 80 chỉ ký hiệu nơi đăng ký.
 + 235.88 là ký hiệu thứ tự đăng ký.
-Đối với biển số mô tô có biển số tạm thời (Hình vẽ H12)
+5.2. Đối với biển số mô tô có biển số tạm thời (Hình vẽ H12)
 7. Quy định về biển số xe trúng đấu giá có gắn tem nhận diện màu đỏ và màu vàng, chữ màu xanh
 Ví dụ: Trên biển số hình vẽ H12 thể hiện:
-Hai số đầu là ký hiệu địa phương đăng ký xe (theo phụ lục 02 ban hành kèm theo Thông tư số 79/2024/TT-BCA và sê ri đăng ký được quy định tại Điều 37 Thông tư này.
+- Hai số đầu là ký hiệu địa phương đăng ký xe (theo phụ lục 02 ban hành kèm theo Thông tư số 79/2024/TT-BCA và sê ri đăng ký được quy định tại Điều 37 Thông tư này.
 - Nhóm số thứ hai là thứ tự xe đăng ký gồm 05 chữ số tự nhiên, từ 000.01 đến 999.99.
 - Tem biểu tượng nhận diện biển số trúng đấu giá (do cán bộ đăng ký xe dán)
 8. Quy định biển số xe sử dụng năng lượng xanh, năng lượng sạch, thân thiện môi trường có gắn tem nhận diện màu xanh lá cây
 Ví dụ: Trên biển số hình vẽ H13 thể hiện:
-Hai số đầu là ký hiệu địa phương đăng ký xe (theo phụ lục 02 ban hành kèm theo Thông tư số 79/2024/TT-BCA và sê ri đăng ký được quy định tại Điều 37 Thông tư này.
+- Hai số đầu là ký hiệu địa phương đăng ký xe (theo phụ lục 02 ban hành kèm theo Thông tư số 79/2024/TT-BCA và sê ri đăng ký được quy định tại Điều 37 Thông tư này.
 - Nhóm số thứ hai là thứ tự xe đăng ký gồm 05 chữ số tự nhiên, từ 000.01 đến 999.99.
 - Tem biểu tượng nhận diện biển số xe điện, xe sử dụng năng lượng xanh, thân thiện môi trường (do cán bộ đăng ký xe dán trước khi cấp biển).
 9. Biển số đăng ký xe tạm thời phục vụ chính trị, hội nghị, thể thao
 Biển số xe được làm bằng kim loại biển số nền màu xanh, chữ và số màu trắng, có ký hiệu riêng.
 9.1. Đối với biển số đăng ký xe ô tô tạm thời
-Biển dài: Nhóm thứ nhất gồm Logo phục vụ chính trị, hội nghị, thể thao và ký hiệu địa phương đăng ký. Nhóm thứ hai là thứ tự đăng ký, từ 000.01 đến 999.99 (hoặc có thể thay thế số thứ tự đăng ký bằng các chữ cái có quy cách tương ứng của các chữ sử dụng cho biển số cùng loại), giữa hai nhóm có gạch ngang (-).
-Biển ngắn:
+- Biển dài: Nhóm thứ nhất gồm Logo phục vụ chính trị, hội nghị, thể thao và ký hiệu địa phương đăng ký. Nhóm thứ hai là thứ tự đăng ký, từ 000.01 đến 999.99 (hoặc có thể thay thế số thứ tự đăng ký bằng các chữ cái có quy cách tương ứng của các chữ sử dụng cho biển số cùng loại), giữa hai nhóm có gạch ngang (-).
+- Biển ngắn:
 + Hàng trên gồm logo phục vụ chính trị, hội nghị, thể thao và ký hiệu địa phương đăng ký.
 + Hàng dưới là thứ tự đăng ký, từ 000.01 đến 999.99 (hoặc chữ cái).
 H14: Biển số ngắn H14: Biển số dài
@@ -1285,8 +1285,8 @@ Ví dụ: Trên biển số hình vẽ H14 thể hiện:
 + Logo: Ký hiệu giao cho đơn vị đăng ký duyệt.
 + 29 chỉ ký hiệu nơi đăng ký.
 + 235.58 là ký hiệu thứ tự đăng ký.
-Toàn bộ các dãy chữ, số, ký hiệu, logo được bố trí cân đối giữa biển số
-Kích thước chữ, số, ký hiệu như quy định đối với biển số ô tô trong nước.
+- Toàn bộ các dãy chữ, số, ký hiệu, logo được bố trí cân đối giữa biển số
+- Kích thước chữ, số, ký hiệu như quy định đối với biển số ô tô trong nước.
 9.2. Đối với biển số đăng ký xe mô tô tạm thời
 - Kích thước chữ, số, ký hiệu như quy định đối với biển số mô tô trong nước. (Hình vẽ H15)
 H15: Biển số đăng ký xe mô tô tạm thời

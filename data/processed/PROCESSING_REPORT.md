@@ -38,13 +38,13 @@ print({
 
 ## 1. Văn bản và đơn vị
 
-Có **33 văn bản**: 30 trích từ docx, 2 từ pdf (`tt_30_2026_bxd`, `blds_2015`), 1 từ chữ thuần (`tt_36_2024_byt`); không còn văn bản nào OCR. Từ 2026-10-16, `tt_108_2026_bca` và `tt_155_2025_btc` đọc bản Word lấy từ Công báo, `tt_36_2024_byt` đọc bản chữ thuần đã đối chiếu với PDF chính thức (xem mục 1a). `legal_units.jsonl` có **17.855 đơn vị**:
+Có **33 văn bản**: 30 trích từ docx, 2 từ pdf (`tt_30_2026_bxd`, `blds_2015`), 1 từ chữ thuần (`tt_36_2024_byt`); không còn văn bản nào OCR. Từ 2026-10-16, `tt_108_2026_bca` và `tt_155_2025_btc` đọc bản Word lấy từ Công báo, `tt_36_2024_byt` đọc bản chữ thuần đã đối chiếu với PDF chính thức (xem mục 1a). `legal_units.jsonl` có **17.902 đơn vị**:
 
 | Cấp | Số đơn vị |
 |---|---:|
 | `dieu` | 2.236 |
-| `khoan` | 7.053 |
-| `diem` | 8.343 |
+| `khoan` | 7.087 |
+| `diem` | 8.356 |
 | `phu_luc` | 158 |
 | `mo_dau` | 33 |
 | `ket_thuc` | 32 |
@@ -81,7 +81,23 @@ Mã đơn vị thay đổi ở TT 108: bỏ `d37:k2:e` (OCR đọc nhầm nhãn,
 | Lỗi dấu đếm thử ("giây phép", "đôi với", "sô") | 3 / 11 / 13 → 0 / 0 / 0 |
 | Phụ lục I | Bảng OCR lẫn cột → 9 chuyên khoa × 3 nhóm, có nhãn nhóm |
 
-**Hạn chế mới phát hiện:** bản Word TT 108 dùng đánh số tự động của Word cho 271 đoạn (2 trong thân văn bản là điểm a, b khoản 2 Điều 39, 269 trong phụ lục), và extractor hiện bỏ nhãn đánh số tự động. Vì vậy khoản 2 Điều 39 TT 108 đang không tách điểm. Lỗi này có từ trước ở các văn bản Word khác (xem mục 7).
+### 1b. Nhãn đánh số tự động của Word (2026-10-16)
+
+Đoạn văn trong Word dùng đánh số tự động (`w:numPr`) không chứa nhãn "1.", "a)" trong chữ; trước đây `docx_lines` chỉ đọc chữ nên mất nhãn và parser không tách được Khoản/Điểm. Nay `extract._Numbering` dựng nhãn từ `word/numbering.xml` theo cách Word hiển thị: định dạng (`decimal`, `lowerLetter`, La Mã, `bullet` → "-"), `lvlText` nhiều cấp như `%1.%2.`, số bắt đầu; các `w:num` dùng chung `abstractNum` đếm nối tiếp, `startOverride` đếm lại; cấp sâu bắt đầu lại khi cấp nông tăng; đếm cả đoạn trong bảng và đoạn rỗng. Đoạn đã có nhãn gõ tay ở đầu thì không chèn thêm nhãn tự động.
+
+Đối chiếu nhãn dựng ra với chữ của bản PDF Công báo (TT 108 so với bản OCR cũ): thân văn bản khớp toàn bộ (TT 38 39/39, NĐ 160 9/9, NĐ 165, NĐ 168, NĐ 220, QCVN 41). Lệch còn lại nằm trong phụ lục (TT 12 khoảng 10/834, TT 79 13/32 ở quy cách biển số, TT 108 ở bảng chấm điểm), nơi tệp Word và bản in đánh số khác nhau; phụ lục không tách Khoản/Điểm nên không đổi cấu trúc đơn vị.
+
+| Văn bản | Đơn vị trước → sau | Thay đổi chính |
+|---|---|---|
+| TT 38/2024 (tốc độ) | 18 → 57 | Khoản 1 → 32, Điểm 3 → 11; bỏ `d10:a–c` (điểm treo dưới Điều) thành `d10:k2:a–d` |
+| TT 12/2025 | 424 → 427 | `d36:a–d` thành `d36:k1:a–d`; thêm `d37:k2:a`, `d37:k2:b` |
+| TT 108/2026 | 479 → 481 | Thêm `d39:k2:a`, `d39:k2:b` |
+| NĐ 160/2024 | 363 → 364 | Thêm `d3:k1` |
+| NĐ 168/2024 | 1.297 → 1.298 | Thêm `d46:k1` |
+| QCVN 41 | 399 → 400 | Thêm `d47:k6:a` |
+| NĐ 165, NĐ 220, TT 79 | không đổi số đơn vị | Chữ có thêm nhãn ở 3, 1, 7 đơn vị |
+
+Mọi dòng sửa đổi, ngoại lệ hiệu lực và phân loại phụ lục đã duyệt vẫn áp được; không đơn vị mới nào nằm dưới đơn vị có bản sửa đổi.
 
 ## 2. Danh tính văn bản
 
@@ -243,9 +259,9 @@ Quy ước: nếu một dòng gồm nhiều mốc ngày mà không tách đượ
 
 | Chỉ số | Giá trị |
 |---|---:|
-| Tổng bản ghi | 18.794 |
-| Có hiệu lực tại 2026-10-01 theo `in_force_at` | 17.427 |
-| `valid_to` khác rỗng / rỗng | 1.380 / 17.414 |
+| Tổng bản ghi | 18.841 |
+| Có hiệu lực tại 2026-10-01 theo `in_force_at` | 17.471 |
+| `valid_to` khác rỗng / rỗng | 1.383 / 17.458 |
 | Bản ghi mới do sửa đổi (`source_doc_id` ≠ `doc_id`) | 1.004 |
 | Bản ghi bắt đầu sau ngày chốt | 4 |
 | Văn bản có đơn vị hiệu lực tại ngày chốt | 33 |
@@ -290,7 +306,7 @@ TT 108 thay TT 12 từ 2026-07-01, nhưng ngoại lệ `gia_han` giữ Điều 4
 | Phần kết trong Điều cuối | Trước: 2 `ket_thuc` | Tách chữ ký/Nơi nhận | Sau: 32 `ket_thuc` (31 trước khi TT 155 đọc bản Word) |
 | Mục lục nhận là phụ lục | 12 phụ lục rỗng QCVN | Bỏ dòng mục lục trước parse | 0 phụ lục rỗng |
 | Nhãn điểm có chữ số | 1 dòng sửa đổi `k1)` NĐ 168 Đ41 k4 | Nhận điểm có chữ số, áp `bo_sung` | `:k1` riêng trong cây đơn vị |
-| Ngoại lệ ngày hiệu lực | 22 dòng: 8 `gia_han`, 5 `hoan_ap_dung`, 9 `moc_trong_noi_dung` | Gắn `hl_ngoai_le`, lọc bằng `in_force_at` | 17.427 bản ghi sống tại ngày chốt, có điều kiện kèm theo |
+| Ngoại lệ ngày hiệu lực | 22 dòng: 8 `gia_han`, 5 `hoan_ap_dung`, 9 `moc_trong_noi_dung` | Gắn `hl_ngoai_le`, lọc bằng `in_force_at` | 17.471 bản ghi sống tại ngày chốt, có điều kiện kèm theo |
 | Phiên bản không đổi nội dung | 184 bản ghi `noi_dung_doi=false` | Đánh dấu so với phiên bản liền trước | Giữ cả 184 để truy vết nguồn |
 | Phụ lục mẫu biểu | 107/158 `mau_bieu`, 51 `noi_dung` | Phân loại và áp bản đè đã duyệt | 158 phụ lục được gắn nhãn |
 | Chất lượng chữ kém | 19 bản ghi, gồm 16 phụ lục (21 trước khi TT 108 đọc bản Word) | Gắn `chat_luong=kem`, giữ nguyên | Liệt kê dưới bảng; cần kiểm tra theo nguồn |
@@ -313,6 +329,6 @@ Tỷ lệ âm tiết lỗi là **heuristic**, không đo độ đúng pháp lý 
 
 - Phụ lục QCVN mới trích được A, B, C, D, E, F, G, I, K; M/N/O/P và nhiều hình là nguồn ảnh chưa có chữ. Phải khôi phục trước khi dùng như kho tra cứu đầy đủ.
 - `tt_108_2026_bca:pl12` nay có bảng chuyển đổi GPLX quốc tế từ bản Word (467 ký tự, trước là 138). `nd_39_2023:pl1` chỉ còn dòng “ban hành kèm theo”, thiếu nội dung phụ lục. `tt_108_2026_bca:pl9` và `tt_12_2025_bca:pl10` chứa nội dung quy định trong phụ lục, cần cắt đoạn phù hợp. Các đơn vị `chat_luong=kem` nêu ở trên vẫn giữ và cần đối chiếu nguồn; nhãn `ok` không chứng minh nội dung đủ.
-- **Nhãn đánh số tự động của Word bị bỏ khi trích chữ** (phát hiện 2026-10-16). Đoạn dùng `w:numPr` không có nhãn "1.", "a)" trong chữ nên parser không tách được Khoản/Điểm tương ứng. Số đoạn có chữ dùng đánh số tự động: TT 12 khoảng 900 (hai file), TT 108 271 (2 trong thân), TT 79 95, TT 38 39 (khoản 1, 2 Điều 2 và Điều 6 không tách được), NĐ 160 31, NĐ 165 11, NĐ 168 1, NĐ 220 1, QCVN 41 1. Cần dựng nhãn từ `numbering.xml` trong `extract.docx_lines`, rồi rà lại các dòng sửa đổi và ngoại lệ trỏ tới những văn bản này.
+- Nhãn đánh số tự động của Word đã được dựng lại (mục 1b). Trong phụ lục TT 12, TT 79, TT 108 một số nhãn dựng từ tệp Word khác bản in; đọc phụ lục cần đối chiếu PDF khi trích dẫn số thứ tự mục.
 - TT 12 Phụ lục IV–VI chỉ được gia hạn một phần, còn mô hình theo cả đơn vị kèm điều kiện; người gọi phải xét mục/mẫu. Mỗi dòng sửa đổi chỉ có một ngày hiệu lực; phần có nhiều mốc trong cùng câu/đơn vị cần diễn giải điều kiện.
 - Các dòng sửa đổi nhắm văn bản ngoài kho hoặc thay/bãi bỏ phụ lục không có địa chỉ Điều/khoản chưa được áp dụng. `line_start` trên bản ghi sinh từ sửa đổi là vị trí ở đoạn trích, không phải văn bản đích. Trường hợp biên bổ sung khoản và sửa chính khoản cùng ngày chưa xử lý.

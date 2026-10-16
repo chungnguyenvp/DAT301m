@@ -32,7 +32,7 @@ Nguồn: review `feat/legal-processing` và báo cáo hiện hành [`PROCESSING_
 ## Phát hiện ngày 2026-10-16 (đổi nguồn chữ TT 108, TT 155)
 
 - **Đã xử lý:** TT 108 và TT 155 đọc bản Word từ Công báo thay OCR; `tt_108_2026_bca:pl12` nay có bảng chuyển đổi; hết lỗi dấu OCR ở hai văn bản này. Xem mục 1a `PROCESSING_REPORT.md`.
-- **Nhãn đánh số tự động của Word bị bỏ khi trích chữ:** `extract.docx_lines` chỉ đọc `w:t`, nên đoạn dùng `w:numPr` mất nhãn "1.", "a)", "-" và parser không tách được Khoản/Điểm. Ảnh hưởng: TT 12 (khoảng 900 đoạn), TT 108 (271, gồm điểm a, b khoản 2 Điều 39), TT 79 (95), TT 38 (39, gồm các khoản Điều 2 và Điều 6 về tốc độ), NĐ 160 (31), NĐ 165 (11), NĐ 168, NĐ 220, QCVN 41 (mỗi văn bản 1). Cần dựng nhãn từ `word/numbering.xml` (định dạng, `lvlText`, giá trị bắt đầu, đếm theo `numId`/cấp), có test, rồi rà lại dòng sửa đổi và ngoại lệ trỏ tới các văn bản này vì mã đơn vị sẽ đổi.
+- **Đã xử lý:** nhãn đánh số tự động của Word được dựng từ `numbering.xml` (mục 1b `PROCESSING_REPORT.md`); TT 38 từ 18 lên 57 đơn vị. Còn lệch nhãn trong phụ lục TT 12, TT 79, TT 108 giữa tệp Word và bản in, không ảnh hưởng cấu trúc Khoản/Điểm.
 - **Đã xử lý:** TT 36 đọc bản chữ thuần (thuvienphapluat.vn, đã đối chiếu với PDF chính thức); bảng Phụ lục I dựng lại có nhãn Nhóm 1/2/3 theo ảnh PDF. Không còn văn bản nào OCR. Nếu sau này có bản từ nguồn nhà nước (Công báo, vbpl.vn) thì nên thay file chữ này.
 - **Bảng phí TT 155 bản Word** giữ dạng "1 | Xe ô tô… | 350.000 | 100.000" với dòng tiêu đề cột "Khu vực I | Khu vực II"; bản OCR cũ có nhãn cột trong từng ô do sửa tay. Khi cắt đoạn cần lặp tiêu đề cột vào từng dòng để mô hình đọc đúng khu vực.
 

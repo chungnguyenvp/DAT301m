@@ -548,7 +548,7 @@ Mẫu số 3
 BÁO CÁO KẾT QUẢ KINH DOANH BẢO HIỂM BẮT BUỘC CÔNG TRÌNH TRONG HOẠT ĐỘNG XÂY DỰNG
 Tên doanh nghiệp bảo hiểm: ...
 Kỳ báo cáo: Năm ...
-Kết quả kinh doanh nghiệp vụ bảo hiểm tài sản
+1. Kết quả kinh doanh nghiệp vụ bảo hiểm tài sản
 STT | Số lượng công trình | Số vụ tổn thất | Doanh thu phí bảo hiểm (triệu đồng) | Chi phí hoạt động kinh doanh bảo hiểm (triệu đồng) | Lợi nhuận/Lỗ thuần hoạt động kinh doanh bảo hiểm (triệu đồng) (14) = (5)-(13)
 Doanh thu phí bảo hiểm gốc và nhận tái (1) | Phí nhượng tái bảo hiểm (2) | Hoa hồng nhượng tái bảo hiểm (3) | Thu khác (4) | Tổng cộng (5) = (1)-(2) + (3) + (4) | Chi bồi thường bảo hiểm gốc và nhận tái (6) | Thu bồi thường nhượng tái bảo hiểm (7) | Tăng (giảm) dự phòng bồi thường bảo hiểm gốc và nhận tái bảo hiểm (8) | Tăng (giảm) dự phòng bồi thường nhượng tái bảo hiểm (9) | Tăng (giảm) dự phòng dao động lớn (10) | Chi khác hoạt động kinh doanh bảo hiểm (11) | Chi quản lý doanh nghiệp (12) | Tổng cộng (13) = (6)- (7) + (8)-(9)+ (10)+ (11)+ (12)
 2. Kết quả kinh doanh của bảo hiểm bắt buộc công trình trong thời gian xây dựng
