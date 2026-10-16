@@ -60,3 +60,9 @@ DERIVED_DOCS = {
 SCOPE_DIEU = {"blds_2015": (584, 608), "vbhn_135_2025_blhs": (260, 266)}
 # Văn bản đánh số khoản dạng "3.1." (số Điều.số khoản)
 DOTTED_KHOAN_DOCS = {"qcvn_41_2024"}
+
+# Tokenizer để đếm token; chỉ tải tokenizer.json, không có trọng số mô hình.
+TOKENIZERS = {
+    "qwen": ROOT / "tools/tokenizers/qwen3.5-9b/tokenizer.json",
+    "bge_m3": ROOT / "tools/tokenizers/bge-m3/tokenizer.json",
+}
