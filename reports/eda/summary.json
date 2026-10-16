@@ -1,0 +1,451 @@
+{
+  "E1": {
+    "amending_document_units": 1285,
+    "amending_documents": 13,
+    "levels": {
+      "diem": 8185,
+      "dieu": 2216,
+      "khoan": 7118,
+      "phu_luc": 152
+    },
+    "units_by_group": {
+      "Biển báo": 403,
+      "Bảo hiểm": 616,
+      "GPLX": 981,
+      "Hướng dẫn": 2405,
+      "Luật lõi": 2040,
+      "Lệ phí": 189,
+      "Nộp phạt, giữ xe": 952,
+      "Tai nạn": 6985,
+      "Tốc độ": 55,
+      "Xử phạt": 1900,
+      "Đăng kiểm": 361,
+      "Đăng ký xe": 784
+    }
+  },
+  "E10": {
+    "active_annex_types": {
+      "mau_bieu": 105,
+      "noi_dung": 47
+    },
+    "odd_top20": [
+      [
+        "♦",
+        280
+      ],
+      [
+        "□",
+        160
+      ],
+      [
+        "",
+        77
+      ],
+      [
+        "",
+        31
+      ],
+      [
+        "☐",
+        23
+      ],
+      [
+        "≤",
+        13
+      ],
+      [
+        "≥",
+        12
+      ],
+      [
+        "√",
+        9
+      ],
+      [
+        "",
+        8
+      ],
+      [
+        "●",
+        6
+      ],
+      [
+        "‰",
+        6
+      ],
+      [
+        "±",
+        3
+      ],
+      [
+        "",
+        3
+      ],
+      [
+        "",
+        2
+      ],
+      [
+        "‟",
+        1
+      ]
+    ],
+    "quality_checks": {
+      "Bản ghi chat_luong = kem": 17,
+      "Ký tự lạ (tổng số lần)": 634,
+      "unit_id có hậu tố #": 0,
+      "Đơn vị có dòng phần kết": 0,
+      "Đơn vị rỗng (không tiêu đề, không nội dung)": 0
+    },
+    "source_gap_audit": {
+      "evidence_report": "data/processed/PROCESSING_REPORT.md",
+      "known_qcvn_titles_absent": [
+        "Phụ lục M",
+        "Phụ lục N",
+        "Phụ lục O",
+        "Phụ lục P"
+      ],
+      "known_stub_units": [
+        {
+          "chat_luong": "ok",
+          "text": "(Kèm theo Nghị định số 39/2023/NĐ-CP ngày 26 tháng 6 năm 2023\ncủa Chính Phủ)",
+          "text_characters": 76,
+          "thieu_noi_dung": "Phụ lục là ảnh trong bản Công báo, chưa có chữ; dữ liệu chỉ còn dòng \"Kèm theo Nghị định\"",
+          "title": "Phụ lục",
+          "unit_id": "nd_39_2023:pl1"
+        }
+      ],
+      "qcvn_annex_titles_present": [
+        "Phụ lục A",
+        "Phụ lục B",
+        "Phụ lục C",
+        "Phụ lục D",
+        "Phụ lục E",
+        "Phụ lục F",
+        "Phụ lục G",
+        "Phụ lục I",
+        "Phụ lục K"
+      ],
+      "scope": "All stored versions, independent of cutoff; QCVN M-P plus units flagged thieu_noi_dung, not an exhaustive audit"
+    }
+  },
+  "E2": {
+    "large_doc_in_scope": 213,
+    "large_doc_out_scope": 6772,
+    "large_doc_units": 6985,
+    "scope": {
+      "blds_2015": [
+        584,
+        608
+      ],
+      "vbhn_135_2025_blhs": [
+        260,
+        266
+      ]
+    }
+  },
+  "E3": {
+    "clause_bge_p50": 77.0,
+    "clause_bge_p95": 344.0,
+    "clause_body_only_bge_p50": 62.0,
+    "clause_body_only_bge_p95": 321.0,
+    "clause_body_only_over_512": 108,
+    "clause_candidates": 7118,
+    "clause_over_512": 123,
+    "conditional_branch_body_tokens": [
+      {
+        "dieu_kien_hl": "Đến hết 31/12/2027, yêu cầu lắp thiết bị ghi nhận hình ảnh người lái xe chưa áp dụng với xe ô tô kinh doanh vận tải hành khách dưới 08 chỗ, xe ô tô kinh doanh vận tải hàng hóa (trừ xe đầu kéo), xe vận tải nội bộ; các xe còn lại áp dụng như bản trước; Yêu cầu lắp thiết bị ghi nhận hình ảnh khoang chở khách đối với xe ô tô kinh doanh vận tải hành khách từ 08 chỗ trở lên áp dụng từ 01/01/2029 theo lộ trình của Chính phủ",
+        "tok_bge_body": 68,
+        "tok_qwen_body": 70,
+        "unit_id": "luat_36_2024:d35:k2",
+        "valid_from": "2025-01-01",
+        "version_id": "luat_36_2024:d35:k2@2025-01-01"
+      },
+      {
+        "dieu_kien_hl": "Đến hết 31/12/2027, quy định về thiết bị ghi nhận hình ảnh người lái xe chỉ áp dụng với xe ô tô chở người từ 08 chỗ trở lên kinh doanh vận tải hành khách (như bản trước); với xe kinh doanh vận tải hành khách dưới 08 chỗ và xe vận tải nội bộ áp dụng từ 01/01/2028",
+        "tok_bge_body": 89,
+        "tok_qwen_body": 90,
+        "unit_id": "nd_168_2024:d20:k5:l",
+        "valid_from": "2025-01-01",
+        "version_id": "nd_168_2024:d20:k5:l@2025-01-01"
+      },
+      {
+        "dieu_kien_hl": "Đến hết 31/12/2027, chỉ áp dụng với xe ô tô đầu kéo (như bản trước); với xe ô tô kinh doanh vận tải hàng hóa (trừ xe đầu kéo) và xe vận tải nội bộ áp dụng từ 01/01/2028",
+        "tok_bge_body": 69,
+        "tok_qwen_body": 68,
+        "unit_id": "nd_168_2024:d21:k3:b",
+        "valid_from": "2025-01-01",
+        "version_id": "nd_168_2024:d21:k3:b@2025-01-01"
+      },
+      {
+        "dieu_kien_hl": "Đến hết 31/12/2027, yêu cầu lắp thiết bị ghi nhận hình ảnh người lái xe chưa áp dụng với xe ô tô kinh doanh vận tải hành khách dưới 08 chỗ, xe ô tô kinh doanh vận tải hàng hóa (trừ xe đầu kéo), xe vận tải nội bộ; các xe còn lại áp dụng như bản trước; Yêu cầu lắp thiết bị ghi nhận hình ảnh khoang chở khách đối với xe ô tô kinh doanh vận tải hành khách từ 08 chỗ trở lên áp dụng từ 01/01/2029 theo lộ trình của Chính phủ",
+        "tok_bge_body": 172,
+        "tok_qwen_body": 176,
+        "unit_id": "luat_36_2024:d35:k2",
+        "valid_from": "2026-07-01",
+        "version_id": "luat_36_2024:d35:k2@2026-07-01"
+      },
+      {
+        "dieu_kien_hl": "Đến hết 31/12/2027, quy định về thiết bị ghi nhận hình ảnh người lái xe chỉ áp dụng với xe ô tô chở người từ 08 chỗ trở lên kinh doanh vận tải hành khách (như bản trước); với xe kinh doanh vận tải hành khách dưới 08 chỗ và xe vận tải nội bộ áp dụng từ 01/01/2028",
+        "tok_bge_body": 77,
+        "tok_qwen_body": 76,
+        "unit_id": "nd_168_2024:d20:k5:l",
+        "valid_from": "2026-08-15",
+        "version_id": "nd_168_2024:d20:k5:l@2026-08-15"
+      },
+      {
+        "dieu_kien_hl": "Đến hết 31/12/2027, chỉ áp dụng với xe ô tô đầu kéo (như bản trước); với xe ô tô kinh doanh vận tải hàng hóa (trừ xe đầu kéo) và xe vận tải nội bộ áp dụng từ 01/01/2028",
+        "tok_bge_body": 83,
+        "tok_qwen_body": 82,
+        "unit_id": "nd_168_2024:d21:k3:b",
+        "valid_from": "2026-08-15",
+        "version_id": "nd_168_2024:d21:k3:b@2026-08-15"
+      }
+    ],
+    "core_clause_bge_p95": 389.0499999999997,
+    "core_clause_candidates": 3880,
+    "core_clause_over_512": 93,
+    "heading_token_delta_p50": 11.0,
+    "heading_token_delta_p95": 37.0,
+    "short_under_5_words": 2298
+  },
+  "E4": {
+    "first_fine_frames": 190,
+    "first_fine_max": 75000000,
+    "first_fine_min": 100000,
+    "points_first_match": {
+      "10": 8,
+      "2": 18,
+      "3": 2,
+      "4": 9,
+      "6": 9,
+      "8": 2
+    },
+    "structured_points_under_frames": 574
+  },
+  "E5": {
+    "amended_versions": 1128,
+    "content_changed_clause_point_unit_ids": 731,
+    "reviewed_actions": {
+      "bai_bo": 28,
+      "bo_sung": 55,
+      "sua_doi": 481,
+      "thay_the_van_ban": 4
+    },
+    "reviewed_rows": 568
+  },
+  "E6": {
+    "exception_extensions_exclusive_end": {
+      "tt_12_2025_bca": "2027-03-01"
+    },
+    "future_events": 48,
+    "future_events_by_date": {
+      "2027-01-01": 5,
+      "2027-03-01": 20,
+      "2027-07-01": 6,
+      "2028-01-01": 12,
+      "2029-01-01": 5
+    }
+  },
+  "E7": {
+    "groups": 12,
+    "legal_colloquial_counts": [
+      {
+        "doi_thuong": "xe máy(?! chuyên dùng)",
+        "phap_ly": "xe mô tô",
+        "so_lan": 275,
+        "so_lan_doi_thuong": 121
+      },
+      {
+        "doi_thuong": "bằng lái",
+        "phap_ly": "giấy phép lái xe",
+        "so_lan": 885,
+        "so_lan_doi_thuong": 1
+      },
+      {
+        "doi_thuong": "rượu bia|rượu, bia",
+        "phap_ly": "nồng độ cồn",
+        "so_lan": 29,
+        "so_lan_doi_thuong": 9
+      },
+      {
+        "doi_thuong": "xe hơi",
+        "phap_ly": "xe ô tô",
+        "so_lan": 863,
+        "so_lan_doi_thuong": 0
+      },
+      {
+        "doi_thuong": "\\bcsgt\\b",
+        "phap_ly": "cảnh sát giao thông",
+        "so_lan": 400,
+        "so_lan_doi_thuong": 3
+      },
+      {
+        "doi_thuong": "đèn đỏ|đèn xanh",
+        "phap_ly": "đèn tín hiệu",
+        "so_lan": 130,
+        "so_lan_doi_thuong": 44
+      },
+      {
+        "doi_thuong": "giam xe|giữ xe",
+        "phap_ly": "tạm giữ phương tiện",
+        "so_lan": 15,
+        "so_lan_doi_thuong": 3
+      },
+      {
+        "doi_thuong": "nón bảo hiểm",
+        "phap_ly": "mũ bảo hiểm",
+        "so_lan": 28,
+        "so_lan_doi_thuong": 0
+      }
+    ],
+    "top_terms": {
+      "Biển báo": [
+        "w",
+        "ie",
+        "kilômét",
+        "r",
+        "minh họa"
+      ],
+      "Bảo hiểm": [
+        "khớp",
+        "gẫy",
+        "ngón",
+        "tổn thương",
+        "phẫu thuật"
+      ],
+      "GPLX": [
+        "thí sinh",
+        "xi nhan",
+        "bài",
+        "báo danh",
+        "xuất phát"
+      ],
+      "Hướng dẫn": [
+        "campuchia",
+        "liên vận",
+        "lào",
+        "trung quốc",
+        "giao đấu"
+      ],
+      "Luật lõi": [
+        "hạng",
+        "đối tác",
+        "trúng",
+        "đường dây",
+        "d2"
+      ],
+      "Lệ phí": [
+        "trước bạ",
+        "lệ phí",
+        "đất",
+        "block",
+        "đăng ký"
+      ],
+      "Nộp phạt, giữ xe": [
+        "giáo dưỡng",
+        "tang vật",
+        "bảo lãnh",
+        "niêm phong",
+        "phạt"
+      ],
+      "Tai nạn": [
+        "phạt",
+        "thiệt hại",
+        "tù",
+        "phạm tội",
+        "tổng tỷ lệ"
+      ],
+      "Tốc độ": [
+        "tốc độ",
+        "biển báo",
+        "đường cao tốc",
+        "km",
+        "thông tư"
+      ],
+      "Xử phạt": [
+        "phạt",
+        "thực hiện hành vi",
+        "miligam",
+        "cảnh cáo",
+        "làm công"
+      ],
+      "Đăng kiểm": [
+        "gcn",
+        "kdvt",
+        "khí thải",
+        "đăng kiểm",
+        "kiểm định"
+      ],
+      "Đăng ký xe": [
+        "đấu giá",
+        "mật khẩu",
+        "trúng",
+        "ri",
+        "sê"
+      ]
+    }
+  },
+  "E8": {
+    "candidates": 5166,
+    "near_duplicate_pairs": 92
+  },
+  "E9": {
+    "matched_references": 1557,
+    "reference_types": {
+      "ngoai": 168,
+      "noi_bo": 1389
+    },
+    "units_checked": 16271,
+    "units_with_reference": 1060
+  },
+  "cutoff": "2026-10-01",
+  "eval_proposal": {
+    "rows": 36,
+    "slots_by_group": {
+      "Biển báo": 12,
+      "Bảo hiểm": 12,
+      "GPLX": 17,
+      "Hướng dẫn": 14,
+      "Luật lõi": 15,
+      "Lệ phí": 9,
+      "Nộp phạt, giữ xe": 14,
+      "Tai nạn": 9,
+      "Tốc độ": 8,
+      "Xử phạt": 16,
+      "Đăng kiểm": 9,
+      "Đăng ký xe": 15
+    },
+    "slots_by_type": {
+      "chung": 41,
+      "hành vi cấm": 7,
+      "mức phạt": 10,
+      "thủ tục": 45,
+      "tình huống": 38,
+      "định nghĩa": 9
+    },
+    "total_slots": 150
+  },
+  "inputs": {
+    "active_distinct_units": 17671,
+    "active_versions": 17674,
+    "conditional_active_versions": 16,
+    "documents": 40,
+    "multi_branch_unit_ids": 3,
+    "processed_versions": 20500
+  },
+  "tokenizers": [
+    {
+      "bytes": 12807982,
+      "name": "Qwen3.5-9B",
+      "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/tokenizer.json"
+    },
+    {
+      "bytes": 17098108,
+      "name": "bge-m3",
+      "sha256": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+      "url": "https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer.json"
+    }
+  ]
+}
