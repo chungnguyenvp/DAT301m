@@ -1,0 +1,568 @@
+{
+  "utc": "2026-10-17T18:24:40.812440+00:00",
+  "checks": [
+    {
+      "name": "khoan:matching_load_accepted",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:different_encoder_revision_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:different_encoder_max_seq_length_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:different_encoder_normalize_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:matching_load_accepted",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:different_encoder_revision_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:different_encoder_max_seq_length_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:different_encoder_normalize_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "altered_chunk_text_rejected_before_index_load",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "altered_chunk_valid_from_rejected_before_index_load",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "encoder_identity_matches_dev",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "reranker_identity_matches_dev",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "configs_match_saved_report",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "only_30_dev_questions",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "bm25/khoan:full_report_matches",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "bm25/khoan:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "vector/khoan:full_report_matches",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "vector/khoan:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "hybrid/khoan:full_report_matches",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "hybrid/khoan:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "hybrid+rerank/khoan:full_report_matches",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "hybrid+rerank/khoan:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "bm25/dieu:full_report_matches",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "bm25/dieu:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "vector/dieu:full_report_matches",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "vector/dieu:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "hybrid/dieu:full_report_matches",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "hybrid/dieu:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "hybrid+rerank/dieu:full_report_matches",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "hybrid+rerank/dieu:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "everyday:all_final_chunks_live",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "formal:all_final_chunks_live",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "reported_everyday_limitation_reproduced",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "formal_query_point_h_in_top5",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "fresh_reranker_scores_match_cached_pair_scores",
+      "pass": true,
+      "details": {
+        "fresh": [
+          0.6523206830024719,
+          0.9830145835876465
+        ],
+        "cached": [
+          0.6523207426071167,
+          0.9830145835876465
+        ]
+      }
+    },
+    {
+      "name": "saved_dev_report_not_overwritten",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "product_rerank_caches_unchanged",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "queries": {
+    "everyday": {
+      "query": "đi xe máy mà không đội nón bảo hiểm thì bị phạt bao nhiêu",
+      "stages": {
+        "dense_only": {
+          "point_h_rank": 20,
+          "top": [
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#2",
+              "rrf_rank": 1,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d19:k1@2025-01-01",
+              "rrf_rank": 2,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d9:k4@2025-01-01",
+              "rrf_rank": 3,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d16:k1@2025-01-01",
+              "rrf_rank": 4,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d13:k1@2025-01-01",
+              "rrf_rank": 5,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d18:k2@2025-01-01",
+              "rrf_rank": 6,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d12:k5@2025-01-01",
+              "rrf_rank": 7,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d14:k1@2025-01-01",
+              "rrf_rank": 8,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d16:k2@2025-01-01#1",
+              "rrf_rank": 9,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d14:k3@2026-08-15",
+              "rrf_rank": 10,
+              "rerank": null
+            }
+          ]
+        },
+        "hybrid": {
+          "point_h_rank": 5,
+          "top": [
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#2",
+              "rrf_rank": 1,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d9:k4@2025-01-01",
+              "rrf_rank": 2,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d12:k5@2025-01-01",
+              "rrf_rank": 3,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d19:k1@2025-01-01",
+              "rrf_rank": 4,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#1",
+              "rrf_rank": 5,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d8:k8@2025-01-01",
+              "rrf_rank": 6,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d8:k7@2025-01-01",
+              "rrf_rank": 7,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d8:k9@2025-01-01",
+              "rrf_rank": 8,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d7:k5@2025-01-01",
+              "rrf_rank": 9,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d19:k2@2025-01-01",
+              "rrf_rank": 10,
+              "rerank": null
+            }
+          ]
+        },
+        "hybrid_rerank": {
+          "point_h_rank": 6,
+          "top": [
+            {
+              "id": "khoan:nd_168_2024:d19:k1@2025-01-01",
+              "rrf_rank": 4,
+              "rerank": 0.8995659351348877
+            },
+            {
+              "id": "khoan:nd_168_2024:d9:k4@2025-01-01",
+              "rrf_rank": 2,
+              "rerank": 0.8386275172233582
+            },
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#2",
+              "rrf_rank": 1,
+              "rerank": 0.7904277443885803
+            },
+            {
+              "id": "khoan:nd_168_2024:d12:k5@2025-01-01",
+              "rrf_rank": 3,
+              "rerank": 0.765137791633606
+            },
+            {
+              "id": "khoan:vbhn_135_2025_blhs:d262:k1@2025-07-01",
+              "rrf_rank": 15,
+              "rerank": 0.7011095881462097
+            },
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#1",
+              "rrf_rank": 5,
+              "rerank": 0.6523207426071167
+            },
+            {
+              "id": "khoan:nd_168_2024:d18:k2@2025-01-01",
+              "rrf_rank": 14,
+              "rerank": 0.5773016810417175
+            },
+            {
+              "id": "khoan:nd_168_2024:d16:k2@2025-01-01#1",
+              "rrf_rank": 19,
+              "rerank": 0.5238831639289856
+            },
+            {
+              "id": "khoan:nd_168_2024:d16:k1@2025-01-01",
+              "rrf_rank": 11,
+              "rerank": 0.47335490584373474
+            },
+            {
+              "id": "khoan:nd_168_2024:d8:k8@2025-01-01",
+              "rrf_rank": 6,
+              "rerank": 0.4378105700016022
+            }
+          ]
+        }
+      }
+    },
+    "formal": {
+      "query": "không đội mũ bảo hiểm khi điều khiển xe mô tô bị phạt bao nhiêu",
+      "stages": {
+        "dense_only": {
+          "point_h_rank": 26,
+          "top": [
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#2",
+              "rrf_rank": 1,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d14:k1@2025-01-01",
+              "rrf_rank": 2,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d18:k2@2025-01-01",
+              "rrf_rank": 3,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d12:k5@2025-01-01",
+              "rrf_rank": 4,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d19:k1@2025-01-01",
+              "rrf_rank": 5,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d14:k3@2026-08-15",
+              "rrf_rank": 6,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d9:k4@2025-01-01",
+              "rrf_rank": 7,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d13:k1@2025-01-01",
+              "rrf_rank": 8,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d16:k1@2025-01-01",
+              "rrf_rank": 9,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d7:k1@2026-08-15#1",
+              "rrf_rank": 10,
+              "rerank": null
+            }
+          ]
+        },
+        "hybrid": {
+          "point_h_rank": 7,
+          "top": [
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#2",
+              "rrf_rank": 1,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d12:k5@2025-01-01",
+              "rrf_rank": 2,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d9:k4@2025-01-01",
+              "rrf_rank": 3,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d18:k2@2025-01-01",
+              "rrf_rank": 4,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d14:k1@2025-01-01",
+              "rrf_rank": 5,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d14:k3@2026-08-15",
+              "rrf_rank": 6,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#1",
+              "rrf_rank": 7,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d38:k1@2025-01-01",
+              "rrf_rank": 8,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d18:k4@2026-08-15",
+              "rrf_rank": 9,
+              "rerank": null
+            },
+            {
+              "id": "khoan:nd_168_2024:d19:k1@2025-01-01",
+              "rrf_rank": 10,
+              "rerank": null
+            }
+          ]
+        },
+        "hybrid_rerank": {
+          "point_h_rank": 3,
+          "top": [
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#2",
+              "rrf_rank": 1,
+              "rerank": 0.9931867122650146
+            },
+            {
+              "id": "khoan:nd_168_2024:d12:k5@2025-01-01",
+              "rrf_rank": 2,
+              "rerank": 0.9892290830612183
+            },
+            {
+              "id": "khoan:nd_168_2024:d7:k2@2025-01-01#1",
+              "rrf_rank": 7,
+              "rerank": 0.9830145835876465
+            },
+            {
+              "id": "khoan:nd_168_2024:d9:k4@2025-01-01",
+              "rrf_rank": 3,
+              "rerank": 0.9710026979446411
+            },
+            {
+              "id": "khoan:nd_168_2024:d18:k4@2026-08-15",
+              "rrf_rank": 9,
+              "rerank": 0.9221054315567017
+            },
+            {
+              "id": "khoan:nd_168_2024:d18:k2@2025-01-01",
+              "rrf_rank": 4,
+              "rerank": 0.907910168170929
+            },
+            {
+              "id": "khoan:nd_168_2024:d14:k1@2025-01-01",
+              "rrf_rank": 5,
+              "rerank": 0.8527919054031372
+            },
+            {
+              "id": "khoan:nd_168_2024:d38:k1@2025-01-01",
+              "rrf_rank": 8,
+              "rerank": 0.8404945731163025
+            },
+            {
+              "id": "khoan:nd_168_2024:d7:k1@2026-08-15#1",
+              "rrf_rank": 18,
+              "rerank": 0.8342770338058472
+            },
+            {
+              "id": "khoan:nd_168_2024:d14:k2@2025-01-01",
+              "rrf_rank": 14,
+              "rerank": 0.8256497979164124
+            }
+          ]
+        }
+      }
+    }
+  },
+  "encoder": {
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "max_seq_length": 8192,
+    "normalize": true,
+    "dtype": "float32",
+    "dim": 1024
+  },
+  "reranker": {
+    "model": "BAAI/bge-reranker-v2-m3",
+    "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "max_length": 1024
+  },
+  "dev_reproduced": "dev-reproduced-182406627491Z.json",
+  "hashes": {
+    "src/rag/retrieve.py": "b32aed870930b0e420ace72166f5815b6c13fb4d46847a344ea2b9ef29408718",
+    "src/rag/context.py": "2f1401be79752d3d2956e82b54817f96a76a559c6c1453505dcf27b44ba1b0c5",
+    "src/rag/dense.py": "f26b92692fad05e6281b34df7fbb9b4f9979fe3d620b52e0a1d8e4d81b6f1a11",
+    "scripts/build_index.py": "28c805066ae829eb5a1d5686d6607eca6a3961d33cb3d6fff8c8197d2ebd21ff",
+    "scripts/probe_dev.py": "8348360fcae1b078293b1176a960e7f007cc3de6e5a5dadd356ff3a45bc641c3",
+    "tests/test_rag_retrieve.py": "8241e9e1985e2f0258ebcb6c11d8bf6fd91c10d721ac7e76f292053133e62092",
+    "tests/test_rag_dense.py": "187df26c098ebb8dd3761b98d156987020d8190998d15c6050b1a39f70c17911",
+    "reports/retrieval/dev_probe.json": "7767051b01d021187e341557e0ff2c6ccbc492872b8c00c36b9232409ce0eed2",
+    "data/eval/eval_v1.jsonl": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+    "data/eval/bang_chung_v1.json": "3c6fb0c7fb6283c48d475654ab24b72e1adbf517295a943b58b6981d0b76b4cc",
+    "data/rag/MANIFEST.json": "1f2f1f4f38c6901c8e1590bf6475be2a171199ddaad023f61a5eee50f2d1b6d0"
+  }
+}

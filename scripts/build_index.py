@@ -9,8 +9,6 @@ lệnh này là tiếp tục. Mã hóa toàn kho trên CPU mất khoảng 45 ph�
 """
 
 import argparse
-import hashlib
-import json
 import sys
 import time
 from pathlib import Path
@@ -18,7 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from lawproc import config  # noqa: E402
-from rag import bm25, dense  # noqa: E402
+from rag import bm25, dense, retrieve  # noqa: E402
 
 RAG = config.DATA / "rag"
 INDEX = RAG / "index"
@@ -29,13 +27,10 @@ def log(msg: str) -> None:
 
 
 def load_chunks(cut: str) -> tuple[list[dict], str]:
-    path = RAG / f"chunks_{cut}.jsonl"
-    data = path.read_bytes()
-    sha = hashlib.sha256(data).hexdigest()
-    manifest = json.loads((RAG / "MANIFEST.json").read_text(encoding="utf-8"))
-    if manifest["files"][f"data/rag/chunks_{cut}.jsonl"]["sha256"] != sha:
-        sys.exit(f"{path} không khớp data/rag/MANIFEST.json; chạy scripts/build_chunks.py")
-    return [json.loads(line) for line in data.decode("utf-8").splitlines()], sha
+    try:
+        return retrieve.load_chunks(cut, RAG)
+    except ValueError as e:
+        sys.exit(str(e))
 
 
 def main() -> None:

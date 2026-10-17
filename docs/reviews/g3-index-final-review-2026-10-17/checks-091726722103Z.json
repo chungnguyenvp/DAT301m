@@ -1,0 +1,228 @@
+{
+  "utc": "2026-10-17T09:17:51.677089+00:00",
+  "checks": [
+    {
+      "name": "real_encoder_matches_report_identity",
+      "pass": true,
+      "details": {
+        "model": "BAAI/bge-m3",
+        "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "max_seq_length": 8192,
+        "normalize": true,
+        "dtype": "float32",
+        "dim": 1024
+      }
+    },
+    {
+      "name": "khoan:chunk_hash_matches_manifest",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:id_order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:count_dim",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:encoder_identity",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:finite_normalized",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:all_vectors_match_cache_by_text",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:self_search",
+      "pass": true,
+      "details": {
+        "samples": 125
+      }
+    },
+    {
+      "name": "dieu:chunk_hash_matches_manifest",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:id_order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:count_dim",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:encoder_identity",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:finite_normalized",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:all_vectors_match_cache_by_text",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:self_search",
+      "pass": true,
+      "details": {
+        "samples": 43
+      }
+    },
+    {
+      "name": "complete_dev_report_matches_exactly",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "original_dev_report_unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "bm25/khoan:only_26_scorable_dev_items",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "bm25/khoan:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "vector/khoan:only_26_scorable_dev_items",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "vector/khoan:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "bm25/dieu:only_26_scorable_dev_items",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "bm25/dieu:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "vector/dieu:only_26_scorable_dev_items",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "vector/dieu:no_expired_hits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "known_dense_only_helmet_failure_reproduced",
+      "pass": true,
+      "details": {
+        "query": "đi xe máy mà không đội nón bảo hiểm thì bị phạt bao nhiêu",
+        "required_vid": "nd_168_2024:d7:k2:h@2025-01-01",
+        "rank_in_top50": 20,
+        "top_chunk": "khoan:nd_168_2024:d7:k2@2025-01-01#2",
+        "top10_contains_required_point": false
+      }
+    },
+    {
+      "name": "three_real_reencoded_chunks_match_cache",
+      "pass": true,
+      "details": {
+        "chunks": [
+          "khoan:nd_10_2022:d2:k2@2022-03-01",
+          "khoan:luat_35_2024:d35:k1@2025-01-01",
+          "khoan:nd_220_2026:pl1@2026-07-01#27"
+        ],
+        "tokens": [
+          21,
+          128,
+          480
+        ],
+        "cosines": [
+          0.9999998807907104,
+          1.0,
+          1.0000001192092896
+        ]
+      }
+    }
+  ],
+  "index_meta": {
+    "khoan": {
+      "chunks_sha256": "1695ae80602a00d5e11fd667c9a6e72ad16c44ddf89e8035bc992cc97a4365bf",
+      "so_vector": 6221,
+      "so_chieu": 1024,
+      "bo_ma_hoa": {
+        "model": "BAAI/bge-m3",
+        "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "max_seq_length": 8192,
+        "normalize": true,
+        "dtype": "float32",
+        "dim": 1024
+      }
+    },
+    "dieu": {
+      "chunks_sha256": "4df4c4b415dfa8ef50654881c22e2ce35fd35aa93a44137486cd2977ebe23cde",
+      "so_vector": 2149,
+      "so_chieu": 1024,
+      "bo_ma_hoa": {
+        "model": "BAAI/bge-m3",
+        "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "max_seq_length": 8192,
+        "normalize": true,
+        "dtype": "float32",
+        "dim": 1024
+      }
+    }
+  },
+  "dev_reproduced_path": "dev-reproduced-091726722103Z.json",
+  "helmet": {
+    "query": "đi xe máy mà không đội nón bảo hiểm thì bị phạt bao nhiêu",
+    "required_vid": "nd_168_2024:d7:k2:h@2025-01-01",
+    "rank_in_top50": 20,
+    "top_chunk": "khoan:nd_168_2024:d7:k2@2025-01-01#2",
+    "top10_contains_required_point": false
+  },
+  "hashes": {
+    "src/rag/dense.py": "b35bf021f519764b9511375b7e07b4fb29158be9dd9e355999030c5dfe0d46d4",
+    "src/rag/bm25.py": "d05efcea4d37f64026247674b3cb376c92ec6d605e69d0cc11f6d2d49e37214b",
+    "scripts/probe_dev.py": "f091a9b61d818a286a2c15858f074997617acab051376e66dee690fe8ff167f7",
+    "scripts/build_index.py": "9a53e4d5dbaf45477ee4cb58ed6db4e9db390063d54f477a40295cf35a5366ac",
+    "tests/test_rag_dense.py": "74e80e2d26acff55855352d1afbed4657d9de8004c7ece4165fd16be8d6ac745",
+    "data/eval/eval_v1.jsonl": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+    "data/eval/bang_chung_v1.json": "3c6fb0c7fb6283c48d475654ab24b72e1adbf517295a943b58b6981d0b76b4cc",
+    "data/rag/MANIFEST.json": "1f2f1f4f38c6901c8e1590bf6475be2a171199ddaad023f61a5eee50f2d1b6d0",
+    "reports/retrieval/dev_probe.json": "3dc2de3937c1c9b21da2edfe69109df93b9ddf87ac1d7425038d70e8702d9a27",
+    "data/rag/index/khoan/dense.faiss": "2404a14b31440ae10c2e11b1bb9ca7068b1145d1d56437153c1ab88433ac8bd1",
+    "data/rag/index/khoan/dense_ids.json": "29f0cc691dc652a99589f71825f1470fbc083a925b59ff36758b84989c1b47ad",
+    "data/rag/index/khoan/meta.json": "641fc6f84359d5fdfdaf422e33906310a82ba41648a9ecf7bc047332968fb980",
+    "data/rag/index/khoan/bm25.pkl": "9e1f9a47a310321cac6687c4bec52a93b53358f98b7590919d28a54617c1f669",
+    "data/rag/index/dieu/dense.faiss": "4db486479ba35af5b71e6ade2acca37a01b96384620e141421e669a97d27debd",
+    "data/rag/index/dieu/dense_ids.json": "049b8dd7240fd09fd94bef0f009c777cd0b789b2b33077bdf6ebd25909641df4",
+    "data/rag/index/dieu/meta.json": "a6581c5901a7c7569da36f6b17b76a15de39bbb289aba56cabc7b8126c9f0d2d",
+    "data/rag/index/dieu/bm25.pkl": "fc56a7d3de377f9bbf09e3c5cbe2567d2d63f27ac6390dcea40af0cd54642bd9"
+  }
+}
