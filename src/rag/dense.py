@@ -126,9 +126,10 @@ def embed(texts: list[str], cache_dir: Path, encode: Encoder, batch: int = 32, s
 
 
 class DenseIndex:
-    def __init__(self, ids: list[str], index: faiss.Index):
+    def __init__(self, ids: list[str], index: faiss.Index, meta: dict | None = None):
         self.ids = ids
         self.index = index
+        self.meta = meta or {}  # nội dung meta.json khi nạp từ đĩa, gồm `bo_ma_hoa` đã tạo chỉ mục
 
     @classmethod
     def build(cls, ids: list[str], vectors: np.ndarray) -> "DenseIndex":
@@ -166,4 +167,4 @@ class DenseIndex:
         index = faiss.deserialize_index(np.frombuffer((folder / "dense.faiss").read_bytes(), dtype=np.uint8))
         if index.ntotal != len(ids) or index.ntotal != meta["so_vector"]:
             raise ValueError(f"{folder}: {index.ntotal} vector nhưng {len(ids)} mã đoạn")
-        return cls(ids, index)
+        return cls(ids, index, meta)

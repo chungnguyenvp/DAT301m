@@ -160,8 +160,8 @@ def test_real_index_smoke_finds_the_right_clause(real_dense):
 
 
 @SLOW
-@pytest.mark.xfail(strict=True, reason="Đã biết, chưa sửa: với vector đơn thuần, mẩu chứa điểm h (448 token, khoảng 8 "
-                                        "hành vi) chỉ đứng hạng 20–23. Task 5 (hybrid + reranker) phải làm test này qua; "
-                                        "khi qua thì bỏ xfail.")
+@pytest.mark.xfail(strict=True, reason="Hạn chế đã biết của vector đơn thuần: mẩu chứa điểm h (448 token, khoảng 8 "
+                                        "hành vi) chỉ đứng hạng 20–23. Luồng đầy đủ phải tìm ra nó: xem "
+                                        "test_rag_retrieve.py::test_real_hybrid_with_reranker_finds_point_h (không xfail).")
 def test_real_dense_only_finds_point_h_in_top10(real_dense):
     assert any("nd_168_2024:d7:k2:h@2025-01-01" in c["units"] for c in real_dense)
