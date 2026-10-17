@@ -1,0 +1,2591 @@
+{
+  "review_date": "2026-10-17",
+  "input_sha256": {
+    "src\\lawproc\\evalset.py": "d0f2277b2ee5ff48a10906d26186bf8bf30b0d7445c8878b6e1d1f51e087de1c",
+    "scripts\\build_eval.py": "46f59d31a345111fdf210543e591ad29c30496d28db0d0727c50798bd643248b",
+    "tests\\test_evalset.py": "846353c7646c253e9d1f7e06d31af44662c2cbdbd592333078c2beaa59bea552",
+    "data\\eval\\eval_v1.jsonl": "7ce6d0cfc3a05275fbb3a1684888c6aeb522835e4a8f8ad4bc360b3a086f8a73",
+    "data\\eval\\split_v1.json": "658a5d49eaaf2cf2f3b1fe2a2b1331f0dfb65198731a90b4e6d3566ff60b01a7",
+    "data\\eval\\README.md": "fa1ec3ef0c6216a81c74b93e837a4d5f6b125bc3d87207e67bd6cd7d4f59a18b",
+    "data\\processed\\legal_units_versioned.jsonl": "e0bd99d5b3e1938734681bbf9c5b3e4452a4df9954988e63fa345cbe88d813d7",
+    "docs\\reviews\\eval-audit-2026-10-17\\audit.json": "ea5cf4323b6fe0f40d91b855a0c24ad2b721c30cdb43578b17e06efb9c7ebb74",
+    "docs\\reviews\\eval-audit-2026-10-17\\REPORT.md": "98b153cf33311db394f3a3f4365f2edb1dab87e5b78ed6e2347ca2bd5268c80e"
+  },
+  "count": 270,
+  "groups": {
+    "thuong": 150,
+    "sua_doi": 40,
+    "ngoai_pham_vi": 30,
+    "bien_the": 50
+  },
+  "splits": {
+    "test": 240,
+    "dev": 30
+  },
+  "baseline_problems": [],
+  "rebuild_equals_file": true,
+  "removed_problematic_keys_still_present": [],
+  "new_rq3_keys_present": [
+    "sd41",
+    "sd42",
+    "sd43",
+    "sd44",
+    "sd45",
+    "sd46",
+    "sd47",
+    "sd48",
+    "sd49",
+    "sd50",
+    "sd51",
+    "sd52"
+  ],
+  "original_six_rejected": true,
+  "mutation_probes": [
+    {
+      "name": "original_reversed_bounds",
+      "key": "xp01",
+      "id": "TH135",
+      "changed_fields": {
+        "muc_phat_min": 600000,
+        "muc_phat_max": 400000
+      },
+      "mutation_is_real": true,
+      "problems": [
+        "TH135: muc_phat_min 600000 lớn hơn muc_phat_max 400000"
+      ],
+      "rejected": true,
+      "expected_rejected": true,
+      "facts_unchanged": true
+    },
+    {
+      "name": "original_one_dong",
+      "key": "xp01",
+      "id": "TH135",
+      "changed_fields": {
+        "dap_an": "Phạt 1 đồng."
+      },
+      "mutation_is_real": true,
+      "problems": [
+        "TH135: dap_an có số liệu 1 đồng không có trong căn cứ"
+      ],
+      "rejected": true,
+      "expected_rejected": true,
+      "facts_unchanged": false
+    },
+    {
+      "name": "original_wrong_suspension",
+      "key": "xp04",
+      "id": "TH138",
+      "changed_fields": {
+        "dap_an": "Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng (điểm a khoản 11 Điều 6 Nghị định 168/2024/NĐ-CP) và bị tước quyền sử dụng giấy phép lái xe từ 01 tháng đến 02 tháng (điểm c khoản 15 Điều 6). Mức này cũng áp dụng khi nồng độ cồn trong khí thở vượt quá 0,4 miligam/1 lít."
+      },
+      "mutation_is_real": true,
+      "problems": [
+        "TH138: dap_an có số liệu 1 tháng không có trong căn cứ",
+        "TH138: dap_an có số liệu 2 tháng không có trong căn cứ"
+      ],
+      "rejected": true,
+      "expected_rejected": true,
+      "facts_unchanged": false
+    },
+    {
+      "name": "original_nonexistent_citation",
+      "key": "xp01",
+      "id": "TH135",
+      "changed_fields": {
+        "dap_an": "Phạt tiền từ 400.000 đồng đến 600.000 đồng (điểm z khoản 99 Điều 999 Nghị định 168/2024/NĐ-CP). Mức này cũng áp dụng khi đội mũ bảo hiểm nhưng không cài quai đúng quy cách."
+      },
+      "mutation_is_real": true,
+      "problems": [
+        "TH135: dap_an trích dẫn \"điểm z khoản 99 Điều 999\" không trỏ tới đơn vị có hiệu lực trong căn cứ"
+      ],
+      "rejected": true,
+      "expected_rejected": true,
+      "facts_unchanged": true
+    },
+    {
+      "name": "original_99_days",
+      "key": "sd24",
+      "id": "SD013",
+      "changed_fields": {
+        "dap_an": "Cấp lại chứng nhận đăng ký xe không quá 99 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ; chứng nhận cấp lại phải thể hiện rõ lần cấp lại (điểm b khoản 1 Điều 7 Thông tư 79/2024/TT-BCA, được sửa đổi, có hiệu lực từ 18/5/2026)."
+      },
+      "mutation_is_real": true,
+      "problems": [
+        "SD013: dap_an có số liệu 99 ngày không có trong căn cứ"
+      ],
+      "rejected": true,
+      "expected_rejected": true,
+      "facts_unchanged": false
+    },
+    {
+      "name": "original_unrelated_deduction",
+      "key": "xp01",
+      "id": "TH135",
+      "changed_fields": {
+        "diem_tru": 4,
+        "can_cu": [
+          "nd_168_2024:d7:k2:h@2025-01-01",
+          "nd_168_2024:d7:k13:b@2025-01-01"
+        ],
+        "dap_an": "Phạt tiền từ 400.000 đồng đến 600.000 đồng (điểm h khoản 2 Điều 7 Nghị định 168/2024/NĐ-CP). Mức này cũng áp dụng khi đội mũ bảo hiểm nhưng không cài quai đúng quy cách. Trừ 04 điểm giấy phép lái xe."
+      },
+      "mutation_is_real": true,
+      "problems": [
+        "TH135: căn cứ nd_168_2024:d7:k13:b@2025-01-01 quy định chế tài cho hành vi khác, không phải nd_168_2024:d7:k2:h",
+        "TH135: diem_tru 4 khác luật (None)"
+      ],
+      "rejected": true,
+      "expected_rejected": true,
+      "facts_unchanged": false
+    },
+    {
+      "name": "passing_threshold_27_to_26",
+      "key": "gp13",
+      "id": "TH061",
+      "changed_fields": {
+        "dap_an": "Người có giấy phép lái xe hạng B làm bài trong 20 phút, gồm 30 câu hỏi trắc nghiệm, mỗi câu 01 điểm, có 01 câu điểm liệt; đạt từ 26/30 điểm trở lên là đạt yêu cầu, nhưng nếu trả lời sai câu điểm liệt thì không đạt (điểm c khoản 3 Điều 6 Thông tư 65/2024/TT-BCA)."
+      },
+      "mutation_is_real": true,
+      "problems": [],
+      "rejected": false,
+      "expected_rejected": true,
+      "facts_unchanged": true
+    },
+    {
+      "name": "working_days_to_calendar_days",
+      "key": "sd24",
+      "id": "SD013",
+      "changed_fields": {
+        "dap_an": "Cấp lại chứng nhận đăng ký xe không quá 02 ngày kể từ ngày nhận đủ hồ sơ hợp lệ; chứng nhận cấp lại phải thể hiện rõ lần cấp lại (điểm b khoản 1 Điều 7 Thông tư 79/2024/TT-BCA, được sửa đổi, có hiệu lực từ 18/5/2026)."
+      },
+      "mutation_is_real": true,
+      "problems": [],
+      "rejected": false,
+      "expected_rejected": true,
+      "facts_unchanged": true
+    },
+    {
+      "name": "wrong_fine_with_existing_value",
+      "key": "xp01",
+      "id": "TH135",
+      "changed_fields": {
+        "dap_an": "Phạt tiền từ 600.000 đồng đến 600.000 đồng (điểm h khoản 2 Điều 7 Nghị định 168/2024/NĐ-CP). Mức này cũng áp dụng khi đội mũ bảo hiểm nhưng không cài quai đúng quy cách."
+      },
+      "mutation_is_real": true,
+      "problems": [],
+      "rejected": false,
+      "expected_rejected": true,
+      "facts_unchanged": false
+    },
+    {
+      "name": "control_hours_to_days_rejected",
+      "key": "gp17",
+      "id": "TH065",
+      "changed_fields": {
+        "dap_an": "Cục Cảnh sát giao thông cấp giấy phép lái xe điện tử và tích hợp vào hệ thống dữ liệu điện tử trong thời hạn 02 ngày kể từ khi kết thúc kỳ sát hạch. Nếu bạn muốn có giấy phép bằng vật liệu PET thì được in và trả trong thời hạn 3,5 ngày làm việc kể từ ngày kết thúc kỳ sát hạch, nhận tại Phòng Cảnh sát giao thông, qua cơ sở đào tạo, trung tâm sát hạch hoặc dịch vụ bưu chính (khoản 1 Điều 19 Thông tư 108/2026/TT-BCA)."
+      },
+      "mutation_is_real": true,
+      "problems": [
+        "TH065: dap_an có số liệu 2 ngày không có trong căn cứ"
+      ],
+      "rejected": true,
+      "expected_rejected": true,
+      "facts_unchanged": false
+    }
+  ],
+  "retrieval_probes": [
+    {
+      "key": "gp01",
+      "id": "TH049",
+      "question": "Những trường hợp nào được đổi giấy phép lái xe?",
+      "retrieved": [
+        "tt_108_2026_bca:d21:k1:a@2026-07-01"
+      ],
+      "retrieved_text": [
+        "Người có giấy phép lái xe bị hỏng không còn sử dụng được;"
+      ],
+      "nhom_can_cu": [
+        [
+          "tt_108_2026_bca:d21:k1:a@2026-07-01",
+          "tt_108_2026_bca:d21:k1:b@2026-07-01",
+          "tt_108_2026_bca:d21:k1:c@2026-07-01",
+          "tt_108_2026_bca:d21:k1:d@2026-07-01",
+          "tt_108_2026_bca:d21:k1:đ@2026-07-01"
+        ]
+      ],
+      "group_hits": [
+        true
+      ],
+      "all_groups_hit_under_readme_rule": true,
+      "interpretation": "Applies the README rule to simulated retrieval; no production scorer exists in this repo yet."
+    },
+    {
+      "key": "ll05",
+      "id": "TH093",
+      "question": "Người lái xe mô tô, xe gắn máy không được thực hiện những hành vi nào?",
+      "retrieved": [
+        "luat_36_2024:d33:k3@2025-01-01"
+      ],
+      "retrieved_text": [
+        "Người lái xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy không được thực hiện các hành vi sau đây:"
+      ],
+      "nhom_can_cu": [
+        [
+          "luat_36_2024:d33:k3@2025-01-01",
+          "luat_36_2024:d33:k3:a@2025-01-01",
+          "luat_36_2024:d33:k3:b@2025-01-01",
+          "luat_36_2024:d33:k3:c@2025-01-01",
+          "luat_36_2024:d33:k3:d@2025-01-01",
+          "luat_36_2024:d33:k3:đ@2025-01-01",
+          "luat_36_2024:d33:k3:e@2025-01-01",
+          "luat_36_2024:d33:k3:g@2025-01-01"
+        ]
+      ],
+      "group_hits": [
+        true
+      ],
+      "all_groups_hit_under_readme_rule": true,
+      "interpretation": "Applies the README rule to simulated retrieval; no production scorer exists in this repo yet."
+    }
+  ],
+  "normal_or_rq3_with_multiple_citations_in_one_group": 58,
+  "duplicate_fact_families_example": {
+    "gp17": {
+      "id": "TH065",
+      "family": "TH065"
+    },
+    "sd34": {
+      "id": "SD023",
+      "family": "SD023"
+    }
+  },
+  "selected_evidence": [
+    {
+      "line": 49,
+      "item": {
+        "id": "TH049",
+        "tap": "test",
+        "nhom_cau": "thuong",
+        "chu_de": "GPLX",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Những trường hợp nào được đổi giấy phép lái xe?",
+        "dap_an": "Theo khoản 1 Điều 21 Thông tư 108/2026/TT-BCA, được đổi giấy phép lái xe khi: (a) giấy phép lái xe bị hỏng không còn sử dụng được; (b) người Việt Nam, người nước ngoài đã có giấy phép lái xe do Việt Nam cấp có nhu cầu đổi trước khi hết hạn; (c) ngày tháng năm sinh, họ, tên, tên đệm, quốc tịch trên giấy phép lái xe sai lệch với căn cước công dân, căn cước hoặc hộ chiếu; (d) có nhu cầu tích hợp giấy phép lái xe không thời hạn với giấy phép lái xe có thời hạn. Không đổi khi người đề nghị không còn giấy phép lái xe và thông tin giấy phép không có trong hệ thống hoặc sổ quản lý, hoặc người vi phạm chưa chấp hành xong yêu cầu xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ (điểm đ).",
+        "can_cu": [
+          "tt_108_2026_bca:d21:k1:a@2026-07-01",
+          "tt_108_2026_bca:d21:k1:b@2026-07-01",
+          "tt_108_2026_bca:d21:k1:c@2026-07-01",
+          "tt_108_2026_bca:d21:k1:d@2026-07-01",
+          "tt_108_2026_bca:d21:k1:đ@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "tt_108_2026_bca:d21:k1:a@2026-07-01",
+            "tt_108_2026_bca:d21:k1:b@2026-07-01",
+            "tt_108_2026_bca:d21:k1:c@2026-07-01",
+            "tt_108_2026_bca:d21:k1:d@2026-07-01",
+            "tt_108_2026_bca:d21:k1:đ@2026-07-01"
+          ]
+        ],
+        "van_ban": "tt_108_2026_bca",
+        "dieu": "21",
+        "khoan": "1",
+        "diem": null,
+        "dia_chi_chinh": "tt_108_2026_bca:d21:k1",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [],
+        "ngay_hoi": "2026-10-01",
+        "ho_cau": "TH049",
+        "trung_dev": false,
+        "key": "gp01",
+        "nguon_nhap": "thuong_gplx.jsonl:1"
+      },
+      "records": [
+        {
+          "unit_id": "tt_108_2026_bca:d21:k1:a",
+          "doc_id": "tt_108_2026_bca",
+          "level": "diem",
+          "chuong": "III CẤP, ĐỔI, CẤP LẠI, THU HỒI GIẤY PHÉP LÁI XE",
+          "muc": null,
+          "dieu": "21",
+          "khoan": "1",
+          "diem": "a",
+          "title": "",
+          "text": "Người có giấy phép lái xe bị hỏng không còn sử dụng được;",
+          "line_start": 252,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "tt_108_2026_bca",
+          "version_id": "tt_108_2026_bca:d21:k1:a@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_108_2026_bca:d21:k1:b",
+          "doc_id": "tt_108_2026_bca",
+          "level": "diem",
+          "chuong": "III CẤP, ĐỔI, CẤP LẠI, THU HỒI GIẤY PHÉP LÁI XE",
+          "muc": null,
+          "dieu": "21",
+          "khoan": "1",
+          "diem": "b",
+          "title": "",
+          "text": "Người Việt Nam, người nước ngoài đã có giấy phép lái xe do cơ quan có thẩm quyền của Việt Nam cấp trước khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;",
+          "line_start": 253,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "tt_108_2026_bca",
+          "version_id": "tt_108_2026_bca:d21:k1:b@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_108_2026_bca:d21:k1:c",
+          "doc_id": "tt_108_2026_bca",
+          "level": "diem",
+          "chuong": "III CẤP, ĐỔI, CẤP LẠI, THU HỒI GIẤY PHÉP LÁI XE",
+          "muc": null,
+          "dieu": "21",
+          "khoan": "1",
+          "diem": "c",
+          "title": "",
+          "text": "Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch ghi trên giấy phép lái xe có sai lệch với căn cước công dân, căn cước hoặc hộ chiếu thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân, căn cước hoặc hộ chiếu;",
+          "line_start": 254,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "tt_108_2026_bca",
+          "version_id": "tt_108_2026_bca:d21:k1:c@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_108_2026_bca:d21:k1:d",
+          "doc_id": "tt_108_2026_bca",
+          "level": "diem",
+          "chuong": "III CẤP, ĐỔI, CẤP LẠI, THU HỒI GIẤY PHÉP LÁI XE",
+          "muc": null,
+          "dieu": "21",
+          "khoan": "1",
+          "diem": "d",
+          "title": "",
+          "text": "Người có nhu cầu tích hợp giấy phép lái xe không thời hạn với giấy phép lái xe có thời hạn;",
+          "line_start": 255,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "tt_108_2026_bca",
+          "version_id": "tt_108_2026_bca:d21:k1:d@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_108_2026_bca:d21:k1:đ",
+          "doc_id": "tt_108_2026_bca",
+          "level": "diem",
+          "chuong": "III CẤP, ĐỔI, CẤP LẠI, THU HỒI GIẤY PHÉP LÁI XE",
+          "muc": null,
+          "dieu": "21",
+          "khoan": "1",
+          "diem": "đ",
+          "title": "",
+          "text": "Không đổi giấy phép lái xe đối với các trường hợp sau: người đề nghị đổi giấy phép lái xe không còn giấy phép lái xe đã được cấp và thông tin giấy phép lái xe không có trong hệ thống thông tin giấy phép lái xe của Cục Cảnh sát giao thông hoặc không có trong bảng kê danh sách cấp giấy phép lái xe (sổ quản lý); người vi phạm pháp luật về trật tự, an toàn giao thông đường bộ chưa thực hiện xong yêu cầu của cơ quan nhà nước có thẩm quyền về giải quyết, xử lý vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ.",
+          "line_start": 256,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "tt_108_2026_bca",
+          "version_id": "tt_108_2026_bca:d21:k1:đ@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 54,
+      "item": {
+        "id": "TH054",
+        "tap": "test",
+        "nhom_cau": "thuong",
+        "chu_de": "GPLX",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Người có giấy phép lái xe hạng A bị trừ hết điểm thì làm bài kiểm tra kiến thức pháp luật như thế nào để được phục hồi điểm?",
+        "dap_an": "Người có giấy phép lái xe bị trừ hết điểm được tham gia kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ (Điều 3 Thông tư 65/2024/TT-BCA). Với giấy phép hạng A, B1: làm bài trắc nghiệm trên máy tính trong 19 phút, gồm 25 câu, mỗi câu 01 điểm, có 01 câu điểm liệt; đạt từ 23/25 điểm trở lên là đạt, nhưng trả lời sai câu điểm liệt thì không đạt (điểm b khoản 3 Điều 6). Kết quả đạt yêu cầu thì được phục hồi điểm giấy phép lái xe (khoản 4 Điều 6).",
+        "can_cu": [
+          "tt_65_2024_bca:d3@2025-01-01",
+          "tt_65_2024_bca:d6:k3:b@2025-01-01",
+          "tt_65_2024_bca:d6:k4@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "tt_65_2024_bca:d3@2025-01-01"
+          ],
+          [
+            "tt_65_2024_bca:d6:k3:b@2025-01-01"
+          ],
+          [
+            "tt_65_2024_bca:d6:k4@2026-07-01"
+          ]
+        ],
+        "van_ban": "tt_65_2024_bca",
+        "dieu": "6",
+        "khoan": "3",
+        "diem": "b",
+        "dia_chi_chinh": "tt_65_2024_bca:d6:k3",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            1.0,
+            "câu"
+          ],
+          [
+            1.0,
+            "điểm"
+          ],
+          [
+            19.0,
+            "phút"
+          ],
+          [
+            25.0,
+            "câu"
+          ],
+          [
+            25.0,
+            "điểm"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "ho_cau": "TH054",
+        "trung_dev": true,
+        "ghi_chu": "Khoản 1–3 Điều 6 có phiên bản mới từ 01/7/2027; đáp án đúng tại ngày hỏi 01/10/2026.",
+        "key": "gp06",
+        "nguon_nhap": "thuong_gplx.jsonl:6"
+      },
+      "records": [
+        {
+          "unit_id": "tt_65_2024_bca:d3",
+          "doc_id": "tt_65_2024_bca",
+          "level": "dieu",
+          "chuong": "II QUY ĐỊNH CỤ THỂ",
+          "muc": null,
+          "dieu": "3",
+          "khoan": null,
+          "diem": null,
+          "title": "Người được tham gia kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ",
+          "text": "Người được tham gia kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ là người có giấy phép lái xe bị trừ hết điểm.",
+          "line_start": 21,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": null,
+          "source_doc_id": "tt_65_2024_bca",
+          "version_id": "tt_65_2024_bca:d3@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_65_2024_bca:d6:k3:b",
+          "doc_id": "tt_65_2024_bca",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH CỤ THỂ",
+          "muc": null,
+          "dieu": "6",
+          "khoan": "3",
+          "diem": "b",
+          "title": "",
+          "text": "Người dự kiểm tra có giấy phép lái xe hạng A, B1 làm bài kiểm tra trong thời gian 19 phút. Kết cấu bài kiểm tra gồm 25 câu hỏi trắc nghiệm, mỗi câu hỏi được tính 01 điểm, trong đó có 01 câu hỏi được tính là điểm liệt. Kết quả đạt từ 23/25 điểm trở lên là đạt yêu cầu. Trường hợp kết quả từ 23/25 điểm trở lên nhưng trả lời sai vào câu hỏi được tính là điểm liệt thì không đạt yêu cầu;",
+          "line_start": 43,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2027-07-01",
+          "source_doc_id": "tt_65_2024_bca",
+          "version_id": "tt_65_2024_bca:d6:k3:b@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_65_2024_bca:d6:k4",
+          "doc_id": "tt_65_2024_bca",
+          "level": "khoan",
+          "chuong": "II QUY ĐỊNH CỤ THỂ",
+          "muc": null,
+          "dieu": "6",
+          "khoan": "4",
+          "diem": null,
+          "title": "",
+          "text": "Người dự kiểm tra có kết quả kiểm tra đạt yêu cầu được phục hồi điểm giấy phép lái xe. Người dự kiểm tra có kết quả kiểm tra không đạt yêu cầu có thể đăng ký kiểm tra lại sau 07 ngày làm việc, kể từ ngày kết thúc kiểm tra trước đó.",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "tt_105_2026_bca",
+          "version_id": "tt_65_2024_bca:d6:k4@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 61,
+      "item": {
+        "id": "TH061",
+        "tap": "test",
+        "nhom_cau": "thuong",
+        "chu_de": "GPLX",
+        "loai_cau": "chung",
+        "cau_hoi": "Thời gian thi lý thuyết, số câu và điểm đạt của bài kiểm tra phục hồi điểm đối với giấy phép lái xe hạng B là bao nhiêu?",
+        "dap_an": "Người có giấy phép lái xe hạng B làm bài trong 20 phút, gồm 30 câu hỏi trắc nghiệm, mỗi câu 01 điểm, có 01 câu điểm liệt; đạt từ 27/30 điểm trở lên là đạt yêu cầu, nhưng nếu trả lời sai câu điểm liệt thì không đạt (điểm c khoản 3 Điều 6 Thông tư 65/2024/TT-BCA).",
+        "can_cu": [
+          "tt_65_2024_bca:d6:k3:c@2025-01-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "tt_65_2024_bca:d6:k3:c@2025-01-01"
+          ]
+        ],
+        "van_ban": "tt_65_2024_bca",
+        "dieu": "6",
+        "khoan": "3",
+        "diem": "c",
+        "dia_chi_chinh": "tt_65_2024_bca:d6:k3",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            1.0,
+            "câu"
+          ],
+          [
+            1.0,
+            "điểm"
+          ],
+          [
+            20.0,
+            "phút"
+          ],
+          [
+            30.0,
+            "câu"
+          ],
+          [
+            30.0,
+            "điểm"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "ho_cau": "TH061",
+        "trung_dev": false,
+        "ghi_chu": "Khoản 3 Điều 6 có phiên bản mới từ 01/7/2027; đáp án đúng tại ngày hỏi 01/10/2026.",
+        "key": "gp13",
+        "nguon_nhap": "thuong_gplx.jsonl:13"
+      },
+      "records": [
+        {
+          "unit_id": "tt_65_2024_bca:d6:k3:c",
+          "doc_id": "tt_65_2024_bca",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH CỤ THỂ",
+          "muc": null,
+          "dieu": "6",
+          "khoan": "3",
+          "diem": "c",
+          "title": "",
+          "text": "Người dự kiểm tra có giấy phép lái xe hạng B làm bài kiểm tra trong thời gian 20 phút. Kết cấu bài kiểm tra gồm 30 câu hỏi trắc nghiệm, mỗi câu hỏi được tính 01 điểm, trong đó có 01 câu hỏi được tính là điểm liệt. Kết quả đạt từ 27/30 điểm trở lên là đạt yêu cầu. Trường hợp kết quả từ 27/30 điểm trở lên nhưng trả lời sai vào câu hỏi được tính là điểm liệt thì không đạt yêu cầu;",
+          "line_start": 44,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2027-07-01",
+          "source_doc_id": "tt_65_2024_bca",
+          "version_id": "tt_65_2024_bca:d6:k3:c@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 65,
+      "item": {
+        "id": "TH065",
+        "tap": "test",
+        "nhom_cau": "thuong",
+        "chu_de": "GPLX",
+        "loai_cau": "tình huống",
+        "cau_hoi": "Hôm nay tôi vừa thi đậu sát hạch lái xe. Bao lâu thì tôi có giấy phép lái xe?",
+        "dap_an": "Cục Cảnh sát giao thông cấp giấy phép lái xe điện tử và tích hợp vào hệ thống dữ liệu điện tử trong thời hạn 02 giờ kể từ khi kết thúc kỳ sát hạch. Nếu bạn muốn có giấy phép bằng vật liệu PET thì được in và trả trong thời hạn 3,5 ngày làm việc kể từ ngày kết thúc kỳ sát hạch, nhận tại Phòng Cảnh sát giao thông, qua cơ sở đào tạo, trung tâm sát hạch hoặc dịch vụ bưu chính (khoản 1 Điều 19 Thông tư 108/2026/TT-BCA).",
+        "can_cu": [
+          "tt_108_2026_bca:d19:k1@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "tt_108_2026_bca:d19:k1@2026-07-01"
+          ]
+        ],
+        "van_ban": "tt_108_2026_bca",
+        "dieu": "19",
+        "khoan": "1",
+        "diem": null,
+        "dia_chi_chinh": "tt_108_2026_bca:d19:k1",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            2.0,
+            "giờ"
+          ],
+          [
+            3.5,
+            "ngày"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "ho_cau": "TH065",
+        "trung_dev": false,
+        "key": "gp17",
+        "nguon_nhap": "thuong_gplx.jsonl:17"
+      },
+      "records": [
+        {
+          "unit_id": "tt_108_2026_bca:d19:k1",
+          "doc_id": "tt_108_2026_bca",
+          "level": "khoan",
+          "chuong": "III CẤP, ĐỔI, CẤP LẠI, THU HỒI GIẤY PHÉP LÁI XE",
+          "muc": null,
+          "dieu": "19",
+          "khoan": "1",
+          "diem": null,
+          "title": "",
+          "text": "Cục Cảnh sát giao thông cấp giấy phép lái xe điện tử cho người đạt kết quả kỳ sát hạch lái xe và tích hợp vào hệ thống dữ liệu điện tử trong thời hạn 02 giờ kể từ thời điểm kết thúc kỳ sát hạch lái xe. Trường hợp người dân có nhu cầu cấp giấy phép lái xe bằng vật liệu PET, Cục Cảnh sát giao thông hoặc Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe trong thời hạn 3,5 ngày làm việc, kể từ ngày kết thúc kỳ sát hạch lái xe; việc trả giấy phép lái xe cho người đạt kết quả kỳ sát hạch lái xe được thực hiện tại Phòng Cảnh sát giao thông hoặc qua cơ sở đào tạo (nếu có), trung tâm sát hạch hoặc qua dịch vụ bưu chính theo yêu cầu của cá nhân.",
+          "line_start": 238,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "tt_108_2026_bca",
+          "version_id": "tt_108_2026_bca:d19:k1@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 173,
+      "item": {
+        "id": "SD023",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "GPLX",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Thi đậu sát hạch lái xe thì sau bao lâu được cấp giấy phép lái xe?",
+        "dap_an": "Giấy phép lái xe điện tử được cấp và tích hợp trong thời hạn 02 giờ kể từ khi kết thúc kỳ sát hạch; nếu có nhu cầu bản PET thì được in, trả trong thời hạn 3,5 ngày làm việc (khoản 1 Điều 19 Thông tư 108/2026/TT-BCA, có hiệu lực từ 01/7/2026, thay thế Thông tư 12/2025/TT-BCA).",
+        "can_cu": [
+          "tt_108_2026_bca:d19:k1@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "tt_108_2026_bca:d19:k1@2026-07-01"
+          ]
+        ],
+        "van_ban": "tt_108_2026_bca",
+        "dieu": "19",
+        "khoan": "1",
+        "diem": null,
+        "dia_chi_chinh": "tt_108_2026_bca:d19:k1",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            2.0,
+            "giờ"
+          ],
+          [
+            3.5,
+            "ngày"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 01/7/2026, theo khoản 1 Điều 19 Thông tư 12/2025/TT-BCA, Cục Cảnh sát giao thông cấp giấy phép lái xe trong thời hạn 07 ngày làm việc kể từ ngày kết thúc kỳ sát hạch; giấy phép điện tử được tích hợp trong thời hạn 03 ngày làm việc.",
+        "can_cu_cu": [
+          "tt_12_2025_bca:d19:k1@2025-03-01"
+        ],
+        "ngay_cu": "2026-03-01",
+        "van_ban_sua_doi": "tt_108_2026_bca",
+        "ho_cau": "SD023",
+        "trung_dev": false,
+        "ghi_chu": "Thay thế văn bản: TT 12/2025 hết hiệu lực 01/7/2026 (trừ một số phụ lục), nội dung tương ứng nằm ở TT 108/2026.",
+        "key": "sd34",
+        "nguon_nhap": "sua_doi.jsonl:23"
+      },
+      "records": [
+        {
+          "unit_id": "tt_108_2026_bca:d19:k1",
+          "doc_id": "tt_108_2026_bca",
+          "level": "khoan",
+          "chuong": "III CẤP, ĐỔI, CẤP LẠI, THU HỒI GIẤY PHÉP LÁI XE",
+          "muc": null,
+          "dieu": "19",
+          "khoan": "1",
+          "diem": null,
+          "title": "",
+          "text": "Cục Cảnh sát giao thông cấp giấy phép lái xe điện tử cho người đạt kết quả kỳ sát hạch lái xe và tích hợp vào hệ thống dữ liệu điện tử trong thời hạn 02 giờ kể từ thời điểm kết thúc kỳ sát hạch lái xe. Trường hợp người dân có nhu cầu cấp giấy phép lái xe bằng vật liệu PET, Cục Cảnh sát giao thông hoặc Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe trong thời hạn 3,5 ngày làm việc, kể từ ngày kết thúc kỳ sát hạch lái xe; việc trả giấy phép lái xe cho người đạt kết quả kỳ sát hạch lái xe được thực hiện tại Phòng Cảnh sát giao thông hoặc qua cơ sở đào tạo (nếu có), trung tâm sát hạch hoặc qua dịch vụ bưu chính theo yêu cầu của cá nhân.",
+          "line_start": 238,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "tt_108_2026_bca",
+          "version_id": "tt_108_2026_bca:d19:k1@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_12_2025_bca:d19:k1",
+          "doc_id": "tt_12_2025_bca",
+          "level": "khoan",
+          "chuong": "III CẤP, ĐỔI, CẤP LẠI, THU HỒI GIẤY PHÉP LÁI XE",
+          "muc": null,
+          "dieu": "19",
+          "khoan": "1",
+          "diem": null,
+          "title": "",
+          "text": "Cục Cảnh sát giao thông cấp giấy phép lái xe cho người đạt kết quả kỳ sát hạch trong thời hạn 07 ngày làm việc, kể từ ngày kết thúc kỳ sát hạch. Giấy phép lái xe điện tử được tích hợp vào hệ thống dữ liệu điện tử, tài khoản định danh điện tử trong thời hạn 03 ngày làm việc, kể từ ngày kết thúc kỳ sát hạch.",
+          "line_start": 216,
+          "phan": null,
+          "valid_from": "2025-03-01",
+          "valid_to": "2026-07-01",
+          "source_doc_id": "tt_12_2025_bca",
+          "version_id": "tt_12_2025_bca:d19:k1@2025-03-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 185,
+      "item": {
+        "id": "SD035",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Xe ô tô kinh doanh vận tải bị thu hồi phù hiệu thì bao lâu sau mới được cấp lại phù hiệu?",
+        "dap_an": "Không cấp mới, cấp lại phù hiệu cho xe trong thời gian xe bị áp dụng hình thức tước quyền sử dụng hoặc trong thời gian 30 ngày kể từ ngày ký Quyết định thu hồi phù hiệu, trừ trường hợp xe chuyển quyền sử dụng, sở hữu (điểm b khoản 9 Điều 23 Nghị định 158/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 10/8/2026).",
+        "can_cu": [
+          "nd_158_2024:d23:k9:b@2026-08-10"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_158_2024:d23:k9:b@2026-08-10"
+          ]
+        ],
+        "van_ban": "nd_158_2024",
+        "dieu": "23",
+        "khoan": "9",
+        "diem": "b",
+        "dia_chi_chinh": "nd_158_2024:d23:k9",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            30.0,
+            "ngày"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 10/8/2026, điểm b khoản 9 Điều 23 quy định không cấp phù hiệu cho xe trong thời gian bị tước quyền sử dụng hoặc bị thu hồi phù hiệu, không ấn định riêng mốc tính từ ngày ký quyết định thu hồi.",
+        "can_cu_cu": [
+          "nd_158_2024:d23:k9:b@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_218_2026",
+        "ho_cau": "SD035",
+        "trung_dev": false,
+        "key": "sd47",
+        "nguon_nhap": "sua_doi.jsonl:35"
+      },
+      "records": [
+        {
+          "unit_id": "nd_158_2024:d23:k9:b",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ TRONG NƯỚC",
+          "muc": "4 QUY ĐỊNH VỀ CẤP, THU HỒI GIẤY PHÉP KINH DOANH VẬN TẢI BẰNG XE Ô TÔ, BẰNG XE BỐN BÁNH CÓ GẮN ĐỘNG CƠ; CẤP, THU HỒI PHÙ HIỆU; ĐĂNG KÝ KHAI THÁC, NGỪNG HOẠT ĐỘNG, THU HỒI KHAI THÁC TUYẾN VẬN TẢI HÀNH KHÁCH CỐ ĐỊNH",
+          "dieu": "23",
+          "khoan": "9",
+          "diem": "b",
+          "title": "",
+          "text": "Không thực hiện cấp mới, cấp lại phù hiệu cho xe ô tô, xe bốn bánh có gắn động cơ trong thời gian xe ô tô, xe bốn bánh có gắn động cơ đó bị cơ quan có thẩm quyền áp dụng hình thức xử phạt tước quyền sử dụng hoặc trong thời gian 30 ngày kể từ ngày ký Quyết định thu hồi phù hiệu (trừ trường hợp xe ô tô, xe bốn bánh có gắn động cơ đó chuyển quyền sử dụng, sở hữu hoặc trường hợp đơn vị bị thu hồi phù hiệu theo quy định tại điểm đ và điểm e khoản 10 Điều này);",
+          "line_start": 2,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d23:k9:b@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d23:k9:b",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ TRONG NƯỚC",
+          "muc": "4 QUY ĐỊNH VỀ CẤP, THU HỒI GIẤY PHÉP KINH DOANH VẬN TẢI BẰNG XE Ô TÔ, BẰNG XE BỐN BÁNH CÓ GẮN ĐỘNG CƠ; CẤP, THU HỒI PHÙ HIỆU; ĐĂNG KÝ KHAI THÁC, NGỪNG HOẠT ĐỘNG, THU HỒI KHAI THÁC TUYẾN VẬN TẢI HÀNH KHÁCH CỐ ĐỊNH",
+          "dieu": "23",
+          "khoan": "9",
+          "diem": "b",
+          "title": "",
+          "text": "Không thực hiện cấp phù hiệu cho xe ô tô, xe bốn bánh có gắn động cơ trong thời gian xe ô tô, xe bốn bánh có gắn động cơ đó bị cơ quan có thẩm quyền áp dụng hình thức xử phạt tước quyền sử dụng hoặc bị thu hồi phù hiệu (trừ trường hợp xe ô tô, xe bốn bánh có gắn động cơ đó chuyển quyền sử dụng, sở hữu và hoàn thành việc nộp lại phù hiệu về Sở Giao thông vận tải để cập nhật các phù hiệu có trong Cơ sở dữ liệu cấp phép hoạt động vận tải);",
+          "line_start": 393,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-10",
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d23:k9:b@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 187,
+      "item": {
+        "id": "SD037",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Đăng kiểm",
+        "loai_cau": "chung",
+        "cau_hoi": "Cơ sở đăng kiểm có được cấp chứng nhận an toàn kỹ thuật cho xe cơ giới cải tạo không?",
+        "dap_an": "Có. Cơ sở đăng kiểm thực hiện kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới, xe máy chuyên dùng và chứng nhận an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới cải tạo, xe máy chuyên dùng cải tạo (khoản 1 Điều 43 Luật Trật tự, an toàn giao thông đường bộ, được sửa đổi bởi Luật 118/2025/QH15, có hiệu lực từ 01/7/2026).",
+        "can_cu": [
+          "luat_36_2024:d43:k1@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "luat_36_2024:d43:k1@2026-07-01"
+          ]
+        ],
+        "van_ban": "luat_36_2024",
+        "dieu": "43",
+        "khoan": "1",
+        "diem": null,
+        "dia_chi_chinh": "luat_36_2024:d43:k1",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 01/7/2026, khoản 1 Điều 43 chỉ quy định cơ sở đăng kiểm thực hiện kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới, xe máy chuyên dùng; chưa giao việc chứng nhận xe cải tạo.",
+        "can_cu_cu": [
+          "luat_36_2024:d43:k1@2025-01-01"
+        ],
+        "ngay_cu": "2026-03-01",
+        "van_ban_sua_doi": "luat_118_2025",
+        "ho_cau": "SD037",
+        "trung_dev": false,
+        "key": "sd49",
+        "nguon_nhap": "sua_doi.jsonl:37"
+      },
+      "records": [
+        {
+          "unit_id": "luat_36_2024:d43:k1",
+          "doc_id": "luat_36_2024",
+          "level": "khoan",
+          "chuong": "III PHƯƠNG TIỆN THAM GIA GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": null,
+          "dieu": "43",
+          "khoan": "1",
+          "diem": null,
+          "title": "",
+          "text": "Cơ sở đăng kiểm là tổ chức cung cấp dịch vụ công thực hiện kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới, xe máy chuyên dùng được tổ chức, hoạt động theo quy định của Chính phủ; chứng nhận an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới cải tạo, xe máy chuyên dùng cải tạo.\nCơ sở đăng kiểm chịu trách nhiệm về kết quả kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe cơ giới, xe máy chuyên dùng; kết quả chứng nhận an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới cải tạo, xe máy chuyên dùng cải tạo.\nCơ sở đăng kiểm chỉ được từ chối kiểm định trong các trường hợp: theo yêu cầu của cơ quan tiến hành tố tụng; khi chủ phương tiện chưa thực hiện xong yêu cầu của cơ quan nhà nước có thẩm quyền về giải quyết vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ; thông tin thể hiện trên chứng nhận đăng ký xe không đúng với biển số xe hoặc với phương tiện thực tế khi làm thủ tục kiểm định; chưa thực hiện cấp đổi chứng nhận đăng ký xe tại lần kiểm định tiếp theo sau khi phương tiện đã được cấp chứng nhận cải tạo; có căn cứ xác thực việc chủ xe làm giả tài liệu, giấy tờ của phương tiện.",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "luat_118_2025",
+          "version_id": "luat_36_2024:d43:k1@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "luat_36_2024:d43:k1",
+          "doc_id": "luat_36_2024",
+          "level": "khoan",
+          "chuong": "III PHƯƠNG TIỆN THAM GIA GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": null,
+          "dieu": "43",
+          "khoan": "1",
+          "diem": null,
+          "title": "",
+          "text": "Cơ sở đăng kiểm là tổ chức cung cấp dịch vụ công thực hiện kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới, xe máy chuyên dùng được tổ chức, hoạt động theo quy định của Chính phủ.\nCơ sở đăng kiểm chịu trách nhiệm về kết quả kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe cơ giới, xe máy chuyên dùng; từ chối kiểm định phương tiện vi phạm khi chủ phương tiện chưa thực hiện xong yêu cầu của cơ quan nhà nước có thẩm quyền về giải quyết vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ.",
+          "line_start": 493,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-07-01",
+          "source_doc_id": "luat_36_2024",
+          "version_id": "luat_36_2024:d43:k1@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 224,
+      "item": {
+        "id": "BT004",
+        "tap": "dev",
+        "nhom_cau": "bien_the",
+        "chu_de": "Lệ phí",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Nhà tôi ở Hà Nội, đăng ký lần đầu chiếc xe hơi 5 chỗ thì riêng tiền lệ phí làm cà vẹt kèm bấm biển số hết bao nhiêu?",
+        "dap_an": "Ô tô chở người từ 9 chỗ trở xuống (kể cả xe con pick-up) cấp mới chứng nhận đăng ký xe và biển số: khu vực I 14.000.000 đồng; khu vực II 140.000 đồng (mục I.2 Biểu mức thu kèm Thông tư 155/2025/TT-BTC). Mức thu áp theo khu vực nơi chủ xe có trụ sở, cư trú (khoản 2 Điều 5); Hà Nội thuộc khu vực I nên mức thu là 14.000.000 đồng.",
+        "can_cu": [
+          "tt_155_2025_btc:pl1@2026-01-01",
+          "tt_155_2025_btc:d4:k2:a@2026-01-01",
+          "tt_155_2025_btc:d5:k2@2026-01-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "tt_155_2025_btc:pl1@2026-01-01"
+          ],
+          [
+            "tt_155_2025_btc:d4:k2:a@2026-01-01"
+          ],
+          [
+            "tt_155_2025_btc:d5:k2@2026-01-01"
+          ]
+        ],
+        "van_ban": "tt_155_2025_btc",
+        "dieu": null,
+        "khoan": null,
+        "diem": null,
+        "dia_chi_chinh": null,
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            9.0,
+            "chỗ"
+          ],
+          [
+            140000.0,
+            "đồng"
+          ],
+          [
+            14000000.0,
+            "đồng"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "goc_id": "TH085",
+        "ho_cau": "TH085",
+        "kieu_bien_the": "tu_doi_thuong",
+        "trung_dev": false,
+        "key": "bt04",
+        "nguon_nhap": "bien_the.jsonl:4"
+      },
+      "records": [
+        {
+          "unit_id": "tt_155_2025_btc:pl1",
+          "doc_id": "tt_155_2025_btc",
+          "level": "phu_luc",
+          "chuong": null,
+          "muc": null,
+          "dieu": null,
+          "khoan": null,
+          "diem": null,
+          "title": "Phụ lục",
+          "text": "BIỂU MỨC THU LỆ PHÍ ĐĂNG KÝ, CẤP BIỂN\nPHƯƠNG TIỆN GIAO THÔNG\n(Kèm theo Thông tư số 155/2025/TT-BTC\nngày 31 tháng 12 năm 2025 của Bộ trưởng Bộ Tài chính)\nĐơn vị tính: đồng/lần/xe\nMức thu lệ phí theo Khu vực I và Khu vực II, đơn vị đồng/lần/xe:\nMục I. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới:\nI.1. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe ô tô, trừ xe ô tô quy định tại điểm 2, điểm 3 Mục này: Khu vực I 350.000 đồng; Khu vực II 100.000 đồng.\nI.2. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe ô tô chở người từ 9 chỗ trở xuống (bao gồm cả xe con pick-up): Khu vực I 14.000.000 đồng; Khu vực II 140.000 đồng.\nI.3. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Rơ moóc, sơ mi rơ moóc đăng ký rời: Khu vực I 140.000 đồng; Khu vực II 105.000 đồng.\nI.4. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe mô tô:\nI.4.a. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe mô tô - Trị giá đến 15.000.000 đồng: Khu vực I 700.000 đồng; Khu vực II 105.000 đồng.\nI.4.b. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe mô tô - Trị giá trên 15.000.000 đồng đến 40.000.000 đồng: Khu vực I 1.400.000 đồng; Khu vực II 105.000 đồng.\nI.4.c. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe mô tô - Trị giá trên 40.000.000 đồng: Khu vực I 2.800.000 đồng; Khu vực II 105.000 đồng.\nMục II. Đổi chứng nhận đăng ký xe và biển số xe cơ giới:\nII.1. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi chứng nhận đăng ký xe kèm theo biển số xe:\nII.1.a. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi chứng nhận đăng ký xe kèm theo biển số xe - Xe ô tô: 105.000 đồng, mức thu chung cho Khu vực I và Khu vực II.\nII.1.b. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi chứng nhận đăng ký xe kèm theo biển số xe - Xe mô tô: 70.000 đồng, mức thu chung cho Khu vực I và Khu vực II.\nII.2. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi chứng nhận đăng ký xe không kèm theo biển số xe: 35.000 đồng, mức thu chung cho Khu vực I và Khu vực II.\nII.3. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi biển số xe:\nII.3.a. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi biển số xe - Xe ô tô: 100.000 đồng, mức thu chung cho Khu vực I và Khu vực II.\nII.3.b. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi biển số xe - Xe mô tô: 50.000 đồng, mức thu chung cho Khu vực I và Khu vực II.\nMục III. Cấp chứng nhận đăng ký xe tạm thời, biển số xe tạm thời:\nIII.1. Cấp chứng nhận đăng ký xe tạm thời, biển số xe tạm thời - Cấp chứng nhận đăng ký xe tạm thời và biển số xe tạm thời bằng giấy: 35.000 đồng, mức thu chung cho Khu vực I và Khu vực II.\nIII.2. Cấp chứng nhận đăng ký xe tạm thời, biển số xe tạm thời - Cấp chứng nhận đăng ký xe tạm thời và biển số xe tạm thời bằng kim loại: 105.000 đồng, mức thu chung cho Khu vực I và Khu vực II.",
+          "line_start": 61,
+          "phan": null,
+          "valid_from": "2026-01-01",
+          "valid_to": null,
+          "source_doc_id": "tt_155_2025_btc",
+          "version_id": "tt_155_2025_btc:pl1@2026-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0018,
+          "chat_luong": "ok",
+          "loai_phu_luc": "noi_dung",
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_155_2025_btc:d4:k2:a",
+          "doc_id": "tt_155_2025_btc",
+          "level": "diem",
+          "chuong": null,
+          "muc": null,
+          "dieu": "4",
+          "khoan": "2",
+          "diem": "a",
+          "title": "",
+          "text": "Khu vực I gồm: Thành phố Hà Nội, Thành phố Hồ Chí Minh bao gồm tất cả các xã, phường trực thuộc thành phố không phân biệt nội thành hay ngoại thành, trừ đặc khu trực thuộc cấp tỉnh.",
+          "line_start": 30,
+          "phan": null,
+          "valid_from": "2026-01-01",
+          "valid_to": null,
+          "source_doc_id": "tt_155_2025_btc",
+          "version_id": "tt_155_2025_btc:d4:k2:a@2026-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_155_2025_btc:d5:k2",
+          "doc_id": "tt_155_2025_btc",
+          "level": "khoan",
+          "chuong": null,
+          "muc": null,
+          "dieu": "5",
+          "khoan": "2",
+          "diem": null,
+          "title": "",
+          "text": "Tổ chức, cá nhân có trụ sở, nơi cư trú ở khu vực nào thì nộp lệ phí cấp chứng nhận đăng ký xe và biển số xe cơ giới theo mức thu lệ phí quy định tương ứng với khu vực đó.\nTổ chức, cá nhân trúng đấu giá biển phương tiện giao thông nộp lệ phí cấp chứng nhận đăng ký xe và biển số xe cơ giới theo mức thu lệ phí của khu vực tổ chức, cá nhân lựa chọn cấp biển phương tiện giao thông trúng đấu giá theo quy định pháp luật.",
+          "line_start": 39,
+          "phan": null,
+          "valid_from": "2026-01-01",
+          "valid_to": null,
+          "source_doc_id": "tt_155_2025_btc",
+          "version_id": "tt_155_2025_btc:d5:k2@2026-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "item": {
+        "id": "TH010",
+        "tap": "test",
+        "nhom_cau": "thuong",
+        "chu_de": "Bảo hiểm",
+        "loai_cau": "tình huống",
+        "cau_hoi": "Con tôi chưa có giấy phép lái xe, lái chiếc xe mô tô 125 cc của tôi gây tai nạn. Bảo hiểm bắt buộc có bồi thường không?",
+        "dap_an": "Không. Doanh nghiệp bảo hiểm không bồi thường khi người lái xe không đủ điều kiện về độ tuổi, không có giấy phép lái xe hoặc dùng giấy phép không hợp lệ, bị tẩy xóa, hết hạn hoặc không phù hợp với loại xe bắt buộc phải có giấy phép lái xe (điểm c khoản 2 Điều 7 Nghị định 67/2023/NĐ-CP).",
+        "can_cu": [
+          "nd_67_2023:d7:k2:c@2023-09-06"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_67_2023:d7:k2:c@2023-09-06"
+          ]
+        ],
+        "van_ban": "nd_67_2023",
+        "dieu": "7",
+        "khoan": "2",
+        "diem": "c",
+        "dia_chi_chinh": "nd_67_2023:d7:k2",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [],
+        "ngay_hoi": "2026-10-01",
+        "ho_cau": "TH010",
+        "trung_dev": false,
+        "ghi_chu": "Xe mô tô 125 cc bắt buộc có giấy phép lái xe; nếu là xe gắn máy (không cần giấy phép) thì điểm c khoản 2 Điều 7 chỉ loại trừ khi người lái không đủ tuổi.",
+        "key": "bh10",
+        "nguon_nhap": "thuong_bao_hiem.jsonl:10"
+      },
+      "records": [
+        {
+          "unit_id": "nd_67_2023:d7:k2:c",
+          "doc_id": "nd_67_2023",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH VỀ BẢO HIỂM BẮT BUỘC TRÁCH NHIỆM DÂN SỰ CỦA CHỦ XE CƠ GIỚI",
+          "muc": "1 ĐIỀU KIỆN BẢO HIỂM, MỨC PHÍ BẢO HIỂM, GIỚI HẠN TRÁCH NHIỆM BẢO HIỂM",
+          "dieu": "7",
+          "khoan": "2",
+          "diem": "c",
+          "title": "",
+          "text": "Người lái xe không đủ điều kiện về độ tuổi theo quy định của Luật Giao thông đường bộ; người lái xe không có Giấy phép lái xe hoặc sử dụng Giấy phép lái xe không hợp lệ theo quy định của pháp luật về đào tạo, sát hạch, cấp giấy phép lái xe cơ giới đường bộ, Giấy phép lái xe bị tẩy xóa hoặc sử dụng Giấy phép lái xe hết hạn sử dụng tại thời điểm xảy ra tai nạn hoặc sử dụng Giấy phép lái xe không phù hợp đối với xe cơ giới bắt buộc phải có Giấy phép lái xe. Trường hợp người lái xe bị tước quyền sử dụng Giấy phép lái xe có thời hạn hoặc bị thu hồi Giấy phép lái xe thì được coi là không có Giấy phép lái xe.",
+          "line_start": 91,
+          "phan": null,
+          "valid_from": "2023-09-06",
+          "valid_to": null,
+          "source_doc_id": "nd_67_2023",
+          "version_id": "nd_67_2023:d7:k2:c@2023-09-06",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 95,
+      "item": {
+        "id": "TH095",
+        "tap": "test",
+        "nhom_cau": "thuong",
+        "chu_de": "Luật lõi",
+        "loai_cau": "hành vi cấm",
+        "cau_hoi": "Tôi có được cho người chưa có giấy phép lái xe mượn chiếc xe mô tô 110 cc để chạy ngoài đường không?",
+        "dap_an": "Không. Luật nghiêm cấm giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ (khoản 7 Điều 9 Luật Trật tự, an toàn giao thông đường bộ số 36/2024/QH15). Người điều khiển xe cơ giới không có giấy phép lái xe cũng là hành vi bị nghiêm cấm (khoản 1 Điều 9).",
+        "can_cu": [
+          "luat_36_2024:d9:k7@2025-01-01",
+          "luat_36_2024:d9:k1@2025-01-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "luat_36_2024:d9:k7@2025-01-01"
+          ],
+          [
+            "luat_36_2024:d9:k1@2025-01-01"
+          ]
+        ],
+        "van_ban": "luat_36_2024",
+        "dieu": "9",
+        "khoan": "7",
+        "diem": null,
+        "dia_chi_chinh": "luat_36_2024:d9:k7",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [],
+        "ngay_hoi": "2026-10-01",
+        "ho_cau": "TH095",
+        "trung_dev": false,
+        "ghi_chu": "Câu hỏi chỉ rõ xe mô tô (dung tích trên 50 cm3) nên người lái bắt buộc có giấy phép lái xe; người lái xe gắn máy không cần giấy phép lái xe (khoản 1, khoản 4 Điều 56) nên không dùng câu này cho xe gắn máy.",
+        "key": "ll07",
+        "nguon_nhap": "thuong_luat_loi.jsonl:7"
+      },
+      "records": [
+        {
+          "unit_id": "luat_36_2024:d9:k7",
+          "doc_id": "luat_36_2024",
+          "level": "khoan",
+          "chuong": "I NHỮNG QUY ĐỊNH CHUNG",
+          "muc": null,
+          "dieu": "9",
+          "khoan": "7",
+          "diem": null,
+          "title": "",
+          "text": "Giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ.",
+          "line_start": 82,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": null,
+          "source_doc_id": "luat_36_2024",
+          "version_id": "luat_36_2024:d9:k7@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "luat_36_2024:d9:k1",
+          "doc_id": "luat_36_2024",
+          "level": "khoan",
+          "chuong": "I NHỮNG QUY ĐỊNH CHUNG",
+          "muc": null,
+          "dieu": "9",
+          "khoan": "1",
+          "diem": null,
+          "title": "",
+          "text": "Điều khiển xe cơ giới tham gia giao thông đường bộ không có giấy phép lái xe theo quy định của pháp luật; điều khiển xe máy chuyên dùng tham gia giao thông đường bộ không có giấy phép lái xe hoặc chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ, bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng.",
+          "line_start": 76,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": null,
+          "source_doc_id": "luat_36_2024",
+          "version_id": "luat_36_2024:d9:k1@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 179,
+      "item": {
+        "id": "SD029",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Xử phạt",
+        "loai_cau": "tình huống",
+        "cau_hoi": "Lái ô tô chuyển làn không có tín hiệu trên đường cao tốc thì có bị cảnh sát tạm giữ xe ngay không?",
+        "dap_an": "Hành vi chuyển làn đường không đúng quy định khi chạy trên đường cao tốc (điểm g khoản 5 Điều 6 Nghị định 168/2024/NĐ-CP) bị phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, nhưng từ ngày 15/8/2026 không còn nằm trong danh sách hành vi được tạm giữ phương tiện trước khi ra quyết định xử phạt tại điểm a khoản 1 Điều 48. Chỉ được tạm giữ nếu thuộc trường hợp thật cần thiết để ngăn chặn ngay vi phạm có thể gây hậu quả nghiêm trọng (điểm o khoản 1 Điều 48).",
+        "can_cu": [
+          "nd_168_2024:d48:k1:a@2026-08-15",
+          "nd_168_2024:d48:k1@2025-01-01",
+          "nd_168_2024:d48:k1:o@2025-01-01",
+          "nd_168_2024:d6:k5:g@2026-08-15"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_168_2024:d48:k1:a@2026-08-15",
+            "nd_168_2024:d48:k1@2025-01-01",
+            "nd_168_2024:d48:k1:o@2025-01-01"
+          ],
+          [
+            "nd_168_2024:d6:k5:g@2026-08-15"
+          ]
+        ],
+        "van_ban": "nd_168_2024",
+        "dieu": "48",
+        "khoan": "1",
+        "diem": "a",
+        "dia_chi_chinh": "nd_168_2024:d48:k1",
+        "muc_phat_min": 4000000,
+        "muc_phat_max": 6000000,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            4000000.0,
+            "đồng"
+          ],
+          [
+            6000000.0,
+            "đồng"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 15/8/2026, điểm g khoản 5 Điều 6 có trong danh sách tại điểm a khoản 1 Điều 48, nên người có thẩm quyền được tạm giữ phương tiện trước khi ra quyết định xử phạt đối với hành vi chuyển làn sai trên cao tốc.",
+        "can_cu_cu": [
+          "nd_168_2024:d48:k1:a@2025-01-01",
+          "nd_168_2024:d6:k5:g@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_238_2026",
+        "ho_cau": "SD029",
+        "trung_dev": false,
+        "key": "sd41",
+        "nguon_nhap": "sua_doi.jsonl:29"
+      },
+      "records": [
+        {
+          "unit_id": "nd_168_2024:d48:k1:a",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "III THẨM QUYỀN, THỦ TỤC XỬ PHẠT, TRỪ ĐIỂM, PHỤC HỒI ĐIỂM GIẤY PHÉP LÁI XE",
+          "muc": "2 THỦ TỤC XỬ PHẠT",
+          "dieu": "48",
+          "khoan": "1",
+          "diem": "a",
+          "title": "",
+          "text": "Điểm c khoản 6; điểm b khoản 7; điểm a khoản 9; điểm a, điểm b, điểm c, điểm d khoản 11; khoản 12; khoản 14 Điều 6;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-08-15",
+          "valid_to": null,
+          "source_doc_id": "nd_238_2026",
+          "version_id": "nd_168_2024:d48:k1:a@2026-08-15",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_168_2024:d48:k1",
+          "doc_id": "nd_168_2024",
+          "level": "khoan",
+          "chuong": "III THẨM QUYỀN, THỦ TỤC XỬ PHẠT, TRỪ ĐIỂM, PHỤC HỒI ĐIỂM GIẤY PHÉP LÁI XE",
+          "muc": "2 THỦ TỤC XỬ PHẠT",
+          "dieu": "48",
+          "khoan": "1",
+          "diem": null,
+          "title": "",
+          "text": "Để ngăn chặn ngay hành vi vi phạm hành chính, người có thẩm quyền được phép tạm giữ phương tiện trước khi ra quyết định xử phạt theo quy định tại điểm b khoản 1, khoản 2, khoản 8 Điều 125 của Luật Xử lý vi phạm hành chính đối với những hành vi vi phạm được quy định tại các điều, khoản, điểm sau đây của Nghị định này:",
+          "line_start": 1247,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": null,
+          "source_doc_id": "nd_168_2024",
+          "version_id": "nd_168_2024:d48:k1@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_168_2024:d48:k1:o",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "III THẨM QUYỀN, THỦ TỤC XỬ PHẠT, TRỪ ĐIỂM, PHỤC HỒI ĐIỂM GIẤY PHÉP LÁI XE",
+          "muc": "2 THỦ TỤC XỬ PHẠT",
+          "dieu": "48",
+          "khoan": "1",
+          "diem": "o",
+          "title": "",
+          "text": "Các hành vi vi phạm khác quy định tại Nghị định này thuộc trường hợp thật cần thiết cần phải ngăn chặn ngay hành vi vi phạm hành chính mà nếu không tạm giữ thì sẽ gây hậu quả nghiêm trọng cho xã hội.",
+          "line_start": 1261,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": null,
+          "source_doc_id": "nd_168_2024",
+          "version_id": "nd_168_2024:d48:k1:o@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_168_2024:d6:k5:g",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "II HÀNH VI VI PHẠM, HÌNH THỨC, MỨC XỬ PHẠT, MỨC TRỪ ĐIỂM GIẤY PHÉP LÁI XE VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ VI PHẠM HÀNH CHÍNH VỀ TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "1 VI PHẠM QUY TẮC GIAO THÔNG ĐƯỜNG BỘ",
+          "dieu": "6",
+          "khoan": "5",
+          "diem": "g",
+          "title": "",
+          "text": "Chuyển làn đường không đúng nơi cho phép hoặc không có tín hiệu báo trước hoặc chuyển làn đường không đúng quy định “mỗi lần chuyển làn đường chỉ được phép chuyển sang một làn đường liền kề hoặc chuyển làn đường không bảo đảm khoảng cách an toàn với xe phía trước, xe phía sau, xe hai bên” khi chạy trên đường cao tốc;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-08-15",
+          "valid_to": null,
+          "source_doc_id": "nd_238_2026",
+          "version_id": "nd_168_2024:d6:k5:g@2026-08-15",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_168_2024:d48:k1:a",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "III THẨM QUYỀN, THỦ TỤC XỬ PHẠT, TRỪ ĐIỂM, PHỤC HỒI ĐIỂM GIẤY PHÉP LÁI XE",
+          "muc": "2 THỦ TỤC XỬ PHẠT",
+          "dieu": "48",
+          "khoan": "1",
+          "diem": "a",
+          "title": "",
+          "text": "Điểm g khoản 5; điểm c khoản 6; điểm b khoản 7; điểm a khoản 9; điểm a, điểm b, điểm c, điểm d khoản 11; khoản 12; khoản 14 Điều 6;",
+          "line_start": 1248,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-15",
+          "source_doc_id": "nd_168_2024",
+          "version_id": "nd_168_2024:d48:k1:a@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_168_2024:d6:k5:g",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "II HÀNH VI VI PHẠM, HÌNH THỨC, MỨC XỬ PHẠT, MỨC TRỪ ĐIỂM GIẤY PHÉP LÁI XE VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ VI PHẠM HÀNH CHÍNH VỀ TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "1 VI PHẠM QUY TẮC GIAO THÔNG ĐƯỜNG BỘ",
+          "dieu": "6",
+          "khoan": "5",
+          "diem": "g",
+          "title": "",
+          "text": "Chuyển làn đường không đúng nơi cho phép hoặc không có tín hiệu báo trước hoặc chuyển làn đường không đúng quy định “mỗi lần chuyển làn đường chỉ được phép chuyển sang một làn đường liền kề” khi chạy trên đường cao tốc;",
+          "line_start": 145,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-15",
+          "source_doc_id": "nd_168_2024",
+          "version_id": "nd_168_2024:d6:k5:g@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 180,
+      "item": {
+        "id": "SD030",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Xử phạt",
+        "loai_cau": "mức phạt",
+        "cau_hoi": "Sơ mi rơ moóc chở thiết bị có hình dạng như công-ten-nơ nhưng dài vượt quá chiều dài ghi trong chứng nhận kiểm định thì người lái bị phạt bao nhiêu?",
+        "dap_an": "Chở thiết bị có hình dạng thùng hoặc như công-ten-nơ (không phải công-ten-nơ) vượt quá chiều dài toàn bộ ghi trong chứng nhận kiểm định của rơ moóc, sơ mi rơ moóc bị phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng (điểm d khoản 8 Điều 21 Nghị định 168/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 15/8/2026); người điều khiển xe còn bị trừ 04 điểm giấy phép lái xe (điểm b khoản 13 Điều 21).",
+        "can_cu": [
+          "nd_168_2024:d21:k8:d@2026-08-15",
+          "nd_168_2024:d21:k13:b@2025-01-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_168_2024:d21:k8:d@2026-08-15"
+          ],
+          [
+            "nd_168_2024:d21:k13:b@2025-01-01"
+          ]
+        ],
+        "van_ban": "nd_168_2024",
+        "dieu": "21",
+        "khoan": "8",
+        "diem": "d",
+        "dia_chi_chinh": "nd_168_2024:d21:k8",
+        "muc_phat_min": 8000000,
+        "muc_phat_max": 12000000,
+        "diem_tru": 4,
+        "trang_thai_diem_tru": "co",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            4.0,
+            "điểm"
+          ],
+          [
+            8000000.0,
+            "đồng"
+          ],
+          [
+            12000000.0,
+            "đồng"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 15/8/2026, điểm d khoản 8 Điều 21 quy định hành vi khác: chở công-ten-nơ trên xe mà bị cắt nóc trái quy định; hành vi chở thiết bị hình dạng như công-ten-nơ vượt chiều dài chưa được quy định tại điểm này.",
+        "can_cu_cu": [
+          "nd_168_2024:d21:k8:d@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_238_2026",
+        "ho_cau": "SD030",
+        "trung_dev": false,
+        "key": "sd42",
+        "nguon_nhap": "sua_doi.jsonl:30"
+      },
+      "records": [
+        {
+          "unit_id": "nd_168_2024:d21:k8:d",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "II HÀNH VI VI PHẠM, HÌNH THỨC, MỨC XỬ PHẠT, MỨC TRỪ ĐIỂM GIẤY PHÉP LÁI XE VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ VI PHẠM HÀNH CHÍNH VỀ TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "4 VI PHẠM QUY ĐỊNH VỀ BẢO ĐẢM TRẬT TỰ, AN TOÀN GIAO THÔNG ĐƯỜNG BỘ ĐỐI VỚI XE Ô TÔ VẬN CHUYỂN HÀNH KHÁCH, HÀNG HÓA, HÀNG SIÊU TRƯỜNG, SIÊU TRỌNG, HÀNG HÓA NGUY HIỂM, CHỞ TRẺ EM MẦM NON, HỌC SINH; XE CHỞ NGƯỜI BỐN BÁNH CÓ GẮN ĐỘNG CƠ, XE CHỞ HÀNG BỐN BÁNH CÓ GẮN ĐỘNG CƠ; XE CỨU HỘ GIAO THÔNG ĐƯỜNG BỘ; XE VẬN CHUYỂN ĐỘNG VẬT SỐNG, THỰC PHẨM TƯƠI SỐNG; XE CỨU THƯƠNG",
+          "dieu": "21",
+          "khoan": "8",
+          "diem": "d",
+          "title": "",
+          "text": "Chở thiết bị có hình dạng thùng hoặc có hình dạng như công-ten-nơ (không phải công-ten-nơ) vượt quá chiều dài toàn bộ được ghi trong chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của rơ moóc, sơ mi rơ moóc; chở loại hàng không đúng với thông tin ghi trong chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của rơ moóc, sơ mi rơ moóc;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-08-15",
+          "valid_to": null,
+          "source_doc_id": "nd_238_2026",
+          "version_id": "nd_168_2024:d21:k8:d@2026-08-15",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_168_2024:d21:k13:b",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "II HÀNH VI VI PHẠM, HÌNH THỨC, MỨC XỬ PHẠT, MỨC TRỪ ĐIỂM GIẤY PHÉP LÁI XE VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ VI PHẠM HÀNH CHÍNH VỀ TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "4 VI PHẠM QUY ĐỊNH VỀ BẢO ĐẢM TRẬT TỰ, AN TOÀN GIAO THÔNG ĐƯỜNG BỘ ĐỐI VỚI XE Ô TÔ VẬN CHUYỂN HÀNH KHÁCH, HÀNG HÓA, HÀNG SIÊU TRƯỜNG, SIÊU TRỌNG, HÀNG HÓA NGUY HIỂM, CHỞ TRẺ EM MẦM NON, HỌC SINH; XE CHỞ NGƯỜI BỐN BÁNH CÓ GẮN ĐỘNG CƠ, XE CHỞ HÀNG BỐN BÁNH CÓ GẮN ĐỘNG CƠ; XE CỨU HỘ GIAO THÔNG ĐƯỜNG BỘ; XE VẬN CHUYỂN ĐỘNG VẬT SỐNG, THỰC PHẨM TƯƠI SỐNG; XE CỨU THƯƠNG",
+          "dieu": "21",
+          "khoan": "13",
+          "diem": "b",
+          "title": "",
+          "text": "Thực hiện hành vi quy định tại điểm a, điểm b khoản 6; điểm c, điểm d, điểm đ khoản 8; khoản 10 Điều này bị trừ điểm giấy phép lái xe 04 điểm;",
+          "line_start": 668,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": null,
+          "source_doc_id": "nd_168_2024",
+          "version_id": "nd_168_2024:d21:k13:b@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_168_2024:d21:k8:d",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "II HÀNH VI VI PHẠM, HÌNH THỨC, MỨC XỬ PHẠT, MỨC TRỪ ĐIỂM GIẤY PHÉP LÁI XE VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ VI PHẠM HÀNH CHÍNH VỀ TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "4 VI PHẠM QUY ĐỊNH VỀ BẢO ĐẢM TRẬT TỰ, AN TOÀN GIAO THÔNG ĐƯỜNG BỘ ĐỐI VỚI XE Ô TÔ VẬN CHUYỂN HÀNH KHÁCH, HÀNG HÓA, HÀNG SIÊU TRƯỜNG, SIÊU TRỌNG, HÀNG HÓA NGUY HIỂM, CHỞ TRẺ EM MẦM NON, HỌC SINH; XE CHỞ NGƯỜI BỐN BÁNH CÓ GẮN ĐỘNG CƠ, XE CHỞ HÀNG BỐN BÁNH CÓ GẮN ĐỘNG CƠ; XE CỨU HỘ GIAO THÔNG ĐƯỜNG BỘ; XE VẬN CHUYỂN ĐỘNG VẬT SỐNG, THỰC PHẨM TƯƠI SỐNG; XE CỨU THƯƠNG",
+          "dieu": "21",
+          "khoan": "8",
+          "diem": "d",
+          "title": "",
+          "text": "Chở công-ten-nơ trên xe (kể cả sơ mi rơ moóc) mà bị cắt nóc trái quy định;",
+          "line_start": 658,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-15",
+          "source_doc_id": "nd_168_2024",
+          "version_id": "nd_168_2024:d21:k8:d@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 181,
+      "item": {
+        "id": "SD031",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Xử phạt",
+        "loai_cau": "hành vi cấm",
+        "cau_hoi": "Cá nhân là chủ ô tô không làm thủ tục thu hồi giấy chứng nhận kiểm định khi xe hết niên hạn thì có bị phạt theo điểm b khoản 7 Điều 32 Nghị định 168 không?",
+        "dap_an": "Không. Từ ngày 15/8/2026, điểm b khoản 7 Điều 32 Nghị định 168/2024/NĐ-CP chỉ xử phạt chủ xe ô tô không làm thủ tục thu hồi chứng nhận đăng ký xe, biển số xe (cá nhân phạt từ 4.000.000 đồng đến 6.000.000 đồng); giấy chứng nhận kiểm định không còn nằm trong hành vi này.",
+        "can_cu": [
+          "nd_168_2024:d32:k7:b@2026-08-15",
+          "nd_168_2024:d32:k7@2025-01-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_168_2024:d32:k7:b@2026-08-15",
+            "nd_168_2024:d32:k7@2025-01-01"
+          ]
+        ],
+        "van_ban": "nd_168_2024",
+        "dieu": "32",
+        "khoan": "7",
+        "diem": "b",
+        "dia_chi_chinh": "nd_168_2024:d32:k7",
+        "muc_phat_min": 4000000,
+        "muc_phat_max": 6000000,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_tru",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            4000000.0,
+            "đồng"
+          ],
+          [
+            6000000.0,
+            "đồng"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 15/8/2026, điểm b khoản 7 Điều 32 xử phạt cả hành vi không làm thủ tục thu hồi giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường, với cá nhân từ 4.000.000 đồng đến 6.000.000 đồng.",
+        "can_cu_cu": [
+          "nd_168_2024:d32:k7:b@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_238_2026",
+        "ho_cau": "SD031",
+        "trung_dev": false,
+        "key": "sd43",
+        "nguon_nhap": "sua_doi.jsonl:31"
+      },
+      "records": [
+        {
+          "unit_id": "nd_168_2024:d32:k7:b",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "II HÀNH VI VI PHẠM, HÌNH THỨC, MỨC XỬ PHẠT, MỨC TRỪ ĐIỂM GIẤY PHÉP LÁI XE VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ VI PHẠM HÀNH CHÍNH VỀ TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "5 CÁC VI PHẠM KHÁC LIÊN QUAN ĐẾN TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "dieu": "32",
+          "khoan": "7",
+          "diem": "b",
+          "title": "",
+          "text": "Không làm thủ tục thu hồi chứng nhận đăng ký xe; biển số xe theo quy định;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-08-15",
+          "valid_to": null,
+          "source_doc_id": "nd_238_2026",
+          "version_id": "nd_168_2024:d32:k7:b@2026-08-15",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_168_2024:d32:k7",
+          "doc_id": "nd_168_2024",
+          "level": "khoan",
+          "chuong": "II HÀNH VI VI PHẠM, HÌNH THỨC, MỨC XỬ PHẠT, MỨC TRỪ ĐIỂM GIẤY PHÉP LÁI XE VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ VI PHẠM HÀNH CHÍNH VỀ TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "5 CÁC VI PHẠM KHÁC LIÊN QUAN ĐẾN TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "dieu": "32",
+          "khoan": "7",
+          "diem": null,
+          "title": "",
+          "text": "Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng đối với cá nhân, từ 8.000.000 đồng đến 12.000.000 đồng đối với tổ chức là chủ xe ô tô (kể cả rơ moóc và sơ mi rơ moóc), xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ, xe máy chuyên dùng và các loại xe tương tự xe ô tô thực hiện một trong các hành vi vi phạm sau đây:",
+          "line_start": 810,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": null,
+          "source_doc_id": "nd_168_2024",
+          "version_id": "nd_168_2024:d32:k7@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_168_2024:d32:k7:b",
+          "doc_id": "nd_168_2024",
+          "level": "diem",
+          "chuong": "II HÀNH VI VI PHẠM, HÌNH THỨC, MỨC XỬ PHẠT, MỨC TRỪ ĐIỂM GIẤY PHÉP LÁI XE VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ VI PHẠM HÀNH CHÍNH VỀ TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "5 CÁC VI PHẠM KHÁC LIÊN QUAN ĐẾN TRẬT TỰ, AN TOÀN GIAO THÔNG TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "dieu": "32",
+          "khoan": "7",
+          "diem": "b",
+          "title": "",
+          "text": "Không làm thủ tục thu hồi chứng nhận đăng ký xe; biển số xe; giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường theo quy định;",
+          "line_start": 812,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-15",
+          "source_doc_id": "nd_168_2024",
+          "version_id": "nd_168_2024:d32:k7:b@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 182,
+      "item": {
+        "id": "SD032",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Nộp đủ hồ sơ xin Giấy phép liên vận ASEAN cho xe thì bao lâu được cấp?",
+        "dap_an": "Trong thời hạn 01 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ và kiểm tra dữ liệu Giấy chứng nhận đăng ký xe trên Cơ sở dữ liệu về đăng ký phương tiện, cơ quan có thẩm quyền cấp Giấy phép liên vận ASEAN (điểm c khoản 4 Điều 32 Nghị định 158/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 10/8/2026).",
+        "can_cu": [
+          "nd_158_2024:d32:k4:c@2026-08-10"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_158_2024:d32:k4:c@2026-08-10"
+          ]
+        ],
+        "van_ban": "nd_158_2024",
+        "dieu": "32",
+        "khoan": "4",
+        "diem": "c",
+        "dia_chi_chinh": "nd_158_2024:d32:k4",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            1.0,
+            "ngày"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 10/8/2026, thời hạn cấp Giấy phép liên vận ASEAN là 02 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.",
+        "can_cu_cu": [
+          "nd_158_2024:d32:k4:c@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_218_2026",
+        "ho_cau": "SD032",
+        "trung_dev": false,
+        "key": "sd44",
+        "nguon_nhap": "sua_doi.jsonl:32"
+      },
+      "records": [
+        {
+          "unit_id": "nd_158_2024:d32:k4:c",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "2 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN ASEAN",
+          "dieu": "32",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 01 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ theo quy định và kiểm tra thông tin dữ liệu về Giấy chứng nhận đăng ký xe trên Cơ sở dữ liệu về đăng ký phương tiện, cơ quan có thẩm quyền cấp giấy phép thực hiện cấp Giấy phép liên vận ASEAN theo Mẫu số 04 Phụ lục VII kèm theo Nghị định này. Trường hợp không cấp, cơ quan có thẩm quyền cấp giấy phép thông báo bằng văn bản hoặc qua Cổng dịch vụ công quốc gia và nêu rõ lý do;",
+          "line_start": 3,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d32:k4:c@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d32:k4:c",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "2 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN ASEAN",
+          "dieu": "32",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 02 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định, cơ quan có thẩm quyền cấp giấy phép thực hiện cấp Giấy phép liên vận ASEAN theo Mẫu số 04 Phụ lục VII kèm theo Nghị định này. Trường hợp không cấp, cơ quan có thẩm quyền cấp giấy phép thông báo bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến và nêu rõ lý do;",
+          "line_start": 515,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-10",
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d32:k4:c@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 183,
+      "item": {
+        "id": "SD033",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Thời hạn cấp Giấy phép vận tải đường bộ quốc tế GMS là bao lâu?",
+        "dap_an": "Trong thời hạn 01 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ và kiểm tra dữ liệu Giấy phép kinh doanh vận tải trên cơ sở dữ liệu cấp phép hoạt động vận tải (điểm c khoản 4 Điều 35 Nghị định 158/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 10/8/2026).",
+        "can_cu": [
+          "nd_158_2024:d35:k4:c@2026-08-10"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_158_2024:d35:k4:c@2026-08-10"
+          ]
+        ],
+        "van_ban": "nd_158_2024",
+        "dieu": "35",
+        "khoan": "4",
+        "diem": "c",
+        "dia_chi_chinh": "nd_158_2024:d35:k4",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            1.0,
+            "ngày"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 10/8/2026, thời hạn cấp Giấy phép vận tải đường bộ quốc tế GMS là 02 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.",
+        "can_cu_cu": [
+          "nd_158_2024:d35:k4:c@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_218_2026",
+        "ho_cau": "SD033",
+        "trung_dev": false,
+        "key": "sd45",
+        "nguon_nhap": "sua_doi.jsonl:33"
+      },
+      "records": [
+        {
+          "unit_id": "nd_158_2024:d35:k4:c",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "3 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN GMS",
+          "dieu": "35",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 01 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ theo quy định và kiểm tra thông tin dữ liệu về Giấy phép kinh doanh vận tải của đơn vị kinh doanh vận tải trên cơ sở dữ liệu cấp phép hoạt động vận tải, cơ quan có thẩm quyền cấp giấy phép thực hiện cấp Giấy phép vận tải đường bộ quốc tế GMS theo Mẫu số 02 Phụ lục VIII kèm theo Nghị định này. Trường hợp không cấp, cơ quan có thẩm quyền cấp giấy phép thông báo bằng văn bản hoặc qua Cổng dịch vụ công quốc gia và nêu rõ lý do;",
+          "line_start": 3,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d35:k4:c@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d35:k4:c",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "3 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN GMS",
+          "dieu": "35",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 02 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định, cơ quan có thẩm quyền cấp giấy phép thực hiện cấp Giấy phép vận tải đường bộ quốc tế GMS theo Mẫu số 02 Phụ lục VIII kèm theo Nghị định này. Trường hợp không cấp, cơ quan có thẩm quyền cấp giấy phép thông báo bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến và nêu rõ lý do;",
+          "line_start": 550,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-10",
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d35:k4:c@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 184,
+      "item": {
+        "id": "SD034",
+        "tap": "dev",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Xe của Lào, Campuchia muốn gia hạn thời gian lưu hành tại Việt Nam thì cơ quan có thẩm quyền giải quyết trong bao lâu?",
+        "dap_an": "Trong thời hạn 01 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền gia hạn thời gian lưu hành tại Việt Nam bằng văn bản hoặc gia hạn trong Giấy phép liên vận giữa Việt Nam, Lào và Campuchia (điểm b khoản 4 Điều 42 Nghị định 158/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 10/8/2026).",
+        "can_cu": [
+          "nd_158_2024:d42:k4:b@2026-08-10"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_158_2024:d42:k4:b@2026-08-10"
+          ]
+        ],
+        "van_ban": "nd_158_2024",
+        "dieu": "42",
+        "khoan": "4",
+        "diem": "b",
+        "dia_chi_chinh": "nd_158_2024:d42:k4",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            1.0,
+            "ngày"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 10/8/2026, thời hạn gia hạn là 02 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ.",
+        "can_cu_cu": [
+          "nd_158_2024:d42:k4:b@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_218_2026",
+        "ho_cau": "SD034",
+        "trung_dev": false,
+        "key": "sd46",
+        "nguon_nhap": "sua_doi.jsonl:34"
+      },
+      "records": [
+        {
+          "unit_id": "nd_158_2024:d42:k4:b",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "4 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP LIÊN VẬN GIỮA VIỆT NAM, LÀO VÀ CAMPUCHIA",
+          "dieu": "42",
+          "khoan": "4",
+          "diem": "b",
+          "title": "",
+          "text": "Trong thời hạn 01 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ theo quy định, cơ quan có thẩm quyền thực hiện gia hạn thời gian lưu hành tại Việt Nam cho phương tiện cho phương tiện của Lào, Campuchia. Cơ quan có thẩm quyền thực hiện việc gia hạn bằng văn bản hoặc gia hạn trong Giấy phép liên vận giữa Việt Nam, Lào và Campuchia và trả lại Giấy phép liên vận giữa Việt Nam, Lào và Campuchia cho tổ chức, cá nhân, đơn vị kinh doanh vận tải. Trường hợp không gia hạn, cơ quan có thẩm quyền trả lời bằng văn bản nêu rõ lý do;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d42:k4:b@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0265,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d42:k4:b",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "4 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP LIÊN VẬN GIỮA VIỆT NAM, LÀO VÀ CAMPUCHIA",
+          "dieu": "42",
+          "khoan": "4",
+          "diem": "b",
+          "title": "",
+          "text": "Trong thời hạn 02 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ theo quy định, cơ quan có thẩm quyền thực hiện gia hạn thời gian lưu hành cho phương tiện của Lào, Campuchia. Cơ quan có thẩm quyền thực hiện việc gia hạn bằng văn bản hoặc gia hạn trong giấy phép liên vận. Trường hợp không gia hạn, cơ quan có thẩm quyền trả lời bằng văn bản nêu rõ lý do.",
+          "line_start": 641,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-10",
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d42:k4:b@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.013,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 186,
+      "item": {
+        "id": "SD036",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "GPLX",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Giấy phép lái xe bị trừ hết điểm, tôi muốn đăng ký kiểm tra kiến thức pháp luật để phục hồi điểm thì có thể nộp hồ sơ ở Công an xã không?",
+        "dap_an": "Có. Người đăng ký kiểm tra có thể nộp hồ sơ cho Công an cấp xã hoặc cơ quan có thẩm quyền kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ tại nơi thường trú, tạm trú, nơi ở hiện tại (khoản 3 Điều 7 Thông tư 65/2024/TT-BCA, được sửa đổi, có hiệu lực từ 01/7/2026).",
+        "can_cu": [
+          "tt_65_2024_bca:d7:k3@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "tt_65_2024_bca:d7:k3@2026-07-01"
+          ]
+        ],
+        "van_ban": "tt_65_2024_bca",
+        "dieu": "7",
+        "khoan": "3",
+        "diem": null,
+        "dia_chi_chinh": "tt_65_2024_bca:d7:k3",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 01/7/2026, hồ sơ được nộp cho cơ quan có thẩm quyền kiểm tra quy định tại Điều 4 Thông tư 65/2024/TT-BCA tại nơi thường trú, tạm trú, nơi ở hiện tại; khoản 3 Điều 7 chưa nêu Công an cấp xã là nơi nhận hồ sơ.",
+        "can_cu_cu": [
+          "tt_65_2024_bca:d7:k3@2025-01-01"
+        ],
+        "ngay_cu": "2026-03-01",
+        "van_ban_sua_doi": "tt_105_2026_bca",
+        "ho_cau": "SD036",
+        "trung_dev": false,
+        "key": "sd48",
+        "nguon_nhap": "sua_doi.jsonl:36"
+      },
+      "records": [
+        {
+          "unit_id": "tt_65_2024_bca:d7:k3",
+          "doc_id": "tt_65_2024_bca",
+          "level": "khoan",
+          "chuong": "II QUY ĐỊNH CỤ THỂ",
+          "muc": null,
+          "dieu": "7",
+          "khoan": "3",
+          "diem": null,
+          "title": "",
+          "text": "Người đăng ký kiểm tra có thể nộp hồ sơ đăng ký kiểm tra cho Công an cấp xã, cơ quan có thẩm quyền kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ tại nơi thường trú, tạm trú, nơi ở hiện tại.\nNgười có kết quả kiểm tra không đạt yêu cầu có thể đăng ký kiểm tra lại tại cơ quan có thẩm quyền đã tổ chức kiểm tra trước đó hoặc lựa chọn cơ quan có thẩm quyền kiểm tra để đề nghị kiểm tra lại. Trường hợp đề nghị kiểm tra lại, nếu giấy khám sức khỏe còn giá trị sử dụng thì người đăng ký kiểm tra chỉ gửi đơn đề nghị kiểm tra.",
+          "line_start": 11,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "tt_105_2026_bca",
+          "version_id": "tt_65_2024_bca:d7:k3@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_65_2024_bca:d7:k3",
+          "doc_id": "tt_65_2024_bca",
+          "level": "khoan",
+          "chuong": "II QUY ĐỊNH CỤ THỂ",
+          "muc": null,
+          "dieu": "7",
+          "khoan": "3",
+          "diem": null,
+          "title": "",
+          "text": "Người đăng ký kiểm tra có thể nộp hồ sơ cho cơ quan có thẩm quyền kiểm tra quy định tại Điều 4 Thông tư này tại nơi thường trú, tạm trú, nơi ở hiện tại.\nNgười có kết quả kiểm tra không đạt yêu cầu có thể đăng ký kiểm tra lại tại cơ quan có thẩm quyền đã tổ chức kiểm tra trước đó hoặc lựa chọn cơ quan có thẩm quyền kiểm tra để đề nghị kiểm tra lại. Trường hợp đề nghị kiểm tra lại, nếu giấy khám sức khỏe còn giá trị sử dụng thì người đăng ký kiểm tra chỉ gửi đơn đề nghị kiểm tra.",
+          "line_start": 65,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-07-01",
+          "source_doc_id": "tt_65_2024_bca",
+          "version_id": "tt_65_2024_bca:d7:k3@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 188,
+      "item": {
+        "id": "SD038",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Đăng ký xe",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Khi đăng ký sang tên xe trên Cổng dịch vụ công, dữ liệu điện tử về chuyển quyền sở hữu có thay được hợp đồng mua bán bản giấy không?",
+        "dap_an": "Có, nếu dữ liệu về tình trạng hôn nhân của chủ xe đã được cập nhật trên Cơ sở dữ liệu quốc gia về dân cư: khi đó dữ liệu điện tử chuyển quyền sở hữu trên Cổng dịch vụ công có giá trị pháp lý như chứng từ chuyển quyền sở hữu bản giấy (điểm c khoản 2 Điều 16 Thông tư 79/2024/TT-BCA, được sửa đổi, có hiệu lực từ 08/6/2026).",
+        "can_cu": [
+          "tt_79_2024_bca:d16:k2:c@2026-06-08"
+        ],
+        "nhom_can_cu": [
+          [
+            "tt_79_2024_bca:d16:k2:c@2026-06-08"
+          ]
+        ],
+        "van_ban": "tt_79_2024_bca",
+        "dieu": "16",
+        "khoan": "2",
+        "diem": "c",
+        "dia_chi_chinh": "tt_79_2024_bca:d16:k2",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 08/6/2026, hồ sơ sang tên chỉ yêu cầu chứng từ chuyển quyền sở hữu xe theo quy định; điểm c khoản 2 Điều 16 chưa công nhận dữ liệu điện tử chuyển quyền sở hữu thay cho bản giấy.",
+        "can_cu_cu": [
+          "tt_79_2024_bca:d16:k2:c@2025-01-01"
+        ],
+        "ngay_cu": "2026-03-01",
+        "van_ban_sua_doi": "tt_37_2026_bca",
+        "ho_cau": "SD038",
+        "trung_dev": false,
+        "key": "sd50",
+        "nguon_nhap": "sua_doi.jsonl:38"
+      },
+      "records": [
+        {
+          "unit_id": "tt_79_2024_bca:d16:k2:c",
+          "doc_id": "tt_79_2024_bca",
+          "level": "diem",
+          "chuong": "II HỒ SƠ, THỦ TỤC ĐĂNG KÝ XE",
+          "muc": "2 CẤP CHỨNG NHẬN ĐĂNG KÝ XE, BIỂN SỐ XE",
+          "dieu": "16",
+          "khoan": "2",
+          "diem": "c",
+          "title": "",
+          "text": "Chứng từ chuyển quyền sở hữu theo quy định.\nTrường hợp dữ liệu về tình trạng hôn nhân của chủ xe đã được cập nhật trên Cơ sở dữ liệu Quốc gia về dân cư thì dữ liệu điện tử chuyển quyền sở hữu trên Cổng dịch vụ công có giá trị pháp lý như Chứng từ chuyển quyền sở hữu bản giấy.",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-06-08",
+          "valid_to": null,
+          "source_doc_id": "tt_37_2026_bca",
+          "version_id": "tt_79_2024_bca:d16:k2:c@2026-06-08",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_79_2024_bca:d16:k2:c",
+          "doc_id": "tt_79_2024_bca",
+          "level": "diem",
+          "chuong": "II HỒ SƠ, THỦ TỤC ĐĂNG KÝ XE",
+          "muc": "2 CẤP CHỨNG NHẬN ĐĂNG KÝ XE, BIỂN SỐ XE",
+          "dieu": "16",
+          "khoan": "2",
+          "diem": "c",
+          "title": "",
+          "text": "Chứng từ chuyển quyền sở hữu xe theo quy định;",
+          "line_start": 168,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-06-08",
+          "source_doc_id": "tt_79_2024_bca",
+          "version_id": "tt_79_2024_bca:d16:k2:c@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 189,
+      "item": {
+        "id": "SD039",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Đơn vị vận tải bị thu hồi Giấy phép kinh doanh thì sau bao lâu mới được xin cấp lại?",
+        "dap_an": "Trong thời hạn 30 ngày kể từ ngày ký Quyết định thu hồi Giấy phép kinh doanh, Sở Xây dựng không cấp lại Giấy phép kinh doanh; sau thời hạn này, nếu có nhu cầu thì đơn vị làm thủ tục cấp Giấy phép kinh doanh, phù hiệu theo quy định. Trong thời hạn 10 ngày kể từ ngày ký quyết định, đơn vị phải dừng hoạt động kinh doanh vận tải theo quyết định thu hồi (điểm d khoản 7 Điều 21 Nghị định 158/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 10/8/2026).",
+        "can_cu": [
+          "nd_158_2024:d21:k7:d@2026-08-10"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_158_2024:d21:k7:d@2026-08-10"
+          ]
+        ],
+        "van_ban": "nd_158_2024",
+        "dieu": "21",
+        "khoan": "7",
+        "diem": "d",
+        "dia_chi_chinh": "nd_158_2024:d21:k7",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            10.0,
+            "ngày"
+          ],
+          [
+            30.0,
+            "ngày"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 10/8/2026, đơn vị phải nộp lại Giấy phép kinh doanh và phù hiệu trong thời hạn 10 ngày; không được cấp lại trong thời gian 30 ngày kể từ ngày nộp lại đủ, hoặc 45 ngày nếu nộp quá hạn hay không đủ (thời hạn tính từ ngày nộp lại, không tính từ ngày ký quyết định).",
+        "can_cu_cu": [
+          "nd_158_2024:d21:k7:d@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_218_2026",
+        "ho_cau": "SD039",
+        "trung_dev": false,
+        "key": "sd51",
+        "nguon_nhap": "sua_doi.jsonl:39"
+      },
+      "records": [
+        {
+          "unit_id": "nd_158_2024:d21:k7:d",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ TRONG NƯỚC",
+          "muc": "4 QUY ĐỊNH VỀ CẤP, THU HỒI GIẤY PHÉP KINH DOANH VẬN TẢI BẰNG XE Ô TÔ, BẰNG XE BỐN BÁNH CÓ GẮN ĐỘNG CƠ; CẤP, THU HỒI PHÙ HIỆU; ĐĂNG KÝ KHAI THÁC, NGỪNG HOẠT ĐỘNG, THU HỒI KHAI THÁC TUYẾN VẬN TẢI HÀNH KHÁCH CỐ ĐỊNH",
+          "dieu": "21",
+          "khoan": "7",
+          "diem": "d",
+          "title": "",
+          "text": "Khi cơ quan cấp Giấy phép kinh doanh ban hành quyết định thu hồi Giấy phép kinh doanh đối với loại hình kinh doanh vận tải có vi phạm; trong thời hạn 10 ngày kể từ ngày ký, đơn vị kinh doanh vận tải phải dừng hoạt động kinh doanh vận tải theo quyết định thu hồi.\nTrong thời hạn 30 ngày kể từ ngày ký Quyết định thu hồi Giấy phép kinh doanh, Sở Xây dựng không cấp lại Giấy phép kinh doanh cho đơn vị kinh doanh vận tải. Sau thời hạn trên, nếu có nhu cầu tiếp tục tham gia kinh doanh, đơn vị kinh doanh vận tải làm thủ tục để được cấp Giấy phép kinh doanh, phù hiệu theo quy định tại khoản 1 Điều 21 và khoản 6 Điều 23 Nghị định này.",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d21:k7:d@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d21:k7:d",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ TRONG NƯỚC",
+          "muc": "4 QUY ĐỊNH VỀ CẤP, THU HỒI GIẤY PHÉP KINH DOANH VẬN TẢI BẰNG XE Ô TÔ, BẰNG XE BỐN BÁNH CÓ GẮN ĐỘNG CƠ; CẤP, THU HỒI PHÙ HIỆU; ĐĂNG KÝ KHAI THÁC, NGỪNG HOẠT ĐỘNG, THU HỒI KHAI THÁC TUYẾN VẬN TẢI HÀNH KHÁCH CỐ ĐỊNH",
+          "dieu": "21",
+          "khoan": "7",
+          "diem": "d",
+          "title": "",
+          "text": "Khi cơ quan cấp Giấy phép kinh doanh ban hành quyết định thu hồi Giấy phép kinh doanh đối với loại hình kinh doanh vận tải có vi phạm; trong thời hạn 10 ngày kể từ ngày ký, đơn vị kinh doanh vận tải phải nộp lại Giấy phép kinh doanh và phù hiệu cho cơ quan cấp Giấy phép kinh doanh, đồng thời dừng hoạt động kinh doanh vận tải theo quyết định thu hồi.\nTrường hợp đơn vị kinh doanh vận tải nộp lại Giấy phép kinh doanh và phù hiệu theo đúng quyết định thu hồi, cơ quan cấp Giấy phép kinh doanh không cấp lại Giấy phép kinh doanh trong thời gian 30 ngày kể từ ngày đơn vị kinh doanh vận tải nộp lại đủ Giấy phép kinh doanh và phù hiệu theo quyết định thu hồi.\nTrường hợp quá thời hạn trên, đơn vị kinh doanh vận tải không nộp Giấy phép kinh doanh và phù hiệu hoặc có nộp nhưng không đủ theo quyết định thu hồi, Sở Giao thông vận tải không cấp lại Giấy phép kinh doanh trong thời gian 45 ngày kể từ ngày đơn vị kinh doanh vận tải nộp lại đủ Giấy phép kinh doanh và phù hiệu theo quyết định thu hồi. Sau thời hạn trên, nếu có nhu cầu tiếp tục tham gia kinh doanh, đơn vị kinh doanh vận tải làm thủ tục để được cấp Giấy phép kinh doanh, phù hiệu theo quy định tại khoản 1 Điều 21 và khoản 6 Điều 23 Nghị định này.",
+          "line_start": 336,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-10",
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d21:k7:d@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 190,
+      "item": {
+        "id": "SD040",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Thi công lắp đặt đường ống cấp nước đường kính bao ngoài 150 mm trong phạm vi bảo vệ đường bộ đang khai thác thì có được nộp hồ sơ chấp thuận đồng thời với hồ sơ cấp giấy phép thi công không?",
+        "dap_an": "Có. Đối với thi công đường dây tải điện, dây dẫn điện có điện áp từ 35 KV trở xuống, đường dây thông tin, viễn thông, đường ống cấp nước có đường kính bao ngoài không quá 200 mm và một số trường hợp khác, hồ sơ đề nghị chấp thuận được thực hiện đồng thời với hồ sơ cấp giấy phép thi công công trình trên đường bộ đang khai thác (khoản 2 Điều 17 Nghị định 165/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 01/7/2026).",
+        "can_cu": [
+          "nd_165_2024:d17:k2@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_165_2024:d17:k2@2026-07-01"
+          ]
+        ],
+        "van_ban": "nd_165_2024",
+        "dieu": "17",
+        "khoan": "2",
+        "diem": null,
+        "dia_chi_chinh": "nd_165_2024:d17:k2",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            35.0,
+            "kv"
+          ],
+          [
+            200.0,
+            "mm"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 01/7/2026, khoản 2 Điều 17 chỉ áp dụng thủ tục đồng thời cho đường dây tải điện, dây dẫn điện điện áp từ 35 kV trở xuống, đường dây thông tin, viễn thông và gia cường công trình đường bộ; đường ống cấp nước chưa thuộc trường hợp này.",
+        "can_cu_cu": [
+          "nd_165_2024:d17:k2@2025-01-01"
+        ],
+        "ngay_cu": "2026-03-01",
+        "van_ban_sua_doi": "nd_241_2026",
+        "ho_cau": "SD040",
+        "trung_dev": false,
+        "key": "sd52",
+        "nguon_nhap": "sua_doi.jsonl:40"
+      },
+      "records": [
+        {
+          "unit_id": "nd_165_2024:d17:k2",
+          "doc_id": "nd_165_2024",
+          "level": "khoan",
+          "chuong": "III PHẦN ĐẤT ĐỂ BẢO VỆ, BẢO TRÌ ĐƯỜNG BỘ; HÀNH LANG AN TOÀN ĐƯỜNG BỘ; XÂY DỰNG CÔNG TRÌNH TRONG PHẠM VI BẢO VỆ KẾT CẤU HẠ TẦNG ĐƯỜNG BỘ; BẢO VỆ KẾT CẤU HẠ TẦNG ĐƯỜNG BỘ; SỬ DỤNG TẠM THỜI LÒNG ĐƯỜNG, VỈA HÈ VÀO MỤC ĐÍCH KHÁC",
+          "muc": null,
+          "dieu": "17",
+          "khoan": "2",
+          "diem": null,
+          "title": "",
+          "text": "Đối với việc thi công xây dựng đường dây tải điện, dây dẫn điện có điện áp từ 35 KV trở xuống, đường dây thông tin, viễn thông, đường ống cấp nước có đường kính bao ngoài không quá 200 mm, bảo trì, thay thế hạng mục, thiết bị của các công trình hạ tầng đã được xây dựng trong phạm vi bảo vệ kết cấu hạ tầng đường bộ, gia cường công trình đường bộ (khi cần thiết để cho phép xe quá khổ giới hạn, xe quá tải trọng, xe bánh xích lưu hành trên đường bộ), trừ các trường hợp không phải cấp giấy phép thi công theo quy định tại khoản 3 Điều 32 Luật Đường bộ, thành phần hồ sơ đề nghị chấp thuận xây dựng, gia cường được thực hiện đồng thời với hồ sơ cấp giấy phép thi công công trình trên đường bộ đang khai thác.\nThành phần hồ sơ bao gồm: bản chính hoặc biểu mẫu điện tử đơn đề nghị chấp thuận đồng thời với cấp giấy phép thi công công trình trên đường bộ đang khai thác theo quy định tại Mẫu số 02 Phụ lục III kèm theo Nghị định này, tài liệu quy định tại điểm b, điểm c và điểm e khoản 1 Điều này và biện pháp thi công, phương án tổ chức giao thông là bản sao hoặc bản sao điện tử.",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "nd_241_2026",
+          "version_id": "nd_165_2024:d17:k2@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0044,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_165_2024:d17:k2",
+          "doc_id": "nd_165_2024",
+          "level": "khoan",
+          "chuong": "III PHẦN ĐẤT ĐỂ BẢO VỆ, BẢO TRÌ ĐƯỜNG BỘ; HÀNH LANG AN TOÀN ĐƯỜNG BỘ; XÂY DỰNG CÔNG TRÌNH TRONG PHẠM VI BẢO VỆ KẾT CẤU HẠ TẦNG ĐƯỜNG BỘ; BẢO VỆ KẾT CẤU HẠ TẦNG ĐƯỜNG BỘ; SỬ DỤNG TẠM THỜI LÒNG ĐƯỜNG, VỈA HÈ VÀO MỤC ĐÍCH KHÁC",
+          "muc": null,
+          "dieu": "17",
+          "khoan": "2",
+          "diem": null,
+          "title": "",
+          "text": "Đối với việc thi công xây dựng đường dây tải điện, dây dẫn điện điện áp từ 35 kV trở xuống, đường dây thông tin, viễn thông, gia cường công trình đường bộ (khi cần thiết để cho phép xe quá khổ giới hạn, xe quá tải trọng, xe bánh xích lưu hành trên đường bộ), trừ các trường hợp không phải cấp giấy phép thi công theo quy định tại khoản 3 Điều 32 Luật Đường bộ, thành phần hồ sơ đề nghị chấp thuận xây dựng, gia cường được thực hiện đồng thời với hồ sơ cấp giấy phép thi công công trình trên đường bộ đang khai thác. Thành phần hồ sơ bao gồm: đơn đề nghị (bản chính) chấp thuận đồng thời với cấp giấy phép thi công công trình trên đường bộ đang khai thác theo quy định tại Mẫu số 02 Phụ lục III kèm theo Nghị định này, tài liệu quy định tại điểm b, điểm c, điểm d và điểm e khoản 1 Điều này và biện pháp thi công, phương án tổ chức giao thông.",
+          "line_start": 200,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-07-01",
+          "source_doc_id": "nd_165_2024",
+          "version_id": "nd_165_2024:d17:k2@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0057,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    }
+  ]
+}

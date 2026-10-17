@@ -1,0 +1,4 @@
+# Bộ eval được khóa bằng SHA-256 trong data/eval/MANIFEST.json: giữ LF trên mọi máy để hash không đổi khi checkout.
+data/eval/*.jsonl text eol=lf
+data/eval/*.json text eol=lf
+data/eval/drafts/*.jsonl text eol=lf
