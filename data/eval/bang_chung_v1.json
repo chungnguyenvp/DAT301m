@@ -1,0 +1,28 @@
+{
+ "mo_ta": "Dòng bằng chứng bắt buộc khi căn cứ là phụ lục bị tách thành nhiều mẩu. Mẩu phụ lục chỉ được tính là tìm đủ căn cứ khi các mẩu lấy về chứa đủ các dòng này. Lớp bổ trợ cho eval_v1, không sửa eval_v1.jsonl; bt04 là biến thể của lp06 nên dùng cùng dòng.",
+ "eval_sha256": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+ "cau": {
+  "lp06": {
+   "tt_155_2025_btc:pl1@2026-01-01": [
+    "I.2. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe ô tô chở người từ 9 chỗ trở xuống (bao gồm cả xe con pick-up): Khu vực I 14.000.000 đồng; Khu vực II 140.000 đồng."
+   ]
+  },
+  "lp07": {
+   "tt_155_2025_btc:pl1@2026-01-01": [
+    "I.4.b. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe mô tô - Trị giá trên 15.000.000 đồng đến 40.000.000 đồng: Khu vực I 1.400.000 đồng; Khu vực II 105.000 đồng."
+   ]
+  },
+  "lp08": {
+   "tt_155_2025_btc:pl1@2026-01-01": [
+    "II.1.b. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi chứng nhận đăng ký xe kèm theo biển số xe - Xe mô tô: 70.000 đồng, mức thu chung cho Khu vực I và Khu vực II.",
+    "II.2. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi chứng nhận đăng ký xe không kèm theo biển số xe: 35.000 đồng, mức thu chung cho Khu vực I và Khu vực II.",
+    "II.3.b. Đổi chứng nhận đăng ký xe và biển số xe cơ giới - Cấp đổi biển số xe - Xe mô tô: 50.000 đồng, mức thu chung cho Khu vực I và Khu vực II."
+   ]
+  },
+  "bt04": {
+   "tt_155_2025_btc:pl1@2026-01-01": [
+    "I.2. Cấp mới chứng nhận đăng ký xe và biển số xe cơ giới - Xe ô tô chở người từ 9 chỗ trở xuống (bao gồm cả xe con pick-up): Khu vực I 14.000.000 đồng; Khu vực II 140.000 đồng."
+   ]
+  }
+ }
+}

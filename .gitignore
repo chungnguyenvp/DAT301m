@@ -4,3 +4,6 @@ data/interim/
 __pycache__/
 *.pyc
 tools/
+
+# Chỉ mục FAISS/BM25 và cache vector: build lại được từ data/rag/chunks_*.jsonl
+data/rag/index/

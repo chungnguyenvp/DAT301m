@@ -2,3 +2,6 @@
 data/eval/*.jsonl text eol=lf
 data/eval/*.json text eol=lf
 data/eval/drafts/*.jsonl text eol=lf
+# Đoạn cho RAG cũng được khóa bằng SHA-256 trong data/rag/MANIFEST.json.
+data/rag/*.jsonl text eol=lf
+data/rag/*.json text eol=lf

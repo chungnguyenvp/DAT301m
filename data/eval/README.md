@@ -102,6 +102,8 @@ Báo cáo **riêng từng nhóm câu** và luôn ghi mẫu số. Khoảng tin c�
    | Số câu | 82 | 49 | 32 | 16 | 5 | 4 | 1 | 1 |
 
    Với k nhỏ, `all` không thể đạt 100% ở các câu có nhiều hơn k nhóm, nên báo cáo kèm phân phối này hoặc tính thêm tỷ lệ nhóm tìm được trên từng câu.
+
+   **Căn cứ là phụ lục bị tách mẩu:** `bang_chung_v1.json` (lớp bổ trợ, không sửa `eval_v1.jsonl`) ghi các dòng phụ lục mà câu cần, ví dụ `lp08` cần ba dòng mức phí đổi đăng ký xe mô tô ở Mục II Phụ lục I TT 155. Nhóm chỉ đạt khi các mẩu lấy về chứa đủ các dòng đó; mẩu cùng phụ lục nhưng thiếu các dòng này không được tính. Mã băm của file ghi trong `data/rag/MANIFEST.json`.
 2. **Số liệu:**
    - Tỷ lệ cặp trong `so_lieu` mà câu trả lời nêu đúng cả giá trị và đơn vị. Tính trên 106 câu có ít nhất một số liệu: 74 câu thường + 32 câu sửa đổi.
    - Mức phạt tiền chấm riêng trên 18 câu có `muc_phat_*`: 14 câu thường + 4 câu sửa đổi.
