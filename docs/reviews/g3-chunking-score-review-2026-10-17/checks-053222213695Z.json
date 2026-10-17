@@ -1,0 +1,2287 @@
+{
+  "created_utc": "2026-10-17T05:32:22.213626+00:00",
+  "cutoff": "2026-10-01",
+  "hashes": {
+    "src/rag/chunking.py": "ab8b7d1d4e37501fe01e60fce1c6309bf467426cf02391278e751f5a7b3f9adc",
+    "src/rag/score.py": "65122e3318f29d91d4917a84accec5a873dfca7f09f90ab4455c712457cc1423",
+    "scripts/build_chunks.py": "707e2e49384722ef466332fb5cb33391dc9ba1bcdd9669b43a07ab25ab0401ba",
+    "tests/test_rag_chunking.py": "db99a7e2755570cc72a26cb1e4b279b0f3388c565d8bd66a4b6e082c0d43fb87",
+    "tests/test_rag_score.py": "e159daef342532b77dd42314089861d55616f17fd10126b82bed40a3168cb821",
+    "data/rag/MANIFEST.json": "1e6dd3c4a1fdf6d00013e28ddc66c3d678f7eeafc317634cc8e558278c7a3812",
+    "data/rag/chunks_khoan.jsonl": "b610bce58693106a373b4d070e6ec43874770a319186c5cbf33ffe7a52dfd0b4",
+    "data/rag/chunks_dieu.jsonl": "11f5d73e877f6ae57058c9b54f4eac2bb448aa30ba9e61aa455b6333edad52d6",
+    "data/eval/eval_v1.jsonl": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+    "data/processed/legal_units_versioned.jsonl": "e0bd99d5b3e1938734681bbf9c5b3e4452a4df9954988e63fa345cbe88d813d7"
+  },
+  "actual_source_git_blob": "6897e2b44ff3c005fa043ac06ae3e18eef091092",
+  "manifest_source_git_blob": "6897e2b44ff3c005fa043ac06ae3e18eef091092",
+  "full_credit_with_wrong_annex_fragment": [
+    {
+      "cut": "khoan",
+      "key": "lp06",
+      "id": "TH085",
+      "split": "dev",
+      "query": "Chủ xe cư trú tại Hà Nội đăng ký mới ô tô 5 chỗ thì lệ phí cấp chứng nhận đăng ký xe và biển số là bao nhiêu?",
+      "wrong_piece": "khoan:tt_155_2025_btc:pl1@2026-01-01#2",
+      "missing_answer_amounts": [
+        "14.000.000"
+      ],
+      "score": {
+        "id": "TH085",
+        "key": "lp06",
+        "nhom_cau": "thuong",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#2",
+          "khoan:tt_155_2025_btc:d4:k2@2026-01-01",
+          "khoan:tt_155_2025_btc:d5:k2@2026-01-01"
+        ]
+      }
+    },
+    {
+      "cut": "khoan",
+      "key": "lp07",
+      "id": "TH086",
+      "split": "test",
+      "query": "Tôi ở TP. Hồ Chí Minh, đăng ký mới xe máy trị giá 30 triệu đồng thì nộp lệ phí đăng ký, biển số bao nhiêu?",
+      "wrong_piece": "khoan:tt_155_2025_btc:pl1@2026-01-01#2",
+      "missing_answer_amounts": [
+        "1.400.000"
+      ],
+      "score": {
+        "id": "TH086",
+        "key": "lp07",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#2",
+          "khoan:tt_155_2025_btc:d4:k2@2026-01-01",
+          "khoan:tt_155_2025_btc:d5:k4@2026-01-01"
+        ]
+      }
+    },
+    {
+      "cut": "khoan",
+      "key": "lp08",
+      "id": "TH087",
+      "split": "test",
+      "query": "Lệ phí đổi giấy đăng ký xe máy là bao nhiêu, có khác nhau nếu đổi kèm biển số không?",
+      "wrong_piece": "khoan:tt_155_2025_btc:pl1@2026-01-01#1",
+      "missing_answer_amounts": [
+        "70.000",
+        "35.000",
+        "50.000"
+      ],
+      "score": {
+        "id": "TH087",
+        "key": "lp08",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 1,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#1"
+        ]
+      }
+    },
+    {
+      "cut": "khoan",
+      "key": "bt04",
+      "id": "BT004",
+      "split": "dev",
+      "query": "Nhà tôi ở Hà Nội, đăng ký lần đầu chiếc xe hơi 5 chỗ thì riêng tiền lệ phí làm cà vẹt kèm bấm biển số hết bao nhiêu?",
+      "wrong_piece": "khoan:tt_155_2025_btc:pl1@2026-01-01#2",
+      "missing_answer_amounts": [
+        "14.000.000"
+      ],
+      "score": {
+        "id": "BT004",
+        "key": "bt04",
+        "nhom_cau": "bien_the",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#2",
+          "khoan:tt_155_2025_btc:d4:k2@2026-01-01",
+          "khoan:tt_155_2025_btc:d5:k2@2026-01-01"
+        ]
+      }
+    },
+    {
+      "cut": "dieu",
+      "key": "lp06",
+      "id": "TH085",
+      "split": "dev",
+      "query": "Chủ xe cư trú tại Hà Nội đăng ký mới ô tô 5 chỗ thì lệ phí cấp chứng nhận đăng ký xe và biển số là bao nhiêu?",
+      "wrong_piece": "dieu:tt_155_2025_btc:pl1@2026-01-01#2",
+      "missing_answer_amounts": [
+        "14.000.000"
+      ],
+      "score": {
+        "id": "TH085",
+        "key": "lp06",
+        "nhom_cau": "thuong",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#2",
+          "dieu:tt_155_2025_btc:d4@2026-01-01",
+          "dieu:tt_155_2025_btc:d5@2026-01-01"
+        ]
+      }
+    },
+    {
+      "cut": "dieu",
+      "key": "lp07",
+      "id": "TH086",
+      "split": "test",
+      "query": "Tôi ở TP. Hồ Chí Minh, đăng ký mới xe máy trị giá 30 triệu đồng thì nộp lệ phí đăng ký, biển số bao nhiêu?",
+      "wrong_piece": "dieu:tt_155_2025_btc:pl1@2026-01-01#2",
+      "missing_answer_amounts": [
+        "1.400.000"
+      ],
+      "score": {
+        "id": "TH086",
+        "key": "lp07",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#2",
+          "dieu:tt_155_2025_btc:d4@2026-01-01",
+          "dieu:tt_155_2025_btc:d5@2026-01-01"
+        ]
+      }
+    },
+    {
+      "cut": "dieu",
+      "key": "lp08",
+      "id": "TH087",
+      "split": "test",
+      "query": "Lệ phí đổi giấy đăng ký xe máy là bao nhiêu, có khác nhau nếu đổi kèm biển số không?",
+      "wrong_piece": "dieu:tt_155_2025_btc:pl1@2026-01-01#1",
+      "missing_answer_amounts": [
+        "70.000",
+        "35.000",
+        "50.000"
+      ],
+      "score": {
+        "id": "TH087",
+        "key": "lp08",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 1,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#1"
+        ]
+      }
+    },
+    {
+      "cut": "dieu",
+      "key": "bt04",
+      "id": "BT004",
+      "split": "dev",
+      "query": "Nhà tôi ở Hà Nội, đăng ký lần đầu chiếc xe hơi 5 chỗ thì riêng tiền lệ phí làm cà vẹt kèm bấm biển số hết bao nhiêu?",
+      "wrong_piece": "dieu:tt_155_2025_btc:pl1@2026-01-01#2",
+      "missing_answer_amounts": [
+        "14.000.000"
+      ],
+      "score": {
+        "id": "BT004",
+        "key": "bt04",
+        "nhom_cau": "bien_the",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#2",
+          "dieu:tt_155_2025_btc:d4@2026-01-01",
+          "dieu:tt_155_2025_btc:d5@2026-01-01"
+        ]
+      }
+    }
+  ],
+  "conditions_missing_from_chunk_text": {
+    "khoan": {
+      "all_count": 123,
+      "live_count": 111,
+      "live_by_group": {
+        "tt_108_2026_bca:pl1": 12,
+        "tt_108_2026_bca:pl2": 5,
+        "tt_108_2026_bca:pl3": 32,
+        "tt_108_2026_bca:pl4": 8,
+        "tt_108_2026_bca:pl5": 8,
+        "tt_12_2025_bca:pl4": 25,
+        "tt_12_2025_bca:pl5": 10,
+        "tt_12_2025_bca:pl6": 11
+      },
+      "cases": [
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#6",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#7",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#8",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#9",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#10",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#11",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2026-07-01#12",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#1",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#2",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#3",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#4",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#5",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#6",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#7",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#8",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#9",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#10",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#11",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl1@2027-01-01#12",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl2@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl2@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl2@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl2@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl2@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#6",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#7",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#8",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#9",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#10",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#11",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#12",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#13",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#14",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#15",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#16",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#17",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#18",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#19",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#20",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#21",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#22",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#23",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#24",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#25",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#26",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#27",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#28",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#29",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#30",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#31",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl3@2026-07-01#32",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl4@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl4@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl4@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl4@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl4@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl4@2026-07-01#6",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl4@2026-07-01#7",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl4@2026-07-01#8",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl5@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl5@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl5@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl5@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl5@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl5@2026-07-01#6",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl5@2026-07-01#7",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_108_2026_bca:pl5@2026-07-01#8",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#1",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#2",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#3",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#4",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#5",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#6",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#7",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#8",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#9",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#10",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#11",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#12",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#13",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#14",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#15",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#16",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#17",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#18",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#19",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#20",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#21",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#22",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#23",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#24",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl4@2026-07-01#25",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#1",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#2",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#3",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#4",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#5",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#6",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#7",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#8",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#9",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl5@2026-07-01#10",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#1",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#2",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#3",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#4",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#5",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#6",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#7",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#8",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#9",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#10",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "khoan:tt_12_2025_bca:pl6@2026-07-01#11",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        }
+      ]
+    },
+    "dieu": {
+      "all_count": 123,
+      "live_count": 111,
+      "live_by_group": {
+        "tt_108_2026_bca:pl1": 12,
+        "tt_108_2026_bca:pl2": 5,
+        "tt_108_2026_bca:pl3": 32,
+        "tt_108_2026_bca:pl4": 8,
+        "tt_108_2026_bca:pl5": 8,
+        "tt_12_2025_bca:pl4": 25,
+        "tt_12_2025_bca:pl5": 10,
+        "tt_12_2025_bca:pl6": 11
+      },
+      "cases": [
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#6",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#7",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#8",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#9",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#10",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#11",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2026-07-01#12",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028; Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#1",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#2",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#3",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#4",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#5",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#6",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#7",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#8",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#9",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#10",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#11",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl1@2027-01-01#12",
+          "group": "tt_108_2026_bca:pl1",
+          "live_at_cutoff": false,
+          "missing_from_text": [
+            "Bài sát hạch số 2 và hình, thiết bị, phần mềm sát hạch tình huống giả định trên đường hạng A1, A áp dụng từ 01/01/2028"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl2@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl2@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl2@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl2@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl2@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl2",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#6",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#7",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#8",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#9",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#10",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#11",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#12",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#13",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#14",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#15",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#16",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#17",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#18",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#19",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#20",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#21",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#22",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#23",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#24",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#25",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#26",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#27",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#28",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#29",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#30",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#31",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl3@2026-07-01#32",
+          "group": "tt_108_2026_bca:pl3",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl4@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl4@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl4@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl4@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl4@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl4@2026-07-01#6",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl4@2026-07-01#7",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl4@2026-07-01#8",
+          "group": "tt_108_2026_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl5@2026-07-01#1",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl5@2026-07-01#2",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl5@2026-07-01#3",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl5@2026-07-01#4",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl5@2026-07-01#5",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl5@2026-07-01#6",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl5@2026-07-01#7",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_108_2026_bca:pl5@2026-07-01#8",
+          "group": "tt_108_2026_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Nội dung nhận diện thí sinh qua thiết bị, phần mềm định danh và xác thực điện tử áp dụng từ 01/01/2027"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#1",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#2",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#3",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#4",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#5",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#6",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#7",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#8",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#9",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#10",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#11",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#12",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#13",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#14",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#15",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#16",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#17",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#18",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#19",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#20",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#21",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#22",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#23",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#24",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl4@2026-07-01#25",
+          "group": "tt_12_2025_bca:pl4",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#1",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#2",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#3",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#4",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#5",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#6",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#7",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#8",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#9",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl5@2026-07-01#10",
+          "group": "tt_12_2025_bca:pl5",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#1",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#2",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#3",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#4",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#5",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#6",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#7",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#8",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#9",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#10",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        },
+        {
+          "chunk_id": "dieu:tt_12_2025_bca:pl6@2026-07-01#11",
+          "group": "tt_12_2025_bca:pl6",
+          "live_at_cutoff": true,
+          "missing_from_text": [
+            "Chỉ mục A, mục C và mẫu số 01, 02, 03 mục D của phụ lục này còn hiệu lực"
+          ]
+        }
+      ]
+    }
+  },
+  "table_context_loss": {
+    "header_only_in_piece_1": "TT | Mô tả biển chỉ dẫn | Kiểu chữ | Màu chữ, số | Màu nền | Màu viền",
+    "later_pieces": [
+      {
+        "chunk_id": "khoan:qcvn_41_2024:d46:k3@2025-01-01#2",
+        "text": "QCVN 41:2024/BGTVT — Điều 46. Nội dung biển chỉ dẫn trên đường cao tốc\n4 | Biển số IE.451 (a,b) chỉ dẫn lối vào, khoảng cách đến lối vào đường cao tốc | gt2 | trắng | xanh lam | trắng\n5 | Biển số IE.452 chỉ dẫn bắt đầu đường cao tốc | gt2 | trắng | xanh lá cây | trắng\n6 | Biển số IE.453 (a,b) chỉ dẫn điểm kết thúc, khoảng cách đến điểm kết thúc đường cao tốc | gt2 | trắng | xanh lá cây | trắng\n7 | Biển số IE.454 chỉ dẫn khoảng cách đến lối ra phía trước | gt2 | trắng | xanh lá cây | trắng\n8 | Biển số IE.455 (a,b) chỉ dẫn khoảng cách đến các lối ra tiếp theo | gt2 | trắng | xanh lá cây | trắng\n9 | Biển số IE.456 (a,b,c) chỉ dẫn khoảng cách, hướng rẽ đến trạm dừng nghỉ | gt2 | trắng | xanh lá cây | trắng\n10 | Biển số IE.457 (a,b) chỉ dẫn nơi đỗ xe trong trạm dừng nghỉ | gt2 | trắng | xanh lá cây | trắng\n11 | Biển số IE.458 chỉ dẫn khoảng cách đến các trạm dừng nghỉ tiếp theo | gt2 | trắng | xanh lá cây | trắng\n12 | Biển số IE.459 (a,b) chỉ dẫn khoảng cách đến khu tham quan, du lịch | gt2 | trắng | xanh lá cây | trắng\n13 | Biển số IE.460 chỉ dẫn cột lý trình kilômét | gt2 | trắng | xanh lá cây | trắng\n14 | Biển số IE.461 (a,b,c) chỉ dẫn khoảng cách đến khu dịch vụ công cộng, giải trí | gt2 | trắng | xanh lá cây | trắng\n15 | Biển số IE.461d chỉ dẫn hướng rẽ vào khu giải trí | gt2 | trắng | nâu | trắng"
+      },
+      {
+        "chunk_id": "khoan:qcvn_41_2024:d46:k3@2025-01-01#3",
+        "text": "QCVN 41:2024/BGTVT — Điều 46. Nội dung biển chỉ dẫn trên đường cao tốc\n16 | Biển số IE.462 chỉ dẫn tần số trên sóng radio | gt2 | trắng | xanh lá cây | trắng\n17 | Biển số IE.463 (a,b,c) chỉ dẫn khoảng cách, hướng rẽ vào Công trình kiểm soát tải trọng xe | gt2 | trắng | xanh lá cây | trắng\n18 | Biển số IE.464 (a,b) chỉ dẫn địa điểm và phương hướng | gt2 | trắng | xanh lá cây | trắng\n19 | Biển số IE.465 (a,b) chỉ dẫn địa điểm và khoảng cách | gt2 | trắng | xanh lá cây | trắng\n20 | Biển số IE.466 chỉ dẫn sơ đồ lối ra một chiều | gt2 | trắng | xanh lá cây | trắng\n21 | Biển số IE.467 (a,b) chỉ dẫn vị trí nhập làn, khoảng cách đến vị trí nhập làn | gt2 | trắng | xanh lá cây | trắng\n22 | Biển số IE.468 (a,b,c) chỉ dẫn chướng ngại vật phía trước | - | - | vàng huỳnh quang | đen\n23 | Biển số IE.469 chỉ dẫn hướng rẽ | - | - | vàng huỳnh quang | đen\n24 | Biển số IE.470 chỉ dẫn số điện thoại khẩn cấp | gt2 | trắng | xanh lá cây | trắng\n25 | Biển số IE.471 chỉ dẫn giữ khoảng cách lái xe an toàn | gt2 | đen | vàng huỳnh quang | đen\n26 | Biển số IE.472 (a,b,c,d,e) chỉ dẫn khoảng cách đến trạm thu phí, trạm thu phí, thu phí không dừng, rút thẻ, thu phí | gt2 | trắng | xanh lá cây | trắng\n27 | Biển số IE.473 chỉ dẫn giảm tốc độ | gt2 | đen | vàng huỳnh quang | đen\n28 | Biển số IE.474 chỉ dẫn lối ra | gt2 | trắng | xanh lá cây | trắng"
+      },
+      {
+        "chunk_id": "khoan:qcvn_41_2024:d46:k3@2025-01-01#4",
+        "text": "QCVN 41:2024/BGTVT — Điều 46. Nội dung biển chỉ dẫn trên đường cao tốc\n29 | Các biển chỉ dẫn khác: biển chỉ dẫn địa danh; địa phận hành chính cấp tỉnh, thành phố; biển tên cầu, tên công trình lớn. (Thiết kế chi tiết các biển chỉ dẫn khác có thể vận dụng các quy định về biển chỉ dẫn cho đường ô tô không phải là đường cao tốc ngoại trừ các quy định nêu trong Bảng này) | gt2 | trắng | xanh lá cây | trắng"
+      }
+    ]
+  }
+}

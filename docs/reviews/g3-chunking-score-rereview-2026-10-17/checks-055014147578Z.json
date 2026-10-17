@@ -1,0 +1,631 @@
+{
+  "utc": "2026-10-17T05:50:14.146674+00:00",
+  "checks": [
+    {
+      "name": "khoan:lp06:verbatim_evidence",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:lp06:wrong_piece_rejected",
+      "pass": true,
+      "details": {
+        "id": "TH085",
+        "key": "lp06",
+        "nhom_cau": "thuong",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": false,
+        "ty_le_nhom": 0.6666666666666666,
+        "rr": 0.5,
+        "hang_dau_dung": 2,
+        "nhom_thieu": [
+          [
+            "tt_155_2025_btc:pl1@2026-01-01"
+          ]
+        ],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#2",
+          "khoan:tt_155_2025_btc:d4:k2@2026-01-01",
+          "khoan:tt_155_2025_btc:d5:k2@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "khoan:lp06:right_piece_accepted",
+      "pass": true,
+      "details": {
+        "id": "TH085",
+        "key": "lp06",
+        "nhom_cau": "thuong",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#1",
+          "khoan:tt_155_2025_btc:d4:k2@2026-01-01",
+          "khoan:tt_155_2025_btc:d5:k2@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "khoan:lp07:verbatim_evidence",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:lp07:wrong_piece_rejected",
+      "pass": true,
+      "details": {
+        "id": "TH086",
+        "key": "lp07",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": false,
+        "ty_le_nhom": 0.6666666666666666,
+        "rr": 0.5,
+        "hang_dau_dung": 2,
+        "nhom_thieu": [
+          [
+            "tt_155_2025_btc:pl1@2026-01-01"
+          ]
+        ],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#2",
+          "khoan:tt_155_2025_btc:d4:k2@2026-01-01",
+          "khoan:tt_155_2025_btc:d5:k4@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "khoan:lp07:right_piece_accepted",
+      "pass": true,
+      "details": {
+        "id": "TH086",
+        "key": "lp07",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#1",
+          "khoan:tt_155_2025_btc:d4:k2@2026-01-01",
+          "khoan:tt_155_2025_btc:d5:k4@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "khoan:lp08:verbatim_evidence",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:lp08:wrong_piece_rejected",
+      "pass": true,
+      "details": {
+        "id": "TH087",
+        "key": "lp08",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 1,
+        "van_ban": true,
+        "any": false,
+        "all": false,
+        "ty_le_nhom": 0.0,
+        "rr": 0.0,
+        "hang_dau_dung": null,
+        "nhom_thieu": [
+          [
+            "tt_155_2025_btc:pl1@2026-01-01"
+          ]
+        ],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#1"
+        ]
+      }
+    },
+    {
+      "name": "khoan:lp08:right_piece_accepted",
+      "pass": true,
+      "details": {
+        "id": "TH087",
+        "key": "lp08",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 1,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#2"
+        ]
+      }
+    },
+    {
+      "name": "khoan:lp08:wrong_MRR_zero",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:lp08:right_at_rank_2",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:lp08:missing_line_0_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:lp08:missing_line_1_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:lp08:missing_line_2_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:unannotated_partial_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:unannotated_complete_accepted",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:bt04:verbatim_evidence",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:bt04:wrong_piece_rejected",
+      "pass": true,
+      "details": {
+        "id": "BT004",
+        "key": "bt04",
+        "nhom_cau": "bien_the",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": false,
+        "ty_le_nhom": 0.6666666666666666,
+        "rr": 0.5,
+        "hang_dau_dung": 2,
+        "nhom_thieu": [
+          [
+            "tt_155_2025_btc:pl1@2026-01-01"
+          ]
+        ],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#2",
+          "khoan:tt_155_2025_btc:d4:k2@2026-01-01",
+          "khoan:tt_155_2025_btc:d5:k2@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "khoan:bt04:right_piece_accepted",
+      "pass": true,
+      "details": {
+        "id": "BT004",
+        "key": "bt04",
+        "nhom_cau": "bien_the",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "khoan:tt_155_2025_btc:pl1@2026-01-01#1",
+          "khoan:tt_155_2025_btc:d4:k2@2026-01-01",
+          "khoan:tt_155_2025_btc:d5:k2@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "khoan:all_conditions_in_text",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "khoan:valid_line_spans",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "khoan:all_partial_units_fully_covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "QCVN46.3:all_table_pieces_keep_columns",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "khoan:oversize_is_single_point_or_single_row",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "dieu:lp06:verbatim_evidence",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:lp06:wrong_piece_rejected",
+      "pass": true,
+      "details": {
+        "id": "TH085",
+        "key": "lp06",
+        "nhom_cau": "thuong",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": false,
+        "ty_le_nhom": 0.6666666666666666,
+        "rr": 0.5,
+        "hang_dau_dung": 2,
+        "nhom_thieu": [
+          [
+            "tt_155_2025_btc:pl1@2026-01-01"
+          ]
+        ],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#2",
+          "dieu:tt_155_2025_btc:d4@2026-01-01",
+          "dieu:tt_155_2025_btc:d5@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "dieu:lp06:right_piece_accepted",
+      "pass": true,
+      "details": {
+        "id": "TH085",
+        "key": "lp06",
+        "nhom_cau": "thuong",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#1",
+          "dieu:tt_155_2025_btc:d4@2026-01-01",
+          "dieu:tt_155_2025_btc:d5@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "dieu:lp07:verbatim_evidence",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:lp07:wrong_piece_rejected",
+      "pass": true,
+      "details": {
+        "id": "TH086",
+        "key": "lp07",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": false,
+        "ty_le_nhom": 0.6666666666666666,
+        "rr": 0.5,
+        "hang_dau_dung": 2,
+        "nhom_thieu": [
+          [
+            "tt_155_2025_btc:pl1@2026-01-01"
+          ]
+        ],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#2",
+          "dieu:tt_155_2025_btc:d4@2026-01-01",
+          "dieu:tt_155_2025_btc:d5@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "dieu:lp07:right_piece_accepted",
+      "pass": true,
+      "details": {
+        "id": "TH086",
+        "key": "lp07",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#1",
+          "dieu:tt_155_2025_btc:d4@2026-01-01",
+          "dieu:tt_155_2025_btc:d5@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "dieu:lp08:verbatim_evidence",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:lp08:wrong_piece_rejected",
+      "pass": true,
+      "details": {
+        "id": "TH087",
+        "key": "lp08",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 1,
+        "van_ban": true,
+        "any": false,
+        "all": false,
+        "ty_le_nhom": 0.0,
+        "rr": 0.0,
+        "hang_dau_dung": null,
+        "nhom_thieu": [
+          [
+            "tt_155_2025_btc:pl1@2026-01-01"
+          ]
+        ],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#1"
+        ]
+      }
+    },
+    {
+      "name": "dieu:lp08:right_piece_accepted",
+      "pass": true,
+      "details": {
+        "id": "TH087",
+        "key": "lp08",
+        "nhom_cau": "thuong",
+        "tap": "test",
+        "so_nhom": 1,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#2"
+        ]
+      }
+    },
+    {
+      "name": "dieu:lp08:wrong_MRR_zero",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:lp08:right_at_rank_2",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:lp08:missing_line_0_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:lp08:missing_line_1_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:lp08:missing_line_2_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:unannotated_partial_rejected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:unannotated_complete_accepted",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:bt04:verbatim_evidence",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "dieu:bt04:wrong_piece_rejected",
+      "pass": true,
+      "details": {
+        "id": "BT004",
+        "key": "bt04",
+        "nhom_cau": "bien_the",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": false,
+        "ty_le_nhom": 0.6666666666666666,
+        "rr": 0.5,
+        "hang_dau_dung": 2,
+        "nhom_thieu": [
+          [
+            "tt_155_2025_btc:pl1@2026-01-01"
+          ]
+        ],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#2",
+          "dieu:tt_155_2025_btc:d4@2026-01-01",
+          "dieu:tt_155_2025_btc:d5@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "dieu:bt04:right_piece_accepted",
+      "pass": true,
+      "details": {
+        "id": "BT004",
+        "key": "bt04",
+        "nhom_cau": "bien_the",
+        "tap": "dev",
+        "so_nhom": 3,
+        "van_ban": true,
+        "any": true,
+        "all": true,
+        "ty_le_nhom": 1.0,
+        "rr": 1.0,
+        "hang_dau_dung": 1,
+        "nhom_thieu": [],
+        "nham_ban_cu": null,
+        "top": [
+          "dieu:tt_155_2025_btc:pl1@2026-01-01#1",
+          "dieu:tt_155_2025_btc:d4@2026-01-01",
+          "dieu:tt_155_2025_btc:d5@2026-01-01"
+        ]
+      }
+    },
+    {
+      "name": "dieu:all_conditions_in_text",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "dieu:valid_line_spans",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "dieu:all_partial_units_fully_covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "manifest:data/processed/legal_units_versioned.jsonl",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "manifest:data/processed/amendments_reviewed.csv",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "manifest:data/manifest.csv",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "manifest:tools/tokenizers/bge-m3/tokenizer.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "manifest:data/eval/bang_chung_v1.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "manifest:data/rag/chunks_khoan.jsonl",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "manifest:data/rag/chunks_dieu.jsonl",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "frozen_eval_hash",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "altered_manifest_rejected_by_check",
+      "pass": true,
+      "details": {
+        "exit": 1,
+        "output": "khác: ['MANIFEST.json']"
+      }
+    }
+  ],
+  "sizes": {
+    "khoan": {
+      "total": 6221,
+      "live": 4665,
+      "over": 25
+    },
+    "dieu": {
+      "total": 2149,
+      "live": 1487,
+      "over": 16
+    }
+  },
+  "hashes": {
+    "src/rag/chunking.py": "fe792fab0bcd42e26d4e6a8774ba895dab3a911ae2a89a254f4edd9c9fc376e7",
+    "src/rag/score.py": "23245a390c0838ef6def857127767e25084427e143ff48f91c3635515cef2015",
+    "scripts/build_chunks.py": "08b4aaf26d49fe5b35efe142c9a8dc4dad3263cf4eb515cdb87be3b3f1f0816e",
+    "data/eval/bang_chung_v1.json": "3c6fb0c7fb6283c48d475654ab24b72e1adbf517295a943b58b6981d0b76b4cc",
+    "data/eval/eval_v1.jsonl": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+    "data/rag/MANIFEST.json": "1f2f1f4f38c6901c8e1590bf6475be2a171199ddaad023f61a5eee50f2d1b6d0"
+  }
+}
