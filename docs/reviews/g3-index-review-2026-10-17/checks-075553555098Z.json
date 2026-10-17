@@ -1,0 +1,370 @@
+{
+  "utc": "2026-10-17T07:55:47.424220+00:00",
+  "checks": {
+    "installed_versions": {
+      "torch": "2.14.1+cpu",
+      "sentence-transformers": "6.1.0",
+      "transformers": "5.20.1",
+      "faiss-cpu": "1.15.1",
+      "rank-bm25": "0.2.2"
+    },
+    "bm25_dev": {
+      "khoan": {
+        "bien_the": {
+          "n": 6,
+          "so_ho": 6,
+          "van_ban": {
+            "gia_tri": 0.6666666666666666,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "any": {
+            "gia_tri": 0.3333333333333333,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "all": {
+            "gia_tri": 0.16666666666666666,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "ty_le_nhom": {
+            "gia_tri": 0.2222222222222222,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "mrr": {
+            "gia_tri": 0.20833333333333334,
+            "ci95": [
+              null,
+              null
+            ]
+          }
+        },
+        "sua_doi": {
+          "n": 4,
+          "so_ho": 4,
+          "van_ban": {
+            "gia_tri": 1.0,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "any": {
+            "gia_tri": 0.75,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "all": {
+            "gia_tri": 0.75,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "ty_le_nhom": {
+            "gia_tri": 0.75,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "mrr": {
+            "gia_tri": 0.5833333333333334,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "nham_ban_cu": {
+            "gia_tri": 0.0,
+            "ci95": [
+              null,
+              null
+            ]
+          }
+        },
+        "thuong": {
+          "n": 16,
+          "so_ho": 16,
+          "van_ban": {
+            "gia_tri": 1.0,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "any": {
+            "gia_tri": 0.6875,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "all": {
+            "gia_tri": 0.4375,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "ty_le_nhom": {
+            "gia_tri": 0.5699404761904762,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "mrr": {
+            "gia_tri": 0.60625,
+            "ci95": [
+              null,
+              null
+            ]
+          }
+        }
+      },
+      "dieu": {
+        "bien_the": {
+          "n": 6,
+          "so_ho": 6,
+          "van_ban": {
+            "gia_tri": 0.6666666666666666,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "any": {
+            "gia_tri": 0.6666666666666666,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "all": {
+            "gia_tri": 0.5,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "ty_le_nhom": {
+            "gia_tri": 0.5555555555555556,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "mrr": {
+            "gia_tri": 0.34722222222222227,
+            "ci95": [
+              null,
+              null
+            ]
+          }
+        },
+        "sua_doi": {
+          "n": 4,
+          "so_ho": 4,
+          "van_ban": {
+            "gia_tri": 1.0,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "any": {
+            "gia_tri": 1.0,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "all": {
+            "gia_tri": 1.0,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "ty_le_nhom": {
+            "gia_tri": 1.0,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "mrr": {
+            "gia_tri": 0.675,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "nham_ban_cu": {
+            "gia_tri": 0.0,
+            "ci95": [
+              null,
+              null
+            ]
+          }
+        },
+        "thuong": {
+          "n": 16,
+          "so_ho": 16,
+          "van_ban": {
+            "gia_tri": 1.0,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "any": {
+            "gia_tri": 0.875,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "all": {
+            "gia_tri": 0.6875,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "ty_le_nhom": {
+            "gia_tri": 0.7916666666666666,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "mrr": {
+            "gia_tri": 0.625,
+            "ci95": [
+              null,
+              null
+            ]
+          }
+        }
+      }
+    },
+    "faiss_exact_search_matches_numpy_with_and_without_mask": true,
+    "faiss_ascii_save_load": true,
+    "live_cache_snapshot_not_a_completion_claim": {
+      "keys": 2304,
+      "shape": [
+        2304,
+        1024
+      ],
+      "unique_keys": 2304,
+      "dtype": "float32",
+      "finite": true,
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "dense_artifacts_at_review_time": [],
+    "later_pipeline_files": {
+      "src/rag/retrieve.py": false,
+      "src/rag/context.py": false,
+      "scripts/run_retrieval.py": false
+    }
+  },
+  "findings": {
+    "unicode_faiss_io": {
+      "write_error": {
+        "type": "RuntimeError",
+        "message": "Error in __cdecl faiss::FileIOWriter::FileIOWriter(const char *) at D:\\a\\faiss\\faiss\\faiss\\impl\\io.cpp:104: Error: 'f' failed: could not open D:\\Dowload\\1.Chuyên Ngành\\kì 7\\DAT301_NEW\\thamkhao\\du_an_hien_tai\\docs\\reviews\\g3-index-review-2026-10-17\\faiss-path-probe-14j9zcv7\\dense.faiss for writing: No such file or directory"
+      },
+      "read_error": {
+        "type": "RuntimeError",
+        "message": "Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\\a\\faiss\\faiss\\faiss\\impl\\io.cpp:70: Error: 'f' failed: could not open D:\\Dowload\\1.Chuyên Ngành\\kì 7\\DAT301_NEW\\thamkhao\\du_an_hien_tai\\docs\\reviews\\g3-index-review-2026-10-17\\faiss-path-probe-14j9zcv7\\dense.faiss for reading: No such file or directory"
+      }
+    },
+    "interrupted_cache_save": {
+      "before_resume": {
+        "key_count": 1,
+        "vector_rows": 2
+      },
+      "actual": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "expected": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "silently_wrong": true
+    },
+    "cache_encoder_identity": {
+      "new_encoder_called_for": [
+        "b"
+      ],
+      "actual": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "stale_vector_reused": true
+    }
+  },
+  "hashes": {
+    "src/rag/bm25.py": "d05efcea4d37f64026247674b3cb376c92ec6d605e69d0cc11f6d2d49e37214b",
+    "src/rag/dense.py": "357abdf8eb4a91cf5a615d5d24c2b9f51e0070cd95f858fce3899a001fa876f4",
+    "scripts/build_index.py": "7a9a7afc467e5c25cfb9de6fab1f16811b4a4e4ad8e8b18f75f334cb0aac342f",
+    "requirements.txt": "e88a6349f7639a968f7549ec4177963543ba90154ca5afc181f787762d10e9a5",
+    "tests/test_rag_bm25.py": "0449202828f91d5d45cf260e65c43408e57126983a2ec9022f95af60092036ff",
+    "tests/test_rag_dense.py": "5cde19517193a4745c1b28061b5a0d5741c5762f4df21537dc108bc220e1a214",
+    "data/eval/eval_v1.jsonl": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+    "data/rag/chunks_khoan.jsonl": "1695ae80602a00d5e11fd667c9a6e72ad16c44ddf89e8035bc992cc97a4365bf",
+    "data/rag/chunks_dieu.jsonl": "4df4c4b415dfa8ef50654881c22e2ce35fd35aa93a44137486cd2977ebe23cde"
+  }
+}

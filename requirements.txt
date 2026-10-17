@@ -13,3 +13,10 @@ nbformat==5.11.1
 scikit-learn==1.9.1
 tokenizers==0.23.2
 pyvi==0.1.1
+# G3 (RAG): torch bản CPU cài từ kho PyTorch:
+#   py -3.13 -m pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1
+sentence-transformers==6.1.0
+transformers==5.20.1
+faiss-cpu==1.15.1
+rank-bm25==0.2.2
