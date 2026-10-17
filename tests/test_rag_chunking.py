@@ -360,6 +360,21 @@ def test_khoan_chunks_respect_the_token_limit(built):
     assert len(over) <= 30
 
 
+def test_over_limit_chunks_hold_a_single_point_or_line(records, built):
+    level = {r["version_id"]: r["level"] for r in records}
+    bad = []
+    for c in built["khoan"]:
+        if not c["vuot_gioi_han"]:
+            continue
+        if c["phan_dong"]:
+            ok = len(c["phan_dong"]) == 1 and all(a == b for a, b, _ in c["phan_dong"].values())
+        else:
+            ok = sum(level[u] == "diem" for u in c["units"]) <= 1
+        if not ok:
+            bad.append(c["chunk_id"])
+    assert bad == []
+
+
 def test_dieu_chunks_fit_the_embedding_model(built):
     assert max(c["so_token"] for c in built["dieu"] if not c["mot_phan"]) <= 8192
 
