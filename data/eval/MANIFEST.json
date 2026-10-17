@@ -1,0 +1,44 @@
+{
+ "eval": {
+  "path": "data/eval/eval_v1.jsonl",
+  "sha256": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+  "items": 270,
+  "groups": {
+   "thuong": 150,
+   "sua_doi": 40,
+   "ngoai_pham_vi": 30,
+   "bien_the": 50
+  },
+  "splits": {
+   "test": 240,
+   "dev": 30
+  }
+ },
+ "split": {
+  "path": "data/eval/split_v1.json",
+  "sha256": "d3d151921f875d15e9e90421613a01924c5971e0b4d17f2488180212ae59c395"
+ },
+ "drafts": {
+  "data/eval/drafts/bien_the.jsonl": "b22b89a3371b3e6fc6c12551c9f9ac4acab0e352c8875f1292b7ff6b83c810d8",
+  "data/eval/drafts/ngoai_pham_vi.jsonl": "de9db058546966e92ae21562fd1814c60b8806b2d2d99590eb77722f2cedec17",
+  "data/eval/drafts/sua_doi.jsonl": "6a4dc89a17c89ab5abfec27c8a5c5a7e3015b209564cb88a582c64440b20ab89",
+  "data/eval/drafts/thuong_bao_hiem.jsonl": "adf5db82c7c357bc22e5ad3967d078661236730261259734269264fd6bfa8e42",
+  "data/eval/drafts/thuong_bien_bao.jsonl": "c3490b537af0bc6a1556d53b76d04f591bc0f18f5df16497c7205a50afdc24a0",
+  "data/eval/drafts/thuong_dang_kiem.jsonl": "259e843686c2439dcd6b1919592c85f8aeca3421a6be76937b4d3d899fdfb3aa",
+  "data/eval/drafts/thuong_dang_ky_xe.jsonl": "3ddff230165a48dc449e65029ef820d168715d8ad936cdbaf7c697ec07d9785d",
+  "data/eval/drafts/thuong_gplx.jsonl": "1b3ba8616b8742820293e27d62613a015f11adaa47840eb693dfa3969fd988cc",
+  "data/eval/drafts/thuong_huong_dan.jsonl": "1e4d2deb30205e6308ea7f8c5f194bc23aa15c5af365a31f00037e9851590c45",
+  "data/eval/drafts/thuong_le_phi.jsonl": "d0c7506ae9f27c749dfb7ad1ec0125936f31fc58978098a364725dcc09a3189b",
+  "data/eval/drafts/thuong_luat_loi.jsonl": "204e5a5eda6e74f32540d057e5553b8a2fbf55a3b8f64753016ef6db43b1157e",
+  "data/eval/drafts/thuong_nop_phat.jsonl": "d74a6780eb9a1dbce6b485b7f35adf8f9a17c43122e844861360d968768803f5",
+  "data/eval/drafts/thuong_tai_nan.jsonl": "93cc4929e63f743d207f89ccac807f0f972934bcbc51e33c364445832a67f1f8",
+  "data/eval/drafts/thuong_toc_do.jsonl": "6c6003d6fbf375bc04bfd616fb604b10098e40fc65a55dbc4b939f559f9b09aa",
+  "data/eval/drafts/thuong_xu_phat.jsonl": "2814300980e4e2e49a541377918199b9f7e27fe3a70e526afa2892f434606668"
+ },
+ "source": {
+  "path": "data/processed/legal_units_versioned.jsonl",
+  "sha256": "e0bd99d5b3e1938734681bbf9c5b3e4452a4df9954988e63fa345cbe88d813d7",
+  "git_blob_in_tag_data_v1": "6897e2b44ff3c005fa043ac06ae3e18eef091092"
+ },
+ "cutoff": "2026-10-01"
+}

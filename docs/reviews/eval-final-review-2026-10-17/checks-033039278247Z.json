@@ -1,0 +1,1214 @@
+{
+  "review_date": "2026-10-17",
+  "input_sha256": {
+    "data\\eval\\eval_v1.jsonl": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+    "data\\eval\\split_v1.json": "d3d151921f875d15e9e90421613a01924c5971e0b4d17f2488180212ae59c395",
+    "data\\eval\\MANIFEST.json": "d2b55bd17cd337a9bca887dc7ec7a72c3127c2581dc94e5d88fbcbc4932f433e",
+    "data\\eval\\README.md": "95d810af3431fbc575410ce855e8af3251f8041a54095d4dc0f027f9dba4c46d",
+    "scripts\\build_eval.py": "34d82206039aa1f4e57d33a88e2051cda7115a7707ddd3673aee5ac9255b305e",
+    "src\\lawproc\\evalset.py": "a55e49cb39e4eaa9d60427e481cb789eec122235aa60a6814e03898f01621780",
+    "tests\\test_evalset.py": "7c2913b5018b928adb0426fd781736b55d14243358a342bb711ec459f98365af",
+    "data\\processed\\legal_units_versioned.jsonl": "e0bd99d5b3e1938734681bbf9c5b3e4452a4df9954988e63fa345cbe88d813d7",
+    "docs\\reviews\\eval-rereview-2026-10-17\\REPORT.md": "4b51ef25947acd66f77d39694a2b0c93e30f44f781a88ae87c566e574534615b",
+    "docs\\reviews\\eval-rereview-2026-10-17\\audit-031317389623Z.json": "5c6aae9ab95a0688a5acb22027d28db987a49bcf842e403a6ece1406727c8304"
+  },
+  "count": 270,
+  "groups": {
+    "thuong": 150,
+    "sua_doi": 40,
+    "ngoai_pham_vi": 30,
+    "bien_the": 50
+  },
+  "splits": {
+    "test": 240,
+    "dev": 30
+  },
+  "baseline_problems": [],
+  "rebuild_equals_file": true,
+  "mutation_probes": [
+    {
+      "name": "reversed_bounds",
+      "key": "xp01",
+      "id": "TH135",
+      "changes": {
+        "muc_phat_min": 600000,
+        "muc_phat_max": 400000
+      },
+      "mutation_is_real": true,
+      "rejected": true,
+      "problems": [
+        "TH135: muc_phat_min 600000 lớn hơn muc_phat_max 400000",
+        "TH135: đáp án không nêu khung phạt 600,000–400,000 đồng như nhãn"
+      ]
+    },
+    {
+      "name": "one_dong",
+      "key": "xp01",
+      "id": "TH135",
+      "changes": {
+        "dap_an": "Phạt 1 đồng."
+      },
+      "mutation_is_real": true,
+      "rejected": true,
+      "problems": [
+        "TH135: đáp án không nêu khung phạt 400,000–600,000 đồng như nhãn",
+        "TH135: dap_an có số liệu 1 đồng không có trong căn cứ"
+      ]
+    },
+    {
+      "name": "suspension",
+      "key": "xp04",
+      "id": "TH138",
+      "changes": {
+        "dap_an": "Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng (điểm a khoản 11 Điều 6 Nghị định 168/2024/NĐ-CP) và bị tước quyền sử dụng giấy phép lái xe từ 01 tháng đến 02 tháng (điểm c khoản 15 Điều 6). Mức này cũng áp dụng khi nồng độ cồn trong khí thở vượt quá 0,4 miligam/1 lít."
+      },
+      "mutation_is_real": true,
+      "rejected": true,
+      "problems": [
+        "TH138: dap_an có khung từ 1 đến 2 tháng không có trong căn cứ",
+        "TH138: dap_an có số liệu 1 tháng không có trong căn cứ",
+        "TH138: dap_an có số liệu 2 tháng không có trong căn cứ"
+      ]
+    },
+    {
+      "name": "citation",
+      "key": "xp01",
+      "id": "TH135",
+      "changes": {
+        "dap_an": "Phạt tiền từ 400.000 đồng đến 600.000 đồng (điểm z khoản 99 Điều 999 Nghị định 168/2024/NĐ-CP). Mức này cũng áp dụng khi đội mũ bảo hiểm nhưng không cài quai đúng quy cách."
+      },
+      "mutation_is_real": true,
+      "rejected": true,
+      "problems": [
+        "TH135: dap_an trích dẫn \"điểm z khoản 99 Điều 999\" không trỏ tới đơn vị có hiệu lực trong căn cứ"
+      ]
+    },
+    {
+      "name": "99_days",
+      "key": "sd24",
+      "id": "SD010",
+      "changes": {
+        "dap_an": "Cấp lại chứng nhận đăng ký xe không quá 99 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ; chứng nhận cấp lại phải thể hiện rõ lần cấp lại (điểm b khoản 1 Điều 7 Thông tư 79/2024/TT-BCA, được sửa đổi, có hiệu lực từ 18/5/2026)."
+      },
+      "mutation_is_real": true,
+      "rejected": true,
+      "problems": [
+        "SD010: dap_an có số liệu 99 ngày làm việc không có trong căn cứ"
+      ]
+    },
+    {
+      "name": "unrelated_deduction",
+      "key": "xp01",
+      "id": "TH135",
+      "changes": {
+        "diem_tru": 4,
+        "can_cu": [
+          "nd_168_2024:d7:k2:h@2025-01-01",
+          "nd_168_2024:d7:k13:b@2025-01-01"
+        ],
+        "dap_an": "Phạt tiền từ 400.000 đồng đến 600.000 đồng (điểm h khoản 2 Điều 7 Nghị định 168/2024/NĐ-CP). Mức này cũng áp dụng khi đội mũ bảo hiểm nhưng không cài quai đúng quy cách. Trừ 04 điểm giấy phép lái xe."
+      },
+      "mutation_is_real": true,
+      "rejected": true,
+      "problems": [
+        "TH135: căn cứ nd_168_2024:d7:k13:b@2025-01-01 quy định chế tài cho hành vi khác, không phải nd_168_2024:d7:k2:h",
+        "TH135: diem_tru 4 khác luật (None)"
+      ]
+    },
+    {
+      "name": "ratio",
+      "key": "gp13",
+      "id": "TH061",
+      "changes": {
+        "dap_an": "Người có giấy phép lái xe hạng B làm bài trong 20 phút, gồm 30 câu hỏi trắc nghiệm, mỗi câu 01 điểm, có 01 câu điểm liệt; đạt từ 26/30 điểm trở lên là đạt yêu cầu, nhưng nếu trả lời sai câu điểm liệt thì không đạt (điểm c khoản 3 Điều 6 Thông tư 65/2024/TT-BCA)."
+      },
+      "mutation_is_real": true,
+      "rejected": true,
+      "problems": [
+        "TH061: dap_an có số liệu 26/30 điểm không có trong căn cứ"
+      ]
+    },
+    {
+      "name": "working_days",
+      "key": "sd24",
+      "id": "SD010",
+      "changes": {
+        "dap_an": "Cấp lại chứng nhận đăng ký xe không quá 02 ngày kể từ ngày nhận đủ hồ sơ hợp lệ; chứng nhận cấp lại phải thể hiện rõ lần cấp lại (điểm b khoản 1 Điều 7 Thông tư 79/2024/TT-BCA, được sửa đổi, có hiệu lực từ 18/5/2026)."
+      },
+      "mutation_is_real": true,
+      "rejected": true,
+      "problems": [
+        "SD010: dap_an có số liệu 2 ngày không có trong căn cứ"
+      ]
+    },
+    {
+      "name": "fine_range",
+      "key": "xp01",
+      "id": "TH135",
+      "changes": {
+        "dap_an": "Phạt tiền từ 600.000 đồng đến 600.000 đồng (điểm h khoản 2 Điều 7 Nghị định 168/2024/NĐ-CP). Mức này cũng áp dụng khi đội mũ bảo hiểm nhưng không cài quai đúng quy cách."
+      },
+      "mutation_is_real": true,
+      "rejected": true,
+      "problems": [
+        "TH135: đáp án không nêu khung phạt 400,000–600,000 đồng như nhãn",
+        "TH135: dap_an có khung từ 600,000 đến 600,000 đồng không có trong căn cứ"
+      ]
+    }
+  ],
+  "retrieval_rule_probes": [
+    {
+      "key": "gp01",
+      "groups": 5,
+      "single_piece_hits": 1,
+      "all": false
+    },
+    {
+      "key": "ll05",
+      "groups": 8,
+      "single_piece_hits": 1,
+      "all": false
+    }
+  ],
+  "manifest_hash_checks": [
+    {
+      "path": "data/eval/eval_v1.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/split_v1.json",
+      "matches": true
+    },
+    {
+      "path": "data/processed/legal_units_versioned.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/bien_the.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/ngoai_pham_vi.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/sua_doi.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_bao_hiem.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_bien_bao.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_dang_kiem.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_dang_ky_xe.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_gplx.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_huong_dan.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_le_phi.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_luat_loi.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_nop_phat.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_tai_nan.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_toc_do.jsonl",
+      "matches": true
+    },
+    {
+      "path": "data/eval/drafts/thuong_xu_phat.jsonl",
+      "matches": true
+    }
+  ],
+  "rq3_sources": {
+    "nd_238_2026": 4,
+    "luat_118_2025": 5,
+    "nd_175_2025": 2,
+    "tt_62_2026_bca": 5,
+    "tt_51_2025_bca": 1,
+    "nd_218_2026": 13,
+    "tt_108_2026_bca": 4,
+    "nd_47_2026": 1,
+    "tt_105_2026_bca": 1,
+    "nd_241_2026": 4
+  },
+  "evidence_group_distribution": {
+    "3": 32,
+    "4": 16,
+    "2": 49,
+    "7": 1,
+    "1": 82,
+    "5": 5,
+    "6": 4,
+    "8": 1
+  },
+  "event_family_count": 171,
+  "shared_event_gp17_sd34": true,
+  "passing_threshold_labels": {
+    "gp06": [
+      [
+        "23/25",
+        "điểm"
+      ],
+      [
+        1.0,
+        "câu"
+      ],
+      [
+        1.0,
+        "điểm"
+      ],
+      [
+        19.0,
+        "phút"
+      ],
+      [
+        25.0,
+        "câu"
+      ]
+    ],
+    "gp13": [
+      [
+        "27/30",
+        "điểm"
+      ],
+      [
+        1.0,
+        "câu"
+      ],
+      [
+        1.0,
+        "điểm"
+      ],
+      [
+        20.0,
+        "phút"
+      ],
+      [
+        30.0,
+        "câu"
+      ]
+    ]
+  },
+  "rq3_replacement_evidence": [
+    {
+      "line": 180,
+      "item": {
+        "id": "SD030",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Xe ô tô kinh doanh vận tải bị thu hồi phù hiệu thì bao lâu sau mới được cấp lại phù hiệu?",
+        "dap_an": "Không cấp mới, cấp lại phù hiệu cho xe trong thời gian xe bị áp dụng hình thức tước quyền sử dụng hoặc trong thời gian 30 ngày kể từ ngày ký Quyết định thu hồi phù hiệu (điểm b khoản 9 Điều 23 Nghị định 158/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 10/8/2026). Hạn chế này không áp dụng khi xe chuyển quyền sử dụng, sở hữu, hoặc khi phù hiệu bị thu hồi vì xe đã chuyển nhượng, cho đơn vị khác thuê (điểm đ khoản 10 Điều 23) hay vì đơn vị báo cáo không tiếp tục sử dụng phương tiện để kinh doanh vận tải (điểm e khoản 10 Điều 23).",
+        "can_cu": [
+          "nd_158_2024:d23:k9:b@2026-08-10",
+          "nd_158_2024:d23:k10:đ@2025-01-01",
+          "nd_158_2024:d23:k10:e@2026-08-10"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_158_2024:d23:k9:b@2026-08-10"
+          ],
+          [
+            "nd_158_2024:d23:k10:đ@2025-01-01"
+          ],
+          [
+            "nd_158_2024:d23:k10:e@2026-08-10"
+          ]
+        ],
+        "van_ban": "nd_158_2024",
+        "dieu": "23",
+        "khoan": "9",
+        "diem": "b",
+        "dia_chi_chinh": "nd_158_2024:d23:k9",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            30.0,
+            "ngày"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 10/8/2026, điểm b khoản 9 Điều 23 quy định không cấp phù hiệu cho xe trong thời gian bị tước quyền sử dụng hoặc bị thu hồi phù hiệu, không ấn định riêng mốc tính từ ngày ký quyết định thu hồi.",
+        "can_cu_cu": [
+          "nd_158_2024:d23:k9:b@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_218_2026",
+        "ho_cau": "SD030",
+        "ho_su_kien": "nd_158_2024:d23:k9",
+        "trung_dev": false,
+        "key": "sd47",
+        "nguon_nhap": "sua_doi.jsonl:30"
+      },
+      "records": [
+        {
+          "unit_id": "nd_158_2024:d23:k9:b",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ TRONG NƯỚC",
+          "muc": "4 QUY ĐỊNH VỀ CẤP, THU HỒI GIẤY PHÉP KINH DOANH VẬN TẢI BẰNG XE Ô TÔ, BẰNG XE BỐN BÁNH CÓ GẮN ĐỘNG CƠ; CẤP, THU HỒI PHÙ HIỆU; ĐĂNG KÝ KHAI THÁC, NGỪNG HOẠT ĐỘNG, THU HỒI KHAI THÁC TUYẾN VẬN TẢI HÀNH KHÁCH CỐ ĐỊNH",
+          "dieu": "23",
+          "khoan": "9",
+          "diem": "b",
+          "title": "",
+          "text": "Không thực hiện cấp mới, cấp lại phù hiệu cho xe ô tô, xe bốn bánh có gắn động cơ trong thời gian xe ô tô, xe bốn bánh có gắn động cơ đó bị cơ quan có thẩm quyền áp dụng hình thức xử phạt tước quyền sử dụng hoặc trong thời gian 30 ngày kể từ ngày ký Quyết định thu hồi phù hiệu (trừ trường hợp xe ô tô, xe bốn bánh có gắn động cơ đó chuyển quyền sử dụng, sở hữu hoặc trường hợp đơn vị bị thu hồi phù hiệu theo quy định tại điểm đ và điểm e khoản 10 Điều này);",
+          "line_start": 2,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d23:k9:b@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d23:k10:đ",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ TRONG NƯỚC",
+          "muc": "4 QUY ĐỊNH VỀ CẤP, THU HỒI GIẤY PHÉP KINH DOANH VẬN TẢI BẰNG XE Ô TÔ, BẰNG XE BỐN BÁNH CÓ GẮN ĐỘNG CƠ; CẤP, THU HỒI PHÙ HIỆU; ĐĂNG KÝ KHAI THÁC, NGỪNG HOẠT ĐỘNG, THU HỒI KHAI THÁC TUYẾN VẬN TẢI HÀNH KHÁCH CỐ ĐỊNH",
+          "dieu": "23",
+          "khoan": "10",
+          "diem": "đ",
+          "title": "",
+          "text": "Thu hồi phù hiệu các xe ô tô, xe bốn bánh có gắn động cơ kinh doanh vận tải của đơn vị kinh doanh vận tải khi phương tiện đã được chuyển nhượng hoặc cho đơn vị khác thuê;",
+          "line_start": 401,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": null,
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d23:k10:đ@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d23:k10:e",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ TRONG NƯỚC",
+          "muc": "4 QUY ĐỊNH VỀ CẤP, THU HỒI GIẤY PHÉP KINH DOANH VẬN TẢI BẰNG XE Ô TÔ, BẰNG XE BỐN BÁNH CÓ GẮN ĐỘNG CƠ; CẤP, THU HỒI PHÙ HIỆU; ĐĂNG KÝ KHAI THÁC, NGỪNG HOẠT ĐỘNG, THU HỒI KHAI THÁC TUYẾN VẬN TẢI HÀNH KHÁCH CỐ ĐỊNH",
+          "dieu": "23",
+          "khoan": "10",
+          "diem": "e",
+          "title": "",
+          "text": "Thu hồi phù hiệu khi đơn vị kinh doanh vận tải có báo cáo gửi Sở Xây dựng không tiếp tục sử dụng phương tiện để kinh doanh vận tải;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d23:k10:e@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d23:k9:b",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "II QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ TRONG NƯỚC",
+          "muc": "4 QUY ĐỊNH VỀ CẤP, THU HỒI GIẤY PHÉP KINH DOANH VẬN TẢI BẰNG XE Ô TÔ, BẰNG XE BỐN BÁNH CÓ GẮN ĐỘNG CƠ; CẤP, THU HỒI PHÙ HIỆU; ĐĂNG KÝ KHAI THÁC, NGỪNG HOẠT ĐỘNG, THU HỒI KHAI THÁC TUYẾN VẬN TẢI HÀNH KHÁCH CỐ ĐỊNH",
+          "dieu": "23",
+          "khoan": "9",
+          "diem": "b",
+          "title": "",
+          "text": "Không thực hiện cấp phù hiệu cho xe ô tô, xe bốn bánh có gắn động cơ trong thời gian xe ô tô, xe bốn bánh có gắn động cơ đó bị cơ quan có thẩm quyền áp dụng hình thức xử phạt tước quyền sử dụng hoặc bị thu hồi phù hiệu (trừ trường hợp xe ô tô, xe bốn bánh có gắn động cơ đó chuyển quyền sử dụng, sở hữu và hoàn thành việc nộp lại phù hiệu về Sở Giao thông vận tải để cập nhật các phù hiệu có trong Cơ sở dữ liệu cấp phép hoạt động vận tải);",
+          "line_start": 393,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-10",
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d23:k9:b@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 184,
+      "item": {
+        "id": "SD034",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Xin chấp thuận vị trí, quy mô biển quảng cáo trong phạm vi bảo vệ kết cấu hạ tầng đường bộ thì sau khi nộp đủ hồ sơ bao lâu có văn bản chấp thuận?",
+        "dap_an": "Trong thời hạn 05 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, cơ quan có thẩm quyền thẩm định hồ sơ, nếu đủ điều kiện thì có văn bản chấp thuận (điểm c khoản 3 Điều 18 Nghị định 165/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 01/7/2026).",
+        "can_cu": [
+          "nd_165_2024:d18:k3:c@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_165_2024:d18:k3:c@2026-07-01"
+          ]
+        ],
+        "van_ban": "nd_165_2024",
+        "dieu": "18",
+        "khoan": "3",
+        "diem": "c",
+        "dia_chi_chinh": "nd_165_2024:d18:k3",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            5.0,
+            "ngày làm việc"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 01/7/2026, thời hạn thẩm định và có văn bản chấp thuận là 07 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "can_cu_cu": [
+          "nd_165_2024:d18:k3:c@2025-01-01"
+        ],
+        "ngay_cu": "2026-03-01",
+        "van_ban_sua_doi": "nd_241_2026",
+        "ho_cau": "SD034",
+        "ho_su_kien": "nd_165_2024:d18:k3",
+        "trung_dev": false,
+        "key": "sd53",
+        "nguon_nhap": "sua_doi.jsonl:34"
+      },
+      "records": [
+        {
+          "unit_id": "nd_165_2024:d18:k3:c",
+          "doc_id": "nd_165_2024",
+          "level": "diem",
+          "chuong": "III PHẦN ĐẤT ĐỂ BẢO VỆ, BẢO TRÌ ĐƯỜNG BỘ; HÀNH LANG AN TOÀN ĐƯỜNG BỘ; XÂY DỰNG CÔNG TRÌNH TRONG PHẠM VI BẢO VỆ KẾT CẤU HẠ TẦNG ĐƯỜNG BỘ; BẢO VỆ KẾT CẤU HẠ TẦNG ĐƯỜNG BỘ; SỬ DỤNG TẠM THỜI LÒNG ĐƯỜNG, VỈA HÈ VÀO MỤC ĐÍCH KHÁC",
+          "muc": null,
+          "dieu": "18",
+          "khoan": "3",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 05 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, cơ quan có thẩm quyền giải quyết thủ tục hành chính tiến hành thẩm định hồ sơ, nếu đủ điều kiện thì có văn bản chấp thuận vị trí, quy mô, kích thước, phương án tổ chức giao thông biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị theo quy định tại Mẫu số 03 Phụ lục III kèm theo Nghị định này; chấp thuận xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ đang khai thác theo quy định tại Mẫu số 04 Phụ lục III kèm theo Nghị định này; chấp thuận xây dựng, gia cường đồng thời với cấp giấy phép thi công công trình trên đường bộ đang khai thác theo quy định tại Mẫu số 05 Phụ lục III kèm theo Nghị định này. Trường hợp không chấp thuận thì phải có văn bản trả lời và nêu rõ lý do;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "nd_241_2026",
+          "version_id": "nd_165_2024:d18:k3:c@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_165_2024:d18:k3:c",
+          "doc_id": "nd_165_2024",
+          "level": "diem",
+          "chuong": "III PHẦN ĐẤT ĐỂ BẢO VỆ, BẢO TRÌ ĐƯỜNG BỘ; HÀNH LANG AN TOÀN ĐƯỜNG BỘ; XÂY DỰNG CÔNG TRÌNH TRONG PHẠM VI BẢO VỆ KẾT CẤU HẠ TẦNG ĐƯỜNG BỘ; BẢO VỆ KẾT CẤU HẠ TẦNG ĐƯỜNG BỘ; SỬ DỤNG TẠM THỜI LÒNG ĐƯỜNG, VỈA HÈ VÀO MỤC ĐÍCH KHÁC",
+          "muc": null,
+          "dieu": "18",
+          "khoan": "3",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 07 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, cơ quan có thẩm quyền giải quyết thủ tục hành chính tiến hành thẩm định hồ sơ, nếu đủ điều kiện thì có văn bản chấp thuận vị trí, quy mô, kích thước, phương án tổ chức giao thông biển quảng cáo, biển thông tin cổ động, tuyên truyền chính trị theo quy định tại Mẫu số 03 Phụ lục III kèm theo Nghị định này; chấp thuận xây dựng, lắp đặt công trình hạ tầng, công trình hạ tầng kỹ thuật sử dụng chung trong phạm vi bảo vệ kết cấu hạ tầng đường bộ đang khai thác theo quy định tại Mẫu số 04 Phụ lục III kèm theo Nghị định này; chấp thuận xây dựng, gia cường đồng thời với cấp giấy phép thi công công trình trên đường bộ đang khai thác theo quy định tại Mẫu số 05 Phụ lục III kèm theo Nghị định này. Trường hợp không chấp thuận thì phải có văn bản trả lời và nêu rõ lý do.",
+          "line_start": 211,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-07-01",
+          "source_doc_id": "nd_165_2024",
+          "version_id": "nd_165_2024:d18:k3:c@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 185,
+      "item": {
+        "id": "SD035",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Thời hạn thẩm định, phê duyệt phương án tổ chức giao thông đường cao tốc là bao lâu kể từ khi nhận đủ hồ sơ?",
+        "dap_an": "Trong thời hạn 12 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, cơ quan có thẩm quyền hoàn thành thẩm định phương án tổ chức giao thông (hoặc phương án điều chỉnh) và ban hành quyết định phê duyệt nếu đủ điều kiện; không phê duyệt thì phải trả lời bằng văn bản nêu rõ lý do (điểm c khoản 4 Điều 26 Nghị định 165/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 01/7/2026).",
+        "can_cu": [
+          "nd_165_2024:d26:k4:c@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_165_2024:d26:k4:c@2026-07-01"
+          ]
+        ],
+        "van_ban": "nd_165_2024",
+        "dieu": "26",
+        "khoan": "4",
+        "diem": "c",
+        "dia_chi_chinh": "nd_165_2024:d26:k4",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            12.0,
+            "ngày làm việc"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 01/7/2026, thời hạn này là 15 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "can_cu_cu": [
+          "nd_165_2024:d26:k4:c@2025-01-01"
+        ],
+        "ngay_cu": "2026-03-01",
+        "van_ban_sua_doi": "nd_241_2026",
+        "ho_cau": "SD035",
+        "ho_su_kien": "nd_165_2024:d26:k4",
+        "trung_dev": false,
+        "key": "sd54",
+        "nguon_nhap": "sua_doi.jsonl:35"
+      },
+      "records": [
+        {
+          "unit_id": "nd_165_2024:d26:k4:c",
+          "doc_id": "nd_165_2024",
+          "level": "diem",
+          "chuong": "IV TỔ CHỨC GIAO THÔNG, KẾT NỐI GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "1 TỔ CHỨC GIAO THÔNG",
+          "dieu": "26",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 12 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, cơ quan có thẩm quyền giải quyết thủ tục hành chính hoàn thành việc thẩm định phương án tổ chức giao thông, phương án tổ chức giao thông điều chỉnh, nếu đủ điều kiện thì ban hành quyết định phê duyệt theo quy định tại Mẫu số 02 Phụ lục V kèm theo Nghị định này. Trường hợp không phê duyệt thì phải có văn bản trả lời và nêu rõ lý do;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "nd_241_2026",
+          "version_id": "nd_165_2024:d26:k4:c@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_165_2024:d26:k4:c",
+          "doc_id": "nd_165_2024",
+          "level": "diem",
+          "chuong": "IV TỔ CHỨC GIAO THÔNG, KẾT NỐI GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "1 TỔ CHỨC GIAO THÔNG",
+          "dieu": "26",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 15 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, cơ quan có thẩm quyền giải quyết thủ tục hành chính hoàn thành việc thẩm định phương án tổ chức giao thông, phương án tổ chức giao thông điều chỉnh, nếu đủ điều kiện thì ban hành quyết định phê duyệt theo quy định tại Mẫu số 02 Phụ lục V kèm theo Nghị định này. Trường hợp không phê duyệt thì phải có văn bản trả lời và nêu rõ lý do.",
+          "line_start": 347,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-07-01",
+          "source_doc_id": "nd_165_2024",
+          "version_id": "nd_165_2024:d26:k4:c@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 186,
+      "item": {
+        "id": "SD036",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Xin đấu nối tạm thời có thời hạn vào quốc lộ đang khai thác thì sau khi nộp đủ hồ sơ bao lâu được chấp thuận?",
+        "dap_an": "Trong thời hạn 05 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, cơ quan có thẩm quyền thẩm định và nếu đủ điều kiện thì có văn bản chấp thuận vị trí, thiết kế và cấp phép thi công nút giao đấu nối tạm (điểm c khoản 5 Điều 31 Nghị định 165/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 01/7/2026).",
+        "can_cu": [
+          "nd_165_2024:d31:k5:c@2026-07-01"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_165_2024:d31:k5:c@2026-07-01"
+          ]
+        ],
+        "van_ban": "nd_165_2024",
+        "dieu": "31",
+        "khoan": "5",
+        "diem": "c",
+        "dia_chi_chinh": "nd_165_2024:d31:k5",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            5.0,
+            "ngày làm việc"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 01/7/2026, thời hạn thẩm định và có văn bản chấp thuận nút giao đấu nối tạm là 07 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "can_cu_cu": [
+          "nd_165_2024:d31:k5:c@2025-01-01"
+        ],
+        "ngay_cu": "2026-03-01",
+        "van_ban_sua_doi": "nd_241_2026",
+        "ho_cau": "SD036",
+        "ho_su_kien": "nd_165_2024:d31:k5",
+        "trung_dev": false,
+        "key": "sd55",
+        "nguon_nhap": "sua_doi.jsonl:36"
+      },
+      "records": [
+        {
+          "unit_id": "nd_165_2024:d31:k5:c",
+          "doc_id": "nd_165_2024",
+          "level": "diem",
+          "chuong": "IV TỔ CHỨC GIAO THÔNG, KẾT NỐI GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "2 KẾT NỐI GIAO THÔNG VÀ ĐẤU NỐI ĐƯỜNG BỘ",
+          "dieu": "31",
+          "khoan": "5",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 05 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, cơ quan có thẩm quyền giải quyết thủ tục hành chính tiến hành thẩm định hồ sơ, nếu đủ điều kiện thì có văn bản chấp thuận vị trí, thiết kế và cấp phép thi công nút giao đấu nối tạm theo quy định tại Mẫu số 04 Phụ lục VI kèm theo Nghị định này. Trường hợp không chấp thuận thì phải có văn bản trả lời và nêu rõ lý do;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-07-01",
+          "valid_to": null,
+          "source_doc_id": "nd_241_2026",
+          "version_id": "nd_165_2024:d31:k5:c@2026-07-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_165_2024:d31:k5:c",
+          "doc_id": "nd_165_2024",
+          "level": "diem",
+          "chuong": "IV TỔ CHỨC GIAO THÔNG, KẾT NỐI GIAO THÔNG ĐƯỜNG BỘ",
+          "muc": "2 KẾT NỐI GIAO THÔNG VÀ ĐẤU NỐI ĐƯỜNG BỘ",
+          "dieu": "31",
+          "khoan": "5",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 07 ngày làm việc kể từ khi nhận đủ hồ sơ theo quy định, cơ quan có thẩm quyền giải quyết thủ tục hành chính tiến hành thẩm định hồ sơ, nếu đủ điều kiện thì có văn bản chấp thuận nút giao đấu nối tạm theo quy định tại Mẫu số 04 Phụ lục VI kèm theo Nghị định này. Trường hợp không chấp thuận thì phải có văn bản trả lời và nêu rõ lý do.",
+          "line_start": 459,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-07-01",
+          "source_doc_id": "nd_165_2024",
+          "version_id": "nd_165_2024:d31:k5:c@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 187,
+      "item": {
+        "id": "SD037",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Phương tiện của nước thực hiện Hiệp định khung ASEAN về vận tải qua biên giới muốn gia hạn thời gian lưu hành tại Việt Nam thì được giải quyết trong bao lâu?",
+        "dap_an": "Trong thời hạn 01 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ, cơ quan có thẩm quyền gia hạn bằng văn bản hoặc gia hạn trong Giấy phép liên vận ASEAN; không gia hạn thì trả lời bằng văn bản nêu rõ lý do (điểm b khoản 4 Điều 34 Nghị định 158/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 10/8/2026).",
+        "can_cu": [
+          "nd_158_2024:d34:k4:b@2026-08-10"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_158_2024:d34:k4:b@2026-08-10"
+          ]
+        ],
+        "van_ban": "nd_158_2024",
+        "dieu": "34",
+        "khoan": "4",
+        "diem": "b",
+        "dia_chi_chinh": "nd_158_2024:d34:k4",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            1.0,
+            "ngày làm việc"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 10/8/2026, thời hạn gia hạn là 02 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ.",
+        "can_cu_cu": [
+          "nd_158_2024:d34:k4:b@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_218_2026",
+        "ho_cau": "SD037",
+        "ho_su_kien": "nd_158_2024:d34:k4",
+        "trung_dev": false,
+        "key": "sd56",
+        "nguon_nhap": "sua_doi.jsonl:37"
+      },
+      "records": [
+        {
+          "unit_id": "nd_158_2024:d34:k4:b",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "2 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN ASEAN",
+          "dieu": "34",
+          "khoan": "4",
+          "diem": "b",
+          "title": "",
+          "text": "Trong thời hạn 01 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ theo quy định, cơ quan có thẩm quyền thực hiện gia hạn thời gian lưu hành cho phương tiện của các nước thực hiện các Hiệp định khung ASEAN về vận tải đường bộ qua biên giới. Cơ quan có thẩm quyền thực hiện việc gia hạn bằng văn bản hoặc gia hạn trong Giấy phép liên vận ASEAN và trả lại Giấy phép liên vận ASEAN cho đơn vị kinh doanh vận tải. Trường hợp không gia hạn, cơ quan có thẩm quyền trả lời bằng văn bản nêu rõ lý do;",
+          "line_start": 0,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d34:k4:b@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d34:k4:b",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "2 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN ASEAN",
+          "dieu": "34",
+          "khoan": "4",
+          "diem": "b",
+          "title": "",
+          "text": "Trong thời hạn 02 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ theo quy định, cơ quan có thẩm quyền thực hiện gia hạn thời gian lưu hành cho phương tiện của các nước thực hiện các Hiệp định khung ASEAN về vận tải đường bộ qua biên giới. Trường hợp không gia hạn, cơ quan có thẩm quyền trả lời bằng văn bản nêu rõ lý do.",
+          "line_start": 540,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-10",
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d34:k4:b@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 188,
+      "item": {
+        "id": "SD038",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Nộp đủ hồ sơ xin Giấy phép vận tải đường bộ quốc tế giữa Việt Nam và Lào thì bao lâu được cấp?",
+        "dap_an": "Trong thời hạn 01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ và kiểm tra dữ liệu Giấy phép kinh doanh vận tải trên cơ sở dữ liệu cấp phép hoạt động vận tải (điểm c khoản 4 Điều 51 Nghị định 158/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 10/8/2026).",
+        "can_cu": [
+          "nd_158_2024:d51:k4:c@2026-08-10"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_158_2024:d51:k4:c@2026-08-10"
+          ]
+        ],
+        "van_ban": "nd_158_2024",
+        "dieu": "51",
+        "khoan": "4",
+        "diem": "c",
+        "dia_chi_chinh": "nd_158_2024:d51:k4",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            1.0,
+            "ngày làm việc"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 10/8/2026, thời hạn cấp là 02 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.",
+        "can_cu_cu": [
+          "nd_158_2024:d51:k4:c@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_218_2026",
+        "ho_cau": "SD038",
+        "ho_su_kien": "nd_158_2024:d51:k4",
+        "trung_dev": false,
+        "key": "sd57",
+        "nguon_nhap": "sua_doi.jsonl:38"
+      },
+      "records": [
+        {
+          "unit_id": "nd_158_2024:d51:k4:c",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "6 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN GIỮA VIỆT NAM VÀ LÀO",
+          "dieu": "51",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định và kiểm tra thông tin dữ liệu về Giấy phép kinh doanh vận tải của đơn vị kinh doanh vận tải trên cơ sở dữ liệu cấp phép hoạt động vận tải, cơ quan có thẩm quyền cấp giấy phép thực hiện cấp Giấy phép vận tải đường bộ quốc tế giữa Việt Nam và Lào theo Mẫu số 03 Phụ lục XI kèm theo Nghị định này. Trường hợp không cấp, cơ quan có thẩm quyền cấp giấy phép thông báo trực tiếp hoặc bằng văn bản hoặc qua Cổng dịch vụ công quốc gia và nêu rõ lý do;",
+          "line_start": 3,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d51:k4:c@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d51:k4:c",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "6 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN GIỮA VIỆT NAM VÀ LÀO",
+          "dieu": "51",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 02 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định, cơ quan có thẩm quyền cấp giấy phép thực hiện cấp Giấy phép vận tải đường bộ quốc tế giữa Việt Nam và Lào theo Mẫu số 03 Phụ lục XI kèm theo Nghị định này. Trường hợp không cấp, phải thông báo bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến và nêu rõ lý do;",
+          "line_start": 781,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-10",
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d51:k4:c@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 189,
+      "item": {
+        "id": "SD039",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Hướng dẫn",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Thời hạn cấp Giấy phép liên vận GMS (hoặc sổ TAD) cho phương tiện là bao lâu?",
+        "dap_an": "Trong thời hạn 01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ và kiểm tra dữ liệu Giấy chứng nhận đăng ký xe trên Cơ sở dữ liệu về đăng ký phương tiện, cơ quan có thẩm quyền cấp Giấy phép liên vận GMS hoặc sổ TAD (điểm c khoản 4 Điều 37 Nghị định 158/2024/NĐ-CP, được sửa đổi, có hiệu lực từ 10/8/2026).",
+        "can_cu": [
+          "nd_158_2024:d37:k4:c@2026-08-10"
+        ],
+        "nhom_can_cu": [
+          [
+            "nd_158_2024:d37:k4:c@2026-08-10"
+          ]
+        ],
+        "van_ban": "nd_158_2024",
+        "dieu": "37",
+        "khoan": "4",
+        "diem": "c",
+        "dia_chi_chinh": "nd_158_2024:d37:k4",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            1.0,
+            "ngày làm việc"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 10/8/2026, thời hạn cấp là 02 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.",
+        "can_cu_cu": [
+          "nd_158_2024:d37:k4:c@2025-01-01"
+        ],
+        "ngay_cu": "2026-06-01",
+        "van_ban_sua_doi": "nd_218_2026",
+        "ho_cau": "SD039",
+        "ho_su_kien": "nd_158_2024:d37:k4",
+        "trung_dev": false,
+        "key": "sd58",
+        "nguon_nhap": "sua_doi.jsonl:39"
+      },
+      "records": [
+        {
+          "unit_id": "nd_158_2024:d37:k4:c",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "3 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN GMS",
+          "dieu": "37",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 01 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định và kiểm tra thông tin dữ liệu về Giấy chứng nhận đăng ký xe trên Cơ sở dữ liệu về đăng ký phương tiện, cơ quan có thẩm quyền cấp giấy phép thực hiện cấp Giấy phép liên vận GMS theo Mẫu số 04 Phụ lục VIII hoặc sổ TAD theo Mẫu số 05 Phụ lục VIII kèm theo Nghị định này. Trường hợp không cấp, cơ quan có thẩm quyền cấp giấy phép thông báo bằng văn bản hoặc qua Cổng dịch vụ công quốc gia và nêu rõ lý do;",
+          "line_start": 3,
+          "phan": null,
+          "valid_from": "2026-08-10",
+          "valid_to": null,
+          "source_doc_id": "nd_218_2026",
+          "version_id": "nd_158_2024:d37:k4:c@2026-08-10",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "nd_158_2024:d37:k4:c",
+          "doc_id": "nd_158_2024",
+          "level": "diem",
+          "chuong": "III QUY ĐỊNH VỀ HOẠT ĐỘNG VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ",
+          "muc": "3 TRÌNH TỰ, THỦ TỤC CẤP, CẤP LẠI, THU HỒI GIẤY PHÉP VẬN TẢI ĐƯỜNG BỘ QUỐC TẾ VÀ GIẤY PHÉP LIÊN VẬN GMS",
+          "dieu": "37",
+          "khoan": "4",
+          "diem": "c",
+          "title": "",
+          "text": "Trong thời hạn 02 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định, cơ quan có thẩm quyền cấp giấy phép thực hiện cấp Giấy phép liên vận GMS theo Mẫu số 04 Phụ lục VIII hoặc sổ TAD theo Mẫu số 05 Phụ lục VIII kèm theo Nghị định này. Trường hợp không cấp, cơ quan có thẩm quyền cấp giấy phép thông báo bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến và nêu rõ lý do;",
+          "line_start": 573,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-08-10",
+          "source_doc_id": "nd_158_2024",
+          "version_id": "nd_158_2024:d37:k4:c@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    },
+    {
+      "line": 190,
+      "item": {
+        "id": "SD040",
+        "tap": "test",
+        "nhom_cau": "sua_doi",
+        "chu_de": "Đăng ký xe",
+        "loai_cau": "thủ tục",
+        "cau_hoi": "Xin cấp bản sao chứng nhận thu hồi đăng ký xe, biển số xe thì bao lâu có kết quả?",
+        "dap_an": "Không quá 02 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ (điểm d khoản 3 Điều 7 Thông tư 79/2024/TT-BCA, được sửa đổi, có hiệu lực từ 18/5/2026).",
+        "can_cu": [
+          "tt_79_2024_bca:d7:k3:d@2026-05-18"
+        ],
+        "nhom_can_cu": [
+          [
+            "tt_79_2024_bca:d7:k3:d@2026-05-18"
+          ]
+        ],
+        "van_ban": "tt_79_2024_bca",
+        "dieu": "7",
+        "khoan": "3",
+        "diem": "d",
+        "dia_chi_chinh": "tt_79_2024_bca:d7:k3",
+        "muc_phat_min": null,
+        "muc_phat_max": null,
+        "diem_tru": null,
+        "trang_thai_diem_tru": "khong_ap_dung",
+        "tuoc_gplx_thang": null,
+        "so_lieu": [
+          [
+            2.0,
+            "ngày làm việc"
+          ]
+        ],
+        "ngay_hoi": "2026-10-01",
+        "dap_an_cu": "Trước ngày 18/5/2026, cơ quan đăng ký xe phải xác minh trong thời hạn 30 ngày kể từ ngày nhận đủ hồ sơ hợp lệ, sau đó nếu đủ điều kiện thì cấp bản sao trong thời hạn 02 ngày làm việc.",
+        "can_cu_cu": [
+          "tt_79_2024_bca:d7:k3:d@2025-01-01"
+        ],
+        "ngay_cu": "2026-03-01",
+        "van_ban_sua_doi": "tt_62_2026_bca",
+        "ho_cau": "SD040",
+        "ho_su_kien": "tt_79_2024_bca:d7:k3",
+        "trung_dev": false,
+        "key": "sd59",
+        "nguon_nhap": "sua_doi.jsonl:40"
+      },
+      "records": [
+        {
+          "unit_id": "tt_79_2024_bca:d7:k3:d",
+          "doc_id": "tt_79_2024_bca",
+          "level": "diem",
+          "chuong": "I QUY ĐỊNH CHUNG",
+          "muc": null,
+          "dieu": "7",
+          "khoan": "3",
+          "diem": "d",
+          "title": "",
+          "text": "Cấp bản sao chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe: Không quá 02 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ.",
+          "line_start": 12,
+          "phan": null,
+          "valid_from": "2026-05-18",
+          "valid_to": null,
+          "source_doc_id": "tt_62_2026_bca",
+          "version_id": "tt_79_2024_bca:d7:k3:d@2026-05-18",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        },
+        {
+          "unit_id": "tt_79_2024_bca:d7:k3:d",
+          "doc_id": "tt_79_2024_bca",
+          "level": "diem",
+          "chuong": "I QUY ĐỊNH CHUNG",
+          "muc": null,
+          "dieu": "7",
+          "khoan": "3",
+          "diem": "d",
+          "title": "",
+          "text": "Cấp bản sao chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe: Phải tiến hành xác minh trong thời hạn 30 ngày, kể từ ngày nhận đủ hồ sơ hợp lệ; sau khi xác minh, nếu đủ điều kiện thì cấp bản sao chứng nhận thu hồi chứng nhận đăng ký xe, biển số xe trong thời hạn 02 ngày làm việc.",
+          "line_start": 80,
+          "phan": null,
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-05-18",
+          "source_doc_id": "tt_79_2024_bca",
+          "version_id": "tt_79_2024_bca:d7:k3:d@2025-01-01",
+          "noi_dung_doi": true,
+          "ty_le_am_tiet_loi": 0.0,
+          "chat_luong": "ok",
+          "loai_phu_luc": null,
+          "hl_ngoai_le": [],
+          "trang_thai": null,
+          "thieu_noi_dung": null,
+          "trong_pham_vi": true,
+          "pl_thay_the": []
+        }
+      ]
+    }
+  ],
+  "interpretation": "Previous requested fixes verified. Retrieval probes apply the documented rule; no production retrieval scorer is evaluated here. No full independent legal certification of all gold answers is implied."
+}
