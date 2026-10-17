@@ -1,0 +1,169 @@
+{
+  "utc": "2026-10-17T08:45:29.201300+00:00",
+  "checks": [
+    {
+      "name": "unicode_path_save_load",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "interrupted_save_keeps_old_checkpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "resume_has_no_vector_misalignment",
+      "pass": true,
+      "details": {
+        "actual": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            -1.0,
+            0.0
+          ]
+        ],
+        "reencoded": [
+          "b",
+          "c"
+        ]
+      }
+    },
+    {
+      "name": "cache_separate_revision",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "cache_separate_max_length",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "malformed_cache_rejected_extra_rows",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "malformed_cache_rejected_duplicate_keys",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "malformed_cache_rejected_wrong_dim",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "malformed_cache_rejected_nan",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "malformed_cache_rejected_identity",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "real_index_ids_match_chunk_order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "real_index_size_and_dimension",
+      "pass": true,
+      "details": {
+        "rows": 6221,
+        "dim": 1024
+      }
+    },
+    {
+      "name": "all_chunk_texts_present_in_cache",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "all_6221_index_vectors_match_cache_by_text",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "real_vectors_normalized_and_finite",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "real_index_exact_search_and_temporal_mask_0",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "real_index_exact_search_and_temporal_mask_3110",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "real_index_exact_search_and_temporal_mask_6220",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "same_clause_assertion_can_pass_without_required_point",
+      "pass": true,
+      "details": {
+        "chunk": "khoan:nd_168_2024:d7:k2@2025-01-01#2",
+        "same_clause_assertion": true,
+        "actual_evidence_score": {
+          "id": "audit-helmet",
+          "key": "audit-helmet",
+          "nhom_cau": "thuong",
+          "tap": null,
+          "so_nhom": 1,
+          "van_ban": true,
+          "any": false,
+          "all": false,
+          "ty_le_nhom": 0.0,
+          "rr": 0.0,
+          "hang_dau_dung": null,
+          "nhom_thieu": [
+            [
+              "nd_168_2024:d7:k2:h@2025-01-01"
+            ]
+          ],
+          "nham_ban_cu": null,
+          "top": [
+            "khoan:nd_168_2024:d7:k2@2025-01-01#2"
+          ]
+        }
+      }
+    }
+  ],
+  "artifacts_at_review_time": {
+    "khoan": true,
+    "dieu": false
+  },
+  "encoder": {
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "max_seq_length": 8192,
+    "normalize": true,
+    "dtype": "float32",
+    "dim": 1024
+  },
+  "hashes": {
+    "src/rag/dense.py": "b35bf021f519764b9511375b7e07b4fb29158be9dd9e355999030c5dfe0d46d4",
+    "scripts/build_index.py": "9a53e4d5dbaf45477ee4cb58ed6db4e9db390063d54f477a40295cf35a5366ac",
+    "tests/test_rag_dense.py": "8c80f89c122b3be0a4c10b3517ee6dca3550b53ba9fce4eaa94f7955c31e72a5",
+    "data/rag/index/khoan/dense.faiss": "2404a14b31440ae10c2e11b1bb9ca7068b1145d1d56437153c1ab88433ac8bd1",
+    "data/rag/index/khoan/meta.json": "641fc6f84359d5fdfdaf422e33906310a82ba41648a9ecf7bc047332968fb980",
+    "data/rag/index/khoan/dense_ids.json": "29f0cc691dc652a99589f71825f1470fbc083a925b59ff36758b84989c1b47ad",
+    "data/eval/eval_v1.jsonl": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252"
+  },
+  "scope": "No second bge-m3 model loaded while background build is running with low free RAM. No claim to independently reproduce query semantics or the reported 16-sample re-encoding."
+}
