@@ -7,7 +7,7 @@
 - **Ngày hỏi mặc định:** 2026-10-01 (`config.CUTOFF`). Mọi đáp án đúng theo quy định áp dụng tại ngày này.
 - **File chính:** `eval_v1.jsonl`, 270 câu. Không sửa tay file này. Sửa ở `drafts/` rồi build lại.
 - **Tập dev/test:** đóng băng trong `split_v1.json`, khóa theo `nhom_cau/key`. Câu có `key` mới mặc định vào test; biến thể luôn theo tập của câu gốc. `id` (TH001…) có thể đổi khi chèn câu vào nháp, còn `key` thì không.
-- **Mã băm:** `MANIFEST.json` ghi SHA-256 của bộ eval, split, từng file nháp và dữ liệu nguồn (kèm git blob trong tag `data-v1`). Build lại sẽ ghi lại file này. Khi báo cáo kết quả, ghi kèm hash `eval` trong manifest.
+- **Mã băm:** `MANIFEST.json` ghi SHA-256 của bộ eval, split, từng file nháp và dữ liệu nguồn (kèm git blob trong tag `data-v1`). Build lại sẽ ghi lại file này. Khi báo cáo kết quả, ghi kèm hash `eval` trong manifest. File trong `data/eval/` luôn checkout với LF (`.gitattributes`) nên hash không đổi theo máy. Riêng hash `source.sha256` tính trên bản trong thư mục làm việc, có thể khác nếu git đổi xuống dòng; mã ổn định của dữ liệu nguồn là `git_blob_in_tag_data_v1`.
 
 ## Thành phần
 
