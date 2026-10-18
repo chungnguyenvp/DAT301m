@@ -23,9 +23,9 @@ def add(loai, q, a, *refs):
 
 
 # Năng lực bồi thường, nhiều người cùng gây hại, thời hiệu.
-add("quy_tac", "Người đã thành niên tự gây thiệt hại khi đi xe đạp thì ai dùng tài sản để bồi thường?",
-    "Người từ đủ mười tám tuổi trở lên gây thiệt hại phải tự bồi thường (khoản 1 Điều 586 " + B + ").",
-    "blds_2015:d586:k1")
+add("quy_tac", "Người đã thành niên đi xe đạp gây thiệt hại cho tài sản của người khác thì ai phải bồi thường?",
+    "Người từ đủ mười tám tuổi trở lên gây thiệt hại cho người khác phải tự bồi thường (khoản 1 Điều 586 " + B + ").",
+    "blds_2015:d586:k1", "blds_2015:d584:k1")
 add("tinh_huong", "Con tôi chưa đủ mười lăm tuổi đạp xe làm vỡ kính nhà bên đường; cháu còn cha mẹ. Ai bồi thường?",
     "Cha, mẹ phải bồi thường toàn bộ. Nếu tài sản cha, mẹ không đủ mà con có tài sản riêng thì dùng tài sản đó bồi thường phần còn thiếu; trường hợp trong thời gian trường học trực tiếp quản lý được Điều 599 quy định riêng (khoản 2 Điều 586 " + B + ").",
     "blds_2015:d586:k2", "blds_2015:d599:k1", "blds_2015:d599:k3")
@@ -47,8 +47,8 @@ add("quy_tac", "Nếu nhiều người cùng gây tai nạn mà không xác đ�
 add("quy_tac", "Thời hiệu khởi kiện yêu cầu bồi thường thiệt hại do vụ va chạm xe đạp bắt đầu từ khi nào?",
     "Là 03 năm kể từ ngày người có quyền yêu cầu biết hoặc phải biết quyền, lợi ích hợp pháp của mình bị xâm phạm (Điều 588 " + B + ").",
     "blds_2015:d588")
-add("tinh_huong", "Sau tai nạn, tôi bị đăng thông tin xâm phạm uy tín và phải tốn chi phí hợp lý để hạn chế thiệt hại. Khoản này có được tính không?",
-    "Có. Nếu uy tín bị xâm phạm, chi phí hợp lý để hạn chế, khắc phục thiệt hại là một khoản thiệt hại được bồi thường (điểm a khoản 1 Điều 592 " + B + ").",
+add("tinh_huong", "Sau vụ va chạm xe đạp, người khác đăng thông tin sai về diễn biến tai nạn, xâm phạm uy tín của tôi. Chi phí hợp lý để hạn chế thiệt hại từ bài đăng có được tính không?",
+    "Có. Nếu bài đăng về vụ va chạm xâm phạm uy tín của bạn, chi phí hợp lý để hạn chế, khắc phục thiệt hại do việc xâm phạm uy tín được tính vào thiệt hại phải bồi thường (điểm a khoản 1 Điều 592 " + B + ").",
     "blds_2015:d592:k1:a")
 
 # Tài sản, thời hạn hưởng cấp dưỡng, kích thích, quản lý người và vật gây hại.
@@ -144,8 +144,8 @@ add("tinh_huong", "Tôi tổ chức trái phép đua xe máy và còn tổ chứ
 add("quy_tac", "Đua xe trái phép chưa gây thiệt hại có thể bị xét tội đua xe trái phép theo Điều 266 khi nào?",
     "Có thể bị xem xét nếu người đua đã bị xử phạt vi phạm hành chính về hành vi quy định tại Điều 266 hoặc Điều 265, hoặc đã bị kết án về một trong các tội này, chưa được xóa án tích mà còn vi phạm (khoản 1 Điều 266 " + H + "). Không thể kết luận chỉ từ việc có cuộc đua.",
     "vbhn_135_2025_blhs:d266:k1")
-add("tinh_huong", "Người trực tiếp đua xe trái phép làm hỏng tài sản trị giá từ 50.000.000 đồng đến dưới 100.000.000 đồng, không có tình tiết nặng hơn. Khung nào áp dụng?",
-    "Nếu đủ điều kiện của điểm b khoản 1 Điều 266 và không có tình tiết thuộc khung nặng hơn, khung cơ bản là phạt tiền từ 10.000.000 đồng đến 50.000.000 đồng, cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 06 tháng đến 03 năm (điểm b khoản 1 Điều 266 " + H + ").",
+add("tinh_huong", "Người trực tiếp đua xe trái phép gây thiệt hại về tài sản của người khác từ 50.000.000 đồng đến dưới 100.000.000 đồng, không có tình tiết nặng hơn. Khung nào áp dụng?",
+    "Nếu chứng minh được mức thiệt hại thực tế đó và không có tình tiết thuộc khung nặng hơn, khung cơ bản là phạt tiền từ 10.000.000 đồng đến 50.000.000 đồng, cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 06 tháng đến 03 năm (điểm b khoản 1 Điều 266 " + H + ").",
     "vbhn_135_2025_blhs:d266:k1:b", "vbhn_135_2025_blhs:d266:k1")
 
 
