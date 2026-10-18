@@ -7,7 +7,7 @@ Chạy lại toàn bộ (Windows cần `PYTHONIOENCODING=utf-8` để in tiếng
 
 ```bash
 export PYTHONIOENCODING=utf-8
-for f in scripts/g5_drafts/g5_{xp0?,gp0?,dk0?,np0?,dkiem0?,lephi01,tdbb01,luat0?,tntc01,hd01,tt0?}.py; do py -3.13 "$f"; done
+for f in scripts/g5_drafts/g5_{xp0?,gp0?,dk0?,np0?,dkiem0?,lephi01,tdbb01,luat0?,tntc01,hd0?,tt0?,tdbh02,tc02}.py; do py -3.13 "$f"; done
 py -3.13 scripts/g5_drafts/g5_bb02_cx.py      # C1: biển báo và vạch kẻ đường, QCVN 41:2024
 py -3.13 scripts/g5_drafts/g5_lu03_cx.py      # C2: Luật Đường bộ 35 và Luật Trật tự, an toàn giao thông đường bộ 36
 py -3.13 scripts/g5_drafts/g5_xp08_cx.py      # C3: tình huống nhiều hành vi, NĐ 168 và nguyên tắc XLVPHC Điều 3

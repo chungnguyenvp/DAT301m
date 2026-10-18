@@ -152,6 +152,13 @@ Mỗi đợt:
 
 - [x] Rà rò rỉ sau C5: điểm TF-IDF của `np-1026` dao động xuống dưới ngưỡng khi kho tăng. Vì đã xác định câu này gần `TH107`, bỏ hẳn khỏi đầu ra C4, không viết lại để lách lọc. C4 còn 34 mẫu nháp, giữ các key còn lại ổn định; không sửa bộ kiểm hay mẫu cũ. Các số đếm từng đợt ở trên là tại thời điểm kiểm, số cuối xem bản tổng kết.
 
+- [x] Rà C1–C5 (Claude, 2026-10-18): đọc 52 mẫu ngẫu nhiên kèm nguyên văn căn cứ, không thấy sai ý luật. Commit nốt 3 chỗ Codex sửa dở ở C5. Sửa C3 lặp khuôn: 50/50 đáp án cùng đoạn trích Điều 3 và 50/50 câu hỏi có "không gây tai nạn"; nay câu nguyên tắc ở 17 mẫu với 4 cách viết (căn cứ Điều 3 chỉ đi kèm khi có câu), bỏ cụm "không gây tai nạn" ở 27 câu hỏi. `lu-1007` thêm khoản cha `luat_35_2024:d18:k1`.
+- [x] Đợt C6 (Claude): Hướng dẫn, NĐ 158/2024 Điều 4, 5, 8–10, 12, 13, 15, 18, 24, 25, 28 (tuyến cố định, xe buýt, vận tải hàng hóa, xe bốn bánh có gắn động cơ, tập huấn nghiệp vụ, niên hạn, hợp đồng điện tử, vận tải nội bộ, liên vận). 43 mẫu (`hd-0048`–`hd-0090`), lần đầu 1 lỗi (hd-0069 trích Luật 36 mà chưa có Luật 36 trong căn cứ, đã thêm); loại 1 (`hd-0075` gần SD018).
+- [x] Đợt C7 (Claude): Tốc độ TT 38/2024 Điều 3, 5, 8–11; Bảo hiểm NĐ 67/2023 Điều 3–5, 10, 12, 13; Lệ phí NĐ 10/2022 Điều 3, 6, 7, 10 và TT 155/2025 Điều 4, 5. 34 mẫu, 0 lỗi; loại 1 (`td-0024` gần TH133).
+- [x] Đợt C8 (Claude): GPLX TT 108/2026 Điều 3, 18, 28, 30, 38 và Luật 36 Điều 61; Đăng kiểm TT 30/2026 Điều 28, 29 và Luật 36 Điều 41, 42. 20 mẫu, 0 lỗi, giữ 20.
+- [x] Đợt C9 (Claude): 20 mẫu `tu_choi` (`tc-0061`–`tc-0080`): 8 câu hỏi theo văn bản đã hết hiệu lực (dạng NP018–NP021 của eval: NĐ 123/2021, TT 24/2023, Luật GTĐB 2008, TT 12/2017, NĐ 100/2019, NĐ 46/2016, TT 58/2020, BLHS 1999), 7 câu ngoài phạm vi, 5 đề nghị giúp vi phạm. 0 lỗi, giữ 20.
+- **Tổng kết G5 Task 3 (2026-10-18):** 1.570 soạn, giữ 1.497 (train 1.312, dev 185), loại 73 vì gần eval, 0 lỗi. Theo loại: quy tắc 522, mức phạt 347, tình huống 254, thủ tục 180 (12%), đời thường 114, từ chối 80. Theo chủ đề: Xử phạt 478, Luật lõi 156, GPLX 152, Đăng ký xe 130, Biển báo 102, Nộp phạt 96, Hướng dẫn 86, Từ chối 80, Đăng kiểm 65, Tai nạn 63, Lệ phí 33, Bảo hiểm 31, Tốc độ 25. Chạy lại 35 script (kể cả `_cx` và `g5_fix_owner.py`) cho ra file nháp giống từng byte; đã ghi `train.jsonl`, `dev.jsonl`, `MANIFEST.json`; `pytest` 404 passed, 4 skipped.
+
 ### Task 4: Gắn ngữ cảnh (sau G3)
 - Khoảng 90% mẫu có ngữ cảnh: top-5 của retriever tại `ngay_hoi`. **Đảm bảo có đoạn chứa căn cứ:** nếu retriever bỏ sót thì thay đoạn cuối bằng đoạn đúng, để mô hình học trả lời từ ngữ cảnh.
 - Khoảng 10% mẫu không có ngữ cảnh, để mô hình quen cấu hình C.
