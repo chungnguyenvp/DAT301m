@@ -18,6 +18,13 @@ def old(doc, now):
             f"đó. Vấn đề này hiện được quy định tại {now}; bạn có thể hỏi lại theo quy định đang có hiệu lực.")
 
 
+def old_road(doc):
+    """Văn bản điều chỉnh nhiều lĩnh vực: chỉ phần xử phạt giao thông đường bộ đã được thay bằng NĐ 168/2024."""
+    return (f"Các quy định xử phạt vi phạm trong lĩnh vực giao thông đường bộ của {doc} không còn được áp dụng và không có "
+            f"trong tài liệu tôi dùng, nên tôi không nêu mức phạt theo văn bản đó. Hiện nay việc xử phạt được quy định tại "
+            f"Nghị định 168/2024/NĐ-CP; bạn có thể hỏi lại theo quy định đang có hiệu lực.")
+
+
 def add(q, a):
     S.append({"key": f"tc-{START + len(S):04d}", "chu_de": "Từ chối", "loai": "tu_choi", "cau_hoi": q, "dap_an": a,
               "can_cu": []})
@@ -25,8 +32,7 @@ def add(q, a):
 
 # ===== Hỏi theo văn bản đã hết hiệu lực
 add("Theo Nghị định 123/2021/NĐ-CP, ô tô chạy quá tốc độ 15 km/h bị phạt bao nhiêu?",
-    old("Nghị định 123/2021/NĐ-CP", "Nghị định 168/2024/NĐ-CP về xử phạt vi phạm hành chính trong lĩnh vực trật tự, an toàn "
-        "giao thông đường bộ"))
+    old_road("Nghị định 123/2021/NĐ-CP"))
 add("Theo Thông tư 24/2023/TT-BCA, hồ sơ sang tên xe máy gồm những gì?",
     old("Thông tư 24/2023/TT-BCA", "Thông tư 79/2024/TT-BCA về cấp, thu hồi chứng nhận đăng ký xe, biển số xe"))
 add("Luật Giao thông đường bộ năm 2008 cho xe máy chở tối đa mấy người?",
@@ -35,7 +41,7 @@ add("Theo Thông tư 12/2017/TT-BGTVT, bằng lái B2 có thời hạn bao lâu?
     old("Thông tư 12/2017/TT-BGTVT", "Luật Trật tự, an toàn giao thông đường bộ năm 2024 và Thông tư 108/2026/TT-BCA (hạng B2 "
         "không còn trong hệ thống hạng giấy phép lái xe hiện hành)"))
 add("Nghị định 100/2019/NĐ-CP phạt lái ô tô không thắt dây an toàn bao nhiêu tiền?",
-    old("Nghị định 100/2019/NĐ-CP", "Nghị định 168/2024/NĐ-CP"))
+    old_road("Nghị định 100/2019/NĐ-CP"))
 add("nghị định 46/2016 thì đi xe máy có nồng độ cồn phạt sao",
     old("Nghị định 46/2016/NĐ-CP", "Nghị định 168/2024/NĐ-CP"))
 add("Theo Thông tư 58/2020/TT-BCA, giấy đăng ký xe tạm thời có giá trị bao lâu?",

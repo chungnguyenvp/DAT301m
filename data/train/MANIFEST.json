@@ -1,12 +1,12 @@
 {
  "files": {
   "data/train/train.jsonl": {
-   "so_mau": 1312,
-   "sha256": "499799f3fec446b0135e59370bc145efd79b72958901a53fc91cfe061e961eb6"
+   "so_mau": 1375,
+   "sha256": "a8da4e5fa7d70956350bfad4519395673df36f1d688149884feb30acaba7b930"
   },
   "data/train/dev.jsonl": {
-   "so_mau": 185,
-   "sha256": "3313e18bc4035ec75cd9c9dddcd27132eea0d33374a2b13784bc92adca3d604c"
+   "so_mau": 192,
+   "sha256": "266250c88b671f40a3f3c3a1794e0c106acff2b8d4e2b3450b416377454e95d3"
   }
  },
  "drafts": {
@@ -36,7 +36,8 @@
   "data/train/drafts/thu_tuc_khac_01.jsonl": "570d0a6d08068102ba58e175f5182c9e4afb05c9d32dc731643f99688c169832",
   "data/train/drafts/toc_do_bao_hiem_02.jsonl": "ffb9f53a00a6bb5b10bf6ece42c434463121f395ba7c9eae7d13412210c252d7",
   "data/train/drafts/toc_do_bien_bao_01.jsonl": "79822bd8b348b0cabc20ce8ddfc3fda1ac80ba6f4573a7bb1306c575764c62b2",
-  "data/train/drafts/tu_choi_02.jsonl": "6bea913134f12620de5bdafbb03fdfb3973e55716ae832aca52e47dc05c6a72d",
+  "data/train/drafts/tu_choi_02.jsonl": "e3bc3f8fa57e0e2b4288d917455a98fb75a21a7c79d1280d8b96fe28efcfa0e0",
+  "data/train/drafts/tu_choi_03.jsonl": "4defd615f7035c2f4df1b86ab1395ef78e6411a6be2f901ec48b62d89da3f83b",
   "data/train/drafts/xu_phat_01.jsonl": "1e9a847016ea760734b9de5a0279e508b65b8718d5181d6a9668be2f92782efa",
   "data/train/drafts/xu_phat_02.jsonl": "d800b8ac20588c70b3292e1b5161714e13f8c42d2197e24878ed95021352e81d",
   "data/train/drafts/xu_phat_03.jsonl": "d5e37da8615682406f38662df6480b7a022a8f10cff810ac961575ca2095a33b",
@@ -52,122 +53,122 @@
   {
    "key": "dkm-0008",
    "eval": "TH028",
-   "cosine": 0.9328
+   "cosine": 0.9323
   },
   {
    "key": "dkm-0012",
    "eval": "TH026",
-   "cosine": 0.9282
+   "cosine": 0.9296
   },
   {
    "key": "dkm-0026",
    "eval": "TH030",
-   "cosine": 0.7283
+   "cosine": 0.7275
   },
   {
    "key": "dkm-0030",
    "eval": "TH029",
-   "cosine": 0.621
+   "cosine": 0.6199
   },
   {
    "key": "dkm-0034",
    "eval": "TH031",
-   "cosine": 0.7785
+   "cosine": 0.7776
   },
   {
    "key": "dkm-0035",
    "eval": "TH033",
-   "cosine": 0.6589
+   "cosine": 0.6583
   },
   {
    "key": "dkm-0036",
    "eval": "TH033",
-   "cosine": 0.6898
+   "cosine": 0.6878
   },
   {
    "key": "dk-0002",
    "eval": "TH047",
-   "cosine": 0.6313
+   "cosine": 0.6299
   },
   {
    "key": "dk-0004",
    "eval": "TH048",
-   "cosine": 0.9046
+   "cosine": 0.9066
   },
   {
    "key": "dk-0017",
    "eval": "TH040",
-   "cosine": 0.7773
+   "cosine": 0.7772
   },
   {
    "key": "dk-0018",
    "eval": "TH034",
-   "cosine": 0.6136
+   "cosine": 0.6132
   },
   {
    "key": "dk-0020",
    "eval": "SD010",
-   "cosine": 0.7461
+   "cosine": 0.7455
   },
   {
    "key": "dk-0031",
    "eval": "TH036",
-   "cosine": 0.6601
+   "cosine": 0.6588
   },
   {
    "key": "dk-0037",
    "eval": "TH035",
-   "cosine": 0.9409
+   "cosine": 0.9405
   },
   {
    "key": "dk-0038",
    "eval": "TH043",
-   "cosine": 0.6534
+   "cosine": 0.6541
   },
   {
    "key": "dk-0045",
    "eval": "TH039",
-   "cosine": 0.6547
+   "cosine": 0.6527
   },
   {
    "key": "dk-0060",
    "eval": "TH046",
-   "cosine": 0.8176
+   "cosine": 0.8171
   },
   {
    "key": "dk-0122",
    "eval": "SD013",
-   "cosine": 0.7282
+   "cosine": 0.7283
   },
   {
    "key": "gp-0021",
    "eval": "TH059",
-   "cosine": 0.8485
+   "cosine": 0.848
   },
   {
    "key": "gp-0022",
    "eval": "TH100",
-   "cosine": 0.7517
+   "cosine": 0.7515
   },
   {
    "key": "gp-0029",
    "eval": "BT024",
-   "cosine": 0.6494
+   "cosine": 0.6496
   },
   {
    "key": "gp-0047",
    "eval": "BT033",
-   "cosine": 0.651
+   "cosine": 0.6509
   },
   {
    "key": "gp-0048",
    "eval": "TH064",
-   "cosine": 0.8039
+   "cosine": 0.8027
   },
   {
    "key": "gp-0051",
    "eval": "TH056",
-   "cosine": 0.9182
+   "cosine": 0.9178
   },
   {
    "key": "gp-0058",
@@ -177,127 +178,127 @@
   {
    "key": "gp-0070",
    "eval": "TH052",
-   "cosine": 0.7849
+   "cosine": 0.7861
   },
   {
    "key": "gp-0076",
    "eval": "TH054",
-   "cosine": 0.7099
+   "cosine": 0.709
   },
   {
    "key": "gp-0099",
    "eval": "TH057",
-   "cosine": 0.8693
+   "cosine": 0.8688
   },
   {
    "key": "gp-0116",
    "eval": "TH058",
-   "cosine": 0.74
+   "cosine": 0.7395
   },
   {
    "key": "gp-0137",
    "eval": "SD023",
-   "cosine": 0.7516
+   "cosine": 0.7518
   },
   {
    "key": "gp-0145",
    "eval": "TH053",
-   "cosine": 0.747
+   "cosine": 0.7481
   },
   {
    "key": "gp-0155",
    "eval": "SD021",
-   "cosine": 0.66
+   "cosine": 0.6603
   },
   {
    "key": "hd-0033",
    "eval": "TH067",
-   "cosine": 0.662
+   "cosine": 0.6623
   },
   {
    "key": "hd-0075",
    "eval": "SD018",
-   "cosine": 0.8376
+   "cosine": 0.8374
   },
   {
    "key": "lp-0001",
    "eval": "TH080",
-   "cosine": 0.9417
+   "cosine": 0.9402
   },
   {
    "key": "lp-0003",
    "eval": "TH081",
-   "cosine": 0.6596
+   "cosine": 0.6591
   },
   {
    "key": "lp-0005",
    "eval": "BT047",
-   "cosine": 0.6157
+   "cosine": 0.6201
   },
   {
    "key": "lp-0018",
    "eval": "TH083",
-   "cosine": 0.8411
+   "cosine": 0.8405
   },
   {
    "key": "lp-0019",
    "eval": "TH088",
-   "cosine": 0.6627
+   "cosine": 0.6613
   },
   {
    "key": "lp-0023",
    "eval": "TH084",
-   "cosine": 0.6457
+   "cosine": 0.6455
   },
   {
    "key": "bh-0006",
    "eval": "TH003",
-   "cosine": 0.7382
+   "cosine": 0.7376
   },
   {
    "key": "bh-0010",
    "eval": "TH011",
-   "cosine": 0.639
+   "cosine": 0.6407
   },
   {
    "key": "bh-0014",
    "eval": "TH002",
-   "cosine": 0.8085
+   "cosine": 0.808
   },
   {
    "key": "bh-0020",
    "eval": "TH006",
-   "cosine": 0.626
+   "cosine": 0.6259
   },
   {
    "key": "bh-0021",
    "eval": "TH004",
-   "cosine": 0.9126
+   "cosine": 0.9123
   },
   {
    "key": "lu-0075",
    "eval": "SD004",
-   "cosine": 0.9227
+   "cosine": 0.9229
   },
   {
    "key": "lu-1011",
    "eval": "TH103",
-   "cosine": 0.7179
+   "cosine": 0.7188
   },
   {
    "key": "np-0003",
    "eval": "TH114",
-   "cosine": 0.878
+   "cosine": 0.8777
   },
   {
    "key": "np-0014",
    "eval": "TH109",
-   "cosine": 0.7207
+   "cosine": 0.7185
   },
   {
    "key": "np-0032",
    "eval": "TH112",
-   "cosine": 0.7708
+   "cosine": 0.7722
   },
   {
    "key": "hd-0038",
@@ -307,112 +308,112 @@
   {
    "key": "hd-0041",
    "eval": "SD032",
-   "cosine": 0.7695
+   "cosine": 0.773
   },
   {
    "key": "tn-0001",
    "eval": "TH118",
-   "cosine": 0.6202
+   "cosine": 0.6208
   },
   {
    "key": "tn-0002",
    "eval": "TH119",
-   "cosine": 0.6092
+   "cosine": 0.6081
   },
   {
    "key": "tn-0012",
    "eval": "TH121",
-   "cosine": 0.6138
+   "cosine": 0.6119
   },
   {
    "key": "tn-0013",
    "eval": "TH122",
-   "cosine": 0.8736
+   "cosine": 0.8724
   },
   {
    "key": "tn-0020",
    "eval": "TH126",
-   "cosine": 0.6408
+   "cosine": 0.6436
   },
   {
    "key": "dk-0139",
    "eval": "TH045",
-   "cosine": 0.7888
+   "cosine": 0.7885
   },
   {
    "key": "td-0024",
    "eval": "TH133",
-   "cosine": 0.7023
+   "cosine": 0.7018
   },
   {
    "key": "td-0009",
    "eval": "TH127",
-   "cosine": 0.9472
+   "cosine": 0.9471
   },
   {
    "key": "td-0010",
    "eval": "TH130",
-   "cosine": 0.6751
+   "cosine": 0.6727
   },
   {
    "key": "bb-0005",
    "eval": "TH024",
-   "cosine": 0.7841
+   "cosine": 0.7843
   },
   {
    "key": "bb-0013",
    "eval": "TH021",
-   "cosine": 0.8881
+   "cosine": 0.8889
   },
   {
    "key": "bb-0015",
    "eval": "TH019",
-   "cosine": 0.7434
+   "cosine": 0.7437
   },
   {
    "key": "bb-0017",
    "eval": "TH016",
-   "cosine": 0.8302
+   "cosine": 0.8321
   },
   {
    "key": "xp-0009",
    "eval": "TH135",
-   "cosine": 0.7319
+   "cosine": 0.7353
   },
   {
    "key": "xp-0031",
    "eval": "TH141",
-   "cosine": 0.7099
+   "cosine": 0.7108
   },
   {
    "key": "xp-0042",
    "eval": "TH136",
-   "cosine": 0.938
+   "cosine": 0.9375
   },
   {
    "key": "xp-0057",
    "eval": "TH144",
-   "cosine": 0.7945
+   "cosine": 0.7941
   },
   {
    "key": "xp-0060",
    "eval": "TH143",
-   "cosine": 0.8125
+   "cosine": 0.812
   },
   {
    "key": "xp-0108",
    "eval": "TH142",
-   "cosine": 0.6113
+   "cosine": 0.6119
   },
   {
    "key": "xp-0120",
    "eval": "TH138",
-   "cosine": 0.9209
+   "cosine": 0.921
   },
   {
    "key": "xp-0359",
    "eval": "TH141",
-   "cosine": 0.8575
+   "cosine": 0.8569
   }
  ],
  "eval_sha256": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
