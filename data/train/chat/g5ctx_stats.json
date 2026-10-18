@@ -1,0 +1,246 @@
+{
+ "cau_hinh": {
+  "seed": 42,
+  "ngay_hoi": "2026-10-01",
+  "no_ctx_rate": 0.1,
+  "top_k": 5,
+  "alt_k": 10,
+  "boost_loai": [
+   "thu_tuc"
+  ],
+  "boost_chu_de": [
+   "Bảo hiểm",
+   "Hướng dẫn",
+   "Lệ phí",
+   "Tốc độ"
+  ],
+  "tham_so_g3": {
+   "bm25_k": 50,
+   "dense_k": 50,
+   "rrf_k": 60,
+   "dung_bm25": true,
+   "dung_vector": true,
+   "loc_hieu_luc": true,
+   "rerank_k": 20,
+   "top_k": 5
+  },
+  "bge_m3": [
+   "BAAI/bge-m3",
+   "5617a9f61b028005a4858fdac845db406aefb181"
+  ],
+  "reranker": [
+   "BAAI/bge-reranker-v2-m3",
+   "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+  ],
+  "gioi_han_thu": 0
+ },
+ "moi_truong": {
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti"
+ },
+ "giay_tim_kiem": 1125.0,
+ "train": {
+  "so_mau": 1662,
+  "theo_dang": {
+   "co_ngu_canh": 1406,
+   "khong_ngu_canh": 134,
+   "tu_choi": 122
+  },
+  "theo_ban": {
+   "0": 1375,
+   "1": 287
+  },
+  "theo_loai": {
+   "tinh_huong": 235,
+   "doi_thuong": 107,
+   "quy_tac": 563,
+   "thu_tuc": 316,
+   "muc_phat": 307,
+   "tu_choi": 134
+  },
+  "theo_chu_de": {
+   "Biển báo": 101,
+   "Đăng kiểm": 73,
+   "Đăng ký xe": 165,
+   "GPLX": 181,
+   "Xử phạt": 407,
+   "Nộp phạt, giữ xe": 87,
+   "Hướng dẫn": 144,
+   "Lệ phí": 52,
+   "Bảo hiểm": 60,
+   "Luật lõi": 148,
+   "Tai nạn": 62,
+   "Từ chối": 134,
+   "Tốc độ": 48
+  },
+  "retriever_tren_mau_goc": {
+   "n": 1241,
+   "tim_du": 0.669,
+   "tim_mot_phan_tro_len": 0.923,
+   "phai_chen": 361,
+   "theo_loai": {
+    "doi_thuong": {
+     "n": 96,
+     "tim_du": 0.604,
+     "tim_mot_phan_tro_len": 0.823
+    },
+    "muc_phat": {
+     "n": 297,
+     "tim_du": 0.438,
+     "tim_mot_phan_tro_len": 0.963
+    },
+    "quy_tac": {
+     "n": 467,
+     "tim_du": 0.829,
+     "tim_mot_phan_tro_len": 0.916
+    },
+    "thu_tuc": {
+     "n": 158,
+     "tim_du": 0.759,
+     "tim_mot_phan_tro_len": 0.937
+    },
+    "tinh_huong": {
+     "n": 223,
+     "tim_du": 0.605,
+     "tim_mot_phan_tro_len": 0.919
+    }
+   }
+  },
+  "token": {
+   "tb": 1762,
+   "p50": 1768,
+   "p95": 2864,
+   "max": 3724,
+   "vuot_gioi_han": 0,
+   "mau_bo_bot_doan_vi_dai": 2
+  }
+ },
+ "dev": {
+  "so_mau": 192,
+  "theo_dang": {
+   "co_ngu_canh": 161,
+   "khong_ngu_canh": 17,
+   "tu_choi": 14
+  },
+  "theo_ban": {
+   "0": 192
+  },
+  "theo_loai": {
+   "quy_tac": 55,
+   "doi_thuong": 18,
+   "tinh_huong": 31,
+   "thu_tuc": 22,
+   "tu_choi": 16,
+   "muc_phat": 50
+  },
+  "theo_chu_de": {
+   "Biển báo": 1,
+   "Đăng kiểm": 13,
+   "Đăng ký xe": 16,
+   "GPLX": 12,
+   "Hướng dẫn": 14,
+   "Lệ phí": 7,
+   "Luật lõi": 11,
+   "Nộp phạt, giữ xe": 22,
+   "Tai nạn": 5,
+   "Từ chối": 16,
+   "Bảo hiểm": 1,
+   "Tốc độ": 1,
+   "Xử phạt": 73
+  },
+  "retriever_tren_mau_goc": {
+   "n": 176,
+   "tim_du": 0.653,
+   "tim_mot_phan_tro_len": 0.898,
+   "phai_chen": 59,
+   "theo_loai": {
+    "doi_thuong": {
+     "n": 18,
+     "tim_du": 0.389,
+     "tim_mot_phan_tro_len": 0.556
+    },
+    "muc_phat": {
+     "n": 50,
+     "tim_du": 0.52,
+     "tim_mot_phan_tro_len": 1.0
+    },
+    "quy_tac": {
+     "n": 55,
+     "tim_du": 0.855,
+     "tim_mot_phan_tro_len": 0.909
+    },
+    "thu_tuc": {
+     "n": 22,
+     "tim_du": 0.818,
+     "tim_mot_phan_tro_len": 0.955
+    },
+    "tinh_huong": {
+     "n": 31,
+     "tim_du": 0.548,
+     "tim_mot_phan_tro_len": 0.871
+    }
+   }
+  },
+  "token": {
+   "tb": 1758,
+   "p50": 1863,
+   "p95": 2815,
+   "max": 3365,
+   "vuot_gioi_han": 0,
+   "mau_bo_bot_doan_vi_dai": 0
+  }
+ },
+ "can_cu_khong_co_doan": [
+  {
+   "key": "gp-0178",
+   "can_cu_khong_co_doan": [
+    "tt_108_2026_bca:d38@2026-07-01"
+   ]
+  }
+ ],
+ "goi_du_lieu": {
+  "mo_ta": "Gói cho notebook G5 Task 4 (gắn ngữ cảnh RAG cho dữ liệu train, cách C). Không có bộ eval.",
+  "file": {
+   "src/lawproc/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "src/lawproc/amendments.py": "b9430c85466b849788adb8e0fca862d3d74cf6482f03dd4bc359e83ab3a6a858",
+   "src/lawproc/annotate.py": "066e18f945e10f374f76a4327b161f7c4622bf793fa2bf17a7042967c2f5b6fb",
+   "src/lawproc/apply.py": "ca73eb508f9293b69252f99c3f2d8babd36f8daf398a23fe84e5469b856b277f",
+   "src/lawproc/assemble.py": "6f653d5863baa77b3eae352851ded5e9884ee306c78599e2719020170882df3e",
+   "src/lawproc/clean.py": "3838bc545b67989ff2cc684d5788a32aa9733fab49f9b8865651d78af13c0582",
+   "src/lawproc/config.py": "de1c0e6973c942ea087318b89ad1edaac1b42748fe98498e4b0e75a9cb6b596a",
+   "src/lawproc/convert.py": "6f77a64f429a5903c273e1f7a56202d8361ad66b874778e64597366cea23ff31",
+   "src/lawproc/corrections.py": "1c2b69489ad1f1af6baf588895879c84e06e3819076448a537643761566cda1d",
+   "src/lawproc/eda.py": "d9db970180144ca59b3c939fdc92fe8bc88a5b68308598a3e3aceb5b23fc9906",
+   "src/lawproc/effective.py": "fa9533cc513ef51560605f24acc8c424b781e7729c0da41d1f594a495b0847ac",
+   "src/lawproc/evalset.py": "a55e49cb39e4eaa9d60427e481cb789eec122235aa60a6814e03898f01621780",
+   "src/lawproc/extract.py": "1728d93a6750c3c10f59aa13c8de48c06a8281cb3430d1fc409699a32a003465",
+   "src/lawproc/gplx.py": "ea9deed7b112339fe7b7c518fdc334342cc3666b138abe66e925e2ed1d4737d8",
+   "src/lawproc/quality.py": "2ac268f58ace1ad8c154c5623ed65ebbeab039a1733246442867ae296592de22",
+   "src/lawproc/status.py": "33ceb62b78f5ffdb48835e333b62bb2cfae9a75b074401035109b77f1523fed8",
+   "src/lawproc/structure.py": "ecfd71297403dc55e2bf3dbe14e527b116c47d99b8068650451a9e78789ed7ec",
+   "src/lawproc/trainset.py": "c22af32c42a498dff82de1001138315fef1bde6776e134a0aa9bf8b01971ce47",
+   "src/lawproc/validity.py": "5ca32ad85f924c2a10a41223fef6bc2b0ec0af86287e20c5c12a53f18c52986a",
+   "src/lawproc/verify.py": "9086ba6c5f6a8bbfadf231552867492189dab2a47e8c2ec09a95e6396df65e30",
+   "src/rag/__init__.py": "af31508ff116c143e889efb4eedbcd8ff479c1863b17fe7e497f38d6836f4aa0",
+   "src/rag/bm25.py": "672c1700adbfdb2b5075ceafeecc519117ebac872f062f7316eff676b20e3656",
+   "src/rag/chunking.py": "a47ac4277dd9626a90cf7d6e222a8a4d59f5b0df4925a9da4b2127a217ae824d",
+   "src/rag/context.py": "a8f7437b024dff5bfcc7922441a278d85151535df4881abcd4c90f18f4f544db",
+   "src/rag/dense.py": "f26b92692fad05e6281b34df7fbb9b4f9979fe3d620b52e0a1d8e4d81b6f1a11",
+   "src/rag/retrieve.py": "19cdb2bc2722ced1d921c6434e6db4dcff2009ed6f2b685280de3994c222725a",
+   "src/rag/score.py": "8a8f11785590599da34c852e452e16c895be9f4f58ac08947104f6f15b6f6581",
+   "data/manifest.csv": "0fe00c01f41b5f2551cacdda6913b847eddec287044b32d4457f9a07774e686c",
+   "data/rag/MANIFEST.json": "1f2f1f4f38c6901c8e1590bf6475be2a171199ddaad023f61a5eee50f2d1b6d0",
+   "data/rag/chunks_khoan.jsonl": "1695ae80602a00d5e11fd667c9a6e72ad16c44ddf89e8035bc992cc97a4365bf",
+   "data/rag/index/khoan/bm25.pkl": "9e1f9a47a310321cac6687c4bec52a93b53358f98b7590919d28a54617c1f669",
+   "data/rag/index/khoan/dense.faiss": "2404a14b31440ae10c2e11b1bb9ca7068b1145d1d56437153c1ab88433ac8bd1",
+   "data/rag/index/khoan/dense_ids.json": "29f0cc691dc652a99589f71825f1470fbc083a925b59ff36758b84989c1b47ad",
+   "data/rag/index/khoan/meta.json": "641fc6f84359d5fdfdaf422e33906310a82ba41648a9ecf7bc047332968fb980",
+   "reports/retrieval/params.json": "b1d3b7b97a25d2599d6a278348c9bfb759f4246174d9d471109104a0d115f6a4",
+   "data/train/train.jsonl": "8d8bebea1240adee5d4e97efeccd7cc1e97bfb86f3ba636a41accb0585e9c295",
+   "data/train/dev.jsonl": "994fe807f5dac6124388c7bdba485170018242516b593d7b741c8db69bd56bbc",
+   "data/train/MANIFEST.json": "a811d3251393e1b609e085b95349d9481d8860ccf91b4ac0dec38f1503e1065c",
+   "tools/tokenizers/qwen3.5-9b/tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+  }
+ }
+}

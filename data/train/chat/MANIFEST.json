@@ -1,0 +1,64 @@
+{
+ "mo_ta": "Dữ liệu hội thoại cho G6 (G5 Task 4, cách C), chốt từ kết quả notebook 04_g5_context.",
+ "moi_truong_chay": {
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti"
+ },
+ "giay_tim_kiem": 1125.0,
+ "dau_vao": {
+  "train_chat.jsonl": "0308a1bc3ba85b542419ff588ccd6471adb8536976b5c1ab8f95c1572718da85",
+  "dev_chat.jsonl": "1bd925c26cd90f8636a155b948586e3b76691ab811c6b3e1395032e9ceef50e7"
+ },
+ "files": {
+  "data/train/chat/train_chat.jsonl": {
+   "so_mau": 1662,
+   "theo_dang": {
+    "co_ngu_canh": 1404,
+    "khong_ngu_canh": 136,
+    "tu_choi": 122
+   },
+   "theo_ban": {
+    "0": 1375,
+    "1": 287
+   },
+   "token_max": 3724,
+   "sha256": "ac761a7899057b5d663df99b08c1ab0c69158786b5491c85c63340ff27bfcc7a"
+  },
+  "data/train/chat/dev_chat.jsonl": {
+   "so_mau": 192,
+   "theo_dang": {
+    "co_ngu_canh": 161,
+    "khong_ngu_canh": 17,
+    "tu_choi": 14
+   },
+   "theo_ban": {
+    "0": 192
+   },
+   "token_max": 3365,
+   "sha256": "1bd925c26cd90f8636a155b948586e3b76691ab811c6b3e1395032e9ceef50e7"
+  }
+ },
+ "chuyen_khong_ngu_canh": [
+  {
+   "tap": "train",
+   "key": "xp-0286",
+   "ban": 0,
+   "ly_do": "căn cứ vượt 5 ô ngữ cảnh",
+   "can_cu_ngoai_ngu_canh": [
+    "nd_168_2024:d47:k3:a@2025-01-01"
+   ]
+  },
+  {
+   "tap": "train",
+   "key": "xp-1050",
+   "ban": 0,
+   "ly_do": "căn cứ vượt 5 ô ngữ cảnh",
+   "can_cu_ngoai_ngu_canh": [
+    "nd_168_2024:d18:k4:c@2025-01-01",
+    "nd_168_2024:d18:k4@2025-01-01",
+    "nd_168_2024:d50:k1:b@2025-01-01"
+   ]
+  }
+ ]
+}

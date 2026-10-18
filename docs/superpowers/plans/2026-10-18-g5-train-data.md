@@ -76,7 +76,8 @@ Mỗi đoạn nguồn có 1–3 cặp, khác loại nhau. Câu `doi_thuong` vẫ
 | `src/lawproc/trainset.py` | Chọn nguồn, chia theo Điều, đổi mẫu sang dạng câu eval để kiểm, lọc gần trùng |
 | `tests/test_trainset.py` | Test |
 | `scripts/build_trainset.py` | Ghép nháp, kiểm, lọc, chia, ghi `data/train/train.jsonl`, `dev.jsonl`, `MANIFEST.json`; `--check` chỉ kiểm |
-| `scripts/attach_context.py` (sau G3) | Gắn ngữ cảnh cho mẫu, ghi `data/train/train_with_context.jsonl` |
+| `notebooks/04_g5_context.py` (sau G3) | Gắn ngữ cảnh cho mẫu bằng retriever G3 trên GPU (Kaggle hoặc máy thuê); `scripts/build_g5ctx_bundle.py` đóng gói dữ liệu và xuất notebook |
+| `scripts/finalize_g5ctx.py` | Kiểm mã băm gói, xử lý mẫu có căn cứ vượt 5 ô, ghi `data/train/chat/{train,dev}_chat.jsonl` và `MANIFEST.json` |
 | `data/train/drafts/*.jsonl` | Nháp theo đợt |
 | `data/train/README.md` | Mô tả bộ dữ liệu, cách tái lập, hạn chế |
 
@@ -166,7 +167,15 @@ Mỗi đợt:
 - Khoảng 10% mẫu không có ngữ cảnh, để mô hình quen cấu hình C.
 - Một phần nhỏ mẫu từ chối có ngữ cảnh không liên quan, để mô hình học nói "không có căn cứ".
 - Chọn tỷ lệ bằng seed cố định, ghi vào manifest.
+- [x] **Kết quả (2026-10-19), cách C.** Retriever G3 đầy đủ (BM25 50 + bge-m3 50 → RRF → bge-reranker giữ 5 trong 20, lọc hiệu lực tại 2026-10-01), chạy `notebooks/04_g5_context.py` trên máy thuê RTX 5060 Ti (torch 2.14.1+cu130), tìm 1.567 câu trong 1.125 giây. Mã băm của 39 file trong gói khớp repo.
+  - Train 1.662 dòng (1.375 gốc và 287 bản nhân đôi cho thủ tục và các chủ đề Hướng dẫn, Bảo hiểm, Lệ phí, Tốc độ; bản nhân đôi lấy đoạn nhiễu ở hạng 6–10). Dev 192 dòng, không nhân đôi.
+  - Theo dạng, sau khi chốt: train có ngữ cảnh 1.404, không ngữ cảnh 136, từ chối 122; dev 161 / 17 / 14.
+  - Retriever trên 1.241 mẫu gốc của train (không tính từ chối): tìm đủ mọi đoạn căn cứ 66,9%, tìm được ít nhất một đoạn 92,3% (gần any@5 0,93 của G3), phải chèn 361 mẫu. Theo loại, tìm đủ: quy tắc 83%, thủ tục 76%, tình huống 61%, đời thường 60%, mức phạt 44% (câu mức phạt cần thêm khoản trừ điểm hoặc tước, retriever hay sót). Dev: 65,3% / 89,8%, chèn 59.
+  - Token (Qwen, cộng 10 mỗi lượt): train trung bình 1.762, p95 2.864, max 3.724; dev max 3.365; không mẫu nào vượt 4.096. Hai mẫu train phải bỏ bớt đoạn nhiễu dài.
+  - Vị trí đoạn đúng trong 5 ô của train: ô 1 44%, các ô 2–5 mỗi ô 11–19%, nên mô hình không học được mẹo "luôn lấy ô 1".
+  - Kiểm độc lập (không dùng hàm notebook): đáp án giữ nguyên, đoạn tồn tại và còn hiệu lực, chữ ngữ cảnh khớp đúng đoạn, mẫu từ chối không bị chèn, bản nhân đôi không dùng đoạn nhiễu hạng 1–5. Phát hiện 2 mẫu (`xp-0286` trích 7 căn cứ ở 6 khoản, `xp-1050` trích 10 căn cứ ở 8 khoản) có căn cứ nằm ngoài 5 ô; `scripts/finalize_g5ctx.py` chuyển hai mẫu này sang dạng không ngữ cảnh, giữ đáp án. Chạy lại bộ kiểm: 0 lỗi. `gp-0178` trích cả Điều 38 TT 108/2026 (không có đoạn riêng) và khoản 1 Điều 38 (có trong ngữ cảnh), không phải lỗi.
 
 ### Task 5: Kiểm tay và chốt
 - Người dùng đọc 50–100 mẫu ngẫu nhiên (seed cố định); sửa lỗi phát hiện được.
 - Ghi `data/train/MANIFEST.json` (mã băm) và `README.md`; gắn tag `train-v1`.
+- [x] **2026-10-19:** người dùng quyết định bỏ bước đọc tay, chốt luôn; ghi vào hạn chế của `data/train/README.md`. Đã ghi `data/train/README.md`, `data/train/chat/MANIFEST.json` và gắn tag `train-v1`.
