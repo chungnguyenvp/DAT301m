@@ -96,7 +96,7 @@ for name, unit, label, fine, sanction, date in [
     ("c_coi", "d6:k1:đ", "Bấm còi ban đêm trong khu đông dân cư bằng xe không được ưu tiên", C1, None, "2025-01-01"),
     ("c_rado", "d6:k1:b", "Ra khỏi vị trí đỗ không có tín hiệu báo cho xe khác", C1, None, "2025-01-01"),
     ("c_lan", "d6:k2:a", "Chuyển làn không có tín hiệu báo trước trên đường không phải cao tốc", C2, None, "2026-08-15"),
-    ("c_doc", "d6:k2:d", "Đỗ xe trên dốc không chèn bánh", C2, None, "2025-01-01"),
+    ("c_doc", "d6:k2:d", "Đỗ xe trên dốc không chèn bánh trên đường thông thường, không phải cao tốc, không gây ùn tắc", C2, None, "2025-01-01"),
     ("c_dung", "d6:k2:đ", "Dừng xe tại nơi có biển Cấm dừng xe và đỗ xe trên đường thông thường, không gây ùn tắc", C2, None, "2025-01-01"),
     ("c_8", "d6:k3:a", "Chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h", C3, None, "2025-01-01"),
     ("c_pha", "d6:k3:b", "Dùng đèn chiếu xa khi gặp xe ngược chiều, không có dải phân cách chống chói", C3, None, "2025-01-01"),
@@ -105,7 +105,7 @@ for name, unit, label, fine, sanction, date in [
     ("c_den", "d6:k3:g", "Không bật đèn chiếu sáng khi lái ô tô ban đêm", C3, None, "2025-01-01"),
     ("c_ham", "d6:k3:n", "Chạy trong hầm đường bộ không sử dụng đèn chiếu sáng gần", C3, None, "2025-01-01"),
     ("c_etc", "d6:k4:a", "Xe không gắn thẻ đầu cuối đi vào làn thu phí điện tử tự động không dừng", C4, CP2, "2025-01-01"),
-    ("c_cau", "d6:k4:b", "Dừng xe trên cầu ở nơi tổ chức giao thông không cho phép, không gây ùn tắc", C4, CP2, "2025-01-01"),
+    ("c_cau", "d6:k4:b", "Dừng xe trên cầu thuộc đường thông thường, không phải cao tốc, ở nơi tổ chức giao thông không cho phép, không gây ùn tắc", C4, CP2, "2025-01-01"),
     ("c_nhuongvuot", "d6:k4:d", "Không nhường đường cho xe xin vượt dù đủ điều kiện an toàn", C4, CP2, "2025-01-01"),
     ("c_lui", "d6:k4:e", "Lùi xe trên đường một chiều thông thường", C4, None, "2025-01-01"),
     ("c_quay", "d6:k4:k", "Quay đầu tại nơi có biển cấm quay đầu đối với xe đang lái, không gây ùn tắc", C4, None, "2025-01-01"),
@@ -186,7 +186,7 @@ add("Tôi lái mô tô một mình quá tốc độ 25 km/h và không đội m�
 add("Tôi chạy mô tô đeo tai nghe nhạc, tại một giao lộ tôi đi tiếp dù đèn đỏ. Chưa xảy ra tai nạn thì từng lỗi bị phạt ra sao?", "m_tainghe", "m_do_den")
 add("Tôi đi mô tô vào vòng xuyến có báo hiệu nhưng không giảm tốc độ, không nhường xe từ bên trái; sau đó tôi đỗ dưới biển Cấm đỗ xe. Không gây tai nạn thì xử phạt thế nào?", "m_vong", "m_do")
 add("Tôi điều khiển mô tô rẽ ở ngã tư, không nhường người đi bộ đang qua vạch; tôi cũng không có bảo hiểm bắt buộc còn hiệu lực. Không gây tai nạn thì bị phạt hai lỗi thế nào?", "m_bobo", "m_bh")
-add("Tôi chở một người cầm ô phía sau mô tô, rồi chuyển làn mà không báo trước. Nếu không gây tai nạn thì tôi là người lái bị phạt riêng từng việc ra sao?", "m_du", "m_lan")
+add("Tôi lái mô tô chở người ngồi sau đang dùng ô che mưa, rồi chuyển làn mà không báo trước. Không gây tai nạn thì tôi bị phạt riêng từng việc ra sao?", "m_du", "m_lan")
 add("Tôi chạy mô tô từ đường nhánh ra đường chính không giảm tốc độ, không nhường xe; lúc đó tôi cũng không cài quai mũ đúng quy cách. Chưa gây tai nạn thì bị phạt gì?", "m_nhanh", "m_quai")
 add("Tôi đi mô tô tư nhân không phục vụ quản lý, bảo trì mà đi vào đường cao tốc, đồng thời không có bảo hiểm bắt buộc còn hiệu lực. Không gây tai nạn thì các lỗi xử lý thế nào?", "m_caotoc", "m_bh")
 add("Tôi lái mô tô không nhường xe cứu thương đang phát tín hiệu ưu tiên đi làm nhiệm vụ; trước đó tôi đã vượt xe mà không có tín hiệu vượt. Không xảy ra tai nạn thì từng việc phạt ra sao?", "m_uutien", "m_vuot_tin")
@@ -199,14 +199,14 @@ add("Tôi lái ô tô thông thường trên đường thường, chuyển làn 
 add("Tôi chạy ô tô trên cao tốc, chuyển làn không có tín hiệu báo trước trong khi bản thân không thắt dây an toàn. Không có tai nạn thì mức phạt riêng là gì?", "c_lanct", "c_day")
 add("mình chạy ô tô ko bật đèn lúc 20 giờ lại ko có bảo hiểm bắt buộc còn hiệu lực chưa gây tai nạn thì mỗi lỗi phạt sao", "c_den", "c_bh", chat=True)
 add("Tôi lái ô tô quá tốc độ 15 km/h trên đường thường, còn người lớn ngồi ghế có dây an toàn lại không thắt dây. Không xảy ra tai nạn thì người lái bị phạt thế nào?", "c_15", "c_khach")
-add("Tôi lái ô tô không thắt dây đai khi chạy, sau đó đỗ trên dốc mà không chèn bánh. Không xảy ra tai nạn thì hai hành vi bị phạt bao nhiêu?", "c_day", "c_doc")
+add("Tôi lái ô tô không thắt dây đai khi chạy, sau đó đỗ trên dốc thuộc đường thường, không phải cao tốc, mà không chèn bánh. Không gây ùn tắc hay tai nạn thì hai hành vi bị phạt bao nhiêu?", "c_day", "c_doc")
 add("Tôi lái ô tô qua hầm không bật đèn chiếu sáng gần; ra khỏi hầm, tôi rẽ ở ngã tư không báo hướng rẽ. Không gây tai nạn thì từng lỗi chịu mức nào?", "c_ham", "c_re")
 add("Tôi lùi ô tô trên đường một chiều trong phố rồi tại một vị trí khác quay đầu nơi có biển cấm quay đầu đối với ô tô. Không gây ùn tắc, không có tai nạn thì hai việc phạt thế nào?", "c_lui", "c_quay")
 add("Tôi lái ô tô vượt xe trên đoạn có biển cấm vượt đối với xe mình; trong chuyến đó tôi còn không thắt dây đai an toàn. Nếu không gây tai nạn thì từng hành vi bị phạt gì?", "c_vuot", "c_day")
 add("Tôi lái ô tô ra đường chính từ đường nhánh mà không giảm tốc độ, không nhường đường. Xe cũng không có bảo hiểm bắt buộc còn hiệu lực, nhưng chưa gây tai nạn. Tôi bị phạt hai việc ra sao?", "c_nhanh", "c_bh")
 add("Tôi lái ô tô quá tốc độ 30 km/h và không có bảo hiểm bắt buộc còn hiệu lực. Không xảy ra tai nạn thì mỗi lỗi có mức phạt nào?", "c_30", "c_bh")
 add("Tôi lái ô tô không nhường xe cứu hỏa đang phát tín hiệu ưu tiên đi làm nhiệm vụ; tại chặng khác tôi dừng dưới biển Cấm dừng xe và đỗ xe trên đường thường. Không ùn tắc, không tai nạn thì phạt thế nào?", "c_uutien", "c_dung")
-add("Tôi dừng ô tô trên cầu để ngắm cảnh dù không được phép; trước đó lái xe trên đường mà không có bảo hiểm bắt buộc còn hiệu lực. Không gây ùn tắc hay tai nạn thì mỗi hành vi xử lý thế nào?", "c_cau", "c_bh")
+add("Tôi dừng ô tô ngắm cảnh trên cầu thuộc đường thường, không phải cao tốc, dù không được phép; xe cũng không có bảo hiểm bắt buộc còn hiệu lực. Không gây ùn tắc hay tai nạn thì mỗi hành vi xử lý thế nào?", "c_cau", "c_bh")
 add("Tôi lái ô tô rẽ tại ngã tư không báo hướng rẽ, khi xe chạy lại chở người trưởng thành ngồi ghế có dây nhưng không thắt dây an toàn. Không gây tai nạn thì tôi bị phạt riêng từng lỗi thế nào?", "c_re", "c_khach")
 add("Tôi chạy ô tô sai làn đường quy định trên đường phố thông thường, sau đó đỗ dưới biển Cấm đỗ xe mà không gây ùn tắc. Không tai nạn thì hai lỗi xử lý ra sao?", "c_sailan", "c_do")
 add("Tôi điều khiển ô tô một mình quá tốc độ 40 km/h và không thắt dây an toàn. Chưa gây tai nạn thì từng hành vi bị phạt thế nào?", "c_40", "c_day")
