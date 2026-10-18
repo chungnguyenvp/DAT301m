@@ -144,6 +144,8 @@ Mỗi đợt:
 
 **Quy tắc lọc gần trùng (chốt sau đợt 1a):** loại mẫu nếu cosine TF-IDF ký tự 4-gram với một câu giữ lại ≥ 0,85, hoặc ≥ 0,6 khi cùng hỏi một quy định. "Cùng quy định" nghĩa là đơn vị nội dung đầu tiên của bên này nằm trong căn cứ của bên kia; bỏ qua câu dẫn đã có đơn vị con. Lý do: các câu trùng thật ở đợt 1a chỉ giống nhau 0,70–0,82 theo chữ.
 
+- [x] Đợt C4 (Codex): Luật XLVPHC hợp nhất 90/2026 Điều 2–3, 5, 9–11, 21–23, 25–26, 134, 137–138. 35 mẫu (`np-1001`–`np-1035`), 0 lỗi; loại `np-1026` gần `TH107` (0,60), giữ mới 34. Đã đọc toàn văn, rà điều kiện giảm nhẹ không tự động miễn phạt, cảnh cáo phải có căn cứ và giới hạn phạt tiền người chưa thành niên là mức trần. 42 phiên bản căn cứ có hiệu lực, không có ghi chú điều kiện; sinh lại giống từng byte. Tổng tạm thời 1.414 nháp, giữ 1.342 (train 1.178/dev 164); không ghi lại train/dev/manifest ở đợt này.
+
 ### Task 4: Gắn ngữ cảnh (sau G3)
 - Khoảng 90% mẫu có ngữ cảnh: top-5 của retriever tại `ngay_hoi`. **Đảm bảo có đoạn chứa căn cứ:** nếu retriever bỏ sót thì thay đoạn cuối bằng đoạn đúng, để mô hình học trả lời từ ngữ cảnh.
 - Khoảng 10% mẫu không có ngữ cảnh, để mô hình quen cấu hình C.
