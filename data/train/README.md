@@ -20,8 +20,9 @@ các chủ đề Hướng dẫn, Bảo hiểm, Lệ phí, Tốc độ, với đo
 
 1. Nháp và chia train/dev: xem `scripts/g5_drafts/README.md`.
 2. Gắn ngữ cảnh (cần GPU): `py -3.13 scripts/build_g5ctx_bundle.py` tạo `kaggle/g5ctx/g5ctx_bundle.zip` và
-   `g5_context.ipynb`. Chạy notebook trên Kaggle (`kaggle/g5ctx/HUONG_DAN.md`) hoặc máy có GPU, đặt 3 file kết quả vào
-   `kaggle/g5ctx/out_local/`. Seed 42, ngày hỏi 2026-10-01; bge-m3 và bge-reranker-v2-m3 ghim theo revision.
+   `g5_context.ipynb`. Chạy notebook trên Kaggle (`kaggle/g5ctx/HUONG_DAN.md`) hoặc máy Linux có GPU
+   (`bash setup_remote.sh` để cài và chạy thử 10 mẫu, `bash setup_remote.sh full` để chạy hết; xem
+   `kaggle/g5ctx/setup_remote.sh`), đặt 3 file kết quả vào `kaggle/g5ctx/out_local/`. Seed 42, ngày hỏi 2026-10-01; bge-m3 và bge-reranker-v2-m3 ghim theo revision.
 3. `py -3.13 scripts/finalize_g5ctx.py` kiểm mã băm gói với repo và ghi `chat/`.
 
 Bản `train-v1` chạy bước 2 trên RTX 5060 Ti (torch 2.14.1+cu130), tìm 1.567 câu trong 1.125 giây.
