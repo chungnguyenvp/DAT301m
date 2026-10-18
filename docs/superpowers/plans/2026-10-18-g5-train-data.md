@@ -150,6 +150,8 @@ Mỗi đợt:
 
 - [x] Đợt C5 (Codex): BLDS 2015 Điều 586–589, 592–593, 596, 599–600, 603–605 và BLHS hợp nhất 135/2025 Điều 261–263, 265–266; đọc thêm Điều 584–585, 590–591, 601 và 260, 264 để kiểm ngữ cảnh. 40 mẫu (`tn-1001`–`tn-1040`), 0 lỗi, không có key mới bị loại gần eval (không có cặp key–eval); giữ mới 40. Rà từng mẫu về lỗi, người giám hộ, nhà trường/bệnh viện, cấp dưỡng, súc vật và các yếu tố cấu thành tội; 197 đơn vị nguồn liên quan đang có hiệu lực không có ghi chú `hl_ngoai_le` hoặc điều kiện hiệu lực. Tổng tạm thời 1.454 nháp, giữ 1.383 (train 1.215/dev 168); không ghi lại train/dev/manifest trong đợt này.
 
+- [x] Rà rò rỉ sau C5: điểm TF-IDF của `np-1026` dao động xuống dưới ngưỡng khi kho tăng. Vì đã xác định câu này gần `TH107`, bỏ hẳn khỏi đầu ra C4, không viết lại để lách lọc. C4 còn 34 mẫu nháp, giữ các key còn lại ổn định; không sửa bộ kiểm hay mẫu cũ. Các số đếm từng đợt ở trên là tại thời điểm kiểm, số cuối xem bản tổng kết.
+
 ### Task 4: Gắn ngữ cảnh (sau G3)
 - Khoảng 90% mẫu có ngữ cảnh: top-5 của retriever tại `ngay_hoi`. **Đảm bảo có đoạn chứa căn cứ:** nếu retriever bỏ sót thì thay đoạn cuối bằng đoạn đúng, để mô hình học trả lời từ ngữ cảnh.
 - Khoảng 10% mẫu không có ngữ cảnh, để mô hình quen cấu hình C.

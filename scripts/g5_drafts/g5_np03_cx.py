@@ -127,6 +127,12 @@ add("quy_tac", "Người chưa thành niên được áp dụng biện pháp tha
     "d134:k5", "d138", "d138:k1", "d138:k2", "d138:k3")
 
 
+# np-1026 đã được xác định gần TH107 trong lần kiểm C4. Điểm TF-IDF phụ
+# thuộc toàn kho nên có thể xuống dưới ngưỡng khi thêm mẫu; bỏ hẳn câu này,
+# không viết lại và không để nó quay lại train do dao động ngưỡng.
+S = [s for s in S if s["key"] != "np-1026"]
+
+
 if __name__ == "__main__":
     out = ROOT / "data/train/drafts/nop_phat_03_cx.jsonl"
     out.write_text("".join(json.dumps(s, ensure_ascii=False) + "\n" for s in S), encoding="utf-8", newline="\n")
