@@ -146,6 +146,8 @@ Mỗi đợt:
 
 - [x] Đợt C4 (Codex): Luật XLVPHC hợp nhất 90/2026 Điều 2–3, 5, 9–11, 21–23, 25–26, 134, 137–138. 35 mẫu (`np-1001`–`np-1035`), 0 lỗi; loại `np-1026` gần `TH107` (0,60), giữ mới 34. Đã đọc toàn văn, rà điều kiện giảm nhẹ không tự động miễn phạt, cảnh cáo phải có căn cứ và giới hạn phạt tiền người chưa thành niên là mức trần. 42 phiên bản căn cứ có hiệu lực, không có ghi chú điều kiện; sinh lại giống từng byte. Tổng tạm thời 1.414 nháp, giữ 1.342 (train 1.178/dev 164); không ghi lại train/dev/manifest ở đợt này.
 
+- [x] Sửa C4 sau duyệt độc lập: `np-1007`, `np-1010` giới hạn quy tắc không giảm dưới khung vào lúc xác định mức phạt trong quyết định, không lẫn với giảm/miễn khi thi hành theo Điều 77; `np-1018` nêu rõ chỉ so sánh nhánh tái phạm sau quyết định xử phạt. Giữ nguyên key/căn cứ/số mẫu; bộ kiểm vẫn 0 lỗi, giữ 1.342.
+
 ### Task 4: Gắn ngữ cảnh (sau G3)
 - Khoảng 90% mẫu có ngữ cảnh: top-5 của retriever tại `ngay_hoi`. **Đảm bảo có đoạn chứa căn cứ:** nếu retriever bỏ sót thì thay đoạn cuối bằng đoạn đúng, để mô hình học trả lời từ ngữ cảnh.
 - Khoảng 10% mẫu không có ngữ cảnh, để mô hình quen cấu hình C.

@@ -39,7 +39,7 @@ add("quy_tac", "Khi xử phạt vi phạm giao thông, có phải chỉ nhìn v�
     "Không. Việc xử phạt phải căn cứ vào tính chất, mức độ, hậu quả vi phạm, đối tượng vi phạm và tình tiết giảm nhẹ, tăng nặng (điểm c khoản 1 Điều 3 " + L + ").",
     "d3:k1:c")
 add("tinh_huong", "Sau vi phạm giao thông, tôi tự nguyện khai báo và thành thật hối lỗi. Đó có phải tình tiết giảm nhẹ không?",
-    "Có, tự nguyện khai báo, thành thật hối lỗi là tình tiết giảm nhẹ. Điều này không tự động miễn phạt; nếu giảm tiền phạt thì không được thấp hơn mức tối thiểu của khung tiền phạt (khoản 2 Điều 9 và khoản 4 Điều 23 " + L + ").",
+    "Có, tự nguyện khai báo, thành thật hối lỗi là tình tiết giảm nhẹ. Điều này không tự động miễn phạt. Khi xác định mức phạt trong quyết định xử phạt theo khoản 4 Điều 23, việc giảm do tình tiết giảm nhẹ không được thấp hơn mức tối thiểu của khung tiền phạt (khoản 2 Điều 9 và khoản 4 Điều 23 " + L + ").",
     "d9:k2", "d23:k4")
 add("tinh_huong", "Tôi đã tự nguyện bồi thường thiệt hại và khắc phục hậu quả của vi phạm giao thông. Việc đó được xem xét thế nào khi xử phạt?",
     "Đó là tình tiết giảm nhẹ: người vi phạm có hành vi ngăn chặn, làm giảm bớt hậu quả hoặc tự nguyện khắc phục hậu quả, bồi thường thiệt hại. Không đồng nghĩa đương nhiên được miễn xử phạt (khoản 1 Điều 9 và khoản 4 Điều 23 " + L + ").",
@@ -48,7 +48,7 @@ add("tinh_huong", "Tôi bị người mà mình lệ thuộc về vật chất �
     "Có. Vi phạm do bị ép buộc hoặc bị lệ thuộc về vật chất hoặc tinh thần là tình tiết giảm nhẹ; không phải căn cứ đương nhiên miễn mọi chế tài (khoản 4 Điều 9 " + L + ").",
     "d9:k4")
 add("doi_thuong", "đang mang thai mà vi phạm giao thông thì có được xem xét giảm nhẹ ko",
-    "Có. Người vi phạm là phụ nữ mang thai thuộc tình tiết giảm nhẹ; nếu có giảm tiền phạt thì không được thấp hơn mức tối thiểu của khung, không tự động được miễn phạt (khoản 5 Điều 9 và khoản 4 Điều 23 " + L + ").",
+    "Có. Người vi phạm là phụ nữ mang thai thuộc tình tiết giảm nhẹ, không tự động được miễn phạt. Khi xác định mức phạt trong quyết định xử phạt theo khoản 4 Điều 23, việc giảm do tình tiết giảm nhẹ không được thấp hơn mức tối thiểu của khung (khoản 5 Điều 9 và khoản 4 Điều 23 " + L + ").",
     "d9:k5", "d23:k4")
 add("quy_tac", "Hoàn cảnh khó khăn nào của người vi phạm giao thông được luật coi là tình tiết giảm nhẹ?",
     "Vi phạm vì hoàn cảnh đặc biệt khó khăn mà không do mình gây ra là tình tiết giảm nhẹ. Không phải mọi lý do khó khăn đều mặc nhiên đáp ứng điều kiện này (khoản 6 Điều 9 " + L + ").",
@@ -71,8 +71,8 @@ add("quy_tac", "Sau khi vi phạm giao thông rồi trốn tránh, che giấu vi
 add("quy_tac", "Một tình tiết đã dùng để xác định hành vi vi phạm giao thông có được tính thêm là tình tiết tăng nặng nữa không?",
     "Không. Tình tiết tăng nặng được liệt kê mà đã được quy định là hành vi vi phạm hành chính thì không được coi là tình tiết tăng nặng nữa (khoản 2 Điều 10 " + L + ").",
     "d10:k2")
-add("quy_tac", "Tái phạm và vi phạm hành chính nhiều lần khác nhau ở việc đã bị xử phạt hay chưa như thế nào?",
-    "Tái phạm là đã bị ra quyết định xử phạt, chưa hết thời hạn được coi là chưa bị xử phạt mà lại thực hiện hành vi đã bị xử phạt. Vi phạm nhiều lần là đã thực hiện hành vi đó trước đây nhưng chưa bị xử lý và chưa hết thời hiệu xử lý (khoản 5 và khoản 6 Điều 2 " + L + ").",
+add("quy_tac", "Tái phạm sau một quyết định xử phạt và vi phạm hành chính nhiều lần khác nhau ở việc đã bị xử lý hay chưa như thế nào?",
+    "Trong nhánh tái phạm sau khi đã bị ra quyết định xử phạt, cá nhân, tổ chức chưa hết thời hạn được coi là chưa bị xử phạt mà lại thực hiện hành vi đã bị xử phạt. Vi phạm nhiều lần là đã thực hiện hành vi đó trước đây nhưng chưa bị xử lý và chưa hết thời hiệu xử lý (khoản 5 và khoản 6 Điều 2 " + L + ").",
     "d2:k5", "d2:k6")
 add("quy_tac", "Muốn được xác định là vi phạm giao thông trong tình thế cấp thiết thì chỉ cần nói có việc gấp có đủ không?",
     "Không. Phải có nguy cơ đang thực tế đe dọa lợi ích được bảo vệ, không còn cách nào khác ngoài gây thiệt hại nhỏ hơn thiệt hại cần ngăn ngừa. Hành vi trong tình thế cấp thiết thuộc trường hợp không xử phạt hành chính; không thể chỉ dựa vào lời nói có việc gấp (khoản 11 Điều 2 và khoản 1 Điều 11 " + L + ").",
