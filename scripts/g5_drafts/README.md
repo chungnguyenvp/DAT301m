@@ -8,6 +8,7 @@ Chạy lại toàn bộ (Windows cần `PYTHONIOENCODING=utf-8` để in tiếng
 ```bash
 export PYTHONIOENCODING=utf-8
 for f in scripts/g5_drafts/g5_{xp0?,gp0?,dk0?,np0?,dkiem0?,lephi01,tdbb01,luat0?,tntc01,hd01,tt0?}.py; do py -3.13 "$f"; done
+py -3.13 scripts/g5_drafts/g5_bb02_cx.py      # C1: biển báo và vạch kẻ đường, QCVN 41:2024
 py -3.13 scripts/g5_drafts/g5_fix_owner.py   # bắt buộc sau khi chạy lại g5_xp*: thêm ghi chú khoản 3 Điều 47 NĐ 168 cho chủ xe
 py -3.13 scripts/build_trainset.py           # kiểm tra, lọc gần eval, chia train/dev, ghi MANIFEST
 ```

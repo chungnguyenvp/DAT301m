@@ -137,6 +137,8 @@ Mỗi đợt:
   - 11f: NĐ 94/2026 Điều 11–13, 15–16 (giấy chứng nhận giáo viên dạy thực hành lái xe, giấy phép xe tập lái). 8 mẫu, 0 lỗi, giữ 8.
 - Lũy kế sau đợt 11: 1.189 soạn, giữ 1.118 (train 969, dev 149), loại 71 vì gần eval. Theo loại: mức phạt 347, quy tắc 329, thủ tục 164 (15%), tình huống 137, đời thường 81, từ chối 60. Không bù tới 25%: các Điều còn lại có thủ tục chủ yếu là thủ tục của cơ quan (lưu trữ hồ sơ, giám sát kỳ sát hạch, cấp phép trung tâm sát hạch, giấy phép vận tải quốc tế), ít gặp trong câu hỏi của người dân. ND 336/2025 (xử phạt trong hoạt động đường bộ) không dùng cho câu "không mang giấy tờ" của người lái vì câu này thuộc NĐ 168.
 
+- [x] Đợt C1 (Codex): Biển báo, QCVN 41:2024/BGTVT, Phụ lục B–G (`pl2`–`pl7`), Điều 51, 76–78. 80 mẫu (`bb-1001`–`bb-1080`), 0 lỗi, không có mẫu mới bị loại gần eval (không có cặp key–eval); giữ 80. Đã đọc đầy đủ các phụ lục, chỉ dùng nội dung chữ rõ ràng, tự rà ngữ nghĩa từng câu và các ngoại lệ. Kết quả kiểm toàn kho tạm thời: 1.269 soạn, giữ 1.198 (train 1.048, dev 150), loại 71 cũ; không ghi lại train/dev/manifest trong đợt này.
+
 **Quy tắc lọc gần trùng (chốt sau đợt 1a):** loại mẫu nếu cosine TF-IDF ký tự 4-gram với một câu giữ lại ≥ 0,85, hoặc ≥ 0,6 khi cùng hỏi một quy định. "Cùng quy định" nghĩa là đơn vị nội dung đầu tiên của bên này nằm trong căn cứ của bên kia; bỏ qua câu dẫn đã có đơn vị con. Lý do: các câu trùng thật ở đợt 1a chỉ giống nhau 0,70–0,82 theo chữ.
 
 ### Task 4: Gắn ngữ cảnh (sau G3)
