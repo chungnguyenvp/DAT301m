@@ -128,6 +128,14 @@ Mỗi đợt:
 - [x] Đợt 9a: Tai nạn (BLDS 2015 Điều 584, 585, 590, 591, 601; BLHS hợp nhất 135/2025 Điều 260, 264) và 60 mẫu `tu_choi` (40 câu ngoài phạm vi, 15 đề nghị giúp vi phạm, 5 câu đời thường). 80 mẫu, 0 lỗi, giữ 74.
 - [x] Đợt 10a: Hướng dẫn, NĐ 158/2024 (taxi, xe hợp đồng, an toàn vận tải, phù hiệu) và NĐ 165/2024 (hành lang an toàn, sử dụng tạm thời lòng đường, vỉa hè). 36 mẫu, 0 lỗi, giữ 35.
 - Lũy kế sau đợt 10a: 1.058 soạn, giữ 993 (train 854, dev 139). Theo loại: mức phạt 347, quy tắc 307, tình huống 130, đời thường 79, thủ tục 70, từ chối 60. Các chủ đề Lệ phí, Bảo hiểm, Tốc độ, Tai nạn, Đăng kiểm còn dưới mục tiêu; câu thủ tục mới 7% so với mục tiêu 25%.
+- [x] Đợt 11 (bù câu thủ tục, chủ yếu ở các Điều chưa có mẫu thủ tục):
+  - 11a: Đăng ký xe, TT 79/2024 (các bước sang tên, đổi, cấp lại trực tiếp, đăng ký tạm thời và gia hạn, thu hồi khi mất hoặc hư hỏng, xe tịch thu, thanh lý, đóng lại số máy, số khung, biểu mẫu, quy định chuyển tiếp). 37 mẫu, 0 lỗi; loại 1 (dk-0122 gần SD013).
+  - 11b: GPLX, TT 108/2026 (nộp hồ sơ sát hạch, thi lại, bằng PET, cấp lại, đổi bằng hỏng, đổi bằng quân sự và trong Công an, IDP, người khuyết tật, người dân tộc thiểu số). 24 mẫu, 0 lỗi; loại 3 (gp-0137 gần SD023, gp-0145 gần TH053, gp-0155 gần SD021).
+  - 11c: Đăng kiểm, TT 30/2026 (kiểm định lần đầu, khí thải xe đăng ký tạm thời, cấp lại giấy kiểm định, chứng nhận xe cải tạo và cấp lại). 17 mẫu, 0 lỗi, giữ 17.
+  - 11d: Luật XLVPHC 90/2026 Điều 57, 61, 64, 69, 80, 86, 125; NĐ 138/2021 Điều 12, 17; NĐ 158/2024 Điều 19–21, 23 (giấy phép kinh doanh vận tải, phù hiệu). 24 mẫu, 0 lỗi; loại 2 (hd-0038 trùng TH070 với độ giống 1,00; hd-0041 gần SD032).
+  - 11e: Luật 36 Điều 39, 66, 69, 72, 80, 81 (tai nạn, dừng xe kiểm tra, di chuyển xe đỗ sai); NĐ 10/2022 Điều 4, 11; TT 155/2025 Điều 2, 3, 7; TT 36/2024/TT-BYT Điều 4, 6; NĐ 156/2024 Điều 7, 16, 18. 21 mẫu, 0 lỗi; loại 1 (dk-0139 gần TH045).
+  - 11f: NĐ 94/2026 Điều 11–13, 15–16 (giấy chứng nhận giáo viên dạy thực hành lái xe, giấy phép xe tập lái). 8 mẫu, 0 lỗi, giữ 8.
+- Lũy kế sau đợt 11: 1.189 soạn, giữ 1.118 (train 969, dev 149), loại 71 vì gần eval. Theo loại: mức phạt 347, quy tắc 329, thủ tục 164 (15%), tình huống 137, đời thường 81, từ chối 60. Không bù tới 25%: các Điều còn lại có thủ tục chủ yếu là thủ tục của cơ quan (lưu trữ hồ sơ, giám sát kỳ sát hạch, cấp phép trung tâm sát hạch, giấy phép vận tải quốc tế), ít gặp trong câu hỏi của người dân. ND 336/2025 (xử phạt trong hoạt động đường bộ) không dùng cho câu "không mang giấy tờ" của người lái vì câu này thuộc NĐ 168.
 
 **Quy tắc lọc gần trùng (chốt sau đợt 1a):** loại mẫu nếu cosine TF-IDF ký tự 4-gram với một câu giữ lại ≥ 0,85, hoặc ≥ 0,6 khi cùng hỏi một quy định. "Cùng quy định" nghĩa là đơn vị nội dung đầu tiên của bên này nằm trong căn cứ của bên kia; bỏ qua câu dẫn đã có đơn vị con. Lý do: các câu trùng thật ở đợt 1a chỉ giống nhau 0,70–0,82 theo chữ.
 
