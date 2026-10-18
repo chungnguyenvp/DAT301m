@@ -148,6 +148,8 @@ Mỗi đợt:
 
 - [x] Sửa C4 sau duyệt độc lập: `np-1007`, `np-1010` giới hạn quy tắc không giảm dưới khung vào lúc xác định mức phạt trong quyết định, không lẫn với giảm/miễn khi thi hành theo Điều 77; `np-1018` nêu rõ chỉ so sánh nhánh tái phạm sau quyết định xử phạt. Giữ nguyên key/căn cứ/số mẫu; bộ kiểm vẫn 0 lỗi, giữ 1.342.
 
+- [x] Đợt C5 (Codex): BLDS 2015 Điều 586–589, 592–593, 596, 599–600, 603–605 và BLHS hợp nhất 135/2025 Điều 261–263, 265–266; đọc thêm Điều 584–585, 590–591, 601 và 260, 264 để kiểm ngữ cảnh. 40 mẫu (`tn-1001`–`tn-1040`), 0 lỗi, không có key mới bị loại gần eval (không có cặp key–eval); giữ mới 40. Rà từng mẫu về lỗi, người giám hộ, nhà trường/bệnh viện, cấp dưỡng, súc vật và các yếu tố cấu thành tội; 197 đơn vị nguồn liên quan đang có hiệu lực không có ghi chú `hl_ngoai_le` hoặc điều kiện hiệu lực. Tổng tạm thời 1.454 nháp, giữ 1.383 (train 1.215/dev 168); không ghi lại train/dev/manifest trong đợt này.
+
 ### Task 4: Gắn ngữ cảnh (sau G3)
 - Khoảng 90% mẫu có ngữ cảnh: top-5 của retriever tại `ngay_hoi`. **Đảm bảo có đoạn chứa căn cứ:** nếu retriever bỏ sót thì thay đoạn cuối bằng đoạn đúng, để mô hình học trả lời từ ngữ cảnh.
 - Khoảng 10% mẫu không có ngữ cảnh, để mô hình quen cấu hình C.
