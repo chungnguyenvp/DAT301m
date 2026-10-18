@@ -1,0 +1,367 @@
+{
+ "files": {
+  "data/train/train.jsonl": {
+   "so_mau": 854,
+   "sha256": "ccb52b9d9cd4d38c2d16aaf6a11c04d49cfd5c21fcb02da1238a7168e99964c3"
+  },
+  "data/train/dev.jsonl": {
+   "so_mau": 139,
+   "sha256": "93691635699b98cb70c3ae572386ddd4620feb948f8fa68beedf5ebdda37b5c5"
+  }
+ },
+ "drafts": {
+  "data/train/drafts/dang_kiem_01.jsonl": "405ef902447a8bc70c4636298ac396b15cc29e7adc59b90c31578978d9e59e4b",
+  "data/train/drafts/dang_ky_xe_01.jsonl": "c61d768fa5330eae0e5d4d968fa61cd0cb583d810dd1972494180d70f2ee428e",
+  "data/train/drafts/dang_ky_xe_02.jsonl": "fc747a1f26c10006db39c9c99d10ec92294710d6e59ea2f4147f6ee7060ef5df",
+  "data/train/drafts/gplx_01.jsonl": "edd0d9a86fbb0b58c4b73992cd9059d5fc61a7647390672a473b22f4cd456042",
+  "data/train/drafts/gplx_02.jsonl": "8157231a6f75a9c93ba6e33c75baea9ce17e95b9bc30d4a76624df25833dbc20",
+  "data/train/drafts/gplx_03.jsonl": "895663b05a61083329e747ae6f9d8e2c282324d7cecce102b431100e503c9a44",
+  "data/train/drafts/huong_dan_01.jsonl": "012bded4f3c440a6201db7c6559129c5dba535aa73dee76258644a5f65b09c0e",
+  "data/train/drafts/le_phi_bao_hiem_01.jsonl": "e14dc86253982853f3010538e7dbb8de6fb86c9c4417f4dc00ee4fd20175c1ef",
+  "data/train/drafts/luat_loi_01.jsonl": "b65d90353ced62e8ea2ca5e69e5af66ebc98d51d137994ddb3a300302ae4b9cb",
+  "data/train/drafts/luat_loi_02.jsonl": "3cfdb9d0ea206469eaa0ae7c6db0922a952037edaee61fee15f1f5d1dd0c65b3",
+  "data/train/drafts/nop_phat_01.jsonl": "08eaa3117b2b807a5f63ae493b2f741500b3cc01db0e7cdba364821d28452247",
+  "data/train/drafts/tai_nan_tu_choi_01.jsonl": "ac092599bf5add57d6cf3e8698aebe1218333e741dd1947b92bc34dcf86f06f8",
+  "data/train/drafts/toc_do_bien_bao_01.jsonl": "79822bd8b348b0cabc20ce8ddfc3fda1ac80ba6f4573a7bb1306c575764c62b2",
+  "data/train/drafts/xu_phat_01.jsonl": "1e9a847016ea760734b9de5a0279e508b65b8718d5181d6a9668be2f92782efa",
+  "data/train/drafts/xu_phat_02.jsonl": "d800b8ac20588c70b3292e1b5161714e13f8c42d2197e24878ed95021352e81d",
+  "data/train/drafts/xu_phat_03.jsonl": "d5e37da8615682406f38662df6480b7a022a8f10cff810ac961575ca2095a33b",
+  "data/train/drafts/xu_phat_04.jsonl": "17967a822fb23f54a31a319e9796c6a5dbd41e276a69f40c5a13ac820243baf6",
+  "data/train/drafts/xu_phat_05.jsonl": "33121d723e2340a77734290b8d05614dc2ebdc28556ce8b5a25effab4d66267a",
+  "data/train/drafts/xu_phat_06.jsonl": "5ae43010df60791b569de138bca69eefa7896b9f638021bd8686e33763fe0769",
+  "data/train/drafts/xu_phat_07.jsonl": "c9819706ab34fa526f06d7e3ad7b013b2d620e605a9263c69d4c81f06a2123b0"
+ },
+ "nguong_gan_eval": 0.85,
+ "nguong_gan_eval_cung_can_cu": 0.6,
+ "loai_vi_gan_eval": [
+  {
+   "key": "dkm-0008",
+   "eval": "TH028",
+   "cosine": 0.9328
+  },
+  {
+   "key": "dkm-0012",
+   "eval": "TH026",
+   "cosine": 0.9266
+  },
+  {
+   "key": "dkm-0026",
+   "eval": "TH030",
+   "cosine": 0.714
+  },
+  {
+   "key": "dkm-0030",
+   "eval": "TH029",
+   "cosine": 0.6241
+  },
+  {
+   "key": "dkm-0034",
+   "eval": "TH031",
+   "cosine": 0.781
+  },
+  {
+   "key": "dkm-0035",
+   "eval": "TH033",
+   "cosine": 0.6603
+  },
+  {
+   "key": "dkm-0036",
+   "eval": "TH033",
+   "cosine": 0.6835
+  },
+  {
+   "key": "dk-0002",
+   "eval": "TH047",
+   "cosine": 0.6171
+  },
+  {
+   "key": "dk-0004",
+   "eval": "TH048",
+   "cosine": 0.904
+  },
+  {
+   "key": "dk-0017",
+   "eval": "TH040",
+   "cosine": 0.7853
+  },
+  {
+   "key": "dk-0018",
+   "eval": "TH034",
+   "cosine": 0.6208
+  },
+  {
+   "key": "dk-0020",
+   "eval": "SD010",
+   "cosine": 0.7404
+  },
+  {
+   "key": "dk-0031",
+   "eval": "TH036",
+   "cosine": 0.6602
+  },
+  {
+   "key": "dk-0037",
+   "eval": "TH035",
+   "cosine": 0.9447
+  },
+  {
+   "key": "dk-0038",
+   "eval": "TH043",
+   "cosine": 0.6465
+  },
+  {
+   "key": "dk-0045",
+   "eval": "TH039",
+   "cosine": 0.6634
+  },
+  {
+   "key": "dk-0060",
+   "eval": "TH046",
+   "cosine": 0.8159
+  },
+  {
+   "key": "gp-0021",
+   "eval": "TH059",
+   "cosine": 0.861
+  },
+  {
+   "key": "gp-0022",
+   "eval": "TH100",
+   "cosine": 0.741
+  },
+  {
+   "key": "gp-0029",
+   "eval": "BT024",
+   "cosine": 0.6414
+  },
+  {
+   "key": "gp-0047",
+   "eval": "BT033",
+   "cosine": 0.6548
+  },
+  {
+   "key": "gp-0048",
+   "eval": "TH064",
+   "cosine": 0.7978
+  },
+  {
+   "key": "gp-0051",
+   "eval": "TH056",
+   "cosine": 0.9204
+  },
+  {
+   "key": "gp-0058",
+   "eval": "TH050",
+   "cosine": 1.0
+  },
+  {
+   "key": "gp-0070",
+   "eval": "TH052",
+   "cosine": 0.7736
+  },
+  {
+   "key": "gp-0076",
+   "eval": "TH054",
+   "cosine": 0.7213
+  },
+  {
+   "key": "gp-0099",
+   "eval": "TH057",
+   "cosine": 0.8726
+  },
+  {
+   "key": "gp-0116",
+   "eval": "TH058",
+   "cosine": 0.7584
+  },
+  {
+   "key": "hd-0033",
+   "eval": "TH067",
+   "cosine": 0.6565
+  },
+  {
+   "key": "lp-0001",
+   "eval": "TH080",
+   "cosine": 0.94
+  },
+  {
+   "key": "lp-0003",
+   "eval": "TH081",
+   "cosine": 0.654
+  },
+  {
+   "key": "lp-0005",
+   "eval": "BT047",
+   "cosine": 0.6225
+  },
+  {
+   "key": "lp-0018",
+   "eval": "TH083",
+   "cosine": 0.845
+  },
+  {
+   "key": "lp-0019",
+   "eval": "TH088",
+   "cosine": 0.676
+  },
+  {
+   "key": "lp-0023",
+   "eval": "TH084",
+   "cosine": 0.65
+  },
+  {
+   "key": "bh-0006",
+   "eval": "TH003",
+   "cosine": 0.7499
+  },
+  {
+   "key": "bh-0010",
+   "eval": "TH011",
+   "cosine": 0.6507
+  },
+  {
+   "key": "bh-0014",
+   "eval": "TH002",
+   "cosine": 0.8161
+  },
+  {
+   "key": "bh-0019",
+   "eval": "TH008",
+   "cosine": 0.6027
+  },
+  {
+   "key": "bh-0020",
+   "eval": "TH006",
+   "cosine": 0.6344
+  },
+  {
+   "key": "bh-0021",
+   "eval": "TH004",
+   "cosine": 0.9168
+  },
+  {
+   "key": "lu-0075",
+   "eval": "SD004",
+   "cosine": 0.9263
+  },
+  {
+   "key": "np-0003",
+   "eval": "TH114",
+   "cosine": 0.8809
+  },
+  {
+   "key": "np-0014",
+   "eval": "TH109",
+   "cosine": 0.7169
+  },
+  {
+   "key": "np-0032",
+   "eval": "TH112",
+   "cosine": 0.7662
+  },
+  {
+   "key": "tn-0001",
+   "eval": "TH118",
+   "cosine": 0.6295
+  },
+  {
+   "key": "tn-0002",
+   "eval": "TH119",
+   "cosine": 0.6166
+  },
+  {
+   "key": "tn-0010",
+   "eval": "TH125",
+   "cosine": 0.6019
+  },
+  {
+   "key": "tn-0012",
+   "eval": "TH121",
+   "cosine": 0.6122
+  },
+  {
+   "key": "tn-0013",
+   "eval": "TH122",
+   "cosine": 0.8803
+  },
+  {
+   "key": "tn-0020",
+   "eval": "TH126",
+   "cosine": 0.6652
+  },
+  {
+   "key": "td-0009",
+   "eval": "TH127",
+   "cosine": 0.9476
+  },
+  {
+   "key": "td-0010",
+   "eval": "TH130",
+   "cosine": 0.6795
+  },
+  {
+   "key": "bb-0005",
+   "eval": "TH024",
+   "cosine": 0.7779
+  },
+  {
+   "key": "bb-0013",
+   "eval": "TH021",
+   "cosine": 0.8881
+  },
+  {
+   "key": "bb-0015",
+   "eval": "TH019",
+   "cosine": 0.7563
+  },
+  {
+   "key": "bb-0017",
+   "eval": "TH016",
+   "cosine": 0.8188
+  },
+  {
+   "key": "xp-0009",
+   "eval": "TH135",
+   "cosine": 0.7402
+  },
+  {
+   "key": "xp-0031",
+   "eval": "TH141",
+   "cosine": 0.699
+  },
+  {
+   "key": "xp-0042",
+   "eval": "TH136",
+   "cosine": 0.9366
+  },
+  {
+   "key": "xp-0057",
+   "eval": "TH144",
+   "cosine": 0.7879
+  },
+  {
+   "key": "xp-0060",
+   "eval": "TH143",
+   "cosine": 0.8147
+  },
+  {
+   "key": "xp-0108",
+   "eval": "TH142",
+   "cosine": 0.6166
+  },
+  {
+   "key": "xp-0120",
+   "eval": "TH138",
+   "cosine": 0.9102
+  },
+  {
+   "key": "xp-0359",
+   "eval": "TH141",
+   "cosine": 0.8578
+  }
+ ],
+ "eval_sha256": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+ "gplx_sha256": "f9cf33af656071d59ca21799f7637eaecd2beba15136dd41ce4051bb9f6f0347",
+ "ty_le_dev": 0.1,
+ "cutoff": "2026-10-01"
+}
