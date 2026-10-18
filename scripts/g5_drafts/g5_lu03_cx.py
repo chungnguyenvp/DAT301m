@@ -42,7 +42,7 @@ add("quy_tac", "Ai phải công bố công khai mốc lộ giới hành lang an 
     t("d15:k3:c"))
 add("quy_tac", "Có được dựng biển quảng cáo trong hành lang an toàn đường cao tốc không?",
     "Không. Quy định cho phép đặt biển quảng cáo trong hành lang an toàn đường bộ loại trừ hành lang an toàn đường cao tốc và hành lang an toàn đường bộ tại nút giao (điểm a khoản 1 Điều 18 " + L35 + ").",
-    t("d18:k1:a"))
+    t("d18:k1:a"), t("d18:k1"))
 add("thu_tuc", "Lắp biển quảng cáo tại vị trí được phép trong hành lang an toàn đường bộ có cần cơ quan đường bộ chấp thuận không?",
     "Có. Phải được cơ quan quản lý đường bộ chấp thuận bằng văn bản về vị trí, quy mô, kích thước biển quảng cáo và phương án thi công để bảo đảm an toàn giao thông, an toàn công trình đường bộ và công trình liền kề khác (khoản 3 Điều 18 " + L35 + ").",
     t("d18:k3"))

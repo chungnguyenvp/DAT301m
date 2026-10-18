@@ -4,6 +4,7 @@ Mỗi mục A giữ riêng hành vi, câu dẫn tiền phạt và chế tài đ�
 Các tình huống chỉ xét xử phạt hành chính, không gây tai nạn, trừ khi nói khác.
 """
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -154,6 +155,30 @@ PRINCIPLE = (" Một người thực hiện nhiều hành vi vi phạm hoặc vi
              "trừ trường hợp vi phạm hành chính nhiều lần được Chính phủ quy định là tình tiết tăng nặng. "
              "Một hành vi vi phạm chỉ bị xử phạt một lần (điểm d khoản 1 Điều 3 Luật Xử lý vi phạm hành chính, hợp nhất 90/VBHN-VPQH năm 2026).")
 XL = "vbhn_90_2026_xlvphc:d3:k1:d@2026-07-01"
+# Rà soát 2026-10-18: câu nguyên tắc chỉ giữ ở 1/3 số mẫu, luân phiên cách viết; cụm "không gây tai nạn" chỉ giữ ở 1/3
+# số câu hỏi. Tránh để mô hình học một đoạn đuôi cố định và chờ người hỏi luôn nói "không gây tai nạn".
+PRINCIPLES = (
+    PRINCIPLE,
+    " Mỗi hành vi trên bị xử phạt riêng, vì một người thực hiện nhiều hành vi vi phạm hành chính thì bị xử phạt về từng "
+    "hành vi vi phạm (điểm d khoản 1 Điều 3 Luật Xử lý vi phạm hành chính).",
+    " Theo điểm d khoản 1 Điều 3 Luật Xử lý vi phạm hành chính, người thực hiện nhiều hành vi vi phạm hành chính bị xử phạt "
+    "về từng hành vi, nên các mức phạt trên được áp dụng cho từng lỗi.",
+    " Lưu ý: một hành vi vi phạm chỉ bị xử phạt một lần, còn nhiều hành vi thì bị xử phạt về từng hành vi (điểm d khoản 1 "
+    "Điều 3 Luật Xử lý vi phạm hành chính).",
+)
+NO_ACCIDENT = (re.compile(r",? nhưng (chưa|không) (gây |có |xảy ra )?tai nạn(?=\.)"),
+               re.compile(r", (chưa|không) (gây |có |xảy ra )?tai nạn(?=\.)"),
+               re.compile(r"\b[Nn]ếu (chưa|không) (gây |có |xảy ra )?tai nạn thì\s*"),
+               re.compile(r"\s*,?\s*nếu (chưa|không) (gây |có |xảy ra )?tai nạn"),
+               re.compile(r"\s*\b(Không|Chưa|không|chưa) (gây |có |xảy ra )?tai nạn( nào)?( thì|,|\.)?\s*"))
+
+
+def plain_question(q):
+    """Bỏ cụm "không/chưa gây tai nạn" và viết hoa lại đầu câu."""
+    for pat in NO_ACCIDENT:
+        q = pat.sub(" ", q)
+    q = re.sub(r"\s+([?.,])", r"\1", re.sub(r"\s{2,}", " ", q)).strip()
+    return re.sub(r"(^|[.?!] )([a-zà-ỹđ])", lambda m: m.group(1) + m.group(2).upper(), q)
 
 
 def add(q, *names, chat=False):
@@ -162,8 +187,15 @@ def add(q, *names, chat=False):
         answer, citations, _ = A[name]
         answers.append(answer)
         refs.extend(citations)
-    answer = " ".join(answers) + PRINCIPLE
-    refs.append(XL)
+    idx = len(S)
+    answer = " ".join(answers)
+    if idx % 3 == 0:
+        answer += PRINCIPLES[(idx // 3) % len(PRINCIPLES)]
+        refs.append(XL)
+    if idx % 3 != 2 and not chat:
+        q = plain_question(q)
+    elif idx % 3 != 2:
+        q = re.sub(r"\s{2,}", " ", NO_ACCIDENT[1].sub(" ", q)).strip()
     if sum(A[name][2] for name in names) > 1:
         answer += (" Nếu bị xử phạt trong cùng một lần thì chỉ áp dụng trừ điểm đối với hành vi bị trừ nhiều điểm nhất "
                    "(điểm b khoản 1 Điều 50 Nghị định 168/2024/NĐ-CP).")
