@@ -1,0 +1,79 @@
+{
+ "env": {
+  "python": "3.13.15",
+  "torch": "2.11.0+cu128",
+  "unsloth": "2026.10.6",
+  "transformers": "5.16.1",
+  "trl": "1.15.0",
+  "peft": "0.20.0",
+  "bitsandbytes": "0.50.2",
+  "accelerate": "1.14.0",
+  "datasets": "4.8.5",
+  "gpu": "Tesla T4",
+  "gpu_vram_gb": 14.56,
+  "bf16": false
+ },
+ "bundle": {
+  "mo_ta": "Gói dữ liệu cho notebook G4 (chạy thử Kaggle). Chỉ tập dev; mẫu train chỉ để đo thời gian.",
+  "nguon": {
+   "data/eval/eval_v1.jsonl": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+   "data/rag/chunks_khoan.jsonl": "1695ae80602a00d5e11fd667c9a6e72ad16c44ddf89e8035bc992cc97a4365bf",
+   "data/rag/test_with_context_khoan.jsonl": "eb775a6b36db0a1d01bc6b5358cff6a46642dda470735e34fac57a4efa62e636",
+   "data/rag/test_with_context_dieu.jsonl": "a9cf91c48c623544322ac0659d5bc3b6d1b87dfaca3661ad3ce0e7579115bdc1"
+  },
+  "so_cau_dev": 20,
+  "so_mau_do_thoi_gian": 100
+ },
+ "model": "Qwen/Qwen3.5-9B",
+ "lan_1": {
+  "sinh_khong_ngu_canh": {
+   "giay_moi_cau": 27.83,
+   "token_moi_giay": 11.9,
+   "prompt_tokens_tb": 104
+  },
+  "sinh_khoan": {
+   "giay_moi_cau": 26.09,
+   "token_moi_giay": 10.9,
+   "prompt_tokens_tb": 1800
+  }
+ },
+ "config": {
+  "MAX_SEQ_LEN": 4096,
+  "MAX_NEW_TOKENS": 384,
+  "DIEU_CTX_TOKENS": 4000,
+  "LORA_R": 16,
+  "LORA_ALPHA": 16,
+  "TRAIN_BATCH": 2,
+  "GRAD_ACCUM": 4,
+  "LR": 0.0002
+ },
+ "train": {
+  "trang_thai": "loi",
+  "loi": "RuntimeError: bỏ qua: RUN_TRAIN = False (số đo train ở reports/g4/g4v2_results.json)",
+  "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_23/201220443.py\", line 6, in <cell line: 0>\n    raise RuntimeError(\"bỏ qua: RUN_TRAIN = False (số đo train ở reports/g4/g4v2_results.json)\")\nRuntimeError: bỏ qua: RUN_TRAIN = False (số đo train ở reports/g4/g4v2_results.json)\n"
+ },
+ "sinh_dieu": {
+  "budget_token": 4000,
+  "load_seconds": 159.1,
+  "vram_after_load_gb": 7.98,
+  "so_cau": 20,
+  "so_cau_ok": 20,
+  "so_cau_loi": 0,
+  "so_cau_bi_cat": 11,
+  "giay_moi_cau": 33.7,
+  "token_moi_giay": 8.5,
+  "prompt_tokens_tb": 3394,
+  "prompt_tokens_max": 4141,
+  "new_tokens_tb": 287,
+  "so_cau_cham_tran": 5,
+  "vram_peak_sinh_gb": 10.97,
+  "trang_thai": "ok"
+ },
+ "uoc_tinh_gio_gpu": {
+  "sinh_G7_ngu_canh_khoan": 8.09,
+  "sinh_G7_ngu_canh_dieu": 9.23,
+  "train_G6": 9.01,
+  "tong_khoan": 17.1,
+  "ty_le_quota_tuan_khoan": 0.57
+ }
+}

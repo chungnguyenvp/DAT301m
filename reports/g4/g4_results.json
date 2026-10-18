@@ -1,0 +1,82 @@
+{
+ "env": {
+  "python": "3.13.15",
+  "torch": "2.11.0+cu128",
+  "unsloth": "2026.10.6",
+  "transformers": "5.16.1",
+  "trl": "1.15.0",
+  "peft": "0.20.0",
+  "bitsandbytes": "0.50.2",
+  "accelerate": "1.14.0",
+  "datasets": "4.8.5",
+  "gpu": "Tesla T4",
+  "gpu_vram_gb": 14.56,
+  "bf16": false
+ },
+ "bundle": {
+  "mo_ta": "Gói dữ liệu cho notebook G4 (chạy thử Kaggle). Chỉ tập dev; mẫu train chỉ để đo thời gian.",
+  "nguon": {
+   "data/eval/eval_v1.jsonl": "5a1b72038ae79755f5df7c53ed46447ac1516bb04e8e1330fd81cfc43fc0e252",
+   "data/rag/chunks_khoan.jsonl": "1695ae80602a00d5e11fd667c9a6e72ad16c44ddf89e8035bc992cc97a4365bf",
+   "data/rag/test_with_context_khoan.jsonl": "eb775a6b36db0a1d01bc6b5358cff6a46642dda470735e34fac57a4efa62e636",
+   "data/rag/test_with_context_dieu.jsonl": "a9cf91c48c623544322ac0659d5bc3b6d1b87dfaca3661ad3ce0e7579115bdc1"
+  },
+  "so_cau_dev": 20,
+  "so_mau_do_thoi_gian": 100
+ },
+ "config": {
+  "MAX_SEQ_LEN": 4096,
+  "MAX_NEW_TOKENS": 384,
+  "LORA_R": 16,
+  "LORA_ALPHA": 16,
+  "TRAIN_BATCH": 2,
+  "GRAD_ACCUM": 4,
+  "LR": 0.0002
+ },
+ "models": {
+  "Qwen/Qwen3.5-4B": {
+   "model": "Qwen/Qwen3.5-4B",
+   "load_seconds": 75.0,
+   "vram_after_load_gb": 3.53,
+   "sinh_khong_ngu_canh": {
+    "so_cau": 20,
+    "giay_moi_cau": 26.78,
+    "token_moi_giay": 9.6,
+    "prompt_tokens_tb": 104,
+    "new_tokens_tb": 257
+   },
+   "sinh_khoan": {
+    "so_cau": 20,
+    "giay_moi_cau": 22.45,
+    "token_moi_giay": 11.7,
+    "prompt_tokens_tb": 1800,
+    "new_tokens_tb": 264
+   },
+   "trang_thai": "loi",
+   "loi": "OutOfMemoryError: CUDA out of memory. Tried to allocate 22.04 GiB. GPU 0 has a total capacity of 14.56 GiB of which 6.87 GiB is free. Including non-PyTorch memory, this process has 7.69 GiB memory in use. Of the allocated memory 7.18 GiB is allocated by PyTorch, and 109.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+   "traceback": "ggle/working/unsloth_compiled_cache/unsloth_compiled_module_qwen3_5.py\", line 908, in forward\n    return Qwen3_5Attention_forward(self, hidden_states=hidden_states, position_embeddings=position_embeddings, attention_mask=attention_mask, past_key_values=past_key_values, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/unsloth_zoo/temporary_patches/utils.py\", line 2283, in forward\n    return disabled(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_dynamo/external_utils.py\", line 227, in nonrecursive_disable_wrapper\n    return fn(*args, **kwargs)\n  File \"/kaggle/working/unsloth_compiled_cache/unsloth_compiled_module_qwen3_5.py\", line 856, in Qwen3_5Attention_forward\n    attn_output, attn_weights = attention_interface(\n                                ~~~~~~~~~~~~~~~~~~~^\n        self,\n        ^^^^^\n    ...<6 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/unsloth_zoo/temporary_patches/muse_glimmer_banded_attention.py\", line 209, in _sdpa_maybe_muse_glimmer_banded\n    return _ORIG_SDPA[0](module, query, key, value, attention_mask,\n           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                         dropout=dropout, scaling=scaling, is_causal=is_causal, **kwargs)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/unsloth_zoo/temporary_patches/gemma4_flash_sliding.py\", line 182, in _sdpa_maybe_flash_sliding\n    return _ORIG_SDPA[0](module, query, key, value, attention_mask,\n           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                         dropout=dropout, scaling=scaling, is_causal=is_causal, **kwargs)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/unsloth_zoo/temporary_patches/misc.py\", line 1015, in sdpa_attention_forward_unsloth\n    return _orig(\n        module, query, key, value, attention_mask,\n        dropout = dropout, scaling = scaling, is_causal = is_causal,\n        **kwargs,\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/integrations/sdpa_attention.py\", line 158, in sdpa_attention_forward\n    attn_output = torch.nn.functional.scaled_dot_product_attention(\n        query,\n    ...<6 lines>...\n        **sdpa_kwargs,\n    )\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 22.04 GiB. GPU 0 has a total capacity of 14.56 GiB of which 6.87 GiB is free. Including non-PyTorch memory, this process has 7.69 GiB memory in use. Of the allocated memory 7.18 GiB is allocated by PyTorch, and 109.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+  },
+  "Qwen/Qwen3.5-9B": {
+   "model": "Qwen/Qwen3.5-9B",
+   "load_seconds": 198.0,
+   "vram_after_load_gb": 7.98,
+   "sinh_khong_ngu_canh": {
+    "so_cau": 20,
+    "giay_moi_cau": 27.83,
+    "token_moi_giay": 11.9,
+    "prompt_tokens_tb": 104,
+    "new_tokens_tb": 331
+   },
+   "sinh_khoan": {
+    "so_cau": 20,
+    "giay_moi_cau": 26.09,
+    "token_moi_giay": 10.9,
+    "prompt_tokens_tb": 1800,
+    "new_tokens_tb": 285
+   },
+   "trang_thai": "loi",
+   "loi": "OutOfMemoryError: CUDA out of memory. Tried to allocate 4.03 GiB. GPU 0 has a total capacity of 14.56 GiB of which 886.81 MiB is free. Including non-PyTorch memory, this process has 13.69 GiB memory in use. Of the allocated memory 13.18 GiB is allocated by PyTorch, and 118.35 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+   "traceback": "e/working/unsloth_compiled_cache/unsloth_compiled_module_qwen3_5.py\", line 908, in forward\n    return Qwen3_5Attention_forward(self, hidden_states=hidden_states, position_embeddings=position_embeddings, attention_mask=attention_mask, past_key_values=past_key_values, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/unsloth_zoo/temporary_patches/utils.py\", line 2283, in forward\n    return disabled(*args, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_dynamo/external_utils.py\", line 227, in nonrecursive_disable_wrapper\n    return fn(*args, **kwargs)\n  File \"/kaggle/working/unsloth_compiled_cache/unsloth_compiled_module_qwen3_5.py\", line 856, in Qwen3_5Attention_forward\n    attn_output, attn_weights = attention_interface(\n                                ~~~~~~~~~~~~~~~~~~~^\n        self,\n        ^^^^^\n    ...<6 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/unsloth_zoo/temporary_patches/muse_glimmer_banded_attention.py\", line 209, in _sdpa_maybe_muse_glimmer_banded\n    return _ORIG_SDPA[0](module, query, key, value, attention_mask,\n           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                         dropout=dropout, scaling=scaling, is_causal=is_causal, **kwargs)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/unsloth_zoo/temporary_patches/gemma4_flash_sliding.py\", line 182, in _sdpa_maybe_flash_sliding\n    return _ORIG_SDPA[0](module, query, key, value, attention_mask,\n           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                         dropout=dropout, scaling=scaling, is_causal=is_causal, **kwargs)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/unsloth_zoo/temporary_patches/misc.py\", line 1015, in sdpa_attention_forward_unsloth\n    return _orig(\n        module, query, key, value, attention_mask,\n        dropout = dropout, scaling = scaling, is_causal = is_causal,\n        **kwargs,\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/transformers/integrations/sdpa_attention.py\", line 158, in sdpa_attention_forward\n    attn_output = torch.nn.functional.scaled_dot_product_attention(\n        query,\n    ...<6 lines>...\n        **sdpa_kwargs,\n    )\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.03 GiB. GPU 0 has a total capacity of 14.56 GiB of which 886.81 MiB is free. Including non-PyTorch memory, this process has 13.69 GiB memory in use. Of the allocated memory 13.18 GiB is allocated by PyTorch, and 118.35 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+  }
+ }
+}
