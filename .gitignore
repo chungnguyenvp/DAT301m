@@ -7,3 +7,7 @@ tools/
 
 # Chỉ mục FAISS/BM25 và cache vector: build lại được từ data/rag/chunks_*.jsonl
 data/rag/index/
+
+# Gói và kết quả thử của notebook gắn ngữ cảnh G5 (tạo lại bằng scripts/build_g5ctx_bundle.py)
+kaggle/g5ctx/g5ctx_bundle.zip
+kaggle/g5ctx/out_local/
