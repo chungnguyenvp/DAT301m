@@ -1,0 +1,68 @@
+{
+ "model": "Qwen/Qwen3.5-9B",
+ "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+ "max_new_tokens": 512,
+ "luot": {
+  "D": {
+   "can": 270,
+   "co": 270,
+   "loi": 0,
+   "thieu": [],
+   "giay_tb": 12.3,
+   "token_moi_tb": 88,
+   "token_prompt_max": 5474,
+   "cham_gioi_han": 0
+  },
+  "C": {
+   "can": 270,
+   "co": 270,
+   "loi": 0,
+   "thieu": [],
+   "giay_tb": 11.9,
+   "token_moi_tb": 106,
+   "token_prompt_max": 143,
+   "cham_gioi_han": 17
+  },
+  "B": {
+   "can": 270,
+   "co": 270,
+   "loi": 0,
+   "thieu": [],
+   "giay_tb": 28.5,
+   "token_moi_tb": 312,
+   "token_prompt_max": 5474,
+   "cham_gioi_han": 37
+  },
+  "A": {
+   "can": 270,
+   "co": 270,
+   "loi": 0,
+   "thieu": [],
+   "giay_tb": 31.9,
+   "token_moi_tb": 380,
+   "token_prompt_max": 143,
+   "cham_gioi_han": 41
+  },
+  "D_boloc": {
+   "can": 40,
+   "co": 40,
+   "loi": 0,
+   "thieu": [],
+   "giay_tb": 11.8,
+   "token_moi_tb": 84,
+   "token_prompt_max": 3100,
+   "cham_gioi_han": 0
+  },
+  "B_boloc": {
+   "can": 40,
+   "co": 40,
+   "loi": 0,
+   "thieu": [],
+   "giay_tb": 27.0,
+   "token_moi_tb": 292,
+   "token_prompt_max": 3100,
+   "cham_gioi_han": 1
+  }
+ },
+ "du": true
+}
