@@ -11,3 +11,14 @@ data/rag/index/
 # Gói và kết quả thử của notebook gắn ngữ cảnh G5 (tạo lại bằng scripts/build_g5ctx_bundle.py)
 kaggle/g5ctx/g5ctx_bundle.zip
 kaggle/g5ctx/out_local/
+
+# Gói G6 cho máy thuê (tạo lại bằng scripts/build_g6_bundle.py)
+remote/g6/g6_bundle.zip
+# Kết quả G6 tải về từ máy thuê: có adapter 116 MB; phần nhỏ đã chép sang reports/g6/
+remote/g6/g6_ketqua.zip
+remote/g6/ketqua/
+
+# Gói G7 cho Kaggle (tạo lại bằng scripts/build_g7_bundle.py; có adapter 116 MB)
+kaggle/g7/g7_bundle.zip
+# Phần sinh của từng GPU: đã gộp vào kaggle/g7/out_g7/g7_answers.jsonl
+kaggle/g7/out_g7/answers_shard*.jsonl

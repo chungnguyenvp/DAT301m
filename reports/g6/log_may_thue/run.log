@@ -1,0 +1,230 @@
+gốc: /home/ezycloudx-admin/g5 | đầu ra: /home/ezycloudx-admin/g5/kaggle/g5ctx/out_local | giới hạn: không
+{'device': 'cuda', 'torch': '2.14.1+cu130', 'gpu': 'NVIDIA GeForce RTX 5060 Ti'}
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 33520.83it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 12692.98it/s]
+nạp retriever: 4 giây; tham số G3: {'bm25_k': 50, 'dense_k': 50, 'rrf_k': 60, 'dung_bm25': True, 'dung_vector': True, 'loc_hieu_luc': True, 'rerank_k': 20, 'top_k': 5}
+200/1567 câu, 178 giây
+400/1567 câu, 312 giây
+600/1567 câu, 454 giây
+800/1567 câu, 581 giây
+1000/1567 câu, 726 giây
+1200/1567 câu, 868 giây
+1400/1567 câu, 1011 giây
+tìm kiếm 1567 câu: 1125.0 giây
+{'train': 1662, 'dev': 192}
+{
+ "train": {
+  "so_mau": 1662,
+  "theo_dang": {
+   "co_ngu_canh": 1406,
+   "khong_ngu_canh": 134,
+   "tu_choi": 122
+  },
+  "theo_ban": {
+   "0": 1375,
+   "1": 287
+  },
+  "theo_loai": {
+   "tinh_huong": 235,
+   "doi_thuong": 107,
+   "quy_tac": 563,
+   "thu_tuc": 316,
+   "muc_phat": 307,
+   "tu_choi": 134
+  },
+  "theo_chu_de": {
+   "Biển báo": 101,
+   "Đăng kiểm": 73,
+   "Đăng ký xe": 165,
+   "GPLX": 181,
+   "Xử phạt": 407,
+   "Nộp phạt, giữ xe": 87,
+   "Hướng dẫn": 144,
+   "Lệ phí": 52,
+   "Bảo hiểm": 60,
+   "Luật lõi": 148,
+   "Tai nạn": 62,
+   "Từ chối": 134,
+   "Tốc độ": 48
+  },
+  "retriever_tren_mau_goc": {
+   "n": 1241,
+   "tim_du": 0.669,
+   "tim_mot_phan_tro_len": 0.923,
+   "phai_chen": 361,
+   "theo_loai": {
+    "doi_thuong": {
+     "n": 96,
+     "tim_du": 0.604,
+     "tim_mot_phan_tro_len": 0.823
+    },
+    "muc_phat": {
+     "n": 297,
+     "tim_du": 0.438,
+     "tim_mot_phan_tro_len": 0.963
+    },
+    "quy_tac": {
+     "n": 467,
+     "tim_du": 0.829,
+     "tim_mot_phan_tro_len": 0.916
+    },
+    "thu_tuc": {
+     "n": 158,
+     "tim_du": 0.759,
+     "tim_mot_phan_tro_len": 0.937
+    },
+    "tinh_huong": {
+     "n": 223,
+     "tim_du": 0.605,
+     "tim_mot_phan_tro_len": 0.919
+    }
+   }
+  },
+  "token": {
+   "tb": 1762,
+   "p50": 1768,
+   "p95": 2864,
+   "max": 3724,
+   "vuot_gioi_han": 0,
+   "mau_bo_bot_doan_vi_dai": 2
+  }
+ },
+ "dev": {
+  "so_mau": 192,
+  "theo_dang": {
+   "co_ngu_canh": 161,
+   "khong_ngu_canh": 17,
+   "tu_choi": 14
+  },
+  "theo_ban": {
+   "0": 192
+  },
+  "theo_loai": {
+   "quy_tac": 55,
+   "doi_thuong": 18,
+   "tinh_huong": 31,
+   "thu_tuc": 22,
+   "tu_choi": 16,
+   "muc_phat": 50
+  },
+  "theo_chu_de": {
+   "Biển báo": 1,
+   "Đăng kiểm": 13,
+   "Đăng ký xe": 16,
+   "GPLX": 12,
+   "Hướng dẫn": 14,
+   "Lệ phí": 7,
+   "Luật lõi": 11,
+   "Nộp phạt, giữ xe": 22,
+   "Tai nạn": 5,
+   "Từ chối": 16,
+   "Bảo hiểm": 1,
+   "Tốc độ": 1,
+   "Xử phạt": 73
+  },
+  "retriever_tren_mau_goc": {
+   "n": 176,
+   "tim_du": 0.653,
+   "tim_mot_phan_tro_len": 0.898,
+   "phai_chen": 59,
+   "theo_loai": {
+    "doi_thuong": {
+     "n": 18,
+     "tim_du": 0.389,
+     "tim_mot_phan_tro_len": 0.556
+    },
+    "muc_phat": {
+     "n": 50,
+     "tim_du": 0.52,
+     "tim_mot_phan_tro_len": 1.0
+    },
+    "quy_tac": {
+     "n": 55,
+     "tim_du": 0.855,
+     "tim_mot_phan_tro_len": 0.909
+    },
+    "thu_tuc": {
+     "n": 22,
+     "tim_du": 0.818,
+     "tim_mot_phan_tro_len": 0.955
+    },
+    "tinh_huong": {
+     "n": 31,
+     "tim_du": 0.548,
+     "tim_mot_phan_tro_len": 0.871
+    }
+   }
+  },
+  "token": {
+   "tb": 1758,
+   "p50": 1863,
+   "p95": 2815,
+   "max": 3365,
+   "vuot_gioi_han": 0,
+   "mau_bo_bot_doan_vi_dai": 0
+  }
+ }
+}
+-> /home/ezycloudx-admin/g5/kaggle/g5ctx/out_local/train_chat.jsonl 1662 dòng
+-> /home/ezycloudx-admin/g5/kaggle/g5ctx/out_local/dev_chat.jsonl 192 dòng
+-> /home/ezycloudx-admin/g5/kaggle/g5ctx/out_local/g5ctx_stats.json
+====================================================================================================
+bb-1001 | bản 0 | co_ngu_canh | đoạn: [(1, False, False), (2, False, True), (3, False, False), (4, False, False), (5, False, False)]
+--- system:
+Bạn là trợ lý pháp luật giao thông đường bộ Việt Nam. Trả lời dựa trên các đoạn luật được cung cấp, theo quy định có hiệu lực tại ngày hỏi. Nêu rõ căn cứ (điểm, khoản, Điều, văn bản) và nêu đúng số tiền, số điểm trừ, thời hạn nếu có. Nếu các đoạn luật không có căn cứ cho câu hỏi, nói rõ là không có căn cứ trong tài liệu, không tự bịa quy định. Trả lời ngắn gọn bằng tiếng Việt.
+--- user:
+Ngày hỏi: 2026-10-01
+
+Các đoạn luật:
+[1] QCVN 41:2024/BGTVT, phụ lục — hiệu lực từ 01/01/2025
+QCVN 41:2024/BGTVT — Phụ lục E
+- Biển số I.405 (a,b) để chỉ lối rẽ vào đường cụt. Tùy theo lối rẽ vào đường cụt mà chọn kiểu biển cho phù hợp. Biển này đặt trên đường chính trước khi đến nơi đường giao nhau để rẽ vào đường cụt.
+- Biển số I.405c để chỉ dẫn phía trước là đường cụt. Biển này đặt trước đường cụt 300 m đến 500 m và cứ 100 m phải đặt thêm một biển.
+- Đường cụt là những đường xe không thể tiếp tục đi qua được. Những đường cụt có thể là những ngõ cụt (ở trong khu đông dân cư); đường hoặc cầu bị đứt do thiên tai, địch hoạ hoặc đường tránh dự phòng mà mà tại vị trí vượt sông, suối chưa có phương tiện vượt sông; đường đi vào cầu nhưng cầu hỏng v.v...
+b) Những đường cụt mà xe cộ không thể đi vào được hoặc không sử dụng thì không đặt biển đường cụt mà phải rào chắn ngay tại nơi đường giao nhau và đặt biển số P.101 "Đường cấm".
+a) Biển số I.405a b) Biển số I.405b c) Biển số I.405c
+Hình E.5 - Biển số I.405
+E.6 Biển số I.406 "Được ưu tiên qua đường hẹp"
+a) Để chỉ dẫn cho người tham gia giao thông cơ giới biết mình được quyền ưu tiên đi trước trên đoạn đường hẹp, đặt biển số I.406 "Được ưu
+--- assistant:
+Không. Khi đường cấm vì đường, cầu bị tắc và có hàng rào chắn ngang trước phần xe chạy, các xe được ưu tiên cũng không được phép đi vào (mục B.1 Phụ lục B QCVN 41:2024/BGTVT).
+====================================================================================================
+bb-1026 | bản 0 | co_ngu_canh | đoạn: [(1, False, False), (2, False, False), (3, False, False), (None, True, True), (4, False, False)]
+--- system:
+Bạn là trợ lý pháp luật giao thông đường bộ Việt Nam. Trả lời dựa trên các đoạn luật được cung cấp, theo quy định có hiệu lực tại ngày hỏi. Nêu rõ căn cứ (điểm, khoản, Điều, văn bản) và nêu đúng số tiền, số điểm trừ, thời hạn nếu có. Nếu các đoạn luật không có căn cứ cho câu hỏi, nói rõ là không có căn cứ trong tài liệu, không tự bịa quy định. Trả lời ngắn gọn bằng tiếng Việt.
+--- user:
+Ngày hỏi: 2026-10-01
+
+Các đoạn luật:
+[1] QCVN 41:2024/BGTVT, phụ lục — hiệu lực từ 01/01/2025
+QCVN 41:2024/BGTVT — Phụ lục B
+a) Khi cần quy định tốc độ tối đa về ban đêm cho các phương tiện, đặt biển số P.127a “Tốc độ tối đa cho phép về ban đêm”.
+Áp dụng biển số P.127a cho một số trường hợp qua khu đông dân cư vào ban đêm nhằm mục đích nâng cao tốc độ vận hành khi đường ít xe chạy. Biển chỉ có hiệu lực trong thời gian ghi trên biển và trong phạm vi từ vị trí đặt biển đến vị trí biển số R.421 “Hết khu đông dân cư”. Biển được đặt sau vị trí biển số R.420 “Bắt đầu khu đông dân cư”.
+b) Số ghi trên biển tốc độ tối đa cho phép lớn nhất về ban đêm tính bằng km/h và không lớn hơn 80 km/h. Người tham gia giao thông về ban đêm không được vượt quá giá trị tốc độ ghi trên biển trừ một số trường hợp ưu tiên được quy định. Trong phạm vi hiệu lực của biển số P.127a “Tốc độ tối đa cho phép về ban đêm”, nếu gặp biển số P.127 “Tốc độ tối đa cho phép” thì người lái phải tuân thủ theo giá trị tốc độ tối đa quy định ghi trên biển số P.127.
+Hình B.27c - Biển số P.127a
+B.27b Biển số P.127b "Biển ghép tốc độ tối đa cho phép trên từng làn đường"
+a) Khi quy định tốc độ tối đa cho phép trên từng làn đường, n
+--- assistant:
+Các loại phương tiện phải đi đúng làn đường và tuân thủ tốc độ tối đa cho phép trên làn đường đó (mục B.27c Phụ lục B QCVN 41:2024/BGTVT).
+====================================================================================================
+tc-0001 | bản 0 | tu_choi | đoạn: [(1, False, False), (2, False, False), (3, False, False), (4, False, False), (5, False, False)]
+--- system:
+Bạn là trợ lý pháp luật giao thông đường bộ Việt Nam. Trả lời dựa trên các đoạn luật được cung cấp, theo quy định có hiệu lực tại ngày hỏi. Nêu rõ căn cứ (điểm, khoản, Điều, văn bản) và nêu đúng số tiền, số điểm trừ, thời hạn nếu có. Nếu các đoạn luật không có căn cứ cho câu hỏi, nói rõ là không có căn cứ trong tài liệu, không tự bịa quy định. Trả lời ngắn gọn bằng tiếng Việt.
+--- user:
+Ngày hỏi: 2026-10-01
+
+Các đoạn luật:
+[1] Nghị định 10/2022/NĐ-CP, khoản 3 Điều 3 — hiệu lực từ 01/03/2022
+Nghị định 10/2022/NĐ-CP — Điều 3. Đối tượng chịu lệ phí trước bạ
+3. Tàu theo quy định của pháp luật về giao thông đường thủy nội địa và pháp luật về hàng hải (sau đây gọi là tàu thủy), kể cả sà lan, ca nô, tàu kéo, tàu đẩy, tàu ngầm, tàu lặn; trừ ụ nổi, kho chứa nổi và giàn di động.
+
+[2] Nghị định 10/2022/NĐ-CP, khoản 23 Điều 10 — hiệu lực từ 01/03/2022
+Nghị định 10/2022/NĐ-CP — Điều 10. Miễn lệ phí trước bạ
+23. Tàu cá (bao gồm tàu đánh bắt nguồn lợi thủy sản, tàu hậu cần đánh bắt nguồn lợi thủy sản); vỏ, tổng thành máy, thân máy (block) của tàu cá được thay thế và phải đăng ký với cơ quan nhà nước có thẩm quyền.
+
+[3] Luật Xử lý vi phạm hành chính (văn bản hợp nhất 90/VBHN-VPQH), khoản 1 Điều 58 — hiệu lực từ 01/07/2026
+Luật Xử lý vi phạm hành chính (văn bản hợp nhất 90/VBHN-VPQH) — Điều 58. Lập biên bản vi phạm hành chính
+1. Khi phát hiện hành vi vi phạm hành chính thuộc lĩnh vực quản lý của mình, người có thẩm quyền đang thi hành công vụ phải kịp thời lập biên bản vi phạm hành chính, trừ trường hợp xử phạt không lập biên bản theo quy định tại khoản 1 Điều 56 của Luật này.
+Vi 
+--- assistant:
+Câu hỏi này nằm ngoài phạm vi của tôi. Tôi chỉ hỗ trợ tra cứu pháp luật về trật tự, an toàn giao thông đường bộ Việt Nam (luật giao thông, xử phạt, giấy phép lái xe, đăng ký, đăng kiểm, phí và bảo hiểm xe) và không có căn cứ trong tài liệu để trả lời. Bạn nên tra cứu Bộ luật Hàng hải và các văn bản hướng dẫn của cơ quan quản lý hàng hải.
