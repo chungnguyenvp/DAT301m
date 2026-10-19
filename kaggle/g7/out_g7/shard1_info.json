@@ -1,0 +1,10 @@
+{
+ "model": "Qwen/Qwen3.5-9B",
+ "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+ "cach_gan_adapter": "peft",
+ "nap_giay": 58.0,
+ "vram_sau_nap_gb": 8.08,
+ "gpu": "Tesla T4",
+ "fp": "fp16",
+ "chenh_logit_bat_tat_adapter": 13.7168
+}

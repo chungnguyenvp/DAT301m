@@ -5,3 +5,10 @@ data/eval/drafts/*.jsonl text eol=lf
 # Đoạn cho RAG cũng được khóa bằng SHA-256 trong data/rag/MANIFEST.json.
 data/rag/*.jsonl text eol=lf
 data/rag/*.json text eol=lf
+# Script chạy trên Linux và dữ liệu train đã khóa bằng SHA-256: luôn LF.
+*.sh text eol=lf
+data/train/*.jsonl text eol=lf
+data/train/chat/*.jsonl text eol=lf
+data/train/chat/*.json text eol=lf
+# Câu trả lời G7: reports/g7/scores.json ghi mã băm của file này.
+kaggle/g7/out_g7/*.jsonl text eol=lf
