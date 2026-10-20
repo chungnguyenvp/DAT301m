@@ -34,15 +34,17 @@ class Encoder(Protocol):
 
 
 class SentenceEncoder:
-    """bge-m3 trên CPU, nạp từ snapshot trong cache Hugging Face (không tải mạng)."""
+    """bge-m3, nạp từ snapshot trong cache Hugging Face (không tải mạng). Mặc định chạy CPU; demo G9 dùng GPU và ghim
+    `revision` đúng bản đã tạo chỉ mục."""
 
-    def __init__(self, model: str = MODEL, max_seq_length: int = MAX_SEQ_LENGTH, batch_size: int = 8):
+    def __init__(self, model: str = MODEL, max_seq_length: int = MAX_SEQ_LENGTH, batch_size: int = 8,
+                 device: str = "cpu", revision: str | None = None):
         os.environ.setdefault("HF_HUB_OFFLINE", "1")
         from huggingface_hub import snapshot_download
         from sentence_transformers import SentenceTransformer
 
-        path = Path(snapshot_download(model, local_files_only=True))
-        self.st = SentenceTransformer(str(path), device="cpu")
+        path = Path(snapshot_download(model, revision=revision, local_files_only=True))
+        self.st = SentenceTransformer(str(path), device=device)
         self.st.max_seq_length = max_seq_length
         self.batch_size = batch_size
         self.identity = {"model": model, "revision": path.name, "max_seq_length": max_seq_length,
