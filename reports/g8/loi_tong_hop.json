@@ -1,0 +1,171 @@
+{
+ "ghi_chu": "Đọc `reports/g7/per_item.jsonl` (chấm tự động G7) và `reports/retrieval/test_results.json` (G3: 5 đoạn đưa vào prompt\ncó chứa nhóm căn cứ nào). Mỗi câu trong phạm vi (thường, sửa đổi, biến thể) của một lượt có RAG được xếp vào đúng một\nnhóm, theo thứ tự ưu tiên:",
+ "luot": {
+  "B": {
+   "tat_ca": {
+    "dung": 133,
+    "tu_choi_sai": 14,
+    "khong_co_can_cu": 20,
+    "thieu_mot_phan": 20,
+    "loi_sinh": 27,
+    "n": 214
+   },
+   "thuong": {
+    "dung": 89,
+    "tu_choi_sai": 3,
+    "khong_co_can_cu": 9,
+    "thieu_mot_phan": 14,
+    "loi_sinh": 19,
+    "n": 134
+   },
+   "loai/chung": {
+    "dung": 36,
+    "tu_choi_sai": 4,
+    "khong_co_can_cu": 2,
+    "thieu_mot_phan": 0,
+    "loi_sinh": 6,
+    "n": 48
+   },
+   "loai/thủ tục": {
+    "dung": 51,
+    "tu_choi_sai": 2,
+    "khong_co_can_cu": 2,
+    "thieu_mot_phan": 2,
+    "loi_sinh": 11,
+    "n": 68
+   },
+   "loai/tình huống": {
+    "dung": 30,
+    "tu_choi_sai": 7,
+    "khong_co_can_cu": 11,
+    "thieu_mot_phan": 6,
+    "loi_sinh": 6,
+    "n": 60
+   },
+   "loai/định nghĩa": {
+    "dung": 8,
+    "tu_choi_sai": 0,
+    "khong_co_can_cu": 0,
+    "thieu_mot_phan": 0,
+    "loi_sinh": 1,
+    "n": 9
+   },
+   "loai/hành vi cấm": {
+    "dung": 2,
+    "tu_choi_sai": 0,
+    "khong_co_can_cu": 4,
+    "thieu_mot_phan": 3,
+    "loi_sinh": 2,
+    "n": 11
+   },
+   "loai/mức phạt": {
+    "dung": 6,
+    "tu_choi_sai": 1,
+    "khong_co_can_cu": 1,
+    "thieu_mot_phan": 9,
+    "loi_sinh": 1,
+    "n": 18
+   },
+   "sua_doi": {
+    "dung": 29,
+    "tu_choi_sai": 1,
+    "khong_co_can_cu": 0,
+    "thieu_mot_phan": 0,
+    "loi_sinh": 6,
+    "n": 36
+   },
+   "bien_the": {
+    "dung": 15,
+    "tu_choi_sai": 10,
+    "khong_co_can_cu": 11,
+    "thieu_mot_phan": 6,
+    "loi_sinh": 2,
+    "n": 44
+   },
+   "trich_ban_cu": 1
+  },
+  "D": {
+   "tat_ca": {
+    "dung": 124,
+    "tu_choi_sai": 16,
+    "khong_co_can_cu": 14,
+    "thieu_mot_phan": 27,
+    "loi_sinh": 33,
+    "n": 214
+   },
+   "thuong": {
+    "dung": 77,
+    "tu_choi_sai": 2,
+    "khong_co_can_cu": 8,
+    "thieu_mot_phan": 21,
+    "loi_sinh": 26,
+    "n": 134
+   },
+   "loai/chung": {
+    "dung": 34,
+    "tu_choi_sai": 3,
+    "khong_co_can_cu": 2,
+    "thieu_mot_phan": 1,
+    "loi_sinh": 8,
+    "n": 48
+   },
+   "loai/thủ tục": {
+    "dung": 50,
+    "tu_choi_sai": 1,
+    "khong_co_can_cu": 1,
+    "thieu_mot_phan": 5,
+    "loi_sinh": 11,
+    "n": 68
+   },
+   "loai/tình huống": {
+    "dung": 26,
+    "tu_choi_sai": 10,
+    "khong_co_can_cu": 8,
+    "thieu_mot_phan": 7,
+    "loi_sinh": 9,
+    "n": 60
+   },
+   "loai/định nghĩa": {
+    "dung": 5,
+    "tu_choi_sai": 0,
+    "khong_co_can_cu": 0,
+    "thieu_mot_phan": 2,
+    "loi_sinh": 2,
+    "n": 9
+   },
+   "loai/hành vi cấm": {
+    "dung": 2,
+    "tu_choi_sai": 1,
+    "khong_co_can_cu": 3,
+    "thieu_mot_phan": 3,
+    "loi_sinh": 2,
+    "n": 11
+   },
+   "loai/mức phạt": {
+    "dung": 7,
+    "tu_choi_sai": 1,
+    "khong_co_can_cu": 0,
+    "thieu_mot_phan": 9,
+    "loi_sinh": 1,
+    "n": 18
+   },
+   "sua_doi": {
+    "dung": 31,
+    "tu_choi_sai": 1,
+    "khong_co_can_cu": 0,
+    "thieu_mot_phan": 0,
+    "loi_sinh": 4,
+    "n": 36
+   },
+   "bien_the": {
+    "dung": 16,
+    "tu_choi_sai": 13,
+    "khong_co_can_cu": 6,
+    "thieu_mot_phan": 6,
+    "loi_sinh": 3,
+    "n": 44
+   },
+   "trich_ban_cu": 0
+  }
+ }
+}

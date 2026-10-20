@@ -52,7 +52,11 @@ RUNS = {  # thứ tự chạy: hệ thống chính trước
     "A": {"adapter": False, "ngu_canh": None},
     "D_boloc": {"adapter": True, "ngu_canh": "ngu_canh_bo_loc", "chi_nhom": "sua_doi"},
     "B_boloc": {"adapter": False, "ngu_canh": "ngu_canh_bo_loc", "chi_nhom": "sua_doi"},
+    # G8: ngữ cảnh mở rộng lên Điều cha (`rag.expand`, `data/rag/test_with_context_g8.jsonl`); chỉ có trong gói G8
+    "D_g8": {"adapter": True, "ngu_canh": "ngu_canh_g8"},
+    "B_g8": {"adapter": False, "ngu_canh": "ngu_canh_g8"},
 }
+G7_RUNS = ["D", "C", "B", "A", "D_boloc", "B_boloc"]
 
 
 def log(msg: str) -> None:
@@ -75,9 +79,10 @@ def messages(prompts: dict, item: dict, ctx_field: str | None) -> list[dict]:
     return [{"role": "system", "content": system}, {"role": "user", "content": user}]
 
 
-def all_jobs(items: list[dict], limit: int = 0) -> list[tuple[str, dict]]:
+def all_jobs(items: list[dict], limit: int = 0, runs: list[str] | None = None) -> list[tuple[str, dict]]:
     jobs = []
-    for run, cfg in RUNS.items():
+    for run in runs or G7_RUNS:
+        cfg = RUNS[run]
         rows = [x for x in items if cfg.get("chi_nhom") in (None, x["nhom_cau"])]
         jobs += [(run, x) for x in (rows[:limit] if limit else rows)]
     return jobs
@@ -172,7 +177,7 @@ def run_shard(a) -> None:
     out.mkdir(parents=True, exist_ok=True)
     items = read_jsonl(ROOT / "data" / "g7" / "items.jsonl")
     prompts = json.loads((ROOT / "data" / "g7" / "prompts.json").read_text(encoding="utf-8"))
-    jobs = [j for i, j in enumerate(all_jobs(items, a.limit)) if i % a.nshards == a.shard]
+    jobs = [j for i, j in enumerate(all_jobs(items, a.limit, a.runs)) if i % a.nshards == a.shard]
     done = done_jobs(answer_files([out, *map(Path, a.prev)]))
     todo = [(run, x) for run, x in jobs if (run, x["uid"]) not in done]
     log(f"[phần {a.shard}/{a.nshards}] {len(jobs)} việc, đã có {len(jobs) - len(todo)}, còn {len(todo)}")
@@ -245,20 +250,21 @@ def merge(a) -> dict:
             if k not in best or (best[k].get("loi") and not r.get("loi")):
                 best[k] = r
     run_idx = {r: i for i, r in enumerate(RUNS)}
-    rows = sorted(best.values(), key=lambda r: (run_idx[r["run"]], order[r["uid"]]))
+    rows = sorted((r for r in best.values() if r["run"] in a.runs),
+                  key=lambda r: (run_idx[r["run"]], order[r["uid"]]))
     with open(out / "g7_answers.jsonl", "w", encoding="utf-8", newline="\n") as fp:
         fp.writelines(json.dumps(r, ensure_ascii=False) + "\n" for r in rows)
-    expected = Counter(run for run, _ in all_jobs(items))
+    expected = Counter(run for run, _ in all_jobs(items, runs=a.runs))
     by = defaultdict(list)
     for r in rows:
         by[r["run"]].append(r)
     summary = {"model": MODEL, "revision": MODEL_REVISION, "max_new_tokens": MAX_NEW_TOKENS, "luot": {}}
-    for run in RUNS:
+    for run in a.runs:
         rs = by[run]
         ok = [r for r in rs if not r.get("loi")]
         summary["luot"][run] = {
             "can": expected[run], "co": len(ok), "loi": len(rs) - len(ok),
-            "thieu": sorted({x["uid"] for r2, x in all_jobs(items) if r2 == run} - {r["uid"] for r in ok},
+            "thieu": sorted({x["uid"] for r2, x in all_jobs(items, runs=[run])} - {r["uid"] for r in ok},
                             key=order.get)[:20],
             "giay_tb": round(sum(r["giay"] for r in ok) / len(ok), 1) if ok else None,
             "token_moi_tb": round(sum(r["so_token_moi"] for r in ok) / len(ok)) if ok else None,
@@ -280,7 +286,11 @@ def main() -> None:
     ap.add_argument("--max-hours", type=float, default=0)
     ap.add_argument("--backend", choices=["unsloth", "dry"], default="unsloth")
     ap.add_argument("--merge", action="store_true")
+    ap.add_argument("--runs", default=None, help="danh sách lượt, cách nhau bởi dấu phẩy; mặc định 6 lượt của G7")
     a = ap.parse_args()
+    a.runs = a.runs.split(",") if a.runs else list(G7_RUNS)
+    unknown = [r for r in a.runs if r not in RUNS]
+    assert not unknown, f"lượt không có: {unknown}"
     if a.merge:
         print(json.dumps(merge(a), ensure_ascii=False, indent=1))
     else:

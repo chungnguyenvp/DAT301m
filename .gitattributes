@@ -12,3 +12,5 @@ data/train/chat/*.jsonl text eol=lf
 data/train/chat/*.json text eol=lf
 # Câu trả lời G7: reports/g7/scores.json ghi mã băm của file này.
 kaggle/g7/out_g7/*.jsonl text eol=lf
+# Câu trả lời G8: reports/g8/auto/scores.json ghi mã băm của file này.
+kaggle/g8/out_g8/*.jsonl text eol=lf

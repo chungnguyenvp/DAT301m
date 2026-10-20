@@ -1,0 +1,28 @@
+{
+ "model": "Qwen/Qwen3.5-9B",
+ "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+ "max_new_tokens": 512,
+ "luot": {
+  "D_g8": {
+   "can": 270,
+   "co": 270,
+   "loi": 0,
+   "thieu": [],
+   "giay_tb": 13.4,
+   "token_moi_tb": 89,
+   "token_prompt_max": 3520,
+   "cham_gioi_han": 0
+  },
+  "B_g8": {
+   "can": 270,
+   "co": 270,
+   "loi": 0,
+   "thieu": [],
+   "giay_tb": 30.6,
+   "token_moi_tb": 326,
+   "token_prompt_max": 3520,
+   "cham_gioi_han": 51
+  }
+ },
+ "du": true
+}

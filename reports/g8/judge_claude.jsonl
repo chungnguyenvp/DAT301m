@@ -1,0 +1,960 @@
+{"run": "D", "uid": "bien_the/bt07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt và căn cứ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai câu trong phạm vi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt09", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng mức phạt nhưng thiếu tước GPLX 22–24 tháng, lại nêu trừ 20 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt10", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt11", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt12", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Mô tả sai khung tốc độ (05–10 km/h) và trích Điều 8; đáp án là quá 10–20 km/h, Điều 7.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt13", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt14", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu tước GPLX 10–12 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt15", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai mức phạt (14–16 triệu, Điều 8) và thiếu trừ 06 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt17", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai hành vi và mức phạt (1–2 triệu, Điều 28).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt18", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt19", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng kết luận không được và nêu cấm người không có GPLX điều khiển; trích căn cứ khác nhưng nội dung đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt20", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"có sai\" trái đáp án (được chở trẻ dưới 12 tuổi).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt21", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu cách nhường đường (giảm tốc, đi sát lề phải hoặc dừng lại).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt22", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt23", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thủ tục phục hồi điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt24", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tuổi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt25", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 40 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt27", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu đúng 70 m cho khung 80–100 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt29", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thời hạn nhưng không nói nộp hồ sơ ở đâu (trực tuyến, Công an cấp xã, Phòng CSGT).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt30", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt31", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận \"được\" trái đáp án (IDP do Việt Nam cấp không dùng trong nước).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt32", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Chỉ nêu trường hợp quá hạn từ 01 năm; không trả lời trường hợp 6 tháng chỉ thi lý thuyết.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt33", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không phải thi lại, bảo lưu lý thuyết 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt34", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt35", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu thời hạn cấp chứng nhận đăng ký 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt36", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt37", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt38", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: phải đổi, mang xe đến kiểm tra.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt39", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt40", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt41", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt42", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt43", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt44", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt45", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận \"có thể được đền\" và lý do sai; đáp án là không bồi thường vì người lái không đủ tuổi, không có GPLX.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt46", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2% và 1%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt47", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: 0% đến hết 28/02/2027.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt48", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai (BLDS có trong kho).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt49", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai (BLDS có trong kho).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "bien_the/bt50", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: đã qua vạch thì được đi tiếp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np04", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Trả lời câu về đường sắt bằng quy định đường bộ thay vì nói ngoài phạm vi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng (có một ký tự lạ trong câu).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Bịa căn cứ: lấy điều về lệ phí trước bạ tàu cá để trả lời nơi đăng ký tàu cá.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng, không bịa giá.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np17", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np18", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: nói văn bản đã hết hiệu lực, chỉ sang NĐ 168/2024.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np19", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: văn bản đã hết hiệu lực.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np20", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: văn bản đã hết hiệu lực.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np21", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: văn bản đã hết hiệu lực.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np22", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np23", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np27", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np29", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "ngoai_pham_vi/np30", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng ngưỡng 10% và mức phạt theo bản mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới (04 giờ liên tục, ngày/tuần theo BLLĐ).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: xanh và đỏ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được nâng hạng D lên CE.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng định nghĩa mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd18", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"có vi phạm\" trái với chính ngoại lệ xe máy mà câu trả lời nêu.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd21", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd24", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd25", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 07 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd27", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không cần bản chà khi làm điện tử.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: Công an xã đăng ký ô tô.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd29", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 04 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd30", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng dưới 50%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd32", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: Sở Xây dựng cấp, 05 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd33", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd34", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 giờ và 3,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd35", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd37", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: trực tuyến, trước 07 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd38", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: người sử dụng hợp pháp được nhận.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd41", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd43", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không thuộc điểm b khoản 7 Điều 32.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd44", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd45", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd47", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày kể từ ngày ký quyết định, có ngoại lệ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd48", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: nộp được ở Công an xã.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd51", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày kể từ ngày ký.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd52", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: ống ≤ 200 mm được nộp đồng thời.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd53", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 05 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd54", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 12 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd55", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 05 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd56", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd57", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd58", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "sua_doi/sd59", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng định nghĩa.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hình dạng, màu sắc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb03", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng việc phải làm nhưng thiếu đặc điểm nhận biết (tam giác đều, viền đỏ, nền vàng).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng công dụng và vị trí đặt.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thứ tự ưu tiên.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thứ tự các loại đường (thiếu quy tắc khi cùng cấp, ý phụ).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được đi tiếp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng kết luận theo hiệu lệnh cảnh sát; phần dẫn quy định chắn đường sắt không liên quan.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bb12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được quay đầu nếu không có biển cấm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh01", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 1–3 năm và ngoại lệ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: tối đa 15%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu mức tạm ứng khi chưa xác định phạm vi bồi thường (30%, 10%).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng các trách nhiệm chính.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh09", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng là hợp lệ nhưng không liệt kê các thông tin bắt buộc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không được bồi thường vì không có GPLX.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/bh12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk01", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu thời hạn cấp biển số (cấp ngay).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Liệt kê đủ các trường hợp chính (dẫn từ Luật thay vì Thông tư).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 08 giờ làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 15 ngày, gia hạn 15 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 07 ngày làm việc, nộp lại để thu hồi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không bắt buộc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 40 triệu đồng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dk15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng các hình thức nộp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dm02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dm03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng giấy tờ phải nộp (thiếu ý xuất trình đăng ký xe, ý phụ).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dm04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng giấy tờ phải nộp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dm05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dm06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dm07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng ba màu tem.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dm08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không phải kiểm định lại.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/dm09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng người dán và vị trí dán.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp01", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Liệt kê theo căn cứ khác, thêm \"bị mất\" (là cấp lại, không phải đổi), thiếu trường hợp tích hợp GPLX.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng nơi nộp và thời hạn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng nơi nộp và giấy tờ xuất trình.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không nêu các trường hợp không được cấp lại.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Trả lời theo GPLX ô tô, không nêu bài kiểm tra hạng A (19 phút, 25 câu, đạt 23/25).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: có xét nghiệm ma túy, nồng độ cồn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng kết luận không (căn cứ dẫn chưa sát).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 20 phút, 30 câu, 27/30.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: chỉ sát hạch lý thuyết.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không phải thi lại, bảo lưu 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp16", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu mức phạt tiền thay vì đình chỉ, hủy kết quả sát hạch theo đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/gp17", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 giờ và 3,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd02", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hình thức nộp nhưng không nêu cơ quan có thẩm quyền.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày và 03 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ nội dung phương án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng các yêu cầu chính.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không được trên quốc lộ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được sử dụng, xin cấp phép, không bắt buộc phương án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/hd14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng định nghĩa.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng định nghĩa.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll04", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Ngụ ý có ngưỡng cồn cho phép và nêu ngưỡng, mức phạt không có trong đáp án; luật cấm mọi nồng độ cồn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu được phần lớn các hành vi cấm chính.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu được 5/6 nhóm hành vi cấm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng kết luận không được (căn cứ dẫn sang BLHS).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: xe chữa cháy đi trước.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/ll15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/lp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/lp02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 10% (thiếu ý HĐND tăng và lần 2, ý phụ).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/lp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 0%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/lp04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/lp05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu cơ quan đại diện và xe mô tô ba bánh cho người khuyết tật.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/lp07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu đúng mức khu vực I 1.400.000 đồng và quy tắc theo nơi cư trú.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/lp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 70.000 và 35.000 đồng (thiếu mức chỉ đổi biển số).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/lp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: theo nơi cư trú.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng điều kiện.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np12", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu thời hạn kéo dài tối đa 01 hoặc 02 tháng (câu hỏi hỏi tối đa).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/np14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/td01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/td02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/td03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/td04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/td05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu đúng 90 km/h trên đường đôi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/td07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 70 m.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/td08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu đúng 70 km/h trên đường hai chiều.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/tn01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng khung hình phạt khoản 1.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/tn02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 03–10 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/tn04", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Chỉ nêu nguyên tắc chung Điều 584, không nói người mượn xe phải bồi thường.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/tn05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Trả lời theo loại trừ bảo hiểm, sai vấn đề; đáp án là kẻ trộm bồi thường, chủ có lỗi thì liên đới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/tn06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/tn07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: vẫn phải bồi thường trừ khi hoàn toàn do lỗi cố ý của người bị thiệt hại.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/tn08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/tn09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt và trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp04", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu tước GPLX 22–24 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng các hành vi bị tịch thu.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp10", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu tước GPLX 10–12 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp12", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, thiếu trừ 06 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D", "uid": "thuong/xp16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng phạm vi điều chỉnh.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt07", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng mức phạt nhưng nêu thêm trừ 2 điểm (không có trong đáp án).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai và gợi ý văn bản đã hết hiệu lực (NĐ 100/2019).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt09", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, nói không có căn cứ về tước GPLX (đáp án: tước 22–24 tháng).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt10", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, nói không trừ điểm (đáp án: trừ 04 điểm).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt11", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, nêu trừ 2 điểm (đáp án: 04 điểm).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt12", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai đối tượng (xe máy chuyên dùng) và sai mức phạt.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt13", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, không nêu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt14", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, nêu trừ 4 điểm thay vì tước GPLX 10–12 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt15", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận sai là không phạt hành chính, chỉ truy cứu hình sự.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt17", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức 400.000–600.000 đồng (dẫn căn cứ sai).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt18", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng kết luận không được lái (căn cứ dẫn không sát).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt19", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng kết luận không được (căn cứ dẫn sang BLHS).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt20", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"vi phạm\" trái đáp án (được chở trẻ dưới 12 tuổi).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt21", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt22", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt23", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt24", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tuổi nhưng thêm điều kiện sai (phải có chứng chỉ bồi dưỡng để được cấp A1, B).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt25", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai, gợi ý văn bản đã hết hiệu lực.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 40 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt27", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Nói không có căn cứ rồi nêu sai 60 km/h theo luật cũ; đáp án 90 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 70 m.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt29", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thời hạn nhưng chỉ nêu nộp trực tiếp, thiếu kênh trực tuyến là kênh chính.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt30", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt31", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận \"được\" trái đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt32", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: chỉ sát hạch lý thuyết.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt33", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không phải thi lại, bảo lưu 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt34", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Trả lời sai vấn đề (thời gian chờ thi lại theo TT 12/2025), không nêu 02 giờ và 3,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt35", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai thời hạn cấp chứng nhận đăng ký (07 ngày, đáp án 02 ngày làm việc); biển số cấp ngay đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt36", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: giữ lại giấy tờ, biển số, làm thu hồi trong 30 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt37", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Không dựa vào căn cứ và thêm quy định sai (chuyển tỉnh khác thì bắt buộc đổi).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt38", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt39", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai, hiểu sai câu hỏi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt40", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt41", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Từ chối sai và nêu sai thời hạn tạm giữ 06 tháng theo tố tụng hình sự.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt42", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt43", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt44", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt45", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận \"có bồi thường\" trái đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt46", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2% và 1%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt47", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 0%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt48", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Từ chối, rồi nêu căn cứ sai (NĐ 123/2020) và nguyên tắc chung không đúng đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt49", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Dựa vào bảng tỷ lệ thương tật bảo hiểm, không nêu các khoản bồi thường theo Điều 590 BLDS.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "bien_the/bt50", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được đi tiếp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nói rõ không có căn cứ cho tàu hỏa, không áp quy định đường bộ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối nhưng kèm phỏng đoán cơ quan đăng ký tàu cá (Cục Đăng kiểm), là thông tin bịa.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np17", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np18", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không trả lời theo văn bản cũ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np19", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Không trả lời theo luật cũ nhưng nêu sai quy định hiện hành (21 tuổi cho ô tô con).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np20", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không trả lời theo văn bản cũ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np21", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không trả lời theo văn bản cũ, nêu hồ sơ theo TT 79/2024.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np22", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np23", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np27", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np29", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "ngoai_pham_vi/np30", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd07", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Lẫn sang khoản 4 (chiều cao), nêu ngưỡng \"10% đến 30%\" không rõ ràng; không trả lời dứt khoát.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: xanh và đỏ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng định nghĩa mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd18", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Mở đầu \"có vi phạm\" rồi kết luận \"không vi phạm\"; tự mâu thuẫn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd21", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd24", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đọc nhầm, nói không có quy định thời hạn cấp lại khi mất.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd25", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai thời hạn (02 ngày, đáp án 07 ngày làm việc).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd27", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd29", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 04 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd30", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng dưới 50%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd32", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: Sở Xây dựng, 05 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd33", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd34", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 giờ và 3,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd35", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai thời hạn (02 ngày, đáp án 2,5 ngày làm việc).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd37", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: trực tuyến, 07 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd38", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd41", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu mức phạt nhưng nói không có căn cứ về tạm giữ xe, không trả lời câu hỏi chính.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd43", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd44", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd45", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd47", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd48", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd51", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd52", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd53", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 05 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd54", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 12 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd55", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 05 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd56", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd57", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd58", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "sua_doi/sd59", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng đặc điểm và việc phải làm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thứ tự ưu tiên.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thứ tự các loại đường.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được đi tiếp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb11", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Nói phải dừng lại (dẫn quy định gác chắn đường sắt), trái tình huống cảnh sát cho đi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bb12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh01", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 15%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 05 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ các mức tạm ứng chính (đọc sót mức cho tổn thương từ 81%).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng và liệt kê đủ nội dung.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không bồi thường.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/bh12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk01", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Nói biển số cũng cấp trong 02 ngày làm việc; đáp án: biển số cấp ngay.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ các trường hợp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 08 giờ làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 15 ngày, gia hạn 15 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk09", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Thêm quy định sai: bắt buộc đổi khi chuyển ra ngoài phạm vi cơ quan đăng ký.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk11", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Tính sai giá khởi điểm 45 triệu; đáp án 40 triệu đồng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk14", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Nói biển số định danh bị thu hồi vào kho; đáp án: giữ lại cho chủ xe 05 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dk15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dm02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dm03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dm04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dm05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dm06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dm07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng ba màu tem.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dm08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/dm09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Có đủ các trường hợp của đáp án (kèm thêm trường hợp theo Luật).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng nơi nộp và thời hạn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu trường hợp thu hồi GPLX thay vì các trường hợp không cấp lại của đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không nêu bài kiểm tra hạng A (19 phút, 25 câu, đạt 23/25).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ cho lần đầu.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng; trích điều chưa đúng chỗ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng số liệu; ghi nhầm văn bản (TT 12/2025 thay vì TT 65/2024).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp14", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận phải thi cả thực hành, trong khi 6 tháng chỉ thi lý thuyết.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng: không phải thi lại lý thuyết.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: đình chỉ, hủy kết quả; mức phạt 5-10 triệu theo điểm k khoản 3 Điều 39 NĐ 168 là có thật (đã kiểm tra lại trong kho).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/gp17", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 giờ và 3,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd02", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hình thức nộp nhưng không nêu cơ quan có thẩm quyền.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng phù hiệu, vị trí, kích thước.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ yêu cầu.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Mở đầu \"không có căn cứ\" nhưng nêu đúng hai ưu tiên.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: quốc lộ không được.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thủ tục, thẩm quyền, 01 ngày; nói nhầm phải có phương án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/hd14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: phải lập hóa đơn điện tử.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng định nghĩa.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng định nghĩa.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll04", "dat": true, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận đúng; mức phạt nêu sai bậc (18-20 triệu cho mọi mức trên 0).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hành vi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu 5/6 nhóm hành vi cấm, thiếu lập điểm đón trả khách trái quy định (chấm như D: đạt).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll07", "dat": true, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận đúng; gán nhầm mức phạt người lái không GPLX cho người giao xe.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll08", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận ngược (là đúng luật); bịa mức phạt 2 triệu, trừ 2 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: xe chữa cháy đi trước.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 12 điểm và điều kiện phục hồi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 06 tháng, kiểm tra kiến thức.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 16 và 18 tuổi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/ll15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hai loại tuyến.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/lp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2% và 1%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/lp02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 10%, tối đa thêm 50%, lần 2 là 2%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/lp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 0% đến hết 28/02/2027.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/lp04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/lp05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu cơ quan đại diện ngoại giao và xe mô tô ba bánh cho người khuyết tật.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/lp07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 1.400.000 đồng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/lp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 35.000 và 70.000 đồng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/lp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: theo nơi cư trú.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np02", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Mức tối đa nêu 75/150 triệu thay vì 1 tỷ/2 tỷ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hai điều kiện.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng điều kiện và 03 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/np14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/td01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/td02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 40 km/h; thêm sai 120 km/h trên cao tốc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/td03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 60 và 50 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/td04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/td05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 90 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/td07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 70 m.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/td08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 70 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/tn01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng khung hình phạt khoản 1.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/tn02", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Nêu tù 03-05 năm thay vì 03-10 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/tn04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng người mượn bồi thường; căn cứ sai (Điều 584, 597 thay vì 601) và thêm ý chủ xe bù phần thiếu.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/tn05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Khẳng định không phải bồi thường, bỏ trường hợp liên đới nếu chủ xe có lỗi; căn cứ bảo hiểm sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/tn06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu thu nhập bị mất, chi phí người chăm sóc; tổn thất tinh thần nêu 100 lần lương cơ sở (Điều 591) thay vì 50 lần.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/tn07", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận ngược: nguồn nguy hiểm cao độ vẫn bồi thường khi không có lỗi, trừ lỗi cố ý hoàn toàn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/tn08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/tn09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp01", "dat": true, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng mức phạt; thêm sai trừ 1 điểm (khoản 2 Điều 7 không trừ điểm).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp03", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt nhưng trừ 9 điểm thay vì 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp04", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; thiếu tước GPLX 22-24 tháng, nêu sai trừ 9 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp05", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; nói không trừ điểm (đúng là trừ 04 điểm). Chấm như D: thiếu điểm trừ là không đạt.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; không nêu trừ 04 điểm (chấm như D: không đạt).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền và 04 điểm; ghi chú thêm về mức 12-14 triệu không có căn cứ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ các hành vi khoản 11 (thêm hành vi theo Điều 14).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp10", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng có bị phạt 8-10 triệu; thiếu tước GPLX 10-12 tháng (chấm như D: không đạt).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp12", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt nhưng trừ 10 điểm thay vì 06 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp13", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận có bị phạt đúng nhưng mức phạt 1-2 triệu sai (đúng 800.000-1.000.000 đồng).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B", "uid": "thuong/xp16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt09", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; nêu trừ 20 điểm thay vì tước GPLX 22-24 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt10", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt11", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt12", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai khung tốc độ (05-10 km/h, Điều 8); đáp án quá 10-20 km/h, Điều 7.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt13", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt14", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu tước GPLX 10-12 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt15", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Nêu hình phạt hình sự Điều 260 thay vì phạt hành chính 8-10 triệu, trừ 06 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt17", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt18", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt19", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng \"không được\"; căn cứ là điều kiện người lái thay vì khoản 7 Điều 9.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt20", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"có sai\" trái đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt21", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Chỉ nói nhường đường, không cản trở; thiếu giảm tốc, đi sát lề phải hoặc dừng lại.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt22", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt23", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt24", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 16 và 18 tuổi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt25", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 40 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt27", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Có mức 70 m cho 80-100 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt29", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng nơi nộp nhưng thiếu thời hạn 01 ngày (bản in 2,5 ngày làm việc).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt30", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt31", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng \"không\"; lý do không đúng căn cứ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt32", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Chỉ nêu trường hợp quá hạn từ 01 năm; 6 tháng chỉ thi lý thuyết.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt33", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không phải thi lại, bảo lưu 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt34", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt35", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc và cấp biển ngay.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt36", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt37", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt38", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: phải đổi chứng nhận đăng ký.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt39", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt40", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt41", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt42", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt43", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt44", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt45", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"có\" trái đáp án; căn cứ Điều 599 không liên quan.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt46", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2% và 1%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt47", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 0% đến hết 28/02/2027.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt48", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai (BLDS có trong kho).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt49", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai (BLDS có trong kho).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "bien_the/bt50", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được đi tiếp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np04", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không từ chối, áp quy định đường bộ cho đường sắt.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không từ chối, dẫn quy định lệ phí trước bạ cho tàu cá.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np17", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np18", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối trả lời theo văn bản cũ, gợi ý NĐ 168.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np19", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối văn bản đã hết hiệu lực, gợi ý văn bản hiện hành.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np20", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối văn bản đã hết hiệu lực, gợi ý văn bản hiện hành.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np21", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối văn bản đã hết hiệu lực, gợi ý văn bản hiện hành.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np22", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np23", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np27", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np29", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "ngoai_pham_vi/np30", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới (trên 10%).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới (04 giờ, theo BLLĐ).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng xanh và đỏ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng định nghĩa mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd18", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"có\" vi phạm, mâu thuẫn với ngoại lệ xe máy mà chính câu trả lời nêu.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd21", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd24", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd25", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 07 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd27", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không cần bản chà.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd29", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 04 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd30", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 50%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd32", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng Sở Xây dựng, 05 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd33", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd34", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 giờ, 3,5 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd35", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd37", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd38", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd41", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd43", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd44", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd45", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd47", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày kể từ ngày ký.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd48", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd51", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày kể từ ngày ký.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd52", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd53", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 05 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd54", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 12 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd55", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 05 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd56", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd57", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd58", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Trả lời thời hạn hiệu lực của giấy phép thay vì thời hạn cấp (01 ngày làm việc).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "sua_doi/sd59", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thứ tự.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thứ tự 8 loại đường; thiếu tiêu chí khi cùng thứ tự.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được đi tiếp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: theo hiệu lệnh người điều khiển.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bb12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh01", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không nêu giới hạn 150 triệu/người, 50 và 100 triệu tài sản.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu mức tạm ứng khi chưa xác định phạm vi bồi thường (30%, 10%).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ trách nhiệm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh09", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng là hợp lệ nhưng không liệt kê các thông tin bắt buộc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không bồi thường.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/bh12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc và cấp biển ngay.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ các trường hợp chính (dẫn từ Luật).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk04", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Chỉ dẫn chiếu thủ tục, không liệt kê giấy tờ (chứng từ chuyển quyền, lệ phí trước bạ, chứng nhận thu hồi).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 08 giờ làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 15 ngày, gia hạn 15 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không bắt buộc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 40 triệu đồng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dk15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dm02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dm03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dm04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ giấy tờ phải nộp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dm05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ trường hợp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dm06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dm07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng ba màu tem.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dm08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/dm09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ bốn trường hợp được đổi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng nơi nộp và thời hạn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng cả hai ý.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không nêu bài kiểm tra hạng A (19 phút, 25 câu, đạt 23/25).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng; căn cứ không đúng chỗ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 20 phút, 30 câu, 27/30.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: 6 tháng chỉ thi lý thuyết.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không phải thi lại, bảo lưu 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp16", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Chỉ nêu phạt tiền 5-10 triệu (có thật), thiếu ý chính đình chỉ, hủy kết quả sát hạch.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/gp17", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 giờ và 3,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hình thức nộp và cơ quan có thẩm quyền.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ nội dung chính.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thủ tục, thẩm quyền, 01 ngày; nói phương án có hoàn trả.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/hd14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll04", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Ngụ ý có ngưỡng cồn cho phép (\"vượt quá mức quy định\"); luật cấm mọi nồng độ cồn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu phần lớn hành vi cấm chính.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ 6 nhóm hành vi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng \"không\"; căn cứ dẫn sang Điều 264 BLHS.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"không đúng\" trái đáp án (được chở trẻ dưới 12 tuổi).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: xe chữa cháy đi trước.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/ll15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/lp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2% và 1%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/lp02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 10% (thiếu ý HĐND tăng và lần 2, ý phụ).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/lp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/lp04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/lp05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ bốn nhóm được miễn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/lp07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 1.400.000 đồng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/lp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 70.000 và 35.000 đồng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/lp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu trường hợp nộp tại chỗ thay vì nguyên tắc nộp tại Kho bạc Nhà nước.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np12", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu mức kéo dài tối đa 02 tháng (chỉ nêu 01 tháng).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/np14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/td01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 120 và 60 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/td02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 40 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/td03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 60 và 50 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/td04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/td05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Có mức 90 km/h trên đường đôi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/td07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Có mức 70 m cho 80-100 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/td08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Có mức 70 km/h trên đường hai chiều.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/tn01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng khung hình phạt khoản 1.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/tn02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 03-10 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/tn04", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Chỉ nêu nguyên tắc chung Điều 584, không nói người mượn xe phải bồi thường.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/tn05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Trả lời theo loại trừ bảo hiểm, sai vấn đề; đáp án là kẻ trộm bồi thường, chủ có lỗi thì liên đới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/tn06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu thiệt hại do tính mạng (Điều 591) thay vì các khoản do sức khỏe bị xâm phạm (Điều 590).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/tn07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: vẫn phải bồi thường trừ lỗi cố ý hoàn toàn của người bị thiệt hại.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/tn08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/tn09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt và trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp04", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu tước GPLX 22-24 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp10", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu tước GPLX 10-12 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp12", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, thiếu trừ 06 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "D_g8", "uid": "thuong/xp16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai và gợi ý văn bản đã hết hiệu lực (NĐ 100/2019).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt09", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; nói không có căn cứ về tước GPLX (đáp án: tước 22-24 tháng).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt10", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; nói không trừ điểm (đáp án: trừ 04 điểm).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt11", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; nêu trừ 2 điểm (đáp án: 04 điểm).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt12", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai đối tượng (xe máy chuyên dùng) và sai mức phạt.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt13", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, không nêu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt14", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; nêu trừ 02 điểm thay vì tước GPLX 10-12 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt15", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai mức phạt (400-600 nghìn, khoản 4 Điều 9).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt16", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận có bị phạt đúng nhưng mức phạt 100-200 nghìn sai (đúng 800.000-1.000.000 đồng).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt17", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Nói không có căn cứ, rồi nêu mức phạt theo NĐ 100/2019 đã hết hiệu lực.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt18", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai và nêu ngưỡng cồn sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt19", "dat": true, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận đúng \"không được\"; nêu sai khung hình phạt Điều 264 BLHS.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt20", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"sai luật\" trái đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt21", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt22", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt23", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt24", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 16 và 18 tuổi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt25", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt26", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu xe gắn máy 50 km/h; đáp án 40 km/h cho cả hai loại.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt27", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nói không có căn cứ về tốc độ khi không có biển; không nêu 90 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Lúc đầu nhầm 55 m, sau tự sửa và kết luận 70 m.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt29", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng nơi nộp, 01 ngày và 2,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt30", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt31", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng \"không được\"; lập luận lẫn lộn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt32", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: 6 tháng chỉ thi lý thuyết.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt33", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng không phải thi lại lý thuyết; nói nhầm chỉ thi lại phần trên đường.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt34", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Trả lời sai vấn đề (thời gian chờ thi lại theo TT 12/2025).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt35", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc, cấp biển ngay.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt36", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt37", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"có bắt buộc\" trái đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt38", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng phải đổi; thêm yêu cầu hồ sơ tổng thành khung không đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt39", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Hiểu sai câu hỏi, nói không có căn cứ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt40", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt41", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt42", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt43", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối sai, gợi ý NĐ 100/2019 đã hết hiệu lực.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt44", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt45", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"có bồi thường\" trái đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt46", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2% và 1%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt47", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 0% đến hết 28/02/2027.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt48", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nói không có căn cứ, nêu căn cứ sai (NĐ 123/2020) và nguyên tắc chung không đúng đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt49", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Dựa vào bảng thương tật bảo hiểm, không nêu các khoản theo Điều 590 BLDS.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "bien_the/bt50", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được đi tiếp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np04", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không từ chối, áp quy định đường bộ cho đường sắt.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối nhưng kèm thông tin bịa (lái tàu do quân đội, công an quản lý theo khoản 9 Điều 60).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np17", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng (kèm thông tin lệ phí trước bạ không liên quan).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np18", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không trả lời theo văn bản cũ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np19", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không trả lời theo luật cũ nhưng nêu sai quy định hiện hành (21 tuổi cho ô tô con).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np20", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không trả lời theo văn bản cũ; nêu đúng mức phạt hiện hành.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np21", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Không trả lời theo văn bản cũ; nêu quy định hiện hành.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np22", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np23", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np27", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np28", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np29", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "ngoai_pham_vi/np30", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Từ chối đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới (trên 10%), đúng mức phạt.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd08", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Sai đối tượng (ô tô) và sai mức phạt (4-6 triệu).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng xanh và đỏ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng định nghĩa mới (dẫn nhầm Luật Đường bộ).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd18", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"có vi phạm\" mâu thuẫn với ngoại lệ xe máy chính câu trả lời nêu.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd21", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd24", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nói không có căn cứ; chỉ nhắc 02 ngày như thông lệ, dẫn Luật GTĐB 2008 đã hết hiệu lực.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd25", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận không có quy định cụ thể; hiểu sai điểm c khoản 2 (07 ngày) là trường hợp khác.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd26", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd27", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không cần bản chà.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd28", "dat": false, "che_tai_sai": false, "theo_luat_cu": true, "ly_do": "Kết luận \"không\" theo bản cũ (Công an xã chỉ đăng ký mô tô).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd29", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 04 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd30", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 50%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd32", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng Sở Xây dựng, 05 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd33", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd34", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 giờ, 3,5 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd35", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd37", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd38", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng \"có\"; thêm ý cần ủy quyền (quy định cũ) mâu thuẫn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd41", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận không có căn cứ tạm giữ ngay, đúng mức phạt 4-6 triệu.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd43", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng theo bản mới.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd44", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd45", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd47", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày kể từ ngày ký.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd48", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd51", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 30 ngày kể từ ngày ký.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd52", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd53", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 05 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd54", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 12 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd55", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 05 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd56", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd57", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd58", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "sua_doi/sd59", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng thứ tự.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng, có nêu tiêu chí khi cùng thứ tự.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: được đi tiếp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: theo hiệu lệnh cảnh sát.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bb12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh01", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nói không có căn cứ; không nêu 150 triệu/người, 50 và 100 triệu tài sản.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ các mức tạm ứng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ trách nhiệm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng và liệt kê nội dung.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh10", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"vẫn bồi thường\" trái đáp án (không lái xe không GPLX là loại trừ).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/bh12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 ngày làm việc và cấp biển ngay.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ các trường hợp chính.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk03", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Trộn hồ sơ sang tên (lệ phí trước bạ, chứng nhận thu hồi) vào hồ sơ thu hồi; thiếu bản chà và nộp lại đăng ký, biển số.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ sang tên.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 08 giờ làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 15 ngày, gia hạn 15 ngày.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không bắt buộc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 40 triệu đồng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dk15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dm02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dm03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dm04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dm05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ trường hợp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dm06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dm07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng ba màu tem.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dm08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/dm09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Có đủ các trường hợp của đáp án (kèm thêm trường hợp theo Luật).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng nơi nộp và thời hạn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng cả hai ý.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu sai bài kiểm tra (20 câu, 15 phút); đáp án hạng A là 19 phút, 25 câu, đạt 23/25.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hồ sơ cho lần đầu.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng \"không\"; lập luận lẫn lộn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng số liệu; ghi nhầm văn bản (TT 12/2025 thay vì TT 65/2024).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: 6 tháng chỉ thi lý thuyết.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: không phải thi lại, bảo lưu 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: đình chỉ, hủy kết quả; kèm mức phạt 5-10 triệu (có thật).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/gp17", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 02 giờ và 3,5 ngày làm việc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng cơ quan có thẩm quyền và hình thức nộp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng hồ sơ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd13", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nói không có căn cứ, cho rằng dựng rạp tang lễ không phải mục đích hợp pháp.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/hd14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll04", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Nêu có ngưỡng cồn cho phép (0,02 và 0,25 mg/l); luật cấm mọi nồng độ cồn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ hành vi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ 6 nhóm hành vi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll07", "dat": true, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận đúng \"không được\"; nêu sai mức phạt (6-8 triệu, trừ 2 điểm) cho xe 110cc.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận \"không đúng luật\" trái đáp án.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: xe chữa cháy đi trước.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 06 tháng, kiểm tra kiến thức.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 16 và 18 tuổi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/ll15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/lp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 2% và 1%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/lp02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 10%, tối đa thêm 50%, lần 2 là 2%.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/lp03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/lp04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/lp05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ các nhóm được miễn.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/lp07", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Xếp TP. Hồ Chí Minh vào khu vực II, kết luận 105.000 đồng (đúng là 1.400.000 đồng).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/lp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 35.000 và 70.000 đồng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/lp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: theo nơi cư trú.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 01 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np02", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Mức tối đa nêu 75/150 triệu thay vì 1 tỷ/2 tỷ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức trung bình và tăng/giảm trong khung.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 10 ngày và vẫn phải chấp hành; liệt kê ngoại lệ không đúng khoản 3 Điều 15.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np06", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np10", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np12", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng đủ các mốc 07, 10 ngày, 01 và 02 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np13", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/np14", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/td01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/td02", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 40 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/td03", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/td04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/td05", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 90 km/h.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/td07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng 70 m.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/td08", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Nêu 80 km/h cho đường hai chiều (đúng là 70 km/h).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/tn01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng khung hình phạt khoản 1.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/tn02", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Nêu tù 01-05 năm thay vì 03-10 năm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/tn04", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Kết luận đúng người mượn bồi thường; căn cứ Điều 586 thay vì 601.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/tn05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Khẳng định không phải bồi thường, bỏ trường hợp liên đới nếu chủ xe có lỗi.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/tn06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Thiếu thu nhập bị mất, chi phí người chăm sóc; tổn thất tinh thần nêu 100 lần lương cơ sở thay vì 50 lần.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/tn07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng: vẫn phải bồi thường trừ lỗi cố ý hoàn toàn của người bị thiệt hại.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/tn08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/tn09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp01", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng mức phạt, đúng không trừ điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp03", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt nhưng trừ 9 điểm thay vì 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp04", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; thiếu tước GPLX 22-24 tháng, nêu sai trừ 9 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp05", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, không nêu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp06", "dat": false, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt, không nêu trừ 04 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp07", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp08", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng tiền và 04 điểm; ghi chú thêm mức 12-14 triệu không có căn cứ.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp09", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đủ các hành vi khoản 11 (thêm hành vi theo Điều 32).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp10", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt; nêu trừ 02 điểm thay vì tước GPLX 10-12 tháng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp11", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp12", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng tiền phạt nhưng trừ 5 điểm thay vì 06 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp13", "dat": false, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Kết luận có bị phạt đúng nhưng mức phạt 12-14 triệu sai (đúng 800.000-1.000.000 đồng).", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp14", "dat": true, "che_tai_sai": true, "theo_luat_cu": false, "ly_do": "Đúng mức phạt; thêm sai trừ 1 điểm.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp15", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
+{"run": "B_g8", "uid": "thuong/xp16", "dat": true, "che_tai_sai": false, "theo_luat_cu": false, "ly_do": "Đúng.", "giam_khao": "claude-opus-5-5 (trong phiên)"}
