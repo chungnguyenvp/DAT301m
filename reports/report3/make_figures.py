@@ -27,9 +27,9 @@ def pipeline() -> None:
     ax.axis("off")
     boxes = [
         (0.1, 2.2, "Câu hỏi\n+ ngày hỏi t"),
-        (1.9, 2.2, "BM25 (pyvi)\n+ bge-m3 (FAISS)"),
-        (3.7, 2.2, "Gộp RRF\n(k = 60)"),
-        (5.5, 2.2, "Lọc hiệu lực\nin_force_at(t)"),
+        (1.9, 2.2, "Lọc hiệu lực\nin_force_at(t)"),
+        (3.7, 2.2, "BM25 (pyvi)\n+ bge-m3 (FAISS)"),
+        (5.5, 2.2, "Gộp RRF\n(k = 60)"),
         (7.3, 2.2, "Rerank\nbge-reranker-v2-m3"),
         (7.3, 0.4, "5 đoạn theo Khoản\n(G8: mở rộng lên Điều)"),
         (5.5, 0.4, "Qwen3.5-9B 4-bit\n+ adapter LoRA (G6)"),

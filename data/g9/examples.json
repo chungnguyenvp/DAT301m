@@ -1,0 +1,83 @@
+[
+ {
+  "uid": "thuong/xp03",
+  "cau_hoi": "Lái ô tô không chấp hành hiệu lệnh của đèn tín hiệu giao thông bị xử phạt như thế nào?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "thuong"
+ },
+ {
+  "uid": "thuong/xp07",
+  "cau_hoi": "Xe máy chạy quá tốc độ quy định từ 10 km/h đến 20 km/h bị phạt tiền bao nhiêu?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "thuong"
+ },
+ {
+  "uid": "thuong/ll08",
+  "cau_hoi": "Tôi đi xe máy chở vợ và con trai 10 tuổi cùng lúc thì có đúng luật không?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "thuong"
+ },
+ {
+  "uid": "thuong/td02",
+  "cau_hoi": "Xe gắn máy và xe máy chuyên dùng được chạy tối đa bao nhiêu km/h?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "thuong"
+ },
+ {
+  "uid": "thuong/ll12",
+  "cau_hoi": "Giấy phép lái xe có bao nhiêu điểm và khi nào được phục hồi đủ điểm?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "thuong"
+ },
+ {
+  "uid": "sua_doi/sd10",
+  "cau_hoi": "Tài xế ô tô được lái xe tối đa bao nhiêu giờ một ngày và bao lâu thì phải nghỉ?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "sua_doi"
+ },
+ {
+  "uid": "sua_doi/sd10",
+  "cau_hoi": "Tài xế ô tô được lái xe tối đa bao nhiêu giờ một ngày và bao lâu thì phải nghỉ?",
+  "ngay_hoi": "2026-03-01",
+  "nhom_cau": "sua_doi",
+  "ban_cu": true
+ },
+ {
+  "uid": "sua_doi/sd34",
+  "cau_hoi": "Thi đậu sát hạch lái xe thì sau bao lâu được cấp giấy phép lái xe?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "sua_doi"
+ },
+ {
+  "uid": "sua_doi/sd34",
+  "cau_hoi": "Thi đậu sát hạch lái xe thì sau bao lâu được cấp giấy phép lái xe?",
+  "ngay_hoi": "2026-03-01",
+  "nhom_cau": "sua_doi",
+  "ban_cu": true
+ },
+ {
+  "uid": "sua_doi/sd25",
+  "cau_hoi": "Biển số xe bị mất thì xin cấp lại mất bao lâu?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "sua_doi"
+ },
+ {
+  "uid": "sua_doi/sd25",
+  "cau_hoi": "Biển số xe bị mất thì xin cấp lại mất bao lâu?",
+  "ngay_hoi": "2026-03-01",
+  "nhom_cau": "sua_doi",
+  "ban_cu": true
+ },
+ {
+  "uid": "ngoai_pham_vi/np01",
+  "cau_hoi": "Đi tàu hỏa mà không mua vé thì bị phạt bao nhiêu tiền?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "ngoai_pham_vi"
+ },
+ {
+  "uid": "ngoai_pham_vi/np18",
+  "cau_hoi": "Theo Nghị định 100/2019/NĐ-CP, người đi xe máy vượt đèn đỏ bị phạt bao nhiêu?",
+  "ngay_hoi": "2026-10-01",
+  "nhom_cau": "ngoai_pham_vi"
+ }
+]

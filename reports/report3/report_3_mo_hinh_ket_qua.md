@@ -14,8 +14,8 @@
 Báo cáo này trình bày phần mô hình và kết quả của hệ thống hỏi đáp pháp luật giao thông đường bộ có nhận biết hiệu lực
 văn bản. Hệ thống gồm hai thành phần:
 
-- **Tìm kiếm (RAG):** BM25 kết hợp vector bge-m3 bằng RRF, xếp hạng lại bằng bge-reranker-v2-m3, và **lọc đoạn luật theo
-  hiệu lực tại ngày hỏi**.
+- **Tìm kiếm (RAG):** **lọc đoạn luật theo hiệu lực tại ngày hỏi**, rồi BM25 kết hợp vector bge-m3 bằng RRF và xếp hạng
+  lại bằng bge-reranker-v2-m3.
 - **Sinh câu trả lời:** Qwen3.5-9B nạp 4-bit, fine-tune QLoRA trên 1.662 hội thoại có gắn ngữ cảnh.
 
 Đánh giá trên 240 câu test của bộ eval tự xây (`eval_v1`) cho ba kết luận chính:
@@ -64,8 +64,9 @@ Câu biến thể viết lại câu thường theo kiểu đời thường, vi�
 ### 3.1 Kho tra cứu và tìm kiếm (G3)
 
 - **Chỉ mục:** BM25 với tách từ pyvi; vector bge-m3 (FAISS, chạy CPU).
-- **Tìm kiếm:** lấy 50 kết quả BM25 và 50 kết quả vector, gộp bằng Reciprocal Rank Fusion (k = 60), lọc theo hiệu lực tại
-  ngày hỏi, xếp hạng lại 20 đoạn đầu bằng bge-reranker-v2-m3, giữ 5 đoạn.
+- **Tìm kiếm:** lọc hiệu lực tại ngày hỏi ngay trong BM25 và vector (đoạn hết hiệu lực bị loại trước khi xếp hạng); lấy
+  50 kết quả BM25 và 50 kết quả vector, gộp bằng Reciprocal Rank Fusion (k = 60), xếp hạng lại 20 đoạn đầu bằng
+  bge-reranker-v2-m3, giữ 5 đoạn.
 - **Lọc hiệu lực:** hàm `in_force_at(đoạn, t)` giữ đoạn có `valid_from ≤ t` và chưa hết hiệu lực, có xét ngoại lệ (ví dụ
   TT 12/2025 còn áp dụng đến hết 28/02/2027 cho một số trường hợp). Mỗi đoạn trong prompt ghi "hiệu lực từ … đến …".
 - **Tham số** chốt trên 30 câu dev, không dùng test (`reports/retrieval/params.json`).
