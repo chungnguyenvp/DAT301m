@@ -20,6 +20,9 @@
 # **Kết quả** (tab *Output*): `out_g7/g7_answers.jsonl` (mọi câu trả lời), `out_g7/g7_summary.json` (đủ hay thiếu,
 # thời gian, số câu chạm giới hạn token), log từng GPU. Nếu `g7_summary.json` báo `"du": false` (phiên bị ngắt), tạo
 # dataset từ Output của version này, Add Input cả nó, chạy lại: notebook bỏ qua câu đã có và chỉ làm phần còn thiếu.
+#
+# **G8:** cùng notebook này chạy được gói `g8_bundle.zip`. Gói ghi các lượt cần chạy trong `meta.json`
+# (`luot_chay`: D_g8, B_g8, với ngữ cảnh mở rộng lên Điều), nên chỉ cần Add Input gói G8 thay cho gói G7.
 
 # %%
 MAX_HOURS = 11.0   # dừng sạch trước giới hạn 12 giờ của một phiên Kaggle
@@ -58,8 +61,9 @@ OUT = WORK / "out_g7"
 OUT.mkdir(parents=True, exist_ok=True)
 PREV = sorted({str(Path(p).parent) for pat in ("answers_shard*.jsonl", "g7_answers.jsonl")
                for p in glob.glob(f"{INPUT}/**/{pat}", recursive=True) if not str(p).startswith(str(OUT))})
+RUNS_ARG = ["--runs", ",".join(META["luot_chay"])] if META.get("luot_chay") else []   # gói G8 chọn lượt
 N_GPU = max(1, subprocess.run(["nvidia-smi", "-L"], capture_output=True, text=True).stdout.count("GPU "))
-print("gói:", ROOT, "| mã băm khớp", len(META["file"]), "file | GPU:", N_GPU)
+print("gói:", ROOT, "| mã băm khớp", len(META["file"]), "file | GPU:", N_GPU, "| lượt:", META.get("luot_chay", "G7"))
 print("kết quả phiên trước:", PREV or "không có")
 print(json.dumps({k: META[k] for k in ("so_viec", "token_prompt", "g6")}, ensure_ascii=False))
 
@@ -84,7 +88,7 @@ for i in range(N_GPU):
            "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True"}
     hours = max(0.5, MAX_HOURS - (time.time() - T0) / 3600)
     cmd = [sys.executable, "-u", SCRIPT, "--out", str(OUT), "--shard", str(i), "--nshards", str(N_GPU),
-           "--max-hours", f"{hours:.2f}", "--limit", str(LIMIT), "--prev", *PREV]
+           "--max-hours", f"{hours:.2f}", "--limit", str(LIMIT), *RUNS_ARG, "--prev", *PREV]
     log_path = OUT / f"worker{i}.log"
     p = subprocess.Popen(cmd, stdout=open(log_path, "w", encoding="utf-8"), stderr=subprocess.STDOUT, env=env,
                          cwd=str(WORK))
@@ -110,7 +114,7 @@ for i, (p, log_path) in enumerate(PROCS):
         print("\n".join(tail(log_path, 40)))
 
 # %%
-subprocess.run([sys.executable, SCRIPT, "--out", str(OUT), "--merge", "--prev", *PREV], check=True)
+subprocess.run([sys.executable, SCRIPT, "--out", str(OUT), "--merge", *RUNS_ARG, "--prev", *PREV], check=True)
 SUMMARY = json.loads((OUT / "g7_summary.json").read_text(encoding="utf-8"))
 print("ĐỦ" if SUMMARY["du"] else "CHƯA ĐỦ: Add Input Output của version này rồi chạy lại để làm tiếp",
       f"| tổng thời gian {(time.time() - T0) / 3600:.2f} giờ")

@@ -1,0 +1,1296 @@
+{
+ "nguon": "reports/g8/judge_claude.jsonl",
+ "giam_khao": [
+  "claude-opus-5-5 (trong phiên)"
+ ],
+ "tap": "test",
+ "n_boot": 2000,
+ "seed": 0,
+ "dat": {
+  "D": {
+   "trong_pham_vi": {
+    "gia_tri": 0.8588235294117647,
+    "ci95": [
+     0.8034682080924855,
+     0.9101796407185628
+    ],
+    "n": 170
+   },
+   "thuong": {
+    "gia_tri": 0.835820895522388,
+    "ci95": [
+     0.7686567164179104,
+     0.8955223880597015
+    ],
+    "n": 134
+   },
+   "sua_doi": {
+    "gia_tri": 0.9444444444444444,
+    "ci95": [
+     0.8611111111111112,
+     1.0
+    ],
+    "n": 36
+   },
+   "bien_the": {
+    "gia_tri": 0.36363636363636365,
+    "ci95": [
+     0.22727272727272727,
+     0.5
+    ],
+    "n": 44
+   },
+   "ngoai_pham_vi": {
+    "gia_tri": 0.9230769230769231,
+    "ci95": [
+     0.8076923076923077,
+     1.0
+    ],
+    "n": 26
+   }
+  },
+  "B": {
+   "trong_pham_vi": {
+    "gia_tri": 0.8235294117647058,
+    "ci95": [
+     0.7602339181286549,
+     0.8786127167630058
+    ],
+    "n": 170
+   },
+   "thuong": {
+    "gia_tri": 0.8208955223880597,
+    "ci95": [
+     0.753731343283582,
+     0.8880597014925373
+    ],
+    "n": 134
+   },
+   "sua_doi": {
+    "gia_tri": 0.8333333333333334,
+    "ci95": [
+     0.6944444444444444,
+     0.9444444444444444
+    ],
+    "n": 36
+   },
+   "bien_the": {
+    "gia_tri": 0.38636363636363635,
+    "ci95": [
+     0.25,
+     0.5227272727272727
+    ],
+    "n": 44
+   },
+   "ngoai_pham_vi": {
+    "gia_tri": 0.9230769230769231,
+    "ci95": [
+     0.8076923076923077,
+     1.0
+    ],
+    "n": 26
+   }
+  },
+  "D_g8": {
+   "trong_pham_vi": {
+    "gia_tri": 0.8705882352941177,
+    "ci95": [
+     0.8165680473372781,
+     0.9207317073170732
+    ],
+    "n": 170
+   },
+   "thuong": {
+    "gia_tri": 0.8582089552238806,
+    "ci95": [
+     0.7985074626865671,
+     0.9104477611940298
+    ],
+    "n": 134
+   },
+   "sua_doi": {
+    "gia_tri": 0.9166666666666666,
+    "ci95": [
+     0.8333333333333334,
+     1.0
+    ],
+    "n": 36
+   },
+   "bien_the": {
+    "gia_tri": 0.4090909090909091,
+    "ci95": [
+     0.2727272727272727,
+     0.5681818181818182
+    ],
+    "n": 44
+   },
+   "ngoai_pham_vi": {
+    "gia_tri": 0.9230769230769231,
+    "ci95": [
+     0.8076923076923077,
+     1.0
+    ],
+    "n": 26
+   }
+  },
+  "B_g8": {
+   "trong_pham_vi": {
+    "gia_tri": 0.8529411764705882,
+    "ci95": [
+     0.7988165680473372,
+     0.9044943820224719
+    ],
+    "n": 170
+   },
+   "thuong": {
+    "gia_tri": 0.8507462686567164,
+    "ci95": [
+     0.7910447761194029,
+     0.9104477611940298
+    ],
+    "n": 134
+   },
+   "sua_doi": {
+    "gia_tri": 0.8611111111111112,
+    "ci95": [
+     0.75,
+     0.9722222222222222
+    ],
+    "n": 36
+   },
+   "bien_the": {
+    "gia_tri": 0.4090909090909091,
+    "ci95": [
+     0.2727272727272727,
+     0.5454545454545454
+    ],
+    "n": 44
+   },
+   "ngoai_pham_vi": {
+    "gia_tri": 0.8846153846153846,
+    "ci95": [
+     0.7307692307692307,
+     1.0
+    ],
+    "n": 26
+   }
+  }
+ },
+ "so_sanh": {
+  "D-B": {
+   "trong_pham_vi": {
+    "chenh": 0.03529411764705882,
+    "ci95": [
+     -0.01775147928994083,
+     0.08771929824561403
+    ],
+    "n": 170,
+    "co_y_nghia": false,
+    "chi_a_dat": 15,
+    "chi_b_dat": 9
+   },
+   "thuong": {
+    "chenh": 0.014925373134328358,
+    "ci95": [
+     -0.05223880597014925,
+     0.07462686567164178
+    ],
+    "n": 134,
+    "co_y_nghia": false,
+    "chi_a_dat": 11,
+    "chi_b_dat": 9
+   },
+   "sua_doi": {
+    "chenh": 0.1111111111111111,
+    "ci95": [
+     0.027777777777777776,
+     0.2222222222222222
+    ],
+    "n": 36,
+    "co_y_nghia": true,
+    "chi_a_dat": 4,
+    "chi_b_dat": 0
+   },
+   "bien_the": {
+    "chenh": -0.022727272727272728,
+    "ci95": [
+     -0.13636363636363635,
+     0.06818181818181818
+    ],
+    "n": 44,
+    "co_y_nghia": false,
+    "chi_a_dat": 2,
+    "chi_b_dat": 3
+   },
+   "ngoai_pham_vi": {
+    "chenh": 0.0,
+    "ci95": [
+     -0.11538461538461539,
+     0.11538461538461539
+    ],
+    "n": 26,
+    "co_y_nghia": false,
+    "chi_a_dat": 1,
+    "chi_b_dat": 1
+   }
+  },
+  "D_g8-D": {
+   "trong_pham_vi": {
+    "chenh": 0.011764705882352941,
+    "ci95": [
+     -0.024096385542168676,
+     0.04819277108433735
+    ],
+    "n": 170,
+    "co_y_nghia": false,
+    "chi_a_dat": 6,
+    "chi_b_dat": 4
+   },
+   "thuong": {
+    "chenh": 0.022388059701492536,
+    "ci95": [
+     -0.014925373134328358,
+     0.06716417910447761
+    ],
+    "n": 134,
+    "co_y_nghia": false,
+    "chi_a_dat": 6,
+    "chi_b_dat": 3
+   },
+   "sua_doi": {
+    "chenh": -0.027777777777777776,
+    "ci95": [
+     -0.08333333333333333,
+     0.0
+    ],
+    "n": 36,
+    "co_y_nghia": false,
+    "chi_a_dat": 0,
+    "chi_b_dat": 1
+   },
+   "bien_the": {
+    "chenh": 0.045454545454545456,
+    "ci95": [
+     0.0,
+     0.11363636363636363
+    ],
+    "n": 44,
+    "co_y_nghia": false,
+    "chi_a_dat": 2,
+    "chi_b_dat": 0
+   },
+   "ngoai_pham_vi": {
+    "chenh": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 26,
+    "co_y_nghia": false,
+    "chi_a_dat": 0,
+    "chi_b_dat": 0
+   }
+  },
+  "B_g8-B": {
+   "trong_pham_vi": {
+    "chenh": 0.029411764705882353,
+    "ci95": [
+     -0.023952095808383235,
+     0.08383233532934131
+    ],
+    "n": 170,
+    "co_y_nghia": false,
+    "chi_a_dat": 13,
+    "chi_b_dat": 8
+   },
+   "thuong": {
+    "chenh": 0.029850746268656716,
+    "ci95": [
+     -0.022388059701492536,
+     0.08955223880597014
+    ],
+    "n": 134,
+    "co_y_nghia": false,
+    "chi_a_dat": 10,
+    "chi_b_dat": 6
+   },
+   "sua_doi": {
+    "chenh": 0.027777777777777776,
+    "ci95": [
+     -0.08333333333333333,
+     0.1388888888888889
+    ],
+    "n": 36,
+    "co_y_nghia": false,
+    "chi_a_dat": 3,
+    "chi_b_dat": 2
+   },
+   "bien_the": {
+    "chenh": 0.022727272727272728,
+    "ci95": [
+     -0.11363636363636363,
+     0.1590909090909091
+    ],
+    "n": 44,
+    "co_y_nghia": false,
+    "chi_a_dat": 5,
+    "chi_b_dat": 4
+   },
+   "ngoai_pham_vi": {
+    "chenh": -0.038461538461538464,
+    "ci95": [
+     -0.15384615384615385,
+     0.07692307692307693
+    ],
+    "n": 26,
+    "co_y_nghia": false,
+    "chi_a_dat": 1,
+    "chi_b_dat": 2
+   }
+  },
+  "D_g8-B_g8": {
+   "trong_pham_vi": {
+    "chenh": 0.01764705882352941,
+    "ci95": [
+     -0.03571428571428571,
+     0.07386363636363637
+    ],
+    "n": 170,
+    "co_y_nghia": false,
+    "chi_a_dat": 13,
+    "chi_b_dat": 10
+   },
+   "thuong": {
+    "chenh": 0.007462686567164179,
+    "ci95": [
+     -0.05223880597014925,
+     0.06716417910447761
+    ],
+    "n": 134,
+    "co_y_nghia": false,
+    "chi_a_dat": 9,
+    "chi_b_dat": 8
+   },
+   "sua_doi": {
+    "chenh": 0.05555555555555555,
+    "ci95": [
+     -0.08333333333333333,
+     0.19444444444444445
+    ],
+    "n": 36,
+    "co_y_nghia": false,
+    "chi_a_dat": 4,
+    "chi_b_dat": 2
+   },
+   "bien_the": {
+    "chenh": 0.0,
+    "ci95": [
+     -0.09090909090909091,
+     0.09090909090909091
+    ],
+    "n": 44,
+    "co_y_nghia": false,
+    "chi_a_dat": 2,
+    "chi_b_dat": 2
+   },
+   "ngoai_pham_vi": {
+    "chenh": 0.038461538461538464,
+    "ci95": [
+     -0.07692307692307693,
+     0.15384615384615385
+    ],
+    "n": 26,
+    "co_y_nghia": false,
+    "chi_a_dat": 2,
+    "chi_b_dat": 1
+   }
+  }
+ },
+ "che_tai_sai": {
+  "D": {
+   "gia_tri": 0.011764705882352941,
+   "ci95": [
+    0.0,
+    0.02976190476190476
+   ],
+   "n": 170
+  },
+  "B": {
+   "gia_tri": 0.1,
+   "ci95": [
+    0.05952380952380952,
+    0.14634146341463414
+   ],
+   "n": 170
+  },
+  "D_g8": {
+   "gia_tri": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "n": 170
+  },
+  "B_g8": {
+   "gia_tri": 0.058823529411764705,
+   "ci95": [
+    0.024390243902439025,
+    0.10119047619047619
+   ],
+   "n": 170
+  }
+ },
+ "theo_luat_cu": {
+  "D": {
+   "gia_tri": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "n": 36
+  },
+  "B": {
+   "gia_tri": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "n": 36
+  },
+  "D_g8": {
+   "gia_tri": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "n": 36
+  },
+  "B_g8": {
+   "gia_tri": 0.027777777777777776,
+   "ci95": [
+    0.0,
+    0.08333333333333333
+   ],
+   "n": 36
+  }
+ },
+ "theo_loai_cau": {
+  "D": {
+   "chung": {
+    "gia_tri": 0.95,
+    "ci95": [
+     0.875,
+     1.0
+    ],
+    "n": 40
+   },
+   "hành vi cấm": {
+    "gia_tri": 0.75,
+    "ci95": [
+     0.375,
+     1.0
+    ],
+    "n": 8
+   },
+   "mức phạt": {
+    "gia_tri": 0.6363636363636364,
+    "ci95": [
+     0.36363636363636365,
+     0.9090909090909091
+    ],
+    "n": 11
+   },
+   "thủ tục": {
+    "gia_tri": 0.8888888888888888,
+    "ci95": [
+     0.8059701492537313,
+     0.953125
+    ],
+    "n": 63
+   },
+   "tình huống": {
+    "gia_tri": 0.7948717948717948,
+    "ci95": [
+     0.6578947368421053,
+     0.9024390243902439
+    ],
+    "n": 39
+   },
+   "định nghĩa": {
+    "gia_tri": 0.8888888888888888,
+    "ci95": [
+     0.6666666666666666,
+     1.0
+    ],
+    "n": 9
+   }
+  },
+  "B": {
+   "chung": {
+    "gia_tri": 0.9,
+    "ci95": [
+     0.8,
+     0.975609756097561
+    ],
+    "n": 40
+   },
+   "hành vi cấm": {
+    "gia_tri": 0.875,
+    "ci95": [
+     0.625,
+     1.0
+    ],
+    "n": 8
+   },
+   "mức phạt": {
+    "gia_tri": 0.45454545454545453,
+    "ci95": [
+     0.18181818181818182,
+     0.7272727272727273
+    ],
+    "n": 11
+   },
+   "thủ tục": {
+    "gia_tri": 0.8888888888888888,
+    "ci95": [
+     0.7936507936507936,
+     0.967741935483871
+    ],
+    "n": 63
+   },
+   "tình huống": {
+    "gia_tri": 0.6923076923076923,
+    "ci95": [
+     0.5365853658536586,
+     0.8421052631578947
+    ],
+    "n": 39
+   },
+   "định nghĩa": {
+    "gia_tri": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n": 9
+   }
+  },
+  "D_g8": {
+   "chung": {
+    "gia_tri": 0.975,
+    "ci95": [
+     0.9230769230769231,
+     1.0
+    ],
+    "n": 40
+   },
+   "hành vi cấm": {
+    "gia_tri": 0.75,
+    "ci95": [
+     0.375,
+     1.0
+    ],
+    "n": 8
+   },
+   "mức phạt": {
+    "gia_tri": 0.6363636363636364,
+    "ci95": [
+     0.36363636363636365,
+     0.9090909090909091
+    ],
+    "n": 11
+   },
+   "thủ tục": {
+    "gia_tri": 0.9047619047619048,
+    "ci95": [
+     0.8225806451612904,
+     0.9692307692307692
+    ],
+    "n": 63
+   },
+   "tình huống": {
+    "gia_tri": 0.7692307692307693,
+    "ci95": [
+     0.631578947368421,
+     0.8974358974358975
+    ],
+    "n": 39
+   },
+   "định nghĩa": {
+    "gia_tri": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n": 9
+   }
+  },
+  "B_g8": {
+   "chung": {
+    "gia_tri": 0.95,
+    "ci95": [
+     0.8717948717948718,
+     1.0
+    ],
+    "n": 40
+   },
+   "hành vi cấm": {
+    "gia_tri": 0.75,
+    "ci95": [
+     0.375,
+     1.0
+    ],
+    "n": 8
+   },
+   "mức phạt": {
+    "gia_tri": 0.45454545454545453,
+    "ci95": [
+     0.18181818181818182,
+     0.7272727272727273
+    ],
+    "n": 11
+   },
+   "thủ tục": {
+    "gia_tri": 0.9047619047619048,
+    "ci95": [
+     0.8305084745762712,
+     0.9682539682539683
+    ],
+    "n": 63
+   },
+   "tình huống": {
+    "gia_tri": 0.7692307692307693,
+    "ci95": [
+     0.631578947368421,
+     0.8947368421052632
+    ],
+    "n": 39
+   },
+   "định nghĩa": {
+    "gia_tri": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n": 9
+   }
+  }
+ },
+ "theo_nhom_loi_tu_dong": {
+  "D": {
+   "dung": {
+    "dat": 116,
+    "khong_dat": 8
+   },
+   "khong_co_can_cu": {
+    "dat": 5,
+    "khong_dat": 9
+   },
+   "loi_sinh": {
+    "khong_dat": 6,
+    "dat": 27
+   },
+   "thieu_mot_phan": {
+    "dat": 14,
+    "khong_dat": 13
+   },
+   "tu_choi_sai": {
+    "khong_dat": 16
+   }
+  },
+  "B": {
+   "dung": {
+    "dat": 121,
+    "khong_dat": 12
+   },
+   "khong_co_can_cu": {
+    "khong_dat": 12,
+    "dat": 8
+   },
+   "loi_sinh": {
+    "dat": 21,
+    "khong_dat": 6
+   },
+   "thieu_mot_phan": {
+    "dat": 6,
+    "khong_dat": 14
+   },
+   "tu_choi_sai": {
+    "khong_dat": 13,
+    "dat": 1
+   }
+  }
+ },
+ "khop_tu_dong": {
+  "D": {
+   "so_lieu_du": {
+    "tu_dong_0/judge_0": 11,
+    "tu_dong_0/judge_1": 27,
+    "tu_dong_1/judge_0": 1,
+    "tu_dong_1/judge_1": 56
+   },
+   "tu_choi": {
+    "tu_choi_0/judge_0": 21,
+    "tu_choi_0/judge_1": 146,
+    "tu_choi_1/judge_0": 3
+   },
+   "lech_so_lieu": [
+    {
+     "uid": "thuong/hd08",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng."
+    },
+    {
+     "uid": "thuong/lp02",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 10% (thiếu ý HĐND tăng và lần 2, ý phụ)."
+    },
+    {
+     "uid": "thuong/dk11",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 40 triệu đồng."
+    },
+    {
+     "uid": "thuong/xp11",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng."
+    },
+    {
+     "uid": "sua_doi/sd51",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 30 ngày kể từ ngày ký."
+    },
+    {
+     "uid": "sua_doi/sd32",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng: Sở Xây dựng cấp, 05 năm."
+    },
+    {
+     "uid": "thuong/gp14",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng: chỉ sát hạch lý thuyết."
+    },
+    {
+     "uid": "thuong/td08",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Nêu đúng 70 km/h trên đường hai chiều."
+    },
+    {
+     "uid": "thuong/lp03",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 0%."
+    },
+    {
+     "uid": "sua_doi/sd43",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng: không thuộc điểm b khoản 7 Điều 32."
+    },
+    {
+     "uid": "thuong/dk05",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 08 giờ làm việc."
+    },
+    {
+     "uid": "thuong/tn02",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 03–10 năm."
+    },
+    {
+     "uid": "thuong/hd13",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng: được sử dụng, xin cấp phép, không bắt buộc phương án."
+    },
+    {
+     "uid": "thuong/dk01",
+     "so_lieu_du": true,
+     "judge_dat": false,
+     "ly_do": "Thiếu thời hạn cấp biển số (cấp ngay)."
+    },
+    {
+     "uid": "thuong/gp08",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng hồ sơ."
+    },
+    {
+     "uid": "thuong/td03",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng."
+    },
+    {
+     "uid": "thuong/bh05",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 5 ngày làm việc."
+    },
+    {
+     "uid": "thuong/lp08",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 70.000 và 35.000 đồng (thiếu mức chỉ đổi biển số)."
+    },
+    {
+     "uid": "thuong/gp13",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 20 phút, 30 câu, 27/30."
+    },
+    {
+     "uid": "thuong/tn01",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng khung hình phạt khoản 1."
+    },
+    {
+     "uid": "thuong/dk09",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng: không bắt buộc."
+    },
+    {
+     "uid": "thuong/xp09",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng các hành vi bị tịch thu."
+    },
+    {
+     "uid": "thuong/np07",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng điều kiện."
+    },
+    {
+     "uid": "thuong/np08",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng."
+    },
+    {
+     "uid": "thuong/td07",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 70 m."
+    },
+    {
+     "uid": "sua_doi/sd52",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng: ống ≤ 200 mm được nộp đồng thời."
+    },
+    {
+     "uid": "thuong/np01",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 01 năm."
+    },
+    {
+     "uid": "thuong/td05",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Nêu đúng 90 km/h trên đường đôi."
+    }
+   ]
+  },
+  "B": {
+   "so_lieu_du": {
+    "tu_dong_0/judge_0": 16,
+    "tu_dong_0/judge_1": 21,
+    "tu_dong_1/judge_0": 6,
+    "tu_dong_1/judge_1": 52
+   },
+   "tu_choi": {
+    "tu_choi_0/judge_0": 27,
+    "tu_choi_0/judge_1": 139,
+    "tu_choi_1/judge_0": 3,
+    "tu_choi_1/judge_1": 1
+   },
+   "lech_so_lieu": [
+    {
+     "uid": "thuong/xp11",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng."
+    },
+    {
+     "uid": "sua_doi/sd07",
+     "so_lieu_du": true,
+     "judge_dat": false,
+     "ly_do": "Lẫn sang khoản 4 (chiều cao), nêu ngưỡng \"10% đến 30%\" không rõ ràng; không trả lời dứt khoát."
+    },
+    {
+     "uid": "sua_doi/sd51",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 30 ngày."
+    },
+    {
+     "uid": "sua_doi/sd32",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng: Sở Xây dựng, 05 năm."
+    },
+    {
+     "uid": "thuong/gp14",
+     "so_lieu_du": true,
+     "judge_dat": false,
+     "ly_do": "Kết luận phải thi cả thực hành, trong khi 6 tháng chỉ thi lý thuyết."
+    },
+    {
+     "uid": "thuong/td08",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 70 km/h."
+    },
+    {
+     "uid": "thuong/lp03",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 0% đến hết 28/02/2027."
+    },
+    {
+     "uid": "sua_doi/sd43",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng."
+    },
+    {
+     "uid": "thuong/gp03",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng nơi nộp và thời hạn."
+    },
+    {
+     "uid": "thuong/dk05",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 08 giờ làm việc."
+    },
+    {
+     "uid": "thuong/hd13",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng thủ tục, thẩm quyền, 01 ngày; nói nhầm phải có phương án."
+    },
+    {
+     "uid": "thuong/dk01",
+     "so_lieu_du": true,
+     "judge_dat": false,
+     "ly_do": "Nói biển số cũng cấp trong 02 ngày làm việc; đáp án: biển số cấp ngay."
+    },
+    {
+     "uid": "thuong/gp15",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Kết luận đúng: không phải thi lại lý thuyết."
+    },
+    {
+     "uid": "thuong/bh05",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 05 ngày làm việc."
+    },
+    {
+     "uid": "thuong/ll08",
+     "so_lieu_du": true,
+     "judge_dat": false,
+     "ly_do": "Kết luận ngược (là đúng luật); bịa mức phạt 2 triệu, trừ 2 điểm."
+    },
+    {
+     "uid": "thuong/lp08",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 35.000 và 70.000 đồng."
+    },
+    {
+     "uid": "thuong/gp13",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng số liệu; ghi nhầm văn bản (TT 12/2025 thay vì TT 65/2024)."
+    },
+    {
+     "uid": "thuong/tn01",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng khung hình phạt khoản 1."
+    },
+    {
+     "uid": "thuong/xp09",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đủ các hành vi khoản 11 (thêm hành vi theo Điều 14)."
+    },
+    {
+     "uid": "thuong/np07",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng hai điều kiện."
+    },
+    {
+     "uid": "thuong/np08",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng điều kiện và 03 tháng."
+    },
+    {
+     "uid": "sua_doi/sd24",
+     "so_lieu_du": true,
+     "judge_dat": false,
+     "ly_do": "Đọc nhầm, nói không có quy định thời hạn cấp lại khi mất."
+    },
+    {
+     "uid": "sua_doi/sd52",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng."
+    },
+    {
+     "uid": "thuong/np01",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 01 năm."
+    },
+    {
+     "uid": "sua_doi/sd41",
+     "so_lieu_du": true,
+     "judge_dat": false,
+     "ly_do": "Nêu mức phạt nhưng nói không có căn cứ về tạm giữ xe, không trả lời câu hỏi chính."
+    },
+    {
+     "uid": "thuong/ll13",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 06 tháng, kiểm tra kiến thức."
+    },
+    {
+     "uid": "thuong/td05",
+     "so_lieu_du": false,
+     "judge_dat": true,
+     "ly_do": "Đúng 90 km/h."
+    }
+   ]
+  }
+ },
+ "khop_cham_tay": {},
+ "doi_ket_qua": {
+  "D->D_g8": {
+   "sai_thanh_dung": [
+    {
+     "uid": "bien_the/bt31",
+     "nhom_loi_g7": "khong_co_can_cu"
+    },
+    {
+     "uid": "bien_the/bt35",
+     "nhom_loi_g7": "thieu_mot_phan"
+    },
+    {
+     "uid": "thuong/bb03",
+     "nhom_loi_g7": "loi_sinh"
+    },
+    {
+     "uid": "thuong/dk01",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "thuong/gp01",
+     "nhom_loi_g7": "loi_sinh"
+    },
+    {
+     "uid": "thuong/gp05",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "thuong/hd02",
+     "nhom_loi_g7": "thieu_mot_phan"
+    },
+    {
+     "uid": "thuong/lp05",
+     "nhom_loi_g7": "dung"
+    }
+   ],
+   "dung_thanh_sai": [
+    {
+     "uid": "sua_doi/sd58",
+     "ly_do": "Trả lời thời hạn hiệu lực của giấy phép thay vì thời hạn cấp (01 ngày làm việc)."
+    },
+    {
+     "uid": "thuong/dk04",
+     "ly_do": "Chỉ dẫn chiếu thủ tục, không liệt kê giấy tờ (chứng từ chuyển quyền, lệ phí trước bạ, chứng nhận thu hồi)."
+    },
+    {
+     "uid": "thuong/ll08",
+     "ly_do": "Kết luận \"không đúng\" trái đáp án (được chở trẻ dưới 12 tuổi)."
+    },
+    {
+     "uid": "thuong/np06",
+     "ly_do": "Nêu trường hợp nộp tại chỗ thay vì nguyên tắc nộp tại Kho bạc Nhà nước."
+    }
+   ],
+   "sai_thanh_dung_theo_nhom": {
+    "khong_co_can_cu": 1,
+    "thieu_mot_phan": 2,
+    "loi_sinh": 2,
+    "dung": 3
+   }
+  },
+  "B->B_g8": {
+   "sai_thanh_dung": [
+    {
+     "uid": "bien_the/bt07",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "bien_the/bt24",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "bien_the/bt29",
+     "nhom_loi_g7": "khong_co_can_cu"
+    },
+    {
+     "uid": "bien_the/bt31",
+     "nhom_loi_g7": "khong_co_can_cu"
+    },
+    {
+     "uid": "bien_the/bt35",
+     "nhom_loi_g7": "thieu_mot_phan"
+    },
+    {
+     "uid": "ngoai_pham_vi/np08",
+     "nhom_loi_g7": "ngoai_pham_vi"
+    },
+    {
+     "uid": "sua_doi/sd07",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "sua_doi/sd35",
+     "nhom_loi_g7": "loi_sinh"
+    },
+    {
+     "uid": "sua_doi/sd41",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "thuong/bb11",
+     "nhom_loi_g7": "khong_co_can_cu"
+    },
+    {
+     "uid": "thuong/dk01",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "thuong/dk09",
+     "nhom_loi_g7": "thieu_mot_phan"
+    },
+    {
+     "uid": "thuong/dk11",
+     "nhom_loi_g7": "loi_sinh"
+    },
+    {
+     "uid": "thuong/dk14",
+     "nhom_loi_g7": "loi_sinh"
+    },
+    {
+     "uid": "thuong/gp05",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "thuong/gp14",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "thuong/hd02",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "thuong/lp05",
+     "nhom_loi_g7": "dung"
+    },
+    {
+     "uid": "thuong/tn07",
+     "nhom_loi_g7": "tu_choi_sai"
+    }
+   ],
+   "dung_thanh_sai": [
+    {
+     "uid": "bien_the/bt16",
+     "ly_do": "Kết luận có bị phạt đúng nhưng mức phạt 100-200 nghìn sai (đúng 800.000-1.000.000 đồng)."
+    },
+    {
+     "uid": "bien_the/bt17",
+     "ly_do": "Nói không có căn cứ, rồi nêu mức phạt theo NĐ 100/2019 đã hết hiệu lực."
+    },
+    {
+     "uid": "bien_the/bt18",
+     "ly_do": "Từ chối sai và nêu ngưỡng cồn sai."
+    },
+    {
+     "uid": "bien_the/bt26",
+     "ly_do": "Nêu xe gắn máy 50 km/h; đáp án 40 km/h cho cả hai loại."
+    },
+    {
+     "uid": "ngoai_pham_vi/np04",
+     "ly_do": "Không từ chối, áp quy định đường bộ cho đường sắt."
+    },
+    {
+     "uid": "ngoai_pham_vi/np05",
+     "ly_do": "Từ chối nhưng kèm thông tin bịa (lái tàu do quân đội, công an quản lý theo khoản 9 Điều 60)."
+    },
+    {
+     "uid": "sua_doi/sd08",
+     "ly_do": "Sai đối tượng (ô tô) và sai mức phạt (4-6 triệu)."
+    },
+    {
+     "uid": "sua_doi/sd28",
+     "ly_do": "Kết luận \"không\" theo bản cũ (Công an xã chỉ đăng ký mô tô)."
+    },
+    {
+     "uid": "thuong/bh10",
+     "ly_do": "Kết luận \"vẫn bồi thường\" trái đáp án (không lái xe không GPLX là loại trừ)."
+    },
+    {
+     "uid": "thuong/dk03",
+     "ly_do": "Trộn hồ sơ sang tên (lệ phí trước bạ, chứng nhận thu hồi) vào hồ sơ thu hồi; thiếu bản chà và nộp lại đăng ký, biển số."
+    },
+    {
+     "uid": "thuong/hd13",
+     "ly_do": "Nói không có căn cứ, cho rằng dựng rạp tang lễ không phải mục đích hợp pháp."
+    },
+    {
+     "uid": "thuong/ll04",
+     "ly_do": "Nêu có ngưỡng cồn cho phép (0,02 và 0,25 mg/l); luật cấm mọi nồng độ cồn."
+    },
+    {
+     "uid": "thuong/lp07",
+     "ly_do": "Xếp TP. Hồ Chí Minh vào khu vực II, kết luận 105.000 đồng (đúng là 1.400.000 đồng)."
+    },
+    {
+     "uid": "thuong/td08",
+     "ly_do": "Nêu 80 km/h cho đường hai chiều (đúng là 70 km/h)."
+    }
+   ],
+   "sai_thanh_dung_theo_nhom": {
+    "dung": 9,
+    "khong_co_can_cu": 3,
+    "thieu_mot_phan": 2,
+    "ngoai_pham_vi": 1,
+    "loi_sinh": 3,
+    "tu_choi_sai": 1
+   }
+  }
+ }
+}

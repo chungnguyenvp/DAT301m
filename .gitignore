@@ -22,3 +22,7 @@ remote/g6/ketqua/
 kaggle/g7/g7_bundle.zip
 # Phần sinh của từng GPU: đã gộp vào kaggle/g7/out_g7/g7_answers.jsonl
 kaggle/g7/out_g7/answers_shard*.jsonl
+
+# Gói G8 cho Kaggle (tạo lại bằng scripts/build_g7_bundle.py --g8)
+kaggle/g8/g8_bundle.zip
+kaggle/g8/out_g8/answers_shard*.jsonl
